@@ -20,6 +20,15 @@ var CardList = function() {
     }
 
     this.filter = function(){
+
+        if($(window).width() < 768 && !$('body').hasClass('filters-open')){
+            $('body').addClass('filters-open');
+            return;
+        } else {
+            $('body').removeClass('filters-open');
+        }
+
+
         var filter = $(this).data('filter');    
         var cards = cardlist.cards.slice(0);
         var filtered_cards = cards;

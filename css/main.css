@@ -161,7 +161,7 @@ h1{
     text-transform: uppercase;
     color: #fff;
     text-align:center;
-    text-shadow: 5px 5px 0 #000;   
+    text-shadow: 5px 5px 0 #000;
 }
 
 h3{
@@ -226,25 +226,51 @@ header .heading-wrapper img.header-text{
     margin-left:30px;
 }
 
-#filters{
+#content{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+#content:after{
+    content:'';
+    clear:both;
+    display:table;
+}
+
+#intro{
+    width: 90%;
+    max-width:1000px;
+    margin:0 auto 50px;
     text-align:center;
-    margin: 40px 0;
+    font-family:'Frankfurter';
+    font-size:16px;
+}
+
+#filters{
+    width:275px;
+    float:left;
+    margin: 0;
 }
 
 #filters a{
-    display:inline-block;
-    margin: 0 20px 10px;
+    display:block;
+    margin: 0 20px 20px;
     font-size:30px;
     color:#ff0000;
     font-family: 'Umbriago';
+    line-height:100%;
 }
+
+
+
 #filters a:last-of-type{
     margin-right: 0;
 }
 
 #filters a.active,
 #filters a.active:hover{
-    color:#ff0000;
+    text-shadow: 2px 2px 0px #333;
 }
 
 #filters a:hover{
@@ -252,23 +278,31 @@ header .heading-wrapper img.header-text{
 }
 
 #item-list{
-    list-style:none;
-    margin: 55px auto;
+    float:left;
+    width:calc( 100% - 275px);
+    list-style:none;;
     max-width:1300px;
-    transform:translateX(-30px);
 }
 
 .food-item{
     display:block;
-    padding: 0 20px;
-    margin: 0 0 65px;
+    padding: 0;
+    margin: 0;
     height: auto;
 }
 
+.food-item:after{
+    display:block;
+    content:'';
+    width:100%;
+    height:4px;
+    margin:35px 0;
+    background-image:url(../img/sqwiggle.png);
+    background-repeat:repeat-x;
+    background-size: auto 100%;
+}
+
 .food-item .wrapper{
-    border:1px solid #000;
-    border-radius: 5px;
-    padding: 24px;
 }
 
 .food-item .body{
@@ -287,10 +321,21 @@ header .heading-wrapper img.header-text{
     margin-bottom: 14px;
 }
 
+.food-item .heading:after{
+    clear:both;
+    content:'';
+    display:table;
+}
+
 .food-item .image-wrapper{
     width: 150px;
     margin-left: -10px;
     float:left;
+    text-align:right;
+}
+
+.food-item .image-wrapper img{
+    max-width:100%;
 }
 
 .food-item h3{
@@ -301,6 +346,8 @@ header .heading-wrapper img.header-text{
 
 .food-item h3 span{
     display:block;
+    line-height:100%;
+    margin-bottom:10px;
 }
 
 .food-item .content{
@@ -329,30 +376,21 @@ header .heading-wrapper img.header-text{
 }
 
 .stat{
+    display:inline-block;
     position:relative;
-    width:100%;
-    overflow:hidden;
+    width:auto;
     height:20px;
-    margin-top: 5px;
+    margin: 5px 10px 0 0;
+}
+
+.stat:last-of-type{
+    margin-right:0;
 }
 
 .stat .title{
-    position:absolute;
-    top:0;
-    left:0;
-    word-wrap: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    position:relative;
 }
 
-.stat .value{
-    position:absolute;
-    top:0;
-    right:0;
-    background: #fff;
-    padding-left:2px;
-}
 
 
 
@@ -431,64 +469,164 @@ header .heading-wrapper img.header-text{
 }
 
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+@media (max-width: 1023px) {
+    header {
+        height:370px;
+    }
 
-@media (max-width: 1199px) {
+    header .heading-wrapper{
+        height:245px;
+    }
+
+    #filters {
+        width: 200px;
+    }
+
     #item-list{
-        transform:translateX(0);
-        width: calc(100% - 30px);
-        margin-left: 0;
+        width:calc(100% - 200px);
     }
 }
 
-@media (max-width: 991px) {
-    h1{
-        font-size:42px;
+@media (max-width: 767px) {
+    header{
+        height:auto;
+        padding-bottom:95px;
+        padding-top:45px;
     }
 
-    h3{
+    header:before{
+        height:45px;
+    }
+
+    header .heading-wrapper{
+        position:relative;
+        height:auto;
         text-align:center;
+        margin:10px auto 0;
+        max-width:350px;
     }
 
-    h3 .brand{
-        float:none;
+    header .heading-wrapper img{
         display:inline-block;
+        width:80%;
+        float:none;
+        
+    }
+
+    header .heading-wrapper img.header-text{
+        margin-top:32px;
+        margin-left:0;
+    }
+
+    #content{
+        width:90%;
+    }
+
+    #intro{
+        text-align:left;
+        width:100%;
+    }
+
+    #filters{
+        width:100%;
+        margin-bottom:20px;
     }
 
     #item-list{
-        width: 100%;
+        width:100%;
+        float:none;
     }
 
     #filters a{
-        margin: 0 10px;
+        display:none;
+        margin:0;
     }
 
-    .food-item{
-        height: auto;
-        padding: 0 25px;
-    }    
+    #filters a.active{
+        position:relative;
+        display:inline-block;
+        padding-right: 35px;
+        min-width:100px;
+    }
 
-    .food-item h3,
-    .food-item .body{
-        width: 100%;
+    #filters a.active:after{
+        content:'';
+        display:block;
+        position:absolute;
+        right:0;
+        top:5px;
+        width:17px;
+        height:10px;
+        background-image:url(../img/toggle.png);
+    }
+
+    #filters a.active,
+    #filters a.active:hover{
+        text-shadow: none;
+    }
+
+    .filters-open #item-list,
+    .filters-open #intro,
+    .filters-open header{
+        display:none;
+    }
+
+    .filters-open #filters{
+        position:fixed;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        padding:80px 10px 0;
+        text-align:center;
+        background:#fff;
+        width:100%;
+        height:100%;
+        z-index:5555;
+        overflow:scroll;
+    }
+
+    .filters-open #filters a{
+        display:block;
+        margin-bottom:25px;
+        padding: 0 !important;
+    }
+
+    .filters-open #filters a.active,
+    .filters-open #filters a.active:hover{
+        text-shadow: 2px 2px 0px #333;
+    }
+
+    .filters-open #filters a.active:after{
+        display:none;
+    }
+
+    .food-item:after{
+        margin: 20px 0;
+    }
+
+    .food-item h3 span{
+        margin:0;
+    }
+
+    .food-item h3{
+        width: calc(100% - 100px);
     }
 
     .food-item .image-wrapper{
-        float:none;
-        display:block;
-        text-align:center;
-        width: 100%;
+        width:100px;
+        padding-left:10px;
     }
 
-    .food-item .image-wrapper img{
-        display:inline-block;
+}
+
+@media (max-width: 660px) {
+
+    #filters{
+        margin-bottom: 50px;
     }
 
-    .food-item .content{
-        width: 100%;
-        float:none;
-        padding: 0;
+    .stats{
+        font-size:18px;
     }
 }

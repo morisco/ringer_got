@@ -26,22 +26,26 @@
                 <img src="img/header-image-text.png" alt="Fast Food Items in America" class="header-text" />
             </div>
         </header>
-        <div id="filters">
-                <a href="javascript:void(0);" data-filter="All" class="active">All</a>
-                <a href="javascript:void(0);" data-filter="Fries">Fries</a>
-                <a href="javascript:void(0);" data-filter="Burger">Burgers</a>
-                <a href="javascript:void(0);" data-filter="Chicken">Chicken</a>
-                <a href="javascript:void(0);" data-filter="Chicken Sandwich">Chicken Sandwich</a>
-                <a href="javascript:void(0);" data-filter="Taco">Tacos</a>
-                <a href="javascript:void(0);" data-filter="Dessert">Dessert</a>
-                <a href="javascript:void(0);" data-filter="Misc">Misc</a>
+        <div id="content">
+            <section id="intro">
+                As part of Last Meal on Earth: The End of Eating, our weeklong package dedicated to food, we wanted to establish, once and for all, the absolute best fast food items in America. The _Ringer_ staff participated in a two-step vote—first establishing more than 100 nominees, then holding a general election. (Condiments were disqualified from contention.) Below you'll find our final results. Please do @ us with complaints.
+            </section>
+            <div id="filters">
+                <a href="javascript:void(0);" data-filter="All" class="active"><span>All Picks</span></a>
+                <a href="javascript:void(0);" data-filter="Fries"><span>Fries</span></a>
+                <a href="javascript:void(0);" data-filter="Burger"><span>Burgers</span></a>
+                <a href="javascript:void(0);" data-filter="Chicken"><span>Chicken</span></a>
+                <a href="javascript:void(0);" class="chicken-sandwich" data-filter="Chicken Sandwich"><span>Chicken Sandwich</span></a>
+                <a href="javascript:void(0);" data-filter="Taco"><span>Tacos</span></a>
+                <a href="javascript:void(0);" data-filter="Dessert"><span>Dessert</span></a>
+                <a href="javascript:void(0);" data-filter="Misc"><span>Misc</span></a>
             </div>
-        <section>
-            <ul id="item-list" class="grid"></ul>
-        </section>
-
+            <section>
+                <ul id="item-list" class="grid"></ul>
+            </section>
+        </div>
         <script id="food-card-template" type="text/x-handlebars-template">
-            <li class="food-item col-xs-12 col-md-6 col-lg-4">
+            <li class="food-item col-xs-12">
                 <div class="wrapper">
                     <div class="heading">
                         <h3>
@@ -61,16 +65,14 @@
                             {{desc}} <span class="writer">- {{writer}}</span>
                             <div class="stats">
                                 <div class="stat">
-                                    <span class="title">Calories.........................................................................................................................................................</span>
-                                    <span class="value">750</span>
-                                </div>
-                                <div class="stat">
-                                    <span class="title">Price............................................................................................................................................................</span>
                                     <span class="value">$3.50</span>
                                 </div>
                                 <div class="stat">
-                                    <span class="title">First Debuted....................................................................................................................................................</span>
-                                    <span class="value">1977</span>
+                                    <span class="title">Calories: 750</span>
+                                    
+                                </div>
+                                <div class="stat">
+                                    <span class="title">Founded: 1977</span>
                                 </div>
                             </div>
                         </div>
