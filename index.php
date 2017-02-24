@@ -21,8 +21,12 @@
         <![endif]-->
 
         <header>
-            <h1>The top 50 fast food items in america</h1>
-            <div id="filters">
+            <div class="heading-wrapper">
+                <img src="img/header-top-50.png" alt="The Top 50" class="top-50" />
+                <img src="img/header-image-text.png" alt="Fast Food Items in America" class="header-text" />
+            </div>
+        </header>
+        <div id="filters">
                 <a href="javascript:void(0);" data-filter="All" class="active">All</a>
                 <a href="javascript:void(0);" data-filter="Fries">Fries</a>
                 <a href="javascript:void(0);" data-filter="Burger">Burgers</a>
@@ -32,32 +36,42 @@
                 <a href="javascript:void(0);" data-filter="Dessert">Dessert</a>
                 <a href="javascript:void(0);" data-filter="Misc">Misc</a>
             </div>
-        </header>
         <section>
             <ul id="item-list" class="grid"></ul>
         </section>
 
         <script id="food-card-template" type="text/x-handlebars-template">
-            <li class="food-item col-xs-12 col-md-6">
-                <h3><span class="title">{{displayOrder}}.{{title}}</span> <span class="brand">{{brand}}</span></h3>
-                <div class="body">
-                    <div class="image-wrapper">
-                        <img src="{{img}}" alt="{{title}} - Illustration" />
+            <li class="food-item col-xs-12 col-md-6 col-lg-4">
+                <div class="wrapper">
+                    <div class="heading">
+                        <h3>
+                            <span class="index">{{displayOrder}}</span>
+                            <span class="title">{{title}}</span> 
+                            <span class="brand">{{brand}}</span>
+                        </h3>
+                        <div class="image-wrapper">
+                            <img src="{{img}}" alt="{{title}} - Illustration" />
+                        </div>
                     </div>
-                    <div class="content">
-                        {{desc}} - {{writer}}
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="title">Calories.........................................................................................................................................................</span>
-                                <span class="value">750</span>
-                            </div>
-                            <div class="stat">
-                                <span class="title">Price............................................................................................................................................................</span>
-                                <span class="value">$3.50</span>
-                            </div>
-                            <div class="stat">
-                                <span class="title">First Debuted....................................................................................................................................................</span>
-                                <span class="value">1977</span>
+                    <div class="body">
+                        <div class="image-wrapper">
+                            
+                        </div>
+                        <div class="content">
+                            {{desc}} <span class="writer">- {{writer}}</span>
+                            <div class="stats">
+                                <div class="stat">
+                                    <span class="title">Calories.........................................................................................................................................................</span>
+                                    <span class="value">750</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="title">Price............................................................................................................................................................</span>
+                                    <span class="value">$3.50</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="title">First Debuted....................................................................................................................................................</span>
+                                    <span class="value">1977</span>
+                                </div>
                             </div>
                         </div>
                     </div>
