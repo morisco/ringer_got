@@ -24,10 +24,11 @@ var CardList = function() {
         if($(window).width() < 768 && !$('body').hasClass('filters-open')){
             $('body').addClass('filters-open');
             return;
+        } else if($(window).width() < 768) {
+            $('body').removeClass('filters-open');
+            $('body,html').scrollTop($('#filters').offset().top - 30);
         } else {
             $('body').removeClass('filters-open');
-            console.log($('header').height() + $('#intro').height());
-            $('body,html').scrollTop($('#filters').offset().top - 30);
         }
 
 
@@ -43,13 +44,10 @@ var CardList = function() {
     }
 
     this.getData = function() {
-        $.getJSON( "data/cards.json", function(data) {
+        var data = JSON.parse($("#data").html());
             cardlist.cards = data.cards;
             cardlist.buildList(cardlist.cards);
-        }) 
-        .fail(function(data) {
-            console.log( "ERROR: Cards did not load" );
-        });
+        
     };
 
     this.buildList = function(cards) {
