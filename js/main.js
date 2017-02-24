@@ -26,6 +26,8 @@ var CardList = function() {
             return;
         } else {
             $('body').removeClass('filters-open');
+            console.log($('header').height() + $('#intro').height());
+            $('body,html').scrollTop($('#filters').offset().top - 30);
         }
 
 

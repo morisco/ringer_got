@@ -227,7 +227,7 @@ header .heading-wrapper img.header-text{
 }
 
 #content{
-    width:95%;
+    width:97.5%;
     max-width:1200px;
     margin:40px auto;
 }
@@ -483,7 +483,8 @@ header .heading-wrapper img.header-text{
     }
 
     #item-list{
-        width:calc(100% - 200px);
+        width:calc(100% - 220px);
+        margin-left:20px;
     }
 }
 
@@ -534,12 +535,17 @@ header .heading-wrapper img.header-text{
 
     #item-list{
         width:100%;
+        margin-left:0px;
         float:none;
     }
 
     #filters a{
         display:none;
         margin:0;
+    }
+
+    #filters a:hover{
+        color:#ff0000;
     }
 
     #filters a.active{
