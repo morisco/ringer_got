@@ -363,7 +363,7 @@ header .heading-wrapper img.header-text{
 
 .food-item h3{
     text-transform:uppercase;
-    width: calc(100% - 150px);
+    width: 100%;
     float:left;
 }
 
