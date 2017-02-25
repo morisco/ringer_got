@@ -304,6 +304,7 @@ header .heading-wrapper img.header-text{
 }
 
 .food-item .wrapper{
+    padding-left:120px;
 }
 
 .food-item .body{
@@ -329,9 +330,11 @@ header .heading-wrapper img.header-text{
 }
 
 .food-item .image-wrapper{
-    width: 150px;
+    position: absolute;
+    left:0;
+    width:100px;
     height:100px;
-    margin-left: -10px;
+    margin-left:-10px;
     float:left;
     text-align:right;
 }
@@ -542,6 +545,10 @@ header .heading-wrapper img.header-text{
         float:none;
     }
 
+    .food-item .wrapper{
+        padding-left:0;
+    }
+
     #filters a{
         display:none;
         margin:0;
@@ -622,9 +629,21 @@ header .heading-wrapper img.header-text{
         width: calc(100% - 100px);
     }
 
+    .food-item .heading{
+        width:100%;
+        text-align:center;
+    }
+
+    .food-item .heading h3{
+        width:100%;
+    }
+
     .food-item .image-wrapper{
-        width:100px;
-        padding-left:10px;
+        position:relative;
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-left: 0;
     }
 
 }
