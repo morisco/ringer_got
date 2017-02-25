@@ -170,6 +170,7 @@ h3{
     font-family: 'Frankfurter';
     font-size: 24px;
     width:100%;
+    letter-spacing:0.025em;
 }
 
 h3 .brand{
