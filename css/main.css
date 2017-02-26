@@ -350,6 +350,9 @@ header .heading-wrapper img.header-text{
     background-image:url(../img/arrow.svg);
     background-repeat:no-repeat;
     transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
 }
 
 #item-list{
