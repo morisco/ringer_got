@@ -171,12 +171,12 @@ h3 .brand{
 }
 
 header{
-    height:435px;
+    height:360px;
     background-color:#e09f43;
     background-image:url(../img/header-texture.png);
     background-repeat: repeat-x;
     background-size: auto 370px;
-    background-position: 0 65px;
+    background-position: 0 0px;
     padding: 65px 16px 0;
     position:relative;
     display: block;
@@ -186,8 +186,8 @@ header{
 
 header .top{
     display:block;
-    background:#000;
-    height:65px;
+    //background:#000;
+    height:50px;
     width:100%;
     position:absolute;
     top:0;
@@ -201,7 +201,7 @@ header .checker{
     background-image:url(../img/checker.png);
     background-repeat:repeat-x;
     background-size: auto 100%;
-    height: 55px;
+    height: 40px;
     position:absolute;
     bottom:0;
     left:0;
@@ -212,12 +212,12 @@ header .checker{
 header #logo{
     position:absolute;
     top:7.5px;
-    left:50%;
-    height:50px;
+    left:20px;
+    height:35px;
     z-index:555;
-    transform:translateX(-50%);
+    /*transform:translateX(-50%);
     -webkit-transform:translateX(-50%);
-    -moz-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);*/
 }
 
 header #logo img{
@@ -227,8 +227,8 @@ header #logo img{
 header .heading-wrapper{
     position:relative;
     display:inline-block;
-    height:318px;
-    margin-top:-30px;
+    height:250px;
+    margin-top:-50px;
     z-index:10;
 }
 
@@ -244,9 +244,9 @@ header .heading-wrapper img{
 }
 
 header .heading-wrapper img.header-text{
-    margin-top:62px;
+    margin-top:57px;
     height: calc(100% - 64px);
-    margin-left:30px;
+    margin-left:15px;
 }
 
 #content{
