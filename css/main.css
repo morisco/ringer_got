@@ -266,7 +266,6 @@ header .heading-wrapper img.header-text{
     width: calc(100% - 275px);
     margin-bottom:60px;
     list-style: none;
-    max-width: 1300px;
     font-family:'Frankfurter';
     font-size:19px;
 }
@@ -306,8 +305,6 @@ header .heading-wrapper img.header-text{
     color:#f23208;
     
 }
-
-
 
 #item-list{
     float:right;
@@ -515,11 +512,10 @@ header .heading-wrapper img.header-text{
     clear: both;
 }
 
-@media(min-width: 1024px){
+@media(min-width: 768px){
     .filter-fixed #filters{
         position:fixed;
         top:30px;
-
     }
 }
 
@@ -531,6 +527,13 @@ header .heading-wrapper img.header-text{
 
     header .heading-wrapper{
         height:245px;
+    }
+
+    #intro{
+        width: calc(100% - 115px);
+        float:none;
+        margin: 0 auto 60px;
+        text-align:center;
     }
 
     #filters {
