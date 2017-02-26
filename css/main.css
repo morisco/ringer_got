@@ -161,9 +161,9 @@ h3{
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     font-family: 'Frankfurter';
-    font-size: 24px;
+    font-size: 20px;
     width:100%;
-    letter-spacing:0.025em;
+    letter-spacing:0.15em;
 }
 
 h3 .brand{
@@ -287,10 +287,10 @@ header .heading-wrapper img.header-text{
 #filters a{
     display:block;
     margin: 0 20px 20px;
-    font-size:36px;
+    font-size:30px;
     color:#f23208;
     font-family: 'Umbriago';
-    line-height:90%;
+    line-height:80%;
 }
 
 #filters a:hover{
@@ -351,7 +351,7 @@ header .heading-wrapper img.header-text{
 }
 
 .food-item .heading{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .food-item .heading:after{
@@ -384,7 +384,7 @@ header .heading-wrapper img.header-text{
 .food-item h3 span{
     //display:block;
     line-height:100%;
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 
 .food-item .content{
@@ -394,8 +394,16 @@ header .heading-wrapper img.header-text{
     overflow:hidden;
 }
 
+.food-item .content a{
+    text-decoration:underline;
+    color:black;
+}
+
 .food-item .content .writer{
     font-family: 'Frankfurter';
+    text-transform: uppercase;
+    letter-spacing:0.075em;
+    font-size:14px;
 }
 
 #item-list:after,
@@ -408,9 +416,9 @@ header .heading-wrapper img.header-text{
 
 .stats{
     font-family: 'Frankfurter';
-    font-size:16px;
+    font-size:14px;
     margin-top:5px;
-    letter-spacing:0.025em;
+    letter-spacing:0.075em;
     text-transform:uppercase;
 }
 
