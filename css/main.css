@@ -172,9 +172,11 @@ h3 .brand{
 
 header{
     height:435px;
-    background-image:url(../img/header-bg.png);
+    background-color:#e09f43;
+    background-image:url(../img/header-texture.png);
     background-repeat: repeat-x;
-    background-size: auto 100%;
+    background-size: auto 435px;
+    background-position: 0 65px;
     padding: 65px 16px 0;
     position:relative;
     display: block;
@@ -182,9 +184,8 @@ header{
     text-align:center;
 }
 
-header:before{
+header .top{
     display:block;
-    content:'';
     background:#000;
     height:65px;
     width:100%;
@@ -193,6 +194,19 @@ header:before{
     left:0;
     right:0;
     z-index: 0;
+}
+
+header .checker{
+    display:block;
+    background-image:url(../img/checker.png);
+    background-repeat:repeat-x;
+    background-size: auto 100%;
+    height: 55px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
 }
 
 header #logo{
@@ -549,6 +563,7 @@ header .heading-wrapper img.header-text{
     }
 
     #intro{
+        float:none;
         text-align:left;
         width:100%;
     }
