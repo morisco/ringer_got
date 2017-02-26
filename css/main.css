@@ -328,7 +328,7 @@ header .heading-wrapper img.header-text{
     content:'';
     width:100%;
     height:6px;
-    margin:35px 0;
+    margin:40px 0;
     background-image:url(../img/sqwiggle.png);
     background-repeat:repeat-x;
     background-size: auto 100%;
@@ -661,11 +661,11 @@ header .heading-wrapper img.header-text{
     }
 
     .food-item:after{
-        margin: 20px 0;
+        margin: 40px 0;
     }
 
     .food-item h3 span{
-        margin:0;
+        margin-bottom:5px;
         display:block;
     }
 
@@ -699,6 +699,6 @@ header .heading-wrapper img.header-text{
     }
 
     .stats{
-        font-size:18px;
+        font-size:14px;
     }
 }
