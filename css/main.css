@@ -549,7 +549,7 @@ header .heading-wrapper img.header-text{
 @media (max-width: 767px) {
     header{
         height:auto;
-        padding-bottom:95px;
+        padding-bottom:75px;
         padding-top:45px;
         background-size: auto auto;
     }
