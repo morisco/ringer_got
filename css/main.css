@@ -177,7 +177,7 @@ header{
     background-repeat: repeat-x;
     background-size: auto 370px;
     background-position: 0 0px;
-    padding: 65px 16px 0;
+    padding: 0px 16px 0;
     position:relative;
     display: block;
     overflow: hidden;
@@ -185,7 +185,7 @@ header{
 }
 
 header .top{
-    display:block;
+    display:none;
     //background:#000;
     height:50px;
     width:100%;
@@ -211,8 +211,8 @@ header .checker{
 
 header #logo{
     position:absolute;
-    top:7.5px;
-    left:20px;
+    top:5px;
+    left:-160px;
     height:35px;
     z-index:555;
     /*transform:translateX(-50%);
@@ -224,11 +224,39 @@ header #logo img{
     height: 100%;
 }
 
+header .social{
+    position:absolute;
+    top:10px;
+    right:-105px;
+    text-align:right;
+    z-index:5555;
+}
+
+header .social a{
+    display:inline-block;
+    height: 20px;
+    width: 20px;
+    text-indent:555555px;
+    background-position: 0 0;
+    background-repeat:no-repeat;
+}
+
+header .social a:hover{
+    background-position: 0 -20px;
+}
+
+header .social a.twitter{
+    background-image:url(../img/twitter.png);
+}
+
+header .social a.facebook{
+    background-image:url(../img/facebook.png);
+}
+
 header .heading-wrapper{
     position:relative;
     display:inline-block;
-    height:250px;
-    margin-top:-50px;
+    margin-top:15px;
     z-index:10;
 }
 
@@ -236,6 +264,10 @@ header .heading-wrapper:after{
     content:'';
     clear:both;
     display:table;
+}
+
+header .heading-wrapper .logo-wrapper{
+    height:250px;
 }
 
 header .heading-wrapper img{
@@ -262,9 +294,9 @@ header .heading-wrapper img.header-text{
 }
 
 #intro{
-    float:right;
-    width: calc(100% - 275px);
+    width:100%;
     margin-bottom:60px;
+    padding-left:20px;
     list-style: none;
     font-family:'Frankfurter';
     font-size:19px;
@@ -520,20 +552,52 @@ header .heading-wrapper img.header-text{
 }
 
 
+@media (max-width: 1100px) {
+    header .heading-wrapper{
+        position:static;
+    }
+    header #logo{
+        top:15px;
+        left: 10px;
+    }
+    header .social{
+        top:20px;
+        right:10px;
+    }
+}
+
 @media (max-width: 1023px) {
     header {
-        height:370px;
+        height:400px;
+        background-size: auto 100%;
     }
 
-    header .heading-wrapper{
+    header .logo-wrapper{
         height:245px;
     }
 
+    header #logo,
+    header .social{
+        display:block;
+        position:relative;
+        left: auto;
+        right:auto;
+        width:100px;
+        margin:0 auto;
+    }
+
+    header .social{
+        overflow:hidden;
+        width: 100%;
+        text-align:center;
+    }
+
     #intro{
-        width: calc(100% - 115px);
+        width: 100%;
         float:none;
         margin: 0 auto 60px;
-        text-align:center;
+        text-align:left;
+        padding-right:20px;
     }
 
     #filters {
@@ -550,7 +614,7 @@ header .heading-wrapper img.header-text{
     header{
         height:auto;
         padding-bottom:75px;
-        padding-top:45px;
+        padding-top:0;
         background-size: auto auto;
     }
 
@@ -564,6 +628,10 @@ header .heading-wrapper img.header-text{
         text-align:center;
         margin:10px auto 0;
         max-width:350px;
+    }
+
+    header .heading-wrapper .logo-wrapper{
+        height: auto;
     }
 
     header .heading-wrapper img{
@@ -586,6 +654,7 @@ header .heading-wrapper img.header-text{
         float:none;
         text-align:left;
         width:100%;
+        padding:0;
     }
 
     #filters{
@@ -628,6 +697,7 @@ header .heading-wrapper img.header-text{
         width:17px;
         height:10px;
         background-image:url(../img/toggle.png);
+        background-image:url(../img/arrow.svg);
     }
 
     #filters a.active,
