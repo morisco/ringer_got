@@ -1,10 +1,3 @@
-/*
- * COLORS
- * 
- */
-
-
-
 @font-face {
     font-family: 'Flounder';
     src: url('fonts/Flounder/Flounder-Medium.eot');
@@ -244,7 +237,7 @@ header .heading-wrapper img.header-text{
 
 #content{
     width:97.5%;
-    max-width:1200px;
+    max-width:1025px;
     margin:40px auto;
 }
 
@@ -255,8 +248,8 @@ header .heading-wrapper img.header-text{
 }
 
 #intro{
-    padding-left:275px;
-    width: 100%;
+    float:right;
+    width: calc(100% - 275px);
     margin-bottom:60px;
     list-style: none;
     max-width: 1300px;
@@ -264,10 +257,17 @@ header .heading-wrapper img.header-text{
     font-size:19px;
 }
 
+#intro:after{
+    clear:both;
+    display:table;
+    content:'';
+}
+
 #filters{
     width:275px;
     float:left;
     margin: 0;
+    clear:right;
 }
 
 #filters a{
@@ -372,8 +372,6 @@ header .heading-wrapper img.header-text{
     line-height:100%;
     margin-bottom:5px;
 }
-
-
 
 .food-item .content{
     display:block;
