@@ -532,6 +532,7 @@ header .heading-wrapper img.header-text{
         height:auto;
         padding-bottom:95px;
         padding-top:45px;
+        background-size: auto auto;
     }
 
     header:before{
