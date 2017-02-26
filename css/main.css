@@ -310,7 +310,7 @@ header .heading-wrapper img.header-text{
 
 
 #item-list{
-    float:left;
+    float:right;
     width:calc( 100% - 275px);
     list-style:none;;
     max-width:750px;
@@ -513,6 +513,14 @@ header .heading-wrapper img.header-text{
 
 .clearfix:after {
     clear: both;
+}
+
+@media(min-width: 1024px){
+    .filter-fixed #filters{
+        position:fixed;
+        top:30px;
+
+    }
 }
 
 

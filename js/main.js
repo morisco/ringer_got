@@ -10,6 +10,8 @@ var CardList = function() {
 
     this.cards = [];
 
+    this.filterOffsetPos = $('#filters').offset().top - 30;
+
     this.init = function() {
         this.getData();
         this.initEvents();
@@ -17,6 +19,20 @@ var CardList = function() {
 
     this.initEvents = function() {
         $('#filters a').on('click', this.filter);
+        $(window).on('scroll', cardlist.scrollWatch)
+    }
+
+    this.scrollWatch = function() {
+        var scrollPos = $(window).scrollTop(),
+            marginTop = scrollPos - cardlist.filterOffsetPos;
+        if(scrollPos > cardlist.filterOffsetPos){
+            // $('#filters').css('transform', 'translateY(' + marginTop + 'px)');
+
+            $('body').addClass('filter-fixed');
+        } else {
+            $('#filters').css('transform', 'translateY(0)');
+            $('body').removeClass('filter-fixed');
+        }
     }
 
     this.filter = function(){
@@ -26,11 +42,13 @@ var CardList = function() {
             return;
         } else if($(window).width() < 768) {
             $('body').removeClass('filters-open');
-            $('body,html').scrollTop($('#filters').offset().top - 30);
+            $('body,html').scrollTop(cardlist.filterOffsetPos);
         } else {
             $('body').removeClass('filters-open');
+            if($(window).scrollTop() > cardlist.filterOffsetPos){
+                $('body,html').scrollTop(cardlist.filterOffsetPos);
+            }
         }
-
 
         var filter = $(this).data('filter');    
         var cards = cardlist.cards.slice(0);
