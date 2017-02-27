@@ -7,8 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
-
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/grid.css">
@@ -43,10 +43,10 @@
                 <a href="javascript:void(0);" data-filter="All" class="active"><span>All Picks</span></a>
                 <a href="javascript:void(0);" data-filter="Fries"><span>Fries</span></a>
                 <a href="javascript:void(0);" data-filter="Burger"><span>Burgers</span></a>
-                <a href="javascript:void(0);" data-filter="Chicken"><span>Chicken</span></a>
+                <a href="javascript:void(0);" data-filter="Chicken"><span>Chic<span>k<span>en</span></a>
                 <a href="javascript:void(0);" data-filter="Taco"><span>Tacos</span></a>
                 <a href="javascript:void(0);" data-filter="Dessert"><span>Dessert</span></a>
-                <a href="javascript:void(0);" data-filter="Misc."><span>Misc</span></a>
+                <a href="javascript:void(0);" data-filter="Misc."><span>Misc.</span></a>
             </div>
             <section>
                 <ul id="item-list" class="grid"></ul>
@@ -70,19 +70,21 @@
                             <span class="writer">{{writer}}:</span> {{{desc}}} 
                             <div class="stats">
                                 <div class="stat">
-                                    <span class="title">Est. {{stats.debut}}</span>
+                                    <span class="title">Introduced: {{stats.debut}}</span>
                                 </div>
                                 <div class="stat">
-                                    <span class="title">${{stats.price}}</span>    
+                                    <span class="title">Price: ${{stats.price}}</span>    
                                 </div>
                                 <div class="stat">
-                                    <span class="title">{{stats.calories}} Cals {{stats.units}}</span>
+                                    <span class="title">Calories: {{stats.calories}} {{stats.units}}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
+
+
         </script>
 
         <script id="data" type="application/json">
@@ -170,10 +172,10 @@
             "desc"      : "Picture some of the best things in life: grandiose spiral staircases; chocolate-vanilla swirl ice cream cones; Slinkies descending slowly down steps. What do they all have in common? Their shape. Apply that same shape to salted, deep-fried potatoes, and of course you'd end up with perfection in physical form: Arby's curly fries.",
             "writer"    : "Megan Schuster",
             "stats"     : {
-                "calories"  : "620",
-                "price"     : "5.24",
-                "debut"     : "1985",
-                "units"     : "(Oreo, small)"
+                "calories"  : "400",
+                "price"     : "2.55",
+                "debut"     : "1988",
+                "units"     : "(Small)"
             }
         },
         {
@@ -185,10 +187,10 @@
             "desc"      : "Certain foods become more about who you eat them with than how they taste (or nutrition, of course). For me, the Dairy Queen Blizzard is about my wife, about warm summer nights, about sitting and chatting between delicious bites of soft serve swirled with treats (usually Oreo for me). It’s one of the best parts of summer.",
             "writer"    : "Jack McCluskey",
             "stats"     : {
-                "calories"  : "400",
-                "price"     : "2.55",
-                "debut"     : "1988",
-                "units"     : "(Small)"
+                "calories"  : "620",
+                "price"     : "5.24",
+                "debut"     : "1985",
+                "units"     : "(Oreo, small)"
             }
         },
         {
@@ -327,7 +329,7 @@
             "brand"     : "Auntie Anne's",
             "category"  : "Misc",
             "img"       : "img/items/17.jpg",
-            "desc"      : "Auntie Anne's services all tastes and cravings with perfectly proportioned bites of doughy deliciousness. Want sweet but messy? Try the cinnamon sugar. Want flavored but smelly? Buy the garlic parmesan. And for the simple pretzel connoisseur, the original that &ldquo;built an empire,&rdquo; the shop's menu says. Count me as a satisfied, snacking citizen.",
+            "desc"      : "Auntie Anne's services all tastes and cravings with perfectly proportioned bites of doughy deliciousness. Want sweet but messy? Try the cinnamon sugar. Want flavored but smelly? Buy the garlic parmesan. And for the simple pretzel connoisseur, the original &ldquo;built an empire,&rdquo; the shop's menu says. Count me as a satisfied, snacking citizen.",
             "writer"    : "Zach Kram",
             "stats"     : {
                 "calories"  : "340",
@@ -360,7 +362,7 @@
             "stats"     : {
                 "calories"  : "390",
                 "price"     : "0.99",
-                "debut"     : "mid 1950s"
+                "debut"     : "mid-1950s"
             }
         },
         {
@@ -459,7 +461,7 @@
             "stats"     : {
                 "calories"  : "526",
                 "price"     : "5.36",
-                "debut"     : "2004"
+                "debut"     : "ca. 1986"
             }
         },
         {
@@ -473,7 +475,7 @@
             "stats"     : {
                 "calories"  : "850",
                 "price"     : "8.35",
-                "debut"     : "1948"
+                "debut"     : "2004"
             }
         },
         {
@@ -501,7 +503,7 @@
             "stats"     : {
                 "calories"  : "147",
                 "price"     : "1.40",
-                "debut"     : "1962"
+                "debut"     : "1975"
             }
         },
         {
@@ -515,7 +517,7 @@
             "stats"     : {
                 "calories"  : "440",
                 "price"     : "2.80",
-                "debut"     : "2004"
+                "debut"     : "1986"
             }
         },
         {
@@ -529,7 +531,7 @@
             "stats"     : {
                 "calories"  : "280",
                 "price"     : "6.39",
-                "debut"     : "1986"
+                "debut"     : "1934"
             }
         },
         {
@@ -543,7 +545,7 @@
             "stats"     : {
                 "calories"  : "290",
                 "price"     : "3.57",
-                "debut"     : "1934"
+                "debut"     : "1972"
             }
         },
         {
@@ -557,7 +559,7 @@
             "stats"     : {
                 "calories"  : "350",
                 "price"     : "4.21",
-                "debut"     : "1972"
+                "debut"     : "1964"
             }
         },
         {
@@ -569,10 +571,9 @@
             "desc"      : "The only thing wrong with Raising Cane's is its limited regional availability. The tenders feature the perfect balance of seasoned, crunchy breading and tender, juicy chicken. Forget that &ldquo;signature blend of herbs and spices&rdquo;—these tenders put the Colonel's chicken to shame.",
             "writer"    : "Daniel Varghese",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "Unavailable",
                 "price"     : "1.40",
-                "debut"     : "1964",
-                "units"     : "Unavailable"
+                "debut"     : "1996"
             }
         },
         {
@@ -586,7 +587,7 @@
             "stats"     : {
                 "calories"  : "480",
                 "price"     : "2.81",
-                "debut"     : "1996"
+                "debut"     : "1948"
             }
         },
         {
@@ -600,7 +601,7 @@
             "stats"     : {
                 "calories"  : "510",
                 "price"     : "4.34",
-                "debut"     : "1948"
+                "debut"     : "2002"
             }
         },
         {
@@ -628,7 +629,7 @@
             "stats"     : {
                 "calories"  : "140",
                 "price"     : "2.55",
-                "debut"     : "x",
+                "debut"     : "1976",
                 "units"     : "(Medium)"
             }
         },
@@ -727,7 +728,7 @@
             "stats"     : {
                 "calories"  : "120",
                 "price"     : "2.29",
-                "debut"     : "x",
+                "debut"     : "unknown",
                 "units"     : "(Regular)"
             }
         },
@@ -771,7 +772,7 @@
             "stats"     : {
                 "calories"  : "510",
                 "price"     : "4.47",
-                "debut"     : "x"
+                "debut"     : "Unknown"
             }
         },
         {
@@ -806,6 +807,8 @@
     ]
 }
         </script>
+      
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -823,5 +826,6 @@
             ga('create', 'UA-92628558-1', 'auto');
             ga('send', 'pageview');
         </script>
+
     </body>
 </html>

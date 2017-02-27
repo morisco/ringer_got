@@ -168,6 +168,7 @@ h3{
 
 h3 .brand{
     color:#f23208;
+
 }
 
 header{
@@ -212,7 +213,7 @@ header .checker{
 header #logo{
     position:absolute;
     top:5px;
-    right:calc(20% + 25px);
+    right:calc(20% + 8px);
 
     height:35px;
     z-index:555;
@@ -435,6 +436,11 @@ header .heading-wrapper img.header-text{
     margin-bottom:10px;
 }
 
+h3 .brand{
+    display:inline-block;
+    
+}
+
 .food-item .content{
     display:block;
     float:left;
@@ -465,7 +471,7 @@ header .heading-wrapper img.header-text{
 .stats{
     font-family: 'Frankfurter';
     font-size:14px;
-    margin-top:5px;
+    margin-top:10px;
     letter-spacing:0.075em;
     text-transform:uppercase;
 }
