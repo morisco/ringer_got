@@ -31,8 +31,6 @@
 }
 
 
-
-
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -357,6 +355,21 @@ header .heading-wrapper img.header-text{
     -ms-transform:rotate(-90deg);
 }
 
+.disclaimer{
+    display:none;
+    font-family: 'Frankfurter';
+    text-transform: uppercase;
+    letter-spacing:0.075em;
+    font-size:14px;
+    width:calc(100% - 395px);
+    float:right;
+    clear:both;
+}
+
+.loaded .disclaimer{
+    display:block;
+}
+
 #item-list{
     float:right;
     width:calc( 100% - 275px);
@@ -594,6 +607,10 @@ h3 .brand{
         padding-right:20px;
     }
 
+    .disclaimer{
+        width:calc(100% - 325px);
+    }
+
     #filters {
         width: 200px;
     }
@@ -680,6 +697,10 @@ h3 .brand{
         width:100%;
         margin-left:0px;
         float:none;
+    }
+
+    .disclaimer{
+        width:100%;
     }
 
     .food-item .wrapper{

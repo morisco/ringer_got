@@ -25,9 +25,7 @@ var CardList = function() {
     this.scrollWatch = function() {
         var scrollPos = $(window).scrollTop(),
             marginTop = scrollPos - cardlist.filterOffsetPos;
-        if(scrollPos > cardlist.filterOffsetPos){
-            // $('#filters').css('transform', 'translateY(' + marginTop + 'px)');
-
+        if(scrollPos > cardlist.filterOffsetPos && $(window).width() > 768){
             $('body').addClass('filter-fixed');
         } else {
             $('#filters').css('transform', 'translateY(0)');
@@ -36,7 +34,6 @@ var CardList = function() {
     }
 
     this.filter = function(){
-
         if($(window).width() < 768 && !$('body').hasClass('filters-open')){
             $('body').addClass('filters-open');
             return;
@@ -74,6 +71,7 @@ var CardList = function() {
             this.displayOrder = index + 1;
             $('#item-list').append(cardlist.template(this));
         });
+        $('body').addClass('loaded');
     }
 
     this.init();
