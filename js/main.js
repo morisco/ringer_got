@@ -20,6 +20,12 @@ var CardList = function() {
     this.initEvents = function() {
         $('#filters a').on('click', this.filter);
         $(window).on('scroll', cardlist.scrollWatch)
+        $(window).on('resize', function(){
+            clearTimeout(cardlist.sizeTimeout);
+            cardlist.sizeTimeout = setTimeout(function(){
+                cardlist.filterOffsetPos = $('#filters').offset().top - 30;
+            },250);
+        });
     }
 
     this.scrollWatch = function() {
