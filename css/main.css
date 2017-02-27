@@ -212,7 +212,8 @@ header .checker{
 header #logo{
     position:absolute;
     top:5px;
-    left:-160px;
+    right:calc(20% + 25px);
+
     height:35px;
     z-index:555;
     /*transform:translateX(-50%);
@@ -225,11 +226,12 @@ header #logo img{
 }
 
 header .social{
-    position:absolute;
-    top:10px;
-    right:-105px;
-    text-align:right;
-    z-index:5555;
+    display:block;
+    position:relative;
+    left: auto;
+    right:auto;
+    width:100px;
+    margin:15px auto 0;
 }
 
 header .social a{
@@ -568,24 +570,9 @@ header .heading-wrapper img.header-text{
     }
 }
 
-
-@media (max-width: 1100px) {
-    header .heading-wrapper{
-        position:static;
-    }
-    header #logo{
-        top:15px;
-        left: 10px;
-    }
-    header .social{
-        top:20px;
-        right:10px;
-    }
-}
-
 @media (max-width: 1023px) {
     header {
-        height:400px;
+        height:360px;
         background-size: auto 100%;
     }
 
@@ -593,21 +580,6 @@ header .heading-wrapper img.header-text{
         height:245px;
     }
 
-    header #logo,
-    header .social{
-        display:block;
-        position:relative;
-        left: auto;
-        right:auto;
-        width:100px;
-        margin:0 auto;
-    }
-
-    header .social{
-        overflow:hidden;
-        width: 100%;
-        text-align:center;
-    }
 
     #intro{
         width: 100%;
@@ -654,8 +626,20 @@ header .heading-wrapper img.header-text{
     header .heading-wrapper img{
         display:inline-block;
         width:80%;
-        float:none;
-        
+        float:none;   
+    }
+
+    header #logo{
+        display:block;
+        position:relative;
+        width:125px;
+        margin: 0 auto;
+        right:auto;
+        top:auto;
+    }
+
+    header #logo img{
+        height:auto;
     }
 
     header .heading-wrapper img.header-text{
