@@ -37,7 +37,7 @@
         </header>
         <div id="content">
             <section id="intro">
-                As part of Last Meal on Earth: The End of Eating, our weeklong package dedicated to food, we wanted to establish, once and for all, the absolute best fast food items in America. The _Ringer_ staff participated in a two-step vote—first establishing more than 100 nominees, then holding a general election. (Condiments were disqualified from contention.) Below you'll find our final results. We're prepared for your complaints.
+                As part of Last Meal on Earth: The End of Eating, our weeklong package dedicated to food, we wanted to establish, once and for all, the absolute best fast food items in America. The 'Ringer' staff participated in a two-step vote—first establishing more than 100 nominees, then holding a general election. (Condiments were disqualified from contention.) Below you'll find our final results. We're prepared for your complaints.
             </section>
             <div id="filters">
                 <a href="javascript:void(0);" data-filter="All" class="active"><span>All Picks</span></a>
@@ -46,7 +46,7 @@
                 <a href="javascript:void(0);" data-filter="Chicken"><span>Chicken</span></a>
                 <a href="javascript:void(0);" data-filter="Taco"><span>Tacos</span></a>
                 <a href="javascript:void(0);" data-filter="Dessert"><span>Dessert</span></a>
-                <a href="javascript:void(0);" data-filter="Misc"><span>Misc</span></a>
+                <a href="javascript:void(0);" data-filter="Misc."><span>Misc</span></a>
             </div>
             <section>
                 <ul id="item-list" class="grid"></ul>
@@ -70,14 +70,13 @@
                             <span class="writer">{{writer}}:</span> {{{desc}}} 
                             <div class="stats">
                                 <div class="stat">
+                                    <span class="title">Est. {{stats.debut}}</span>
+                                </div>
+                                <div class="stat">
                                     <span class="title">${{stats.price}}</span>    
                                 </div>
                                 <div class="stat">
-                                    <span class="title">Calories: {{stats.calories}}</span>
-                                    
-                                </div>
-                                <div class="stat">
-                                    <span class="title">Introduced: {{stats.debut}}</span>
+                                    <span class="title">{{stats.calories}} Cals {{stats.units}}</span>
                                 </div>
                             </div>
                         </div>
@@ -96,24 +95,24 @@
             "brand"     : "Chick-fil-A",
             "category"  : "Fries",
             "img"       : "img/items/1.jpg",
-            "desc"      : "You know the scene in <a href='https://www.youtube.com/watch?v=5nWqAusDAaw&feature=youtu.be'>Scott Pilgrim vs. The World</a> where Scott tells Ramona that, were he to have his way, he’d eat garlic bread forever without ever having to stop? I could probably do that with Chick-fil-A waffle fries. Except then I'd get fat. Fries make you fat.",
+            "desc"      : "You know the scene in <a href='https://www.youtube.com/watch?v=5nWqAusDAaw&feature=youtu.be'><em>Scott Pilgrim vs. the World</em></a> where Scott tells Ramona that, were he to have his way, he’d eat garlic bread forever without ever having to stop? I could probably do that with Chick-fil-A waffle fries. Except then I'd get fat. Fries make you fat.",
             "writer"    : "Micah Peters",
             "stats"     : {
-                "calories"  : "750",
+                "calories"  : "400",
                 "price"     : "2.11",
                 "debut"     : "1985"
             }
         },
         {
             "id"        : 2,
-            "title"     : "Double Double",
+            "title"     : "Double-Double",
             "brand"     : "In-N-Out",
             "category"  : "Burger",
             "img"       : "img/items/2.jpg",
             "desc"      : "There's one small change that can take the Double-Double from &ldquo;best burger ever&rdquo; to &ldquo;literal perfection between two buns.&rdquo; Ask for grilled onions—instead of the sliced onion—the next time you order one. It gets you halfway to Animal Style for free.",
             "writer"    : "Riley McAtee",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "670",
                 "price"     : "4.04",
                 "debut"     : "1963"
             }
@@ -124,12 +123,13 @@
             "brand"     : "McDonald's",
             "category"  : "Fries",
             "img"       : "img/items/3.jpg",
-            "desc"      : "There is a semi-fancy bar that my friends and I like to go to, and we always order a big bowl of their fries because they taste like McDonald’s fries. No matter how fancy the restaurant, &ldquo;Tastes like McDonald’s fries&rdquo; is the highest compliment you can give a French fry. Also, no other fast-food item has a Kanye West poem written about it. &ldquo;I don't trust no food that smells that good man,&rdquo; he says of the fries in &ldquo;McDonald’s Man.&rdquo; There is no competition; this is the most foolish thing Kanye West has ever said.",
+            "desc"      : "There is a semi-fancy bar that my friends and I like to go to, and we always order a big bowl of their fries because they taste like McDonald’s fries. No matter how fancy the restaurant, &ldquo;Tastes like McDonald’s fries&rdquo; is the highest compliment you can give a French fry. Also, no other fast-food item has a Kanye West poem written about it. &ldquo;I don't trust no food that smells that good, man,&rdquo; he says of the fries in &ldquo;McDonald’s Man.&rdquo; There is no competition; this is the most foolish thing Kanye West has ever said.",
             "writer"    : "Lindsay Zoladz",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "340",
                 "price"     : "2.29",
-                "debut"     : "1949"
+                "debut"     : "1949",
+                "units"     : "(Medium)"
             }
         },
         {
@@ -138,12 +138,13 @@
             "brand"     : "Popeyes",
             "category"  : "Chicken",
             "img"       : "img/items/4.jpg",
-            "desc"      : "The only bad thing about Beyoncé is that she has <a href='http://uproxx.com/smokingsection/7-things-you-didnt-know-about-destinys-child/7/''>a lifetime of free chicken at Popeyes</a> but, being a vegan, can't take advantage of it. Imagine having unfettered access to that succulent meat, and those perfectly crisp and savory flaps of fried skin, every day. OK—so some of us are already practically living that life. But imagine living it for free.",
+            "desc"      : "The only bad thing about Beyoncé is that she has <a href='http://uproxx.com/smokingsection/7-things-you-didnt-know-about-destinys-child/7/''>a lifetime of free chicken at Popeyes</a> but, being a vegan, can't take advantage of it. Imagine having unfettered access to that succulent meat and those perfectly crisp and savory flaps of fried skin every day. OK—so some of us are already practically living that life. But imagine living it for free.",
             "writer"    : "K. Austin Collins",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "440",
                 "price"     : "6.77",
-                "debut"     : "1972"
+                "debut"     : "1972",
+                "units"     : "(Mild Chicken Breast)"
             }
         },
         {
@@ -155,7 +156,7 @@
             "desc"      : "The Chick-fil-A chicken sandwich is transcendent. The perfect combination of a generous portion of breaded chicken, soft bun, and tart pickles, it's enhanced by only one thing: Polynesian sauce.",
             "writer"    : "Hannah Giorgios",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "440",
                 "price"     : "3.90",
                 "debut"     : "1964"
             }
@@ -169,9 +170,10 @@
             "desc"      : "Picture some of the best things in life: grandiose spiral staircases; chocolate-vanilla swirl ice cream cones; Slinkies descending slowly down steps. What do they all have in common? Their shape. Apply that same shape to salted, deep-fried potatoes, and of course you'd end up with perfection in physical form: Arby's curly fries.",
             "writer"    : "Megan Schuster",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "620",
                 "price"     : "5.24",
-                "debut"     : "1985"
+                "debut"     : "1985",
+                "units"     : "(Oreo, small)"
             }
         },
         {
@@ -183,9 +185,10 @@
             "desc"      : "Certain foods become more about who you eat them with than how they taste (or nutrition, of course). For me, the Dairy Queen Blizzard is about my wife, about warm summer nights, about sitting and chatting between delicious bites of soft serve swirled with treats (usually Oreo for me). It’s one of the best parts of summer.",
             "writer"    : "Jack McCluskey",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "400",
                 "price"     : "2.55",
-                "debut"     : "1988"
+                "debut"     : "1988",
+                "units"     : "(Small)"
             }
         },
         {
@@ -197,9 +200,10 @@
             "desc"      : "To come to terms with your existence in a capitalist society is to accept that nothing is good, fast, and cheap. Well, almost nothing. You can have two, but not all three—unless you buy a Frosty.",
             "writer"    : "Ryan O'Hanlon",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "393",
                 "price"     : "2.55",
-                "debut"     : "1969"
+                "debut"     : "1969",
+                "units"     : "(Medium)"
             }
         },
         {
@@ -211,9 +215,10 @@
             "desc"      : "If the DQ Blizzard is the winter storm warning of frozen desserts, the McDonald's McFlurry is made of the gently falling flakes that turn your world into a beautiful snow globe. There's no better end to a McD's feast than M&M's or Oreos cascading through creamy soft serve (or at least through the upper third of the cup ... it's not a perfect system, OK?). Plus, the spoon is a marvel of modern utensil technology.",
             "writer"    : "Rubie Edmondson",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "520",
                 "price"     : "3.06",
-                "debut"     : "1997"
+                "debut"     : "1997",
+                "units"     : "(Oreo)"
             }
         },
         {
@@ -225,22 +230,22 @@
             "desc"      : "Bacon cheeseburgers are great because beef is great, cheese is great, and bacon is great, and these things are all great together. But most fast-food hamburgers taste vaguely savory, seem to be made of ingredients that are only food-like, and have the texture of sludge once they're in your mouth. The burger at Five Guys tastes like an actual bacon cheeseburger made with beef and bacon, and that's why it's good. This isn't complicated.",
             "writer"    : "Chris Almeida",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "920",
                 "price"     : "11.12",
-                "debut"     : "likely 1986"
+                "debut"     : "ca. 1986"
             }
         },
         {
             "id"        : 11,
             "title"     : "Animal Style Burger",
-            "brand"     : "In N Out",
+            "brand"     : "In-N-Out",
             "category"  : "Burger",
             "img"       : "img/items/11.jpg",
             "desc"      : "What does Southern California taste like? A bunch of things: salty air at the beach. Smog. But mostly a burger, griddled, topped with something like Thousand Island dressing and tiny grilled onions. Best eaten in the car.",
             "writer"    : "Sam Schube",
             "stats"     : {
-                "calories"  : "",
-                "price"     : "x",
+                "calories"  : "480",
+                "price"     : "2.45",
                 "debut"     : "1961"
             }
         },
@@ -253,7 +258,7 @@
             "desc"      : "The Chick-fil-A spicy chicken sandwich is iconic, and it isn’t even a decade old. Believe it or not, the spicy option was first introduced in 2010. It took more than 50 years to arrive, but there’s joy in knowing they got it right. Strip away the promotional gimmicks from its competitors and you’ll find that Chick-fil-A has the best, spiciest chicken sandwich in all of fast food.",
             "writer"    : "Danny Chau",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "570",
                 "price"     : "4.21",
                 "debut"     : "2010"
             }
@@ -267,9 +272,10 @@
             "desc"      : "I grew up in Atlanta, Georgia, where the mark of a good party was a Chick-fil-A nugget platter on the coffee table. The humble Chick-fil-A nugget is the best portable chicken product on the market, and it is still a reliable indicator of whether a social gathering is worth your time. As Martha Stewart once said, “No nuggets, no party.” Believe her.",
             "writer"    : "Amanda Dobbins",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "270",
                 "price"     : "3.90",
-                "debut"     : "1982"
+                "debut"     : "1982",
+                "units"     : "(8-piece)"
             }
         },
         {
@@ -278,12 +284,13 @@
             "brand"     : "McDonald's",
             "category"  : "Chicken",
             "img"       : "img/items/14.jpg",
-            "desc"      : "There are only a few things in life that are certain: death, taxes, an episode of Law & Order being on right now, and Chicken McNuggets being delicious. Whether it's the one shaped like a boot, or the oval McNugget that has the purple, rubber band–like vein, they are the perfect food. I'd get into how incredible the breading on a McNugget is, but words can't do it justice. (P.S.: Do NOT go to YouTube and watch a video of how they are made!)",
+            "desc"      : "There are only a few things in life that are certain: death, taxes, an episode of <em>Law & Order</em> being on right now, and Chicken McNuggets being delicious. Whether it's the one shaped like a boot, or the oval McNugget that has the purple, rubber-band–like vein, they are the perfect food. I'd get into how incredible the breading on a McNugget is, but words can't do it justice. (P.S.: Do NOT go to YouTube and watch a video of how they are made!)",
             "writer"    : "Jim Cunningham",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "287",
                 "price"     : "5.75",
-                "debut"     : "1981"
+                "debut"     : "1981",
+                "units"     : "(6-piece)"
             }
         },
         {
@@ -295,7 +302,7 @@
             "desc"      : "An effective fast-food experience hinges on texture. Mouthfeel. Most fast food is rough and salty or mushy and gelatinous. But rarely the twain shall meet in one package. Except, of course, for the double-tortilla, hard-soft, cheesy, beefy, sturdy, peerless Cheesy Gordita Crunch, Taco Bell's perennial off-menu, on-point secret weapon.",
             "writer"    : "Sean Fennessey",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "490",
                 "price"     : "3.44",
                 "debut"     : "2001"
             }
@@ -309,7 +316,7 @@
             "desc"      : "What does it take to really make a relationship work? Love, of course. Compassion. Trust. Sesame seed buns. Kindness. Two hamburgers. Understanding. A special sauce. Pickles. Onions. Cheese. Lettuce. Big Macs forever, man.",
             "writer"    : "Haley O'Shaughnessy",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "563",
                 "price"     : "5.11",
                 "debut"     : "1968"
             }
@@ -320,38 +327,38 @@
             "brand"     : "Auntie Anne's",
             "category"  : "Misc",
             "img"       : "img/items/17.jpg",
-            "desc"      : "Auntie Anne's services all tastes and cravings with perfectly proportioned bites of doughy deliciousness. Want sweet but messy? Try the cinnamon sugar. Want flavored but smelly? Buy the garlic parmesan. And for the simple pretzel connoisseur, the original &ldquo;built an empire,&rdquo; the shop's menu says. Count me as a satisfied, snacking citizen.",
+            "desc"      : "Auntie Anne's services all tastes and cravings with perfectly proportioned bites of doughy deliciousness. Want sweet but messy? Try the cinnamon sugar. Want flavored but smelly? Buy the garlic parmesan. And for the simple pretzel connoisseur, the original that &ldquo;built an empire,&rdquo; the shop's menu says. Count me as a satisfied, snacking citizen.",
             "writer"    : "Zach Kram",
             "stats"     : {
-                "calories"  : "",
-                "price"     : "x",
+                "calories"  : "340",
+                "price"     : "4.05",
                 "debut"     : "1988"
             }
         },
         {
             "id"        : 18,
-            "title"     : "Shake Shack",
-            "brand"     : "Shack Burger",
+            "title"     : "Shack Burger",
+            "brand"     : "ShakeShack",
             "category"  : "Burger",
             "img"       : "img/items/18.jpg",
             "desc"      : "The Shake Shack ShackBurger is perfect. It’s simple, yet high quality. From the bun to the sauce, you can’t eat one without feeling satisfied. For those that say it’s not fast food, it started out as a food cart. That’s about as fast and basic as you can make food.",
             "writer"    : "Caitlin Blosser",
             "stats"     : {
-                "calories"  : "",
-                "price"     : "x",
+                "calories"  : "550",
+                "price"     : "5.55",
                 "debut"     : "2004"
             }
         },
         {
             "id"        : 19,
-            "title"     : "2 Tacos for $0.99",
+            "title"     : "Two Tacos for 99¢",
             "brand"     : "Jack in the Box",
             "category"  : "Taco",
             "img"       : "img/items/19.jpg",
             "desc"      : "Where to start? How about that no other fast-food item is known for having its price in the title—because it's THAT good. You could feed yourself for a week for like $10 with these tacos. Next there's the quantity, which happens to be TWO. I don't need to sell you on the number two—the gods Marvin Gaye and Kim Weston have done that for us. Lastly, and this is key, we're talking about tacos. Find someone who doesn't like a greasy, mysterious, delicious taco, and you've found yourself Beelzebub incarnate.",
             "writer"    : "Jason Gallagher",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "390",
                 "price"     : "0.99",
                 "debut"     : "mid 1950s"
             }
@@ -365,7 +372,7 @@
             "desc"      : "Wendy’s spicy chicken sandwich is the Larry Fitzgerald of fast-food items: It’s no longer the newest or most exciting option out there, but it’s a surefire Hall of Famer. The meat is thick and juicy, it’s perfectly seasoned,  and it consistently produces— make no mistake, it can still single-handedly win you a meal.",
             "writer"    : "Ben Glicksman",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "510",
                 "price"     : "6.00",
                 "debut"     : "1996"
             }
@@ -379,9 +386,10 @@
             "desc"      : "Popeyes chicken tenders are an extremely satisfying meal, and not just because their airy, crispy coating packs such a perfect crunch. Their long, thin shape is precisely engineered for optimal dipping into those tiny tubs of Bayou Buffalo or Blackened Ranch, making for a spicy and delicious synergy between finger food and condiment.",
             "writer"    : "Katie Baker",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "147",
                 "price"     : "7.41",
-                "debut"     : "likely 1972"
+                "debut"     : "ca. 1972",
+                "units"     : "(1 piece)"
             }
         },
         {
@@ -393,7 +401,7 @@
             "desc"      : "The Popeyes biscuit isn't the best part of a Popeyes meal, but it is absolutely essential—the ideal buttery companion for your juicy, spicy chicken; the delicious spoon for your mashed potatoes and gravy. Don't let the way the biscuit is haphazardly tossed in the bottom of your box fool you: It is an integral part of the best meal fast food has to offer.",
             "writer"    : "Rodger Sherman",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "260",
                 "price"     : "5.11",
                 "debut"     : "1983"
             }
@@ -407,7 +415,7 @@
             "desc"      : "Everything at Chipotle is pretty good and the soft tacos are good because it's Chipotle.",
             "writer"    : "Ryan Wright",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "415",
                 "price"     : "8.32",
                 "debut"     : "1993"
             }
@@ -415,15 +423,15 @@
         {
             "id"        : 24,
             "title"     : "Animal Style Fries",
-            "brand"     : "In N Out",
+            "brand"     : "In-N-Out",
             "category"  : "Fries",
             "img"       : "img/items/24.jpg",
             "desc"      : "In-N-Out's fries are just fine. Nothing special. But order them &ldquo;Animal Style&rdquo; from the not-so-secret secret menu and get them doused in sauce, drenched in cheese, and sprinkled with caramelized onions. Then grab a fork or get your hands dirty. The ordinary is now decadent, and it's a delicious mess.",
             "writer"    : "Jordan Conn",
             "stats"     : {
-                "calories"  : "",
-                "price"     : "x",
-                "debut"     : "maybe 1961?"
+                "calories"  : "750",
+                "price"     : "3.40",
+                "debut"     : "ca. 1961"
             }
         },
         {
@@ -435,7 +443,7 @@
             "desc"      : "Taco Bell crunchy tacos are perfect drunk food and hangover food: The crispy shell distracts from what some say is gooey meat (I say delicious!) for maximum late-night consumption, and there's some sort of magic preservative in them that keeps the shell just crunchy enough for day-after eating. Separate, the ingredients are nothing: tasteless iceberg lettuce, mediocre shredded cheese, questionable meat, and a fried tortilla. Together, they are perfect.",
             "writer"    : "Molly McHugh",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "170",
                 "price"     : "1.52",
                 "debut"     : "1962"
             }
@@ -449,37 +457,37 @@
             "desc"      : "Five Guys fries are the only fast-food item that give you the smug, farm-to-table satisfaction of knowing exactly where your (technical) vegetables are sourced. They are generously portioned; the proper serving size is &ldquo;one full paper bag.&rdquo; And thanks to that highly addictive seasoning, they are delicious.",
             "writer"    : "Alison Herman",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "526",
                 "price"     : "5.36",
                 "debut"     : "2004"
             }
         },
         {
             "id"        : 27,
-            "title"     : "Double Shack",
-            "brand"     : "Shake Shack",
+            "title"     : "Double ShackBurger",
+            "brand"     : "ShakeShack",
             "category"  : "Misc",
             "img"       : "img/items/27.jpg",
             "desc"      : "Comparing the Double ShackBurger to In-N-Out's Double-Double is like comparing a Tesla Model S to a Honda Civic. While the Civic is an affordable and reliable car, the Model S is more elegant and refined. It's double the price—and double the quality.",
             "writer"    : "Sean Yoo",
             "stats"     : {
-                "calories"  : "",
-                "price"     : "x",
+                "calories"  : "850",
+                "price"     : "8.35",
                 "debut"     : "1948"
             }
         },
         {
             "id"        : 28,
-            "title"     : "Apple Pie",
+            "title"     : "Baked Apple Pie",
             "brand"     : "McDonald's",
             "category"  : "Dessert",
             "img"       : "img/items/28.jpg",
-            "desc"      : "I have written at length about my <a href='https://www.fatsecret.com/calories-nutrition/whataburger/honey-bbq-chicken-strip-sandwich'>intense admiration for the McDonald's apple pie</a>, a.k.a. mankind's most perfect creation, in the past. To sum it up: (1) sweet, (2) not too sweet, (3) filling, (4) not too filling, (5) SOLD IN FREAKING PAIRS. There are many great fast foods, but the Golden Arches' twin dessert is the greatest of them all.",
+            "desc"      : "I have written at length about my <a href='https://theringer.com/mcdonalds-apple-pie-perfect-dessert-a47d2d70f812#.fg21nkwva'>intense admiration for the McDonald's apple pie</a>, a.k.a. mankind's most perfect creation, in the past. To sum it up: (1) sweet, (2) not too sweet, (3) filling, (4) not too filling, (5) SOLD IN FREAKING PAIRS. There are many great fast foods, but the Golden Arches' twin dessert is the greatest of them all.",
             "writer"    : "Claire McNear",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "248",
                 "price"     : "1.27",
-                "debut"     : "x"
+                "debut"     : "1948"
             }
         },
         {
@@ -491,7 +499,7 @@
             "desc"      : "You know how in dystopian sci-fi, everyone eats bland Food Units in the future? The McD's hash browns are like that: a perfectly crispy, offensively salty block of pure beige wonder.",
             "writer"    : "Sam Schube",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "147",
                 "price"     : "1.40",
                 "debut"     : "1962"
             }
@@ -505,7 +513,7 @@
             "desc"      : "There are no greater biscuits. It’s flaky buttermilk goodness baked to a golden brown. It’s crunchy enough to distinguish itself from a dinner roll without being a wheat-based brick. It’s salty enough to be perfectly accented by a cup of sugary lemonade, maximizing caloric euphoria. The day this becomes an all-day breakfast item is the day I reevaluate my life insurance.",
             "writer"    : "Victor Luckerson",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "440",
                 "price"     : "2.80",
                 "debut"     : "2004"
             }
@@ -513,13 +521,13 @@
         {
             "id"        : 31,
             "title"     : "Steakburger",
-            "brand"     : "Steak N Shake",
+            "brand"     : "Steak 'N Shake",
             "category"  : "Burger",
             "img"       : "img/items/31.jpg",
             "desc"      : "The Steakburger is the Double-Double without all the hype. It's a great blend of taste and convenience, and it's exactly what you should be looking for when it comes to a fast-food hamburger.",
             "writer"    : "Jonathan Tjarks",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "280",
                 "price"     : "6.39",
                 "debut"     : "1986"
             }
@@ -533,7 +541,7 @@
             "desc"      : "The McDonald’s Egg McMuffin hides a quiet sophistication; its mass-market prominence as a staple of an enormous conglomerate belies the fusion of three countries’ cultural and culinary heritages, combining a fluffy, buttery English muffin, a crispy slice of Canadian bacon, and a melty, decadent slice of American cheese. And also an egg. It’s delicious whether you’re in London, Vancouver, or New York.",
             "writer"    : "Danny Kelly",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "290",
                 "price"     : "3.57",
                 "debut"     : "1934"
             }
@@ -547,7 +555,7 @@
             "desc"      : "If you don't like the roast beef sandwich at Arby's, chances are you haven't tried it. With the perfect grease-to-beef ratio at 90-10, your tastebuds will thank you.",
             "writer"    : "Matt Gothard",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "350",
                 "price"     : "4.21",
                 "debut"     : "1972"
             }
@@ -562,20 +570,21 @@
             "writer"    : "Daniel Varghese",
             "stats"     : {
                 "calories"  : "",
-                "price"     : "x",
-                "debut"     : "1964"
+                "price"     : "1.40",
+                "debut"     : "1964",
+                "units"     : "Unavailable"
             }
         },
         {
             "id"        : 35,
             "title"     : "Cheeseburger",
-            "brand"     : "In N Out",
+            "brand"     : "In-N-Out",
             "category"  : "Burger",
             "img"       : "img/items/35.jpg",
-            "desc"      : "I once had to drive from Fort Collins, Colorado, to Santa Cruz, California—a journey of roughly 20 hours—alone in a car with no radio. For the journey, I bought two CDs—Yoshimi Battles the Pink Robots by The Flaming Lips and Original Pirate Material by the Streets—and four tall cans of Rockstar Energy drink. Somewhere west of the Great Salt Lake, I pulled over at a rest stop that looked like it was the site of roughly 50 grisly sex-murders. That was the first time I stopped (not counting for gas). The second time was at the In-N-Out in Watsonville, California, just an hour from home. That’s how good In-N-Out is.",
+            "desc"      : "I once had to drive from Fort Collins, Colorado, to Santa Cruz, California—a journey of roughly 20 hours—alone in a car with no radio. For the journey, I bought two CDs—<em>Yoshimi Battles the Pink Robots</em> by the Flaming Lips and <em>Original Pirate Material<em> by the Streets—and four tall cans of Rockstar Energy drink. Somewhere west of the Great Salt Lake, I pulled over at a rest stop that looked like it was the site of roughly 50 grisly sex-murders. That was the first time I stopped (not counting for gas). The second time was at the In-N-Out in Watsonville, California, just an hour from home. That’s how good In-N-Out is.",
             "writer"    : "Jason Concepcion",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "480",
                 "price"     : "2.81",
                 "debut"     : "1996"
             }
@@ -589,7 +598,7 @@
             "desc"      : "Go to the Google search bar and start typing &ldquo;What is the sauce in the&rdquo;—then let it hang. The very first suggestion is &ldquo;Taco Bell quesadilla,&rdquo; a cheesy creation with a tangy yet spicy sauce. Being the top result on a Google search is an anonymous consensus: This quesadilla is special.",
             "writer"    : "Haley O'Shaughnessy",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "510",
                 "price"     : "4.34",
                 "debut"     : "1948"
             }
@@ -603,7 +612,7 @@
             "desc"      : "It’s the James Harden of fast-food sandwiches. The dynamic blend of flavors and textures makes for a sublime experience. It's so damn good the <a href='https://www.fatsecret.com/calories-nutrition/whataburger/honey-bbq-chicken-strip-sandwich'>nutrition label</a> doesn't matter, much like Harden's defense.",
             "writer"    : "Kevin O'Connor",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "960",
                 "price"     : "6.31",
                 "debut"     : "2001"
             }
@@ -617,9 +626,10 @@
             "desc"      : "(1) Limeade is the greatest beverage, if not engineering achievement of any kind, in human history. (2) Sonic cherry limeade is not limeade as such, but with the flirtation of sweet-and-sour between cherry and lime juice, and a hint of carbonation, it's nearly as piquant as the genuine article. (3) Your teeth and pancreas might not thank you for mainlining Sonic cherry limeade, but we think with our brains and feel with our hearts, and our teeth and pancreases can shut the hell up.",
             "writer"    : "Michael Baumann",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "140",
                 "price"     : "2.55",
-                "debut"     : "x"
+                "debut"     : "x",
+                "units"     : "(Medium)"
             }
         },
         {
@@ -631,9 +641,9 @@
             "desc"      : "The soft cookies at Subway are often overlooked, presumably because the stench of the bread overwhelms, but they are consistently delicious with just the right density and temperature.",
             "writer"    : "Juliet Litman",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "220",
                 "price"     : "0.83",
-                "debut"     : "x"
+                "debut"     : "ca. 1991"
             }
         },
         {
@@ -645,7 +655,7 @@
             "desc"      : "One of the first programs I ever watched on an HDTV was the Krispy Kreme Challenge, an annual race in Raleigh, North Carolina, where contestants eat a dozen glazed doughnuts and then run 2.5 miles. I watched runners puking up sugary dough in startling high definition. But my primary thought remained, “I could really go for a glazed donut right now.” That’s how good they are.",
             "writer"    : "Victor Luckerson",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "190",
                 "price"     : "1.27",
                 "debut"     : "1937"
             }
@@ -656,12 +666,12 @@
             "brand"     : "Chick-fil-A",
             "category"  : "Chicken Sandwich",
             "img"       : "img/items/41.jpg",
-            "desc"      : "Someone took a tender, juicy, and perfectly-fried piece of chicken and made it easier to eat by sticking it on a sandwich (and adding cheese)! Add some Polynesian, Ranch, or Chik-fil-A sauce if you like, but frankly, this sandwich is so simple and perfect and delicious that it must be a sin to eat it. That's why you can't get them on Sundays.",
+            "desc"      : "Someone took a tender, juicy, and perfectly fried piece of chicken and made it easier to eat by sticking it on a sandwich (and adding cheese)! Add some Polynesian, ranch, or Chick-fil-A sauce if you like, but frankly, this sandwich is so simple and perfect and delicious that it must be a sin to eat it. That's why you can't get them on Sundays.",
             "writer"    : "Christian Robinson",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "570",
                 "price"     : "4.98",
-                "debut"     : "2004"
+                "debut"     : "2010"
             }
         },
         {
@@ -673,9 +683,9 @@
             "desc"      : "In the culinary world, there are few instances where salty meets sweet in order to form a union so perfect, it would make the forefathers jealous. By packing breakfast staples like sausage, egg, cheese, and syrup-infused pancakes into a handheld device, the McGriddle is America's oversimplistic response to the morning dilemma of &ldquo;I want all the breakfast food&rdquo; and &ldquo;I have no time.&rdquo; It’s as patriotic as it is perfect.",
             "writer"    : "Paolo Ugetti",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "250",
                 "price"     : "4.21",
-                "debut"     : "2010"
+                "debut"     : "2003"
             }
         },
         {
@@ -687,9 +697,9 @@
             "desc"      : "It’s juicy and has just the right amount of zesty flavor—it’s like a flattened, elongated chicken nugget. Most importantly—the mayonnaise. Burger King is not afraid to liberally spread mayo on both sides of the long bun. I’m guessing it’s like three tablespoons worth of sweet, sweet mayo. My scientific theory: the almost excessive amount of mayonnaise not only adds an extra dose of umami, but also acts as some sort of flavor sealant. I don’t see a Chick-fil-A offering such scientific advances, that’s all I’m saying.",
             "writer"    : "Allison P. Davis",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "660",
                 "price"     : "5.24",
-                "debut"     : "2003"
+                "debut"     : "1979"
             }
         },
         {
@@ -701,9 +711,9 @@
             "desc"      : "McDonald’s hamburgers are good for what they are: flat salt pouches filled with sagging vegetables and too much goddamn ketchup. The Filet-O-Fish dispenses with the ketchup problem altogether and instead offers an ostensibly strange and ill-advised, but practically indispensable, combination of square laboratory fish and American cheese, flaky and buttery and fun. (The McGriddle is fun but impractical, layers-wise.) It is by far the best off-burger McDonald’s sandwich, and burgers are overrated anyway.",
             "writer"    : "Justin Charity",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "379",
                 "price"     : "4.85",
-                "debut"     : "1979"
+                "debut"     : "1963"
             }
         },
         {
@@ -715,9 +725,10 @@
             "desc"      : "You can (and should!) make an entire meal out of Popeyes' signature sides, but if you feel compelled to cap your intake at one, opt for the mashed potatoes with cajun gravy. The potatoes, while smooth and creamy, are merely the vehicle for the true star: a rich, tangy, and hearty gravy that's so sumptuous you'll be tempted to ladle it into your mouth like soup. Ask for extra so that you can do just that.",
             "writer"    : "Mallory Rubin",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "120",
                 "price"     : "2.29",
-                "debut"     : "1963"
+                "debut"     : "x",
+                "units"     : "(Regular)"
             }
         },
         {
@@ -729,7 +740,7 @@
             "desc"      : "The contributing factors to the success of BK's signature burger are uncomplicated: catchy name (very important), tasty accoutrements (crunchy onions, ridged pickles), perfect condiments (ketchup, mayo), appropriate size (wide and flat yet substantive), and of course, that trademark &ldquo;flame-broiled&rdquo;—sorry, &ldquo;fire-grilled&rdquo;—flavor. Plus, it's Bruce Lee's favorite burger.",
             "writer"    : "Donnie Kwak",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "630",
                 "price"     : "5.36",
                 "debut"     : "1957"
             }
@@ -743,9 +754,10 @@
             "desc"      : "Here are three things that make KFC great: (1) If you order in bulk, you will receive your food not in a foil wrapper or a cardboard box, but in a bucket, which is dope. (2) The restaurant’s chicken is so delicious that it was able to survive both a (false) rumor that it rebranded from “Kentucky Fried Chicken” to “KFC” because legally what it was serving was not chicken, and a (fake) viral story that they served someone a fried rat. (3) Its biscuits are fluffy, and buttery enough to stand on their own as a main dish.",
             "writer"    : "Alyssa Bereznak",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "320",
                 "price"     : "7.67",
-                "debut"     : "1930"
+                "debut"     : "1930",
+                "units"     : "(Original Recipe Chicken Breast)"
             }
         },
         {
@@ -757,7 +769,7 @@
             "desc"      : "A major problem with cheese is that it is, in at least its socially acceptable forms, difficult to eat: You need a plate, a knife, a grater, some sort of grain or meat to put it on, etc. The Midwest, God bless it, has eliminated that problem. Culver's knows that man's usual condition—&ldquo;not enough cheese&rdquo;—can be easily solved; one visit to a drive-through window and you will be a (kind of oily, but worth it) sack of delicious, deep-fried cheese curds richer. Every fast-food chain should sell cheese curds. We would be a better world.",
             "writer"    : "Claire McNear",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "510",
                 "price"     : "4.47",
                 "debut"     : "x"
             }
@@ -768,10 +780,10 @@
             "brand"     : "McDonald's",
             "category"  : "Burger",
             "img"       : "img/items/49.jpg",
-            "desc"      : "The McDonald's Quarter Pounder doesn't need a special sauce or its own jingle. It doesn't need to be done &ldquo;animal&rdquo; style. It is simple Midwestern cholesterol-coated perfection. This low ranking is a disgrace.",
+            "desc"      : "The McDonald's Quarter Pounder doesn't need a special sauce or its own jingle. It doesn't need to be done &ldquo;Animal Style&rdquo;. It is simple Midwestern cholesterol-coated perfection. This low ranking is a disgrace.",
             "writer"    : "Kate Knibbs",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "540",
                 "price"     : "4.85",
                 "debut"     : "1973"
             }
@@ -785,7 +797,7 @@
             "desc"      : "Five Guys crafts their cheeseburgers, they don't just plain old make them, and yes, there's a difference—in flavor, quality, and number of drips of glorious grease. If your burger doesn't come in a bag so soaked it's transparent, you're doing it wrong, and Five Guys does it very right.",
             "writer"    : "Erin Barney",
             "stats"     : {
-                "calories"  : "",
+                "calories"  : "840",
                 "price"     : "9.84",
                 "debut"     : "1986"
 
