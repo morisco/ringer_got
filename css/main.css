@@ -228,11 +228,10 @@ header #logo img{
 
 header .social{
     display:block;
-    position:relative;
-    left: auto;
-    right:auto;
+    position:absolute;
+    bottom:-35px;
+    right:calc(20% + 20px);
     width:100px;
-    margin:15px auto 0;
 }
 
 header .social a{
@@ -608,7 +607,7 @@ h3 .brand{
 @media (max-width: 767px) {
     header{
         height:auto;
-        padding-bottom:75px;
+        padding-bottom:60px;
         padding-top:0;
         background-size: auto auto;
     }
@@ -646,6 +645,14 @@ h3 .brand{
 
     header #logo img{
         height:auto;
+    }
+
+    header .social{
+        position:relative;
+        right:auto;
+        top:auto;
+        bottom:auto;
+        margin: 25px auto 0;
     }
 
     header .heading-wrapper img.header-text{
