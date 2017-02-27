@@ -319,7 +319,7 @@ header .heading-wrapper img.header-text{
     position:relative;
     display:block;
     margin: 0 20px 20px;
-    font-size:30px;
+    font-size:42px;
     color:#f23208;
     font-family: 'Umbriago';
     line-height:80%;
@@ -412,7 +412,7 @@ header .heading-wrapper img.header-text{
 }
 
 .food-item .heading{
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 .food-item .heading:after{
@@ -586,6 +586,16 @@ h3 .brand{
         position:fixed;
         top:30px;
     }
+
+    #filters a{
+    position:relative;
+    display:block;
+    margin: 0 20px 20px;
+    font-size:30px;
+    color:#f23208;
+    font-family: 'Umbriago';
+    line-height:80%;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -738,9 +748,9 @@ h3 .brand{
         content:'';
         display:block;
         position:absolute;
-        right:0;
-        top:2.5px;
-        width:17px;
+        right: 11px;
+        top: 6.5px;
+        width: 16px;
         height:10px;
         background-image:url(../img/toggle.png);
         background-image:url(../img/arrow.svg);
@@ -780,7 +790,7 @@ h3 .brand{
 
     .filters-open #filters a.active,
     .filters-open #filters a.active:hover{
-        text-shadow: 2px 2px 0px #333;
+        
     }
 
     .filters-open #filters a.active:after{
@@ -820,6 +830,13 @@ h3 .brand{
 }
 
 @media (max-width: 660px) {
+
+    #intro{
+        width: 94%;
+        margin: 0 auto 40px;
+        text-align:center;
+        padding-right:0;
+    }
 
     #filters{
         margin-bottom: 50px;
