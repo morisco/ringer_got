@@ -234,8 +234,8 @@ header .social{
 
 header .social a{
     display:inline-block;
-    height: 20px;
-    width: 20px;
+    height: 23px;
+    width: 23px;
     text-indent:555555px;
     background-position: 0 0;
     background-size:100%;
@@ -243,7 +243,7 @@ header .social a{
 }
 
 header .social a:hover{
-    background-position: 0 -20px;
+    background-position: 0 -23px;
 }
 
 header .social a.twitter{
@@ -301,6 +301,20 @@ header .heading-wrapper img.header-text{
     list-style: none;
     font-family:'Frankfurter';
     font-size:19px;
+}
+
+#intro a {
+    text-decoration: none;
+    color: black;
+    font-family: 'umbriago';
+    font-size: 21px;
+    letter-spacing: 0;
+    word-spacing: -.2em;
+    cursor:hand;
+}
+
+#intro a:hover {
+    color:#f23208;
 }
 
 #intro:after{
