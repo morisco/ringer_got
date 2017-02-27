@@ -238,6 +238,7 @@ header .social a{
     width: 20px;
     text-indent:555555px;
     background-position: 0 0;
+    background-size:100%;
     background-repeat:no-repeat;
 }
 
