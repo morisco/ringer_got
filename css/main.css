@@ -240,6 +240,7 @@ header .social a{
     background-position: 0 0;
     background-size:100%;
     background-repeat:no-repeat;
+    margin: 0 3px;
 }
 
 header .social a:hover{
