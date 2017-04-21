@@ -1,0 +1,52 @@
+<li class="card-item col-xs-12 small" data-id="{{id}}">
+    <div class="wrapper">
+        <div class="rank-column">
+            <div class="tier">Tier 1</div>
+            <div class="rank">{{rank}}</div>
+            <div class="image">
+                <img src="{{img}}" alt="{{name}}" />
+            </div>
+            {{#if coverage.length}}
+                <div class="ringer-coverage">
+                    <h5>Ringer Coverage</h5>
+                    <ul>
+                        {{#each coverage}}
+                            <li>
+                                <a href="{{this.link}}" target="_blank">{{this.headline}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/if}}
+        </div>
+        <div class="info-column">
+            <h3>{{name}}</h3>
+            <h4><strong>{{position}}</strong></h4>
+            <h4>{{school}}</h4>
+            <div class="plus-minus">
+                <h6>PLUSES</h6>
+                <ul>
+                    {{#each plus}}
+                        {{#if this.media}}
+                            <li class="has-media" data-media="{{this.media}}">{{this.text}}</li>
+                        {{else}}
+                            <li>{{this.text}}</li>
+                        {{/if}}
+                    {{/each}}
+                </ul>
+                <h6>MINUSES</h6>
+                <ul>
+                    {{#each minus}}
+                        {{#if this.media}}
+                            <li class="has-media" data-media="{{this.media}}">{{this.text}}</li>
+                        {{else}}
+                            <li>{{this.text}}</li>
+                        {{/if}}
+                    {{/each}}
+                </ul>
+
+            </div>
+        </div>
+        <div class="toggle-card" data-id="{{id}}"></div>
+    </div>
+</li>

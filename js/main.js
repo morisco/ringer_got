@@ -1,32 +1,68 @@
 $(document).ready(function(){
-    var masterList = new CardList();
+    setTimeout(function(){
+        var masterList = new CardList();
+    },500);
 });
 
 var CardList = function() {
     var cardlist = this;
 
-    this.templateSource = $("#food-card-template").html();
+    this.templateSource = $("#player-card-template").html();
     this.template = Handlebars.compile(this.templateSource);
 
     this.cards = [];
 
-    this.filterOffsetPos = $('#filters').offset().top - 30;
+    this.initial_player = GLOBALS.player || false;
+
+    this.filterOffsetPos = $('#content').offset().top - 30;
 
     this.init = function() {
-        this.getData();
         this.initEvents();
+        if(this.initial_player){
+            cardlist.openPlayer();
+        }
     }
 
     this.initEvents = function() {
+        $('#item-list').on('click', '.toggle-card', this.toggleCard);
         $('#filters a').on('click', this.filter);
-        $(window).on('scroll', cardlist.scrollWatch)
+        $('.size-toggle').on('click', 'li', this.changeSize);
         $(window).on('resize', function(){
             clearTimeout(cardlist.sizeTimeout);
             cardlist.sizeTimeout = setTimeout(function(){
-                cardlist.filterOffsetPos = $('#filters').offset().top - 30;
+                cardlist.filterOffsetPos = $('#content').offset().top - 30;
             },250);
         });
+
+        if(!GLOBALS.player){
+            $(window).on('scroll', cardlist.scrollWatch);
+        }
     }
+
+    this.openPlayer = function() {
+        var openCard = $('.card-item[data-id="' + GLOBALS.player + '"]');
+        var openScollPos = openCard.offset().top - 100;
+        var timeout = false;
+        $('body').addClass('filter-fixed');
+        $('body,html').animate({scrollTop: openScollPos}, function(){
+            clearTimeout(timeout);
+            timeout = setTimeout(function(){
+                openCard.addClass('expanded');
+                $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
+            },100);
+        });
+    }
+
+    this.toggleCard = function(e) {
+        var id = $(e.target).data('id');
+        $('.card-item[data-id="' + id + '"]').toggleClass('expanded');
+    }
+
+    this.changeSize = function(){
+        $('.size-toggle .active').removeClass('active');
+        $(this).addClass('active');
+        $('.card-item').removeClass('small medium large expanded').addClass($(this).data('size'));
+    };
 
     this.scrollWatch = function() {
         var scrollPos = $(window).scrollTop(),
@@ -34,7 +70,6 @@ var CardList = function() {
         if(scrollPos > cardlist.filterOffsetPos && $(window).width() > 768){
             $('body').addClass('filter-fixed');
         } else {
-            $('#filters').css('transform', 'translateY(0)');
             $('body').removeClass('filter-fixed');
         }
     }
@@ -53,7 +88,7 @@ var CardList = function() {
             }
         }
 
-        var filter = $(this).data('filter');    
+        var filter = $(this).data('filter');
         var cards = cardlist.cards.slice(0);
         var filtered_cards = cards;
         if(filter !== 'All') {
@@ -63,13 +98,6 @@ var CardList = function() {
         $(this).addClass('active');
         cardlist.buildList(filtered_cards);
     }
-
-    this.getData = function() {
-        var data = JSON.parse($("#data").html());
-            cardlist.cards = data.cards;
-            cardlist.buildList(cardlist.cards);
-        
-    };
 
     this.buildList = function(cards) {
         $('#item-list').empty();

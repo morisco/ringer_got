@@ -1,0 +1,278 @@
+{
+  "players" : {
+    "1" : {
+      "id" : 1,
+      "filter_id" : "d_bacon",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "2" : {
+      "id" : 2,
+      "filter_id" : "m_morisco",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "3" : {
+      "id" : 3,
+      "filter_id" : "m_morisco_3",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "4" : {
+      "id" : 4,
+      "filter_id" : "m_morisco_4",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "5" : {
+      "id" : 5,
+      "filter_id" : "m_morisco_5",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "6" : {
+      "id" : 6,
+      "filter_id" : "m_morisco_6",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "7" : {
+      "id" : 7,
+      "filter_id" : "m_morisco_7",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "8" : {
+      "id" : 8,
+      "filter_id" : "m_morisco_8",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "9" : {
+      "id" : 9,
+      "filter_id" : "m_morisco_9",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "10" : {
+      "id" : 10,
+      "filter_id" : "m_morisco_10",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "11" : {
+      "id" : 11,
+      "filter_id" : "m_morisco_11",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    },
+    "12" : {
+      "id" : 12,
+      "filter_id" : "m_morisco_12",
+      "name" : "Dwayne Bacon",
+      "img" : "./img/players/d_bacon.png",
+      "position" : "Stretch Forward",
+      "school" : "Florida State, Sophomore",
+      "age" : 21,
+      "height" : "6'5\"",
+      "heading" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
+      "similar_skillset" : "First Lastname",
+      "path_to_success" : "Short phrase goes right here in this spot",
+      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make &ldquo;the right play.&rdquo;\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
+      "ringer_stat" : 21,
+      "ringer_stat_note" : "Note to explain the mehodology of the ringer stat goes right here can it be two lines long?",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 P40\"\n  },\n  {\n    \"title\": \"R\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 P40\"\n  },\n  {\n    \"title\": \"A\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 P40\"\n  },\n  {\n    \"title\": \"PER\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 P40\"\n  }]",
+      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+    }
+  },
+  "ringer" : {
+    "d_bacon" : {
+      "filter_id" : "d_bacon"
+    },
+    "m_morisco" : {
+      "filter_id" : "m_morisco"
+    },
+    "m_morisco_3" : {
+      "filter_id" : "m_morisco_3"
+    },
+    "m_morisco_4" : {
+      "filter_id" : "m_morisco_4"
+    },
+    "m_morisco_5" : {
+      "filter_id" : "m_morisco_5"
+    },
+    "m_morisco_6" : {
+      "filter_id" : "m_morisco_6"
+    },
+    "m_morisco_7" : {
+      "filter_id" : "m_morisco_7"
+    },
+    "m_morisco_8" : {
+      "filter_id" : "m_morisco_8"
+    },
+    "m_morisco_9" : {
+      "filter_id" : "m_morisco_9"
+    },
+    "m_morisco_10" : {
+      "filter_id" : "m_morisco_10"
+    },
+    "m_morisco_11" : {
+      "filter_id" : "m_morisco_11"
+    },
+    "m_morisco_12" : {
+      "filter_id" : "m_morisco_12"
+    }
+  },
+  "oconnor" : {
+    "m_morisco" : {
+      "filter_id" : "m_morisco"
+    },
+    "d_bacon" : {
+      "filter_id" : "d_bacon"
+    }
+  }
+}
