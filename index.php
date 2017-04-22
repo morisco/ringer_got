@@ -38,6 +38,7 @@
         $player->minus = json_decode($player->minus);
         $player->stats = json_decode($player->stats);
         $player->coverage = json_decode($player->coverage);
+        $player->meta = json_decode($player->meta);
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }

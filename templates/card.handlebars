@@ -23,28 +23,47 @@
             <h3>{{name}}</h3>
             <h4><strong>{{position}}</strong></h4>
             <h4>{{school}}</h4>
-            <div class="plus-minus">
-                <h6>PLUSES</h6>
-                <ul>
-                    {{#each plus}}
-                        {{#if this.media}}
-                            <li class="has-media" data-media="{{this.media}}">{{this.text}}</li>
-                        {{else}}
-                            <li>{{this.text}}</li>
-                        {{/if}}
-                    {{/each}}
-                </ul>
-                <h6>MINUSES</h6>
-                <ul>
-                    {{#each minus}}
-                        {{#if this.media}}
-                            <li class="has-media" data-media="{{this.media}}">{{this.text}}</li>
-                        {{else}}
-                            <li>{{this.text}}</li>
-                        {{/if}}
-                    {{/each}}
-                </ul>
-
+            <div class="player-info">
+                <div class="player-meta">
+                    <ul>
+                        {{#each meta}}
+                            <li><span class="label">{{this.label}}</span><span class="value">{{this.value}}</span></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="player-description">
+                    <div class="player-headline">{{{heading}}}</div>
+                    <div class="player-similar">Similar Skillset: {{{similar_skillset}}}</div>
+                    <div class="player-path">Path to Success: {{{path_to_success}}}</div>
+                </div>
+                <div class="player-stat-image">
+                </div>
+                <div class="player-plus-minus">
+                    <h6>PLUSES</h6>
+                    <ul>
+                        {{#each plus}}
+                            {{#if this.media}}
+                                <li class="has-media" data-media="{{this.media}}">{{{this.text}}}</li>
+                            {{else}}
+                                <li>{{{this.text}}}</li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                    <h6>MINUSES</h6>
+                    <ul>
+                        {{#each minus}}
+                            {{#if this.media}}
+                                <li class="has-media" data-media="{{this.media}}">{{{this.text}}}</li>
+                            {{else}}
+                                <li>{{{this.text}}}</li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="player-social">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%253A%252F%252Fmikemorisco.com%252Fringer%252Fnba%252F%3Fplayer%3D{{id}}" target="_blank" class="facebook">Share To Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?url=http://mikemorisco.com/ringer/nba/?player={{id}}&text={{twitter_share}}" target="_blank" class="twitter">Share To Twitter</a>
+                </div>
             </div>
         </div>
         <div class="toggle-card" data-id="{{id}}"></div>
