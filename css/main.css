@@ -594,12 +594,55 @@ header{
 }
 
 .card-item .info-column .player-stat-image{
+    position:relative;
     float:right;
-    width: 45%;
-    margin-left: 5%;
+    width: 50%;
+    padding-left: 5%;
     height:350px; /*this will be removed, determined by image size*/
+    z-index:2;
+}
+
+.card-item .info-column .player-stat-image > div{
+    position:relative;
+    height:100%;
+    width:100%;
     background-color:rgba(0,0,0,0.08);
     border-radius: 9px;
+    overflow:hidden;
+}
+
+.card-item .info-column .player-stat-image > div > div{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-size:cover;
+    background-position: center center;
+}
+
+.card-item .info-column .player-stat-image div.default{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item .info-column .player-stat-image.media-shown div.default{
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-stat-image div.plus-minus-media{
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-stat-image div.plus-minus-media.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
 .card-item .info-column .player-plus-minus h6{
@@ -614,8 +657,43 @@ header{
 }
 
 .card-item .info-column .player-plus-minus ul li{
-    line-height:1.25;
-    margin-bottom: 15px
+    position: relative;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker{
+    position:absolute;
+    top:4px;
+    left:-17px;
+    height:11px;
+    width:11px;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker:before{
+    content: '';
+    position:absolute;
+    left:50%;
+    display:block;
+    border-radius:50%;
+    height:11px;
+    width: 11px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid #43be6d;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker:after{
+    content: '';
+    position:absolute;
+    left:50%;
+    display:block;
+    border-radius:50%;
+    height:5px;
+    width: 5px;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    background: #43be6d;
 }
 
 .card-item .info-column .player-social{
@@ -669,6 +747,7 @@ header{
 .card-item .ringer-coverage h5{
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255,255,255,0.25);
+    color:#fff;
 }
 
 .card-item .ringer-coverage ul{

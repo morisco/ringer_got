@@ -55,10 +55,10 @@
     $fb_meta['title'] = "2017 NBA DRAFT GUIDE - THE RINGER";
 
     if(isset($featured_player)){
-        $fb_meta['url'] = "http://nbadraft.theringer.com?player=" . $featured_player->id;
+        $fb_meta['url'] = "http://mikemorisco.com/ringer/nba?player=" . $featured_player->id;
         $fb_meta['title'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
         $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
-        $fb_meta['image'] = "https://fastfood.theringer.com/img/fast-food-facebook-1.jpg";
+        $fb_meta['image'] = "http://mikemorisco.com/ringer/nba/img/players/d_bacon.png";
     }
 ?>
 <!doctype html>
@@ -69,7 +69,7 @@
         <title>2017 NBA DRAFT GUIDE - THE RINGER</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="<?php echo $fb_meta['title']; ?>" />
         <meta property="og:description" content="<?php echo $fb_meta['description']; ?>" />
         <meta property="og:image" content="<?php echo $fb_meta['image']; ?>" />

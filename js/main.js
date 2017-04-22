@@ -27,6 +27,8 @@ var CardList = function() {
         $('#item-list').on('click', '.toggle-card', this.toggleCard);
         $('#filters a').on('click', this.filter);
         $('.size-toggle').on('click', 'li', this.changeSize);
+        $('.has-media').on('mouseenter', this.showMedia);
+        $('.has-media').on('mouseleave', this.hideMedia);
         $(window).on('resize', function(){
             clearTimeout(cardlist.sizeTimeout);
             cardlist.sizeTimeout = setTimeout(function(){
@@ -72,6 +74,18 @@ var CardList = function() {
         } else {
             $('body').removeClass('filter-fixed');
         }
+    }
+
+    this.showMedia = function() {
+        var showMedia = $(this).data('media');
+        $('.player-stat-image').addClass('media-shown');
+        $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
+    }
+
+    this.hideMedia = function() {
+        var hideMedia = $(this).data('media');
+        $('.player-stat-image').removeClass('media-shown');
+        $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
     }
 
     this.filter = function(){
