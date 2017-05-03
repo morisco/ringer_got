@@ -24,6 +24,7 @@
     foreach($sort_list as $sort) {
         foreach($player_data as $key => $player) {
             if ($sort->filter_id === $player->filter_id) {
+                $player->id = count($sorted_players) + 1;
                 $player->rank = sprintf("%02d", count($sorted_players) + 1);
                 $sorted_players[] = $player;
                 break;
@@ -94,7 +95,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
+        <header class="background-theme">
             <div class="heading-wrapper">
                 <h1><span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span> NBA DRAFT GUIDE</h1>
             </div>
@@ -113,11 +114,11 @@
         <div id="content">
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
-                    <a href="#" class="small" data-filter-id="ringer"><span>Ringer Picks</span></a>
-                    <a href="#" class="large" data-filter-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
-                    <a href="#" class="large" data-filter-id="danny"><span>Danny Chau</span></a>
-                    <a href="#" class="large" data-filter-id="johnathan"><span>Johnathan Tjarks</span></a>
-                    <a href="#" class="small" data-filter-id="a_z"><span>Sort A-Z</span></a>
+                    <a href="#" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-filter-id="ringer"><span>Ringer Picks</span></a>
+                    <a href="#" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-filter-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
+                    <a href="#" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-filter-id="danny"><span>Danny Chau</span></a>
+                    <a href="#" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-filter-id="johnathan"><span>Johnathan Tjarks</span></a>
+                    <a href="#" class="small <?php echo ($sort_list_id === 'a_z') ? 'active_filter' : '' ?>" data-filter-id="a_z"><span>Sort A-Z</span></a>
                 </div>
             </section>
             <div id="filters">
@@ -152,6 +153,13 @@
             window.GLOBALS = {}
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.player = "<?php echo $player_id; ?>";
+            GLOBALS.list = {
+                ringer      : GLOBALS.data['ringer'],
+                kevin       : GLOBALS.data['kevin'],
+                danny       : GLOBALS.data['danny'],
+                johnathan   : GLOBALS.data['johnathan'],
+                a_z         :  GLOBALS.data['a_z']
+            };
         </script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.12.0.min.js"><\/script>')</script>

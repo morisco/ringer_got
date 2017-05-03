@@ -109,6 +109,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+.background-theme{
+   background-color: #43be6d;
+   transition:background-color 0.25s linear;
+}
+
+.color-theme{
+   color: #43be6d;
+   transition:color 0.25s linear;
+}
+
+.border-theme{
+   border-color: #43be6d;
+   transition:border-color 0.25s linear;
+}
+
+.border-theme-before:before{
+    border-color: #43be6d;
+    transition:border-color 0.25s linear;
+}
+
+.border-theme-before.kevin:before{
+    border-color:#ffff00;
+}
+
+.background-theme-after.kevin:after{
+    background-color: #ffff00;
+}
+
+.border-theme-before.danny:before{
+    border-color:#00adef;
+}
+
+.background-theme-after.danny:after{
+    background-color: #00adef;
+}
+
+.border-theme-before.johnathan:before{
+    border-color:#c800ff;
+}
+
+.background-theme-after.johnathan:after{
+    background-color: #c800ff;
+}
+
+.border-theme-before.a_z:before{
+    border-color:#0043cc;
+}
+
+.background-theme-after.a_z:after{
+    background-color: #0043cc;
+}
+
+.background-theme-after:after{
+    background-color: #43be6d;
+    transition:background-color 0.25s linear;
+}
+
+.stroke{
+    transition:stroke 0.25s linear;
+}
+
+.arrow{
+    transition:fill 0.25s linear;
+}
+
+a.active,
+a.active:hover{
+    color: #43be6d;
+    transition:color 0.25s linear;
+}
+
 a{
     text-decoration:none;
 }
@@ -151,7 +223,6 @@ h3 .brand{
 
 header{
     padding: 55px 0 190px;
-    background: #43be6d;
 }
 
 #content{
@@ -267,6 +338,7 @@ header{
     width: 16.25%;
     overflow:hidden;
     border-right:2px solid #000;
+    transition: all 0.25s linear;
 }
 #filter-bar a:last-of-type{
     border-right: 0;
@@ -274,6 +346,11 @@ header{
 
 #filter-bar a.large{
     width: 22.5%;
+}
+
+#filter-bar a.active_filter{
+    background:#000;
+    color:#fff;
 }
 
 #filter-bar a span{
@@ -285,7 +362,7 @@ header{
 }
 
 #filters{
-    width:200px;
+    width:225px;
     float:left;
     margin: 0;
     clear:right;
@@ -298,10 +375,13 @@ header{
     display:block;
     margin: 0 0 15px;
     font-size:15px;
-    color:#000;
     line-height:1;
     font-weight:500;
     text-transform:uppercase;
+}
+
+#filters a:not(.active){
+    color:#000;
 }
 
 #filters a:hover{
@@ -310,11 +390,6 @@ header{
 
 #filters a:last-of-type{
     margin-right: 0;
-}
-
-#filters a.active,
-#filters a.active:hover{
-    color:#43be6d;
 }
 
 #filters a.active:before{
@@ -421,7 +496,7 @@ header{
 
 #item-list{
     float:right;
-    width:calc( 100% - 200px);
+    width:calc( 100% - 225px);
     list-style:none;;
 }
 
@@ -435,6 +510,18 @@ header{
     border: .00875rem solid #000;
     margin-bottom:30px;
     transition: max-height 0.325s ease-out .5s;
+}
+
+.card-item.sorted{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s;
+}
+
+.card-item.sorted.shown{
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
 }
 
 .card-item .wrapper{
@@ -456,11 +543,6 @@ header{
 .card-item .toggle-card{
     height:32px;
     width:32px;
-    background-transparent;
-    background-image:url(../img/toggle-arrow.png);
-    background-image:url(../img/toggle-arrow.svg);
-    background-position:center center;
-    background-size: 100%;
     position:absolute;
     right:29px;
     transition: bottom 0.125s ease-out .5s, transform 0.125s linear 1s;
@@ -477,9 +559,8 @@ header{
     max-height: 100%;
     width: 100%;
     max-width: 18.25%;
-    background: #00adef;
     padding: 30px 25px;
-    transition: max-width .25s ease-out .25s;
+    transition: max-width .25s ease-out .25s, background-color .25s linear;
 }
 
 .card-item .rank-column .tier{
@@ -532,26 +613,165 @@ header{
     line-height: 1.25;
 }
 
+.card-item .info-column .player-main{
+    float:left;
+    max-width:50%;
+}
+
+.card-item .info-column .player-stats{
+    width:50%;
+    position:relative;
+    float:right;
+    min-width:390px;
+    max-height:87px;
+    padding-right:50px;
+    transition: padding-right 0.25s linear 0s;
+}
+
+.card-item.expanded .info-column .player-stats,
+.card-item.medium .info-column .player-stats,
+.card-item.large .info-column .player-stats{
+    padding-right:0;
+    transition: padding-right 0.25s linear 0;
+}
+
+.card-item.expanded .info-column .player-stats,
+.card-item.large .info-column .player-stats{
+    max-height:250px;
+}
+
+.card-item .info-column .player-stats ul{
+    list-style:none;
+    width:calc(100% + 15px);
+    margin: 0 -7.5px;
+    text-align:right;
+}
+
+.card-item .info-column .player-stats ul li{
+    position:relative;
+    display:inline-block;
+    width: 70px;
+    max-height: 87px;
+    height: 87px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    overflow:hidden;
+    margin: 0 7.5px 10px;
+    transition:max-height 0.25s linear;
+}
+
+.card-item .info-column .player-stats ul li:nth-child(n+5){
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: 0;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item.expanded .info-column .player-stats ul li:nth-child(n+5),
+.card-item.large .info-column .player-stats ul li:nth-child(n+5){
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item.expanded .info-column .player-stats ul li{
+    max-height: 101px;
+    height:101px;
+}
+
+.card-item .info-column .player-stats ul li span{
+    display:block;
+    line-height:1;
+}
+
+.card-item .info-column .player-stats ul li span.title{
+    border-bottom:1px solid #aaa;
+    text-align:center;
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding: 10px 0 5px;
+}
+
+.card-item .info-column .player-stats ul li span.number{
+    font-family: 'TIMMONS NY';
+    font-size: 48px;
+    margin: 15px 0 0;
+    text-align:center;
+    line-height:.77;
+}
+
+.card-item .info-column .player-stats ul li span.detail{
+    visibility: hidden;
+    position: absolute;
+    bottom: 5px;
+    opacity: 0;
+    left:0;
+    right:0;
+    font-size:12px;
+    text-align:center;
+    font-weight:500;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item.expanded .info-column .player-stats ul li span.detail{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
+}
+
+
+
 .card-item .info-column .player-info{
     visiblity:hidden;
     opacity:0;
-    margin-top: 15px;
+    padding-top: 30px;
+    clear:left;
     transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
 }
 
 .card-item .info-column .player-info .player-meta{
     width: 44%;
+
+}
+
+.card-item.medium:not(.expanded) .info-column .player-info .player-meta{
+    width:100%;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column{
+    width:50%;
+    float:left;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:first-of-type{
+    padding-right: 15px;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(2){
+    padding-left: 15px;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(3){
+    display:none;
+}
+
+.card-item.medium .info-column .player-meta:after{
+    content:'';
+    display:table;
+    clear:both;
 }
 
 .card-item .info-column .player-info .player-meta ul{
     list-style:none;
-    text-transform:uppercase;
+
     font-size:14px;
 }
 
 .card-item .info-column .player-info .player-meta li{
     position:relative;
     overflow:hidden;
+    margin: 1px 0;
 }
 
 .card-item .info-column .player-info .player-meta li:after{
@@ -569,6 +789,7 @@ header{
     z-index:2;
     padding-right:4px;
     font-weight:bold;
+    text-transform:uppercase;
 }
 
 .card-item .info-column .player-info .player-meta li .value{
@@ -582,8 +803,7 @@ header{
 .card-item .info-column .player-description{
     margin:30px 0 30px;
     padding-top: 30px;
-    font-size:16px;
-    font-family: 'Tiempos Headline';
+    font-size:14px;
     border-top: 1px solid rgba(0,0,0,0.25);
 }
 
@@ -591,6 +811,11 @@ header{
     font-size:20px;
     line-height:1;
     margin-bottom:5px;
+    font-family: 'Tiempos Headline';
+}
+
+.card-item .info-column .player-description .player-subline {
+    font-weight: 500;
 }
 
 .card-item .info-column .player-stat-image{
@@ -646,7 +871,6 @@ header{
 }
 
 .card-item .info-column .player-plus-minus h6{
-    color: #43be6d;
     font-size:14px;
     letter-spacing:.05rem;
 }
@@ -680,7 +904,8 @@ header{
     width: 11px;
     top: 50%;
     transform: translate(-50%, -50%);
-    border:1px solid #43be6d;
+    border-width:1px;
+    border-style: solid;
 }
 
 .card-item .info-column .player-plus-minus ul li.has-media .media-marker:after{
@@ -693,7 +918,6 @@ header{
     width: 5px;
     top: 50%;
     transform:translate(-50%,-50%);
-    background: #43be6d;
 }
 
 .card-item .info-column .player-social{
@@ -740,7 +964,6 @@ header{
     left: 0;
     right: 0;
     padding: 0 30px 30px;
-    background: #00adef;
     transition: visibility 0s linear .25s, opacity .25s linear 0s;
 }
 
@@ -784,7 +1007,7 @@ header{
 .card-item.large .rank-column,
 .card-item.medium .rank-column {
     max-width: 36%;
-    transition: max-width .25s ease-out;
+    transition: max-width .25s ease-out, background-color .25s linear;
 }
 
 .card-item.expanded .info-column,
@@ -825,7 +1048,7 @@ header{
 /* Medium Sized */
 .card-item.medium:not(.expanded),
 .card-item.medium .wrapper{
-    max-height:375px;
+    max-height:325px;
     transition: all 0.25s ease-out 0.3s;
 
 }
@@ -840,8 +1063,14 @@ header{
 .card-item.large,
 .card-item.expanded .wrapper,
 .card-item.large .wrapper{
-    max-height: 1070px;
+    max-height: 1080px;
     transition: all 0.25s ease-out 0.3s;
+}
+
+.card-item.medium.expanded,
+.card-item.medium.expanded .wrapper,
+.card-item.large.expanded .wrapper{
+    transition: all 0.25s ease-out 0s;
 }
 
 /* ==========================================================================
@@ -933,7 +1162,7 @@ header{
         position:fixed;
         top:30px;
         padding: 0;
-        max-width: calc(95% - 120px);
+        max-width: 1380px;
         max-height: 50px;
     }
 

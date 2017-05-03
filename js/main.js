@@ -26,6 +26,7 @@ var CardList = function() {
     this.initEvents = function() {
         $('#item-list').on('click', '.toggle-card', this.toggleCard);
         $('#filters a').on('click', this.filter);
+        $('#filter-bar').on('click', 'a', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.has-media').on('mouseenter', this.showMedia);
         $('.has-media').on('mouseleave', this.hideMedia);
@@ -56,7 +57,7 @@ var CardList = function() {
     }
 
     this.toggleCard = function(e) {
-        var id = $(e.target).data('id');
+        var id = $(this).data('id');
         $('.card-item[data-id="' + id + '"]').toggleClass('expanded');
     }
 
@@ -86,6 +87,48 @@ var CardList = function() {
         var hideMedia = $(this).data('media');
         $('.player-stat-image').removeClass('media-shown');
         $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
+    }
+
+    this.sort = function(e){
+        e.preventDefault();
+        var filter_id = $(this).data('filter-id'),
+            player;
+
+        $('.active_filter').removeClass('active_filter');
+        $(this).addClass('active_filter');
+        $('#item-list').empty();
+        _.each(GLOBALS.list[filter_id], function(player, index){
+            player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});
+            if(player){
+                player.id = parseInt(index,10)+1;
+                player.rank =  ("0" + player.id).slice(-2);
+                player.className = 'sorted';
+                $('#item-list').append(cardlist.template(player));
+                setTimeout(function(){
+                    $('#item-list .card-item[data-id="' + player.id + '"]').addClass('shown');
+                },index * 250);
+            }
+        });
+        cardlist.setColors(filter_id);
+    }
+
+    this.setColors = function(filter_id) {
+        var colors = {
+            'ringer': '#43be6d',
+            'kevin': '#ffff00',
+            'danny': '#00adef',
+            'johnathan': '#c800ff',
+            'a_z': '#0043cc'
+        };
+        var selected_color = colors[filter_id];
+        $('.background-theme').css({'background-color': selected_color});
+        $('.border-theme').css({'border-color': selected_color});
+        $('.border-theme-before').removeClass('ringer kevin danny johnathan a_z').addClass(filter_id);
+        $('.background-theme-after').removeClass('ringer kevin danny johnathan a_z').addClass(filter_id);
+        $('.color-theme').css({'color': selected_color});
+        $('a.active').css({'color': selected_color});
+        $('.stroke').attr('style', "stroke:"+selected_color);
+        $('.arrow').attr('style', "fill:"+selected_color);
     }
 
     this.filter = function(){
