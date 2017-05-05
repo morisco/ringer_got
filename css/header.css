@@ -1,0 +1,46 @@
+header nav{
+    width:100%;
+    display:block;
+}
+
+header nav:after{
+    content:'';
+    clear:both;
+    display:table;
+}
+
+header nav .logo{
+    display:inline-block;
+    max-width:175px;
+    margin-left:30px;
+    padding-top:15px;
+}
+
+header nav .logo img{
+    display:block;
+    width:100%;
+}
+
+header nav ul{
+    float:right;
+    padding-top:15px;
+}
+
+header nav ul li{
+    display:inline-block;
+    font-family:'NYTMag Sans', serif;
+    font-weight:500;
+    font-size:17px;
+    color:#fff;
+    margin-right:15px;
+}
+
+header nav ul li a{
+    display:inline-block;
+    padding: 15px;
+    color:#fff;
+}
+
+header .heading-wrapper{
+    padding: 55px 0 190px;
+}

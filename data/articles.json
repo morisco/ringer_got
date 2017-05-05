@@ -1,0 +1,39 @@
+{
+  "articles": [
+    {
+      "headline": "1Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "2Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "3Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "4Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "5Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "6Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    },
+    {
+      "headline": "7Article Headline Goes Here for Related Article",
+      "link": "http://theringer.com",
+      "img": "http://theringer.com"
+    }
+  ]
+}

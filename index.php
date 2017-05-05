@@ -1,4 +1,5 @@
 <?php
+
     require 'Handlebars/Autoloader.php';
     Handlebars\Autoloader::register();
 
@@ -18,6 +19,10 @@
     $data = json_decode($data_string);
     $player_data = $data->players;
 
+    $articles_string = file_get_contents("./data/articles.json");
+    $articles_json = json_decode($articles_string);
+    $articles = $articles_json->articles;
+
     $sort_list_id = isset($_GET['list']) && $_GET['list'] ? $_GET['list'] : 'ringer';
     $sort_list = $data->$sort_list_id;
     $sorted_players = [];
@@ -34,6 +39,8 @@
 
     $template_render = '';
     $player_id = isset($_GET['player']) ? $_GET['player'] : false;
+    $count = 5;
+    $coverage_count = 0;
     foreach($sorted_players as $player){
         $player->plus = json_decode($player->plus);
         $player->minus = json_decode($player->minus);
@@ -47,7 +54,29 @@
             'card',
             $player
         );
+
+        $count--;
+
+
+        if($count == 0){
+            $count = 5;
+            $more_coverage = (object) array();
+            $more_coverage->articles = array_slice($articles, (3 * $coverage_count), 3);
+            $template_render .= $engine->render(
+                'coverage',
+                $more_coverage
+            );
+            $coverage_count++;
+        }
     }
+
+    $footer_coverage = (object) array();
+    $footer_coverage->articles = array_slice($articles, 0, 4);
+    $footer_coverage_render = $engine->render(
+        'coverage',
+        $footer_coverage
+    );
+
 
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
@@ -60,6 +89,11 @@
         $fb_meta['title'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
         $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
         $fb_meta['image'] = "http://mikemorisco.com/ringer/nba/img/players/d_bacon.png";
+    }
+
+    $bodyClass = '';
+    if (strstr($_SERVER['HTTP_USER_AGENT'], 'iPad')) {
+        $bodyClass = ' ipad';
     }
 ?>
 <!doctype html>
@@ -82,6 +116,13 @@
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/intro.css">
+        <link rel="stylesheet" href="css/filter-bar.css">
+        <link rel="stylesheet" href="css/filters.css">
+        <link rel="stylesheet" href="css/item-list.css">
+        <link rel="stylesheet" href="css/coverage.css">
+        <link rel="stylesheet" href="css/footer.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
@@ -90,12 +131,22 @@
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
     </head>
-    <body>
+    <body class="<?php echo $bodyClass; ?>">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header class="background-theme">
+            <nav>
+                <a href="http://theringer.com" class="logo"><img src="img/logo.png" alt="The Ringer Logo" /></a>
+                <ul class="main-nav">
+                    <li><a href="http://theringer.com">HOME</a></li>
+                    <li><a href="http://theringer.com">NBA</a></li>
+                    <li><a href="http://theringer.com">NCAA</a></li>
+                    <li><a href="http://theringer.com">NBA DRAFT</a></li>
+                    <li><a href="http://theringer.com">ANOTHER</a></li>
+                </ul>
+            </nav>
             <div class="heading-wrapper">
                 <h1><span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span> NBA DRAFT GUIDE</h1>
             </div>
@@ -104,9 +155,12 @@
             <div class="intro-wrapper">
                 <div>
                     <strong>Athletic forward who can fill a  3-and-D role, with playmaking upside.</strong> Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside.
-                    <div class="social">
-                        <a href="http:facebook.com" class="facebook"></a>
-                        <a href="http:twitter.com" class="twitter"></a>
+                    <div class="intro-actions">
+                        <div class="social">
+                            <a href="http:facebook.com" class="facebook"></a>
+                            <a href="http:twitter.com" class="twitter"></a>
+                        </div>
+                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                     </div>
                 </div>
             </div>
@@ -121,38 +175,57 @@
                     <a href="#" class="small <?php echo ($sort_list_id === 'a_z') ? 'active_filter' : '' ?>" data-filter-id="a_z"><span>Sort A-Z</span></a>
                 </div>
             </section>
-            <div id="filters">
-                <div class="switcher">
-                    <ul class="size-indicator">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <ul class="size-toggle">
-                        <li class="active" data-size="small"></li>
-                        <li data-size="medium"></li>
-                        <li data-size="large"></li>
-                    </ul>
+            <div id="main-content">
+                <div id="filters">
+                    <div class="switcher">
+                        <ul class="size-indicator">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class="size-toggle">
+                            <li class="active background-theme" data-size="small"></li>
+                            <li data-size="medium"></li>
+                            <li data-size="large"></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0);" data-filter="all" class="active color-theme"><span>all positions</span></a>
+                    <a href="javascript:void(0);" data-filter="guard"><span>guards</span></a>
+                    <a href="javascript:void(0);" data-filter="forward"><span>forwards</span></a>
+                    <a href="javascript:void(0);" data-filter="big"><span>bigs</span></a>
                 </div>
-                <a href="javascript:void(0);" data-filter="All" class="active"><span>all positions</span></a>
-                <a href="javascript:void(0);" data-filter="Guards"><span>guards</span></a>
-                <a href="javascript:void(0);" data-filter="Forwards"><span>forwards</span></a>
-                <a href="javascript:void(0);" data-filter="Bigs"><span>bigs</span></a>
+                <section>
+                    <ul id="item-list" class="grid">
+                        <?php echo $template_render; ?>
+                    </ul>
+                </section>
             </div>
-            <section>
-                <ul id="item-list" class="grid">
-                    <?php echo $template_render; ?>
-                </ul>
-            </section>
         </div>
+        <div id="coverage-footer">
+            <?php echo $footer_coverage_render; ?>
+        </div>
+
+        <footer class="background-theme">
+            <div class="footer-wrapper">
+                <div class="disclaimer">
+                    Whatever disclaimer copyright or footer copy goes here in this spot.
+                </div>
+            </div>
+        </footer>
+
         <script id="player-card-template" type="text/x-handlebars-template">
             <?php echo file_get_contents("./templates/card.handlebars"); ?>
+        </script>
+
+        <script id="coverage-template" type="text/x-handlebars-template">
+            <?php echo file_get_contents("./templates/coverage.handlebars"); ?>
         </script>
 
         <script type="text/javascript">
             window.GLOBALS = {}
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.player = "<?php echo $player_id; ?>";
+            GLOBALS.more_coverage_articles = <?php echo json_encode($articles_json); ?>;
             GLOBALS.list = {
                 ringer      : GLOBALS.data['ringer'],
                 kevin       : GLOBALS.data['kevin'],

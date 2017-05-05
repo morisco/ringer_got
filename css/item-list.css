@@ -1,0 +1,630 @@
+#item-list{
+    float:right;
+    width:83.75%;
+    list-style:none;
+}
+
+#item-list.sorting{
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.card-item{
+    display:block;
+    padding: 0;
+    margin: 0;
+    height: 5555px;
+    border-radius:.625rem;
+    overflow:hidden;
+    border: .00875rem solid #000;
+    margin-bottom:30px;
+    transition: max-height 0.325s ease-out .5s;
+}
+
+.card-item.sorted{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s;
+}
+
+.card-item.sorted.shown{
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
+}
+
+.card-item .wrapper{
+    height: 100%;
+    transition: max-height 0.25s ease-out .5s;
+}
+
+.card-item .wrapper:after{
+    content: '';
+    clear:both;
+    display:table;
+}
+
+.card-item.small,
+.card-item.small .wrapper{
+    max-height:145px;
+}
+
+.card-item .toggle-card{
+    height:32px;
+    width:32px;
+    position:absolute;
+    right:29px;
+    transition: bottom 0.125s ease-out .5s, transform 0.125s linear 1s;
+}
+
+.card-item.small .toggle-card{
+    bottom:56.5px;
+}
+
+.card-item .rank-column{
+    position: relative;
+    float: left;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 18.25%;
+    padding: 30px 25px;
+    transition: max-width .25s ease-out .25s, background-color .25s linear;
+}
+
+.card-item .rank-column .tier{
+    font-weight: bold;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.05rem;
+}
+
+.card-item .rank-column .rank{
+    font-family: 'TIMMONS NY';
+    font-size:120px;
+    position:absolute;
+    top:30px;
+    right:25px;
+    line-height:1;
+    transition: font-size 0.25s linear 0s;
+}
+
+.card-item.expanded .rank-column .rank,
+.card-item.large .rank-column .rank,
+.card-item.medium .rank-column .rank{
+    font-size:170px;
+    transition: font-size 0.125s linear .25s;
+}
+
+.card-item .info-column{
+    float:left;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    max-width: 81.75%;
+    background: rgb(245,245,245);
+    transition: max-width .25s ease-out .25s;
+}
+
+.card-item .info-column h3{
+    font-family: 'TIMMONS NY';
+    font-size: 60px;
+    line-height: .75;
+    font-weight: normal;
+    text-transform:uppercase;
+    letter-spacing:0;
+    padding-top:7.5px;
+    display:inline-block;
+}
+
+.card-item .info-column h4{
+    font-size:16px;
+    line-height: 1.25;
+    font-weight:400;
+    display:inline-block;
+}
+
+.card-item .info-column .player-main{
+    float:left;
+    max-width:47.5%;
+}
+
+.card-item.medium .info-column .player-main,
+.card-item.expanded .info-column .player-main,
+.card-item.large .info-column .player-main{
+    width:42.5%;
+}
+
+.card-item .info-column .player-stats{
+    width:50%;
+    position:relative;
+    float:right;
+    width:52.5%;
+    max-height:87px;
+    padding-right:50px;
+    transition: padding-right 0.25s linear 0s;
+}
+
+.card-item.expanded .info-column .player-stats,
+.card-item.medium .info-column .player-stats,
+.card-item.large .info-column .player-stats{
+    padding-right:0;
+    width:50%;
+    transition: padding-right 0.25s linear 0;
+}
+
+.card-item.expanded .info-column .player-stats,
+.card-item.large .info-column .player-stats{
+    max-height:250px;
+}
+
+.card-item .info-column .player-stats ul{
+    list-style:none;
+    width:calc(100% + 15px);
+    margin: 0 -7.5px;
+    text-align:right;
+}
+
+.card-item .info-column .player-stats ul li{
+    position:relative;
+    display:inline-block;
+    width: 85px;
+    max-width: 23.5%;
+    max-height: 115px;
+    height: 115px;
+    padding: 0 7.5px 25px;
+    transition:max-height 0.25s linear;
+}
+
+.card-item .info-column .player-stats ul li .stat-wrap{
+    position:relative;
+    height:100%;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    overflow:hidden;
+}
+
+.card-item .info-column .player-stats ul li:nth-child(n+5){
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: 0;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item.expanded .info-column .player-stats ul li:nth-child(n+5),
+.card-item.large .info-column .player-stats ul li:nth-child(n+5){
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item.expanded .info-column .player-stats ul li{
+    max-height: 125px;
+    height:125px;
+}
+
+.card-item .info-column .player-stats ul li span{
+    display:block;
+    line-height:1;
+}
+
+.card-item .info-column .player-stats ul li span.title{
+    border-bottom:1px solid #aaa;
+    text-align:center;
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding: 10px 0 5px;
+}
+
+.card-item .info-column .player-stats ul li span.number{
+    font-family: 'TIMMONS NY';
+    font-size: 48px;
+    margin: 15px 0 0;
+    text-align:center;
+    line-height:.77;
+}
+
+.card-item .info-column .player-stats ul li span.detail{
+    visibility: hidden;
+    position: absolute;
+    bottom: 5px;
+    opacity: 0;
+    left:0;
+    right:0;
+    font-size:12px;
+    text-align:center;
+    font-weight:500;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item.expanded .info-column .player-stats ul li span.detail{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-info{
+    padding-top: 0px;
+    clear:left;
+    transition: padding-top 0.25s linear;
+}
+
+.card-item.expanded .info-column .player-info,
+.card-item.large .info-column .player-info,
+.card-item.medium .info-column .player-info{
+    padding-top:30px;
+}
+
+.card-item .info-column .player-info > div{
+    visiblity:hidden;
+    opacity:0;
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
+}
+
+.card-item .info-column .player-info > div.player-meta{
+    visiblity:visible;
+    opacity:1;
+}
+
+.card-item .info-column .player-info > div.player-meta li{
+    visiblity:hidden;
+    opacity:0;
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
+}
+
+.card-item .info-column .player-info > div.player-meta li:first-of-type{
+    visiblity:visible;
+    opacity:1;
+}
+
+.card-item .info-column .player-info .player-meta{
+    width: 44%;
+
+}
+
+.card-item.medium:not(.expanded) .info-column .player-info .player-meta{
+    width:100%;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column{
+    width:50%;
+    float:left;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:first-of-type{
+    padding-right: 15px;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(2){
+    padding-left: 15px;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(3){
+    display:none;
+}
+
+.card-item.medium .info-column .player-meta:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.card-item .info-column .player-info .player-meta ul{
+    list-style:none;
+
+    font-size:14px;
+}
+
+.card-item .info-column .player-info .player-meta li{
+    position:relative;
+    overflow:hidden;
+    margin: 1px 0;
+}
+
+.card-item .info-column .player-info .player-meta li:after{
+    content:'.................................................................................................................................................';
+    display:block;
+    clear:both;
+    position:absolute;
+    bottom:0;
+    z-index:1;
+}
+
+.card-item .info-column .player-info .player-meta li .label{
+    position:relative;
+    background: rgb(245,245,245);
+    z-index:2;
+    padding-right:4px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.card-item .info-column .player-info .player-meta li .value{
+    position:relative;
+    float:right;
+    background:rgb(245,245,245);
+    z-index:2;
+    padding: 0 0 0 4px;
+}
+
+.card-item .info-column .player-description{
+    margin:30px 0 30px;
+    padding-top: 30px;
+    font-size:14px;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    padding-right:40px;
+}
+
+.card-item .info-column .player-description .player-headline{
+    font-size:20px;
+    line-height:1;
+    margin-bottom:5px;
+    font-family: 'Tiempos Headline';
+}
+
+.card-item .info-column .player-description .player-subline {
+    font-weight: 500;
+}
+
+.card-item .info-column .player-stat-image{
+    position:relative;
+    float:right;
+    width: 50%;
+    padding-left: 5%;
+    height:350px; /*this will be removed, determined by image size*/
+    z-index:2;
+}
+
+.card-item .info-column .player-stat-image > div{
+    position:relative;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.08);
+    border-radius: 9px;
+    overflow:hidden;
+}
+
+.card-item .info-column .player-stat-image > div > div{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-size:cover;
+    background-position: center center;
+}
+
+.card-item .info-column .player-stat-image div.default{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item .info-column .player-stat-image.media-shown div.default{
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-stat-image div.plus-minus-media{
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-stat-image div.plus-minus-media.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item .info-column .player-plus-minus h6{
+    font-size:14px;
+    letter-spacing:.05rem;
+}
+
+.card-item .info-column .player-plus-minus ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.card-item .info-column .player-plus-minus ul li{
+    position: relative;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker{
+    position:absolute;
+    top:4px;
+    left:-17px;
+    height:11px;
+    width:11px;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker:before{
+    content: '';
+    position:absolute;
+    left:50%;
+    display:block;
+    border-radius:50%;
+    height:11px;
+    width: 11px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-width:1px;
+    border-style: solid;
+}
+
+.card-item .info-column .player-plus-minus ul li.has-media .media-marker:after{
+    content: '';
+    position:absolute;
+    left:50%;
+    display:block;
+    border-radius:50%;
+    height:5px;
+    width: 5px;
+    top: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.card-item .info-column .player-social{
+    display:block;
+    clear:both;
+    margin-top:-13px;
+}
+
+.card-item .info-column .player-social a{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    margin-right: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent:-55555px;
+    overflow:hidden;
+    opacity:.21;
+    transition:opacity .125s linear;
+}
+
+.card-item .info-column .player-social a:hover{
+    opacity:.5;
+}
+
+.card-item .info-column .player-social a.facebook{
+    background-image:url(../img/facebook.svg);
+}
+
+.card-item .info-column .player-social a.twitter{
+    background-image:url(../img/twitter.svg);
+}
+
+.card-item img,
+.card-item .ringer-coverage{
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear .25s, opacity .25s 0s;
+}
+
+.card-item .ringer-coverage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px 30px;
+    transition: visibility 0s linear .25s, opacity .25s linear 0s;
+}
+
+.card-item .ringer-coverage h5{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    color:#fff;
+}
+
+.card-item .ringer-coverage ul{
+    list-style: none;
+    font-family: 'Tiempos Headline';
+}
+
+.card-item .ringer-coverage ul li a{
+    display:block;
+    color:#fff;
+    letter-spacing: 0.075rem;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.card-item img{
+    position:absolute;
+    width:100%;
+    margin-left: -20%;
+    margin-top: -50px;
+}
+
+.card-item.expanded img,
+.card-item.large img,
+.card-item.medium img{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear, opacity .25s .25s;
+}
+
+.card-item.expanded .rank-column,
+.card-item.large .rank-column,
+.card-item.medium .rank-column {
+    max-width: calc(100% - 728px);
+    transition: max-width .25s ease-out, background-color .25s linear;
+}
+
+.card-item.expanded .info-column,
+.card-item.large .info-column,
+.card-item.medium .info-column {
+    max-width: 728px;
+    visibility: visible;
+    opacity: 1;
+    transition: max-width .25s ease-out;
+}
+
+.card-item.expanded .info-column .player-info > div,
+.card-item.large .info-column .player-info > div,
+.card-item.medium .info-column .player-info > div,
+.card-item.expanded .info-column .player-info > div.player-meta li,
+.card-item.large .info-column .player-info > div.player-meta li,
+.card-item.medium .info-column .player-info > div.player-meta li{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear, opacity .25s .25s;
+}
+
+.card-item.expanded .toggle-card{
+    bottom: 28px;
+    transform: rotate(-180deg);
+    transition: bottom 0.125s ease-out .25s, transform 0.125s linear;
+}
+
+.card-item.medium .toggle-card{
+    bottom: 28px;
+    transition: bottom 0.125s ease-out .25s;
+}
+
+.card-item.large .toggle-card{
+    display:none;
+}
+
+.card-item.expanded .ringer-coverage,
+.card-item.large .ringer-coverage {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear, opacity .25s 1s;
+}
+
+/* Medium Sized */
+.card-item.medium:not(.expanded),
+.card-item.medium .wrapper{
+    max-height:325px;
+    transition: all 0.25s ease-out 0.3s;
+
+}
+
+.card-item.medium:not(.expanded) .player-info .player-plus-minus,
+.card-item.medium:not(.expanded) .player-info .player-stat-image{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-item.expanded,
+.card-item.large,
+.card-item.expanded .wrapper,
+.card-item.large .wrapper{
+    max-height: 1080px;
+    transition: all 0.25s ease-out 0.3s;
+}
+
+.card-item.medium.expanded,
+.card-item.medium.expanded .wrapper,
+.card-item.large.expanded .wrapper{
+    transition: all 0.25s ease-out 0s;
+}

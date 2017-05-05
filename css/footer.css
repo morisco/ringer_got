@@ -1,0 +1,13 @@
+footer{
+    position:relative;
+    width:100%;
+    padding: 250px 150px 100px;
+    z-index:1;
+}
+
+footer .footer-wrapper{
+    max-width:1390px;
+    width:95%;
+    margin:0 auto;
+    text-align:center;
+}

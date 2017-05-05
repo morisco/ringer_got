@@ -4,7 +4,7 @@
             <div class="tier">Tier 1</div>
             <div class="rank">{{rank}}</div>
             <div class="image">
-                <img src="{{img}}" alt="{{name}}" />
+                <img src="img/players/{{filter_id}}.png" alt="{{name}}" />
             </div>
             {{#if coverage.length}}
                 <div class="ringer-coverage">
@@ -29,9 +29,11 @@
                 <ul>
                     {{#each stats}}
                         <li>
-                            <span class="title">{{this.title}}</span>
-                            <span class="number">{{this.number}}</span>
-                            <span class="detail color-theme">{{this.detail}}</span>
+                            <div class="stat-wrap">
+                                <span class="title">{{this.title}}</span>
+                                <span class="number">{{this.number}}</span>
+                                <span class="detail color-theme">{{this.detail}}</span>
+                            </div>
                         </li>
                     {{/each}}
                 </ul>
@@ -53,8 +55,8 @@
                     </ul>
                 </div>
                 <div class="player-description">
-                    <div class="player-headline">{{{heading}}}</div>
-                    <div class="player-subline">{{{subline}}}</div>
+                    <div class="player-headline">{{{summary}}}</div>
+                    <div class="player-subline"><strong>BEST CASE: </strong>{{best_case}}&nbsp;&nbsp;&nbsp;<strong>WORST CASE: </strong>{{worst_case}}</strong></div>
                 </div>
                 <div class="player-stat-image">
                     <div>

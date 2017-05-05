@@ -1,0 +1,86 @@
+#intro{
+    position: relative;
+    width:95%;
+    margin: -130px auto 60px;
+    padding:60px;
+    max-width:1390px;
+    list-style: none;
+    font-size: 23px ;
+    font-family: 'Tiempos Headline';
+    background: #fff;
+    z-index: 2;
+}
+
+#intro .intro-wrapper{
+    position:relative;
+    border: 10px solid #000;
+    padding: 60px 60px 20px;
+}
+
+#intro .intro-wrapper > div{
+    position:relative;
+    z-index:3;
+}
+
+#intro .intro-wrapper:after{
+    content: '';
+    display:block;
+    height: calc(100% - 55px);
+    width: calc(100% + 10px);
+    position:absolute;
+    top: 65px;
+    left: 0;
+    background:#fff;
+    z-index:2;
+}
+
+#intro .intro-actions{
+    position:relative;
+    width:100%;
+    margin-top: 30px;
+}
+
+#intro .intro-actions:after{
+    clear:both;
+    content:'';
+    display:table;
+}
+
+#intro .ringer-draft-coverage{
+    max-width: calc(100% - 110px);
+    font-size:17px;
+    font-family:'NYTMag Sans', serif;
+    font-weight:500;
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-8px;
+}
+
+#intro .social{
+    width: 110px;
+    float: left;
+}
+
+#intro .social a{
+    display:inline-block;
+    height:41px;
+    width:41px;
+    margin-right: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#intro .social a.facebook{
+    background-image:url(../img/facebook.svg);
+}
+
+#intro .social a.twitter{
+    background-image:url(../img/twitter.svg);
+}
+
+#intro:after{
+    clear:both;
+    display:table;
+    content:'';
+}
