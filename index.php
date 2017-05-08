@@ -91,7 +91,7 @@
         $fb_meta['image'] = "http://mikemorisco.com/ringer/nba/img/players/d_bacon.png";
     }
 
-    $bodyClass = '';
+    $bodyClass = $sort_list_id;
     if (strstr($_SERVER['HTTP_USER_AGENT'], 'iPad')) {
         $bodyClass = ' ipad';
     }
@@ -116,6 +116,7 @@
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/themes.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/intro.css">
         <link rel="stylesheet" href="css/filter-bar.css">
@@ -172,7 +173,7 @@
                     <a href="#" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-filter-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
                     <a href="#" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-filter-id="danny"><span>Danny Chau</span></a>
                     <a href="#" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-filter-id="johnathan"><span>Johnathan Tjarks</span></a>
-                    <a href="#" class="small <?php echo ($sort_list_id === 'a_z') ? 'active_filter' : '' ?>" data-filter-id="a_z"><span>Sort A-Z</span></a>
+                    <a href="#" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-filter-id="az"><span>Sort A-Z</span></a>
                 </div>
             </section>
             <div id="main-content">
@@ -231,7 +232,14 @@
                 kevin       : GLOBALS.data['kevin'],
                 danny       : GLOBALS.data['danny'],
                 johnathan   : GLOBALS.data['johnathan'],
-                a_z         :  GLOBALS.data['a_z']
+                az          : GLOBALS.data['a_z']
+            };
+            GLOBALS.theme_colors = {
+                'ringer': '#43be6d',
+                'kevin': '#ffff00',
+                'danny': '#00adef',
+                'johnathan': '#c800ff',
+                'az': '#0043cc'
             };
         </script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>

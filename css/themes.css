@@ -1,0 +1,125 @@
+/* Base Theme Transitions */
+.background-theme{
+   transition:background-color 0.25s linear;
+}
+
+.color-theme{
+    transition:color 0.25s linear;
+}
+
+.border-theme{
+   transition:border-color 0.25s linear;
+}
+
+.border-theme-before:before{
+    transition:border-color 0.25s linear;
+}
+
+.background-theme-after:after{
+    transition:background-color 0.25s linear;
+}
+
+/* Ringer Theme */
+.ringer .background-theme{
+   background-color: #43be6d !important;
+}
+
+.ringer .color-theme{
+   color: #43be6d;
+}
+
+.ringer .border-theme{
+   border-color: #43be6d;
+}
+
+.ringer .border-theme-before:before{
+    border-color: #43be6d;
+}
+
+.ringer .background-theme-after:after{
+    background-color: #43be6d;
+}
+
+/* Kevin Theme */
+.kevin .background-theme{
+   background-color: #ffff00 !important;
+}
+
+.kevin .color-theme{
+   color: #ffff00;
+}
+
+.kevin .border-theme{
+   border-color: #ffff00;
+}
+
+.kevin .border-theme-before:before{
+    border-color: #ffff00;
+}
+
+.kevin .background-theme-after:after{
+    background-color: #ffff00;
+}
+
+/* Danny Theme */
+.danny .background-theme{
+   background-color: #00adef !important;
+}
+
+.danny .color-theme{
+   color: #00adef;
+}
+
+.danny .border-theme{
+   border-color: #00adef;
+}
+
+.danny .border-theme-before:before{
+    border-color: #00adef;
+}
+
+.danny .background-theme-after:after{
+    background-color: #00adef;
+}
+
+/* Johnathan Theme */
+.johnathan .background-theme{
+   background-color: #c800ff !important;
+}
+
+.johnathan .color-theme{
+   color: #c800ff;
+}
+
+.johnathan .border-theme{
+   border-color: #c800ff;
+}
+
+.johnathan .border-theme-before:before{
+    border-color: #c800ff;
+}
+
+.johnathan .background-theme-after:after{
+    background-color: #c800ff;
+}
+
+/* AZ Theme */
+.az .background-theme{
+   background-color: #0043cc !important;
+}
+
+.az .color-theme{
+   color: #0043cc;
+}
+
+.az .border-theme{
+   border-color: #0043cc;
+}
+
+.az .border-theme-before:before{
+    border-color: #0043cc;
+}
+
+.az .background-theme-after:after{
+    background-color: #0043cc;
+}

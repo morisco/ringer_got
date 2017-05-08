@@ -13,7 +13,7 @@
     display:block;
     padding: 0;
     margin: 0;
-    height: 5555px;
+    max-height:145px;
     border-radius:.625rem;
     overflow:hidden;
     border: .00875rem solid #000;
@@ -62,8 +62,10 @@
 }
 
 .card-item .rank-column{
-    position: relative;
-    float: left;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
     height: 100%;
     max-height: 100%;
     width: 100%;
@@ -97,10 +99,10 @@
 }
 
 .card-item .info-column{
-    float:left;
+    float:right;
     padding: 30px;
     width: 100%;
-    height: 100%;
+    min-width:728px;
     max-width: 81.75%;
     background: rgb(245,245,245);
     transition: max-width .25s ease-out .25s;
@@ -188,19 +190,25 @@
     visibility: hidden;
     opacity: 0;
     margin-bottom: 0;
+    padding-bottom:0;
+    max-height:115px;
+    height: 115px;
     transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+.card-item.expanded .info-column .player-stats ul li{
+    max-height: 125px;
+    height:125px;
 }
 
 .card-item.expanded .info-column .player-stats ul li:nth-child(n+5),
 .card-item.large .info-column .player-stats ul li:nth-child(n+5){
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
-}
-
-.card-item.expanded .info-column .player-stats ul li{
-    max-height: 125px;
-    height:125px;
+    padding-bottom:0;
+    max-height:90px;
+    height:90px;
+    transition: visibility 0s linear 0.125s, opacity 1s linear 0s;
 }
 
 .card-item .info-column .player-stats ul li span{
@@ -244,52 +252,44 @@
     transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
 }
 
-.card-item .info-column .player-info{
-    padding-top: 0px;
-    clear:left;
-    transition: padding-top 0.25s linear;
-}
 
-.card-item.expanded .info-column .player-info,
-.card-item.large .info-column .player-info,
-.card-item.medium .info-column .player-info{
-    padding-top:30px;
-}
-
-.card-item .info-column .player-info > div{
-    visiblity:hidden;
-    opacity:0;
-    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
-}
-
-.card-item .info-column .player-info > div.player-meta{
-    visiblity:visible;
+.card-item .info-column .player-meta{
+    visibility: visible;
     opacity:1;
-}
-
-.card-item .info-column .player-info > div.player-meta li{
-    visiblity:hidden;
-    opacity:0;
-    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
-}
-
-.card-item .info-column .player-info > div.player-meta li:first-of-type{
-    visiblity:visible;
-    opacity:1;
-}
-
-.card-item .info-column .player-info .player-meta{
+    float:left;
     width: 44%;
-
 }
 
-.card-item.medium:not(.expanded) .info-column .player-info .player-meta{
+.card-item .info-column .player-meta li{
+    visibility:hidden;
+    opacity:0;
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
+}
+
+.card-item .info-column .player-meta li:first-of-type,
+.card-item.large .info-column .player-meta li,
+.card-item.expanded .info-column .player-meta li{
+    visibility:visible;
+    opacity:1;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta{
     width:100%;
+    padding:30px 0;
+}
+
+.card-item.large .info-column .player-meta{
+    padding:15px 0 30px;
 }
 
 .card-item.medium:not(.expanded) .info-column .player-meta .medium-column{
     width:50%;
     float:left;
+}
+
+.card-item.medium:not(.expanded) .info-column .player-meta li{
+    visibility:visible;
+    opacity:1;
 }
 
 .card-item.medium:not(.expanded) .info-column .player-meta .medium-column:first-of-type{
@@ -310,19 +310,18 @@
     clear:both;
 }
 
-.card-item .info-column .player-info .player-meta ul{
+.card-item .info-column .player-meta ul{
     list-style:none;
-
     font-size:14px;
 }
 
-.card-item .info-column .player-info .player-meta li{
+.card-item .info-column .player-meta li{
     position:relative;
     overflow:hidden;
     margin: 1px 0;
 }
 
-.card-item .info-column .player-info .player-meta li:after{
+.card-item .info-column .player-meta li:after{
     content:'.................................................................................................................................................';
     display:block;
     clear:both;
@@ -331,7 +330,7 @@
     z-index:1;
 }
 
-.card-item .info-column .player-info .player-meta li .label{
+.card-item .info-column .player-meta li .label{
     position:relative;
     background: rgb(245,245,245);
     z-index:2;
@@ -340,7 +339,7 @@
     text-transform:uppercase;
 }
 
-.card-item .info-column .player-info .player-meta li .value{
+.card-item .info-column .player-meta li .value{
     position:relative;
     float:right;
     background:rgb(245,245,245);
@@ -349,6 +348,7 @@
 }
 
 .card-item .info-column .player-description{
+    clear:both;
     margin:30px 0 30px;
     padding-top: 30px;
     font-size:14px;
@@ -365,6 +365,21 @@
 
 .card-item .info-column .player-description .player-subline {
     font-weight: 500;
+}
+
+.card-item .info-column .player-info{
+    padding-top: 0px;
+    clear:both;
+    transition: padding-top 0.25s linear;
+    visibility:hidden;
+    opacity:0;
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
+}
+
+.card-item.large .info-column .player-info {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear, opacity .25s 1s;
 }
 
 .card-item .info-column .player-stat-image{
@@ -541,7 +556,6 @@
     position:absolute;
     width:100%;
     margin-left: -20%;
-    margin-top: -50px;
 }
 
 .card-item.expanded img,
@@ -568,18 +582,7 @@
     transition: max-width .25s ease-out;
 }
 
-.card-item.expanded .info-column .player-info > div,
-.card-item.large .info-column .player-info > div,
-.card-item.medium .info-column .player-info > div,
-.card-item.expanded .info-column .player-info > div.player-meta li,
-.card-item.large .info-column .player-info > div.player-meta li,
-.card-item.medium .info-column .player-info > div.player-meta li{
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear, opacity .25s .25s;
-}
-
-.card-item.expanded .toggle-card{
+.card-item.expanded-card .toggle-card{
     bottom: 28px;
     transform: rotate(-180deg);
     transition: bottom 0.125s ease-out .25s, transform 0.125s linear;
@@ -590,7 +593,7 @@
     transition: bottom 0.125s ease-out .25s;
 }
 
-.card-item.large .toggle-card{
+.card-item.large:not(.expanded-card) .toggle-card{
     display:none;
 }
 
@@ -604,7 +607,6 @@
 /* Medium Sized */
 .card-item.medium:not(.expanded),
 .card-item.medium .wrapper{
-    max-height:325px;
     transition: all 0.25s ease-out 0.3s;
 
 }
@@ -619,7 +621,6 @@
 .card-item.large,
 .card-item.expanded .wrapper,
 .card-item.large .wrapper{
-    max-height: 1080px;
     transition: all 0.25s ease-out 0.3s;
 }
 
@@ -637,7 +638,7 @@
 
 
 @media(max-width: 1023px){
-    #rank-column{
+    .card-item .rank-column{
         max-width: 100%;
         float:none;
     }

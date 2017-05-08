@@ -108,62 +108,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.background-theme{
-   background-color: #43be6d !important;
-   transition:background-color 0.25s linear;
-}
-
-.color-theme{
-   color: #43be6d;
-   transition:color 0.25s linear;
-}
-
-.border-theme{
-   border-color: #43be6d;
-   transition:border-color 0.25s linear;
-}
-
-.border-theme-before:before{
-    border-color: #43be6d;
-    transition:border-color 0.25s linear;
-}
-
-.border-theme-before.kevin:before{
-    border-color:#ffff00;
-}
-
-.background-theme-after.kevin:after{
-    background-color: #ffff00;
-}
-
-.border-theme-before.danny:before{
-    border-color:#00adef;
-}
-
-.background-theme-after.danny:after{
-    background-color: #00adef;
-}
-
-.border-theme-before.johnathan:before{
-    border-color:#c800ff;
-}
-
-.background-theme-after.johnathan:after{
-    background-color: #c800ff;
-}
-
-.border-theme-before.a_z:before{
-    border-color:#0043cc;
-}
-
-.background-theme-after.a_z:after{
-    background-color: #0043cc;
-}
-
-.background-theme-after:after{
-    background-color: #43be6d;
-    transition:background-color 0.25s linear;
-}
 
 .stroke{
     transition:stroke 0.25s linear;

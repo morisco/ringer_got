@@ -20,25 +20,25 @@
             {{/if}}
         </div>
         <div class="info-column">
-            <div class="player-main">
-                <h3>{{name}}</h3>
-                <h4><strong>{{position}}</strong></h4>
-                <h4>{{school}}</h4>
-            </div>
-            <div class="player-stats">
-                <ul>
-                    {{#each stats}}
-                        <li>
-                            <div class="stat-wrap">
-                                <span class="title">{{this.title}}</span>
-                                <span class="number">{{this.number}}</span>
-                                <span class="detail color-theme">{{this.detail}}</span>
-                            </div>
-                        </li>
-                    {{/each}}
-                </ul>
-            </div>
-            <div class="player-info">
+            <div class="medium-show">
+                <div class="player-main">
+                    <h3>{{name}}</h3>
+                    <h4><strong>{{position}}</strong></h4>
+                    <h4>{{school}}</h4>
+                </div>
+                <div class="player-stats">
+                    <ul>
+                        {{#each stats}}
+                            <li>
+                                <div class="stat-wrap">
+                                    <span class="title">{{this.title}}</span>
+                                    <span class="number">{{this.number}}</span>
+                                    <span class="detail color-theme">{{this.detail}}</span>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
                 <div class="player-meta">
                     <ul>
                         <div class="medium-column">
@@ -58,6 +58,8 @@
                     <div class="player-headline">{{{summary}}}</div>
                     <div class="player-subline"><strong>BEST CASE: </strong>{{best_case}}&nbsp;&nbsp;&nbsp;<strong>WORST CASE: </strong>{{worst_case}}</strong></div>
                 </div>
+            </div>
+            <div class="player-info">
                 <div class="player-stat-image">
                     <div>
                         <div style="background-image:url(img/stat-image.jpg);" class="default"></div>

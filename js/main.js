@@ -21,6 +21,8 @@ var CardList = function() {
 
     this.filterOffsetPos = $('#content').offset().top;
 
+    this.size = 'small';
+
     this.init = function() {
         this.initEvents();
         if(this.initial_player){
@@ -63,38 +65,63 @@ var CardList = function() {
     }
 
     this.toggleCard = function(e) {
-        var id = $(this).data('id');
-        $('.card-item[data-id="' + id + '"]').toggleClass('expanded');
+        var id = $(this).data('id'),
+            card = $('.card-item[data-id="' + id + '"]');
+
+        if(card.hasClass('expanded-card')){
+            card.removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
+            setTimeout(function(){
+                cardlist.setHeight(card);
+            },250);
+        } else {
+            card.removeClass('small medium large expanded').addClass('large expanded-card')
+            setTimeout(function(){
+                cardlist.setHeight(card, 'large');
+            },250);
+        }
+
+        // if(card.hasClass('expanded')){
+        //     card.removeClass('expanded');
+        //     card.addClass(cardlist.size);
+        //     setTimeout(function(){
+        //         cardlist.setHeight(card, cardlist.size);
+        //     },250);
+        // } else {
+        //     card.addClass('large expanded');
+        //     setTimeout(function(){
+        //         cardlist.setHeight(card);
+        //     },250)
+        // }
+
     }
 
     this.changeSize = function(){
+        cardlist.size = $(this).data('size');
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded').addClass($(this).data('size'));
-        _.each($('.card-item'), function(cardItem){
-            cardlist.setHeight(cardItem, $(this).data('size'));
-        });
+        $('.card-item').removeClass('small medium large expanded expanded-card').addClass($(this).data('size'));
+        setTimeout(function(){
+            _.each($('.card-item'), function(cardItem){
+                cardlist.setHeight(cardItem);
+            });
+        },250);
+
     };
 
     this.setHeight = function(el, size) {
         var $el = $(el),
+            size = size || cardlist.size
             height = 0;
-            console.log('pad-top-info-col', parseInt($el.find('.info-column').css('padding-top'), 10))
-            console.log('pad-bot-info-col', parseInt($el.find('.info-column').css('padding-bottom'), 10))
-            console.log('height-player-main', parseInt($el.find('.player-main').outerHeight(), 10))
-            console.log('pad-top-player-info', parseInt($el.find('.player-info').css('padding-top'), 10) || 30)
-            console.log('height-player-meta', parseInt($el.find('.player-meta').outerHeight(), 10))
-            console.log('padding-top-player-desc', parseInt($el.find('.player-description').css('padding-top'), 10));
-            console.log('margin-top-player-desc', parseInt($el.find('.player-description').css('margin-top'), 10));
-            console.log('height-player-desc', parseInt($el.find('.player-description').outerHeight(), 10));
-            height = height + parseInt($el.find('.info-column').css('padding-top'), 10);
-            height = height + parseInt($el.find('.info-column').css('padding-bottom'), 10);
-            height = height + parseInt($el.find('.player-main').outerHeight(), 10);
-            height = height + parseInt($el.find('.player-info').css('padding-top'), 10);
-            height = height + parseInt($el.find('.player-meta').outerHeight(), 10);
-            height = height + parseInt($el.find('.player-description').css('margin-top'), 10);
-            height = height + parseInt($el.find('.player-description').outerHeight(), 10);
-            console.log(height);
+            if(size === 'medium'){
+                height = $el.find('.medium-show').outerHeight(true);
+                height += (parseInt($el.find('.info-column').css('padding-top'),10) * 2);
+            } else if(size === 'large'){
+                height = $el.find('.info-column').outerHeight(true);
+            } else{
+                height = 145;
+            }
+
+            $el.css({'max-height': height + 'px'});
     }
 
     this.scrollWatch = function() {
@@ -123,20 +150,9 @@ var CardList = function() {
     }
 
     this.setColors = function(filter_id) {
-        var colors = {
-            'ringer': '#43be6d',
-            'kevin': '#ffff00',
-            'danny': '#00adef',
-            'johnathan': '#c800ff',
-            'a_z': '#0043cc'
-        };
-        var selected_color = colors[filter_id];
-        $('.background-theme').css({'background-color': selected_color + ' !important'});
-        $('.border-theme').css({'border-color': selected_color});
-        $('.border-theme-before').removeClass('ringer kevin danny johnathan a_z').addClass(filter_id);
-        $('.background-theme-after').removeClass('ringer kevin danny johnathan a_z').addClass(filter_id);
-        $('.color-theme').css({'color': selected_color + ' !important'});
-        $('a.active').css({'color': selected_color + ' !important'});
+        $('body').removeClass('ringer kevin danny johnathan az');
+        $('body').addClass(filter_id);
+        var selected_color = GLOBALS.theme_colors[filter_id];
         $('.stroke').attr('style', "stroke:"+selected_color + ' !important');
         $('.arrow').attr('style', "fill:"+selected_color + ' !important');
     }
@@ -159,6 +175,7 @@ var CardList = function() {
 
         var players,
             filter;
+
         $('#filters a.active').removeClass('active color-theme');
         $(this).addClass('active color-theme');
         if($(window).width() < 768 && !$('body').hasClass('filters-open')){
@@ -166,11 +183,12 @@ var CardList = function() {
             return;
         } else if($(window).width() < 768) {
             $('body').removeClass('filters-open');
-            $('body,html').scrollTop(cardlist.filterOffsetPos);
+            console.log('yoho',cardlist.filterOffsetPos);
+            $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
         } else {
             $('body').removeClass('filters-open');
             if($(window).scrollTop() > cardlist.filterOffsetPos){
-                $('body,html').scrollTop(cardlist.filterOffsetPos);
+                $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
             }
         }
 
@@ -209,7 +227,9 @@ var CardList = function() {
 
     this.buildList = function(players) {
         setTimeout(function(){
-            $('html,body').scrollTop($('#item-list').offset().top - 130);
+            if($(window).scrollTop() > cardlist.filterOffsetPos){
+                $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
+            }
             $('#item-list').removeClass('sorting');
             $('#item-list').empty();
             cardlist.coverage_count = 5;
