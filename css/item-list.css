@@ -611,6 +611,7 @@
 
 }
 
+
 .card-item.medium:not(.expanded) .player-info .player-plus-minus,
 .card-item.medium:not(.expanded) .player-info .player-stat-image{
     opacity: 0;
@@ -635,7 +636,6 @@
         width: 100%;
     }
 }
-
 
 @media(max-width: 1023px){
     .card-item .rank-column{
