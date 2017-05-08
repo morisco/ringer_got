@@ -136,10 +136,13 @@ var CardList = function() {
     }
 
     this.showMedia = function() {
-        var showMedia = $(this).data('media');
+        var showMedia   = $(this).data('media'),
+            mediaBG     = $('.plus-minus-media[data-id="'+showMedia+'"]').css('background-image');
         $(this).addClass('color-theme');
         $('.player-stat-image').addClass('media-shown');
         $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
+        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
+        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
     }
 
     this.hideMedia = function() {
@@ -183,7 +186,6 @@ var CardList = function() {
             return;
         } else if($(window).width() < 768) {
             $('body').removeClass('filters-open');
-            console.log('yoho',cardlist.filterOffsetPos);
             $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
         } else {
             $('body').removeClass('filters-open');
