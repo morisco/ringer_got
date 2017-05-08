@@ -628,3 +628,17 @@
 .card-item.large.expanded .wrapper{
     transition: all 0.25s ease-out 0s;
 }
+
+@media(max-width: 1100px){
+    #item-list{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1023px){
+    #rank-column{
+        max-width: 100%;
+        float:none;
+    }
+}

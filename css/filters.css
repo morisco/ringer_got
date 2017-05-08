@@ -116,3 +116,29 @@
     left: auto;
     right:0;
 }
+
+@media(min-width: 1101px){
+    .filter-fixed #filters{
+        position:fixed;
+        top:110px;
+    }
+
+    #filters a{
+        position:relative;
+        display:block;
+    }
+}
+
+@media(max-width: 1100px){
+    #filters {
+        width: 100%;
+    }
+    #filters .switcher,
+    #filters a{
+        display:inline-block;
+    }
+
+    #filters a{
+        margin-left:10px;
+    }
+}

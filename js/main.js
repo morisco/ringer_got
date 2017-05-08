@@ -110,12 +110,14 @@ var CardList = function() {
 
     this.showMedia = function() {
         var showMedia = $(this).data('media');
+        $(this).addClass('color-theme');
         $('.player-stat-image').addClass('media-shown');
         $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
     }
 
     this.hideMedia = function() {
         var hideMedia = $(this).data('media');
+        $(this).removeClass('color-theme');
         $('.player-stat-image').removeClass('media-shown');
         $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
     }

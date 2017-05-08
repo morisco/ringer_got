@@ -2,14 +2,14 @@
 #filter-bar-wrapper{
     position:relative;
     width:100%;
-    max-width:1500px;
+    max-width:1270px;
     max-height:80px;
     height: 50px;
     margin:0 auto 60px;
     padding: 0;
     z-index:5;
     overflow:hidden;
-    transition: max-width .0625s linear, position 0s linear 0.0625s;
+    transition: max-width .5s linear, position 0s linear 0.0625s;
 }
 
 #filter-bar{
@@ -74,6 +74,7 @@
 
     .filter-fixed #filter-bar-wrapper #filter-bar{
         border-radius:0;
+        border-top:1px solid #000;
     }
 
 }
