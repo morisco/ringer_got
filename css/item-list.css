@@ -172,9 +172,10 @@
     display:inline-block;
     width: 85px;
     max-width: 23.5%;
-    max-height: 115px;
-    height: 115px;
-    padding: 0 7.5px 25px;
+    max-height: 90px;
+    height: 90px;
+    padding: 0 7.5px;
+    margin-bottom:15px;
     transition:max-height 0.25s linear;
 }
 
@@ -191,14 +192,12 @@
     opacity: 0;
     margin-bottom: 0;
     padding-bottom:0;
-    max-height:115px;
-    height: 115px;
     transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
-.card-item.expanded .info-column .player-stats ul li{
-    max-height: 125px;
-    height:125px;
+.card-item.large .info-column .player-stats ul li{
+    max-height: 105px;
+    height:105px;
 }
 
 .card-item.expanded .info-column .player-stats ul li:nth-child(n+5),
@@ -206,8 +205,6 @@
     visibility: visible;
     opacity: 1;
     padding-bottom:0;
-    max-height:90px;
-    height:90px;
     transition: visibility 0s linear 0.125s, opacity 1s linear 0s;
 }
 
@@ -247,7 +244,7 @@
     transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
-.card-item.expanded .info-column .player-stats ul li span.detail{
+.card-item.large .info-column .player-stats ul li span.detail{
     visibility: visible;
     opacity: 1;
     transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
@@ -259,6 +256,7 @@
     opacity:1;
     float:left;
     width: 44%;
+    clear:left;
 }
 
 .card-item .info-column .player-meta li{
@@ -441,6 +439,14 @@
     visibility:hidden;
     opacity:0;
     transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+.card-item .info-column .player-stat-image div.plus-minus-media img{
+    position:absolute;
+    height: 100%;
+    width: auto;
+    left:50%;
+    transform:translateX(-50%);
 }
 
 .card-item .info-column .player-stat-image div.plus-minus-media.visible{

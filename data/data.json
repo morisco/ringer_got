@@ -6,417 +6,1677 @@
       "position" : "Stretch Forward",
       "position_group" : "forward",
       "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
+      "ringer_stat" : "Fluid scoring",
       "age" : 21,
       "height" : "6'8\"",
       "wingspan" : "6'8\"",
       "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
+      "summary" : "Muscular wing with microwave-scorer upside.",
+      "role_models" : "Dion Waiters, Lance Stephenson, Malachi Richardson",
+      "plus" : "[{\n    \"text\": \"Excellent scorer in the open floor. He’s a bowling ball attacking closeouts and slashing in transition. Can finish through contact.\",\n    \"media\": \"img/media/d_bacon_excellent_scorer.gif\"\n  },\n  {\n    \"text\": \"Aggressive ball handler with good footwork on drives. Uses Euro-steps and side steps. Can pull up on a dime off the dribble.\",\n    \"media\": \"img/media/d_bacon_aggressive_ball_handler.gif\"\n  },\n  {\n    \"text\": \"At his best going downhill, and can navigate pick-and-roll well. Has upside as a screen-game threat if his shot translates.\"\n  },\n  {\n    \"text\": \"Defensive upside is there, despite his flaws. He has a thick, muscular frame with a solid wingspan. Great rebounder.\"\n  }]",
+      "minus" : "[{\n    \"text\": \"Low-effort defender with poor fundamentals. Doesn’t fight over screens or close out hard.\",\n    \"media\": \"img/media/d_bacon_low-effort_defender.gif\"\n  },\n  {\n    \"text\": \"Mediocre basketball IQ. Takes too many contested midrange jumpers early in the clock. Forces contested shots rather than passes to open teammates.\",\n    \"media\": \"img/media/d_bacon_mediocre_basketball_IQ.gif\"\n  },\n  {\n    \"text\": \"Needs to improve his off-hand so he’s not predictable. Usually tries to drive right and rarely uses his left at the rim.\"\n  },\n  {\n    \"text\": \"Subpar spot-up shooter with shaky mechanics. He can hit shots but needs to smoothen his release; looks less comfortable when he’s rushed.\"\n  }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.2\",\n    \"detail\": \"23.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.2\",\n    \"detail\": \"5.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.7\",\n    \"detail\": \"2.4 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.0\",\n    \"detail\": \"489 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.1\",\n      \"detail\": \"0.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"33.3%\",\n      \"detail\": \"171 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"75.4%\",\n      \"detail\": \"138 FTA\"\n    }]",
       "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
     },
     {
-      "filter_id" : "m_morisco",
-      "name" : "Mike Morisco",
+      "filter_id" : "a_peters",
+      "name" : "Alec Peters",
       "position" : "Stretch Forward",
       "position_group" : "forward",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "school" : "Valparaiso, Senior",
+      "ringer_stat" : "Basketball IQ",
+      "age" : 22.2,
+      "height" : "6'9\"",
+      "wingspan" : "6'10\"",
+      "reach" : "",
+      "summary" : "A small-ball forward with offensive skills, but weak defense and inability to create space lower his value.",
+      "role_models" : "",
+      "plus" : "[\n  {\n    \"text\": \"Good shooter with a quick release and smooth footwork on the move who appears comfortable from NBA range.\",\n    \"media\": \"img/media/a_peters_pass.gif\"\n  },\n  {\n    \"text\": \"Great post skills allow him to seal off a defender under the rim and finish with both hands.\"\n  },\n  {\n    \"text\": \"Smart player with good instincts: great fundamentals and reliable, though occasionally telegraphs passes\"\n  }\n]",
+      "minus" : "[\n  {\n    \"text\": \"Limited scorer. His slow first step won’t allow him to create space against top-level athletes.\"\n  },\n  {\n    \"text\": \"Lacks explosive scoring and lateral quickness to defend the perimeter, limiting his upside.\"\n  },\n  {\n    \"text\": \"A modern tweener: can’t switch onto guards or protect the rim and doesn’t make up for it as a rebounder, though he hustles.\"\n  }\n]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"23.0\",\n    \"detail\": \"26.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"10.1\",\n    \"detail\": \"11.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.2\",\n    \"detail\": \"2.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.8\",\n    \"detail\": \"468 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
+      "coverage" : "N/A"
     },
     {
-      "filter_id" : "b_morisco",
-      "name" : "Bob Morisco",
-      "position" : "Stretch Forward",
-      "position_group" : "forward",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
-    },
-    {
-      "filter_id" : "m_morisco_4",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
-      "position_group" : "guard",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
-    },
-    {
-      "filter_id" : "m_morisco_5",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
-      "position_group" : "guard",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
-    },
-    {
-      "filter_id" : "m_morisco_6",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
+      "filter_id" : "a_pasecniks",
+      "name" : "Anzejs Pasecniks",
+      "position" : "Big",
       "position_group" : "big",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
+      "school" : "Gran Canaria, Latvia",
+      "ringer_stat" : "Mobility at the 5",
+      "age" : 21.5,
+      "height" : "7'2\"",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "True center with excellent mobility who needs to improve fundamentals to survive defensively.",
+      "role_models" : "",
       "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_7",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
+      "filter_id" : "b_adebayo",
+      "name" : "Bam Adebayo",
+      "position" : "Big",
       "position_group" : "big",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "school" : "Kentucky, Freshman",
+      "ringer_stat" : "Rim-running",
+      "age" : 19.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Projects as an energy big man but needs to improve his awareness and proper technique to stay on the floor.",
+      "role_models" : "Bismack Biyombo, Montrezl Harrell",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_8",
+      "filter_id" : "c_swanigan",
+      "name" : "Caleb Swanigan",
+      "position" : "Power Forward",
+      "position_group" : "forward",
+      "school" : "Purdue, Sophomore",
+      "ringer_stat" : "",
+      "age" : 20.2,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "c_oliver",
+      "name" : "Cameron Oliver",
+      "position" : "Forward",
+      "position_group" : "forward",
+      "school" : "Nevada, Sophomore",
+      "ringer_stat" : "",
+      "age" : 20.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_wilson",
+      "name" : "D.J. Wilson",
+      "position" : "Big",
+      "position_group" : "big",
+      "school" : "Michigan, Sophomore",
+      "ringer_stat" : "",
+      "age" : 21.3,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_reed",
+      "name" : "Davon Reed",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Miami, Senior",
+      "ringer_stat" : "",
+      "age" : 22,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_fox",
+      "name" : "De'Aaron Fox",
+      "position" : "Point Guard",
+      "position_group" : "guard",
+      "school" : "Kentucky, Freshman",
+      "ringer_stat" : "Speed",
+      "age" : 19.5,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Lightning-quick point guard who constantly pressures opponents on both ends of the floor.",
+      "role_models" : "Mike Conley, John Wall, Elfrid Payton",
+      "plus" : "[{\n    \"text\": \"Speed coupled with the ability to control tempo. Can slow it down or kick it into hyperdrive, making him a major transition threat.”,\n“media”: \"img/media/d_fox_speed_coupled.gif\"\n  },\n  {\n    \"text\": \"High IQ pick-and-roll playmaker. Good at probing defense, snaking to middle, and either attacking or passing.\n\",\n    “media”: \"img/media/d_fox_pick_and_roll.gif”\n  },\n  {\n    \"text\": \"Excellent ball handler who can stop and start in a flash, armed with weapons like quick crossovers, hesitations, and hang dribbles.”,\n“media”: “img/media/d_fox_excellent_ball_handler.gif\"\n  },\n  {\n    \"text\": \"Potential to become an end-of-game scorer if his shot improves because he can create space for his jumper with ease.”\n  },\n  {\n    \"text\": \"Super-active defender. Moves laterally well, guards actively without fouling, and has upside in the pick-and-roll.”,\n“media”: “img/media/d_fox_active_defender.gif”\n  },\n  {\n“text: \"Excellent off-ball defender. Always seems aware of play, takes calculated risks to jump passing lanes.”,\n“media”: “img/media/d_fox_off_ball_defender.gif\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Skinny frame with needle legs that will make him a liability against larger guards or when scoring against contact.”\n},\n  {\n    \"text\": \"His poor shooting is vexing. He has good mechanics, looks comfortable, yet he struggles.\",\n    “media”: \"img/media/d_fox_poor-shooting.gif”\n },\n  {\n    \"text\": \"Gets into the paint with ease, but isn’t an elite finisher. Needs to add more creative finishes instead of settling for floaters.”,\n“media”: “img/media/d_fox_gets_into_paint.gif\"\n   },\n  {\n    \"text\": \"Prone to turnovers as a result of trying to do too much as a playmaker.”,\n“media”: “img/media/d_fox_prone_to_turnovers.gif\"\n  } ]",
+      "stats" : "[{\n    \"\"title\"\": \"\"PTS\"\",\n    \"\"number\"\": \"\"16.7\"\",\n    \"\"detail\"\": \"\"22.6 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"REB\"\",\n    \"\"number\"\": \"\"3.9\"\",\n    \"\"detail\"\": \"\"5.3 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"AST\"\",\n    \"\"number\"\": \"\"4.6\"\",\n    \"\"detail\"\": \"\"6.2 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"eFG%\"\",\n    \"\"number\"\": \"\"49.7%\"\",\n    \"\"detail\"\": \"\"448 FGA\"\"\n  },\n  {\n      \"\"title\"\": \"\"STL\"\",\n      \"\"number\"\": \"\"1.5\"\",\n      \"\"detail\"\": \"\"2.0 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"BLK\"\",\n      \"\"number\"\": \"\"0.2\"\",\n      \"\"detail\"\": \"\"0.3 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"3PT%\"\",\n      \"\"number\"\": \"\"24.6%\"\",\n      \"\"detail\"\": \"\"69 3PA\"\"\n    },\n    {\n      \"\"title\"\": \"\"FT%\"\",\n      \"\"number\"\": \"\"73.9%\"\",\n      \"\"detail\"\": \"\"211 FTA\"\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_smith",
+      "name" : "Dennis Smith",
+      "position" : "Point Guard",
+      "position_group" : "guard",
+      "school" : "NC State, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.6,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_white",
+      "name" : "Derrick White",
+      "position" : "Point Guard",
+      "position_group" : "Guard",
+      "school" : "Colorado, Senior",
+      "ringer_stat" : "Veteran savvy",
+      "age" : 23,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "A big, high-IQ point guard who has tremendous intangibles and could rise up draft boards with good workouts.",
+      "role_models" : "Greivis Vasquez, Patty Mills",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_robinson",
+      "name" : "Devin Robinson",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Florida, Junior",
+      "ringer_stat" : "",
+      "age" : 22.3,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_mitchell",
+      "name" : "Donovan Mitchell",
+      "position" : "Guard",
+      "position_group" : "guard",
+      "school" : "Louisville, Sophomore",
+      "ringer_stat" : "",
+      "age" : 20.8,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Supreme athlete with NBA strength who is still developing his point guard skills.",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "d_bacon",
       "name" : "Dwayne Bacon",
       "position" : "Stretch Forward",
       "position_group" : "forward",
       "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
+      "ringer_stat" : "Fluid scoring",
       "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Muscular wing with microwave-scorer upside.",
+      "role_models" : "Dion Waiters, Lance Stephenson, Malachi Richardson",
+      "plus" : "[{\n    \"text\": \"Excellent scorer in the open floor. He’s a bowling ball attacking closeouts and slashing in transition. Can finish through contact.\",\n    \"media\": \"img/media/d_bacon_excellent_scorer.gif\"\n  },\n  {\n    \"text\": \"Aggressive ball handler with good footwork on drives. Uses Euro-steps and side steps. Can pull up on a dime off the dribble.\",\n    \"media\": \"img/media/d_bacon_aggressive_ball_handler.gif\"\n  },\n  {\n    \"text\": \"At his best going downhill, and can navigate pick-and-roll well. Has upside as a screen-game threat if his shot translates.\"\n  },\n  {\n    \"text\": \"Defensive upside is there, despite his flaws. He has a thick, muscular frame with a solid wingspan. Great rebounder.\"\n  }]",
+      "minus" : "[{\n    \"text\": \"Low-effort defender with poor fundamentals. Doesn’t fight over screens or close out hard.\",\n    \"media\": \"img/media/d_bacon_low-effort_defender.gif\"\n  },\n  {\n    \"text\": \"Mediocre basketball IQ. Takes too many contested midrange jumpers early in the clock. Forces contested shots rather than passes to open teammates.\",\n    \"media\": \"img/media/d_bacon_mediocre_basketball_IQ.gif\"\n  },\n  {\n    \"text\": \"Needs to improve his off-hand so he’s not predictable. Usually tries to drive right and rarely uses his left at the rim.\"\n  },\n  {\n    \"text\": \"Subpar spot-up shooter with shaky mechanics. He can hit shots but needs to smoothen his release; looks less comfortable when he’s rushed.\"\n  }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.2\",\n    \"detail\": \"23.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.2\",\n    \"detail\": \"5.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.7\",\n    \"detail\": \"2.4 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.0\",\n    \"detail\": \"489 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.1\",\n      \"detail\": \"0.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"33.3%\",\n      \"detail\": \"171 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"75.4%\",\n      \"detail\": \"138 FTA\"\n    }]",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_9",
-      "name" : "Dwayne Bacon",
+      "filter_id" : "f_ntilikina",
+      "name" : "Frank Ntilikina",
+      "position" : "Point Guard",
+      "position_group" : "guard",
+      "school" : "Strasbourg, France",
+      "ringer_stat" : "",
+      "age" : 18.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "h_giles",
+      "name" : "Harry Giles",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Duke, Freshman",
+      "ringer_stat" : "Defensive versatility",
+      "age" : 19.2,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Injuries have robbed him of his elite standing in this draft class, but his versatility and athleticism as a big still make him an enticing prospect. ",
+      "role_models" : "Amar’e Stoudemire, Julius Randle, Darrell Arthur",
+      "plus" : "[{\n    \"\"text\"\": \"Versatile defensive potential. Before the ACL tear, he was capable of switching onto guards.\"\",\n    \"\"media\"\": \"\"img/media/h_giles_versatile_defensee.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Not a pure rim protector, but he can alter shots due to quick-leaping ability. Needs to get stronger to handle larger bigs, though.\"\",\n    \"\"media\"\": \"\"img/media/h_giles_not_a_true.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Excellent rebounding potential if explosiveness returns. Capable of throwing down putbacks. Loves to chase out of area for boards. \"\",\n    \"\"media\"\": \"\"img/media/h_giles_excellent_rebounding.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Can develop into a screen-game threat because of his good hands and leaping.\"\",\n    \"\"media\"\": \"\"img/media/h_giles_can_develop_into.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Scores quickly from the dunker’s spot on baseline and runs floor hard in transition.\"\"\n  },\n  {\n    \"\"text\"\": \"\"Perimeter scoring potential. Can handle the ball in the open floor. Needs to improve handle to face up or create in half court though.\"\"\n }]",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "i_anigbogu",
+      "name" : "Ike Anigbogu",
+      "position" : "Big",
+      "position_group" : "big",
+      "school" : "UCLA, Freshman",
+      "ringer_stat" : "",
+      "age" : 18.7,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "i_hartstein",
+      "name" : "Isaiah Hartenstein",
+      "position" : "Big",
+      "position_group" : "big",
+      "school" : "Zalgiris, Germany",
+      "ringer_stat" : "",
+      "age" : 19.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "i_rabb",
+      "name" : "Ivan Rabb",
+      "position" : "Big",
+      "position_group" : "big",
+      "school" : "California, Sophomore",
+      "ringer_stat" : "",
+      "age" : 20.4,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_blossongame",
+      "name" : "Jaron Blossomgame",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Clemson, Senior",
+      "ringer_stat" : "Heart",
+      "age" : 23.8,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Has the defense and work ethic to make the NBA as a combo forward, but must improve his shot.",
+      "role_models" : "Rondae Hollis-Jefferson, K.J. McDaniels",
+      "plus" : "[{\n    \"text\": \"Off-the-charts intangibles; plays with fire and passion, maximizing his athleticism and strong frame.\",\n    \"media\": \"img/media/j_blossomgame_intangibles.gif\"\n  },\n  {\n    \"text\": \"Versatile defender with the quickness to cover guards and the bulk to cover forwards.\"\n  },\n  {\n    \"text\": \"Excellent rebounder who gets ahead in transition, with good timing on cuts and ability to attack closeouts.\",\n    \"media\": \"img/media/j_blossomgame_excellent.gif\"\n  },\n  {\n    \"text\": \"Soft touch on jump hooks, floaters, and free throws. With tweaks to his mechanics, he could become a reliable spot-up shooter.\"\n  }]",
+      "minus" : "[{\n    \"text\": \"Suffered a litany of leg injuries, including a shattered tibia in high school. Teams will want to know his medical history.\"\n  },\n  {\n    \"text\": \"Inconsistent shooting mechanics lead to too many bad misses and air balls. His release is low and he has shoddy footwork.\",\n    \"media\": \"img/media/j_blossomgame_inconsistent.gif\"\n  },\n  {\n    \"text\": \"Stiff ball handler with subpar passing vision, limiting him to straight-line drives when attacking closeouts.\",\n    \"media\": \"img/media/j_blossomgame_incapable.gif\"\n  },\n  {\n    \"text\": \"May need to learn how to better navigate pick-and-roll screens when defending wings.\"\n  }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.6\",\n    \"detail\": \"20.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.3\",\n    \"detail\": \"7.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"1.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.5%\",\n    \"detail\": \"440 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"25.5%\",\n      \"detail\": \"94 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"71.3%\",\n      \"detail\": \"167 FTA\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_allen",
+      "name" : "Jarrett Allen",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Texas, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.2,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_evans",
+      "name" : "Jawun Evans",
+      "position" : "Point Guard",
+      "position_group" : "Guard",
+      "school" : "Oklahoma St., Sophomore",
+      "ringer_stat" : "Playmaking",
+      "age" : 20.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Lightning-quick point guard who can excel in pick-and-roll, though his size may limit his upside.",
+      "role_models" : "Speedy Claxton, Kenny Smith, D.J. Augustin",
+      "plus" : "[{\n    \"\"text\"\": \"Speed demon. He gets to top speed in a flash. Has an extra gear to turbo by defenders. Has iso-scoring potential if he tightens his handle.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_speed_demon.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Good pick-and-roll playmaking upside. Knows how to navigate, split screens, or snake to middle. Can attack, pull up, or pass. Likes to use a floater.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_good_pick-and-roll.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Quick release shooting off the dribble. Can stop and pop to pull up from anywhere. Needs to extend range, but he looks comfortable.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_quick_release_shooting.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Puts good zip on his passes. Does a good job pushing ball ahead on break or finding open man in P&R.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_improved_passing_vision.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Tough, pesky defender. He fights around screens and can pressure the ball. Likes to crash the boards too. He’s undersized, though, which limits him.\"\"  \n }]",
+      "minus" : "[{\n    \"\"text\"\": \"Undersized guard and only a decent athlete at an elite athletic position, which naturally could limit his upside on both ends of the floor.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_undersized_guard.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Struggles converting at the rim. He can get there at will but usually forced into tough shots. Needs to improve his off-hand. \"\",\n    \"\"media\"\": \"\"img/media/j_evans_struggles_converting.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Must cut down preventable turnovers by improving ball handling, especially his crossover, and developing his off-hand passing ability.\"\"\n  },\n  {\n    \"\"text\"\": \"\"Has good mechanics but lacks NBA range. Misses left and right, so there could be an issue with his hands and release.\"\"\n }]",
+      "stats" : "[{\n    \"\"title\"\": \"\"PTS\"\",\n    \"\"number\"\": \"\"19.2\"\",\n    \"\"detail\"\": \"\"26.2 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"REB\"\",\n    \"\"number\"\": \"\"3.4\"\",\n    \"\"detail\"\": \"\"4.7 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"AST\"\",\n    \"\"number\"\": \"\"6.4\"\",\n    \"\"detail\"\": \"\"8.7 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"eFG%\"\",\n    \"\"number\"\": \"\"47.5%\"\",\n    \"\"detail\"\": \"\"482 FGA\"\"\n  },\n  {\n      \"\"title\"\": \"\"STL\"\",\n      \"\"number\"\": \"\"1.8\"\",\n      \"\"detail\"\": \"\"2.4 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"BLK\"\",\n      \"\"number\"\": \"\"0.1\"\",\n      \"\"detail\"\": \"\"0.2 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"3PT%\"\",\n      \"\"number\"\": \"\"37.9%\"\",\n      \"\"detail\"\": \"\"95 3PA\"\"\n    },\n    {\n      \"\"title\"\": \"\"FT%\"\",\n      \"\"number\"\": \"\"81.2%\"\",\n      \"\"detail\"\": \"\"191 FTA\"\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_tatum",
+      "name" : "Jayson Tatum",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Duke, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.3,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "[{\n    \"text\": \"Fluid athlete with a good wingspan and wide frame. Not super explosive but has excellent body control. Has defensive upside if mentality improves.”,\n“media”: \"img/media/j_tatum_fluid_athlete.gif\"\n},\n  {\n    \"text\": \"Advanced scorer. Upside to score from all levels using his outstanding footwork to create space.\",\n    “media”: \"img/media/j_tatum_advanced_scorer.gif”\n },\n  {\n    \"text\": \"Scores with ease from the post; can attack closeouts. Could feast on mismatches.\",\n “media”: \"img/media/j_tatum_iso_scorer.gif\"\n   },\n  {\n    \"text\": \"Savvy ball handler. Lacks burst but knows how to change pace. Needs to be more aggressive in the paint, but he can get there.”,\n“media”: \"img/media/j_tatum_savvy.gif\"\n},\n  {\n    \"text\": \"Should be able to develop into a pick-and-roll threat as he gains experience. It’s key for his good shooting touch to translate to NBA 3-point range.”\n  } ]",
+      "minus" : "[{\n    \"text\": \"Lacks defensive mentality. Loses focus off-ball, dies on screens. He has the ability but doesn’t play with much effort or NBA-level physicality.”\n“media”: \"img/media/j_tatum_defensive_mentality.gif\"\n},\n  {\n    \"text\": \"Lacks defensive versatility. Flat-footed on the perimeter; gets toasted by guards. Thin in the waist, so gets overpowered by bigs.\",\n    “media”: \"img/media/j_tatum_defensive_versatility.gif”\n },\n  {\n    \"text\": \"Needs to score to produce. He’s a willing passer but lacks vision off the dribble.\"\n   },\n  {\n    \"text\": \"Not a natural shooter, with rigid mechanics. Gets to his shot pocket early and heaves the ball. Struggles off the dribble from 3-point range.”,\n“media”: \"img/media/j_tatum_natural_shooter.gif\"\n},\n  {\n    \"text\": \"Lives in midrange. Settles for pull-ups and floaters. If his 3-pointer doesn’t translate, is he a player modern teams can build around?”,\n“media”: “img/media/j_tatim_midrange.gif\"\n  } ]",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_collins",
+      "name" : "John Collins",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Wake Forest, Sophomore",
+      "ringer_stat" : "",
+      "age" : 19.7,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_motley",
+      "name" : "Johnathan Motley",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Baylor, Junior",
+      "ringer_stat" : "",
+      "age" : 22.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_isaac",
+      "name" : "Jonathan Isaac",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Florida State, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.7,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_jeanne",
+      "name" : "Jonathan Jeanne",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Nancy",
+      "ringer_stat" : "",
+      "age" : 20,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_bell",
+      "name" : "Jordan Bell",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Oregon, Junior",
+      "ringer_stat" : "",
+      "age" : 22.5,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_hart",
+      "name" : "Josh Hart",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Villanova, Senior",
+      "ringer_stat" : "",
+      "age" : 22.3,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_jackson",
+      "name" : "Josh Jackson",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Kansas, Freshman",
+      "ringer_stat" : "",
+      "age" : 20.4,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "[{\n    \"text\": \"Explosive athlete who plays with balance, force, and feel, and he’s unafraid of contact.”,\n“media”: “img/media/d_fox_gets_into_paint.gif\"\n},\n  {\n    \"text\": \"Capable of playing point forward given his passing vision and accuracy.”,\n“media”: \"img/media/j_jackson_capable.gif”\n },\n  {\n    \"text\": \"Go-to scorer potential; has a quick first step, fluidity, and the ability to change pace.”,\n“media”: “img/media/j_jackson_go-to_scorer.gif\"\n   },\n  {\n    \"text\": \"Excellent team defender who never gives up on a possession and fights for 50-50 balls.”\n},\n{\n\"text\": \"Tremendous perimeter defender, already excels in the pick-and-roll and pick-pocketing ball handlers.\n”,\n“media”: “img/media/j_jackson_tremendous_perimeter.gif\"\n  }, \n {\n\"text\": \"Noticeable presence in the post, rebounding well and blocking on the weakside on defense.”\n  } ]",
+      "minus" : "[{\n    \"text\": \"Average wingspan and lack of length and bulk limits his defensive versatility.”\n},\n  {\n    \"text\": \"Poor shooting mechanics needing an overhaul: wide base, elbow out, brings ball to shot pocket early, low and slow release, has a hitch.”,\n“media”: \"img/media/j_jackson_poor_mechanics.gif”\n },\n  {\n    \"text\": \"Struggles shooting off the dribble, and his shot is easy to contest.”\n   },\n  {\n    \"text\": \"Unimaginative ball handler leaning on his stepback too much.”,\n“media”: “img/media/j_jackson_unimaginative.gif\"\n},\n{\n\"text\": \"Dwells on negative plays, picks up techs, commits lazy fouls.”,\n“media”: “img/media/j_jackson_negative.gif\"\n  }, \n {\n\"text\": \"Noticeable presence in the post, rebounding well and blocking on the weakside on defense.”\n  } ]",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "ju_jackson",
+      "name" : "Justin Jackson",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "North Carolina, Junior",
+      "ringer_stat" : "",
+      "age" : 22.2,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "j_patton",
+      "name" : "Justin Patton",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Creighton, Freshman",
+      "ringer_stat" : "",
+      "age" : 20,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "k_mushidi",
+      "name" : "Kostja Mushidi",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "",
+      "ringer_stat" : "",
+      "age" : 19,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "l_markkanen",
+      "name" : "Lauri Markkanen",
       "position" : "Stretch Forward",
       "position_group" : "",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "school" : "Arizona, Freshman",
+      "ringer_stat" : "",
+      "age" : 20.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_10",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
-      "position_group" : "big",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "filter_id" : "l_ball",
+      "name" : "Lonzo Ball",
+      "position" : "Point Guard",
+      "position_group" : "Guard",
+      "school" : "UCLA, Freshman",
+      "ringer_stat" : "Playmaking",
+      "age" : 19.7,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "Has the potential to be the best passer in the NBA; a transcendent playmaker who makes his teammates better.",
+      "role_models" : "Penny Hardaway, Jason Kidd, Shaun Livingston with a jumper",
+      "plus" : "[{\n    \"text\": \"Elite court vision and passing accuracy, allowing him to whip the ball upcourt in transition.\",\n    \"media\": \"img/media/l_ball_elite_court_vision.gif\"\n  },\n  {\n    \"text\": \"Impressive intangibles; high basketball IQ, sees plays develop early, selfless decision-maker, creative.\",\n    \"media\": \"img/media/l_ball_impressive_intangibles.gif\"\n  },\n  {\n    \"text\": \"Height advantage over small guards.\"\n  },\n  {\n    \"text\": \"High pick-and-roll playmaking upside as he already understands how to make reads, change speeds, and use hesitations.\",\n    \"media\": \"img/media/l_ball_high_pick-and-roll.gif\"\n  },\n  {\n    \"text\": \"Complementary off-ball scorer who can shoot from deep and make smart cuts.\",\n    \"media\": \"img/media/l_ball_complementary_off-ball.gif\"\n  } ,\n{\n    \"text\": \"Excellent instincts on defense: jumps passing lanes for steals and flies in from outside to snatch rebounds; has good off-ball-defense potential.\",\n    \"media\": \"img/media/l_ball_excellent_instincts.gif\"\n  }]",
+      "minus" : "[{\n    \"text\": \"Bizarre shooting mechanics—a hitch and low release—limit his dribble jumper. He’s currently a nonfactor scoring from midrange.\",\n    \"media\": \"img/media/l_ball_bizzarre.gif\"\n  },\n  {\n    \"text\": \"Lacks a deep arsenal of dribbling moves, though he’s talented enough to make up for an average first step.\",\n    \"media\": \"img/media/l_ball_lacks_a_deep.gif\"\n  },\n  {\n    \"text\": \"Unable to get to the rim consistently, and when he does, he often avoids contact. Needs to add Curry-like crafty finishes.\",\n    \"media\": \"img/media/l_ball_unable_to_get.gif\"\n  },\n  {\n    \"text\": \"Lean frame could hinder him in matchups against stronger guards, and he doesn’t always stay in his stance.\",\n    \"media\": \"img/media/l_ball_lean_frame.gif\"\n  }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.6\",\n    \"detail\": \"16.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.0\",\n    \"detail\": \"6.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"7.6\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"66.8\",\n    \"detail\": \"343 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.8\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.8\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"41.2%\",\n      \"detail\": \"194 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"67.3%\",\n      \"detail\": \"98 FTA\"\n    }]",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_11",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
-      "position_group" : "forward",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
+      "filter_id" : "l_kennard",
+      "name" : "Luke Kennard",
+      "position" : "Guard",
+      "position_group" : "Guard",
+      "school" : "Duke, Sophomore",
+      "ringer_stat" : "",
       "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
     },
     {
-      "filter_id" : "m_morisco_12",
-      "name" : "Dwayne Bacon",
-      "position" : "Stretch Forward",
-      "position_group" : "guard",
-      "school" : "Florida State, Sophomore",
-      "ringer_stat" : "High Ceiling",
-      "age" : 21,
-      "height" : "6'8\"",
-      "wingspan" : "6'8\"",
-      "reach" : "9'3\"",
-      "summary" : "Athletic forward who can fill a 3-and-D role, with playmaking upside. ",
-      "best_case" : "Poor Man’s Kawhi Leonard",
-      "worst_case" : "George Hill",
-      "plus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "minus" : "[{\n    \"text\": \"Solid shooter with deep NBA range, a quick trigger, and a high release\"\n  },\n  {\n    \"text\": \"Intelligent cutter who can finish above the rim when he has space\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Excellent footwork while shooting on the move, making him a pick-and-pop threat.\",\n    \"media\": \"/img/test.png\"\n  },\n  {\n    \"text\": \"Average pass who tends to make \\\"the right play.\\\"\"\n  },\n  {\n    \"text\": \"Average pass who tends to make “the right play.”\"\n  },\n  {\n    \"text\": \"Good natural touch and uses both hands, giving him interior finishing potential if he gets stronger.\"\n  } ]",
-      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.1\",\n    \"detail\": \"19 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"23.1\",\n    \"detail\": \"9 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"16.1\",\n      \"detail\": \"19 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"4.6\",\n      \"detail\": \"6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"6.2\",\n      \"detail\": \"9 Per40\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"23.1\",\n      \"detail\": \"9 FGA\"\n    }]",
-      "coverage" : "[{\n    \"headline\": \"Article Headline Goes Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another One Right Here\",\n    \"link\": \"http://google.com\"\n  },\n  {\n    \"headline\": \"Another Example of an Article Headline Right Here but a Two-Liner\",\n    \"link\": \"http://google.com\"\n  }]"
+      "filter_id" : "m_monk",
+      "name" : "Malik Monk",
+      "position" : "Guard",
+      "position_group" : "Guard",
+      "school" : "Kentucky, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.4,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "m_fultz",
+      "name" : "Markelle Fultz",
+      "position" : "Point Guard",
+      "position_group" : "Guard",
+      "school" : "Washington, Freshman",
+      "ringer_stat" : "All-around offense",
+      "age" : 19.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "A versatile defender and athletic leaper who is already capable of playmaking and transition scoring—the hallmarks of an NBA point guard.",
+      "role_models" : "James Harden, Brandon Roy, Gilbert Arenas",
+      "plus" : "[{\n    \"\"text\"\": \"Controls speed of the game as a playmaker in transition.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_controls_speed.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Great first step, but can slow it down when needed. Gets where he wants using hesitations, Euro-steps, and crossovers.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_struggles_converting.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Pick-and-roll maestro for his age, and NBA spacing will only enhance his abilities.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_pick-and-roll_maestro.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Excellent passing vision and sees plays develop early. Puts zip on the ball. Likes to use bounce passes.\"\"\n  },\n  {\n    \"\"text\"\": \"\"Great body control, handles contact well, and finishes with both hands at the rim.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_great_body_control.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Good shooter off the dribble. Pulls up on a dime. Has height and lift to shoot over guards. Will need to use more stepback jumpers.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_good_shooter.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Competitive, instinctual rebounder. Uses his length to outrebound bigs.\"\"\n  },\n  {\n    \"\"text\"\": \"\"Great defensive upside due to long arms and wide frame.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_great_defensive.gif\"\"\n }]",
+      "minus" : "[{\n    \"\"text\"\": \"Needs to extend his shooting range and usually used a slow “one-two step” off the catch in college.\"\"\n  },\n  {\n    \"\"text\"\": \"\"Settles for too many midrange jumpers and floaters rather than attacking the rim.\"\",\n    \"\"media\"\": \"\"img/media/j_evans_settles.gif\"\"\n  },\n  {\n    \"\"text\"\": \"\"Lackadaisical defender who falls into an upright stance and doesn’t always fight hard through screens. He’s capable of locking down when he’s engaged.\"\",\n    \"\"media\"\": \"\"img/media/m_fultz_lackadaisical.gif\"\"\n }]",
+      "stats" : "[{\n    \"\"title\"\": \"\"PTS\"\",\n    \"\"number\"\": \"\"23.2\"\",\n    \"\"detail\"\": \"\"26.0 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"REB\"\",\n    \"\"number\"\": \"\"5.7\"\",\n    \"\"detail\"\": \"\"6.4 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"AST\"\",\n    \"\"number\"\": \"\"5.9\"\",\n    \"\"detail\"\": \"\"6.6 Per40\"\"\n  },\n  {\n    \"\"title\"\": \"\"eFG%\"\",\n    \"\"number\"\": \"\"53.5%\"\",\n    \"\"detail\"\": \"\"439 FGA\"\"\n  },\n  {\n      \"\"title\"\": \"\"STL\"\",\n      \"\"number\"\": \"\"1.6\"\",\n      \"\"detail\"\": \"\"1.7 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"BLK\"\",\n      \"\"number\"\": \"\"1.2\"\",\n      \"\"detail\"\": \"\"1.3 Per40\"\"\n    },\n    {\n      \"\"title\"\": \"\"3PT%\"\",\n      \"\"number\"\": \"\"41.3%\"\",\n      \"\"detail\"\": \"\"126 3PA\"\"\n    },\n    {\n      \"\"title\"\": \"\"FT%\"\",\n      \"\"number\"\": \"\"64.9%\"\",\n      \"\"detail\"\": \"\"168 FTA\"\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "m_lessort",
+      "name" : "Mathias Lessort",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Nanterre",
+      "ringer_stat" : "",
+      "age" : 21.7,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "o_anunoby",
+      "name" : "OG Anunoby",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Indiana, Sophomore",
+      "ringer_stat" : "Multipositional defender",
+      "age" : 19.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "One of the most moldable prospects in the draft, with a skill set that’ll undoubtedly draw comparisons to Kawhi Leonard.",
+      "role_models" : "Shane Battier, Trevor Ariza, Al-Farouq Aminu",
+      "plus" : "[{\n    \"text\": \"Superb physical dimensions—long wingspan with wide frame—with lateral quickness and extreme versatility.\",\n    \"media\": \"img/media/o_anunoby_superb_physicall.gif\"\n  },\n  {\n    \"text\": \"Elite defensive potential and capable of defending nearly every position. Jumps passing lanes, switches onto guards and bigs, contests hard.\",\n    \"media\": \"img/media/o_anunoby_elite_defensive.gif\"\n  },\n  {\n    \"text\": \"Rebounding advantage given his size, which he uses to box out, with long arms outreaching even large players.\"\n  },\n  {\n    \"text\": \"Quick first step in the post and when attacking closeouts. Raw footwork holds him back, but already a transition threat.\",\n    \"media\": \"img/media/o_anunoby_quick_first.gif\"\n  },\n  {\n    \"text\": \"Good awareness; understands his game, plays within himself, and rarely makes boneheaded mistakes.\",\n    \"media\": \"img/media/o_anunoby_good_awareness.gif\"\n  } ]",
+      "minus" : "[{\n    \"text\": \"Coming off a torn ACL, especially concerning as he doesn’t explode when leaping.\"\n  },\n  {\n    \"text\": \"Lacks aggression and must be stronger with the ball in his hands at the rim.\",\n    \"media\": \"img/media/o_anunoby_lacks_aggression.gif\"\n  },\n  {\n    \"text\": \"Sloppy footwork and ball handling. Lacks a left hand. Called for travels and charges. Needs to learn to absorb contact near the rim.\",\n    \"media\": \"img/media/o_anunoby_sloppy_footwork.gif\"\n  },\n  {\n    \"text\": \"Lacks passing vision and needs to put more zip on basic passes.\",\n    \"media\": \"img/media/o_anunoby_lacks_passing.gif\"\n  },\n  {\n    \"text\": \"Shooting issues: slow shooting release and one-two step that leads to blocked shots. Poor free throw shooter.\",\n    \"media\": \"img/media/o_anunoby_shooting_issues.gif\"\n  } ,\n{\n    \"text\": \"Lacks fluidity transitioning dribble into shot due to rigid mechanics.\"\n  }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"11.1\",\n    \"detail\": \"17.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.4\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.4\",\n    \"detail\": \"2.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"61.5\",\n    \"detail\": \"122 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.3\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.3\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"31.1%\",\n      \"detail\": \"45 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"56.3%\",\n      \"detail\": \"48 FTA\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "r_alkins",
+      "name" : "Rawle Alkins",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Arizona, Freshman",
+      "ringer_stat" : "",
+      "age" : 19.6,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "r_kurucs",
+      "name" : "Rodions Kurucs",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Barcelona",
+      "ringer_stat" : "",
+      "age" : 19.4,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "s_ojeleye",
+      "name" : "Semi Ojeleye",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "SMU, Junior",
+      "ringer_stat" : "",
+      "age" : 22.5,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "s_thornwell",
+      "name" : "Sindarius Thornwell",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "South Carolina, Senior",
+      "ringer_stat" : "",
+      "age" : 22.6,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "s_brown",
+      "name" : "Sterling Brown",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "SMU, Senior",
+      "ringer_stat" : "",
+      "age" : 22.4,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "t_leaf",
+      "name" : "T.J. Leaf",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "UCLA, Freshman",
+      "ringer_stat" : "",
+      "age" : 20.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "t_ferguson",
+      "name" : "Terrance Ferguson",
+      "position" : "Guard",
+      "position_group" : "Guard",
+      "school" : "Adelaide",
+      "ringer_stat" : "",
+      "age" : 19.1,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "t_bryant",
+      "name" : "Thomas Bryant",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Indiana, Sophomore",
+      "ringer_stat" : "Energy",
+      "age" : 19.9,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "A long, active center who can also space the floor, but an ineffective defender.",
+      "role_models" : "Anderson Varejão, Jamaal Magloire",
+      "plus" : "[{\n    \"text\": \"Mammoth wingspan with great physical dimensions that he doesn’t take for granted; plays his ass off, communicates.\",\n    \"media\": \"img/media/t_bryant_mammoth.gif\"\n  },\n  {\n    \"text\": \"Super-active defender who could be effective in a pick-and-roll defense that drops rather than hedges.\"\n  },\n  {\n    \"text\": \"High-energy big on offense who hustles in transition and throws his body around inside.\",\n    \"media\": \"img/media/t_bryant_high-energy.gif\"\n  },\n  {\n    \"text\": \"Can finish off-balance under the rim off cuts and the pick-and-roll.\"  \n  },\n  {\n    \"text\": \"Solid 3-point-shooting potential with a quick release that can be further refined.\",\n    \"media\": \"img/media/t_bryant_solid_3-point.gif\"\n  },\n  {\n    \"text\": \"Tightened his ball-handling to improve attacking closeouts.\"\n  }]",
+      "minus" : "[{\n    \"text\": \"Rushes; sets moving screens, has sloppy footwork, makes panicked passes, throws up wild layups.\",\n    \"media\": \"img/media/t_bryant_rushes_sets_moving.gif\"\n  },\n  {\n    \"text\": \"Subpar rebounder for his size. He boxes out but doesn’t rebound outside his area or outmuscle NBA-caliber bigs for 50-50 balls.\"\n  },\n  {\n    \"text\": \"Lost defensively due to poor fundamentals. Gets caught flat-footed and is slow to accelerate laterally. He can’t hedge or switch.\",\n    \"media\": \"img/media/t_bryant_lost_defensively.gif\"\n  },\n  {\n    \"text\": \"Not a rim protector. Has length but he’s not a leaper. Typically a beat late on rotations, which gets him into foul trouble.\"  \n }]",
+      "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.6\",\n    \"detail\": \"17.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.6\",\n    \"detail\": \"9.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"2.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"56.0%\",\n    \"detail\": \"285 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"38.3%\",\n      \"detail\": \"60 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"73.0%\",\n      \"detail\": \"148 FTA\"\n    }]",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "t_lydon",
+      "name" : "Tyler Lydon",
+      "position" : "Forward",
+      "position_group" : "Forward",
+      "school" : "Syracuse, Sophomore",
+      "ringer_stat" : "",
+      "age" : 21.2,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "w_iwundu",
+      "name" : "Wesley Iwundu",
+      "position" : "Wing",
+      "position_group" : "",
+      "school" : "Kansas State, Senior",
+      "ringer_stat" : "",
+      "age" : 22.5,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "",
+      "role_models" : "",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
+    },
+    {
+      "filter_id" : "z_collins",
+      "name" : "Zach Collins",
+      "position" : "Big",
+      "position_group" : "Big",
+      "school" : "Gonzaga, Freshman",
+      "ringer_stat" : "Two-way impact",
+      "age" : 19.6,
+      "height" : "",
+      "wingspan" : "",
+      "reach" : "",
+      "summary" : "A skilled two-way center who easily projects as a good role player and could reach much higher levels as a scorer.",
+      "role_models" : "Marc Gasol, Serge Ibaka, Jason Smith",
+      "plus" : "",
+      "minus" : "",
+      "stats" : "",
+      "coverage" : ""
     }
   ],
   "ringer" : [
     {
+      "filter_id" : "a_peters"
+    },
+    {
+      "filter_id" : "a_pasecniks"
+    },
+    {
+      "filter_id" : "b_adebayo"
+    },
+    {
+      "filter_id" : "c_swanigan"
+    },
+    {
+      "filter_id" : "c_oliver"
+    },
+    {
+      "filter_id" : "d_wilson"
+    },
+    {
+      "filter_id" : "d_reed"
+    },
+    {
+      "filter_id" : "d_fox"
+    },
+    {
+      "filter_id" : "d_smith"
+    },
+    {
+      "filter_id" : "d_white"
+    },
+    {
+      "filter_id" : "d_robinson"
+    },
+    {
+      "filter_id" : "d_mitchell"
+    },
+    {
       "filter_id" : "d_bacon"
     },
     {
-      "filter_id" : "m_morisco"
+      "filter_id" : "f_ntilikina"
     },
     {
-      "filter_id" : "b_morisco"
+      "filter_id" : "h_giles"
     },
     {
-      "filter_id" : "m_morisco_4"
+      "filter_id" : "i_anigbogu"
     },
     {
-      "filter_id" : "m_morisco_5"
+      "filter_id" : "i_hartstein"
     },
     {
-      "filter_id" : "m_morisco_6"
+      "filter_id" : "i_rabb"
     },
     {
-      "filter_id" : "m_morisco_7"
+      "filter_id" : "j_blossongame"
     },
     {
-      "filter_id" : "m_morisco_8"
+      "filter_id" : "j_allen"
     },
     {
-      "filter_id" : "m_morisco_9"
+      "filter_id" : "j_evans"
     },
     {
-      "filter_id" : "m_morisco_10"
+      "filter_id" : "j_tatum"
     },
     {
-      "filter_id" : "m_morisco_11"
+      "filter_id" : "j_collins"
     },
     {
-      "filter_id" : "m_morisco_12"
+      "filter_id" : "j_motley"
+    },
+    {
+      "filter_id" : "j_isaac"
+    },
+    {
+      "filter_id" : "j_jeanne"
+    },
+    {
+      "filter_id" : "j_bell"
+    },
+    {
+      "filter_id" : "j_hart"
+    },
+    {
+      "filter_id" : "j_jackson"
+    },
+    {
+      "filter_id" : "ju_jackson"
+    },
+    {
+      "filter_id" : "j_patton"
+    },
+    {
+      "filter_id" : "k_mushidi"
+    },
+    {
+      "filter_id" : "l_markkanen"
+    },
+    {
+      "filter_id" : "l_ball"
+    },
+    {
+      "filter_id" : "l_kennard"
+    },
+    {
+      "filter_id" : "m_monk"
+    },
+    {
+      "filter_id" : "m_fultz"
+    },
+    {
+      "filter_id" : "m_lessort"
+    },
+    {
+      "filter_id" : "o_anunoby"
+    },
+    {
+      "filter_id" : "r_alkins"
+    },
+    {
+      "filter_id" : "r_kurucs"
+    },
+    {
+      "filter_id" : "s_ojeleye"
+    },
+    {
+      "filter_id" : "s_thornwell"
+    },
+    {
+      "filter_id" : "s_brown"
+    },
+    {
+      "filter_id" : "t_leaf"
+    },
+    {
+      "filter_id" : "t_ferguson"
+    },
+    {
+      "filter_id" : "t_bryant"
+    },
+    {
+      "filter_id" : "t_lydon"
+    },
+    {
+      "filter_id" : "w_iwundu"
+    },
+    {
+      "filter_id" : "z_collins"
     }
   ],
   "kevin" : [
     {
+      "filter_id" : "a_pasecniks"
+    },
+    {
+      "filter_id" : "b_adebayo"
+    },
+    {
+      "filter_id" : "c_swanigan"
+    },
+    {
+      "filter_id" : "c_oliver"
+    },
+    {
+      "filter_id" : "d_wilson"
+    },
+    {
+      "filter_id" : "a_peters"
+    },
+    {
+      "filter_id" : "d_reed"
+    },
+    {
+      "filter_id" : "d_fox"
+    },
+    {
+      "filter_id" : "d_smith"
+    },
+    {
+      "filter_id" : "d_white"
+    },
+    {
+      "filter_id" : "d_robinson"
+    },
+    {
+      "filter_id" : "d_mitchell"
+    },
+    {
       "filter_id" : "d_bacon"
     },
     {
-      "filter_id" : "b_morisco"
+      "filter_id" : "f_ntilikina"
     },
     {
-      "filter_id" : "m_morisco"
+      "filter_id" : "h_giles"
     },
     {
-      "filter_id" : "m_morisco_4"
+      "filter_id" : "i_anigbogu"
     },
     {
-      "filter_id" : "m_morisco_5"
+      "filter_id" : "i_hartstein"
     },
     {
-      "filter_id" : "m_morisco_6"
+      "filter_id" : "i_rabb"
     },
     {
-      "filter_id" : "m_morisco_7"
+      "filter_id" : "j_blossongame"
     },
     {
-      "filter_id" : "m_morisco_8"
+      "filter_id" : "j_allen"
     },
     {
-      "filter_id" : "m_morisco_9"
+      "filter_id" : "j_evans"
     },
     {
-      "filter_id" : "m_morisco_10"
+      "filter_id" : "j_tatum"
     },
     {
-      "filter_id" : "m_morisco_11"
+      "filter_id" : "j_collins"
     },
     {
-      "filter_id" : "m_morisco_12"
+      "filter_id" : "j_motley"
+    },
+    {
+      "filter_id" : "j_isaac"
+    },
+    {
+      "filter_id" : "j_jeanne"
+    },
+    {
+      "filter_id" : "j_bell"
+    },
+    {
+      "filter_id" : "j_hart"
+    },
+    {
+      "filter_id" : "j_jackson"
+    },
+    {
+      "filter_id" : "ju_jackson"
+    },
+    {
+      "filter_id" : "j_patton"
+    },
+    {
+      "filter_id" : "k_mushidi"
+    },
+    {
+      "filter_id" : "l_markkanen"
+    },
+    {
+      "filter_id" : "l_ball"
+    },
+    {
+      "filter_id" : "l_kennard"
+    },
+    {
+      "filter_id" : "m_monk"
+    },
+    {
+      "filter_id" : "m_fultz"
+    },
+    {
+      "filter_id" : "m_lessort"
+    },
+    {
+      "filter_id" : "o_anunoby"
+    },
+    {
+      "filter_id" : "r_alkins"
+    },
+    {
+      "filter_id" : "r_kurucs"
+    },
+    {
+      "filter_id" : "s_ojeleye"
+    },
+    {
+      "filter_id" : "s_thornwell"
+    },
+    {
+      "filter_id" : "s_brown"
+    },
+    {
+      "filter_id" : "t_leaf"
+    },
+    {
+      "filter_id" : "t_ferguson"
+    },
+    {
+      "filter_id" : "t_bryant"
+    },
+    {
+      "filter_id" : "t_lydon"
+    },
+    {
+      "filter_id" : "w_iwundu"
+    },
+    {
+      "filter_id" : "z_collins"
     }
   ],
   "danny" : [
     {
-      "filter_id" : "b_morisco"
+      "filter_id" : "a_pasecniks"
+    },
+    {
+      "filter_id" : "b_adebayo"
+    },
+    {
+      "filter_id" : "c_swanigan"
+    },
+    {
+      "filter_id" : "c_oliver"
+    },
+    {
+      "filter_id" : "d_wilson"
+    },
+    {
+      "filter_id" : "a_peters"
+    },
+    {
+      "filter_id" : "d_reed"
+    },
+    {
+      "filter_id" : "d_fox"
+    },
+    {
+      "filter_id" : "d_smith"
+    },
+    {
+      "filter_id" : "d_white"
+    },
+    {
+      "filter_id" : "d_robinson"
+    },
+    {
+      "filter_id" : "d_mitchell"
     },
     {
       "filter_id" : "d_bacon"
     },
     {
-      "filter_id" : "m_morisco"
+      "filter_id" : "f_ntilikina"
     },
     {
-      "filter_id" : "m_morisco_4"
+      "filter_id" : "h_giles"
     },
     {
-      "filter_id" : "m_morisco_5"
+      "filter_id" : "i_anigbogu"
     },
     {
-      "filter_id" : "m_morisco_6"
+      "filter_id" : "i_hartstein"
     },
     {
-      "filter_id" : "m_morisco_7"
+      "filter_id" : "i_rabb"
     },
     {
-      "filter_id" : "m_morisco_8"
+      "filter_id" : "j_blossongame"
     },
     {
-      "filter_id" : "m_morisco_9"
+      "filter_id" : "j_allen"
     },
     {
-      "filter_id" : "m_morisco_10"
+      "filter_id" : "j_evans"
     },
     {
-      "filter_id" : "m_morisco_11"
+      "filter_id" : "j_tatum"
     },
     {
-      "filter_id" : "m_morisco_12"
+      "filter_id" : "j_collins"
+    },
+    {
+      "filter_id" : "j_motley"
+    },
+    {
+      "filter_id" : "j_isaac"
+    },
+    {
+      "filter_id" : "j_jeanne"
+    },
+    {
+      "filter_id" : "j_bell"
+    },
+    {
+      "filter_id" : "j_hart"
+    },
+    {
+      "filter_id" : "j_jackson"
+    },
+    {
+      "filter_id" : "ju_jackson"
+    },
+    {
+      "filter_id" : "j_patton"
+    },
+    {
+      "filter_id" : "k_mushidi"
+    },
+    {
+      "filter_id" : "l_markkanen"
+    },
+    {
+      "filter_id" : "l_ball"
+    },
+    {
+      "filter_id" : "l_kennard"
+    },
+    {
+      "filter_id" : "m_monk"
+    },
+    {
+      "filter_id" : "m_fultz"
+    },
+    {
+      "filter_id" : "m_lessort"
+    },
+    {
+      "filter_id" : "o_anunoby"
+    },
+    {
+      "filter_id" : "r_alkins"
+    },
+    {
+      "filter_id" : "r_kurucs"
+    },
+    {
+      "filter_id" : "s_ojeleye"
+    },
+    {
+      "filter_id" : "s_thornwell"
+    },
+    {
+      "filter_id" : "s_brown"
+    },
+    {
+      "filter_id" : "t_leaf"
+    },
+    {
+      "filter_id" : "t_ferguson"
+    },
+    {
+      "filter_id" : "t_bryant"
+    },
+    {
+      "filter_id" : "t_lydon"
+    },
+    {
+      "filter_id" : "w_iwundu"
+    },
+    {
+      "filter_id" : "z_collins"
     }
   ],
   "johnathan" : [
     {
-      "filter_id" : "m_morisco"
+      "filter_id" : "a_pasecniks"
     },
     {
-      "filter_id" : "b_morisco"
+      "filter_id" : "b_adebayo"
+    },
+    {
+      "filter_id" : "a_peters"
+    },
+    {
+      "filter_id" : "c_swanigan"
+    },
+    {
+      "filter_id" : "c_oliver"
+    },
+    {
+      "filter_id" : "d_wilson"
+    },
+    {
+      "filter_id" : "d_reed"
+    },
+    {
+      "filter_id" : "d_fox"
+    },
+    {
+      "filter_id" : "d_smith"
+    },
+    {
+      "filter_id" : "d_white"
+    },
+    {
+      "filter_id" : "d_robinson"
+    },
+    {
+      "filter_id" : "d_mitchell"
     },
     {
       "filter_id" : "d_bacon"
     },
     {
-      "filter_id" : "m_morisco_4"
+      "filter_id" : "f_ntilikina"
     },
     {
-      "filter_id" : "m_morisco_5"
+      "filter_id" : "h_giles"
     },
     {
-      "filter_id" : "m_morisco_6"
+      "filter_id" : "i_anigbogu"
     },
     {
-      "filter_id" : "m_morisco_7"
+      "filter_id" : "i_hartstein"
     },
     {
-      "filter_id" : "m_morisco_8"
+      "filter_id" : "i_rabb"
     },
     {
-      "filter_id" : "m_morisco_9"
+      "filter_id" : "j_blossongame"
     },
     {
-      "filter_id" : "m_morisco_10"
+      "filter_id" : "j_allen"
     },
     {
-      "filter_id" : "m_morisco_11"
+      "filter_id" : "j_evans"
     },
     {
-      "filter_id" : "m_morisco_12"
+      "filter_id" : "j_tatum"
+    },
+    {
+      "filter_id" : "j_collins"
+    },
+    {
+      "filter_id" : "j_motley"
+    },
+    {
+      "filter_id" : "j_isaac"
+    },
+    {
+      "filter_id" : "j_jeanne"
+    },
+    {
+      "filter_id" : "j_bell"
+    },
+    {
+      "filter_id" : "j_hart"
+    },
+    {
+      "filter_id" : "j_jackson"
+    },
+    {
+      "filter_id" : "ju_jackson"
+    },
+    {
+      "filter_id" : "j_patton"
+    },
+    {
+      "filter_id" : "k_mushidi"
+    },
+    {
+      "filter_id" : "l_markkanen"
+    },
+    {
+      "filter_id" : "l_ball"
+    },
+    {
+      "filter_id" : "l_kennard"
+    },
+    {
+      "filter_id" : "m_monk"
+    },
+    {
+      "filter_id" : "m_fultz"
+    },
+    {
+      "filter_id" : "m_lessort"
+    },
+    {
+      "filter_id" : "o_anunoby"
+    },
+    {
+      "filter_id" : "r_alkins"
+    },
+    {
+      "filter_id" : "r_kurucs"
+    },
+    {
+      "filter_id" : "s_ojeleye"
+    },
+    {
+      "filter_id" : "s_thornwell"
+    },
+    {
+      "filter_id" : "s_brown"
+    },
+    {
+      "filter_id" : "t_leaf"
+    },
+    {
+      "filter_id" : "t_ferguson"
+    },
+    {
+      "filter_id" : "t_bryant"
+    },
+    {
+      "filter_id" : "t_lydon"
+    },
+    {
+      "filter_id" : "w_iwundu"
+    },
+    {
+      "filter_id" : "z_collins"
     }
   ],
   "a_z" : [
     {
-      "filter_id" : "b_morisco"
+      "filter_id" : "a_pasecniks"
     },
     {
-      "filter_id" : "m_morisco"
+      "filter_id" : "a_peters"
+    },
+    {
+      "filter_id" : "b_adebayo"
+    },
+    {
+      "filter_id" : "c_swanigan"
+    },
+    {
+      "filter_id" : "c_oliver"
+    },
+    {
+      "filter_id" : "d_wilson"
+    },
+    {
+      "filter_id" : "d_reed"
+    },
+    {
+      "filter_id" : "d_fox"
+    },
+    {
+      "filter_id" : "d_smith"
+    },
+    {
+      "filter_id" : "d_white"
+    },
+    {
+      "filter_id" : "d_robinson"
+    },
+    {
+      "filter_id" : "d_mitchell"
     },
     {
       "filter_id" : "d_bacon"
     },
     {
-      "filter_id" : "m_morisco_4"
+      "filter_id" : "f_ntilikina"
     },
     {
-      "filter_id" : "m_morisco_5"
+      "filter_id" : "h_giles"
     },
     {
-      "filter_id" : "m_morisco_6"
+      "filter_id" : "i_anigbogu"
     },
     {
-      "filter_id" : "m_morisco_7"
+      "filter_id" : "i_hartstein"
     },
     {
-      "filter_id" : "m_morisco_8"
+      "filter_id" : "i_rabb"
     },
     {
-      "filter_id" : "m_morisco_9"
+      "filter_id" : "j_blossongame"
     },
     {
-      "filter_id" : "m_morisco_10"
+      "filter_id" : "j_allen"
     },
     {
-      "filter_id" : "m_morisco_11"
+      "filter_id" : "j_evans"
     },
     {
-      "filter_id" : "m_morisco_12"
+      "filter_id" : "j_tatum"
+    },
+    {
+      "filter_id" : "j_collins"
+    },
+    {
+      "filter_id" : "j_motley"
+    },
+    {
+      "filter_id" : "j_isaac"
+    },
+    {
+      "filter_id" : "j_jeanne"
+    },
+    {
+      "filter_id" : "j_bell"
+    },
+    {
+      "filter_id" : "j_hart"
+    },
+    {
+      "filter_id" : "j_jackson"
+    },
+    {
+      "filter_id" : "ju_jackson"
+    },
+    {
+      "filter_id" : "j_patton"
+    },
+    {
+      "filter_id" : "k_mushidi"
+    },
+    {
+      "filter_id" : "l_markkanen"
+    },
+    {
+      "filter_id" : "l_ball"
+    },
+    {
+      "filter_id" : "l_kennard"
+    },
+    {
+      "filter_id" : "m_monk"
+    },
+    {
+      "filter_id" : "m_fultz"
+    },
+    {
+      "filter_id" : "m_lessort"
+    },
+    {
+      "filter_id" : "o_anunoby"
+    },
+    {
+      "filter_id" : "r_alkins"
+    },
+    {
+      "filter_id" : "r_kurucs"
+    },
+    {
+      "filter_id" : "s_ojeleye"
+    },
+    {
+      "filter_id" : "s_thornwell"
+    },
+    {
+      "filter_id" : "s_brown"
+    },
+    {
+      "filter_id" : "t_leaf"
+    },
+    {
+      "filter_id" : "t_ferguson"
+    },
+    {
+      "filter_id" : "t_bryant"
+    },
+    {
+      "filter_id" : "t_lydon"
+    },
+    {
+      "filter_id" : "w_iwundu"
+    },
+    {
+      "filter_id" : "z_collins"
     }
   ]
 }

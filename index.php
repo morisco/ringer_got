@@ -42,11 +42,11 @@
     $count = 5;
     $coverage_count = 0;
     foreach($sorted_players as $player){
-        $player->plus = json_decode($player->plus);
-        $player->minus = json_decode($player->minus);
-        $player->stats = json_decode($player->stats);
-        $player->coverage = json_decode($player->coverage);
-        $player->meta = json_decode($player->meta);
+        $player->plus       = json_decode($player->plus);
+        $player->minus      = json_decode($player->minus);
+        $player->stats      = json_decode($player->stats);
+        $player->coverage   = json_decode($player->coverage);
+        $player->meta       = json_decode($player->meta);
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }
@@ -57,8 +57,7 @@
 
         $count--;
 
-
-        if($count == 0){
+        if($count == 0 && $player->rank !== '50'){
             $count = 5;
             $more_coverage = (object) array();
             $more_coverage->articles = array_slice($articles, (3 * $coverage_count), 3);
