@@ -1,5 +1,6 @@
 .more-coverage{
     clear:both;
+    padding: 30px 0px;
 }
 
 .more-coverage:after{
@@ -9,10 +10,12 @@
 }
 
 .more-coverage h3{
-    font-size:72px;
+    font-size: 60px;
     font-family: 'TIMMONS NY';
-    font-weight:400;
-    letter-spacing:0px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: .55;
+    margin-bottom: 15px;
 }
 
 .more-coverage a{
@@ -34,9 +37,10 @@
     margin: 0 30px;
 }
 
-.more-coverage a h4{
-    font-size:24px;
-    color:#000;
+.more-coverage a h4 {
+    font-size: 17px;
+    color: #000;
+    line-height: 1.2;
 }
 
 

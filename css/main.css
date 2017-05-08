@@ -132,7 +132,7 @@ h1{
     -webkit-margin-after: 0em;
     margin: 20px 0 4px;
     line-height: .55;
-    font-size: 300px;
+    font-size: 275px;
     text-transform: uppercase;
     color: #000;
     font-family: 'TIMMONS NY';
@@ -143,8 +143,9 @@ h1{
 h1 span.block{
     display:block;
     font-size:72px;
-    line-height:1;
+    line-height:.55;
     margin-bottom:75px;
+    letter-spacing:0.025em;
 }
 
 h1 span.white{
