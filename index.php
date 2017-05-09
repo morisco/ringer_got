@@ -1,4 +1,6 @@
 <?php
+    require_once 'MobileDetect/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
 
     require 'Handlebars/Autoloader.php';
     Handlebars\Autoloader::register();
@@ -43,6 +45,8 @@
     $coverage_count = 0;
     foreach($sorted_players as $player){
         $player->plus       = json_decode($player->plus);
+        $player->cls_1       = '#000000';
+        $player->percent     = '40';
         $player->minus      = json_decode($player->minus);
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
@@ -91,13 +95,19 @@
     }
 
     $bodyClass = $sort_list_id;
-    if (strstr($_SERVER['HTTP_USER_AGENT'], 'iPad')) {
-        $bodyClass = ' ipad';
+    if($detect->isTablet()){
+        $bodyClass .= ' tablet';
+    } else if ($detect->isMobile()) {
+        $bodyClass .= ' mobile';
     }
 ?>
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
+    <!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+    <!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+    <!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+    <!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+    <!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+    <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>2017 NBA DRAFT GUIDE - THE RINGER</title>
