@@ -30,6 +30,18 @@
         padding: 30px 30px 0;
     }
 
+    /* Mobile and Tablet */
+    .card-item .rank-column .ringer-coverage{
+        display:none;
+    }
+
+    .card-item .info-column .more-ringer-coverage{
+        display:block;
+        margin-bottom: 15px;
+    }
+
+    /* Tablet Only */
+
     .tablet #filter-bar-wrapper{
         margin-bottom:0px;
     }
@@ -99,10 +111,6 @@
         margin-left: auto;
         margin-top: -80px;
         width: 80%;
-    }
-
-    .tablet .card-item .rank-column .ringer-coverage{
-        display:none;
     }
 
     .tablet .card-item .info-column{

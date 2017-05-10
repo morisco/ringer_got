@@ -25,19 +25,19 @@
 }
 
 .ringer .color-theme{
-   color: #43be6d;
+   color: #43be6d !important;
 }
 
 .ringer .border-theme{
-   border-color: #43be6d;
+   border-color: #43be6d !important;
 }
 
 .ringer .border-theme-before:before{
-    border-color: #43be6d;
+    border-color: #43be6d !important;
 }
 
 .ringer .background-theme-after:after{
-    background-color: #43be6d;
+    background-color: #43be6d !important;
 }
 
 /* Kevin Theme */
@@ -46,19 +46,19 @@
 }
 
 .kevin .color-theme{
-   color: #ffff00;
+   color: #ffff00 !important;
 }
 
 .kevin .border-theme{
-   border-color: #ffff00;
+   border-color: #ffff00 !important;
 }
 
 .kevin .border-theme-before:before{
-    border-color: #ffff00;
+    border-color: #ffff00 !important;
 }
 
 .kevin .background-theme-after:after{
-    background-color: #ffff00;
+    background-color: #ffff00 !important;
 }
 
 /* Danny Theme */
@@ -67,19 +67,19 @@
 }
 
 .danny .color-theme{
-   color: #00adef;
+   color: #00adef !important;
 }
 
 .danny .border-theme{
-   border-color: #00adef;
+   border-color: #00adef !important;
 }
 
 .danny .border-theme-before:before{
-    border-color: #00adef;
+    border-color: #00adef !important;
 }
 
 .danny .background-theme-after:after{
-    background-color: #00adef;
+    background-color: #00adef !important;
 }
 
 /* Johnathan Theme */
@@ -88,19 +88,19 @@
 }
 
 .johnathan .color-theme{
-   color: #c800ff;
+   color: #c800ff !important;
 }
 
 .johnathan .border-theme{
-   border-color: #c800ff;
+   border-color: #c800ff !important;
 }
 
 .johnathan .border-theme-before:before{
-    border-color: #c800ff;
+    border-color: #c800ff !important;
 }
 
 .johnathan .background-theme-after:after{
-    background-color: #c800ff;
+    background-color: #c800ff !important;
 }
 
 /* AZ Theme */
@@ -109,17 +109,17 @@
 }
 
 .az .color-theme{
-   color: #0043cc;
+   color: #0043cc !important;
 }
 
 .az .border-theme{
-   border-color: #0043cc;
+   border-color: #0043cc !important;
 }
 
 .az .border-theme-before:before{
-    border-color: #0043cc;
+    border-color: #0043cc !important;
 }
 
 .az .background-theme-after:after{
-    background-color: #0043cc;
+    background-color: #0043cc !important;
 }

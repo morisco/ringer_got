@@ -25,7 +25,25 @@
     $articles_json = json_decode($articles_string);
     $articles = $articles_json->articles;
 
-    $sort_list_id = isset($_GET['list']) && $_GET['list'] ? $_GET['list'] : 'ringer';
+    $sort_list_name = array(
+        'ringer' => "Mock Draft",
+        'kevin' => "Kevin Lincoln",
+        'danny' => "Danny Chau",
+        'johnathan' => "Johnathan Tjarks",
+        'a_z' => "Sort A-Z"
+    );
+
+    $sort_list_options = array('ringer', 'kevin', 'danny', 'johnathan', 'a_z');
+
+    if($_GET['list'] && in_array($_GET['list'], $sort_list_options)){
+        $sort_list_id = $_GET['list'];
+    } else{
+        $sort_list_id = 'ringer';
+    }
+
+
+    $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['ringer'];
+
     $sort_list = $data->$sort_list_id;
     $sorted_players = [];
     foreach($sort_list as $sort) {
@@ -136,6 +154,7 @@
         <link rel="stylesheet" href="css/coverage.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/transitions.css">
+        <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/tablet.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -171,16 +190,62 @@
                 <div>
                     <strong>Welcome to The Ringer’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
                     <div class="intro-actions">
+                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
                             <a href="http:facebook.com" class="facebook"></a>
                             <a href="http:twitter.com" class="twitter"></a>
                         </div>
-                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                     </div>
                 </div>
             </div>
         </section>
         <div id="content">
+            <nav id="mobile-nav">
+                <div class="toggle-zone">
+                </div>
+                <div class="toggle"></div>
+                <div class="current-sort" >
+                    <?php echo $sort_dropdown_name; ?>
+                </div>
+                <div class="nav-contents">
+                    <div class="current-sort color-theme">
+                        Ringer NBA Draft 2017
+                    </div>
+                    <ul class="sort">
+                        <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-filter-id="ringer">Mock Draft</li>
+                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-filter-id="kevin">Kevin Lincoln</li>
+                        <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-filter-id="danny">Danny Chau</li>
+                        <li class="<?php echo ($sort_list_id === 'johnathan') ? 'active color-theme' : '' ?>"data-filter-id="johnathan">Johnathan Tjarks</li>
+                        <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-filter-id="az">Sort A-Z</li>
+                    </ul>
+                    <div class="nav-actions">
+                        <div class="nav-switcher">
+                            <div class="color-theme label">
+                                View
+                            </div>
+                            <div>
+                                <ul class="size-toggle">
+                                    <li class="active background-theme" data-size="small"></li>
+                                    <li data-size="medium"></li>
+                                    <li data-size="large"></li>
+                                </ul>
+                                <a href="#" class="active color-theme" data-size="small">Default</a>
+                                <a href="#" data-size="medium">Condensed</a>
+                                <a href="#" data-size="large">Expanded</a>
+                            </div>
+                        </div>
+                        <div class="nav-filter">
+                            <div class="color-theme label">
+                                Position
+                            </div>
+                            <a href="#" class="active color-theme" data-filter="all">All</a>
+                            <a href="#" data-filter="forward">Forwards</a>
+                            <a href="#" data-filter="guard">Guards</a>
+                            <a href="#" data-filter="big">Bigs</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
                     <a href="#" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-filter-id="ringer"><span>Ringer Picks</span></a>

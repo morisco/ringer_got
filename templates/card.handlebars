@@ -1,10 +1,10 @@
-<li class="card-item col-xs-12 small {{className}}" data-id="{{id}}">
+<li class="card-item col-xs-12 {{size_class}} {{className}}" data-id="{{id}}">
     <div class="wrapper">
         <div class="rank-column background-theme">
             <!-- <div class="tier">Tier 1</div> -->
             <div class="rank">{{rank}}</div>
             <div class="image">
-                <img src="img/players/{{filter_id}}.png" alt="{{name}}" />
+                <img src="img/players/d_bacon.png" alt="{{name}}" />
             </div>
             {{#if coverage.length}}
                 <div class="ringer-coverage">
@@ -42,7 +42,7 @@
                 <div class="player-meta">
                     <ul>
                         <div class="medium-column">
-                            <li class="ringer-stat color-theme"><span class="label">RINGER’S 1 REASON</span><span class="value">{{ringer_stat}}</span></li>
+                            <li class="ringer-stat color-theme"><span class="label non-mobile">RINGER&rsquo;S 1 REASON</span><span class="label is-mobile">1 REASON:</span> <span class="value">{{ringer_stat}}</span></li>
                             <li><span class="label">Age</span><span class="value">{{age}}</span></li>
                         </div>
                         <div class="medium-column">
@@ -146,6 +146,9 @@
                         {{/each}}
                     </ul>
                 </div>
+                <h6 class="more-ringer-coverage">
+                    <a href="http://theringer.com" class="color-theme">SEE MORE RINGER COVERAGE</a>
+                </h6>
                 <div class="player-social">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%253A%252F%252Fmikemorisco.com%252Fringer%252Fnba%252F%3Fplayer%3D{{id}}" target="_blank" class="facebook">Share To Facebook</a>
                     <a href="https://twitter.com/intent/tweet?url=http://mikemorisco.com/ringer/nba/?player={{id}}&text={{twitter_share}}" target="_blank" class="twitter">Share To Twitter</a>
