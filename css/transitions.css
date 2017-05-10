@@ -1,0 +1,155 @@
+/* Transition on all devices */
+#item-list.sorting{
+    transition: opacity 0.25s linear;
+}
+
+.card-item.sorted{
+    transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s;
+}
+
+/* Transition on non touch devices */
+
+body:not(.mobile):not(.no-transition) .card-item{
+    transition: max-height 0.325s ease-out .5s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.sorted.shown{
+    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .wrapper{
+    transition: max-height 0.25s ease-out .5s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .rank-column{
+    transition: max-width .25s ease-out .25s, background-color .25s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .rank-column .rank{
+    transition: font-size 0.25s linear 0s;
+
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .rank-column .rank,
+body:not(.mobile):not(.no-transition) .card-item.medium .rank-column .rank{
+    transition: font-size 0.125s linear .25s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column{
+    transition: max-width .25s ease-out .25s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats{
+    transition: padding-right 0.25s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.medium .info-column .player-stats,
+body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats{
+    transition: padding-right 0.25s linear 0;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li{
+    transition:max-height 0.25s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-meta li{
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li:nth-child(n+5){
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li span.detail{
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats ul li span.detail{
+    transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-info{
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats ul li:nth-child(n+5){
+    transition: visibility 0s linear 0.125s, opacity 1s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-info {
+    transition: visibility 0s linear, opacity .25s 1s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.default{
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image.media-shown div.default{
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.plus-minus-media{
+    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.plus-minus-media.visible{
+    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-social a{
+    transition:opacity .125s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-info{
+    transition: padding-top 0.25s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item img,
+body:not(.mobile):not(.no-transition) .card-item .ringer-coverage{
+    transition: visibility 0s linear .25s, opacity .25s 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .ringer-coverage{
+    transition: visibility 0s linear .25s, opacity .25s linear 0s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large img,
+body:not(.mobile):not(.no-transition) .card-item.medium img{
+    transition: visibility 0s linear, opacity .25s .25s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .rank-column,
+body:not(.mobile):not(.no-transition) .card-item.medium .rank-column {
+    transition: max-width .25s ease-out, background-color .25s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .info-column,
+body:not(.mobile):not(.no-transition) .card-item.medium .info-column {
+    transition: max-width .25s ease-out;
+}
+
+body:not(.mobile):not(.no-transition) .card-item .toggle-card{
+    transition: bottom 0.125s ease-out .5s, transform 0.125s linear 1s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.medium .toggle-card{
+    transition: bottom 0.125s ease-out .25s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.expanded-card .toggle-card{
+    transition: bottom 0.125s ease-out .25s, transform 0.125s linear;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large .ringer-coverage {
+    transition: visibility 0s linear, opacity .25s 1s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.medium:not(.expanded),
+body:not(.mobile):not(.no-transition) .card-item.medium .wrapper{
+    transition: all 0.25s ease-out 0.3s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.large,
+body:not(.mobile):not(.no-transition) .card-item.large .wrapper{
+    transition: all 0.25s ease-out 0.3s;
+}

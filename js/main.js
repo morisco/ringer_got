@@ -21,9 +21,10 @@ var CardList = function() {
 
     this.filterOffsetPos = $('#content').offset().top;
 
-    this.size = 'small';
+    this.size = $(window).width() > 1100 ? 'small' : 'medium';
 
     this.init = function() {
+        this.windowResize();
         this.initEvents();
         if(this.initial_player){
             cardlist.openPlayer();
@@ -37,18 +38,37 @@ var CardList = function() {
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.has-media').on('mouseenter', this.showMedia);
         $('.has-media').on('mouseleave', this.hideMedia);
-        $(window).on('resize', function(){
-            clearTimeout(cardlist.sizeTimeout);
-            cardlist.sizeTimeout = setTimeout(function(){
-                cardlist.filterOffsetPos = $('#content').offset().top;
-                // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
-            },250);
-        });
+        $(window).on('resize', this.windowResize);
 
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
         }
     }
+
+    this.windowResize = function(){
+        var windowWidth = $(window).width();
+        clearTimeout(cardlist.sizeTimeout);
+        cardlist.sizeTimeout = setTimeout(function(){
+            windowWidth = $(window).width();
+            cardlist.filterOffsetPos = $('#content').offset().top;
+            cardlist.size = windowWidth > 1100 ? 'small' : 'medium';
+            // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
+        },250);
+        $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
+        if(windowWidth < 1100 && windowWidth > 767 ){
+            $('body').removeClass('mobile');
+            $('body').addClass('tablet no-transition');
+        } else if(windowWidth < 768){
+            $('body').removeClass('tablet');
+            $('body').addClass('mobile no-transition');
+        } else {
+            $('body').addClass('no-transition');
+            $('body').removeClass('tablet mobile');
+        }
+        setTimeout(function(){
+            $('body').removeClass('no-transition');
+        },100);
+    };
 
     this.openPlayer = function() {
         var openCard = $('.card-item[data-id="' + GLOBALS.player + '"]');
@@ -79,20 +99,6 @@ var CardList = function() {
                 cardlist.setHeight(card, 'large');
             },250);
         }
-
-        // if(card.hasClass('expanded')){
-        //     card.removeClass('expanded');
-        //     card.addClass(cardlist.size);
-        //     setTimeout(function(){
-        //         cardlist.setHeight(card, cardlist.size);
-        //     },250);
-        // } else {
-        //     card.addClass('large expanded');
-        //     setTimeout(function(){
-        //         cardlist.setHeight(card);
-        //     },250)
-        // }
-
     }
 
     this.changeSize = function(){
@@ -125,9 +131,10 @@ var CardList = function() {
     }
 
     this.scrollWatch = function() {
-        var scrollPos = $(window).scrollTop(),
-            marginTop = scrollPos - cardlist.filterOffsetPos;
-        if(scrollPos > cardlist.filterOffsetPos && $(window).width() > 768){
+
+        var scrollPos = $(window).scrollTop();
+            console.log(scrollPos);
+        if(scrollPos > cardlist.filterOffsetPos && $(window).width() > 767){
             // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
             $('body').addClass('filter-fixed');
         } else {

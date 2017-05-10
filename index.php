@@ -51,6 +51,7 @@
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
+        $player->size_class = $detect->isTablet() ? 'medium' : 'small';
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }
@@ -97,7 +98,8 @@
     $bodyClass = $sort_list_id;
     if($detect->isTablet()){
         $bodyClass .= ' tablet';
-    } else if ($detect->isMobile()) {
+    }
+    if ($detect->isMobile()) {
         $bodyClass .= ' mobile';
     }
 ?>
@@ -133,6 +135,9 @@
         <link rel="stylesheet" href="css/item-list.css">
         <link rel="stylesheet" href="css/coverage.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/transitions.css">
+        <link rel="stylesheet" href="css/tablet.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
@@ -164,7 +169,7 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Athletic forward who can fill a  3-and-D role, with playmaking upside.</strong> Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside.
+                    <strong>Welcome to The Ringer’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
                     <div class="intro-actions">
                         <div class="social">
                             <a href="http:facebook.com" class="facebook"></a>
@@ -233,6 +238,7 @@
 
         <script type="text/javascript">
             window.GLOBALS = {}
+            GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.player = "<?php echo $player_id; ?>";
             GLOBALS.more_coverage_articles = <?php echo json_encode($articles_json); ?>;

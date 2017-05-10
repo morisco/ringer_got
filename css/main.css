@@ -304,7 +304,6 @@ h3 .brand{
 
 @media (max-width: 1023px) {
     header {
-        height:650px;
         background-size: auto 100%;
     }
 
