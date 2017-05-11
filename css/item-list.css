@@ -6,7 +6,6 @@
 
 #item-list.sorting{
     opacity: 0;
-    transition: opacity 0.25s linear;
 }
 
 .card-item{
@@ -18,24 +17,21 @@
     overflow:hidden;
     border: .00875rem solid #ccc;
     margin-bottom:30px;
-    transition: max-height 0.325s ease-out .5s;
 }
 
 .card-item.sorted{
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s;
 }
 
 .card-item.sorted.shown{
     visibility: visible;
     opacity:1;
-    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
+    transition:
 }
 
 .card-item .wrapper{
     height: 100%;
-    transition: max-height 0.25s ease-out .5s;
 }
 
 .card-item .wrapper:after{
@@ -49,12 +45,19 @@
     max-height:145px;
 }
 
+.card-item:not(.small),
+.card-item:not(.small) .wrapper{
+    max-height:100%;
+}
+
 .card-item .toggle-card{
     height:32px;
     width:32px;
     position:absolute;
     right:29px;
-    transition: bottom 0.125s ease-out .5s, transform 0.125s linear 1s;
+    background-size: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
 }
 
 .card-item.small .toggle-card{
@@ -71,7 +74,6 @@
     width: 100%;
     max-width: 18.25%;
     padding: 30px 25px;
-    transition: max-width .25s ease-out .25s, background-color .25s linear;
 }
 
 .card-item .rank-column .tier{
@@ -88,14 +90,11 @@
     top:30px;
     right:25px;
     line-height:1;
-    transition: font-size 0.25s linear 0s;
 }
 
-.card-item.expanded .rank-column .rank,
 .card-item.large .rank-column .rank,
 .card-item.medium .rank-column .rank{
     font-size:170px;
-    transition: font-size 0.125s linear .25s;
 }
 
 .card-item .info-column{
@@ -104,8 +103,7 @@
     width: 100%;
     min-width:728px;
     max-width: 81.75%;
-    background: rgb(245,245,245);
-    transition: max-width .25s ease-out .25s;
+    background: #F5F5F5;
 }
 
 .card-item .info-column h3{
@@ -132,7 +130,6 @@
 }
 
 .card-item.medium .info-column .player-main,
-.card-item.expanded .info-column .player-main,
 .card-item.large .info-column .player-main{
     width:42.5%;
 }
@@ -144,18 +141,14 @@
     width:52.5%;
     max-height:87px;
     padding-right:50px;
-    transition: padding-right 0.25s linear 0s;
 }
 
-.card-item.expanded .info-column .player-stats,
 .card-item.medium .info-column .player-stats,
 .card-item.large .info-column .player-stats{
     padding-right:0;
     width:50%;
-    transition: padding-right 0.25s linear 0;
 }
 
-.card-item.expanded .info-column .player-stats,
 .card-item.large .info-column .player-stats{
     max-height:250px;
 }
@@ -176,7 +169,7 @@
     height: 90px;
     padding: 0 7.5px;
     margin-bottom:11px;
-    transition:max-height 0.25s linear;
+    
 }
 
 .card-item .info-column .player-stats ul li .stat-wrap{
@@ -192,7 +185,6 @@
     opacity: 0;
     margin-bottom: 0;
     padding-bottom:0;
-    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
 .card-item.large .info-column .player-stats ul li{
@@ -200,12 +192,10 @@
     height:105px;
 }
 
-.card-item.expanded .info-column .player-stats ul li:nth-child(n+5),
 .card-item.large .info-column .player-stats ul li:nth-child(n+5){
     visibility: visible;
     opacity: 1;
     padding-bottom:0;
-    transition: visibility 0s linear 0.125s, opacity 1s linear 0s;
 }
 
 .card-item .info-column .player-stats ul li span{
@@ -238,13 +228,12 @@
     padding-bottom:10px;
     font-size:11px;
     text-align:center;
-    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
+    font-weight:500;
 }
 
 .card-item.large .info-column .player-stats ul li span.detail{
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear .125s, opacity 0.125s linear 0s;
 }
 
 
@@ -259,17 +248,15 @@
 .card-item .info-column .player-meta li{
     visibility:hidden;
     opacity:0;
-    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;;
 }
 
 .card-item .info-column .player-meta li:first-of-type,
-.card-item.large .info-column .player-meta li,
-.card-item.expanded .info-column .player-meta li{
+.card-item.large .info-column .player-meta li{
     visibility:visible;
     opacity:1;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta{
+.card-item.medium .info-column .player-meta{
     width:100%;
     padding:30px 0;
 }
@@ -278,26 +265,39 @@
     padding:15px 0 30px;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta .medium-column{
+.card-item.medium .info-column .player-meta .medium-column{
     width:50%;
     float:left;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta li{
+.card-item.medium .info-column .player-meta li{
     visibility:visible;
     opacity:1;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:first-of-type{
+.card-item.medium .info-column .player-meta .medium-column:first-of-type{
     padding-right: 15px;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(2){
+.card-item .info-column .player-meta .medium-column:nth-child(2) li,
+.card-item .info-column .player-meta .medium-column:nth-child(3) li{
+    visibility: hidden;
+    opacity:0;
+}
+
+.card-item:not(.small) .info-column .player-meta .medium-column:nth-child(2) li,
+.card-item.large .info-column .player-meta .medium-column:nth-child(3) li{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-item.medium .info-column .player-meta .medium-column:nth-child(2){
     padding-left: 15px;
 }
 
-.card-item.medium:not(.expanded) .info-column .player-meta .medium-column:nth-child(3){
-    display:none;
+.card-item.medium .info-column .player-meta .medium-column:nth-child(3){
+    visibility: hidden;
+    opacity:0;
 }
 
 .card-item.medium .info-column .player-meta:after{
@@ -309,6 +309,11 @@
 .card-item .info-column .player-meta ul{
     list-style:none;
     font-size:14px;
+}
+
+.card-item.medium .info-column .player-meta ul{
+    height:40px;
+    overflow:hidden;
 }
 
 .card-item .info-column .player-meta li{
@@ -378,16 +383,16 @@
 .card-item .info-column .player-info{
     padding-top: 0px;
     clear:both;
-    transition: padding-top 0.25s linear;
     visibility:hidden;
     opacity:0;
-    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
+    max-height:0;
+    overflow:hidden;
 }
 
 .card-item.large .info-column .player-info {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear, opacity .25s 1s;
+    max-height:800px;
 }
 
 .card-item .info-column .player-stat-image{
@@ -395,7 +400,7 @@
     float:right;
     width: 50%;
     padding-left: 5%;
-    height:300px; /*this will be removed, determined by image size*/
+    height:auto; /*this will be removed, determined by image size*/
     z-index:2;
     padding-bottom: 5%;
 
@@ -410,7 +415,7 @@
     overflow:hidden;
 }
 
-.card-item .info-column .player-stat-image > div > div{
+.card-item .info-column .player-stat-image > div > div:not(:first-of-type){
     position:absolute;
     top:0;
     bottom:0;
@@ -423,19 +428,16 @@
 .card-item .info-column .player-stat-image div.default{
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
 .card-item .info-column .player-stat-image.media-shown div.default{
     visibility:hidden;
     opacity:0;
-    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
 }
 
 .card-item .info-column .player-stat-image div.plus-minus-media{
     visibility:hidden;
     opacity:0;
-    transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s;
 }
 
 .card-item .info-column .player-stat-image div.plus-minus-media img{
@@ -449,10 +451,13 @@
 .card-item .info-column .player-stat-image div.plus-minus-media.visible{
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s;
 }
 
-.card-item .info-column .player-plus-minus h6{
+.card-item .info-column .more-ringer-coverage{
+    display:none;
+}
+
+.card-item .info-column h6{
     font-size:12px;
     letter-spacing:.05em;
 }
@@ -520,7 +525,6 @@
     text-indent:-55555px;
     overflow:hidden;
     opacity:.21;
-    transition:opacity .125s linear;
 }
 
 .card-item .info-column .player-social a:hover{
@@ -539,7 +543,6 @@
 .card-item .ringer-coverage{
     visibility:hidden;
     opacity:0;
-    transition: visibility 0s linear .25s, opacity .25s 0s;
 }
 
 .card-item .ringer-coverage{
@@ -548,7 +551,6 @@
     left: 0;
     right: 0;
     padding: 0 30px 30px;
-    transition: visibility 0s linear .25s, opacity .25s linear 0s;
 }
 
 .card-item .ringer-coverage h5{
@@ -579,88 +581,50 @@
     margin-left: -20%;
 }
 
-.card-item.expanded img,
 .card-item.large img,
 .card-item.medium img{
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear, opacity .25s .25s;
 }
 
-.card-item.expanded .rank-column,
 .card-item.large .rank-column,
 .card-item.medium .rank-column {
     max-width: calc(100% - 728px);
-    transition: max-width .25s ease-out, background-color .25s linear;
 }
 
-.card-item.expanded .info-column,
 .card-item.large .info-column,
 .card-item.medium .info-column {
     max-width: 728px;
     visibility: visible;
     opacity: 1;
-    transition: max-width .25s ease-out;
 }
 
 .card-item.expanded-card .toggle-card{
     bottom: 28px;
     transform: rotate(-180deg);
-    transition: bottom 0.125s ease-out .25s, transform 0.125s linear;
 }
 
 .card-item.medium .toggle-card{
     bottom: 28px;
-    transition: bottom 0.125s ease-out .25s;
 }
 
 .card-item.large:not(.expanded-card) .toggle-card{
     display:none;
 }
 
-.card-item.expanded .ringer-coverage,
 .card-item.large .ringer-coverage {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s linear, opacity .25s 1s;
 }
 
-/* Medium Sized */
-.card-item.medium:not(.expanded),
-.card-item.medium .wrapper{
-    transition: all 0.25s ease-out 0.3s;
-
-}
-
-
-.card-item.medium:not(.expanded) .player-info .player-plus-minus,
-.card-item.medium:not(.expanded) .player-info .player-stat-image{
+.card-item.medium .player-info .player-plus-minus,
+.card-item.medium .player-info .player-stat-image{
     opacity: 0;
     visibility: hidden;
-}
-
-.card-item.expanded,
-.card-item.large,
-.card-item.expanded .wrapper,
-.card-item.large .wrapper{
-    transition: all 0.25s ease-out 0.3s;
-}
-
-.card-item.medium.expanded,
-.card-item.medium.expanded .wrapper,
-.card-item.large.expanded .wrapper{
-    transition: all 0.25s ease-out 0s;
 }
 
 @media(max-width: 1100px){
     #item-list{
         width: 100%;
-    }
-}
-
-@media(max-width: 1023px){
-    .card-item .rank-column{
-        max-width: 100%;
-        float:none;
     }
 }

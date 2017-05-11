@@ -15,7 +15,8 @@ var CardList = function() {
 
     this.cards = [];
 
-    this.filter_id = 'ringer';
+    this.sort_id = GLOBALS.current_sort;
+    this.filter_id = 'all';
 
     this.initial_player = GLOBALS.player || false;
 
@@ -24,7 +25,9 @@ var CardList = function() {
     this.size = 'small';
 
     this.init = function() {
+        this.windowResize();
         this.initEvents();
+        this.scrollWatch();
         if(this.initial_player){
             cardlist.openPlayer();
         }
@@ -37,18 +40,78 @@ var CardList = function() {
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.has-media').on('mouseenter', this.showMedia);
         $('.has-media').on('mouseleave', this.hideMedia);
-        $(window).on('resize', function(){
-            clearTimeout(cardlist.sizeTimeout);
-            cardlist.sizeTimeout = setTimeout(function(){
-                cardlist.filterOffsetPos = $('#content').offset().top;
-                // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
-            },250);
-        });
-
+        $('#mobile-nav').on('click', '.toggle-zone', this.toggleMobileNav);
+        $('#mobile-nav').on('click', '.sort li', this.mobileSort);
+        $('#mobile-nav').on('click', '.nav-filter a', this.mobileFilter);
+        $('#mobile-nav .nav-switcher').on('click', 'a', this.mobileChangeSize);
+        $(window).on('resize', this.windowResize);
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
         }
     }
+
+    this.toggleMobileNav = function(){
+        if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
+            $('body,html').scrollTop((cardlist.filterOffsetPos + 1));
+        }
+
+        $('#mobile-nav').toggleClass('open');
+        if($('#mobile-nav').hasClass('open')){
+            $('body').on("click.clickout", function(e){
+                if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
+                    cardlist.toggleMobileNav();
+                }
+            });
+        } else {
+            $('body').off("click.clickout");
+        }
+
+    };
+
+    this.mobileChangeSize = function(e){
+        e.preventDefault();
+        $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
+        $(e.target).addClass('active color-theme');
+        $('#mobile-nav .size-toggle li[data-size="' + $(this).data('size') + '"]').click();
+        $('#mobile-nav').removeClass('open');
+    }
+
+    this.mobileSort = function(e){
+        e.preventDefault();
+        $('#mobile-nav .sort li').removeClass('active color-theme');
+        $(e.target).addClass('active color-theme');
+        cardlist.sort(e);
+        $('#mobile-nav').removeClass('open');
+    }
+
+    this.mobileFilter = function(e){
+        e.preventDefault();
+        cardlist.filter(e);
+        $('#mobile-nav').removeClass('open');
+    }
+
+    this.windowResize = function(){
+        var windowWidth = $(window).width();
+        clearTimeout(cardlist.sizeTimeout);
+        cardlist.sizeTimeout = setTimeout(function(){
+            windowWidth = $(window).width();
+            cardlist.filterOffsetPos = $('#content').offset().top;
+        },250);
+        $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
+        if(windowWidth < 1100 && windowWidth > 767 ){
+            $('body').removeClass('mobile');
+            $('body').addClass('tablet no-transition');
+        } else if(windowWidth < 768){
+            $('body').removeClass('tablet');
+            $('body').addClass('mobile no-transition');
+        } else {
+            $('body').addClass('no-transition');
+            $('body').removeClass('tablet mobile');
+        }
+        setTimeout(function(){
+            $('body').removeClass('no-transition');
+        },100);
+    };
 
     this.openPlayer = function() {
         var openCard = $('.card-item[data-id="' + GLOBALS.player + '"]');
@@ -71,40 +134,23 @@ var CardList = function() {
         if(card.hasClass('expanded-card')){
             card.removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
             setTimeout(function(){
-                cardlist.setHeight(card);
-            },250);
+                // cardlist.setHeight(card);
+            },300);
         } else {
             card.removeClass('small medium large expanded').addClass('large expanded-card')
             setTimeout(function(){
-                cardlist.setHeight(card, 'large');
-            },250);
+                // cardlist.setHeight(card, 'large');
+            },500);
         }
-
-        // if(card.hasClass('expanded')){
-        //     card.removeClass('expanded');
-        //     card.addClass(cardlist.size);
-        //     setTimeout(function(){
-        //         cardlist.setHeight(card, cardlist.size);
-        //     },250);
-        // } else {
-        //     card.addClass('large expanded');
-        //     setTimeout(function(){
-        //         cardlist.setHeight(card);
-        //     },250)
-        // }
-
     }
 
-    this.changeSize = function(){
+    this.changeSize = function(e){
+        e.preventDefault();
         cardlist.size = $(this).data('size');
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded expanded-card').addClass($(this).data('size'));
-        setTimeout(function(){
-            _.each($('.card-item'), function(cardItem){
-                cardlist.setHeight(cardItem);
-            });
-        },250);
+        $('.card-item').removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
+
 
     };
 
@@ -125,10 +171,9 @@ var CardList = function() {
     }
 
     this.scrollWatch = function() {
-        var scrollPos = $(window).scrollTop(),
-            marginTop = scrollPos - cardlist.filterOffsetPos;
-        if(scrollPos > cardlist.filterOffsetPos && $(window).width() > 768){
-            // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
+
+        var scrollPos = $(window).scrollTop();
+        if(scrollPos > cardlist.filterOffsetPos){
             $('body').addClass('filter-fixed');
         } else {
             $('body').removeClass('filter-fixed');
@@ -152,10 +197,10 @@ var CardList = function() {
         $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
     }
 
-    this.setColors = function(filter_id) {
+    this.setColors = function() {
         $('body').removeClass('ringer kevin danny johnathan az');
-        $('body').addClass(filter_id);
-        var selected_color = GLOBALS.theme_colors[filter_id];
+        $('body').addClass(cardlist.sort_id);
+        var selected_color = GLOBALS.theme_colors[cardlist.sort_id];
         $('.stroke').attr('style', "stroke:"+selected_color + ' !important');
         $('.arrow').attr('style', "fill:"+selected_color + ' !important');
     }
@@ -166,49 +211,41 @@ var CardList = function() {
             coverage_count = 5;
 
         $('.active_filter').removeClass('active_filter');
-        $(this).addClass('active_filter');
+        $(e.currentTarget).addClass('active_filter');
         $('#item-list').addClass('sorting');
-
-        cardlist.filter_id = $(this).data('filter-id');
+        cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.article_base = 0;
-        cardlist.buildList(GLOBALS.data.players);
+        cardlist.setColors(cardlist.sort_id);
+        setTimeout(function(){
+            cardlist.buildList(GLOBALS.data.players);
+
+        })
     }
 
-    this.filter = function(){
+    this.filter = function(e){
+        var players;
 
-        var players,
-            filter;
-
-        $('#filters a.active').removeClass('active color-theme');
-        $(this).addClass('active color-theme');
-        if($(window).width() < 768 && !$('body').hasClass('filters-open')){
-            $('body').addClass('filters-open');
-            return;
-        } else if($(window).width() < 768) {
-            $('body').removeClass('filters-open');
-            $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
-        } else {
-            $('body').removeClass('filters-open');
-            if($(window).scrollTop() > cardlist.filterOffsetPos){
-                $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
-            }
+        $('#filters a.active, #mobile-nav .nav-filter a').removeClass('active color-theme');
+        $(e.currentTarget).addClass('active color-theme');
+        $('body').removeClass('filters-open');
+        if($(window).scrollTop() > cardlist.filterOffsetPos){
+            $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
         }
-
-        filter = $(this).data('filter');
+        cardlist.filter_id = $(e.currentTarget).data('filter');
         $('#item-list').addClass('sorting');
 
         cardlist.coverage_count = 5;
         cardlist.article_base = 0;
-        if(filter === 'all'){
+        if(cardlist.filter_id === 'all'){
             players = GLOBALS.data.players;
         } else {
-            players = _.where(GLOBALS.data.players, {position_group: filter});
+            players = _.where(GLOBALS.data.players, {position_group: cardlist.filter_id});
         }
         cardlist.buildList(players);
 
     }
 
-    this.buildPlayer = function(index, player){
+    this.buildPlayer = function(index, player, delay){
         var more_coverage = {};
         cardlist.coverage_count--;
         player.id = parseInt(index,10)+1;
@@ -217,7 +254,7 @@ var CardList = function() {
         $('#item-list').append(cardlist.template(player));
         setTimeout(function(){
             $('#item-list .card-item[data-id="' + player.id + '"]').addClass('shown');
-        },index * 125);
+        },delay);
 
         if(cardlist.coverage_count === 0){
             cardlist.coverage_count = 5;
@@ -230,20 +267,20 @@ var CardList = function() {
     this.buildList = function(players) {
         setTimeout(function(){
             if($(window).scrollTop() > cardlist.filterOffsetPos){
-                $('body,html').animate({scrollTop:cardlist.filterOffsetPos});
+                $('body,html').animate({scrollTop:cardlist.filterOffsetPos + 1});
             }
             $('#item-list').removeClass('sorting');
             $('#item-list').empty();
             cardlist.coverage_count = 5;
             var playerCount = 0;
-            _.each(GLOBALS.list[cardlist.filter_id], function(player, index){
+            _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
                 player = _.findWhere(players, { filter_id: player.filter_id});
                 if(player){
-                    cardlist.buildPlayer(index,player);
+                    var delay = (playerCount * 125) > 1500 ? 1500 : (playerCount * 125);
                     playerCount++;
+                    cardlist.buildPlayer(index,player,delay);
                 }
             });
-            cardlist.setColors(cardlist.filter_id);
         },250);
     }
 

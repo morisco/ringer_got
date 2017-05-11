@@ -25,7 +25,33 @@
     $articles_json = json_decode($articles_string);
     $articles = $articles_json->articles;
 
-    $sort_list_id = isset($_GET['list']) && $_GET['list'] ? $_GET['list'] : 'ringer';
+    $sort_colors = array(
+        'ringer'    => '#43be6d',
+        'kevin'     => '#ffff00',
+        'danny'     => '#00adef',
+        'johnathan' => '#c800ff',
+        'az'        => '#0043cc'
+    );
+
+    $sort_list_name = array(
+        'ringer'    => "Mock Draft",
+        'kevin'     => "Kevin Lincoln",
+        'danny'     => "Danny Chau",
+        'johnathan' => "Johnathan Tjarks",
+        'a_z'       => "Sort A-Z"
+    );
+
+    $sort_list_options = array('ringer', 'kevin', 'danny', 'johnathan', 'a_z');
+
+    if($_GET['list'] && in_array($_GET['list'], $sort_list_options)){
+        $sort_list_id = $_GET['list'];
+    } else{
+        $sort_list_id = 'ringer';
+    }
+
+
+    $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['ringer'];
+
     $sort_list = $data->$sort_list_id;
     $sorted_players = [];
     foreach($sort_list as $sort) {
@@ -47,10 +73,12 @@
         $player->plus       = json_decode($player->plus);
         $player->cls_1       = '#000000';
         $player->percent     = '40';
+        $player->color      = $sort_colors[$sort_list_id];
         $player->minus      = json_decode($player->minus);
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
+        $player->size_class = 'small';
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }
@@ -97,7 +125,8 @@
     $bodyClass = $sort_list_id;
     if($detect->isTablet()){
         $bodyClass .= ' tablet';
-    } else if ($detect->isMobile()) {
+    }
+    if ($detect->isMobile()) {
         $bodyClass .= ' mobile';
     }
 ?>
@@ -133,6 +162,10 @@
         <link rel="stylesheet" href="css/item-list.css">
         <link rel="stylesheet" href="css/coverage.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/transitions.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/tablet.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
@@ -164,25 +197,71 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Athletic forward who can fill a  3-and-D role, with playmaking upside.</strong> Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside. Athletic forward who can fill a  3-and-D role, with playmaking upside.
+                    <strong>Welcome to The Ringer’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
                     <div class="intro-actions">
+                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
                             <a href="http:facebook.com" class="facebook"></a>
                             <a href="http:twitter.com" class="twitter"></a>
                         </div>
-                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                     </div>
                 </div>
             </div>
         </section>
         <div id="content">
+            <nav id="mobile-nav">
+                <div class="toggle-zone">
+                </div>
+                <div class="toggle"></div>
+                <div class="current-sort" >
+                    <?php echo $sort_dropdown_name; ?>
+                </div>
+                <div class="nav-contents">
+                    <div class="current-sort color-theme">
+                        Ringer NBA Draft 2017
+                    </div>
+                    <ul class="sort">
+                        <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-sort-id="ringer">Mock Draft</li>
+                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">Kevin Lincoln</li>
+                        <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">Danny Chau</li>
+                        <li class="<?php echo ($sort_list_id === 'johnathan') ? 'active color-theme' : '' ?>"data-sort-id="johnathan">Johnathan Tjarks</li>
+                        <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-sort-id="az">Sort A-Z</li>
+                    </ul>
+                    <div class="nav-actions">
+                        <div class="nav-switcher">
+                            <div class="color-theme label">
+                                View
+                            </div>
+                            <div>
+                                <ul class="size-toggle">
+                                    <li class="active background-theme" data-size="small"></li>
+                                    <li data-size="medium"></li>
+                                    <li data-size="large"></li>
+                                </ul>
+                                <a href="javascript:void(0);" class="active color-theme" data-size="small">Default</a>
+                                <a href="javascript:void(0);" data-size="medium">Condensed</a>
+                                <a href="javascript:void(0);" data-size="large">Expanded</a>
+                            </div>
+                        </div>
+                        <div class="nav-filter">
+                            <div class="color-theme label">
+                                Position
+                            </div>
+                            <a href="javascript:void(0);" class="active color-theme" data-filter="all">All</a>
+                            <a href="javascript:void(0);" data-filter="forward">Forwards</a>
+                            <a href="javascript:void(0);" data-filter="guard">Guards</a>
+                            <a href="javascript:void(0);" data-filter="big">Bigs</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
-                    <a href="#" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-filter-id="ringer"><span>Ringer Picks</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-filter-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-filter-id="danny"><span>Danny Chau</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-filter-id="johnathan"><span>Johnathan Tjarks</span></a>
-                    <a href="#" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-filter-id="az"><span>Sort A-Z</span></a>
+                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer"><span>Ringer Picks</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny"><span>Danny Chau</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-sort-id="johnathan"><span>Johnathan Tjarks</span></a>
+                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az"><span>Sort A-Z</span></a>
                 </div>
             </section>
             <div id="main-content">
@@ -233,6 +312,7 @@
 
         <script type="text/javascript">
             window.GLOBALS = {}
+            GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.player = "<?php echo $player_id; ?>";
             GLOBALS.more_coverage_articles = <?php echo json_encode($articles_json); ?>;
@@ -243,13 +323,8 @@
                 johnathan   : GLOBALS.data['johnathan'],
                 az          : GLOBALS.data['a_z']
             };
-            GLOBALS.theme_colors = {
-                'ringer': '#43be6d',
-                'kevin': '#ffff00',
-                'danny': '#00adef',
-                'johnathan': '#c800ff',
-                'az': '#0043cc'
-            };
+            GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
+            GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
         </script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.12.0.min.js"><\/script>')</script>
