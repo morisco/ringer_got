@@ -7,32 +7,41 @@
     transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s;
 }
 
+.card-item.sorted.shown{
+    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
+}
+
 /* Transition on non touch devices */
 
 body:not(.mobile):not(.no-transition) .card-item{
     transition: max-height 0.325s ease-out .5s;
 }
 
-body:not(.mobile):not(.no-transition) .card-item.sorted.shown{
-    transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s;
+body:not(.mobile):not(.no-transition) .card-item.large,
+body:not(.mobile):not(.no-transition) .card-item.large .wrapper{
+    transition: max-height 0.325s ease-out 2s;
 }
 
 body:not(.mobile):not(.no-transition) .card-item .wrapper{
-    transition: max-height 0.25s ease-out .5s;
+    transition: max-height 0.325s ease-out .5s;
 }
 
 body:not(.mobile):not(.no-transition) .card-item .rank-column{
     transition: max-width .25s ease-out .25s, background-color .25s linear;
 }
 
+body:not(.mobile):not(.no-transition) .card-item.large .rank-column,
+body:not(.mobile):not(.no-transition) .card-item.medium .rank-column {
+    transition: max-width .25s ease-out, background-color .25s linear;
+}
+
 body:not(.mobile):not(.no-transition) .card-item .rank-column .rank{
     transition: font-size 0.25s linear 0s;
-
 }
 
 body:not(.mobile):not(.no-transition) .card-item.large .rank-column .rank,
 body:not(.mobile):not(.no-transition) .card-item.medium .rank-column .rank{
-    transition: font-size 0.125s linear .25s;
+    transition: font-size 0.125s linear .5s;
 }
 
 body:not(.mobile):not(.no-transition) .card-item .info-column{
@@ -52,6 +61,10 @@ body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul l
     transition:max-height 0.25s linear;
 }
 
+body:not(.mobile):not(.no-transition) .card-item .info-column .player-meta{
+    transition: padding-top .25s ease-out .5s;
+}
+
 body:not(.mobile):not(.no-transition) .card-item .info-column .player-meta li{
     transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
 }
@@ -69,7 +82,7 @@ body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stat
 }
 
 body:not(.mobile):not(.no-transition) .card-item .info-column .player-info{
-    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s;
+    transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s, max-height .25s linear .5s, padding-top 0.25s linear;
 }
 
 body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats ul li:nth-child(n+5){
@@ -77,7 +90,7 @@ body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stat
 }
 
 body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-info {
-    transition: visibility 0s linear, opacity .25s 1s;
+    transition: visibility 0s linear, opacity .25s 1s, max-height .25s linear 0s, padding-top 0.25s linear;
 }
 
 body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.default{
@@ -100,10 +113,6 @@ body:not(.mobile):not(.no-transition) .card-item .info-column .player-social a{
     transition:opacity .125s linear;
 }
 
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-info{
-    transition: padding-top 0.25s linear;
-}
-
 body:not(.mobile):not(.no-transition) .card-item img,
 body:not(.mobile):not(.no-transition) .card-item .ringer-coverage{
     transition: visibility 0s linear .25s, opacity .25s 0s;
@@ -115,12 +124,7 @@ body:not(.mobile):not(.no-transition) .card-item .ringer-coverage{
 
 body:not(.mobile):not(.no-transition) .card-item.large img,
 body:not(.mobile):not(.no-transition) .card-item.medium img{
-    transition: visibility 0s linear, opacity .25s .25s;
-}
-
-body:not(.mobile):not(.no-transition) .card-item.large .rank-column,
-body:not(.mobile):not(.no-transition) .card-item.medium .rank-column {
-    transition: max-width .25s ease-out, background-color .25s linear;
+    transition: visibility 0s linear, opacity .25s .75s;
 }
 
 body:not(.mobile):not(.no-transition) .card-item.large .info-column,

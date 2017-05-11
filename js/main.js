@@ -15,13 +15,14 @@ var CardList = function() {
 
     this.cards = [];
 
-    this.filter_id = 'ringer';
+    this.sort_id = GLOBALS.current_sort;
+    this.filter_id = 'all';
 
     this.initial_player = GLOBALS.player || false;
 
     this.filterOffsetPos = $('#content').offset().top;
 
-    this.size = $(window).width() > 1100 || $(window).width() <= 768 ? 'small' : 'medium';
+    this.size = 'small';
 
     this.init = function() {
         this.windowResize();
@@ -50,10 +51,21 @@ var CardList = function() {
     }
 
     this.toggleMobileNav = function(){
-        if($(window).scrollTop() < cardlist.filterOffsetPos){
+        if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
             $('body,html').scrollTop((cardlist.filterOffsetPos + 1));
         }
+
         $('#mobile-nav').toggleClass('open');
+        if($('#mobile-nav').hasClass('open')){
+            $('body').on("click.clickout", function(e){
+                if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
+                    cardlist.toggleMobileNav();
+                }
+            });
+        } else {
+            $('body').off("click.clickout");
+        }
+
     };
 
     this.mobileChangeSize = function(e){
@@ -84,7 +96,6 @@ var CardList = function() {
         cardlist.sizeTimeout = setTimeout(function(){
             windowWidth = $(window).width();
             cardlist.filterOffsetPos = $('#content').offset().top;
-            cardlist.size = windowWidth > 1100 ? 'small' : 'medium';
         },250);
         $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
         if(windowWidth < 1100 && windowWidth > 767 ){
@@ -123,13 +134,13 @@ var CardList = function() {
         if(card.hasClass('expanded-card')){
             card.removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
             setTimeout(function(){
-                cardlist.setHeight(card);
-            },250);
+                // cardlist.setHeight(card);
+            },300);
         } else {
             card.removeClass('small medium large expanded').addClass('large expanded-card')
             setTimeout(function(){
-                cardlist.setHeight(card, 'large');
-            },250);
+                // cardlist.setHeight(card, 'large');
+            },500);
         }
     }
 
@@ -138,12 +149,8 @@ var CardList = function() {
         cardlist.size = $(this).data('size');
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded expanded-card').addClass($(this).data('size'));
-        setTimeout(function(){
-            _.each($('.card-item'), function(cardItem){
-                cardlist.setHeight(cardItem);
-            });
-        },250);
+        $('.card-item').removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
+
 
     };
 
@@ -167,7 +174,6 @@ var CardList = function() {
 
         var scrollPos = $(window).scrollTop();
         if(scrollPos > cardlist.filterOffsetPos){
-            // $('#filter-bar-wrapper').css({'width': $('#main-content').width() + 'px' });
             $('body').addClass('filter-fixed');
         } else {
             $('body').removeClass('filter-fixed');
@@ -191,10 +197,10 @@ var CardList = function() {
         $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
     }
 
-    this.setColors = function(filter_id) {
+    this.setColors = function() {
         $('body').removeClass('ringer kevin danny johnathan az');
-        $('body').addClass(filter_id);
-        var selected_color = GLOBALS.theme_colors[filter_id];
+        $('body').addClass(cardlist.sort_id);
+        var selected_color = GLOBALS.theme_colors[cardlist.sort_id];
         $('.stroke').attr('style', "stroke:"+selected_color + ' !important');
         $('.arrow').attr('style', "fill:"+selected_color + ' !important');
     }
@@ -207,31 +213,33 @@ var CardList = function() {
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         $('#item-list').addClass('sorting');
-
-        cardlist.filter_id = $(e.target).data('filter-id');
+        cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.article_base = 0;
-        cardlist.buildList(GLOBALS.data.players);
+        cardlist.setColors(cardlist.sort_id);
+        setTimeout(function(){
+            cardlist.buildList(GLOBALS.data.players);
+
+        })
     }
 
     this.filter = function(e){
-        var players,
-            filter;
+        var players;
 
-        $('#filters a.active').removeClass('active color-theme');
+        $('#filters a.active, #mobile-nav .nav-filter a').removeClass('active color-theme');
         $(e.currentTarget).addClass('active color-theme');
         $('body').removeClass('filters-open');
         if($(window).scrollTop() > cardlist.filterOffsetPos){
             $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
         }
-        filter = $(e.currentTarget).data('filter');
+        cardlist.filter_id = $(e.currentTarget).data('filter');
         $('#item-list').addClass('sorting');
 
         cardlist.coverage_count = 5;
         cardlist.article_base = 0;
-        if(filter === 'all'){
+        if(cardlist.filter_id === 'all'){
             players = GLOBALS.data.players;
         } else {
-            players = _.where(GLOBALS.data.players, {position_group: filter});
+            players = _.where(GLOBALS.data.players, {position_group: cardlist.filter_id});
         }
         cardlist.buildList(players);
 
@@ -244,9 +252,7 @@ var CardList = function() {
         player.rank =  ("0" + player.id).slice(-2);
         player.className = 'sorted';
         $('#item-list').append(cardlist.template(player));
-        console.log(delay);
         setTimeout(function(){
-            console.log('here');
             $('#item-list .card-item[data-id="' + player.id + '"]').addClass('shown');
         },delay);
 
@@ -267,15 +273,14 @@ var CardList = function() {
             $('#item-list').empty();
             cardlist.coverage_count = 5;
             var playerCount = 0;
-            _.each(GLOBALS.list[cardlist.filter_id], function(player, index){
+            _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
                 player = _.findWhere(players, { filter_id: player.filter_id});
                 if(player){
-                    var delay = (playerCount * 125);
+                    var delay = (playerCount * 125) > 1500 ? 1500 : (playerCount * 125);
                     playerCount++;
                     cardlist.buildPlayer(index,player,delay);
                 }
             });
-            cardlist.setColors(cardlist.filter_id);
         },250);
     }
 

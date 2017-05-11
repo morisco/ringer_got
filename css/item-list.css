@@ -27,6 +27,7 @@
 .card-item.sorted.shown{
     visibility: visible;
     opacity:1;
+    transition:
 }
 
 .card-item .wrapper{
@@ -44,11 +45,19 @@
     max-height:145px;
 }
 
+.card-item:not(.small),
+.card-item:not(.small) .wrapper{
+    max-height:100%;
+}
+
 .card-item .toggle-card{
     height:32px;
     width:32px;
     position:absolute;
     right:29px;
+    background-size: 100%;
+    background-position:center center;
+    background-repeat:no-repeat;
 }
 
 .card-item.small .toggle-card{
@@ -271,12 +280,25 @@
     padding-right: 15px;
 }
 
+.card-item .info-column .player-meta .medium-column:nth-child(2) li,
+.card-item .info-column .player-meta .medium-column:nth-child(3) li{
+    visibility: hidden;
+    opacity:0;
+}
+
+.card-item:not(.small) .info-column .player-meta .medium-column:nth-child(2) li,
+.card-item.large .info-column .player-meta .medium-column:nth-child(3) li{
+    visibility: visible;
+    opacity: 1;
+}
+
 .card-item.medium .info-column .player-meta .medium-column:nth-child(2){
     padding-left: 15px;
 }
 
 .card-item.medium .info-column .player-meta .medium-column:nth-child(3){
-    display:none;
+    visibility: hidden;
+    opacity:0;
 }
 
 .card-item.medium .info-column .player-meta:after{
@@ -288,6 +310,11 @@
 .card-item .info-column .player-meta ul{
     list-style:none;
     font-size:14px;
+}
+
+.card-item.medium .info-column .player-meta ul{
+    height:40px;
+    overflow:hidden;
 }
 
 .card-item .info-column .player-meta li{
@@ -359,11 +386,14 @@
     clear:both;
     visibility:hidden;
     opacity:0;
+    max-height:0;
+    overflow:hidden;
 }
 
 .card-item.large .info-column .player-info {
     visibility: visible;
     opacity: 1;
+    max-height:800px;
 }
 
 .card-item .info-column .player-stat-image{
@@ -371,7 +401,7 @@
     float:right;
     width: 50%;
     padding-left: 5%;
-    height:300px; /*this will be removed, determined by image size*/
+    height:auto; /*this will be removed, determined by image size*/
     z-index:2;
     padding-bottom: 5%;
 
@@ -386,7 +416,7 @@
     overflow:hidden;
 }
 
-.card-item .info-column .player-stat-image > div > div{
+.card-item .info-column .player-stat-image > div > div:not(:first-of-type){
     position:absolute;
     top:0;
     bottom:0;

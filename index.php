@@ -25,12 +25,20 @@
     $articles_json = json_decode($articles_string);
     $articles = $articles_json->articles;
 
+    $sort_colors = array(
+        'ringer'    => '#43be6d',
+        'kevin'     => '#ffff00',
+        'danny'     => '#00adef',
+        'johnathan' => '#c800ff',
+        'az'        => '#0043cc'
+    );
+
     $sort_list_name = array(
-        'ringer' => "Mock Draft",
-        'kevin' => "Kevin Lincoln",
-        'danny' => "Danny Chau",
+        'ringer'    => "Mock Draft",
+        'kevin'     => "Kevin Lincoln",
+        'danny'     => "Danny Chau",
         'johnathan' => "Johnathan Tjarks",
-        'a_z' => "Sort A-Z"
+        'a_z'       => "Sort A-Z"
     );
 
     $sort_list_options = array('ringer', 'kevin', 'danny', 'johnathan', 'a_z');
@@ -65,11 +73,12 @@
         $player->plus       = json_decode($player->plus);
         $player->cls_1       = '#000000';
         $player->percent     = '40';
+        $player->color      = $sort_colors[$sort_list_id];
         $player->minus      = json_decode($player->minus);
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
-        $player->size_class = $detect->isTablet() ? 'medium' : 'small';
+        $player->size_class = 'small';
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }
@@ -212,11 +221,11 @@
                         Ringer NBA Draft 2017
                     </div>
                     <ul class="sort">
-                        <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-filter-id="ringer">Mock Draft</li>
-                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-filter-id="kevin">Kevin Lincoln</li>
-                        <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-filter-id="danny">Danny Chau</li>
-                        <li class="<?php echo ($sort_list_id === 'johnathan') ? 'active color-theme' : '' ?>"data-filter-id="johnathan">Johnathan Tjarks</li>
-                        <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-filter-id="az">Sort A-Z</li>
+                        <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-sort-id="ringer">Mock Draft</li>
+                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">Kevin Lincoln</li>
+                        <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">Danny Chau</li>
+                        <li class="<?php echo ($sort_list_id === 'johnathan') ? 'active color-theme' : '' ?>"data-sort-id="johnathan">Johnathan Tjarks</li>
+                        <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-sort-id="az">Sort A-Z</li>
                     </ul>
                     <div class="nav-actions">
                         <div class="nav-switcher">
@@ -229,30 +238,30 @@
                                     <li data-size="medium"></li>
                                     <li data-size="large"></li>
                                 </ul>
-                                <a href="#" class="active color-theme" data-size="small">Default</a>
-                                <a href="#" data-size="medium">Condensed</a>
-                                <a href="#" data-size="large">Expanded</a>
+                                <a href="javascript:void(0);" class="active color-theme" data-size="small">Default</a>
+                                <a href="javascript:void(0);" data-size="medium">Condensed</a>
+                                <a href="javascript:void(0);" data-size="large">Expanded</a>
                             </div>
                         </div>
                         <div class="nav-filter">
                             <div class="color-theme label">
                                 Position
                             </div>
-                            <a href="#" class="active color-theme" data-filter="all">All</a>
-                            <a href="#" data-filter="forward">Forwards</a>
-                            <a href="#" data-filter="guard">Guards</a>
-                            <a href="#" data-filter="big">Bigs</a>
+                            <a href="javascript:void(0);" class="active color-theme" data-filter="all">All</a>
+                            <a href="javascript:void(0);" data-filter="forward">Forwards</a>
+                            <a href="javascript:void(0);" data-filter="guard">Guards</a>
+                            <a href="javascript:void(0);" data-filter="big">Bigs</a>
                         </div>
                     </div>
                 </div>
             </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
-                    <a href="#" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-filter-id="ringer"><span>Ringer Picks</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-filter-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-filter-id="danny"><span>Danny Chau</span></a>
-                    <a href="#" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-filter-id="johnathan"><span>Johnathan Tjarks</span></a>
-                    <a href="#" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-filter-id="az"><span>Sort A-Z</span></a>
+                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer"><span>Ringer Picks</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny"><span>Danny Chau</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-sort-id="johnathan"><span>Johnathan Tjarks</span></a>
+                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az"><span>Sort A-Z</span></a>
                 </div>
             </section>
             <div id="main-content">
@@ -314,13 +323,8 @@
                 johnathan   : GLOBALS.data['johnathan'],
                 az          : GLOBALS.data['a_z']
             };
-            GLOBALS.theme_colors = {
-                'ringer': '#43be6d',
-                'kevin': '#ffff00',
-                'danny': '#00adef',
-                'johnathan': '#c800ff',
-                'az': '#0043cc'
-            };
+            GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
+            GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
         </script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.12.0.min.js"><\/script>')</script>
