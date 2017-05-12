@@ -224,8 +224,8 @@
                                     <li class="active background-theme" data-size="medium"></li>
                                     <li data-size="large"></li>
                                 </ul>
-                                <a href="javascript:void(0);" data-size="small">Default</a>
-                                <a href="javascript:void(0);" class="active color-theme" data-size="medium">Condensed</a>
+                                <a href="javascript:void(0);" data-size="small">Condensed</a>
+                                <a href="javascript:void(0);" class="active color-theme" data-size="medium">Default</a>
                                 <a href="javascript:void(0);" data-size="large">Expanded</a>
                             </div>
                         </div>

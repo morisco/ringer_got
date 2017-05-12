@@ -2505,7 +2505,7 @@ h3 .brand {
 @media (max-width: 660px) {
   #intro {
     width: 94%;
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
     text-align: center;
     padding-right: 0; }
   #filters {
@@ -2535,8 +2535,8 @@ h3 .brand {
     background: #fff;
     padding: 10px 0;
     border: 1px solid #000;
-    background-image: url("../img/mobile-nav-arrow.png");
-    background-image: url("../img/mobile-nav-arrow.svg");
+    background-image: url("../../img/mobile-nav-arrow.png");
+    background-image: url("../../img/mobile-nav-arrow.svg");
     background-position: right 15px center;
     background-size: 11px;
     background-repeat: no-repeat;
@@ -2555,8 +2555,8 @@ h3 .brand {
     height: 20px;
     margin-right: 20px;
     margin-left: 15px;
-    background-image: url("../img/toggle.png");
-    background-image: url("../img/toggle.svg");
+    background-image: url("../../img/toggle.png");
+    background-image: url("../../img/toggle.svg");
     background-size: 100%;
     background-position: center center; }
   .mobile #mobile-nav .current-sort {
@@ -2845,7 +2845,29 @@ h3 .brand {
   .card-item .info-column .player-social {
     margin: 0; }
   .card-item .info-column .player-plus-minus ul {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .card-item .info-column .medium-show {
+    padding-left: 0; }
+  .more-coverage h3 {
+    font-size: 45px; }
+  .more-coverage a {
+    width: 100%; }
+  .more-coverage a:not(:first-of-type) {
+    display: none; }
+  #coverage-footer {
+    padding: 0 15px;
+    width: 100%; }
+    #coverage-footer .more-coverage h3 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: left; }
+      #coverage-footer .more-coverage h3:after {
+        margin: 15px 0 -40px; }
+    #coverage-footer .more-coverage a {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      float: none; } }
 
 @media (max-width: 768px) {
   header {
