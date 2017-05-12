@@ -80,13 +80,12 @@ function Card(id, data){
         this.loaded = false;
         $(this.el).css('max-height', $(this.el).outerHeight());
         $(this.el).addClass('rebuilding');
-        $(this.el).addClass('rebuilding');
         setTimeout(function(){
             $(card.el).find('.info-column').empty();
             $(card.el).find('.info-column').append(card.infoTemplate(card.data));
             $(card.el).removeClass('rebuilding');
             $(card.el).removeAttr('style');
-        }, 500);
+        }, 1000);
     }
 
     this.init();

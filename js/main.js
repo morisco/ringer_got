@@ -197,12 +197,9 @@ var CardList = function() {
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
-        cardlist.article_base = 0;
+        cardlist.setColors();
         events.publish('sort.update', {});
         cardlist.buildList(GLOBALS.data.players);
-        setTimeout(function(){
-            cardlist.setColors();
-        },250);
     }
 
     this.filter = function(e){
@@ -224,7 +221,7 @@ var CardList = function() {
         events.publish('filter.update', { filter: cardlist.filter_id });
     }
 
-    this.buildList = function(players) {
+    this.buildList = function() {
         var playerCount = 0;
         _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
             player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});

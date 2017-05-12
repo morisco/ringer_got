@@ -2,23 +2,23 @@
 
 /* Base Theme Transitions */
 .background-theme{
-   transition:background-color 0.25s linear;
+   transition:background-color 0.5s linear;
 }
 
 .color-theme{
-    transition:color 0.25s linear;
+    transition:color 0.5s linear;
 }
 
 .border-theme{
-   transition:border-color 0.25s linear;
+   transition:border-color 0.5s linear;
 }
 
 .border-theme-before:before{
-    transition:border-color 0.25s linear;
+    transition:border-color 0.5s linear;
 }
 
 .background-theme-after:after{
-    transition:background-color 0.25s linear;
+    transition:background-color 0.5s linear;
 }
 
 /* Ringer Theme */
