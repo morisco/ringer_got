@@ -19,6 +19,7 @@ function Card(id, data){
         events.subscribe('sort.update', this.sort);
         this.el.on('mouseenter', this.loadGifs)
         this.el.find('.has-media').on('mouseenter', this.showMedia);
+        this.el.find('.has-media').on('tap', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
     };
@@ -78,14 +79,10 @@ function Card(id, data){
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        $(this.el).css('max-height', $(this.el).outerHeight());
-        $(this.el).addClass('rebuilding');
+        var delay = $('body').hasClass('mobile') ? 2000 : 1000;
         setTimeout(function(){
-            $(card.el).find('.info-column').empty();
-            $(card.el).find('.info-column').append(card.infoTemplate(card.data));
-            $(card.el).removeClass('rebuilding');
-            $(card.el).removeAttr('style');
-        }, 1000);
+            $(card.el).find('.info-column').html(card.infoTemplate(card.data));
+        }, delay);
     }
 
     this.init();

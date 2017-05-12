@@ -12,18 +12,25 @@
 // }
 //
 // /* Transition on non touch devices */
+@media(min-width:1025px){
+    body:not(.mobile):not(.no-transition) .card-item{
+        @include transition(max-height, 0.325s, ease-out, .5s);
+    }
 
-body:not(.mobile):not(.no-transition) .card-item{
-    transition: max-height 0.325s ease-out .5s;
+    body:not(.mobile):not(.no-transition) .card-item.sort{
+        @include transition(max-height, 0.325s, ease-out, 0s);
+    }
+
+    body:not(.mobile):not(.no-transition) .player-info{
+        @include transition(max-height, 0.5s, ease-out, 0.25s);
+    }
+
+    body:not(.mobile):not(.no-transition) .rank-column .image img{
+        @include transition(opacity, 0.25s, linear);
+    }
 }
 
-body:not(.mobile):not(.no-transition) .card-item.sort{
-    transition: max-height 0.325s ease-out 0s;
-}
 
-body:not(.mobile):not(.no-transition) .player-info{
-    -webkit-transition: max-height 0.5s ease-out 0.25s;
-}
 //
 //
 // body:not(.mobile):not(.no-transition) .card-item.large,

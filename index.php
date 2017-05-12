@@ -151,7 +151,7 @@
 
         <link rel="stylesheet" href="dist/css/all.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="dist/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
         <link rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*w1O1RbAfBRNSxkSC48L1PQ.png">
@@ -159,6 +159,59 @@
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <style type="text/css">.stroke{clip-path:url(#SVGID_2_);fill:none;stroke:<?php echo $sort_colors[$sort_list_id]; ?>;stroke-width:2;}.arrow{clip-path:url(#SVGID_4_);fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
+        <style>
+            .cls-1 {
+                fill: #fffb00;
+            }
+
+            .cls-2 {
+                fill: #00d9ff;
+            }
+
+            .cls-3 {
+                fill: #ff4200;
+            }
+
+            .cls-4,
+            .cls-5,
+            .cls-6 {
+                fill: none;
+            }
+
+            .cls-4,
+            .cls-5 {
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 7px;
+            }
+
+            .cls-5 {
+                opacity: 0.2;
+            }
+
+            .cls-7 {
+                font-size: 38px;
+                font-family: NYTMagSans-Bold, NYTMag Sans;
+            }
+
+            .cls-8 {
+                font-weight: 700;
+            }
+
+            .cls-9 {
+                font-size: 26px;
+                font-family: NYTMagSans-Md, NYTMag Sans;
+                letter-spacing: 0.06em;
+            }
+
+            .cls-10 {
+                letter-spacing: 0.05em;
+            }
+
+            .cls-11 {
+                letter-spacing: 0.03em;
+            }
+        </style>
     </head>
     <body class="<?php echo $bodyClass; ?>">
         <!--[if lt IE 8]>
@@ -317,15 +370,8 @@
             GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
             GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
         </script>
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/vendor/handlebars.js"></script>
-        <script src="js/vendor/underscore.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/events.js"></script>
-        <script src="js/card.js"></script>
-        <script src="js/main.js"></script>
-
+        <script src="dist/vendor/vendor.js"></script>
+        <script src="dist/js/all.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

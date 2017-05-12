@@ -1,10 +1,8 @@
 $(document).ready(function(){
-    setTimeout(function(){
-        var masterList = new CardList();
-    },500);
+    var masterList = new CardList();
 });
 
-var CardList = function() {
+function CardList() {
     var cardlist = this;
 
     this.$el = $('#item-list');
@@ -83,43 +81,52 @@ var CardList = function() {
     };
 
     this.toggleMobileNav = function(){
+        window.clearTimeout(cardlist.navTimeout)
         if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
             $('body,html').scrollTop((cardlist.filterOffsetPos + 1));
         }
 
         $('#mobile-nav').toggleClass('open');
-        if($('#mobile-nav').hasClass('open')){
-            $('body').on("click.clickout", function(e){
-                if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
-                    cardlist.toggleMobileNav();
-                }
-            });
-        } else {
-            $('body').off("click.clickout");
-        }
-
+        cardlist.navTimeout = setTimeout(function(){
+            // if($('#mobile-nav').hasClass('open')){
+            //     $('body').on("click.clickout", function(e){
+            //         if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
+            //             cardlist.toggleMobileNav();
+            //         }
+            //     });
+            // } else {
+            //     $('body').off("click.clickout");
+            // }
+        }, 500);
     };
 
     this.mobileChangeSize = function(e){
         e.preventDefault();
-        $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
-        $(e.target).addClass('active color-theme');
-        $('#mobile-nav .size-toggle li[data-size="' + $(this).data('size') + '"]').click();
+        var newSize = $(this).data('size');
         $('#mobile-nav').removeClass('open');
+        setTimeout(function(){
+            $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
+            $(e.target).addClass('active color-theme');
+            cardlist.changeSize(e, newSize);
+        },100);
     }
 
     this.mobileSort = function(e){
         e.preventDefault();
-        $('#mobile-nav .sort li').removeClass('active color-theme');
-        $(e.target).addClass('active color-theme');
-        cardlist.sort(e);
         $('#mobile-nav').removeClass('open');
+        setTimeout(function(){
+            $('#mobile-nav .sort li').removeClass('active color-theme');
+            $(e.target).addClass('active color-theme');
+            cardlist.sort(e);
+        },100);
     }
 
     this.mobileFilter = function(e){
         e.preventDefault();
-        cardlist.filter(e);
-        $('#mobile-nav').removeClass('open');
+        setTimeout(function(){
+            cardlist.filter(e);
+            $('#mobile-nav').removeClass('open');
+        },100)
     }
 
     this.windowResize = function(){
@@ -159,16 +166,16 @@ var CardList = function() {
         });
     }
 
-    this.changeSize = function(e){
+    this.changeSize = function(e, size){
         e.preventDefault();
         var transitionClass;
         cardlist.old_size = cardlist.size;
-        cardlist.size = $(this).data('size');
+        cardlist.size = size || $(this).data('size');
         transitionClass = cardlist.old_size + '-to-' + cardlist.size;
         $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded expanded-card small-to-large small-to-medium medium-to-small medium-to-large large-to-medium large-to-small').addClass(transitionClass + ' ' + cardlist.size);
+        $('.card-item').attr('class', 'card-item col-xs-12 ' + transitionClass + ' ' + cardlist.size);
     };
 
     this.setHeight = function(el, size) {
@@ -210,6 +217,7 @@ var CardList = function() {
         var player,
             coverage_count = 5;
 
+        $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
@@ -248,6 +256,9 @@ var CardList = function() {
                 }
             }
         });
+        setTimeout(function(){
+            $('body').removeClass('rebuilding');
+        },750);
     }
 
     this.init();

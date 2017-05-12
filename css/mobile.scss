@@ -501,7 +501,7 @@
         div{
             a{
                 width:100%;
-                &:not(:first-of-type){
+                &:nth-child(n+2){
                     display:none;
                 }
             }
