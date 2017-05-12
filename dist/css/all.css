@@ -2049,8 +2049,8 @@ header .heading-wrapper {
 
 .card-item .ringer-coverage h5 {
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  color: #fff;
+  border-bottom: 1px solid black;
+  color: black;
   font-size: 12px;
   letter-spacing: 0.05em; }
 
@@ -2060,7 +2060,7 @@ header .heading-wrapper {
 
 .card-item .ringer-coverage ul li a {
   display: block;
-  color: #fff;
+  color: black;
   font-weight: 500;
   margin-top: 10px;
   line-height: 1.25;
@@ -2948,19 +2948,19 @@ h3 .brand {
 
 /* Ringer Theme */
 .ringer .background-theme {
-  background-color: #43be6d !important; }
+  background-color: #005bcc !important; }
 
 .ringer .color-theme {
-  color: #43be6d !important; }
+  color: #005bcc !important; }
 
 .ringer .border-theme {
-  border-color: #43be6d !important; }
+  border-color: #005bcc !important; }
 
 .ringer .border-theme-before:before {
-  border-color: #43be6d !important; }
+  border-color: #005bcc !important; }
 
 .ringer .background-theme-after:after {
-  background-color: #43be6d !important; }
+  background-color: #005bcc !important; }
 
 .ringer .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
@@ -2968,19 +2968,19 @@ h3 .brand {
 
 /* Kevin Theme */
 .kevin .background-theme {
-  background-color: #ffff00 !important; }
+  background-color: #ff5e00 !important; }
 
 .kevin .color-theme {
-  color: #ffff00 !important; }
+  color: #ff5e00 !important; }
 
 .kevin .border-theme {
-  border-color: #ffff00 !important; }
+  border-color: #ff5e00 !important; }
 
 .kevin .border-theme-before:before {
-  border-color: #ffff00 !important; }
+  border-color: #ff5e00 !important; }
 
 .kevin .background-theme-after:after {
-  background-color: #ffff00 !important; }
+  background-color: #ff5e00 !important; }
 
 .kevin .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
@@ -2988,19 +2988,19 @@ h3 .brand {
 
 /* Danny Theme */
 .danny .background-theme {
-  background-color: #00adef !important; }
+  background-color: #7ebe43 !important; }
 
 .danny .color-theme {
-  color: #00adef !important; }
+  color: #7ebe43 !important; }
 
 .danny .border-theme {
-  border-color: #00adef !important; }
+  border-color: #7ebe43 !important; }
 
 .danny .border-theme-before:before {
-  border-color: #00adef !important; }
+  border-color: #7ebe43 !important; }
 
 .danny .background-theme-after:after {
-  background-color: #00adef !important; }
+  background-color: #7ebe43 !important; }
 
 .danny .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
@@ -3008,19 +3008,19 @@ h3 .brand {
 
 /* Johnathan Theme */
 .johnathan .background-theme {
-  background-color: #c800ff !important; }
+  background-color: #005bcc !important; }
 
 .johnathan .color-theme {
-  color: #c800ff !important; }
+  color: #005bcc !important; }
 
 .johnathan .border-theme {
-  border-color: #c800ff !important; }
+  border-color: #005bcc !important; }
 
 .johnathan .border-theme-before:before {
-  border-color: #c800ff !important; }
+  border-color: #005bcc !important; }
 
 .johnathan .background-theme-after:after {
-  background-color: #c800ff !important; }
+  background-color: #005bcc !important; }
 
 .johnathan .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
@@ -3028,19 +3028,19 @@ h3 .brand {
 
 /* AZ Theme */
 .az .background-theme {
-  background-color: #0043cc !important; }
+  background-color: #ff0047 !important; }
 
 .az .color-theme {
-  color: #0043cc !important; }
+  color: #ff0047 !important; }
 
 .az .border-theme {
-  border-color: #0043cc !important; }
+  border-color: #ff0047 !important; }
 
 .az .border-theme-before:before {
-  border-color: #0043cc !important; }
+  border-color: #ff0047 !important; }
 
 .az .background-theme-after:after {
-  background-color: #0043cc !important; }
+  background-color: #ff0047 !important; }
 
 .az .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
