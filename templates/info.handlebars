@@ -20,7 +20,7 @@
     <div class="player-meta">
         <ul>
             <div class="medium-column">
-                <li class="ringer-stat color-theme"><span class="label non-mobile">RINGER&rsquo;S 1 REASON</span><span class="label is-mobile">1 REASON:</span> <span class="value">{{ringer_stat}}</span></li>
+                <li class="ringer-stat color-theme"><span class="label non-mobile">RINGER&rsquo;S 1 REASON</span><span class="label is-mobile">1 REASON:</span> <span class="value">{{stat}}</span></li>
                 <li><span class="label">Age</span><span class="value">{{age}}</span></li>
             </div>
             <div class="medium-column">
@@ -208,13 +208,13 @@
             </div>
             {{#each plus}}
                 {{#if this.media}}
-                    <div class="plus-minus-media" data-id="{{this.media}}" ><img src="{{this.media}}" /></div>
+                    <div class="plus-minus-media" data-id="{{this.media}}" ><img data-src="{{this.media}}" /></div>
                 {{/if}}
             {{/each}}
 
             {{#each minus}}
                 {{#if this.media}}
-                    <div class="plus-minus-media" data-id="{{this.media}}"><img src="{{this.media}}" /></div>
+                    <div class="plus-minus-media" data-id="{{this.media}}"><img data-src="{{this.media}}" /></div>
                 {{/if}}
             {{/each}}
         </div>
@@ -224,7 +224,13 @@
         <ul>
             {{#each plus}}
                 {{#if this.media}}
-                    <li class="has-media" data-media="{{this.media}}"><div class="media-marker background-theme-after border-theme-before"></div>{{{this.text}}}</li>
+                    <li class="has-media" data-media="{{this.media}}">
+                        <div class="ring-container">
+                            <div class="ringring border-theme"></div>
+                            <div class="circle background-theme"></div>
+                        </div>
+                        {{{this.text}}}
+                    </li>
                 {{else}}
                     <li>{{{this.text}}}</li>
                 {{/if}}
@@ -234,7 +240,13 @@
         <ul>
             {{#each minus}}
                 {{#if this.media}}
-                    <li class="has-media" data-media="{{this.media}}"><div class="media-marker background-theme-after border-theme-before"></div>{{{this.text}}}</li>
+                    <li class="has-media" data-media="{{this.media}}">
+                        <div class="ring-container">
+                            <div class="ringring border-theme"></div>
+                            <div class="circle background-theme"></div>
+                        </div>
+                        {{{this.text}}}
+                    </li>
                 {{else}}
                     <li>{{{this.text}}}</li>
                 {{/if}}
@@ -249,3 +261,5 @@
         <a href="https://twitter.com/intent/tweet?url=http://mikemorisco.com/ringer/nba/?player={{id}}&text={{twitter_share}}" target="_blank" class="twitter">Share To Twitter</a>
     </div>
 </div>
+</div>
+<div class="toggle-card"></div>
