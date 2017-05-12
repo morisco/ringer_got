@@ -310,6 +310,10 @@
             <?php echo file_get_contents("./templates/coverage.handlebars"); ?>
         </script>
 
+        <script id="info-template" type="text/x-handlebars-template">
+            <?php echo file_get_contents("./templates/info.handlebars"); ?>
+        </script>
+
         <script type="text/javascript">
             window.GLOBALS = {}
             GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";

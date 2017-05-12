@@ -17,6 +17,7 @@
     overflow:hidden;
     border: .00875rem solid #ccc;
     margin-bottom:30px;
+    background:#F5F5F5;
 }
 
 .card-item.sorted{
@@ -169,7 +170,7 @@
     height: 90px;
     padding: 0 7.5px;
     margin-bottom:11px;
-    
+
 }
 
 .card-item .info-column .player-stats ul li .stat-wrap{
@@ -187,10 +188,6 @@
     padding-bottom:0;
 }
 
-.card-item.large .info-column .player-stats ul li{
-    max-height: 105px;
-    height:105px;
-}
 
 .card-item.large .info-column .player-stats ul li:nth-child(n+5){
     visibility: visible;
