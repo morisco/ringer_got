@@ -26,11 +26,11 @@
     $articles = $articles_json->articles;
 
     $sort_colors = array(
-        'ringer'    => '#43be6d',
-        'kevin'     => '#ffff00',
-        'danny'     => '#00adef',
-        'johnathan' => '#c800ff',
-        'az'        => '#0043cc'
+        'ringer'    => '#ff0047',
+        'kevin'     => '#ff5e00',
+        'danny'     => '#7ebe43',
+        'johnathan' => '#005bcc',
+        'az'        => '#0095ff'
     );
 
     $sort_list_name = array(
