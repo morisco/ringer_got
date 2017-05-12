@@ -1,6 +1,399 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+.ring-container {
+  position: relative;
+  margin-left: -20px; }
+
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: #62bd19;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+.ringring {
+  border: 1px solid #62bd19;
+  -webkit-border-radius: 30px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0.0; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0.0; } }
+
 .more-coverage {
   clear: both;
   padding: 30px 0px; }
+
+.filtered .more-coverage {
+  display: none; }
 
 .more-coverage:after {
   clear: both;
@@ -98,17 +491,18 @@
   float: left;
   vertical-align: middle;
   height: 100%;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 13.5px;
-  letter-spacing: 0.065em;
-  line-height: 1;
   text-align: center;
   width: 16.25%;
   overflow: hidden;
   border-right: 2px solid #000;
-  transition: all 0.25s linear; }
+  transition: all 0.25s linear;
+  font-size: 13.5px;
+  letter-spacing: 0.065em;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1; }
 
 #filter-bar a:last-of-type {
   border-right: 0; }
@@ -272,71 +666,71 @@
 /* This stylesheet generated by Transfonter (https://transfonter.org) on April 21, 2017 1:48 AM */
 @font-face {
   font-family: 'Tiempos Headline';
-  src: url("fonts/TIEMPOS/TiemposHeadline-Semibold.eot");
-  src: url("fonts/TIEMPOS/TiemposHeadline-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/TIEMPOS/TiemposHeadline-Semibold.woff") format("woff"), url("fonts/TIEMPOS/TiemposHeadline-Semibold.ttf") format("truetype");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Semibold.eot");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Semibold.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Semibold.woff") format("woff"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'NYTMag Sans';
-  src: url("fonts/NYT/NYTMagSans-Blk.eot");
-  src: url("fonts/NYT/NYTMagSans-Blk.eot?#iefix") format("embedded-opentype"), url("fonts/NYT/NYTMagSans-Blk.woff") format("woff"), url("fonts/NYT/NYTMagSans-Blk.ttf") format("truetype");
+  src: url("../../css/fonts/NYT/NYTMagSans-Blk.eot");
+  src: url("../../css/fonts/NYT/NYTMagSans-Blk.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/NYT/NYTMagSans-Blk.woff") format("woff"), url("../../css/fonts/NYT/NYTMagSans-Blk.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'NYTMag Sans';
-  src: url("fonts/NYT/NYTMagSans-Md.eot");
-  src: url("fonts/NYT/NYTMagSans-Md.eot?#iefix") format("embedded-opentype"), url("fonts/NYT/NYTMagSans-Md.woff") format("woff"), url("fonts/NYT/NYTMagSans-Md.ttf") format("truetype");
+  src: url("../../css/fonts/NYT/NYTMagSans-Md.eot");
+  src: url("../../css/fonts/NYT/NYTMagSans-Md.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/NYT/NYTMagSans-Md.woff") format("woff"), url("../../css/fonts/NYT/NYTMagSans-Md.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Tiempos Headline';
-  src: url("fonts/TIEMPOS/TiemposHeadline-Regular.eot");
-  src: url("fonts/TIEMPOS/TiemposHeadline-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/TIEMPOS/TiemposHeadline-Regular.woff") format("woff"), url("fonts/TIEMPOS/TiemposHeadline-Regular.ttf") format("truetype");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Regular.eot");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Regular.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Regular.woff") format("woff"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'NYTMag Sans';
-  src: url("fonts/NYT/NYTMagSans-Bold.eot");
-  src: url("fonts/NYT/NYTMagSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/NYT/NYTMagSans-Bold.woff") format("woff"), url("fonts/NYT/NYTMagSans-Bold.ttf") format("truetype");
+  src: url("../../css/fonts/NYT/NYTMagSans-Bold.eot");
+  src: url("../../css/fonts/NYT/NYTMagSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/NYT/NYTMagSans-Bold.woff") format("woff"), url("../../css/fonts/NYT/NYTMagSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'TIMMONS NY';
-  src: url("fonts/TIMMONS/TIMMONSNY.eot");
-  src: url("fonts/TIMMONS/TIMMONSNY.eot?#iefix") format("embedded-opentype"), url("fonts/TIMMONS/TIMMONSNY.woff") format("woff"), url("fonts/TIMMONS/TIMMONSNY.ttf") format("truetype");
+  src: url("../../css/fonts/TIMMONS/TIMMONSNY.eot");
+  src: url("../../css/fonts/TIMMONS/TIMMONSNY.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/TIMMONS/TIMMONSNY.woff") format("woff"), url("../../css/fonts/TIMMONS/TIMMONSNY.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Tiempos Headline';
-  src: url("fonts/TIEMPOS/TiemposHeadline-Light.eot");
-  src: url("fonts/TIEMPOS/TiemposHeadline-Light.eot?#iefix") format("embedded-opentype"), url("fonts/TIEMPOS/TiemposHeadline-Light.woff") format("woff"), url("fonts/TIEMPOS/TiemposHeadline-Light.ttf") format("truetype");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Light.eot");
+  src: url("../../css/fonts/TIEMPOS/TiemposHeadline-Light.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Light.woff") format("woff"), url("../../css/fonts/TIEMPOS/TiemposHeadline-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'NYTMag Sans';
-  src: url("fonts/NYT/NYTMagSans-Lt.eot");
-  src: url("fonts/NYT/NYTMagSans-Lt.eot?#iefix") format("embedded-opentype"), url("fonts/NYT/NYTMagSans-Lt.woff") format("woff"), url("fonts/NYT/NYTMagSans-Lt.ttf") format("truetype");
+  src: url("../../css/fonts/NYT/NYTMagSans-Lt.eot");
+  src: url("../../css/fonts/NYT/NYTMagSans-Lt.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/NYT/NYTMagSans-Lt.woff") format("woff"), url("../../css/fonts/NYT/NYTMagSans-Lt.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Plaak';
-  src: url("fonts/PLAAK/Plaak-56-ExpandedBlack.eot");
-  src: url("fonts/PLAAK/Plaak-56-ExpandedBlack.eot?#iefix") format("embedded-opentype"), url("fonts/PLAAK/Plaak-56-ExpandedBlack.woff") format("woff"), url("fonts/PLAAK/Plaak-56-ExpandedBlack.ttf") format("truetype");
+  src: url("../../css/fonts/PLAAK/Plaak-56-ExpandedBlack.eot");
+  src: url("../../css/fonts/PLAAK/Plaak-56-ExpandedBlack.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/PLAAK/Plaak-56-ExpandedBlack.woff") format("woff"), url("../../css/fonts/PLAAK/Plaak-56-ExpandedBlack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'NYTMag Sans';
-  src: url("fonts/NYT/NYTMagSans-Regular.eot");
-  src: url("fonts/NYT/NYTMagSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/NYT/NYTMagSans-Regular.woff") format("woff"), url("fonts/NYT/NYTMagSans-Regular.ttf") format("truetype");
+  src: url("../../css/fonts/NYT/NYTMagSans-Regular.eot");
+  src: url("../../css/fonts/NYT/NYTMagSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../css/fonts/NYT/NYTMagSans-Regular.woff") format("woff"), url("../../css/fonts/NYT/NYTMagSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -1150,14 +1544,15 @@ header .heading-wrapper {
 
 #intro .ringer-draft-coverage {
   max-width: calc(100% - 110px);
-  font-size: 12px;
-  font-family: 'NYTMag Sans', serif;
-  font-weight: 700;
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -8px;
-  letter-spacing: 0.075em;
+  font-family: 'NYTMag Sans', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
   text-decoration: underline; }
 
 #intro .social {
@@ -1200,7 +1595,127 @@ header .heading-wrapper {
   overflow: hidden;
   border: .00875rem solid #ccc;
   margin-bottom: 30px;
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  transition: max-height 0.25s, opacity 0.25s; }
+  .card-item.small {
+    max-height: 145px; }
+  .card-item.rebuilding .info-column {
+    opacity: 0 !important; }
+  .card-item.rebuilding .image img {
+    opacity: 0 !important; }
+  .card-item.unfiltered {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    visibility: hidden;
+    margin-top: -2px; }
+  .card-item .rank-column .image img {
+    transition: opacity 0.25s linear; }
+  .card-item .info-column .player-description {
+    clear: both;
+    margin: 30px 0 0;
+    padding-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    padding-right: 40px; }
+    .card-item .info-column .player-description .player-headline {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-family: 'Tiempos Headline'; }
+    .card-item .info-column .player-description .player-subline {
+      font-weight: 500; }
+      .card-item .info-column .player-description .player-subline strong {
+        font-family: 'NYTMag Sans', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.05em; }
+  .card-item .info-column .player-main {
+    float: left;
+    max-width: 47.5%; }
+  .card-item .info-column .player-stats {
+    position: relative;
+    float: right;
+    width: 52.5%;
+    max-height: 87px;
+    padding-right: 50px; }
+    .card-item .info-column .player-stats ul {
+      list-style: none;
+      width: calc(100% + 15px);
+      margin: 0 -7.5px;
+      text-align: right; }
+      .card-item .info-column .player-stats ul li {
+        position: relative;
+        display: inline-block;
+        width: 85px;
+        max-width: 23.5%;
+        padding: 0 7.5px;
+        margin-bottom: 11px; }
+        .card-item .info-column .player-stats ul li .stat-wrap {
+          position: relative;
+          height: 100%;
+          border-radius: 5px;
+          border: 1px solid #aaa;
+          overflow: hidden; }
+        .card-item .info-column .player-stats ul li span {
+          display: block;
+          line-height: 1; }
+          .card-item .info-column .player-stats ul li span.title {
+            border-bottom: 1px solid #aaa;
+            text-align: center;
+            padding: 10px 0 5px;
+            font-family: 'NYTMag Sans', serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em; }
+          .card-item .info-column .player-stats ul li span.number {
+            font-family: 'TIMMONS NY';
+            font-size: 43px;
+            margin: 13px 0 0;
+            text-align: center;
+            line-height: .77; }
+          .card-item .info-column .player-stats ul li span.detail {
+            visibility: hidden;
+            opacity: 0;
+            padding-top: 2px;
+            padding-bottom: 6px;
+            font-size: 11px;
+            text-align: center;
+            font-weight: 500;
+            margin-top: -5px; }
+        .card-item .info-column .player-stats ul li:nth-child(n+5) {
+          visibility: hidden;
+          opacity: 0;
+          margin-bottom: 0;
+          padding-bottom: 0; }
+  .card-item .info-column .player-info {
+    overflow: hidden; }
+  .card-item.large .info-column .player-description {
+    margin-bottom: 30px; }
+  .card-item.large .info-column .player-info {
+    overflow: visible; }
+  .card-item.large .info-column .player-stats {
+    max-height: 250px; }
+    .card-item.large .info-column .player-stats ul li:nth-child(n+5) {
+      visibility: visible;
+      opacity: 1;
+      padding-bottom: 0; }
+    .card-item.large .info-column .player-stats ul li span.detail {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0; }
+  .card-item.medium .info-column .player-main,
+  .card-item.large .info-column .player-main {
+    width: 42.5%; }
+    .card-item.medium .info-column .player-main h4,
+    .card-item.large .info-column .player-main h4 {
+      display: block; }
+  .card-item.medium .info-column .player-stats,
+  .card-item.large .info-column .player-stats {
+    padding-right: 0;
+    width: 50%; }
 
 .card-item.sorted {
   visibility: hidden;
@@ -1218,12 +1733,7 @@ header .heading-wrapper {
   clear: both;
   display: table; }
 
-.card-item.small,
-.card-item.small .wrapper {
-  max-height: 145px; }
-
-.card-item:not(.small),
-.card-item:not(.small) .wrapper {
+.card-item:not(.small) {
   max-height: 100%; }
 
 .card-item .toggle-card {
@@ -1273,7 +1783,8 @@ header .heading-wrapper {
   width: 100%;
   min-width: 728px;
   max-width: 81.75%;
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  opacity: 1; }
 
 .card-item .info-column h3 {
   font-family: 'TIMMONS NY';
@@ -1290,97 +1801,6 @@ header .heading-wrapper {
   line-height: 1.25;
   font-weight: 400;
   display: inline-block; }
-
-.card-item .info-column .player-main {
-  float: left;
-  max-width: 47.5%; }
-
-.card-item.medium .info-column .player-main,
-.card-item.large .info-column .player-main {
-  width: 42.5%; }
-
-.card-item .info-column .player-stats {
-  width: 50%;
-  position: relative;
-  float: right;
-  width: 52.5%;
-  max-height: 87px;
-  padding-right: 50px; }
-
-.card-item.medium .info-column .player-stats,
-.card-item.large .info-column .player-stats {
-  padding-right: 0;
-  width: 50%; }
-
-.card-item.large .info-column .player-stats {
-  max-height: 250px; }
-
-.card-item .info-column .player-stats ul {
-  list-style: none;
-  width: calc(100% + 15px);
-  margin: 0 -7.5px;
-  text-align: right; }
-
-.card-item .info-column .player-stats ul li {
-  position: relative;
-  display: inline-block;
-  width: 85px;
-  max-width: 23.5%;
-  max-height: 90px;
-  height: 90px;
-  padding: 0 7.5px;
-  margin-bottom: 11px; }
-
-.card-item .info-column .player-stats ul li .stat-wrap {
-  position: relative;
-  height: 100%;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-  overflow: hidden; }
-
-.card-item .info-column .player-stats ul li:nth-child(n+5) {
-  visibility: hidden;
-  opacity: 0;
-  margin-bottom: 0;
-  padding-bottom: 0; }
-
-.card-item.large .info-column .player-stats ul li:nth-child(n+5) {
-  visibility: visible;
-  opacity: 1;
-  padding-bottom: 0; }
-
-.card-item .info-column .player-stats ul li span {
-  display: block;
-  line-height: 1; }
-
-.card-item .info-column .player-stats ul li span.title {
-  border-bottom: 1px solid #aaa;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px 0 5px; }
-
-.card-item .info-column .player-stats ul li span.number {
-  font-family: 'TIMMONS NY';
-  font-size: 43px;
-  margin: 13px 0 0;
-  text-align: center;
-  line-height: .77; }
-
-.card-item .info-column .player-stats ul li span.detail {
-  visibility: hidden;
-  opacity: 0;
-  padding-top: 2px;
-  padding-bottom: 10px;
-  font-size: 11px;
-  text-align: center;
-  font-weight: 500; }
-
-.card-item.large .info-column .player-stats ul li span.detail {
-  visibility: visible;
-  opacity: 1; }
 
 .card-item .info-column .player-meta {
   visibility: visible;
@@ -1463,14 +1883,15 @@ header .heading-wrapper {
   letter-spacing: 0.15em; }
 
 .card-item .info-column .player-meta li .label {
-  position: relative;
-  background: whitesmoke;
-  z-index: 2;
-  padding-right: 4px;
+  font-family: 'NYTMag Sans', serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  position: relative;
+  background: whitesmoke;
+  z-index: 2;
+  padding-right: 4px; }
 
 .card-item .info-column .player-meta li .value {
   position: relative;
@@ -1480,35 +1901,12 @@ header .heading-wrapper {
   padding: 0 0 0 4px;
   font-size: 14px; }
 
-.card-item .info-column .player-description {
-  clear: both;
-  margin: 30px 0 30px;
-  padding-top: 30px;
-  font-size: 14px;
-  border-top: 1px solid #ccc;
-  padding-right: 40px; }
-
-.card-item .info-column .player-description .player-headline {
-  font-size: 20px;
-  line-height: 1;
-  margin-bottom: 5px;
-  font-family: 'Tiempos Headline'; }
-
-.card-item .info-column .player-description .player-subline {
-  font-weight: 500; }
-
-.card-item .info-column .player-description .player-subline strong {
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.05em; }
-
 .card-item .info-column .player-info {
   padding-top: 0px;
   clear: both;
   visibility: hidden;
   opacity: 0;
-  max-height: 0;
-  overflow: hidden; }
+  max-height: 0; }
 
 .card-item.large .info-column .player-info {
   visibility: visible;
@@ -1569,8 +1967,11 @@ header .heading-wrapper {
   display: none; }
 
 .card-item .info-column h6 {
+  font-family: 'NYTMag Sans', serif;
+  font-weight: bold;
+  text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: .05em; }
+  letter-spacing: 0.05em; }
 
 .card-item .info-column .player-plus-minus ul {
   list-style: none;
@@ -1634,10 +2035,10 @@ header .heading-wrapper {
   opacity: .5; }
 
 .card-item .info-column .player-social a.facebook {
-  background-image: url(../img/facebook.svg); }
+  background-image: url(../../img/facebook.svg); }
 
 .card-item .info-column .player-social a.twitter {
-  background-image: url(../img/twitter.svg); }
+  background-image: url(../../img/twitter.svg); }
 
 .card-item img,
 .card-item .ringer-coverage {
@@ -2436,361 +2837,6 @@ h3 .brand {
   .card-item .info-column .player-plus-minus ul {
     margin-bottom: 15px; } }
 
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS and IE text size adjust after device orientation change,
- *    without disabling user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0; }
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none; }
-
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background-color: transparent; }
-
-/**
- * Improve readability of focused elements when they are also in an
- * active/hover state.
- */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-b,
-strong {
-  font-weight: bold; }
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-dfn {
-  font-style: italic; }
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-img {
-  border: 0; }
-
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-figure {
-  margin: 1em 40px; }
-
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-/**
- * Contain overflow in all browsers.
- */
-pre {
-  overflow: auto; }
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-/* Forms
-   ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
-
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
-button {
-  overflow: visible; }
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
- */
-button,
-select {
-  text-transform: none; }
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-input {
-  line-height: normal; }
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  box-sizing: content-box;
-  /* 2 */ }
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-textarea {
-  overflow: auto; }
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-optgroup {
-  font-weight: bold; }
-
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
 @media (max-width: 768px) {
   header {
     height: auto; }
@@ -2922,8 +2968,8 @@ th {
   background-color: #43be6d !important; }
 
 .ringer .card-item .toggle-card {
-  background-image: url(../img/toggle-arrow.png);
-  background-image: url(../img/toggle-arrow.svg); }
+  background-image: url(../../img/toggle-arrow.png);
+  background-image: url(../../img/toggle-arrow.svg); }
 
 /* Kevin Theme */
 .kevin .background-theme {
@@ -2942,8 +2988,8 @@ th {
   background-color: #ffff00 !important; }
 
 .kevin .card-item .toggle-card {
-  background-image: url(../img/toggle-arrow.png);
-  background-image: url(../img/toggle-arrow.svg); }
+  background-image: url(../../img/toggle-arrow.png);
+  background-image: url(../../img/toggle-arrow.svg); }
 
 /* Danny Theme */
 .danny .background-theme {
@@ -2962,8 +3008,8 @@ th {
   background-color: #00adef !important; }
 
 .danny .card-item .toggle-card {
-  background-image: url(../img/toggle-arrow.png);
-  background-image: url(../img/toggle-arrow.svg); }
+  background-image: url(../../img/toggle-arrow.png);
+  background-image: url(../../img/toggle-arrow.svg); }
 
 /* Johnathan Theme */
 .johnathan .background-theme {
@@ -2982,8 +3028,8 @@ th {
   background-color: #c800ff !important; }
 
 .johnathan .card-item .toggle-card {
-  background-image: url(../img/toggle-arrow.png);
-  background-image: url(../img/toggle-arrow.svg); }
+  background-image: url(../../img/toggle-arrow.png);
+  background-image: url(../../img/toggle-arrow.svg); }
 
 /* AZ Theme */
 .az .background-theme {
@@ -3002,127 +3048,5 @@ th {
   background-color: #0043cc !important; }
 
 .az .card-item .toggle-card {
-  background-image: url(../img/toggle-arrow.png);
-  background-image: url(../img/toggle-arrow.svg); }
-
-/* Transition on all devices */
-#item-list.sorting {
-  transition: opacity 0.25s linear; }
-
-.card-item.sorted {
-  transition: visibility 0s linear 0.25s, opacity 0.25s linear 0s; }
-
-.card-item.sorted.shown {
-  transition: visibility 0s linear 0s, opacity 0.25s linear 0.125s; }
-
-/* Transition on non touch devices */
-body:not(.mobile):not(.no-transition) .card-item {
-  transition: max-height 0.325s ease-out .5s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large,
-body:not(.mobile):not(.no-transition) .card-item.large .wrapper {
-  transition: max-height 0.325s ease-out 2s; }
-
-body:not(.mobile):not(.no-transition) .card-item .wrapper {
-  transition: max-height 0.325s ease-out .5s; }
-
-body:not(.mobile):not(.no-transition) .card-item .rank-column {
-  transition: max-width .25s ease-out .25s, background-color .25s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .rank-column,
-body:not(.mobile):not(.no-transition) .card-item.medium .rank-column {
-  transition: max-width .25s ease-out, background-color .25s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item .rank-column .rank {
-  transition: font-size 0.25s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .rank-column .rank,
-body:not(.mobile):not(.no-transition) .card-item.medium .rank-column .rank {
-  transition: font-size 0.125s linear .5s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column {
-  transition: max-width .25s ease-out .25s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats {
-  transition: padding-right 0.25s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item.medium .info-column .player-stats,
-body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats {
-  transition: padding-right 0.25s linear 0; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li {
-  transition: max-height 0.25s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-meta {
-  transition: padding-top .25s ease-out .5s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-meta li {
-  transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li:nth-child(n+5) {
-  transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stats ul li span.detail {
-  transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats ul li span.detail {
-  transition: visibility 0s linear .125s, opacity 0.125s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-info {
-  transition: max-width .25s ease-out .25s, visibility 0s linear .25s, opacity .25s 0s, max-height .25s linear .5s, padding-top 0.25s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-stats ul li:nth-child(n+5) {
-  transition: visibility 0s linear 0.125s, opacity 1s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .info-column .player-info {
-  transition: visibility 0s linear, opacity .25s 1s, max-height .25s linear 0s, padding-top 0.25s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.default {
-  transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image.media-shown div.default {
-  transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.plus-minus-media {
-  transition: visibility 0s linear 0.125s, opacity 0.125s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-stat-image div.plus-minus-media.visible {
-  transition: visibility 0s linear 0s, opacity 0.125s linear 0.125s; }
-
-body:not(.mobile):not(.no-transition) .card-item .info-column .player-social a {
-  transition: opacity .125s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item img,
-body:not(.mobile):not(.no-transition) .card-item .ringer-coverage {
-  transition: visibility 0s linear .25s, opacity .25s 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item .ringer-coverage {
-  transition: visibility 0s linear .25s, opacity .25s linear 0s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large img,
-body:not(.mobile):not(.no-transition) .card-item.medium img {
-  transition: visibility 0s linear, opacity .25s .75s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .info-column,
-body:not(.mobile):not(.no-transition) .card-item.medium .info-column {
-  transition: max-width .25s ease-out; }
-
-body:not(.mobile):not(.no-transition) .card-item .toggle-card {
-  transition: bottom 0.125s ease-out .5s, transform 0.125s linear 1s; }
-
-body:not(.mobile):not(.no-transition) .card-item.medium .toggle-card {
-  transition: bottom 0.125s ease-out .25s; }
-
-body:not(.mobile):not(.no-transition) .card-item.expanded-card .toggle-card {
-  transition: bottom 0.125s ease-out .25s, transform 0.125s linear; }
-
-body:not(.mobile):not(.no-transition) .card-item.large .ringer-coverage {
-  transition: visibility 0s linear, opacity .25s 1s; }
-
-body:not(.mobile):not(.no-transition) .card-item.medium:not(.expanded),
-body:not(.mobile):not(.no-transition) .card-item.medium .wrapper {
-  transition: all 0.25s ease-out 0.3s; }
-
-body:not(.mobile):not(.no-transition) .card-item.large,
-body:not(.mobile):not(.no-transition) .card-item.large .wrapper {
-  transition: all 0.25s ease-out 0.3s; }
+  background-image: url(../../img/toggle-arrow.png);
+  background-image: url(../../img/toggle-arrow.svg); }

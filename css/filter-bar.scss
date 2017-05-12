@@ -26,17 +26,15 @@
     float:left;
     vertical-align:middle;
     height: 100%;
-    font-weight:bold;
-    text-transform:uppercase;
-    color: #000;
-    font-size:13.5px;
-    letter-spacing:0.065em;
-    line-height: 1;
+
     text-align:center;
     width: 16.25%;
     overflow:hidden;
     border-right:2px solid #000;
     transition: all 0.25s linear;
+    @include filter-sort-text;
+    color:#000;
+    line-height: 1;
 }
 #filter-bar a:last-of-type{
     border-right: 0;
