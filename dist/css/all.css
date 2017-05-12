@@ -1556,6 +1556,18 @@ header .heading-wrapper {
   letter-spacing: 0.05em;
   text-decoration: underline; }
 
+#intro .byline {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  font-family: 'NYTMag Sans', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em; }
+
 #intro .social {
   width: 110px;
   float: left; }

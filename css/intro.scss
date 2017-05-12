@@ -56,6 +56,15 @@
     text-decoration: underline;
 }
 
+#intro .byline{
+    max-width: 100%;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-8px;
+    @include label-text;
+}
+
 #intro .social{
     width: 110px;
     float: left;

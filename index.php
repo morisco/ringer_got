@@ -184,6 +184,7 @@
                 <div>
                     <strong>Welcome to The Ringer’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
                     <div class="intro-actions">
+                        <div class="byline">Scouting reports by kevin o'connor</div>
                         <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
                             <a href="http:facebook.com" class="facebook"></a>
