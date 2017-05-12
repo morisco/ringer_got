@@ -491,6 +491,10 @@
     font-weight:500;
 }
 
+.card-item .info-column .player-plus-minus ul li.has-media{
+    cursor:pointer;
+}
+
 .card-item .info-column .player-plus-minus ul li.has-media .media-marker{
     position:absolute;
     top:4px;

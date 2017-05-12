@@ -85,7 +85,7 @@ function Card(id, data){
             $(card.el).find('.info-column').append(card.infoTemplate(card.data));
             $(card.el).removeClass('rebuilding');
             $(card.el).removeAttr('style');
-        }, 1000);
+        }, 250);
     }
 
     this.init();

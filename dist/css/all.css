@@ -358,23 +358,23 @@ th {
   margin-left: -20px; }
 
 .circle {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   background-color: #62bd19;
   border-radius: 50%;
   position: absolute;
-  top: 5px;
-  left: 5px; }
+  top: 4px;
+  left: 4px; }
 
 .ringring {
   border: 1px solid #62bd19;
   -webkit-border-radius: 30px;
-  height: 16px;
-  width: 16px;
+  height: 13px;
+  width: 13px;
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation: pulsate 1.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.0; }
 
@@ -1990,6 +1990,9 @@ header .heading-wrapper {
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 500; }
+
+.card-item .info-column .player-plus-minus ul li.has-media {
+  cursor: pointer; }
 
 .card-item .info-column .player-plus-minus ul li.has-media .media-marker {
   position: absolute;
