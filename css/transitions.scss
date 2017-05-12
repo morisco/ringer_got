@@ -12,10 +12,18 @@
 // }
 //
 // /* Transition on non touch devices */
-//
-// body:not(.mobile):not(.no-transition) .card-item{
-//     transition: max-height 0.325s ease-out .5s;
-// }
+
+body:not(.mobile):not(.no-transition) .card-item{
+    transition: max-height 0.325s ease-out .5s;
+}
+
+body:not(.mobile):not(.no-transition) .card-item.sort{
+    transition: max-height 0.325s ease-out 0s;
+}
+
+body:not(.mobile):not(.no-transition) .player-info{
+    -webkit-transition: max-height 0.5s ease-out 0.25s;
+}
 //
 //
 // body:not(.mobile):not(.no-transition) .card-item.large,

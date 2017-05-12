@@ -23,6 +23,10 @@
         max-height:145px;
     }
 
+    &:not(.small){
+        max-height:1000px;
+    }
+
     &.rebuilding{
         .info-column{
             opacity:0 !important;
@@ -32,7 +36,7 @@
         }
     }
     &.unfiltered{
-        max-height:0;
+        max-height:0 !important;
         opacity: 0;
         margin-bottom:0;
         visibility:hidden;
@@ -44,6 +48,17 @@
         }
     }
     .info-column{
+        float:right;
+        padding: 30px 30px 30px 0;
+        width: 100%;
+        min-width:728px;
+        max-width: 81.75%;
+        opacity:1;
+
+        .medium-show{
+            padding-left:30px;
+        }
+
         .player-description{
             clear:both;
             margin:30px 0 0;
@@ -135,6 +150,12 @@
 
         .player-info{
             overflow:hidden;
+            max-height: 0;
+            padding-top: 0px;
+            padding-left:30px;
+            clear:both;
+            opacity:0;
+            max-height:0;
         }
     }
 
@@ -148,7 +169,8 @@
         }
 
         .player-info{
-            overflow:visible;
+            max-height:800px;
+            opacity: 1;
         }
 
         .player-stats{
@@ -205,11 +227,6 @@
     display:table;
 }
 
-
-.card-item:not(.small){
-    max-height:100%;
-}
-
 .card-item .toggle-card{
     height:32px;
     width:32px;
@@ -258,13 +275,7 @@
 }
 
 .card-item .info-column{
-    float:right;
-    padding: 30px;
-    width: 100%;
-    min-width:728px;
-    max-width: 81.75%;
-    background: #F5F5F5;
-    opacity:1;
+
 }
 
 .card-item .info-column h3{
@@ -400,22 +411,6 @@
     font-size:14px;
 }
 
-
-
-.card-item .info-column .player-info{
-    padding-top: 0px;
-    clear:both;
-    visibility:hidden;
-    opacity:0;
-    max-height:0;
-    // overflow:hidden;
-}
-
-.card-item.large .info-column .player-info {
-    visibility: visible;
-    opacity: 1;
-    max-height:800px;
-}
 
 .card-item .info-column .player-stat-image{
     position:relative;

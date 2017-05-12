@@ -153,6 +153,7 @@ var CardList = function() {
         cardlist.old_size = cardlist.size;
         cardlist.size = $(this).data('size');
         transitionClass = cardlist.old_size + '-to-' + cardlist.size;
+        $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
         $('.card-item').removeClass('small medium large expanded expanded-card small-to-large small-to-medium medium-to-small medium-to-large large-to-medium large-to-small').addClass(transitionClass + ' ' + cardlist.size);
@@ -197,6 +198,7 @@ var CardList = function() {
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.article_base = 0;
+        events.publish('sort.update', {});
         cardlist.buildList(GLOBALS.data.players);
         setTimeout(function(){
             cardlist.setColors();

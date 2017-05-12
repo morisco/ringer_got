@@ -590,17 +590,25 @@ th {
 #filters ul {
   list-style: none;
   display: inline-block; }
-
-#filters ul.size-indicator {
-  display: inline-block;
-  width: 15px;
-  font-size: 16px; }
-
-#filters ul.size-indicator li {
-  width: 100%;
-  height: 2px;
-  margin-bottom: 3px;
-  background: #000; }
+  #filters ul.size-indicator {
+    display: inline-block;
+    width: 15px;
+    font-size: 16px; }
+    #filters ul.size-indicator li {
+      width: 100%;
+      height: 2px;
+      margin-bottom: 3px;
+      background: #000;
+      transform: translateY(0px);
+      transition: transform 0.125s linear; }
+    #filters ul.size-indicator.small li:nth-child(1) {
+      transform: translateY(1px); }
+    #filters ul.size-indicator.small li:nth-child(3) {
+      transform: translateY(-1px); }
+    #filters ul.size-indicator.large li:nth-child(1) {
+      transform: translateY(-1px); }
+    #filters ul.size-indicator.large li:nth-child(3) {
+      transform: translateY(1px); }
 
 #filters .size-toggle {
   position: relative;
@@ -608,43 +616,36 @@ th {
   height: 11px;
   margin: 0 0 0 8px;
   vertical-align: top; }
-
-#filters .size-toggle:after {
-  content: '';
-  position: relative;
-  width: 100%;
-  display: block;
-  background: #e6e6e6;
-  position: absolute;
-  height: 6px;
-  top: 3px;
-  left: 0;
-  right: 0;
-  z-index: 0; }
-
-#filters .size-toggle li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  background-color: #e6e6e6;
-  vertical-align: top;
-  z-index: 1;
-  transition: background-color 0.125s linear; }
-
-#filters .size-toggle li.active {
-  /*background-color: rgb(205,205,205);*/ }
-
-#filters .size-toggle li:nth-child(2) {
-  left: 50%;
-  margin-left: -6px; }
-
-#filters .size-toggle li:nth-child(3) {
-  left: auto;
-  right: 0; }
+  #filters .size-toggle:after {
+    content: '';
+    position: relative;
+    width: 100%;
+    display: block;
+    background: #e6e6e6;
+    position: absolute;
+    height: 6px;
+    top: 3px;
+    left: 0;
+    right: 0;
+    z-index: 0; }
+  #filters .size-toggle li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #e6e6e6;
+    vertical-align: top;
+    z-index: 1;
+    transition: background-color 0.125s linear; }
+    #filters .size-toggle li:nth-child(2) {
+      left: 50%;
+      margin-left: -6px; }
+    #filters .size-toggle li:nth-child(3) {
+      left: auto;
+      right: 0; }
 
 @media (min-width: 1101px) {
   .filter-fixed #filters {
@@ -1599,103 +1600,121 @@ header .heading-wrapper {
   transition: max-height 0.25s, opacity 0.25s; }
   .card-item.small {
     max-height: 145px; }
+  .card-item:not(.small) {
+    max-height: 1000px; }
   .card-item.rebuilding .info-column {
     opacity: 0 !important; }
   .card-item.rebuilding .image img {
     opacity: 0 !important; }
   .card-item.unfiltered {
-    max-height: 0;
+    max-height: 0 !important;
     opacity: 0;
     margin-bottom: 0;
     visibility: hidden;
     margin-top: -2px; }
   .card-item .rank-column .image img {
     transition: opacity 0.25s linear; }
-  .card-item .info-column .player-description {
-    clear: both;
-    margin: 30px 0 0;
-    padding-top: 30px;
-    font-size: 14px;
-    border-top: 1px solid #ccc;
-    padding-right: 40px; }
-    .card-item .info-column .player-description .player-headline {
-      font-size: 20px;
-      line-height: 1;
-      margin-bottom: 5px;
-      font-family: 'Tiempos Headline'; }
-    .card-item .info-column .player-description .player-subline {
-      font-weight: 500; }
-      .card-item .info-column .player-description .player-subline strong {
-        font-family: 'NYTMag Sans', serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 0.05em; }
-  .card-item .info-column .player-main {
-    float: left;
-    max-width: 47.5%; }
-  .card-item .info-column .player-stats {
-    position: relative;
+  .card-item .info-column {
     float: right;
-    width: 52.5%;
-    max-height: 87px;
-    padding-right: 50px; }
-    .card-item .info-column .player-stats ul {
-      list-style: none;
-      width: calc(100% + 15px);
-      margin: 0 -7.5px;
-      text-align: right; }
-      .card-item .info-column .player-stats ul li {
-        position: relative;
-        display: inline-block;
-        width: 85px;
-        max-width: 23.5%;
-        padding: 0 7.5px;
-        margin-bottom: 11px; }
-        .card-item .info-column .player-stats ul li .stat-wrap {
+    padding: 30px 30px 30px 0;
+    width: 100%;
+    min-width: 728px;
+    max-width: 81.75%;
+    opacity: 1; }
+    .card-item .info-column .medium-show {
+      padding-left: 30px; }
+    .card-item .info-column .player-description {
+      clear: both;
+      margin: 30px 0 0;
+      padding-top: 30px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+      padding-right: 40px; }
+      .card-item .info-column .player-description .player-headline {
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 5px;
+        font-family: 'Tiempos Headline'; }
+      .card-item .info-column .player-description .player-subline {
+        font-weight: 500; }
+        .card-item .info-column .player-description .player-subline strong {
+          font-family: 'NYTMag Sans', serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 0.05em; }
+    .card-item .info-column .player-main {
+      float: left;
+      max-width: 47.5%; }
+    .card-item .info-column .player-stats {
+      position: relative;
+      float: right;
+      width: 52.5%;
+      max-height: 87px;
+      padding-right: 50px; }
+      .card-item .info-column .player-stats ul {
+        list-style: none;
+        width: calc(100% + 15px);
+        margin: 0 -7.5px;
+        text-align: right; }
+        .card-item .info-column .player-stats ul li {
           position: relative;
-          height: 100%;
-          border-radius: 5px;
-          border: 1px solid #aaa;
-          overflow: hidden; }
-        .card-item .info-column .player-stats ul li span {
-          display: block;
-          line-height: 1; }
-          .card-item .info-column .player-stats ul li span.title {
-            border-bottom: 1px solid #aaa;
-            text-align: center;
-            padding: 10px 0 5px;
-            font-family: 'NYTMag Sans', serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 12px;
-            letter-spacing: 0.05em; }
-          .card-item .info-column .player-stats ul li span.number {
-            font-family: 'TIMMONS NY';
-            font-size: 43px;
-            margin: 13px 0 0;
-            text-align: center;
-            line-height: .77; }
-          .card-item .info-column .player-stats ul li span.detail {
+          display: inline-block;
+          width: 85px;
+          max-width: 23.5%;
+          padding: 0 7.5px;
+          margin-bottom: 11px; }
+          .card-item .info-column .player-stats ul li .stat-wrap {
+            position: relative;
+            height: 100%;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            overflow: hidden; }
+          .card-item .info-column .player-stats ul li span {
+            display: block;
+            line-height: 1; }
+            .card-item .info-column .player-stats ul li span.title {
+              border-bottom: 1px solid #aaa;
+              text-align: center;
+              padding: 10px 0 5px;
+              font-family: 'NYTMag Sans', serif;
+              font-weight: bold;
+              text-transform: uppercase;
+              font-size: 12px;
+              letter-spacing: 0.05em; }
+            .card-item .info-column .player-stats ul li span.number {
+              font-family: 'TIMMONS NY';
+              font-size: 43px;
+              margin: 13px 0 0;
+              text-align: center;
+              line-height: .77; }
+            .card-item .info-column .player-stats ul li span.detail {
+              visibility: hidden;
+              opacity: 0;
+              padding-top: 2px;
+              padding-bottom: 6px;
+              font-size: 11px;
+              text-align: center;
+              font-weight: 500;
+              margin-top: -5px; }
+          .card-item .info-column .player-stats ul li:nth-child(n+5) {
             visibility: hidden;
             opacity: 0;
-            padding-top: 2px;
-            padding-bottom: 6px;
-            font-size: 11px;
-            text-align: center;
-            font-weight: 500;
-            margin-top: -5px; }
-        .card-item .info-column .player-stats ul li:nth-child(n+5) {
-          visibility: hidden;
-          opacity: 0;
-          margin-bottom: 0;
-          padding-bottom: 0; }
-  .card-item .info-column .player-info {
-    overflow: hidden; }
+            margin-bottom: 0;
+            padding-bottom: 0; }
+    .card-item .info-column .player-info {
+      overflow: hidden;
+      max-height: 0;
+      padding-top: 0px;
+      padding-left: 30px;
+      clear: both;
+      opacity: 0;
+      max-height: 0; }
   .card-item.large .info-column .player-description {
     margin-bottom: 30px; }
   .card-item.large .info-column .player-info {
-    overflow: visible; }
+    max-height: 800px;
+    opacity: 1; }
   .card-item.large .info-column .player-stats {
     max-height: 250px; }
     .card-item.large .info-column .player-stats ul li:nth-child(n+5) {
@@ -1732,9 +1751,6 @@ header .heading-wrapper {
   content: '';
   clear: both;
   display: table; }
-
-.card-item:not(.small) {
-  max-height: 100%; }
 
 .card-item .toggle-card {
   height: 32px;
@@ -1776,15 +1792,6 @@ header .heading-wrapper {
 .card-item.large .rank-column .rank,
 .card-item.medium .rank-column .rank {
   font-size: 170px; }
-
-.card-item .info-column {
-  float: right;
-  padding: 30px;
-  width: 100%;
-  min-width: 728px;
-  max-width: 81.75%;
-  background: #F5F5F5;
-  opacity: 1; }
 
 .card-item .info-column h3 {
   font-family: 'TIMMONS NY';
@@ -1900,18 +1907,6 @@ header .heading-wrapper {
   z-index: 2;
   padding: 0 0 0 4px;
   font-size: 14px; }
-
-.card-item .info-column .player-info {
-  padding-top: 0px;
-  clear: both;
-  visibility: hidden;
-  opacity: 0;
-  max-height: 0; }
-
-.card-item.large .info-column .player-info {
-  visibility: visible;
-  opacity: 1;
-  max-height: 800px; }
 
 .card-item .info-column .player-stat-image {
   position: relative;
@@ -3050,3 +3045,12 @@ h3 .brand {
 .az .card-item .toggle-card {
   background-image: url(../../img/toggle-arrow.png);
   background-image: url(../../img/toggle-arrow.svg); }
+
+body:not(.mobile):not(.no-transition) .card-item {
+  transition: max-height 0.325s ease-out .5s; }
+
+body:not(.mobile):not(.no-transition) .card-item.sort {
+  transition: max-height 0.325s ease-out 0s; }
+
+body:not(.mobile):not(.no-transition) .player-info {
+  -webkit-transition: max-height 0.5s ease-out 0.25s; }

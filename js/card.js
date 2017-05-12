@@ -12,11 +12,11 @@ function Card(id, data){
 
     this.init = function(){
         this.initEvents();
-
     };
 
     this.initEvents = function(){
         events.subscribe('filter.update', this.filter);
+        events.subscribe('sort.update', this.sort);
         this.el.on('mouseenter', this.loadGifs)
         this.el.find('.has-media').on('mouseenter', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
@@ -59,13 +59,21 @@ function Card(id, data){
         })
     }
 
-    this.filter = function(obj){;
+    this.filter = function(obj){
         if(obj.filter === 'all' || card.data.position_group.toLowerCase() === obj.filter){
             card.el.removeClass('unfiltered');
         } else {
             card.el.addClass('unfiltered');
         }
+        card.el.addClass('sort');
+        setTimeout(function(){
+            card.el.removeClass('sort');
+        },500)
     };
+
+    this.sort = function(){
+
+    }
 
     this.update = function(new_player){
         this.data = new_player;
