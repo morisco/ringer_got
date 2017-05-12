@@ -48,14 +48,11 @@
 
 #intro .ringer-draft-coverage{
     max-width: calc(100% - 110px);
-    font-size:12px;
-    font-family:'NYTMag Sans', serif;
-    font-weight:700;
     position:absolute;
     right:0;
     top:50%;
     margin-top:-8px;
-    letter-spacing: 0.075em;
+    @include label-text;
     text-decoration: underline;
 }
 

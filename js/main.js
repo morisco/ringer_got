@@ -7,11 +7,10 @@ $(document).ready(function(){
 var CardList = function() {
     var cardlist = this;
 
+    this.$el = $('#item-list');
+
     this.templateSource = $("#player-card-template").html();
     this.template = Handlebars.compile(this.templateSource);
-
-    this.infoTemplateSource = $("#info-template").html();
-    this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
 
     this.coverageTemplateSource = $("#coverage-template").html();
     this.coverage_template = Handlebars.compile(this.coverageTemplateSource);
@@ -25,7 +24,8 @@ var CardList = function() {
 
     this.filterOffsetPos = $('#content').offset().top;
 
-    this.size = 'small';
+    this.size = 'medium';
+    this.cards = [];
 
     this.init = function() {
         this.windowResize();
@@ -34,15 +34,32 @@ var CardList = function() {
         if(this.initial_player){
             cardlist.openPlayer();
         }
+        this.initCards();
     }
 
+    this.initCards = function(){
+        var playerCard;
+        var playerCount = 0;
+        _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
+            var id = player.filter_id;
+            player = _.findWhere(GLOBALS.data.players, { filter_id: id});
+            if(player){
+                playerCount++;
+                playerCard = new Card(playerCount, player);
+                cardlist.cards.push(playerCard);
+            } else{
+                console.log('missing player', id);
+            }
+        });
+    }
+
+
     this.initEvents = function() {
-        $('#item-list').on('click', '.toggle-card', this.toggleCard);
+
         $('#filters a').on('click', this.filter);
         $('#filter-bar').on('click', 'a', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
-        $('.has-media').on('mouseenter', this.showMedia);
-        $('.has-media').on('mouseleave', this.hideMedia);
+
         $('#mobile-nav').on('click', '.toggle-zone', this.toggleMobileNav);
         $('#mobile-nav').on('click', '.sort li', this.mobileSort);
         $('#mobile-nav').on('click', '.nav-filter a', this.mobileFilter);
@@ -130,29 +147,16 @@ var CardList = function() {
         });
     }
 
-    this.toggleCard = function(e) {
-        var id = $(this).data('id'),
-            card = $('.card-item[data-id="' + id + '"]');
-
-        if(card.hasClass('expanded-card')){
-            card.removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
-            setTimeout(function(){
-                // cardlist.setHeight(card);
-            },300);
-        } else {
-            card.removeClass('small medium large expanded').addClass('large expanded-card')
-            setTimeout(function(){
-                // cardlist.setHeight(card, 'large');
-            },500);
-        }
-    }
-
     this.changeSize = function(e){
         e.preventDefault();
+        var transitionClass;
+        cardlist.old_size = cardlist.size;
         cardlist.size = $(this).data('size');
+        transitionClass = cardlist.old_size + '-to-' + cardlist.size;
+        $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded expanded-card').addClass(cardlist.size);
+        $('.card-item').removeClass('small medium large expanded expanded-card small-to-large small-to-medium medium-to-small medium-to-large large-to-medium large-to-small').addClass(transitionClass + ' ' + cardlist.size);
     };
 
     this.setHeight = function(el, size) {
@@ -180,29 +184,9 @@ var CardList = function() {
         }
     }
 
-    this.showMedia = function() {
-        var showMedia   = $(this).data('media'),
-            mediaBG     = $('.plus-minus-media[data-id="'+showMedia+'"]').css('background-image');
-        $(this).addClass('color-theme');
-        $('.player-stat-image').addClass('media-shown');
-        $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
-    }
-
-    this.hideMedia = function() {
-        var hideMedia = $(this).data('media');
-        $(this).removeClass('color-theme');
-        $('.player-stat-image').removeClass('media-shown');
-        $('.plus-minus-media[data-id="'+hideMedia+'"]').removeClass('visible');
-    }
-
     this.setColors = function() {
         $('body').removeClass('ringer kevin danny johnathan az');
         $('body').addClass(cardlist.sort_id);
-        var selected_color = GLOBALS.theme_colors[cardlist.sort_id];
-        $('.stroke').attr('style', "stroke:"+selected_color + ' !important');
-        $('.arrow').attr('style', "fill:"+selected_color + ' !important');
     }
 
     this.sort = function(e){
@@ -214,77 +198,43 @@ var CardList = function() {
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.article_base = 0;
-        cardlist.setColors(cardlist.sort_id);
+        events.publish('sort.update', {});
+        cardlist.buildList(GLOBALS.data.players);
         setTimeout(function(){
-            cardlist.buildList(GLOBALS.data.players);
-
-        })
+            cardlist.setColors();
+        },250);
     }
 
     this.filter = function(e){
-        var players;
+        cardlist.filter_id = $(e.currentTarget).data('filter');
 
         $('#filters a.active, #mobile-nav .nav-filter a').removeClass('active color-theme');
         $(e.currentTarget).addClass('active color-theme');
-        $('body').removeClass('filters-open');
+
         if($(window).scrollTop() > cardlist.filterOffsetPos){
             $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
         }
-        cardlist.filter_id = $(e.currentTarget).data('filter');
-        $('#item-list').addClass('sorting');
 
-        cardlist.coverage_count = 5;
-        cardlist.article_base = 0;
         if(cardlist.filter_id === 'all'){
-            players = GLOBALS.data.players;
+            cardlist.$el.removeClass('filtered');
         } else {
-            players = _.where(GLOBALS.data.players, {position_group: cardlist.filter_id});
+            cardlist.$el.addClass('filtered');
         }
-        cardlist.buildList(players);
 
-    }
-
-    this.buildPlayer = function(index, player, delay){
-        var more_coverage = {};
-        cardlist.coverage_count--;
-        player.id = parseInt(index,10)+1;
-        player.rank =  ("0" + player.id).slice(-2);
-        player.className = 'sorted';
-        console.log($('.card-item[data-id="'+index+'"]'));
-        $('.card-item[data-id="'+index+'"] .info-column').append(cardlist.infoTemplate(player));
-        setTimeout(function(){
-            $('#item-list .card-item[data-id="' + player.id + '"]').addClass('shown');
-        },delay);
-
-        if(cardlist.coverage_count === 0){
-            cardlist.coverage_count = 5;
-            more_coverage.articles = GLOBALS.more_coverage_articles.articles.slice((cardlist.article_base * 3), (cardlist.article_base * 3) + 3);
-            $('#item-list').append(cardlist.coverage_template(more_coverage));
-            cardlist.article_base++;
-        }
+        events.publish('filter.update', { filter: cardlist.filter_id });
     }
 
     this.buildList = function(players) {
-        setTimeout(function(){
-            if($(window).scrollTop() > cardlist.filterOffsetPos){
-                $('body,html').animate({scrollTop:cardlist.filterOffsetPos + 1});
-            }
-            $('#item-list .card-item').each(function(){
-                $(this).css('height', $(this).height());
-            });
-            $('#item-list .info-column').fadeOut(function(){
-                $('#item-list .info-column').empty();
-            });
-            var playerCount = 0;
-            _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
-                player = _.findWhere(players, { filter_id: player.filter_id});
-                if(player){
-                    var delay = (playerCount * 125) > 1500 ? 1500 : (playerCount * 125);
+        var playerCount = 0;
+        _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
+            player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});
+            if(player){
+                if(cardlist.cards[index]){
                     playerCount++;
-                    cardlist.buildPlayer(index,player,delay);
+                    cardlist.cards[index].update(player);
                 }
-            });
-        },250);
+            }
+        });
     }
 
     this.init();

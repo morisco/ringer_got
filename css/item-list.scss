@@ -18,6 +18,192 @@
     border: .00875rem solid #ccc;
     margin-bottom:30px;
     background:#F5F5F5;
+    transition: max-height 0.25s, opacity 0.25s;
+    &.small{
+        max-height:145px;
+    }
+
+    &:not(.small){
+        max-height:1000px;
+    }
+
+    &.rebuilding{
+        .info-column{
+            opacity:0 !important;
+        }
+        .image img{
+            opacity:0 !important;
+        }
+    }
+    &.unfiltered{
+        max-height:0 !important;
+        opacity: 0;
+        margin-bottom:0;
+        visibility:hidden;
+        margin-top:-2px;
+    }
+    .rank-column {
+        .image img{
+            transition: opacity 0.25s linear;
+        }
+    }
+    .info-column{
+        float:right;
+        padding: 30px 30px 30px 0;
+        width: 100%;
+        min-width:728px;
+        max-width: 81.75%;
+        opacity:1;
+
+        .medium-show{
+            padding-left:30px;
+        }
+
+        .player-description{
+            clear:both;
+            margin:30px 0 0;
+            padding-top: 30px;
+            font-size:14px;
+            border-top: 1px solid #ccc;
+            padding-right:40px;
+            .player-headline{
+                font-size:20px;
+                line-height:1;
+                margin-bottom:5px;
+                font-family: 'Tiempos Headline';
+            }
+            .player-subline {
+                font-weight: 500;
+                strong {
+                    @include label-text;
+                }
+            }
+        }
+        .player-main{
+            float:left;
+            max-width:47.5%;
+        }
+
+        .player-stats{
+            position:relative;
+            float:right;
+            width:52.5%;
+            max-height:87px;
+            padding-right:50px;
+            ul{
+                list-style:none;
+                width:calc(100% + 15px);
+                margin: 0 -7.5px;
+                text-align:right;
+                li{
+                    position:relative;
+                    display:inline-block;
+                    width: 85px;
+                    max-width: 23.5%;
+                    padding: 0 7.5px;
+                    margin-bottom:11px;
+                    .stat-wrap{
+                        position:relative;
+                        height:100%;
+                        border-radius: 5px;
+                        border: 1px solid #aaa;
+                        overflow:hidden;
+                    }
+
+                    span{
+                        display:block;
+                        line-height:1;
+                        &.title{
+                            border-bottom:1px solid #aaa;
+                            text-align:center;
+                            padding: 10px 0 5px;
+                            @include label-text;
+                        }
+                        &.number{
+                            font-family: 'TIMMONS NY';
+                            font-size: 43px;
+                            margin: 13px 0 0;
+                            text-align:center;
+                            line-height:.77;
+                        }
+                        &.detail{
+                            visibility: hidden;
+                            opacity: 0;
+                            padding-top:2px;
+                            padding-bottom:6px;
+                            font-size:11px;
+                            text-align:center;
+                            font-weight:500;
+                            margin-top:-5px;
+                        }
+                    }
+
+                    &:nth-child(n+5){
+                        visibility: hidden;
+                        opacity: 0;
+                        margin-bottom: 0;
+                        padding-bottom:0;
+                    }
+                }
+            }
+        }
+
+        .player-info{
+            overflow:hidden;
+            max-height: 0;
+            padding-top: 0px;
+            padding-left:30px;
+            clear:both;
+            opacity:0;
+            max-height:0;
+        }
+    }
+
+    &.medium .info-column{
+
+    }
+
+    &.large .info-column{
+        .player-description{
+            margin-bottom:30px;
+        }
+
+        .player-info{
+            max-height:800px;
+            opacity: 1;
+        }
+
+        .player-stats{
+            max-height:250px;
+            ul li{
+                &:nth-child(n+5){
+                    visibility: visible;
+                    opacity: 1;
+                    padding-bottom:0;
+                }
+                span.detail{
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top:0;
+                }
+            }
+        }
+    }
+
+    &.medium .info-column,
+    &.large .info-column{
+        .player-main{
+            width:42.5%;
+            h4{
+                display:block;
+            }
+        }
+
+        .player-stats{
+            padding-right:0;
+            width:50%;
+        }
+    }
 }
 
 .card-item.sorted{
@@ -39,16 +225,6 @@
     content: '';
     clear:both;
     display:table;
-}
-
-.card-item.small,
-.card-item.small .wrapper{
-    max-height:145px;
-}
-
-.card-item:not(.small),
-.card-item:not(.small) .wrapper{
-    max-height:100%;
 }
 
 .card-item .toggle-card{
@@ -99,12 +275,7 @@
 }
 
 .card-item .info-column{
-    float:right;
-    padding: 30px;
-    width: 100%;
-    min-width:728px;
-    max-width: 81.75%;
-    background: #F5F5F5;
+
 }
 
 .card-item .info-column h3{
@@ -124,115 +295,6 @@
     font-weight:400;
     display:inline-block;
 }
-
-.card-item .info-column .player-main{
-    float:left;
-    max-width:47.5%;
-}
-
-.card-item.medium .info-column .player-main,
-.card-item.large .info-column .player-main{
-    width:42.5%;
-}
-
-.card-item .info-column .player-stats{
-    width:50%;
-    position:relative;
-    float:right;
-    width:52.5%;
-    max-height:87px;
-    padding-right:50px;
-}
-
-.card-item.medium .info-column .player-stats,
-.card-item.large .info-column .player-stats{
-    padding-right:0;
-    width:50%;
-}
-
-.card-item.large .info-column .player-stats{
-    max-height:250px;
-}
-
-.card-item .info-column .player-stats ul{
-    list-style:none;
-    width:calc(100% + 15px);
-    margin: 0 -7.5px;
-    text-align:right;
-}
-
-.card-item .info-column .player-stats ul li{
-    position:relative;
-    display:inline-block;
-    width: 85px;
-    max-width: 23.5%;
-    max-height: 90px;
-    height: 90px;
-    padding: 0 7.5px;
-    margin-bottom:11px;
-
-}
-
-.card-item .info-column .player-stats ul li .stat-wrap{
-    position:relative;
-    height:100%;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    overflow:hidden;
-}
-
-.card-item .info-column .player-stats ul li:nth-child(n+5){
-    visibility: hidden;
-    opacity: 0;
-    margin-bottom: 0;
-    padding-bottom:0;
-}
-
-
-.card-item.large .info-column .player-stats ul li:nth-child(n+5){
-    visibility: visible;
-    opacity: 1;
-    padding-bottom:0;
-}
-
-.card-item .info-column .player-stats ul li span{
-    display:block;
-    line-height:1;
-}
-
-.card-item .info-column .player-stats ul li span.title{
-    border-bottom:1px solid #aaa;
-    text-align:center;
-    font-size:12px;
-    letter-spacing:0.05em;
-    text-transform:uppercase;
-    font-weight:bold;
-    padding: 10px 0 5px;
-}
-
-.card-item .info-column .player-stats ul li span.number{
-    font-family: 'TIMMONS NY';
-    font-size: 43px;
-    margin: 13px 0 0;
-    text-align:center;
-    line-height:.77;
-}
-
-.card-item .info-column .player-stats ul li span.detail{
-    visibility: hidden;
-    opacity: 0;
-    padding-top:2px;
-    padding-bottom:10px;
-    font-size:11px;
-    text-align:center;
-    font-weight:500;
-}
-
-.card-item.large .info-column .player-stats ul li span.detail{
-    visibility: visible;
-    opacity: 1;
-}
-
 
 .card-item .info-column .player-meta{
     visibility: visible;
@@ -332,14 +394,12 @@
 }
 
 .card-item .info-column .player-meta li .label{
+    @include label-text;
     position:relative;
     background: rgb(245,245,245);
     z-index:2;
     padding-right:4px;
-    font-weight:bold;
-    text-transform:uppercase;
-    font-size:12px;
-    letter-spacing:0.05em;
+
 }
 
 .card-item .info-column .player-meta li .value{
@@ -351,46 +411,6 @@
     font-size:14px;
 }
 
-.card-item .info-column .player-description{
-    clear:both;
-    margin:30px 0 30px;
-    padding-top: 30px;
-    font-size:14px;
-    border-top: 1px solid #ccc;
-    padding-right:40px;
-}
-
-.card-item .info-column .player-description .player-headline{
-    font-size:20px;
-    line-height:1;
-    margin-bottom:5px;
-    font-family: 'Tiempos Headline';
-}
-
-.card-item .info-column .player-description .player-subline {
-    font-weight: 500;
-}
-
-.card-item .info-column .player-description .player-subline strong {
-    font-weight: 700;
-    font-size:12px;
-    letter-spacing:0.05em;
-}
-
-.card-item .info-column .player-info{
-    padding-top: 0px;
-    clear:both;
-    visibility:hidden;
-    opacity:0;
-    max-height:0;
-    overflow:hidden;
-}
-
-.card-item.large .info-column .player-info {
-    visibility: visible;
-    opacity: 1;
-    max-height:800px;
-}
 
 .card-item .info-column .player-stat-image{
     position:relative;
@@ -455,8 +475,7 @@
 }
 
 .card-item .info-column h6{
-    font-size:12px;
-    letter-spacing:.05em;
+    @include label-text;
 }
 
 .card-item .info-column .player-plus-minus ul{
@@ -529,11 +548,11 @@
 }
 
 .card-item .info-column .player-social a.facebook{
-    background-image:url(../img/facebook.svg);
+    background-image:url(../../img/facebook.svg);
 }
 
 .card-item .info-column .player-social a.twitter{
-    background-image:url(../img/twitter.svg);
+    background-image:url(../../img/twitter.svg);
 }
 
 .card-item img,

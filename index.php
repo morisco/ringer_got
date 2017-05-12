@@ -49,7 +49,6 @@
         $sort_list_id = 'ringer';
     }
 
-
     $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['ringer'];
 
     $sort_list = $data->$sort_list_id;
@@ -78,7 +77,7 @@
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
-        $player->size_class = 'small';
+        $player->size_class = 'medium';
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
         }
@@ -220,12 +219,12 @@
                             </div>
                             <div>
                                 <ul class="size-toggle">
-                                    <li class="active background-theme" data-size="small"></li>
-                                    <li data-size="medium"></li>
+                                    <li data-size="small"></li>
+                                    <li class="active background-theme" data-size="medium"></li>
                                     <li data-size="large"></li>
                                 </ul>
-                                <a href="javascript:void(0);" class="active color-theme" data-size="small">Default</a>
-                                <a href="javascript:void(0);" data-size="medium">Condensed</a>
+                                <a href="javascript:void(0);" data-size="small">Default</a>
+                                <a href="javascript:void(0);" class="active color-theme" data-size="medium">Condensed</a>
                                 <a href="javascript:void(0);" data-size="large">Expanded</a>
                             </div>
                         </div>
@@ -259,8 +258,8 @@
                             <li></li>
                         </ul>
                         <ul class="size-toggle">
-                            <li class="active background-theme" data-size="small"></li>
-                            <li data-size="medium"></li>
+                            <li data-size="small"></li>
+                            <li class="active background-theme" data-size="medium"></li>
                             <li data-size="large"></li>
                         </ul>
                     </div>
@@ -321,6 +320,8 @@
         <script src="js/vendor/handlebars.js"></script>
         <script src="js/vendor/underscore.js"></script>
         <script src="js/plugins.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/card.js"></script>
         <script src="js/main.js"></script>
 
         <script>

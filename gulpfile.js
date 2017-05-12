@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
-
 gulp.task('watch', ['sass'], function() {
     gulp.watch('./css/*.scss', ['sass']);
 });
