@@ -29,19 +29,19 @@
         'ringer'    => '#005bcc',
         'kevin'     => '#ff5e00',
         'danny'     => '#7ebe43',
-        'johnathan' => '#ff0047',
-        'az'        => '#0095ff'
+        'jonathan' => '#005bcc',
+        'az'        => '#ff0047'
     );
 
     $sort_list_name = array(
         'ringer'    => "Mock Draft",
         'kevin'     => "Kevin Lincoln",
         'danny'     => "Danny Chau",
-        'johnathan' => "Johnathan Tjarks",
+        'jonathan' => "Jonathan Tjarks",
         'a_z'       => "Sort A-Z"
     );
 
-    $sort_list_options = array('ringer', 'kevin', 'danny', 'johnathan', 'a_z');
+    $sort_list_options = array('ringer', 'kevin', 'danny', 'jonathan', 'a_z');
 
     if($_GET['list'] && in_array($_GET['list'], $sort_list_options)){
         $sort_list_id = $_GET['list'];
@@ -111,12 +111,12 @@
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
     $fb_meta['image'] = "https://fastfood.theringer.com/img/fast-food-facebook-1.jpg";
-    $fb_meta['description'] = "The Ringer presents a definitive list of the top-50 fast food items in America.";
-    $fb_meta['title'] = "2017 NBA DRAFT GUIDE - THE RINGER";
+    $fb_meta['description'] = "Check out The Ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects.";
+    $fb_meta['title'] = "The Ringer’s 2017 NBA Draft Guide";
 
     if(isset($featured_player)){
-        $fb_meta['url'] = "http://mikemorisco.com/ringer/nba?player=" . $featured_player->id;
-        $fb_meta['title'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
+        $fb_meta['url'] = "http://nbadraft.theringer.com/?player=" . $featured_player->filter_id;
+        $fb_meta['title'] = "Everything you need to know about " . $featured_player->name . " from The Ringer’s 2017 NBA Draft Guide";
         $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
         $fb_meta['image'] = "http://mikemorisco.com/ringer/nba/img/players/d_bacon.png";
     }
@@ -138,7 +138,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>2017 NBA DRAFT GUIDE - THE RINGER</title>
+        <title>The Ringer’s 2017 NBA Draft Guide    </title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type" content="website" />
@@ -158,6 +158,7 @@
         <link rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
+        <style type="text/css">.stroke{clip-path:url(#SVGID_2_);fill:none;stroke:<?php echo $sort_colors[$sort_list_id]; ?>;stroke-width:2;}.arrow{clip-path:url(#SVGID_4_);fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
     </head>
     <body class="<?php echo $bodyClass; ?>">
         <!--[if lt IE 8]>
@@ -168,11 +169,11 @@
             <nav>
                 <a href="http://theringer.com" class="logo"><img src="img/logo.png" alt="The Ringer Logo" /></a>
                 <ul class="main-nav">
-                    <li><a href="http://theringer.com">HOME</a></li>
-                    <li><a href="http://theringer.com">NBA</a></li>
-                    <li><a href="http://theringer.com">NCAA</a></li>
-                    <li><a href="http://theringer.com">NBA DRAFT</a></li>
-                    <li><a href="http://theringer.com">ANOTHER</a></li>
+                    <li><a href="https://bit.ly/ringerhome">HOME</a></li>
+                    <li><a href="https://bit.ly/ringernba">NBA</a></li>
+                    <li><a href="https://bit.ly/ringerncaabasketball">NCAA</a></li>
+                    <li><a href="https://bit.ly/ringernbadraft">NBA DRAFT</a></li>
+                    <li><a href="https://bit.ly/ringernbaplayoffs">NBA PLAYOFFS</a></li>
                 </ul>
             </nav>
             <div class="heading-wrapper">
@@ -182,13 +183,13 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Welcome to The Ringer’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
+                    <strong>Welcome to <i>The Ringer</i>’s  2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
                     <div class="intro-actions">
-                        <div class="byline">Scouting reports by kevin o'connor</div>
-                        <a href="http://theringer.com" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
+                        <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor" class="color-theme">kevin o'connor</a></div>
+                        <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
-                            <a href="http:facebook.com" class="facebook"></a>
-                            <a href="http:twitter.com" class="twitter"></a>
+                            <a target="_blank" href="http://facebook.com" class="facebook"></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/'); ?>" class="twitter"></a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +211,7 @@
                         <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-sort-id="ringer">Mock Draft</li>
                         <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">Kevin Lincoln</li>
                         <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">Danny Chau</li>
-                        <li class="<?php echo ($sort_list_id === 'johnathan') ? 'active color-theme' : '' ?>"data-sort-id="johnathan">Johnathan Tjarks</li>
+                        <li class="<?php echo ($sort_list_id === 'jonathan') ? 'active color-theme' : '' ?>"data-sort-id="jonathan">Jonathan Tjarks</li>
                         <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-sort-id="az">Sort A-Z</li>
                     </ul>
                     <div class="nav-actions">
@@ -246,7 +247,7 @@
                     <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer"><span>Ringer Picks</span></a>
                     <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
                     <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny"><span>Danny Chau</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'johnathan') ? 'active_filter' : '' ?>" data-sort-id="johnathan"><span>Johnathan Tjarks</span></a>
+                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan"><span>Jonathan Tjarks</span></a>
                     <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az"><span>Sort A-Z</span></a>
                 </div>
             </section>
@@ -310,7 +311,7 @@
                 ringer      : GLOBALS.data['ringer'],
                 kevin       : GLOBALS.data['kevin'],
                 danny       : GLOBALS.data['danny'],
-                johnathan   : GLOBALS.data['johnathan'],
+                jonathan   : GLOBALS.data['jonathan'],
                 az          : GLOBALS.data['a_z']
             };
             GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;

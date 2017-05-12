@@ -4,7 +4,6 @@
     margin: 0;
     clear:right;
     transform: translateY(0);
-    transition: transform .125s linear ;
 }
 
 #filters a{
@@ -19,7 +18,7 @@
 }
 
 #filters a:not(.active):hover{
-    color:#000;
+    color:$black;
 }
 
 #filters a:last-of-type{
@@ -59,7 +58,7 @@
                width: 100%;
                height: 2px;
                margin-bottom: 3px;
-               background:#000;
+               background:$black;
                transform:translateY(0px);
                transition: transform 0.125s linear;
            }

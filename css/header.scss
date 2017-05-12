@@ -31,7 +31,7 @@ header nav ul li{
     font-family:'NYTMag Sans', serif;
     font-weight:700;
     font-size:13px;
-    color:#fff;
+    color:$white;
     margin-right:30px;
     letter-spacing:0.075em;
 }
@@ -39,7 +39,7 @@ header nav ul li{
 header nav ul li a{
     display:inline-block;
     padding: 15px 5px;
-    color:#fff;
+    color:$white;
 }
 
 header .heading-wrapper{

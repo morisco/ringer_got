@@ -42,10 +42,6 @@
     background-color: $ringer !important;
 }
 
-.ringer .card-item .toggle-card{
-    background-image:url(../../img/toggle-arrow.png);
-    background-image:url(../../img/toggle-arrow.svg);
-}
 
 /* Kevin Theme */
 .kevin .background-theme{
@@ -68,10 +64,6 @@
     background-color: $kevin !important;
 }
 
-.kevin .card-item .toggle-card{
-    background-image:url(../../img/toggle-arrow.png);
-    background-image:url(../../img/toggle-arrow.svg);
-}
 
 /* Danny Theme */
 .danny .background-theme{
@@ -94,35 +86,26 @@
     background-color: $danny !important;
 }
 
-.danny .card-item .toggle-card{
-    background-image:url(../../img/toggle-arrow.png);
-    background-image:url(../../img/toggle-arrow.svg);
+
+/* Jonathan Theme */
+.jonathan .background-theme{
+   background-color: $jonathan !important;
 }
 
-/* Johnathan Theme */
-.johnathan .background-theme{
-   background-color: $johnathan !important;
+.jonathan .color-theme{
+   color: $jonathan !important;
 }
 
-.johnathan .color-theme{
-   color: $johnathan !important;
+.jonathan .border-theme{
+   border-color: $jonathan !important;
 }
 
-.johnathan .border-theme{
-   border-color: $johnathan !important;
+.jonathan .border-theme-before:before{
+    border-color: $jonathan !important;
 }
 
-.johnathan .border-theme-before:before{
-    border-color: $johnathan !important;
-}
-
-.johnathan .background-theme-after:after{
-    background-color: $johnathan !important;
-}
-
-.johnathan .card-item .toggle-card{
-    background-image:url(../../img/toggle-arrow.png);
-    background-image:url(../../img/toggle-arrow.svg);
+.jonathan .background-theme-after:after{
+    background-color: $jonathan !important;
 }
 
 /* AZ Theme */

@@ -101,7 +101,7 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: $black;
     padding: 0.2em 0;
 }
 
@@ -134,7 +134,7 @@ h1{
     line-height: .55;
     font-size: 275px;
     text-transform: uppercase;
-    color: #000;
+    color: $black;
     font-family: 'TIMMONS NY';
     text-align:center;
     font-weight: normal;
@@ -149,7 +149,7 @@ h1 span.block{
 }
 
 h1 span.white{
-    color: #fff;
+    color: $white;
 }
 
 h3{
@@ -311,10 +311,6 @@ h3 .brand{
         height:245px;
     }
 
-    #intro{
-        width: 100%;
-    }
-
     .disclaimer{
         width:calc(100% - 325px);
     }
@@ -376,12 +372,6 @@ h3 .brand{
         margin-left:0;
     }
 
-    #intro{
-        float:none;
-        text-align:left;
-        width:100%;
-        padding:0;
-    }
 
     #filters{
         width:100%;
@@ -460,7 +450,7 @@ h3 .brand{
         left:0;
         padding:80px 10px 0;
         text-align:center;
-        background:#fff;
+        background:$white;
         width:100%;
         height:100%;
         z-index:5555;
@@ -512,22 +502,4 @@ h3 .brand{
         margin-left: 0;
     }
 
-}
-
-@media (max-width: 660px) {
-
-    #intro{
-        width: 94%;
-        margin-bottom: 40px;
-        text-align:center;
-        padding-right:0;
-    }
-
-    #filters{
-        margin-bottom: 50px;
-    }
-
-    .stats{
-        font-size:14px;
-    }
 }

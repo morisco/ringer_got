@@ -6,7 +6,7 @@
     display:none;
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
 
     .is-mobile{
         display:inline-block;
@@ -21,14 +21,19 @@
         display:none;
     }
 
+    #item-list{
+        max-width:450px;
+        margin:0 auto;
+    }
+
     .mobile #mobile-nav{
         position:relative;
         display:block;
         width:100%;
         border-radius:5px;
-        background:#fff;
+        background:$white;
         padding:10px 0;
-        border:1px solid #000;
+        border:1px solid $black;
         background-image:url('../../img/mobile-nav-arrow.png');
         background-image:url('../../img/mobile-nav-arrow.svg');
         background-position: right 15px center;
@@ -136,7 +141,7 @@
 
     .mobile #mobile-nav .nav-contents .nav-actions a{
         display:block;
-        color:#000;
+        color:$black;
         text-transform:uppercase;
         margin-bottom:5px;
     }
@@ -220,27 +225,6 @@
         font-size:40px;
     }
 
-    .mobile #intro{
-        width:calc(100% - 30px);
-        margin-left: 15px;
-        margin-right: 15px;
-        padding:0;
-        font-size:16px;
-        text-align:left;
-        margin-bottom:30px;
-    }
-
-    .mobile #intro .intro-wrapper{
-        padding: 20px 20px 0;
-    }
-
-    .mobile #intro .ringer-draft-coverage{
-        display:block;
-        margin-bottom:15px;
-        position:relative;
-        max-width:100%;
-        font-size:11px;
-    }
 
     .mobile #content{
         padding:0 15px;
@@ -251,9 +235,10 @@
         padding-top:75px;
     }
 
+
     .mobile .card-item{
-        height:auto;
-        max-height: 100% !important;
+        max-width:500px;
+        margin-bottom:20px;
     }
 
     .mobile .card-item .toggle-card{
@@ -348,12 +333,21 @@
         padding:20px 15px;
     }
 
+    .mobile .card-item.medium .info-column{
+        padding-bottom:60px;
+    }
+
     .mobile .card-item .player-info{
         display:none;
+        overflow:visible;
     }
 
     .mobile .card-item.large .player-info{
         display:block;
+    }
+
+    .card-item.large .info-column .player-info{
+        max-height:100%;
     }
 
     .mobile .card-item.medium .info-column .player-stats,
@@ -492,21 +486,31 @@
     .card-item .info-column .medium-show{
         padding-left:0;
     }
-
-    .more-coverage h3{
-        font-size:45px;
+    .card-item .info-column .player-info{
+        padding-left:0;
     }
 
-    .more-coverage a{
-        width:100%;
+    .card-item .info-column .player-description{
+        padding-right:0;
     }
-    .more-coverage a:not(:first-of-type){
-        display:none;
+
+    .more-coverage{
+        h3{
+            font-size:45px;
+        }
+        div{
+            a{
+                width:100%;
+                &:not(:first-of-type){
+                    display:none;
+                }
+            }
+        }
     }
 
     #coverage-footer{
         padding: 0 15px;
-        width:100%;
+        width: 100%;
         .more-coverage {
             h3{
                 width:100%;
@@ -517,12 +521,22 @@
                     margin:15px 0 -40px;
                 }
             }
-            a{
-                width: calc(100% - 40px);
-                margin: 0 auto;
-                float:none;
+            div{
+                max-width:calc(100% - 60px);
+                margin:0 auto;
+                a{
+                    width:100% !important;
+                    margin:0px 0 30px !important;
+                    float:none;
+                    &:not(:first-of-type){
+                        display:block;
+                    }
+                }
             }
         }
     }
 
+    .ring-container{
+        margin-left:-14px;
+    }
 }
