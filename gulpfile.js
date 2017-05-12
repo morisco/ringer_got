@@ -4,6 +4,10 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 
 
+gulp.task('watch', ['sass'], function() {
+    gulp.watch('./css/*.scss', ['sass']);
+});
+
 gulp.task('sass', function () {
     gulp.src('./css/*.scss')
           .pipe(concat('all.scss'))

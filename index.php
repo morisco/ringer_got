@@ -150,21 +150,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/themes.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/intro.css">
-        <link rel="stylesheet" href="css/filter-bar.css">
-        <link rel="stylesheet" href="css/filters.css">
-        <link rel="stylesheet" href="css/item-list.css">
-        <link rel="stylesheet" href="css/coverage.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/transitions.css">
-        <link rel="stylesheet" href="css/mobile.css">
-        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="dist/css/all.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
