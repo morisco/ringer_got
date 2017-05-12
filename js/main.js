@@ -60,6 +60,9 @@ var CardList = function() {
         $('#filter-bar').on('click', 'a', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
 
+        $('.size-toggle').on('mouseenter', 'li', this.previewSize);
+        $('.size-toggle').on('mouseleave', 'li', this.revertSize);
+
         $('#mobile-nav').on('click', '.toggle-zone', this.toggleMobileNav);
         $('#mobile-nav').on('click', '.sort li', this.mobileSort);
         $('#mobile-nav').on('click', '.nav-filter a', this.mobileFilter);
@@ -69,6 +72,15 @@ var CardList = function() {
             $(window).on('scroll', cardlist.scrollWatch);
         }
     }
+
+    this.previewSize = function(){
+        cardlist.size_preview = $(this).data('size');
+        $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size_preview);
+    };
+
+    this.revertSize = function(){
+        $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
+    };
 
     this.toggleMobileNav = function(){
         if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
