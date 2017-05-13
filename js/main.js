@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var masterList = new CardList();
     var mobile = new Mobile(masterList);
+
 });
 
 function CardList() {
@@ -54,9 +55,8 @@ function CardList() {
 
 
     this.initEvents = function() {
-
-        $('#filters a').on('click', this.filter);
-        $('#filter-bar').on('click', 'a', this.sort);
+        $('#filters').on('click', 'a', this.filter);
+        $('#filter-bar').on('click', '.filter:not(.active_filter)', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
@@ -101,17 +101,23 @@ function CardList() {
     };
 
     this.openPlayer = function() {
-        var openCard = $('.card-item[data-id="' + GLOBALS.player + '"]');
-        var openScollPos = openCard.offset().top - 100;
-        var timeout = false;
-        $('body').addClass('filter-fixed');
-        $('body,html').animate({scrollTop: openScollPos}, function(){
-            clearTimeout(timeout);
-            timeout = setTimeout(function(){
-                openCard.addClass('expanded');
-                $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
-            },100);
-        });
+        var timeout = false,
+            openCard = $('.card-item[data-id="' + GLOBALS.player + '"]'),
+            openScrollPos = openCard.offset().top,
+            scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100,
+            delay = $(window).width() < 768 ? 500 : 0;
+
+        setTimeout(function(){
+            $('body,html').animate({scrollTop: openScrollPos - scrollOffset}, function(){
+                $('body').addClass('filter-fixed');
+                clearTimeout(timeout);
+                timeout = setTimeout(function(){
+                    events.publish('card.expanded', {id: GLOBALS.player})
+                    $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
+                },100);
+            });
+        }, delay);
+
     }
 
     this.changeSize = function(e, size){
@@ -147,8 +153,10 @@ function CardList() {
 
     this.sort = function(e){
         e.preventDefault();
+        e.stopPropagation();
         var player,
             coverage_count = 5;
+
 
         $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');
@@ -160,6 +168,8 @@ function CardList() {
     }
 
     this.filter = function(e){
+        console.log(e);
+
         cardlist.filter_id = $(e.currentTarget).data('filter');
 
         $('#filters a.active, #mobile-nav .nav-filter a').removeClass('active color-theme');
@@ -170,16 +180,18 @@ function CardList() {
         }
 
         if(cardlist.filter_id === 'all'){
-            cardlist.$el.removeClass('filtered');
+            cardlist.$el.removeClass('filtered big guard forward');
         } else {
-            cardlist.$el.addClass('filtered');
+            cardlist.$el.removeClass('big guard forward');
+            cardlist.$el.addClass('filtered ' + cardlist.filter_id);
         }
 
-        events.publish('filter.update', { filter: cardlist.filter_id });
+        // events.publish('filter.update', { filter: cardlist.filter_id });
     }
 
     this.buildList = function() {
         var playerCount = 0;
+        $('html,body').animate({scrollTop: (cardlist.filterOffsetPos + 1)})
         _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
             player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});
             if(player){

@@ -3,7 +3,7 @@ function Card(id, data){
 
     this.data = data;
     this.id = id;
-    this.el = $('.card-item[data-id="'+this.id+'"]');
+    this.el = $('.card-item[data-id="'+this.data.filter_id+'"]');
     this.size = 'medium';
     this.sort = GLOBALS.current_sort;
 
@@ -15,9 +15,7 @@ function Card(id, data){
     };
 
     this.initEvents = function(){
-        events.subscribe('filter.update', this.filter);
-        events.subscribe('sort.update', this.sortChange);
-        events.subscribe('size.update', this.size);
+        this.el.on('click.whole', this.toggleWholeCard);
         this.el.on('mouseenter', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
         this.el.on('mouseleave', this.hideColor);
@@ -25,12 +23,33 @@ function Card(id, data){
         this.el.find('.has-media').on('tap', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
+        events.subscribe('filter.update', this.filter);
+        events.subscribe('sort.update', this.sortChange);
+        events.subscribe('size.update', this.size);
+        events.subscribe('card.expanded', this.openPlayer);
     };
 
+    this.openPlayer = function(obj){
+        if(obj.id === card.data.filter_id){
+            card.el.off('click.whole');
+            card.toggleCard();
+        }
+    }
 
     this.toggleCard = function(e) {
         card.el.toggleClass('expanded-card');
         if(card.el.hasClass('expanded-card')){
+            card.el.off('click.whole');
+            card.hideColor();
+        } else {
+            card.el.on('click.whole', card.toggleWholeCard);
+        }
+    }
+
+    this.toggleWholeCard = function(){
+        if(card.size !== 'large' && !card.el.hasClass('expanded-card')){
+            card.el.off('click.whole');
+            card.el.addClass('expanded-card');
             card.hideColor();
         }
     }
@@ -73,18 +92,6 @@ function Card(id, data){
             img.attr('src', img.data('src') );
         })
     }
-
-    this.filter = function(obj){
-        if(obj.filter === 'all' || card.data.position_group.toLowerCase() === obj.filter){
-            card.el.removeClass('unfiltered');
-        } else {
-            card.el.addClass('unfiltered');
-        }
-        card.el.addClass('sort');
-        setTimeout(function(){
-            card.el.removeClass('sort');
-        },500)
-    };
 
     this.sortChange = function(obj){
         card.sort = obj.sort;

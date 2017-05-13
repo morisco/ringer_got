@@ -21,7 +21,7 @@
         display:none;
     }
 
-    .mobile #mobile-nav{
+    #mobile-nav{
         position:relative;
         display:block;
         width:100%;
@@ -36,125 +36,123 @@
         background-repeat:no-repeat;
         z-index:5555;
         margin-bottom:30px;
+        .toggle-zone{
+            position:absolute;
+            top:0;
+            right:0;
+            left:0;
+            z-index:5;
+            height:44px;
+        }
+        .toggle-close{
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background:transparent;
+            z-index:0;
+            display:none;
+        }
+        .toggle{
+            float:left;
+            width:18px;
+            height:20px;
+            margin-right:20px;
+            margin-left:15px;
+            background-image:url('../../img/toggle.png');
+            background-image:url('../../img/toggle.svg');
+            background-size:100%;
+            background-position:center center;
+        }
+        .current-sort{
+            font-family: 'NYTMag Sans', serif;
+            font-size:14px;
+            text-transform:uppercase;
+            font-weight:800;
+            letter-spacing:0.125rem;
+            padding:2px 0;
+        }
+
+        .nav-contents{
+            display:none;
+        }
+        &.open{
+            background-position: right 15px top 19px;
+            .current-sort{
+                display:none;
+            }
+            .nav-contents{
+                position:relative;
+                display:block;
+                z-index:1;
+                .current-sort{
+                    display:block;
+                }
+                ul{
+                    &.sort{
+                        margin-top:10px;
+                        list-style:none;
+                        width:100%;
+                        li{
+                            display:block;
+                            width:calc(100% - 15px);
+                            margin:0 auto;
+                            border-top:1px solid #ccc;
+                            padding:10px 40px;
+                            font-family:'NYTMag Sans', sans-serif;;
+                            text-transform:uppercase;
+                            font-size:14px;
+                            font-weight:800;
+                            &:last-of-type{
+                                border-bottom:1px solid #ccc;
+                            }
+                        }
+                    }
+                }
+                .nav-actions{
+                    padding:20px 0 10px;
+                    width:100%;
+                    &:after{
+                        content:'';
+                        clear:both;
+                        display:table;
+                    }
+                    > div{
+                        float:left;
+                        width:50%;
+                        font-weight:500;
+                        font-size:14px;
+                        &.nav-switcher{
+                            padding-left:15px;
+                        }
+                    }
+                    .label{
+                        margin-bottom:5px;
+                    }
+                    a{
+                        display:block;
+                        color:$black;
+                        text-transform:uppercase;
+                        margin-bottom:5px;
+                    }
+                }
+            }
+            .nav-switcher{
+                 .label{
+                    margin-left:30px;
+                }
+            }
+
+            .toggle-close{
+                display:block;
+            }
+            .nav-contents{
+
+            }
+        }
     }
 
-    .mobile #mobile-nav .toggle-zone{
-        position:absolute;
-        top:0;
-        right:0;
-        left:0;
-        z-index:5;
-        height:44px;
-    }
-    .mobile #mobile-nav .toggle-close{
-        position:fixed;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        background:transparent;
-        z-index:0;
-    }
-
-    .mobile #mobile-nav .toggle{
-        float:left;
-        width:18px;
-        height:20px;
-        margin-right:20px;
-        margin-left:15px;
-        background-image:url('../../img/toggle.png');
-        background-image:url('../../img/toggle.svg');
-        background-size:100%;
-        background-position:center center;
-    }
-
-    .mobile #mobile-nav .current-sort{
-        font-family: 'NYTMag Sans', serif;
-        font-size:14px;
-        text-transform:uppercase;
-        font-weight:800;
-        letter-spacing:0.125rem;
-        padding:2px 0;
-    }
-
-    .mobile #mobile-nav .nav-contents,
-    .mobile #mobile-nav.open .current-sort{
-        display:none;
-    }
-
-    .mobile #mobile-nav.open .nav-contents,
-    .mobile #mobile-nav.open .nav-contents .current-sort{
-        position:relative;
-        display:block;
-        z-index:1;
-    }
-
-    .mobile #mobile-nav.open{
-        background-position: right 15px top 19px;
-    }
-
-    .mobile #mobile-nav .nav-contents ul.sort{
-        margin-top:10px;
-        list-style:none;
-        width:100%;
-    }
-
-    .mobile #mobile-nav .nav-contents ul.sort li{
-        display:block;
-        width:calc(100% - 15px);
-        margin:0 auto;
-        border-top:1px solid #ccc;
-        padding:10px 40px;
-        font-family:'NYTMag Sans', sans-serif;;
-        text-transform:uppercase;
-        font-size:14px;
-        font-weight:800;
-    }
-
-    .mobile #mobile-nav .nav-contents ul.sort li:last-of-type{
-        border-bottom:1px solid #ccc;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions{
-        padding:20px 0 10px;
-        width:100%;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions:after{
-        content:'';
-        clear:both;
-        display:table;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions > div{
-        float:left;
-        width:50%;
-        font-weight:500;
-        font-size:14px;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions > div.nav-switcher{
-        padding-left:15px;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions > div.nav-filter{
-        padding-left:15px;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions .label{
-        margin-bottom:5px;
-    }
-
-    .mobile #mobile-nav .nav-contents .nav-actions a{
-        display:block;
-        color:$black;
-        text-transform:uppercase;
-        margin-bottom:5px;
-    }
-
-    .mobile #mobile-nav .nav-switcher .label{
-        margin-left:30px;
-    }
 
     .mobile #mobile-nav .size-toggle{
         position:relative;
@@ -163,45 +161,42 @@
         height: 53px;
         margin: 0 10px 0 8px;
         vertical-align: top;
+        &:after{
+            content:'';
+            position:relative;
+            height: 100%;
+            display:block;
+            background:#e6e6e6;
+            position:absolute;
+            width:6px;
+            top:3px;
+            left:0;
+            right:0;
+            z-index:0;
+        }
+
+        li{
+            position:absolute;
+            top:0;
+            left:-3px;
+            display:inline-block;
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            background: #e6e6e6;
+            vertical-align:top;
+            z-index:1;
+            &:nth-child(2){
+                top: calc(50% - 3px);
+            }
+            &:nth-child(3){
+                top: calc(100% - 3px);
+            }
+
+        }
     }
 
-    .mobile #mobile-nav .size-toggle:after{
-        content:'';
-        position:relative;
-        height: 100%;
-        display:block;
-        background:#e6e6e6;
-        position:absolute;
-        width:6px;
-        top:3px;
-        left:0;
-        right:0;
-        z-index:0;
-    }
-
-    .mobile #mobile-nav .size-toggle li{
-        position:absolute;
-        top:0;
-        left:-3px;
-        display:inline-block;
-        border-radius: 50%;
-        height: 12px;
-        width: 12px;
-        background: #e6e6e6;
-        vertical-align:top;
-        z-index:1;
-    }
-
-
-    .mobile #mobile-nav .size-toggle li:nth-child(2){
-        top: calc(50% - 3px);
-    }
-
-    .mobile #mobile-nav .size-toggle li:nth-child(3){
-        top: calc(100% - 3px);
-    }
-
-    .mobile.filter-fixed #mobile-nav{
+    .filter-fixed #mobile-nav{
         position:fixed;
         top:0;
         left:0;
@@ -210,79 +205,5 @@
         border-top:0;
         border-right:0;
         border-left:0;
-    }
-
-    .mobile #filter-bar-wrapper,
-    .mobile #filters{
-        display:none;
-    }
-
-    .mobile header .heading-wrapper{
-        padding-bottom:100px;
-    }
-
-    .mobile header .heading-wrapper h1{
-        font-size:85px;
-    }
-
-    .mobile header .heading-wrapper h1 span{
-        margin-bottom:30px;
-        font-size:40px;
-    }
-
-
-    .mobile #content{
-        padding:0 15px;
-        width: 100%;
-    }
-
-    .mobile.filter-fixed #content{
-        padding-top:75px;
-    }
-
-    .more-coverage{
-        h3{
-            font-size:45px;
-        }
-        div{
-            a{
-                width:100%;
-                &:nth-child(n+2){
-                    display:none;
-                }
-            }
-        }
-    }
-
-    #coverage-footer{
-        padding: 0 15px;
-        width: 100%;
-        .more-coverage {
-            h3{
-                width:100%;
-                margin:0;
-                padding:0;
-                text-align:left;
-                &:after{
-                    margin:15px 0 -40px;
-                }
-            }
-            div{
-                max-width:calc(100% - 60px);
-                margin:0 auto;
-                a{
-                    width:100% !important;
-                    margin:0px 0 30px !important;
-                    float:none;
-                    &:not(:first-of-type){
-                        display:block;
-                    }
-                }
-            }
-        }
-    }
-
-    .ring-container{
-        margin-left:-14px;
     }
 }

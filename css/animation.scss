@@ -36,3 +36,10 @@ body:not(.mobile):not(.no-transition) .ringring{
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
+
+
+@media(max-width:767px){
+    .ring-container{
+        margin-left:-14px;
+    }
+}

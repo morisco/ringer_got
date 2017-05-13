@@ -8,9 +8,9 @@
     use Handlebars\Handlebars;
 
     $engine = new Handlebars(array(
-        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/templates/'),
+        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/dist/templates/'),
         'partials_loader' => new \Handlebars\Loader\FilesystemLoader(
-            __DIR__ . '/templates/',
+            __DIR__ . '/dist/templates/',
             array(
                 'prefix' => '_'
             )
@@ -77,8 +77,12 @@
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
+        $player->meta       = json_decode($player->meta);
+        $player->shot_chart = json_decode($player->shot_chart);
         $player->size_class = 'medium';
-        if($player_id && $player->id === $player_id){
+        $player->position_group = strtolower($player->position_group);
+
+        if($player_id && $player->filter_id === $player_id){
             $featured_player = $player;
         }
         $template_render .= $engine->render(
@@ -138,7 +142,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The Ringer’s 2017 NBA Draft Guide    </title>
+        <title>The Ringer’s 2017 NBA Draft Guide</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type" content="website" />
@@ -147,11 +151,11 @@
         <meta property="og:image" content="<?php echo $fb_meta['image']; ?>" />
 
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="stylesheet" href="dist/css/all.css">
 
-        <script src="dist/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
         <link rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*w1O1RbAfBRNSxkSC48L1PQ.png">
@@ -159,59 +163,6 @@
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <style type="text/css">.stroke{clip-path:url(#SVGID_2_);fill:none;stroke:<?php echo $sort_colors[$sort_list_id]; ?>;stroke-width:2;}.arrow{clip-path:url(#SVGID_4_);fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
-        <style>
-            .cls-1 {
-                fill: #fffb00;
-            }
-
-            .cls-2 {
-                fill: #00d9ff;
-            }
-
-            .cls-3 {
-                fill: #ff4200;
-            }
-
-            .cls-4,
-            .cls-5,
-            .cls-6 {
-                fill: none;
-            }
-
-            .cls-4,
-            .cls-5 {
-                stroke: #000;
-                stroke-linejoin: round;
-                stroke-width: 7px;
-            }
-
-            .cls-5 {
-                opacity: 0.2;
-            }
-
-            .cls-7 {
-                font-size: 38px;
-                font-family: NYTMagSans-Bold, NYTMag Sans;
-            }
-
-            .cls-8 {
-                font-weight: 700;
-            }
-
-            .cls-9 {
-                font-size: 26px;
-                font-family: NYTMagSans-Md, NYTMag Sans;
-                letter-spacing: 0.06em;
-            }
-
-            .cls-10 {
-                letter-spacing: 0.05em;
-            }
-
-            .cls-11 {
-                letter-spacing: 0.03em;
-            }
-        </style>
     </head>
     <body class="<?php echo $bodyClass; ?> medium">
         <!--[if lt IE 8]>
@@ -236,7 +187,7 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Welcome to <i>The Ringer</i>’s  2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
+                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide, a comprehensive look at our top-60 prospects as rated by our three draftniks, O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
                     <div class="intro-actions">
                         <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor" class="color-theme">kevin o'connor</a></div>
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
@@ -263,7 +214,7 @@
                     </div>
                     <ul class="sort">
                         <li class="<?php echo ($sort_list_id === 'ringer') ? 'active color-theme' : '' ?>"data-sort-id="ringer">Mock Draft</li>
-                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">Kevin Lincoln</li>
+                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">Kevin O&rsquo;Connor</li>
                         <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">Danny Chau</li>
                         <li class="<?php echo ($sort_list_id === 'jonathan') ? 'active color-theme' : '' ?>"data-sort-id="jonathan">Jonathan Tjarks</li>
                         <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-sort-id="az">Sort A-Z</li>
@@ -298,11 +249,37 @@
             </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
-                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer"><span>Ringer Picks</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny"><span>Danny Chau</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan"><span>Jonathan Tjarks</span></a>
-                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az"><span>Sort A-Z</span></a>
+                    <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
+                        <div class="filter-wrapper">
+                            <span>Ringer Picks</span>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Kevin O&rsquo;Connor</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Danny Chau</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Jonathan Tjarks</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="small filter <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az">
+                        <div class="filter-wrapper">
+                            <span>Sort A-Z</span>
+                        </div>
+                    </div>
                 </div>
             </section>
             <div id="main-content">
@@ -344,15 +321,15 @@
         </footer>
 
         <script id="player-card-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/card.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/card.handlebars"); ?>
         </script>
 
         <script id="coverage-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/coverage.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/coverage.handlebars"); ?>
         </script>
 
         <script id="info-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/info.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/info.handlebars"); ?>
         </script>
 
         <script type="text/javascript">
@@ -373,14 +350,15 @@
         </script>
         <script src="dist/vendor/vendor.js"></script>
         <script src="dist/js/all.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-92628558-1', 'auto');
-            ga('send', 'pageview');
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-98869396-1', 'auto');
+          ga('send', 'pageview');
         </script>
 
     </body>

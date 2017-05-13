@@ -167,6 +167,18 @@ body .card-item.expanded-card{
 
     body:not(.small) .card-item,
     body .card-item.expanded-card{
+        .rank-column{
+            width:100%;
+            max-width:100%;
+            position:relative;
+            height:270px;
+            overflow:hidden;
+            img{
+                margin: -80px 50% 0;
+                transform: translateX(-50%);
+                max-width: 75%;
+            }
+        }
         .info-column{
             width:100%;
             max-width:100%;
@@ -275,7 +287,6 @@ body .card-item.expanded-card{
         }
     }
 
-    body.large .card-item,
     body .card-item.expanded-card{
         max-height: 100% !important;
         height: auto !important;
@@ -375,6 +386,17 @@ body .card-item.expanded-card{
         .rank-column{
             background-color: #F5F5F5 !important;
 
+        }
+    }
+
+    body.small .filtered{
+        .card-item{
+            padding:0;
+        }
+        &.guard .card-item.guard,
+        &.big .card-item.big,
+        &.forward .card-item.forward{
+            padding: 15px 0 15px 15px;
         }
     }
 
@@ -586,6 +608,7 @@ body .card-item.expanded-card{
                     li{
                         max-height:100%;
                         height:auto;
+                        margin-bottom:15px;
                         span.detail{
                             margin-top:0;
                         }
