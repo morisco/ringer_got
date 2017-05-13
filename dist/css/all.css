@@ -620,6 +620,18 @@ body .card-item.expanded-card .ringer-coverage {
   opacity: 1; }
 
 @media (max-width: 1023px) {
+  body:not(.small) .card-item .rank-column,
+  body .card-item.expanded-card .rank-column {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    height: 270px;
+    overflow: hidden; }
+    body:not(.small) .card-item .rank-column img,
+    body .card-item.expanded-card .rank-column img {
+      margin: -80px 50% 0;
+      transform: translateX(-50%);
+      max-width: 75%; }
   body:not(.small) .card-item .info-column,
   body .card-item.expanded-card .info-column {
     width: 100%;

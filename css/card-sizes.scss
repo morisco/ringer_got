@@ -167,6 +167,18 @@ body .card-item.expanded-card{
 
     body:not(.small) .card-item,
     body .card-item.expanded-card{
+        .rank-column{
+            width:100%;
+            max-width:100%;
+            position:relative;
+            height:270px;
+            overflow:hidden;
+            img{
+                margin: -80px 50% 0;
+                transform: translateX(-50%);
+                max-width: 75%;
+            }
+        }
         .info-column{
             width:100%;
             max-width:100%;
