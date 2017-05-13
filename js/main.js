@@ -160,6 +160,8 @@ function CardList() {
     }
 
     this.filter = function(e){
+        console.log(e);
+
         cardlist.filter_id = $(e.currentTarget).data('filter');
 
         $('#filters a.active, #mobile-nav .nav-filter a').removeClass('active color-theme');
@@ -170,12 +172,13 @@ function CardList() {
         }
 
         if(cardlist.filter_id === 'all'){
-            cardlist.$el.removeClass('filtered');
+            cardlist.$el.removeClass('filtered big guard forward');
         } else {
-            cardlist.$el.addClass('filtered');
+            cardlist.$el.removeClass('big guard forward');
+            cardlist.$el.addClass('filtered ' + cardlist.filter_id);
         }
 
-        events.publish('filter.update', { filter: cardlist.filter_id });
+        // events.publish('filter.update', { filter: cardlist.filter_id });
     }
 
     this.buildList = function() {

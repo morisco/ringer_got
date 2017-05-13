@@ -15,12 +15,12 @@
     text-transform: uppercase;
 }
 
-@mixin transition($what: all, $time: 0.2s, $how: ease-in-out, $delay: 0s ) {
-    -webkit-transition: $what $time $how $delay;
-    -moz-transition:    $what $time $how $delay;
-    -ms-transition:     $what $time $how $delay;
-    -o-transition:      $what $time $how $delay;
-    transition:         $what $time $how $delay;
+@mixin transition($transitions...) {
+    -webkit-transition: $transitions;
+    -moz-transition:    $transitions;
+    -ms-transition:     $transitions;
+    -o-transition:      $transitions;
+    transition:         $transitions;
 }
 
 @mixin transform($transforms) {

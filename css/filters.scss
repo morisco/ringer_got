@@ -5,49 +5,42 @@
     clear:right;
     transform: translateY(0);
     position:absolute;
-}
-
-#filters a{
-    position:relative;
-    display:block;
-    margin: 0 0 15px;
-    @include filter-sort-text;
-}
-
-#filters a:not(.active){
-    color:#ccc;
-}
-
-#filters a:not(.active):hover{
-    color:$black;
-}
-
-#filters a:last-of-type{
-    margin-right: 0;
-}
-
-#filters a.active:before{
-    content:'';
-    display:block;
-    position:absolute;
-    left:-20px;
-    top:2px;
-    width:17px;
-    height:10px;
-    background-image:url(../img/toggle.png);
-    background-image:url(../img/arrow.svg);
-    background-repeat:no-repeat;
-    transform:rotate(-90deg);
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg);
-}
-
-#filters .switcher{
-    margin-bottom: 15px;
-}
-
-#filters {
+    a{
+        position:relative;
+        display:block;
+        margin: 0 0 15px;
+        @include filter-sort-text;
+        &:not(.active){
+            color:#ccc;
+            &:hover{
+                color:$black;
+            }
+        }
+        &:last-of-type{
+            margin-right: 0;
+        }
+        &.active{
+            &:before{
+                content:'';
+                display:block;
+                position:absolute;
+                left:-20px;
+                top:2px;
+                width:17px;
+                height:10px;
+                background-image:url(../img/toggle.png);
+                background-image:url(../img/arrow.svg);
+                background-repeat:no-repeat;
+                transform:rotate(-90deg);
+                -webkit-transform:rotate(-90deg);
+                -moz-transform:rotate(-90deg);
+                -ms-transform:rotate(-90deg);
+            }
+        }
+    }
+    .switcher{
+        margin-bottom: 15px;
+    }
     ul{
         list-style: none;
         display:inline-block;
@@ -124,25 +117,19 @@
     }
 }
 
-
-
 @media(min-width: 1201px){
     .filter-fixed #filters{
         position:fixed;
         top:110px;
-    }
-
-    #filters a{
-        position:relative;
-        display:block;
+        a{
+            position:relative;
+            display:block;
+        }
     }
 }
 
 
 @media(max-width:1200px){
-    #filter-bar-wrapper{
-        margin-bottom:0;
-    }
 
     #filters {
         position:relative;
@@ -178,5 +165,11 @@
 
     .filter-fixed #filter-bar-wrapper{
         max-height:40px;
+    }
+}
+
+@media(max-width:767px){
+    #filters{
+        display:none;
     }
 }

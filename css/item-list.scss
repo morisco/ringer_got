@@ -8,6 +8,23 @@
     opacity: 0;
 }
 
+#item-list.filtered{
+    .card-item{
+        max-height:0;
+        opacity:0;
+        overflow:hidden;
+        margin-bottom:-2px;
+    }
+
+    &.guard .card-item.guard,
+    &.big .card-item.big,
+    &.forward .card-item.forward{
+        max-height:3000px;
+        opacity:1;
+        margin-bottom:15px;
+    }
+}
+
 .rebuilding{
     .card-item{
         .info-column{
@@ -38,15 +55,6 @@
             visibility: visible;
             opacity:1;
         }
-    }
-
-    &.unfiltered{
-        max-height:0 !important;
-        opacity: 0;
-        margin-bottom:0;
-        visibility:hidden;
-        margin-top:-2px;
-        padding:0;
     }
 
     .wrapper{
