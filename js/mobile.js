@@ -11,6 +11,7 @@ function Mobile(list) {
 
     mobile.initEvents = function(){
         $('#mobile-nav').on('click', '.toggle-zone', mobile.toggleMobileNav);
+        $('#mobile-nav').on('click', '.toggle-close', mobile.toggleMobileNav);
         $('#mobile-nav').on('click', '.sort li', mobile.mobileSort);
         $('#mobile-nav').on('click', '.nav-filter a', mobile.mobileFilter);
         $('#mobile-nav .nav-switcher').on('click', 'a', mobile.mobileChangeSize);
@@ -26,12 +27,12 @@ function Mobile(list) {
         $('body').off("click.clickout");
         mobile.navTimeout = setTimeout(function(){
             if($('#mobile-nav').hasClass('open')){
-                $('body').on("click.clickout", function(e){
-                    if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
-                        $('#mobile-nav').removeClass('open');
-                        $('body').off("click.clickout");
-                    }
-                });
+                // $('body').on("click.clickout", function(e){
+                //     if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
+                //         $('#mobile-nav').removeClass('open');
+                //         $('body').off("click.clickout");
+                //     }
+                // });
             }
         }, 500);
     };
@@ -40,7 +41,7 @@ function Mobile(list) {
         e.preventDefault();
         var newSize = $(this).data('size');
         $('#mobile-nav').removeClass('open');
-
+        $('body').off("click.clickout");
         mobile.old_size = mobile.size;
         mobile.size = $(this).data('size');
         events.publish('size.update', {size: mobile.size});
@@ -52,12 +53,15 @@ function Mobile(list) {
         $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
         $(e.target).addClass('active color-theme');
 
-        $('body').removeClass('small medium large').addClass(mobile.size + ' ' + transitionClass);
+        setTimeout(function(){
+            $('body').removeClass('small medium large').addClass(mobile.size + ' ' + transitionClass);
+        },100);
     }
 
     mobile.mobileSort = function(e){
         e.preventDefault();
         $('#mobile-nav').removeClass('open');
+        $('body').off("click.clickout");
         setTimeout(function(){
             $('#mobile-nav .sort li').removeClass('active color-theme');
             $(e.target).addClass('active color-theme');
@@ -67,10 +71,11 @@ function Mobile(list) {
 
     mobile.mobileFilter = function(e){
         e.preventDefault();
+        $('#mobile-nav').removeClass('open');
+        $('body').off("click.clickout");
         setTimeout(function(){
             mobile.list.filter(e);
-            $('#mobile-nav').removeClass('open');
-        },100)
+        },100);
     }
 
     mobile.init();

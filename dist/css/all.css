@@ -2386,6 +2386,14 @@ h3 .brand {
     left: 0;
     z-index: 5;
     height: 44px; }
+  .mobile #mobile-nav .toggle-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 0; }
   .mobile #mobile-nav .toggle {
     float: left;
     width: 18px;
@@ -2408,7 +2416,9 @@ h3 .brand {
     display: none; }
   .mobile #mobile-nav.open .nav-contents,
   .mobile #mobile-nav.open .nav-contents .current-sort {
-    display: block; }
+    position: relative;
+    display: block;
+    z-index: 1; }
   .mobile #mobile-nav.open {
     background-position: right 15px top 19px; }
   .mobile #mobile-nav .nav-contents ul.sort {

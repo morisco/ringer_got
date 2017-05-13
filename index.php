@@ -252,6 +252,7 @@
             <nav id="mobile-nav">
                 <div class="toggle-zone">
                 </div>
+                <div class="toggle-close"></div>
                 <div class="toggle"></div>
                 <div class="current-sort" >
                     <?php echo $sort_dropdown_name; ?>
