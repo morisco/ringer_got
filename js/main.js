@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var masterList = new CardList();
     var mobile = new Mobile(masterList);
-    
+
 });
 
 function CardList() {
@@ -109,7 +109,7 @@ function CardList() {
         $('body,html').animate({scrollTop: openScollPos}, function(){
             clearTimeout(timeout);
             timeout = setTimeout(function(){
-                openCard.addClass('expanded');
+                openCard.addClass('expanded-card');
                 $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
             },100);
         });

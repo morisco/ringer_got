@@ -80,7 +80,7 @@
         $player->meta       = json_decode($player->meta);
         $player->shot_chart = json_decode($player->shot_chart);
         $player->size_class = 'medium';
-        if($player_id && $player->id === $player_id){
+        if($player_id && $player->filter_id === $player_id){
             $featured_player = $player;
         }
         $template_render .= $engine->render(
