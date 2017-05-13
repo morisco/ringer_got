@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var masterList = new CardList();
+    var mobile = new Mobile(masterList);
 });
 
 function CardList() {
@@ -26,7 +27,7 @@ function CardList() {
     this.cards = [];
 
     this.init = function() {
-        this.windowResize();
+        // this.windowResize();
         this.initEvents();
         this.scrollWatch();
         if(this.initial_player){
@@ -57,14 +58,9 @@ function CardList() {
         $('#filters a').on('click', this.filter);
         $('#filter-bar').on('click', 'a', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
-
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
 
-        $('#mobile-nav').on('click', '.toggle-zone', this.toggleMobileNav);
-        $('#mobile-nav').on('click', '.sort li', this.mobileSort);
-        $('#mobile-nav').on('click', '.nav-filter a', this.mobileFilter);
-        $('#mobile-nav .nav-switcher').on('click', 'a', this.mobileChangeSize);
         $(window).on('resize', this.windowResize);
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
@@ -80,54 +76,6 @@ function CardList() {
         $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
     };
 
-    this.toggleMobileNav = function(){
-        window.clearTimeout(cardlist.navTimeout)
-        if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
-            $('body,html').scrollTop((cardlist.filterOffsetPos + 1));
-        }
-
-        $('#mobile-nav').toggleClass('open');
-        cardlist.navTimeout = setTimeout(function(){
-            // if($('#mobile-nav').hasClass('open')){
-            //     $('body').on("click.clickout", function(e){
-            //         if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
-            //             cardlist.toggleMobileNav();
-            //         }
-            //     });
-            // } else {
-            //     $('body').off("click.clickout");
-            // }
-        }, 500);
-    };
-
-    this.mobileChangeSize = function(e){
-        e.preventDefault();
-        var newSize = $(this).data('size');
-        $('#mobile-nav').removeClass('open');
-        setTimeout(function(){
-            $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
-            $(e.target).addClass('active color-theme');
-            cardlist.changeSize(e, newSize);
-        },100);
-    }
-
-    this.mobileSort = function(e){
-        e.preventDefault();
-        $('#mobile-nav').removeClass('open');
-        setTimeout(function(){
-            $('#mobile-nav .sort li').removeClass('active color-theme');
-            $(e.target).addClass('active color-theme');
-            cardlist.sort(e);
-        },100);
-    }
-
-    this.mobileFilter = function(e){
-        e.preventDefault();
-        setTimeout(function(){
-            cardlist.filter(e);
-            $('#mobile-nav').removeClass('open');
-        },100)
-    }
 
     this.windowResize = function(){
         var windowWidth = $(window).width();
@@ -136,7 +84,7 @@ function CardList() {
             windowWidth = $(window).width();
             cardlist.filterOffsetPos = $('#content').offset().top;
         },250);
-        $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
+        // $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
         if(windowWidth < 1100 && windowWidth > 767 ){
             $('body').removeClass('mobile');
             $('body').addClass('tablet no-transition');
@@ -171,28 +119,13 @@ function CardList() {
         var transitionClass;
         cardlist.old_size = cardlist.size;
         cardlist.size = size || $(this).data('size');
+        events.publish('size.update', {size: cardlist.size});
         transitionClass = cardlist.old_size + '-to-' + cardlist.size;
         $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').attr('class', 'card-item col-xs-12 ' + transitionClass + ' ' + cardlist.size);
+        $('body').removeClass('small medium large').addClass(cardlist.size + ' ' + transitionClass);
     };
-
-    this.setHeight = function(el, size) {
-        var $el = $(el),
-            size = size || cardlist.size
-            height = 0;
-            if(size === 'medium'){
-                height = $el.find('.medium-show').outerHeight(true);
-                height += (parseInt($el.find('.info-column').css('padding-top'),10) * 2);
-            } else if(size === 'large'){
-                height = $el.find('.info-column').outerHeight(true);
-            } else{
-                height = 145;
-            }
-
-            $el.css({'max-height': height + 'px'});
-    }
 
     this.scrollWatch = function() {
         var scrollPos = $(window).scrollTop();
@@ -222,8 +155,8 @@ function CardList() {
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.setColors();
-        events.publish('sort.update', {});
         cardlist.buildList(GLOBALS.data.players);
+        events.publish('sort.update', {});
     }
 
     this.filter = function(e){
@@ -258,7 +191,7 @@ function CardList() {
         });
         setTimeout(function(){
             $('body').removeClass('rebuilding');
-        },750);
+        },1000);
     }
 
     this.init();

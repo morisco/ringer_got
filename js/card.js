@@ -9,7 +9,6 @@ function Card(id, data){
     this.infoTemplateSource = $("#info-template").html();
     this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
 
-
     this.init = function(){
         this.initEvents();
     };
@@ -17,6 +16,7 @@ function Card(id, data){
     this.initEvents = function(){
         events.subscribe('filter.update', this.filter);
         events.subscribe('sort.update', this.sort);
+        events.subscribe('size.update', this.size);
         this.el.on('mouseenter', this.loadGifs)
         this.el.find('.has-media').on('mouseenter', this.showMedia);
         this.el.find('.has-media').on('tap', this.showMedia);
@@ -26,10 +26,12 @@ function Card(id, data){
 
 
     this.toggleCard = function(e) {
+        card.el.toggleClass('expanded-card');
+        $('body').removeClass('small medium large');
         if(card.el.hasClass('expanded-card')){
-            card.el.removeClass('small medium large expanded expanded-card').addClass(card.size);
+            $('body').addClass('large');
         } else {
-            card.el.removeClass('small medium large expanded').addClass('large expanded-card')
+            $('body').addClass(card.size);
         }
     }
 
@@ -74,12 +76,16 @@ function Card(id, data){
 
     this.sort = function(){
 
-    }
+    };
+
+    this.size = function(obj){
+        card.size = obj.size;
+    };
 
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        var delay = $('body').hasClass('mobile') ? 2000 : 1000;
+        var delay = $('body').hasClass('mobile') ? 2000 : 1500;
         setTimeout(function(){
             $(card.el).find('.info-column').html(card.infoTemplate(card.data));
         }, delay);
