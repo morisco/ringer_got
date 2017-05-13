@@ -102,11 +102,13 @@ function CardList() {
     };
 
     this.openPlayer = function() {
-        var openCard = $('.card-item[data-id="' + GLOBALS.player + '"]');
-        var openScollPos = openCard.offset().top - 100;
-        var timeout = false;
+        var timeout = false,
+            openCard = $('.card-item[data-id="' + GLOBALS.player + '"]'),
+            openScrollPos = openCard.offset().top,
+            scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100;
+
         $('body').addClass('filter-fixed');
-        $('body,html').animate({scrollTop: openScollPos}, function(){
+        $('body,html').animate({scrollTop: openScrollPos - scrollOffset}, function(){
             clearTimeout(timeout);
             timeout = setTimeout(function(){
                 events.publish('card.expanded', {id: GLOBALS.player})
