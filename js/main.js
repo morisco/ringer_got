@@ -107,14 +107,17 @@ function CardList() {
             openScrollPos = openCard.offset().top,
             scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100;
 
-        $('body').addClass('filter-fixed');
-        $('body,html').animate({scrollTop: openScrollPos - scrollOffset}, function(){
-            clearTimeout(timeout);
-            timeout = setTimeout(function(){
-                events.publish('card.expanded', {id: GLOBALS.player})
-                $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
-            },100);
-        });
+        setTimeout(function(){
+            $('body,html').animate({scrollTop: openScrollPos - scrollOffset}, function(){
+                $('body').addClass('filter-fixed');
+                clearTimeout(timeout);
+                timeout = setTimeout(function(){
+                    events.publish('card.expanded', {id: GLOBALS.player})
+                    $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
+                },100);
+            });    
+        }, 500);
+
     }
 
     this.changeSize = function(e, size){
