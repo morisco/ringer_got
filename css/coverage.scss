@@ -94,3 +94,9 @@
 #coverage-footer .more-coverage a:nth-child(5){
     margin-left:30px;
 }
+
+@media(max-width:767px){
+    .more-coverage{
+        padding-bottom:0;
+    }
+}

@@ -156,7 +156,7 @@ function CardList() {
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.setColors();
         cardlist.buildList(GLOBALS.data.players);
-        events.publish('sort.update', {});
+        events.publish('sort.update', {sort: cardlist.sort_id});
     }
 
     this.filter = function(e){

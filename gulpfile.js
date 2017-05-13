@@ -13,7 +13,7 @@ gulp.task('sass', function () {
     gulp.src('./css/*.scss')
           .pipe(concat('all.scss'))
           .pipe(sass().on('error', sass.logError))
-          .pipe(cleanCSS({compatibility: 'ie8'}))
+        //   .pipe(cleanCSS({compatibility: 'ie8'}))
           .pipe(gulp.dest('./dist/css'));
 });
 

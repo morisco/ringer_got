@@ -172,6 +172,14 @@ h3 .brand{
     color:#f23208;
 }
 
+#main-content{
+    position:relative;
+    &:after{
+        content:'';
+        clear:both;
+        display:table;
+    }
+}
 
 #content{
     width:100%;
@@ -273,7 +281,7 @@ h3 .brand{
     }
 }
 
-@media(max-width:1300px){
+@media(max-width:1400px){
     #content{
         padding: 0 30px;
     }
@@ -284,33 +292,9 @@ h3 .brand{
         padding: 0 20px;
     }
 
-    #filters{
-        float:none;
-        width:100%;
-    }
-
-    #filters .switcher{
-        display:inline-block;
-    }
-
-    #filters a {
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        margin-left:15px;
-        margin-bottom:0;
-    }
-
-    #item-list{
-        width:100%;
-    }
-
-    .card-item .info-column .player-stats ul li{
-        padding:0 4px 25px;
-    }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1100px) {
     header {
         background-size: auto 100%;
     }
@@ -320,7 +304,8 @@ h3 .brand{
     }
 
     .disclaimer{
-        width:calc(100% - 325px);
+        padding:0;
+        text-align:center;
     }
 }
 
@@ -378,70 +363,6 @@ h3 .brand{
     header .heading-wrapper img.header-text{
         margin-top:32px;
         margin-left:0;
-    }
-
-
-    #filters{
-        width:100%;
-        margin-bottom:20px;
-    }
-
-    #item-list{
-        width:100%;
-        margin-left:0px;
-        float:none;
-    }
-
-    .disclaimer{
-        width:100%;
-    }
-
-    .food-item .wrapper{
-        padding-left:0;
-    }
-
-    #filters{
-        text-align:center;
-    }
-
-    #filters a{
-        display:none;
-        margin:0;
-    }
-
-    #filters a:hover{
-        color:#f23208;
-    }
-
-    #filters a.active{
-        position:relative;
-        display:inline-block;
-        padding-right: 35px;
-        min-width:100px;
-        transform:translateX(17px);
-        -webkit-transform:translateX(17px);
-        -moz-transform:translateX(17px);
-    }
-
-    #filters a.active:before{
-        display:none;
-    }
-
-    #filters a.active:after{
-        content:'';
-        display:block;
-        position:absolute;
-        right: 11px;
-        top: 6.5px;
-        width: 16px;
-        height:10px;
-        background-image:url(../img/toggle.png);
-        background-image:url(../img/arrow.svg);
-    }
-
-    #filters a.active,
-    #filters a.active:hover{
-        text-shadow: none;
     }
 
     .filters-open #item-list,

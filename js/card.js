@@ -5,6 +5,7 @@ function Card(id, data){
     this.id = id;
     this.el = $('.card-item[data-id="'+this.id+'"]');
     this.size = 'medium';
+    this.sort = GLOBALS.current_sort;
 
     this.infoTemplateSource = $("#info-template").html();
     this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
@@ -15,9 +16,11 @@ function Card(id, data){
 
     this.initEvents = function(){
         events.subscribe('filter.update', this.filter);
-        events.subscribe('sort.update', this.sort);
+        events.subscribe('sort.update', this.sortChange);
         events.subscribe('size.update', this.size);
-        this.el.on('mouseenter', this.loadGifs)
+        this.el.on('mouseenter', this.loadGifs);
+        this.el.on('mouseenter', this.showColor);
+        this.el.on('mouseleave', this.hideColor);
         this.el.find('.has-media').on('mouseenter', this.showMedia);
         this.el.find('.has-media').on('tap', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
@@ -27,12 +30,21 @@ function Card(id, data){
 
     this.toggleCard = function(e) {
         card.el.toggleClass('expanded-card');
-        $('body').removeClass('small medium large');
         if(card.el.hasClass('expanded-card')){
-            $('body').addClass('large');
-        } else {
-            $('body').addClass(card.size);
+            card.hideColor();
         }
+    }
+
+    this.showColor = function(){
+        if(!card.el.hasClass('expanded-card') && ($('body').hasClass('small') || $('body').hasClass('medium'))){
+            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+        }
+    }
+
+    this.hideColor = function(){
+        card.el.find('.info-column').removeAttr('style');
+        card.el.find('.info-column .stat-wrap').removeAttr('style');
     }
 
     this.showMedia = function() {
@@ -74,8 +86,8 @@ function Card(id, data){
         },500)
     };
 
-    this.sort = function(){
-
+    this.sortChange = function(obj){
+        card.sort = obj.sort;
     };
 
     this.size = function(obj){

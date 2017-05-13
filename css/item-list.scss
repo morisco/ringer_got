@@ -446,8 +446,169 @@
     opacity: 1;
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1260px){
+    #item-list{
+        width:1003px;
+    }
+}
+
+@media(max-width: 1200px){
+    #item-list{
+        width:100%;
+    }
+}
+
+
+@media(max-width: 1023px){
     #item-list{
         width: 100%;
+    }
+    .card-item{
+        .rank-column{
+            .ringer-coverage{
+                display:none;
+            }
+        }
+
+        .info-column{
+            .more-ringer-coverage{
+                display:block;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width:767px){
+    #item-list{
+        max-width:450px;
+        margin:0 auto;
+    }
+
+    .card-item{
+        max-width:500px;
+        margin-bottom:20px;
+        .rank-column{
+            position:relative;
+            top:auto;
+            left:auto;
+            bottom:auto;
+            right:auto;
+            width:100%;
+            max-width: 100%;
+            max-height: 220px;
+            height: 220px;
+            overflow:hidden;
+            padding:30px 20px;
+            @include transition(all, 0s, linear, 0s);
+            .rank{
+                font-size:117px;
+                left:15px;
+                top:15px;
+                right:auto;
+            }
+            img{
+                margin-left:auto;
+                top: 0;
+                width:100%;
+                margin-top:auto;
+            }
+        }
+        .info-column{
+            width: 100%;
+            max-width:100%;
+            float:none;
+            min-width:auto;
+            padding:20px 15px;
+            h3{
+                font-size:40px;
+            }
+            .player-main{
+                width:100%;
+                max-width:100%;
+            }
+            .player-meta{
+                padding: 15px 0;
+                width:100%;
+                float:none;
+                margin-bottom:30px;
+                clear:both;
+                .medium-column{
+                    width:100%;
+                    float:none;
+                }
+            }
+            .player-description{
+                padding-right:0;
+                margin-top:15px;
+            }
+            .player-stat-image{
+                width:100%;
+                float:none;
+                margin-bottom:30px;
+                padding-left:0;
+            }
+            .player-stats{
+                max-height:100%;
+                height:auto;
+
+                ul{
+                    margin-top:10px;
+                    width: calc(100% + 8px);
+                    text-align: center;
+                    margin-left: -4px;
+                    &:after{
+                        clear:both;
+                        display:table;
+                        content:'';
+                    }
+
+                    .medium-column:first-of-type{
+                        padding-right:0;
+                    }
+
+                    li{
+                        position: relative;
+                        display: block;
+                        width: 25%;
+                        max-width: 25%;
+                        padding: 0 5.5px;
+                        margin-bottom: 0;
+                        float: left;
+                        &:nth-child(n+5){
+                            display:none;
+                            margin-top:10px
+                        }
+                        span.detail{
+                            position:relative;
+                            bottom:auto;
+                            font-size:10px;
+                            margin: 5px 0 0;
+                        }
+                    }
+                }
+            }
+            .player-info{
+                display:none;
+                overflow:visible;
+                padding-left:0;
+            }
+            .player-social{
+                margin:0;
+            }
+            .player-plus-minus {
+                ul{
+                    margin-bottom: 15px;
+                }
+            }
+
+            .medium-show{
+                padding-left:0;
+            }
+        }
+        .toggle-card{
+            bottom:20px;
+            right:20px;
+        }
     }
 }
