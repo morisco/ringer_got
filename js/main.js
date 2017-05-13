@@ -109,7 +109,7 @@ function CardList() {
         $('body,html').animate({scrollTop: openScollPos}, function(){
             clearTimeout(timeout);
             timeout = setTimeout(function(){
-                openCard.addClass('expanded-card');
+                events.publish('card.expanded', {id: GLOBALS.player})
                 $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
             },100);
         });

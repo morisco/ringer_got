@@ -3,7 +3,7 @@ function Card(id, data){
 
     this.data = data;
     this.id = id;
-    this.el = $('.card-item[data-id="'+this.id+'"]');
+    this.el = $('.card-item[data-id="'+this.data.filter_id+'"]');
     this.size = 'medium';
     this.sort = GLOBALS.current_sort;
 
@@ -15,9 +15,6 @@ function Card(id, data){
     };
 
     this.initEvents = function(){
-        events.subscribe('filter.update', this.filter);
-        events.subscribe('sort.update', this.sortChange);
-        events.subscribe('size.update', this.size);
         this.el.on('click.whole', this.toggleWholeCard);
         this.el.on('mouseenter', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
@@ -26,7 +23,18 @@ function Card(id, data){
         this.el.find('.has-media').on('tap', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
+        events.subscribe('filter.update', this.filter);
+        events.subscribe('sort.update', this.sortChange);
+        events.subscribe('size.update', this.size);
+        events.subscribe('card.expanded', this.openPlayer);
     };
+
+    this.openPlayer = function(obj){
+        if(obj.id === card.data.filter_id){
+            card.el.off('click.whole');
+            card.toggleCard();
+        }
+    }
 
     this.toggleCard = function(e) {
         card.el.toggleClass('expanded-card');

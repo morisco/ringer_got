@@ -80,6 +80,8 @@
         $player->meta       = json_decode($player->meta);
         $player->shot_chart = json_decode($player->shot_chart);
         $player->size_class = 'medium';
+        $player->position_group = strtolower($player->position_group);
+
         if($player_id && $player->filter_id === $player_id){
             $featured_player = $player;
         }
