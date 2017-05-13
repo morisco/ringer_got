@@ -191,6 +191,7 @@ function CardList() {
 
     this.buildList = function() {
         var playerCount = 0;
+        $('html,body').animate({scrollTop: (cardlist.filterOffsetPos + 1)})
         _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
             player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});
             if(player){
