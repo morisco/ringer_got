@@ -56,8 +56,8 @@ function CardList() {
 
     this.initEvents = function() {
 
-        $('#filters a').on('click', this.filter);
-        $('#filter-bar').on('click', 'a', this.sort);
+        $('#filters').on('click', 'a', this.filter);
+        $('#filter-bar').on('click', '.filter:not(.active_filter)', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
@@ -105,7 +105,8 @@ function CardList() {
         var timeout = false,
             openCard = $('.card-item[data-id="' + GLOBALS.player + '"]'),
             openScrollPos = openCard.offset().top,
-            scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100;
+            scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100,
+            delay = $(window).width() < 768 ? 500 : 0;
 
         setTimeout(function(){
             $('body,html').animate({scrollTop: openScrollPos - scrollOffset}, function(){
@@ -115,8 +116,8 @@ function CardList() {
                     events.publish('card.expanded', {id: GLOBALS.player})
                     $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
                 },100);
-            });    
-        }, 500);
+            });
+        }, delay);
 
     }
 
@@ -153,8 +154,10 @@ function CardList() {
 
     this.sort = function(e){
         e.preventDefault();
+        e.stopPropagation();
         var player,
             coverage_count = 5;
+
 
         $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');

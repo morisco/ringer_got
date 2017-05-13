@@ -1097,8 +1097,7 @@ body .card-item.expanded-card .ringer-coverage {
   margin: 0 auto 60px;
   padding: 0;
   z-index: 5;
-  overflow: hidden;
-  transition: max-width .5s linear, position 0s linear 0.0625s; }
+  overflow: hidden; }
 
 #filter-bar {
   border: 2px solid #000;
@@ -1107,7 +1106,7 @@ body .card-item.expanded-card .ringer-coverage {
   height: 100%;
   width: 100%;
   background: #fff; }
-  #filter-bar a {
+  #filter-bar div.filter {
     position: relative;
     display: block;
     float: left;
@@ -1124,20 +1123,48 @@ body .card-item.expanded-card .ringer-coverage {
     color: #000;
     line-height: 1;
     text-align: center;
-    vertical-align: middle; }
-    #filter-bar a:last-of-type {
+    vertical-align: middle;
+    cursor: pointer; }
+    #filter-bar div.filter:last-of-type {
       border-right: 0; }
-    #filter-bar a.large {
+    #filter-bar div.filter.large {
       width: 22.5%; }
-    #filter-bar a.active_filter {
+    #filter-bar div.filter.active_filter {
       background: #000;
       color: #fff; }
-    #filter-bar a span {
+      #filter-bar div.filter.active_filter .filter-wrapper a {
+        display: inline-block; }
+    #filter-bar div.filter .filter-wrapper {
       position: absolute;
       left: 0;
       right: 0;
       top: 50%;
-      margin-top: -5px; }
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #filter-bar div.filter .filter-wrapper img {
+        max-height: 35px;
+        width: auto;
+        margin-right: 5px; }
+      #filter-bar div.filter .filter-wrapper span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 2px; }
+      #filter-bar div.filter .filter-wrapper a {
+        display: none;
+        margin-left: 5px;
+        height: 16px;
+        width: 20px;
+        margin-top: 2px;
+        background-image: url("../../img/twitter-silo.png");
+        background-image: url("../../img/twitter-silo.svg");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-top: -1px; }
 
 .filter-fixed #filter-bar-wrapper {
   position: fixed;
@@ -1146,13 +1173,14 @@ body .card-item.expanded-card .ringer-coverage {
   transform: translateX(-50%);
   padding: 0;
   max-width: 100%;
-  max-height: 50px;
-  transition: max-width 0.125s linear, position 0s linear .25s; }
+  max-height: 50px; }
   .filter-fixed #filter-bar-wrapper #filter-bar {
     border-radius: 0;
     border-top: 0px;
     border-right: 0;
     border-left: 0; }
+    .filter-fixed #filter-bar-wrapper #filter-bar div.filter .filter-wrapper img {
+      max-height: 35px; }
 
 @media (max-width: 1200px) {
   #filter-bar-wrapper {
@@ -1597,6 +1625,7 @@ body #item-list.filtered.forward .card-item.forward {
       display: table; }
   .card-item h3 {
     font-family: 'TIMMONS NY';
+    font-weight: normal;
     font-size: 60px;
     line-height: .75;
     font-weight: normal;
@@ -1627,6 +1656,7 @@ body #item-list.filtered.forward .card-item.forward {
     padding: 30px 25px; }
     .card-item .rank-column .rank {
       font-family: 'TIMMONS NY';
+      font-weight: normal;
       font-size: 120px;
       position: absolute;
       top: 30px;
@@ -1708,6 +1738,7 @@ body #item-list.filtered.forward .card-item.forward {
               letter-spacing: 0.05em; }
             .card-item .info-column .player-stats ul li span.number {
               font-family: 'TIMMONS NY';
+              font-weight: normal;
               font-size: 43px;
               margin: 13px 0 0;
               text-align: center;
@@ -1788,70 +1819,70 @@ body #item-list.filtered.forward .card-item.forward {
       /*this will be removed, determined by image size*/
       z-index: 2;
       padding-bottom: 5%; }
-      .card-item .info-column .player-stat-image > div {
+      .card-item .info-column .player-stat-image > div.stat-image-wrapper {
         position: relative;
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.08);
         border-radius: 9px;
         overflow: hidden; }
-        .card-item .info-column .player-stat-image > div .default {
+        .card-item .info-column .player-stat-image > div.stat-image-wrapper .default {
           visibility: visible;
           opacity: 1; }
-          .card-item .info-column .player-stat-image > div .default svg {
+          .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg {
             position: relative;
             z-index: 0;
             /* Zones */
             /* Strokes */ }
-            .card-item .info-column .player-stat-image > div .default svg .zone {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .zone {
               fill: #fff; }
-            .card-item .info-column .player-stat-image > div .default svg .rank-1 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-1 {
               fill: #c2ef35; }
-            .card-item .info-column .player-stat-image > div .default svg .rank-2 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-2 {
               fill: #ffce00; }
-            .card-item .info-column .player-stat-image > div .default svg .rank-3 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-3 {
               fill: #ff8b00; }
-            .card-item .info-column .player-stat-image > div .default svg .rank-4 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-4 {
               fill: #ff551a; }
-            .card-item .info-column .player-stat-image > div .default svg .rank-5 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-5 {
               fill: #ff002b; }
-            .card-item .info-column .player-stat-image > div .default svg .cls-6, .card-item .info-column .player-stat-image > div .default svg .cls-7, .card-item .info-column .player-stat-image > div .default svg .cls-8 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-6, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-7, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-8 {
               fill: none; }
-            .card-item .info-column .player-stat-image > div .default svg .cls-6, .card-item .info-column .player-stat-image > div .default svg .cls-7 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-6, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-7 {
               stroke: #000;
               stroke-linejoin: round;
               stroke-width: 7px; }
-            .card-item .info-column .player-stat-image > div .default svg .cls-7 {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-7 {
               opacity: 0.2; }
-          .card-item .info-column .player-stat-image > div .default .chart-numbers {
+          .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             z-index: 1; }
-            .card-item .info-column .player-stat-image > div .default .chart-numbers > div {
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div {
               width: 14.5%;
               height: 13%;
               position: absolute; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div span {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div span {
                 display: block;
                 text-align: center; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div .percentage {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div .percentage {
                 margin-bottom: -5px;
                 font-size: 14px;
                 font-weight: 800; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div .fga {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div .fga {
                 font-size: 11px;
                 text-align: center;
                 font-weight: 500; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.left-wing {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.left-wing {
                 left: 8%;
                 bottom: 14.3%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.right-wing {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.right-wing {
                 right: 8%;
                 bottom: 14.3%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.top-of-key {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.top-of-key {
                 left: 50%;
                 -moz-transform: translateX(-50%);
                 -o-transform: translateX(-50%);
@@ -1859,7 +1890,7 @@ body #item-list.filtered.forward .card-item.forward {
                 -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
                 bottom: 8.6%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.mid {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.mid {
                 left: 50%;
                 -moz-transform: translateX(-50%);
                 -o-transform: translateX(-50%);
@@ -1867,7 +1898,7 @@ body #item-list.filtered.forward .card-item.forward {
                 -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
                 top: 34.6%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.at-rim {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.at-rim {
                 left: 50%;
                 -moz-transform: translateX(-50%);
                 -o-transform: translateX(-50%);
@@ -1875,25 +1906,25 @@ body #item-list.filtered.forward .card-item.forward {
                 -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
                 top: 4.4%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.left-mid {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.left-mid {
                 left: 16.6%;
                 top: 20.5%; }
-              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.right-mid {
+              .card-item .info-column .player-stat-image > div.stat-image-wrapper .default .chart-numbers > div.right-mid {
                 right: 16.6%;
                 top: 20.5%; }
-        .card-item .info-column .player-stat-image > div .plus-minus-media {
+        .card-item .info-column .player-stat-image > div.stat-image-wrapper .plus-minus-media {
           visibility: hidden;
           opacity: 0; }
-          .card-item .info-column .player-stat-image > div .plus-minus-media.visible {
+          .card-item .info-column .player-stat-image > div.stat-image-wrapper .plus-minus-media.visible {
             visibility: visible;
             opacity: 1; }
-          .card-item .info-column .player-stat-image > div .plus-minus-media img {
+          .card-item .info-column .player-stat-image > div.stat-image-wrapper .plus-minus-media img {
             position: absolute;
             height: 100%;
             width: auto;
             left: 50%;
             transform: translateX(-50%); }
-        .card-item .info-column .player-stat-image > div > div:not(:first-of-type) {
+        .card-item .info-column .player-stat-image > div.stat-image-wrapper > div.plus-minus-media {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -1901,6 +1932,15 @@ body #item-list.filtered.forward .card-item.forward {
           left: 0;
           background-size: cover;
           background-position: center center; }
+      .card-item .info-column .player-stat-image .charts-by {
+        margin-top: 5px;
+        font-size: 11px;
+        text-align: center;
+        font-weight: 500;
+        text-align: right; }
+        .card-item .info-column .player-stat-image .charts-by a {
+          color: #000;
+          text-decoration: underline; }
       .card-item .info-column .player-stat-image.media-shown div.default {
         visibility: hidden;
         opacity: 0; }

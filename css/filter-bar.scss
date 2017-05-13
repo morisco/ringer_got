@@ -8,7 +8,6 @@
     padding: 0;
     z-index:5;
     overflow:hidden;
-    transition: max-width .5s linear, position 0s linear 0.0625s;
 }
 
 #filter-bar{
@@ -18,7 +17,7 @@
     height: 100%;
     width: 100%;
     background: $white;
-    a{
+    div.filter{
         position:relative;
         display:block;
         float:left;
@@ -32,6 +31,7 @@
         line-height: 1;
         text-align:center;
         vertical-align:middle;
+        cursor:pointer;
 
         &:last-of-type{
             border-right: 0;
@@ -42,14 +42,41 @@
         &.active_filter{
             background:$black;
             color:$white;
+            .filter-wrapper a{
+                display:inline-block;
+            }
         }
 
-        span{
+        .filter-wrapper{
+            img{
+                max-height: 35px;
+                width:auto;
+                margin-right:5px;
+            }
             position:absolute;
             left:0;
             right:0;
             top: 50%;
-            margin-top: -5px;
+            @include transform(translateY(-50%));
+            span{
+                display:inline-block;
+                vertical-align:middle;
+                margin-top:2px;
+            }
+            a{
+                display:none;
+                margin-left:5px;
+                height:16px;
+                width:20px;
+                margin-top:2px;
+                background-image:url('../../img/twitter-silo.png');
+                background-image:url('../../img/twitter-silo.svg');
+                background-size: 100%;
+                background-position:center center;
+                background-repeat:no-repeat;
+                vertical-align:middle;
+                margin-top:-1px;
+            }
         }
     }
 }
@@ -62,12 +89,18 @@
     padding: 0;
     max-width: 100%;
     max-height: 50px;
-    transition: max-width 0.125s linear, position 0s linear .25s;
     #filter-bar{
         border-radius:0;
         border-top:0px;
         border-right:0;
         border-left:0;
+        div.filter{
+            .filter-wrapper{
+                img{
+                    max-height:35px;
+                }
+            }
+        }
     }
 }
 

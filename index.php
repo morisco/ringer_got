@@ -187,7 +187,7 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Welcome to <i>The Ringer</i>’s  2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. Up your knowledge on a player’s strengths, weaknesses, stats, and comparisons — be the guru of your draft party on June 22.
+                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide, a comprehensive look at our top-60 prospects as rated by our three draftniks, O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
                     <div class="intro-actions">
                         <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor" class="color-theme">kevin o'connor</a></div>
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
@@ -249,11 +249,37 @@
             </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
-                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer"><span>Ringer Picks</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin"><span>Kevin O&rsquo;Connor</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny"><span>Danny Chau</span></a>
-                    <a href="javascript:void(0);" class="large <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan"><span>Jonathan Tjarks</span></a>
-                    <a href="javascript:void(0);" class="small <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az"><span>Sort A-Z</span></a>
+                    <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
+                        <div class="filter-wrapper">
+                            <span>Ringer Picks</span>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Kevin O&rsquo;Connor</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Danny Chau</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
+                        <div class="filter-wrapper">
+                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
+                            <span>Jonathan Tjarks</span>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
+                        </div>
+                    </div>
+                    <div class="small filter <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az">
+                        <div class="filter-wrapper">
+                            <span>Sort A-Z</span>
+                        </div>
+                    </div>
                 </div>
             </section>
             <div id="main-content">

@@ -56,12 +56,12 @@
                 </div>
                 <div class="player-description">
                     <div class="player-headline">{{{summary}}}</div>
-                    <div class="player-subline"><strong>ROLE MODELS: </strong>{{role_models}}</div>
+                    <div class="player-subline"><strong>BEST CASE SCENARIO: </strong>{{role_models}}</div>
                 </div>
             </div>
             <div class="player-info">
                 <div class="player-stat-image">
-                    <div>
+                    <div class="stat-image-wrapper">
                         <div class="default">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 697.33">
                                 <title>shot chart master file (2)</title>
@@ -120,6 +120,7 @@
                                 </div>
                             </div>
                         </div>
+
                         {{#each plus}}
                             {{#if this.media}}
                                 <div class="plus-minus-media" data-id="{{this.media}}" ><img data-src="{{this.media}}" /></div>
@@ -131,6 +132,9 @@
                                 <div class="plus-minus-media" data-id="{{this.media}}"><img data-src="{{this.media}}" /></div>
                             {{/if}}
                         {{/each}}
+                    </div>
+                    <div class="charts-by">
+                        Shot chart data provided by <a href="https://twitter.com/chart_side?lang=en" target="_blank">Chart Side</a>.
                     </div>
                 </div>
                 <div class="player-plus-minus">

@@ -7,6 +7,11 @@
     letter-spacing:0.05em;
 }
 
+@mixin timmons-text{
+    font-family: 'TIMMONS NY';
+    font-weight: normal;
+}
+
 @mixin value-text{
     font-size:14px;
 }

@@ -68,7 +68,7 @@ body #item-list.filtered{
     }
 
     h3{
-        font-family: 'TIMMONS NY';
+        @include timmons-text;
         font-size: 60px;
         line-height: .75;
         font-weight: normal;
@@ -100,7 +100,7 @@ body #item-list.filtered{
         max-width: 18.25%;
         padding: 30px 25px;
         .rank{
-            font-family: 'TIMMONS NY';
+            @include timmons-text;
             font-size:120px;
             position:absolute;
             top:30px;
@@ -191,7 +191,7 @@ body #item-list.filtered{
                             @include label-text;
                         }
                         &.number{
-                            font-family: 'TIMMONS NY';
+                            @include timmons-text;
                             font-size: 43px;
                             margin: 13px 0 0;
                             text-align:center;
@@ -291,7 +291,7 @@ body #item-list.filtered{
             height:auto; /*this will be removed, determined by image size*/
             z-index:2;
             padding-bottom: 5%;
-            > div{
+            > div.stat-image-wrapper{
                 position:relative;
                 height:100%;
                 width:100%;
@@ -379,6 +379,7 @@ body #item-list.filtered{
                         }
                     }
                 }
+
                 .plus-minus-media{
                     visibility:hidden;
                     opacity:0;
@@ -395,7 +396,7 @@ body #item-list.filtered{
                     }
 
                 }
-                > div:not(:first-of-type){
+                > div.plus-minus-media{
                     position:absolute;
                     top:0;
                     bottom:0;
@@ -404,8 +405,15 @@ body #item-list.filtered{
                     background-size:cover;
                     background-position: center center;
                 }
-
-
+            }
+            .charts-by{
+                margin-top:5px;
+                @include detail-text;
+                text-align:right;
+                a{
+                    color:$black;
+                    text-decoration:underline;
+                }
             }
             &.media-shown div.default{
                 visibility:hidden;
