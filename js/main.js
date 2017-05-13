@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var masterList = new CardList();
     var mobile = new Mobile(masterList);
+    
 });
 
 function CardList() {

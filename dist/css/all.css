@@ -1717,10 +1717,10 @@ body #item-list.filtered.forward .card-item.forward {
               opacity: 0;
               padding-top: 2px;
               padding-bottom: 6px;
+              margin-top: -5px;
               font-size: 11px;
               text-align: center;
-              font-weight: 500;
-              margin-top: -5px; }
+              font-weight: 500; }
           .card-item .info-column .player-stats ul li:nth-child(n+5) {
             visibility: hidden;
             opacity: 0;
@@ -1795,16 +1795,99 @@ body #item-list.filtered.forward .card-item.forward {
         background-color: rgba(0, 0, 0, 0.08);
         border-radius: 9px;
         overflow: hidden; }
-        .card-item .info-column .player-stat-image > div.default {
+        .card-item .info-column .player-stat-image > div .default {
           visibility: visible;
           opacity: 1; }
-        .card-item .info-column .player-stat-image > div.plus-minus-media {
+          .card-item .info-column .player-stat-image > div .default svg {
+            position: relative;
+            z-index: 0;
+            /* Zones */
+            /* Strokes */ }
+            .card-item .info-column .player-stat-image > div .default svg .zone {
+              fill: #fff; }
+            .card-item .info-column .player-stat-image > div .default svg .rank-1 {
+              fill: #c2ef35; }
+            .card-item .info-column .player-stat-image > div .default svg .rank-2 {
+              fill: #ffce00; }
+            .card-item .info-column .player-stat-image > div .default svg .rank-3 {
+              fill: #ff8b00; }
+            .card-item .info-column .player-stat-image > div .default svg .rank-4 {
+              fill: #ff551a; }
+            .card-item .info-column .player-stat-image > div .default svg .rank-5 {
+              fill: #ff002b; }
+            .card-item .info-column .player-stat-image > div .default svg .cls-6, .card-item .info-column .player-stat-image > div .default svg .cls-7, .card-item .info-column .player-stat-image > div .default svg .cls-8 {
+              fill: none; }
+            .card-item .info-column .player-stat-image > div .default svg .cls-6, .card-item .info-column .player-stat-image > div .default svg .cls-7 {
+              stroke: #000;
+              stroke-linejoin: round;
+              stroke-width: 7px; }
+            .card-item .info-column .player-stat-image > div .default svg .cls-7 {
+              opacity: 0.2; }
+          .card-item .info-column .player-stat-image > div .default .chart-numbers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1; }
+            .card-item .info-column .player-stat-image > div .default .chart-numbers > div {
+              width: 14.5%;
+              height: 13%;
+              position: absolute; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div span {
+                display: block;
+                text-align: center; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div .percentage {
+                margin-bottom: -5px;
+                font-size: 14px;
+                font-weight: 800; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div .fga {
+                font-size: 11px;
+                text-align: center;
+                font-weight: 500; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.left-wing {
+                left: 8%;
+                bottom: 14.3%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.right-wing {
+                right: 8%;
+                bottom: 14.3%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.top-of-key {
+                left: 50%;
+                -moz-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                bottom: 8.6%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.mid {
+                left: 50%;
+                -moz-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: 34.6%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.at-rim {
+                left: 50%;
+                -moz-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: 4.4%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.left-mid {
+                left: 16.6%;
+                top: 20.5%; }
+              .card-item .info-column .player-stat-image > div .default .chart-numbers > div.right-mid {
+                right: 16.6%;
+                top: 20.5%; }
+        .card-item .info-column .player-stat-image > div .plus-minus-media {
           visibility: hidden;
           opacity: 0; }
-          .card-item .info-column .player-stat-image > div.plus-minus-media.visible {
+          .card-item .info-column .player-stat-image > div .plus-minus-media.visible {
             visibility: visible;
             opacity: 1; }
-          .card-item .info-column .player-stat-image > div.plus-minus-media img {
+          .card-item .info-column .player-stat-image > div .plus-minus-media img {
             position: absolute;
             height: 100%;
             width: auto;

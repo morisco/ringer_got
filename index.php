@@ -77,6 +77,8 @@
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
+        $player->meta       = json_decode($player->meta);
+        $player->shot_chart = json_decode($player->shot_chart);
         $player->size_class = 'medium';
         if($player_id && $player->id === $player_id){
             $featured_player = $player;
@@ -138,7 +140,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The Ringer’s 2017 NBA Draft Guide    </title>
+        <title>The Ringer’s 2017 NBA Draft Guide</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type" content="website" />
@@ -147,7 +149,7 @@
         <meta property="og:image" content="<?php echo $fb_meta['image']; ?>" />
 
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="stylesheet" href="dist/css/all.css">
 
@@ -159,59 +161,6 @@
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <style type="text/css">.stroke{clip-path:url(#SVGID_2_);fill:none;stroke:<?php echo $sort_colors[$sort_list_id]; ?>;stroke-width:2;}.arrow{clip-path:url(#SVGID_4_);fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
-        <style>
-            .cls-1 {
-                fill: #fffb00;
-            }
-
-            .cls-2 {
-                fill: #00d9ff;
-            }
-
-            .cls-3 {
-                fill: #ff4200;
-            }
-
-            .cls-4,
-            .cls-5,
-            .cls-6 {
-                fill: none;
-            }
-
-            .cls-4,
-            .cls-5 {
-                stroke: #000;
-                stroke-linejoin: round;
-                stroke-width: 7px;
-            }
-
-            .cls-5 {
-                opacity: 0.2;
-            }
-
-            .cls-7 {
-                font-size: 38px;
-                font-family: NYTMagSans-Bold, NYTMag Sans;
-            }
-
-            .cls-8 {
-                font-weight: 700;
-            }
-
-            .cls-9 {
-                font-size: 26px;
-                font-family: NYTMagSans-Md, NYTMag Sans;
-                letter-spacing: 0.06em;
-            }
-
-            .cls-10 {
-                letter-spacing: 0.05em;
-            }
-
-            .cls-11 {
-                letter-spacing: 0.03em;
-            }
-        </style>
     </head>
     <body class="<?php echo $bodyClass; ?> medium">
         <!--[if lt IE 8]>

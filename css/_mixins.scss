@@ -7,6 +7,16 @@
     letter-spacing:0.05em;
 }
 
+@mixin value-text{
+    font-size:14px;
+}
+
+@mixin detail-text{
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500;
+}
+
 @mixin filter-sort-text {
     font-size: 13.5px;
     letter-spacing: 0.065em;

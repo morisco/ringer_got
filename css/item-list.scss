@@ -202,10 +202,9 @@ body #item-list.filtered{
                             opacity: 0;
                             padding-top:2px;
                             padding-bottom:6px;
-                            font-size:11px;
-                            text-align:center;
-                            font-weight:500;
                             margin-top:-5px;
+                            @include detail-text;
+
                         }
                     }
 
@@ -273,7 +272,7 @@ body #item-list.filtered{
                         background:rgb(245,245,245);
                         z-index:2;
                         padding: 0 0 0 4px;
-                        font-size:14px;
+                        @include value-text;
                     }
                 }
             }
@@ -299,11 +298,88 @@ body #item-list.filtered{
                 background-color:rgba(0,0,0,0.08);
                 border-radius: 9px;
                 overflow:hidden;
-                &.default{
+                .default{
                     visibility: visible;
-                    opacity: 1;
+                    opacity:1;
+
+                    svg{
+                        position:relative;
+                        z-index:0;
+                        /* Zones */
+                        .zone{ fill:#fff; }
+                        .rank-1 { fill: $rank-1; }
+                        .rank-2 { fill: $rank-2; }
+                        .rank-3 { fill: $rank-3; }
+                        .rank-4 { fill: $rank-4; }
+                        .rank-5 { fill: $rank-5; }
+
+                        /* Strokes */
+                        .cls-6, .cls-7, .cls-8 { fill: none; }
+                        .cls-6, .cls-7 { stroke: #000; stroke-linejoin: round; stroke-width: 7px; }
+                        .cls-7 { opacity: 0.2; }
+                    }
+                    .chart-numbers{
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        right:0;
+                        bottom:0;
+                        z-index:1;
+                        > div{
+                            width:14.5%;
+                            height:13%;
+                            position:absolute;
+                            span{
+                                display:block;
+                                text-align:center;
+                            }
+                            .percentage{
+                                margin-bottom:-5px;
+                                @include value-text;
+                                font-weight:800;
+                            }
+                            .fga{
+                                @include detail-text;
+                            }
+                            &.left-wing{
+                                left:8%;
+                                bottom:14.3%;
+                            }
+
+                            &.right-wing{
+                                right:8%;
+                                bottom:14.3%;
+                            }
+
+                            &.top-of-key{
+                                left:50%;
+                                @include transform(translateX(-50%));
+                                bottom:8.6%;
+                            }
+                            &.mid{
+                                left:50%;
+                                @include transform(translateX(-50%));
+                                top:34.6%;
+                            }
+
+                            &.at-rim{
+                                left:50%;
+                                @include transform(translateX(-50%));
+                                top:4.4%;
+                            }
+
+                            &.left-mid{
+                                left:16.6%;
+                                top:20.5%;
+                            }
+                            &.right-mid{
+                                right:16.6%;
+                                top:20.5%;
+                            }
+                        }
+                    }
                 }
-                &.plus-minus-media{
+                .plus-minus-media{
                     visibility:hidden;
                     opacity:0;
                     &.visible{
