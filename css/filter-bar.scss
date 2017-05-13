@@ -8,74 +8,73 @@
     padding: 0;
     z-index:5;
     overflow:hidden;
-}
-
-#filter-bar{
-    border: 2px solid $black;
-    border-radius: 9px;
-    overflow:hidden;
-    height: 100%;
-    width: 100%;
-    background: $white;
-    div.filter{
-        position:relative;
-        display:block;
-        float:left;
-        width: 16.25%;
-        height: 100%;
+    #filter-bar{
+        border: 2px solid $black;
+        border-radius: 9px;
         overflow:hidden;
-        border-right:2px solid $black;
-        transition: all 0.25s linear;
-        @include filter-sort-text;
-        color:$black;
-        line-height: 1;
-        text-align:center;
-        vertical-align:middle;
-        cursor:pointer;
+        height: 100%;
+        width: 100%;
+        background: $white;
+        div.filter{
+            position:relative;
+            display:block;
+            float:left;
+            width: 16.25%;
+            height: 100%;
+            overflow:hidden;
+            border-right:2px solid $black;
+            transition: all 0.25s linear;
+            @include filter-sort-text;
+            color:$black;
+            line-height: 1;
+            text-align:center;
+            vertical-align:middle;
+            cursor:pointer;
 
-        &:last-of-type{
-            border-right: 0;
-        }
-        &.large{
-            width: 22.5%;
-        }
-        &.active_filter{
-            background:$black;
-            color:$white;
-            .filter-wrapper a{
-                display:inline-block;
+            &:last-of-type{
+                border-right: 0;
             }
-        }
+            &.large{
+                width: 22.5%;
+            }
+            &.active_filter{
+                background:$black;
+                color:$white;
+                .filter-wrapper a{
+                    display:inline-block;
+                }
+            }
 
-        .filter-wrapper{
-            img{
-                max-height: 35px;
-                width:auto;
-                margin-right:5px;
-            }
-            position:absolute;
-            left:0;
-            right:0;
-            top: 50%;
-            @include transform(translateY(-50%));
-            span{
-                display:inline-block;
-                vertical-align:middle;
-                margin-top:2px;
-            }
-            a{
-                display:none;
-                margin-left:5px;
-                height:16px;
-                width:20px;
-                margin-top:2px;
-                background-image:url('../../img/twitter-silo.png');
-                background-image:url('../../img/twitter-silo.svg');
-                background-size: 100%;
-                background-position:center center;
-                background-repeat:no-repeat;
-                vertical-align:middle;
-                margin-top:-1px;
+            .filter-wrapper{
+                img{
+                    max-height: 35px;
+                    width:auto;
+                    margin-right:5px;
+                }
+                position:absolute;
+                left:0;
+                right:0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                span{
+                    display:inline-block;
+                    vertical-align:middle;
+                    margin-top:2px;
+                }
+                a{
+                    display:none;
+                    margin-left:5px;
+                    height:16px;
+                    width:20px;
+                    margin-top:2px;
+                    background-image:url('../../img/twitter-silo.png');
+                    background-image:url('../../img/twitter-silo.svg');
+                    background-size: 100%;
+                    background-position:center center;
+                    background-repeat:no-repeat;
+                    vertical-align:middle;
+                    margin-top:-1px;
+                }
             }
         }
     }
@@ -107,6 +106,13 @@
 @media(max-width:1200px){
     #filter-bar-wrapper{
         margin-bottom:0;
+    }
+}
+
+@media(max-width:1023px){
+    #filter-bar div.filter .filter-wrapper img,
+    #filter-bar div.filter .filter-wrapper a{
+        display:none !important;
     }
 }
 

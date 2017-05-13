@@ -2,10 +2,9 @@
     float:right;
     width:83.75%;
     list-style:none;
-}
-
-#item-list.sorting{
-    opacity: 0;
+    &.sorting{
+        opacity: 0;
+    }
 }
 
 body #item-list.filtered{

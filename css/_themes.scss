@@ -22,114 +22,75 @@ body:not(.mobile):not(.no-transition) .background-theme-after:after{
 }
 
 /* Ringer Theme */
-.ringer .background-theme{
-   background-color: $ringer !important;
+.ringer{
+    .background-theme{
+       background-color: $ringer !important;
+    }
+    .color-theme{
+       color: $ringer !important;
+    }
+    .border-theme{
+       border-color: $ringer !important;
+    }
 }
-
-.ringer .color-theme{
-   color: $ringer !important;
-}
-
-.ringer .border-theme{
-   border-color: $ringer !important;
-}
-
-.ringer .border-theme-before:before{
-    border-color: $ringer !important;
-}
-
-.ringer .background-theme-after:after{
-    background-color: $ringer !important;
-}
-
 
 /* Kevin Theme */
-.kevin .background-theme{
-   background-color: $kevin !important;
-}
+.kevin{
+    .background-theme{
+       background-color: $kevin !important;
+    }
+    .color-theme{
+       color: $kevin !important;
+    }
+    .border-theme{
+       border-color: $kevin !important;
+    }
 
-.kevin .color-theme{
-   color: $kevin !important;
-}
-
-.kevin .border-theme{
-   border-color: $kevin !important;
-}
-
-.kevin .border-theme-before:before{
-    border-color: $kevin !important;
-}
-
-.kevin .background-theme-after:after{
-    background-color: $kevin !important;
 }
 
 
 /* Danny Theme */
-.danny .background-theme{
-   background-color: $danny !important;
-}
+.danny{
+    .background-theme{
+       background-color: $danny !important;
+    }
 
-.danny .color-theme{
-   color: $danny !important;
-}
+    .color-theme{
+       color: $danny !important;
+    }
 
-.danny .border-theme{
-   border-color: $danny !important;
-}
-
-.danny .border-theme-before:before{
-    border-color: $danny !important;
-}
-
-.danny .background-theme-after:after{
-    background-color: $danny !important;
+    .border-theme{
+       border-color: $danny !important;
+    }
 }
 
 
 /* Jonathan Theme */
-.jonathan .background-theme{
-   background-color: $jonathan !important;
-}
+.jonathan {
+    .background-theme{
+       background-color: $jonathan !important;
+    }
 
-.jonathan .color-theme{
-   color: $jonathan !important;
-}
+    .color-theme{
+       color: $jonathan !important;
+    }
 
-.jonathan .border-theme{
-   border-color: $jonathan !important;
-}
-
-.jonathan .border-theme-before:before{
-    border-color: $jonathan !important;
-}
-
-.jonathan .background-theme-after:after{
-    background-color: $jonathan !important;
+    .border-theme{
+       border-color: $jonathan !important;
+    }
 }
 
 /* AZ Theme */
-.az .background-theme{
-   background-color: $az !important;
-}
+.az{
+    .background-theme{
+       background-color: $az !important;
+    }
 
-.az .color-theme{
-   color: $az !important;
-}
+    .color-theme{
+       color: $az !important;
+    }
 
-.az .border-theme{
-   border-color: $az !important;
-}
-
-.az .border-theme-before:before{
-    border-color: $az !important;
-}
-
-.az .background-theme-after:after{
-    background-color: $az !important;
-}
-
-.az .card-item .toggle-card{
-    background-image:url(../../img/toggle-arrow.png);
-    background-image:url(../../img/toggle-arrow.svg);
+    .border-theme{
+       border-color: $az !important;
+    }
 }
