@@ -55,7 +55,6 @@ function CardList() {
 
 
     this.initEvents = function() {
-
         $('#filters').on('click', 'a', this.filter);
         $('#filter-bar').on('click', '.filter:not(.active_filter)', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);

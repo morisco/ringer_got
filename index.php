@@ -321,15 +321,15 @@
         </footer>
 
         <script id="player-card-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/card.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/card.handlebars"); ?>
         </script>
 
         <script id="coverage-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/coverage.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/coverage.handlebars"); ?>
         </script>
 
         <script id="info-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./templates/info.handlebars"); ?>
+            <?php echo file_get_contents("./dist/templates/info.handlebars"); ?>
         </script>
 
         <script type="text/javascript">
