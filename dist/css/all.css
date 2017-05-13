@@ -737,18 +737,18 @@ body .card-item.expanded-card .ringer-coverage {
     body.medium .card-item .info-column .player-meta li {
       visibility: visible;
       opacity: 1; }
-  body.large .card-item,
+  body.large #item-list:not(.filtered) .card-item,
   body .card-item.expanded-card {
     max-height: 100% !important;
     height: auto !important; }
-    body.large .card-item .rank-column,
+    body.large #item-list:not(.filtered) .card-item .rank-column,
     body .card-item.expanded-card .rank-column {
       height: 225px;
       width: 100%;
       max-width: 100%;
       position: relative;
       overflow: hidden; }
-      body.large .card-item .rank-column .rank,
+      body.large #item-list:not(.filtered) .card-item .rank-column .rank,
       body .card-item.expanded-card .rank-column .rank {
         font-family: 'TIMMONS NY';
         font-size: 170px;
@@ -756,7 +756,7 @@ body .card-item.expanded-card .ringer-coverage {
         right: 25px;
         left: auto;
         line-height: 1; }
-      body.large .card-item .rank-column img,
+      body.large #item-list:not(.filtered) .card-item .rank-column img,
       body .card-item.expanded-card .rank-column img {
         margin-left: auto;
         margin-top: -80px;
@@ -765,57 +765,57 @@ body .card-item.expanded-card .ringer-coverage {
         opacity: 1;
         transform: translateX(0);
         max-width: 100%; }
-    body.large .card-item .info-column,
+    body.large #item-list:not(.filtered) .card-item .info-column,
     body .card-item.expanded-card .info-column {
       float: none;
       width: 100%;
       max-width: 100%;
       padding-right: 30px; }
-      body.large .card-item .info-column .player-description,
+      body.large #item-list:not(.filtered) .card-item .info-column .player-description,
       body .card-item.expanded-card .info-column .player-description {
         display: block; }
-      body.large .card-item .info-column .player-meta,
+      body.large #item-list:not(.filtered) .card-item .info-column .player-meta,
       body .card-item.expanded-card .info-column .player-meta {
         padding: 15px 0; }
-        body.large .card-item .info-column .player-meta .medium-column,
+        body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column,
         body .card-item.expanded-card .info-column .player-meta .medium-column {
           width: 100%;
           float: none;
           padding-right: 0; }
-          body.large .card-item .info-column .player-meta .medium-column:first-of-type,
+          body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column:first-of-type,
           body .card-item.expanded-card .info-column .player-meta .medium-column:first-of-type {
             display: block;
             padding-right: 0px; }
-          body.large .card-item .info-column .player-meta .medium-column:nth-child(2),
+          body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column:nth-child(2),
           body .card-item.expanded-card .info-column .player-meta .medium-column:nth-child(2) {
             display: block;
             padding-left: 0; }
-          body.large .card-item .info-column .player-meta .medium-column:nth-child(3),
+          body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column:nth-child(3),
           body .card-item.expanded-card .info-column .player-meta .medium-column:nth-child(3) {
             display: block;
             visibility: visible;
             opacity: 1; }
-            body.large .card-item .info-column .player-meta .medium-column:nth-child(3) li,
+            body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column:nth-child(3) li,
             body .card-item.expanded-card .info-column .player-meta .medium-column:nth-child(3) li {
               visibility: visible;
               opacity: 1; }
-          body.large .card-item .info-column .player-meta .medium-column li,
+          body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column li,
           body .card-item.expanded-card .info-column .player-meta .medium-column li {
             visibility: visible;
             opacity: 1; }
-            body.large .card-item .info-column .player-meta .medium-column li:not(:first-of-type),
+            body.large #item-list:not(.filtered) .card-item .info-column .player-meta .medium-column li:not(:first-of-type),
             body .card-item.expanded-card .info-column .player-meta .medium-column li:not(:first-of-type) {
               display: block; }
-      body.large .card-item .info-column .player-stats ul li,
+      body.large #item-list:not(.filtered) .card-item .info-column .player-stats ul li,
       body .card-item.expanded-card .info-column .player-stats ul li {
         margin-bottom: 17px; }
-      body.large .card-item .info-column .player-stats ul li:nth-child(n+5),
+      body.large #item-list:not(.filtered) .card-item .info-column .player-stats ul li:nth-child(n+5),
       body .card-item.expanded-card .info-column .player-stats ul li:nth-child(n+5) {
         display: inline-block; }
-      body.large .card-item .info-column .player-description,
+      body.large #item-list:not(.filtered) .card-item .info-column .player-description,
       body .card-item.expanded-card .info-column .player-description {
         margin-bottom: 30px; }
-      body.large .card-item .info-column .player-info,
+      body.large #item-list:not(.filtered) .card-item .info-column .player-info,
       body .card-item.expanded-card .info-column .player-info {
         display: block; } }
 
@@ -825,6 +825,12 @@ body .card-item.expanded-card .ringer-coverage {
     padding: 15px 0 15px 15px; }
     body.small .card-item:not(.expanded-card) .rank-column {
       background-color: #F5F5F5 !important; }
+  body.small .filtered .card-item {
+    padding: 0; }
+  body.small .filtered.guard .card-item.guard,
+  body.small .filtered.big .card-item.big,
+  body.small .filtered.forward .card-item.forward {
+    padding: 15px 0 15px 15px; }
   body.small .card-item .rank-column {
     position: relative;
     display: inline-block;
@@ -978,7 +984,8 @@ body .card-item.expanded-card .ringer-coverage {
       body.large .card-item .info-column .player-stats ul li,
       body .card-item.expanded-card .info-column .player-stats ul li {
         max-height: 100%;
-        height: auto; }
+        height: auto;
+        margin-bottom: 15px; }
         body.large .card-item .info-column .player-stats ul li span.detail,
         body .card-item.expanded-card .info-column .player-stats ul li span.detail {
           margin-top: 0; }
@@ -1546,15 +1553,15 @@ header .heading-wrapper {
 #item-list.sorting {
   opacity: 0; }
 
-#item-list.filtered .card-item {
+body #item-list.filtered .card-item {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   margin-bottom: -2px; }
 
-#item-list.filtered.guard .card-item.guard,
-#item-list.filtered.big .card-item.big,
-#item-list.filtered.forward .card-item.forward {
+body #item-list.filtered.guard .card-item.guard,
+body #item-list.filtered.big .card-item.big,
+body #item-list.filtered.forward .card-item.forward {
   max-height: 3000px;
   opacity: 1;
   margin-bottom: 15px; }
