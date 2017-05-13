@@ -39,6 +39,7 @@ function Card(id, data){
     this.toggleCard = function(e) {
         card.el.toggleClass('expanded-card');
         if(card.el.hasClass('expanded-card')){
+            card.el.off('click.whole');
             card.hideColor();
         } else {
             card.el.on('click.whole', card.toggleWholeCard);
