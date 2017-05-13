@@ -8,9 +8,9 @@
     use Handlebars\Handlebars;
 
     $engine = new Handlebars(array(
-        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/templates/'),
+        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/dist/templates/'),
         'partials_loader' => new \Handlebars\Loader\FilesystemLoader(
-            __DIR__ . '/templates/',
+            __DIR__ . '/dist/templates/',
             array(
                 'prefix' => '_'
             )
@@ -155,7 +155,7 @@
 
         <link rel="stylesheet" href="dist/css/all.css">
 
-        <script src="dist/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
         <link rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*w1O1RbAfBRNSxkSC48L1PQ.png">
@@ -350,14 +350,15 @@
         </script>
         <script src="dist/vendor/vendor.js"></script>
         <script src="dist/js/all.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-92628558-1', 'auto');
-            ga('send', 'pageview');
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-98869396-1', 'auto');
+          ga('send', 'pageview');
         </script>
 
     </body>

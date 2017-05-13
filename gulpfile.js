@@ -15,7 +15,7 @@ gulp.task('sass', function () {
     gulp.src('./css/*.scss')
           .pipe(concat('all.scss'))
           .pipe(sass().on('error', sass.logError))
-        //   .pipe(cleanCSS({compatibility: 'ie8'}))
+          .pipe(cleanCSS({compatibility: 'ie8'}))
           .pipe(gulp.dest('./dist/css'));
 });
 
@@ -51,6 +51,6 @@ gulp.task('vendor', function () {
             'js/vendor/*.js'
         ])
         .pipe(concat('vendor.js'))
-        .pipe(uglify())
+        .pipe(uglify({mangle: true}))
         .pipe(gulp.dest('./dist/vendor'))
 });
