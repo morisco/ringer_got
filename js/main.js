@@ -1,10 +1,9 @@
 $(document).ready(function(){
-    setTimeout(function(){
-        var masterList = new CardList();
-    },500);
+    var masterList = new CardList();
+    var mobile = new Mobile(masterList);
 });
 
-var CardList = function() {
+function CardList() {
     var cardlist = this;
 
     this.$el = $('#item-list');
@@ -28,7 +27,7 @@ var CardList = function() {
     this.cards = [];
 
     this.init = function() {
-        this.windowResize();
+        // this.windowResize();
         this.initEvents();
         this.scrollWatch();
         if(this.initial_player){
@@ -59,14 +58,9 @@ var CardList = function() {
         $('#filters a').on('click', this.filter);
         $('#filter-bar').on('click', 'a', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
-
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
 
-        $('#mobile-nav').on('click', '.toggle-zone', this.toggleMobileNav);
-        $('#mobile-nav').on('click', '.sort li', this.mobileSort);
-        $('#mobile-nav').on('click', '.nav-filter a', this.mobileFilter);
-        $('#mobile-nav .nav-switcher').on('click', 'a', this.mobileChangeSize);
         $(window).on('resize', this.windowResize);
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
@@ -82,45 +76,6 @@ var CardList = function() {
         $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
     };
 
-    this.toggleMobileNav = function(){
-        if($(window).scrollTop() < cardlist.filterOffsetPos && !$('#mobile-nav').hasClass('open')){
-            $('body,html').scrollTop((cardlist.filterOffsetPos + 1));
-        }
-
-        $('#mobile-nav').toggleClass('open');
-        if($('#mobile-nav').hasClass('open')){
-            $('body').on("click.clickout", function(e){
-                if(!$(e.target).hasClass('toggle-zone') && $(e.target).parents('#mobile-nav').length == 0){
-                    cardlist.toggleMobileNav();
-                }
-            });
-        } else {
-            $('body').off("click.clickout");
-        }
-
-    };
-
-    this.mobileChangeSize = function(e){
-        e.preventDefault();
-        $('#mobile-nav .nav-switcher a').removeClass('active color-theme');
-        $(e.target).addClass('active color-theme');
-        $('#mobile-nav .size-toggle li[data-size="' + $(this).data('size') + '"]').click();
-        $('#mobile-nav').removeClass('open');
-    }
-
-    this.mobileSort = function(e){
-        e.preventDefault();
-        $('#mobile-nav .sort li').removeClass('active color-theme');
-        $(e.target).addClass('active color-theme');
-        cardlist.sort(e);
-        $('#mobile-nav').removeClass('open');
-    }
-
-    this.mobileFilter = function(e){
-        e.preventDefault();
-        cardlist.filter(e);
-        $('#mobile-nav').removeClass('open');
-    }
 
     this.windowResize = function(){
         var windowWidth = $(window).width();
@@ -129,7 +84,7 @@ var CardList = function() {
             windowWidth = $(window).width();
             cardlist.filterOffsetPos = $('#content').offset().top;
         },250);
-        $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
+        // $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
         if(windowWidth < 1100 && windowWidth > 767 ){
             $('body').removeClass('mobile');
             $('body').addClass('tablet no-transition');
@@ -159,33 +114,18 @@ var CardList = function() {
         });
     }
 
-    this.changeSize = function(e){
+    this.changeSize = function(e, size){
         e.preventDefault();
         var transitionClass;
         cardlist.old_size = cardlist.size;
-        cardlist.size = $(this).data('size');
+        cardlist.size = size || $(this).data('size');
+        events.publish('size.update', {size: cardlist.size});
         transitionClass = cardlist.old_size + '-to-' + cardlist.size;
         $('.size-indicator').attr('class', 'size-indicator').addClass(cardlist.size);
         $('.size-toggle .active').removeClass('active background-theme');
         $(this).addClass('active background-theme');
-        $('.card-item').removeClass('small medium large expanded expanded-card small-to-large small-to-medium medium-to-small medium-to-large large-to-medium large-to-small').addClass(transitionClass + ' ' + cardlist.size);
+        $('body').removeClass('small medium large').addClass(cardlist.size + ' ' + transitionClass);
     };
-
-    this.setHeight = function(el, size) {
-        var $el = $(el),
-            size = size || cardlist.size
-            height = 0;
-            if(size === 'medium'){
-                height = $el.find('.medium-show').outerHeight(true);
-                height += (parseInt($el.find('.info-column').css('padding-top'),10) * 2);
-            } else if(size === 'large'){
-                height = $el.find('.info-column').outerHeight(true);
-            } else{
-                height = 145;
-            }
-
-            $el.css({'max-height': height + 'px'});
-    }
 
     this.scrollWatch = function() {
         var scrollPos = $(window).scrollTop();
@@ -197,8 +137,12 @@ var CardList = function() {
     }
 
     this.setColors = function() {
-        $('body').removeClass('ringer kevin danny johnathan az');
+        var color = GLOBALS.theme_colors[cardlist.sort_id];
+        $('body').removeClass('ringer kevin danny jonathan az');
         $('body').addClass(cardlist.sort_id);
+        $('.stroke').attr('style', 'stroke:' + color + ';');
+        $('.arrow').attr('style', 'fill:' + color + ';');
+
     }
 
     this.sort = function(e){
@@ -206,12 +150,13 @@ var CardList = function() {
         var player,
             coverage_count = 5;
 
+        $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.setColors();
-        events.publish('sort.update', {});
         cardlist.buildList(GLOBALS.data.players);
+        events.publish('sort.update', {sort: cardlist.sort_id});
     }
 
     this.filter = function(e){
@@ -244,6 +189,9 @@ var CardList = function() {
                 }
             }
         });
+        setTimeout(function(){
+            $('body').removeClass('rebuilding');
+        },1000);
     }
 
     this.init();

@@ -1,10 +1,10 @@
-<li class="card-item col-xs-12 {{size_class}} {{className}}" data-id="{{id}}" data-sort-position="{{position_group}}">
+<li class="card-item col-xs-12" data-id="{{id}}" data-sort-position="{{position_group}}">
     <div class="wrapper">
         <div class="rank-column background-theme">
             <!-- <div class="tier">Tier 1</div> -->
             <div class="rank">{{rank}}</div>
             <div class="image">
-                <img src="img/players/{{filter_id}}.png" alt="{{name}}" />
+                <img src="img/players/d_bacon.png" alt="{{name}}" />
             </div>
             {{#if coverage.length}}
                 <div class="ringer-coverage">
@@ -64,61 +64,6 @@
                     <div>
                         <div class="default">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 697.33">
-                                <defs>
-                                    <style>
-                                        .cls-1 {
-                                            fill: #fffb00;
-                                        }
-
-                                        .cls-2 {
-                                            fill: #00d9ff;
-                                        }
-
-                                        .cls-3 {
-                                            fill: #ff4200;
-                                        }
-
-                                        .cls-4,
-                                        .cls-5,
-                                        .cls-6 {
-                                            fill: none;
-                                        }
-
-                                        .cls-4,
-                                        .cls-5 {
-                                            stroke: #000;
-                                            stroke-linejoin: round;
-                                            stroke-width: 7px;
-                                        }
-
-                                        .cls-5 {
-                                            opacity: 0.2;
-                                        }
-
-                                        .cls-7 {
-                                            font-size: 38px;
-                                            font-family: NYTMagSans-Bold, NYTMag Sans;
-                                        }
-
-                                        .cls-8 {
-                                            font-weight: 700;
-                                        }
-
-                                        .cls-9 {
-                                            font-size: 26px;
-                                            font-family: NYTMagSans-Md, NYTMag Sans;
-                                            letter-spacing: 0.06em;
-                                        }
-
-                                        .cls-10 {
-                                            letter-spacing: 0.05em;
-                                        }
-
-                                        .cls-11 {
-                                            letter-spacing: 0.03em;
-                                        }
-                                    </style>
-                                </defs>
                                 <title>shot chart master file (1)</title>
                                 <g id="color_fill_zones" data-name="color fill zones">
                                     <rect class="cls-1" y="0.08" width="84.96" height="173.89" />
@@ -280,10 +225,12 @@
                 </h6>
                 <div class="player-social">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%253A%252F%252Fmikemorisco.com%252Fringer%252Fnba%252F%3Fplayer%3D{{id}}" target="_blank" class="facebook">Share To Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?url=http://mikemorisco.com/ringer/nba/?player={{id}}&text={{twitter_share}}" target="_blank" class="twitter">Share To Twitter</a>
+                    <a href="https://twitter.com/intent/tweet?url=http://nbadraft.theringer.com/?player={{filter_id}}&text=Everything you need to know about {{name}} from @ringer’s 2017 NBA Draft Guide" target="_blank" class="twitter">Share To Twitter</a>
                 </div>
             </div>
         </div>
-        <div class="toggle-card"></div>
+        <div class="toggle-card">
+            <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><g><g><defs><rect id="SVGID_1_" x="1" y="1" width="30" height="30"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible;"/></clipPath><circle class="stroke" cx="16" cy="16" r="14"/></g><g><defs><rect id="SVGID_3_" x="1" y="1" width="30" height="30"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible;"/></clipPath><path class="arrow" d="M13.9,19.1c0,0,2,2.3,4,0l3.5-4c0,0,2-2.3-1-2.3h-9c0,0-3,0-1,2.3L13.9,19.1z"/></g></g></svg>
+        </div>
     </div>
 </li>

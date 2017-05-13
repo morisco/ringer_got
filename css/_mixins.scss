@@ -14,3 +14,19 @@
     font-weight: 500;
     text-transform: uppercase;
 }
+
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out, $delay: 0s ) {
+    -webkit-transition: $what $time $how $delay;
+    -moz-transition:    $what $time $how $delay;
+    -ms-transition:     $what $time $how $delay;
+    -o-transition:      $what $time $how $delay;
+    transition:         $what $time $how $delay;
+}
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}

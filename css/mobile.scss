@@ -6,7 +6,7 @@
     display:none;
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
 
     .is-mobile{
         display:inline-block;
@@ -26,11 +26,11 @@
         display:block;
         width:100%;
         border-radius:5px;
-        background:#fff;
+        background:$white;
         padding:10px 0;
-        border:1px solid #000;
-        background-image:url('../img/mobile-nav-arrow.png');
-        background-image:url('../img/mobile-nav-arrow.svg');
+        border:1px solid $black;
+        background-image:url('../../img/mobile-nav-arrow.png');
+        background-image:url('../../img/mobile-nav-arrow.svg');
         background-position: right 15px center;
         background-size: 11px;
         background-repeat:no-repeat;
@@ -46,6 +46,15 @@
         z-index:5;
         height:44px;
     }
+    .mobile #mobile-nav .toggle-close{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:transparent;
+        z-index:0;
+    }
 
     .mobile #mobile-nav .toggle{
         float:left;
@@ -53,8 +62,8 @@
         height:20px;
         margin-right:20px;
         margin-left:15px;
-        background-image:url('../img/toggle.png');
-        background-image:url('../img/toggle.svg');
+        background-image:url('../../img/toggle.png');
+        background-image:url('../../img/toggle.svg');
         background-size:100%;
         background-position:center center;
     }
@@ -75,7 +84,9 @@
 
     .mobile #mobile-nav.open .nav-contents,
     .mobile #mobile-nav.open .nav-contents .current-sort{
+        position:relative;
         display:block;
+        z-index:1;
     }
 
     .mobile #mobile-nav.open{
@@ -136,7 +147,7 @@
 
     .mobile #mobile-nav .nav-contents .nav-actions a{
         display:block;
-        color:#000;
+        color:$black;
         text-transform:uppercase;
         margin-bottom:5px;
     }
@@ -179,7 +190,6 @@
         background: #e6e6e6;
         vertical-align:top;
         z-index:1;
-        transition: background-color 0.125s linear;
     }
 
 
@@ -220,27 +230,6 @@
         font-size:40px;
     }
 
-    .mobile #intro{
-        width:calc(100% - 30px);
-        margin-left: 15px;
-        margin-right: 15px;
-        padding:0;
-        font-size:16px;
-        text-align:left;
-        margin-bottom:30px;
-    }
-
-    .mobile #intro .intro-wrapper{
-        padding: 20px 20px 0;
-    }
-
-    .mobile #intro .ringer-draft-coverage{
-        display:block;
-        margin-bottom:15px;
-        position:relative;
-        max-width:100%;
-        font-size:11px;
-    }
 
     .mobile #content{
         padding:0 15px;
@@ -251,242 +240,49 @@
         padding-top:75px;
     }
 
-    .mobile .card-item{
-        height:auto;
-        max-height: 100% !important;
+    .more-coverage{
+        h3{
+            font-size:45px;
+        }
+        div{
+            a{
+                width:100%;
+                &:nth-child(n+2){
+                    display:none;
+                }
+            }
+        }
     }
 
-    .mobile .card-item .toggle-card{
-        bottom:20px;
-        right:20px;
-    }
-
-    .mobile .card-item.small .toggle-card{
-        bottom:auto;
-        top:15px;
-        right:15px;
-    }
-
-    .mobile .card-item.small{
-        padding:15px 0 15px 15px;
-        background-color: #F5F5F5 !important;
-    }
-
-    .mobile .card-item.small .rank-column{
-        position: relative;
-        display: inline-block;
-        width:60px;
-        height:auto;
-        text-align:left;
-        max-width:100%;
-        background:transparent;
-        padding: 0;
-        float:left;
-        background-color: #F5F5F5 !important;
-    }
-
-    .mobile .card-item .rank-column{
-        position:relative;
-        top:auto;
-        left:auto;
-        bottom:auto;
-        right:auto;
-        width:100%;
-        max-width: 100%;
-        max-height: 220px;
-        height: 220px;
-        overflow:hidden;
-        padding:30px 20px;
-    }
-
-    .mobile .card-item.small .rank-column .rank{
-        position:relative;
-        top:auto;
-        right:auto;
-        left:auto;
-        bottom:auto;
-        line-height:1;
-        margin-bottom:-30px;
-    }
-    .mobile .card-item .rank-column .rank{
-        font-size:117px;
-        left:15px;
-        top:15px;
-        right:auto;
-    }
-
-    .mobile .card-item .rank-column img{
-        margin-left:auto;
-        top: 0;
-        width:100%;
-    }
-
-    .mobile .card-item.small .info-column{
-        width:calc(100% - 60px);
-        float:left;
-        min-width:auto;
-        padding:0 0 0 10px;
-    }
-
-    .mobile .card-item.small .info-column h4,
-    .mobile .card-item.small .info-column h4 strong{
-        display:block;
-        font-size:13px;
-        font-weight:800;
-        text-transform:uppercase;
-    }
-
-    .mobile .card-item .info-column h3{
-        font-size:40px;
-    }
-
-    .mobile .card-item .info-column{
+    #coverage-footer{
+        padding: 0 15px;
         width: 100%;
-        max-width:100%;
-        float:none;
-        min-width:auto;
-        padding:20px 15px;
+        .more-coverage {
+            h3{
+                width:100%;
+                margin:0;
+                padding:0;
+                text-align:left;
+                &:after{
+                    margin:15px 0 -40px;
+                }
+            }
+            div{
+                max-width:calc(100% - 60px);
+                margin:0 auto;
+                a{
+                    width:100% !important;
+                    margin:0px 0 30px !important;
+                    float:none;
+                    &:not(:first-of-type){
+                        display:block;
+                    }
+                }
+            }
+        }
     }
 
-    .mobile .card-item .player-info{
-        display:none;
+    .ring-container{
+        margin-left:-14px;
     }
-
-    .mobile .card-item.large .player-info{
-        display:block;
-    }
-
-    .mobile .card-item.medium .info-column .player-stats,
-    .mobile .card-item.large .info-column .player-stats{
-        width:100%;
-    }
-
-    .mobile .card-item .info-column .player-stats{
-        max-height:100%;
-        height:auto;
-    }
-
-    .mobile .card-item .info-column .player-stats ul{
-        margin-top:10px;
-        width: calc(100% + 11px);
-        text-align: center;
-        margin-left: -7px;
-    }
-
-    .mobile .card-item .info-column .player-stats ul:after{
-        clear:both;
-        display:table;
-        content:'';
-    }
-
-    .card-item .info-column .player-stats ul li{
-        position: relative;
-        display: block;
-        width: 85px;
-        max-width: 25%;
-        max-height: 90px;
-        height: 90px;
-        padding: 0 5.5px;
-        margin-bottom: 0;
-        float: left;
-    }
-
-    .card-item .info-column .player-stats ul li:nth-child(n+5){
-        display:none;
-        margin-top:10px
-    }
-
-    .card-item.large .info-column .player-stats ul li:nth-child(n+5){
-        display:block;
-        margin-top:10px
-    }
-
-    .mobile .card-item .info-column .player-main{
-        width:100%;
-        max-width:100%;
-    }
-
-    .mobile .card-item.small .info-column .player-stats{
-        display:none;
-    }
-
-    .card-item.small .info-column .player-meta li .label,
-    .card-item.small .info-column .player-meta li .value{
-        float:none;
-        padding:0;
-    }
-
-
-    .mobile .card-item.small .info-column .player-meta li,
-    .mobile .card-item.small .info-column .player-description{
-        display:none;
-    }
-
-    .card-item.small .info-column .player-meta{
-        padding-right:15px;
-    }
-
-    .card-item.small .info-column .player-meta li .label span{
-        display:none;
-    }
-
-
-
-    .mobile .card-item.small .info-column .player-meta .medium-column:first-of-type li:first-of-type{
-        display:block;
-    }
-
-    .mobile .card-item.small .info-column .player-meta{
-        padding:0;
-    }
-
-    .card-item.small .info-column .player-meta li:after{
-        content: ': ';
-    }
-
-    .mobile .card-item .info-column .player-meta{
-        padding: 15px 0;
-        width:100%;
-    }
-
-    .mobile .card-item .info-column .player-meta .medium-column{
-        width:100%;
-        float:none;
-    }
-
-    .mobile .card-item .info-column .player-stat-image{
-        width:100%;
-        float:none;
-        padding:0;
-        margin-bottom:30px;
-    }
-
-    .mobile .card-item.large .info-column .player-stats ul li{
-        max-height:100%;
-        height:auto;
-    }
-
-    .mobile .card-item .info-column .player-stats ul li span.detail{
-        position:relative;
-        bottom:auto;
-        font-size:10px;
-        margin: 5px 0;
-    }
-
-    .mobile .card-item .info-column .player-meta .medium-column:first-of-type{
-        padding-right:0;
-    }
-
-    .card-item.medium .info-column .player-meta .medium-column:nth-child(2){
-        padding-left:0;
-    }
-
-    .card-item .info-column .player-social{
-        margin:0;
-    }
-
-    .card-item .info-column .player-plus-minus ul{
-        margin-bottom: 15px;
-    }
-
 }

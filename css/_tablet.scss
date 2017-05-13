@@ -1,0 +1,46 @@
+
+
+
+@media(max-width:768px){
+    header{
+        height: auto;
+    }
+
+    header .heading-wrapper{
+        padding-bottom:180px;
+    }
+
+    header h1{
+        font-size:205px;
+    }
+
+
+}
+
+@media(max-width:1200px){
+
+
+    #coverage-footer{
+        .more-coverage {
+            padding-bottom:0px;
+            div a{
+                width:calc(50% - 15px);
+                margin:0px 0 30px;
+                &:nth-child(even){
+                    margin-left:30px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:1023px){
+
+    .tablet #filter-bar-wrapper{
+        margin-bottom:0px;
+    }
+
+
+}

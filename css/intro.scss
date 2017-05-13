@@ -7,88 +7,135 @@
     list-style: none;
     font-size: 20px ;
     font-family: 'Tiempos Headline';
-    background: #fff;
+    background: $white;
     z-index: 2;
+    .intro-wrapper{
+        position:relative;
+        border: 10px solid $black;
+        padding: 60px 60px 20px;
+        i{
+            margin-right: 3px;
+            display: inline-block;
+        }
+        > div{
+            position:relative;
+            z-index:3;
+        }
+        &:after{
+            content: '';
+            display:block;
+            height: calc(100% - 55px);
+            width: calc(100% + 10px);
+            position:absolute;
+            top: 65px;
+            left: 0;
+            background:$white;
+            z-index:2;
+        }
+    }
+    .intro-actions{
+        position:relative;
+        width:100%;
+        margin-top: 30px;
+        &:after{
+            clear:both;
+            content:'';
+            display:table;
+        }
+    }
+    .ringer-draft-coverage{
+        max-width: calc(100% - 110px);
+        position:relative;
+        float:right;
+        @include label-text;
+        text-decoration: underline;
+    }
+    .byline{
+        max-width: 100%;
+        position:relative;
+        float:left;
+        @include label-text;
+    }
+
+    .social{
+        width: 110px;
+        float: left;
+        clear:both;
+        margin:30px 0 0;
+        a{
+            display:inline-block;
+            height:25px;
+            width:25px;
+            margin-right: 5px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            &.facebook{
+                background-image:url(../../img/facebook.svg);
+            }
+            &.twitter{
+                background-image:url(../../img/twitter.svg);
+            }
+        }
+    }
+    &:after{
+        clear:both;
+        display:table;
+        content:'';
+    }
 }
 
-#intro .intro-wrapper{
-    position:relative;
-    border: 10px solid #000;
-    padding: 60px 60px 20px;
+@media(max-width:1023px){
+    #intro{
+        padding: 30px;
+        .intro-wrapper{
+            padding: 30px 30px 0;
+        }
+    }
 }
 
-#intro .intro-wrapper > div{
-    position:relative;
-    z-index:3;
+@media(max-width:768px){
+    #intro{
+        padding: 20px;
+        .intro-wrapper{
+            padding: 20px 20px 0;
+        }
+    }
 }
 
-#intro .intro-wrapper:after{
-    content: '';
-    display:block;
-    height: calc(100% - 55px);
-    width: calc(100% + 10px);
-    position:absolute;
-    top: 65px;
-    left: 0;
-    background:#fff;
-    z-index:2;
-}
+@media(max-width:767px){
+    #intro{
+        width:calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom:30px;
+        padding:0;
+        float:none;
+        text-align:left;
+        font-size:16px;
+        text-align:left;
+        .intro-wrapper{
+            padding: 20px 20px 0;
+        }
+        .intro-actions{
+            margin-top:15px;
+        }
+        .ringer-draft-coverage{
+            display:block;
+            margin-bottom:15px;
+            float:none;
+            position:relative;
+            max-width:100%;
+            font-size:11px;
+        }
+        .byline{
+            position:relative;
+            left:auto;
+            margin-bottom:30px;
+            float:none;
+        }
+        .social{
+            margin-top:0px;
+        }
+    }
 
-#intro .intro-actions{
-    position:relative;
-    width:100%;
-    margin-top: 30px;
-}
-
-#intro .intro-actions:after{
-    clear:both;
-    content:'';
-    display:table;
-}
-
-#intro .ringer-draft-coverage{
-    max-width: calc(100% - 110px);
-    position:absolute;
-    right:0;
-    top:50%;
-    margin-top:-8px;
-    @include label-text;
-    text-decoration: underline;
-}
-
-#intro .byline{
-    max-width: 100%;
-    position:absolute;
-    left:0;
-    top:50%;
-    margin-top:-8px;
-    @include label-text;
-}
-
-#intro .social{
-    width: 110px;
-    float: left;
-}
-
-#intro .social a{
-    display:inline-block;
-    height:25px;
-    width:25px;
-    margin-right: 5px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#intro .social a.facebook{
-    background-image:url(../img/facebook.svg);
-}
-
-#intro .social a.twitter{
-    background-image:url(../img/twitter.svg);
-}
-
-#intro:after{
-    clear:both;
-    display:table;
-    content:'';
 }

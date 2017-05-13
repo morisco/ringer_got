@@ -5,10 +5,10 @@ function Card(id, data){
     this.id = id;
     this.el = $('.card-item[data-id="'+this.id+'"]');
     this.size = 'medium';
+    this.sort = GLOBALS.current_sort;
 
     this.infoTemplateSource = $("#info-template").html();
     this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
-
 
     this.init = function(){
         this.initEvents();
@@ -16,20 +16,35 @@ function Card(id, data){
 
     this.initEvents = function(){
         events.subscribe('filter.update', this.filter);
-        events.subscribe('sort.update', this.sort);
-        this.el.on('mouseenter', this.loadGifs)
+        events.subscribe('sort.update', this.sortChange);
+        events.subscribe('size.update', this.size);
+        this.el.on('mouseenter', this.loadGifs);
+        this.el.on('mouseenter', this.showColor);
+        this.el.on('mouseleave', this.hideColor);
         this.el.find('.has-media').on('mouseenter', this.showMedia);
+        this.el.find('.has-media').on('tap', this.showMedia);
         this.el.find('.has-media').on('mouseleave', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
     };
 
 
     this.toggleCard = function(e) {
+        card.el.toggleClass('expanded-card');
         if(card.el.hasClass('expanded-card')){
-            card.el.removeClass('small medium large expanded expanded-card').addClass(card.size);
-        } else {
-            card.el.removeClass('small medium large expanded').addClass('large expanded-card')
+            card.hideColor();
         }
+    }
+
+    this.showColor = function(){
+        if(!card.el.hasClass('expanded-card') && ($('body').hasClass('small') || $('body').hasClass('medium'))){
+            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+        }
+    }
+
+    this.hideColor = function(){
+        card.el.find('.info-column').removeAttr('style');
+        card.el.find('.info-column .stat-wrap').removeAttr('style');
     }
 
     this.showMedia = function() {
@@ -71,21 +86,21 @@ function Card(id, data){
         },500)
     };
 
-    this.sort = function(){
+    this.sortChange = function(obj){
+        card.sort = obj.sort;
+    };
 
-    }
+    this.size = function(obj){
+        card.size = obj.size;
+    };
 
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        $(this.el).css('max-height', $(this.el).outerHeight());
-        $(this.el).addClass('rebuilding');
+        var delay = $('body').hasClass('mobile') ? 2000 : 1500;
         setTimeout(function(){
-            $(card.el).find('.info-column').empty();
-            $(card.el).find('.info-column').append(card.infoTemplate(card.data));
-            $(card.el).removeClass('rebuilding');
-            $(card.el).removeAttr('style');
-        }, 1000);
+            $(card.el).find('.info-column').html(card.infoTemplate(card.data));
+        }, delay);
     }
 
     this.init();

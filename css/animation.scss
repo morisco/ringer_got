@@ -14,6 +14,7 @@
 }
 
 .ringring {
+    display:none;
     border: 1px solid #62bd19;
     -webkit-border-radius: 30px;
     height:13px;
@@ -24,6 +25,10 @@
     -webkit-animation: pulsate 1.5s ease-out;
     -webkit-animation-iteration-count: infinite;
     opacity: 0.0
+}
+
+body:not(.mobile):not(.no-transition) .ringring{
+    display:block;
 }
 
 @-webkit-keyframes pulsate {

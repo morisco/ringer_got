@@ -1,0 +1,614 @@
+// Small Card
+body.small .card-item{
+    max-height:145px;
+    .toggle-card{
+        bottom:56.5px;
+    }
+}
+
+// Medium or Large
+body:not(.small) .card-item,
+body .card-item.expanded-card{
+    max-height:3000px;
+    .rank-column{
+        max-width: calc(100% - 728px);
+        .rank{
+            font-size:170px;
+        }
+        img{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .info-column{
+        max-width: 728px;
+        visibility: visible;
+        opacity: 1;
+        .player-main{
+            width:42.5%;
+            h4{
+                display:block;
+            }
+        }
+        .player-stats{
+            padding-right:0;
+            width:50%;
+        }
+        .player-meta{
+            width:100%;
+            .medium-column{
+                &:nth-child(2){
+                    li{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium Specific
+body.medium .card-item{
+    .info-column{
+        .player-meta{
+            padding:30px 0;
+            .medium-column{
+                width:50%;
+                float:left;
+                &:first-of-type{
+                    padding-right: 15px;
+                }
+                &:nth-child(2){
+                    padding-left: 15px;
+                }
+                &:nth-child(3){
+                    visibility: hidden;
+                    opacity:0;
+                }
+            }
+
+            ul{
+                height:40px;
+                overflow:hidden;
+            }
+            li{
+                visibility:visible;
+                opacity:1;
+            }
+        }
+        .player-info{
+            .player-plus-minus,
+            .player-stat-image{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    .toggle-card{
+        bottom: 28px;
+    }
+}
+
+// Large specific
+body.large .card-item,
+body .card-item.expanded-card{
+    &:not(.expanded-card){
+        .toggle-card{
+            display:none;
+        }
+    }
+    .info-column{
+        .player-description{
+            margin-bottom:30px;
+        }
+        .player-info{
+            max-height:800px;
+            opacity: 1;
+            .player-stat-image,
+            .player-plus-minus {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .player-stats{
+            max-height:250px;
+            ul li{
+                &:nth-child(n+5){
+                    visibility: visible;
+                    opacity: 1;
+                    padding-bottom:0;
+                }
+                span.detail{
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top:0;
+                }
+            }
+        }
+        .player-meta{
+            padding:15px 0;
+            width:44%;
+            ul{
+                height:auto;
+            }
+            .medium-column{
+                width:100%;
+                float:none;
+                padding-right:0;
+                &:first-of-type{
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left:0;
+                }
+                &:nth-child(3){
+                    visibility:visible;
+                    opacity:1;
+                    li{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                li{
+                    visibility:visible;
+                    opacity:1;
+                }
+            }
+        }
+    }
+    .ringer-coverage {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media(max-width:1023px){
+
+    body:not(.small) .card-item,
+    body .card-item.expanded-card{
+        .info-column{
+            width:100%;
+            max-width:100%;
+            padding-left:0;
+        }
+    }
+
+    body:not(.large) .card-item{
+        .info-column{
+            .player-stats{
+                 ul li:nth-child(n+5){
+                     display:none;
+                 }
+            }
+        }
+    }
+
+    body.small .card-item{
+        max-height:250px;
+        .rank-column{
+            width:100%;
+            max-width:100%;
+            position:relative;
+            .rank{
+                font-size:60px;
+                top:10px;
+                left:30px;
+                right:auto;
+            }
+        }
+        .info-column {
+            padding-right:15px;
+
+            .medium-column:not(:first-of-type),
+            .player-description{
+                display:none;
+            }
+
+            .medium-column{
+                li:not(:first-of-type){
+                    display:none;
+                }
+            }
+            .player-stats ul li{
+                padding-bottom:0;
+                &:nth-child(n+5){
+                    display:none;
+                }
+            }
+        }
+        .toggle-card{
+            right:15px;
+        }
+    }
+
+    body.medium .card-item{
+        max-height:100%;
+        height: auto;
+        .rank-column{
+            position:relative;
+            max-width: 100%;
+            float:none;
+            height: 270px;
+            overflow:hidden;
+            .rank{
+                font-size:117px;
+                top:15px;
+                left:15px;
+                right:auto;
+                overflow:hidden;
+            }
+            img{
+                margin:-80px 50% 0;
+                transform:translateX(-50%);
+                max-width:75%;
+            }
+        }
+        .info-column{
+            .player-description{
+                margin-bottom:0px;
+            }
+            .player-info{
+                display:none;
+            }
+
+            .player-meta{
+                .medium-column{
+                    width:50%;
+                    float:left;
+                    &:first-of-type{
+                        padding-right: 15px;
+                    }
+                    &:nth-child(2){
+                        padding-left: 15px;
+                    }
+                    &:nth-child(3){
+                        display:none;
+                    }
+                }
+                li{
+                    visibility:visible;
+                    opacity:1;
+                }
+
+            }
+        }
+    }
+
+    body.large .card-item,
+    body .card-item.expanded-card{
+        max-height: 100% !important;
+        height: auto !important;
+        .rank-column{
+            height:225px;
+            width:100%;
+            max-width:100%;
+            position:relative;
+            overflow:hidden;
+            .rank{
+                font-family: 'TIMMONS NY';
+                font-size: 170px;
+                top: 30px;
+                right: 25px;
+                left:auto;
+                line-height: 1;
+            }
+            img{
+                margin-left: auto;
+                margin-top: -80px;
+                width: 80%;
+                visibility:visible;
+                opacity:1;
+                transform:translateX(0);
+                max-width:100%;
+            }
+        }
+        .info-column{
+            float:none;
+            width:100%;
+            max-width:100%;
+            padding-right:30px;
+            .player-description{
+                display:block;
+            }
+            .player-meta{
+                padding: 15px 0;
+                .medium-column{
+                    width:100%;
+                    float:none;
+                    padding-right:0;
+
+                    &:first-of-type{
+                        display:block;
+                        padding-right: 0px;
+                    }
+                    &:nth-child(2){
+                        display:block;
+                        padding-left:0;
+                    }
+                    &:nth-child(3){
+                        display:block;
+                        visibility:visible;
+                        opacity:1;
+                        li{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    li{
+                        visibility:visible;
+                        opacity:1;
+                        &:not(:first-of-type){
+                            display:block;
+                        }
+                    }
+                }
+            }
+            .player-stats{
+                ul{
+                    li{
+                        margin-bottom:17px;
+                    }
+                    li:nth-child(n+5){
+                        display:inline-block;
+                    }
+                }
+            }
+
+            .player-description{
+                margin-bottom:30px;
+            }
+
+            .player-info{
+                display:block;
+            }
+        }
+    }
+}
+
+
+@media(max-width:767px){
+
+    body.small .card-item:not(.expanded-card){
+        background-color: #F5F5F5 !important;
+        padding:15px 0 15px 15px;
+        .rank-column{
+            background-color: #F5F5F5 !important;
+
+        }
+    }
+
+    body.small .card-item{
+
+        .rank-column{
+            position: relative;
+            display: inline-block;
+            width:60px;
+            height:auto;
+            text-align:left;
+            max-width:100%;
+            background:transparent;
+            padding: 0;
+            float:left;
+            .rank{
+                position:relative;
+                top:auto;
+                right:auto;
+                left:auto;
+                bottom:auto;
+                line-height:1;
+                font-size:117px;
+                margin-bottom:-30px;
+            }
+        }
+        .info-column{
+            width:calc(100% - 60px);
+            float:left;
+            min-width:auto;
+            padding:0 0 0 15px;
+
+            h4,
+            h4 strong{
+                display:block;
+                font-size:13px;
+                font-weight:800;
+                text-transform:uppercase;
+            }
+
+            .player-stats{
+                display:none;
+            }
+
+            .player-meta{
+                padding-right:15px;
+                padding:0;
+                margin-bottom:0;
+                .medium-column:first-of-type{
+                    li{
+                        &:first-of-type{
+                            display:block;
+                        }
+                    }
+                }
+                li{
+                    display:none;
+                    .label,
+                    .value{
+                        float:none;
+                        padding:0;
+                    }
+                    .label span{
+                        display:none;
+                    }
+                    &:after{
+                        content: ': ';
+                    }
+                }
+            }
+
+            .player-description{
+                display:none;
+            }
+        }
+        .toggle-card{
+            top:50%;
+            @include transform(translateY(-50%));
+        }
+    }
+
+    body:not(.small) .card-item,
+    body .card-item.expanded-card{
+        .rank-column {
+            max-width: 100%;
+        }
+        .info-column{
+            .player-stats{
+                width:100%;
+            }
+            .player-main{
+                width:100%;
+                max-width:100%;
+            }
+            .player-meta{
+                padding:15px 0;
+                margin-bottom:15px;
+            }
+        }
+    }
+
+    body:not(.large) .card-item{
+        .info-column{
+            .player-stats{
+                ul{
+                    li{
+                        padding-bottom:0;
+                        span.detail{
+                            margin-top:-13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    body.medium .card-item{
+        .toggle-card{
+            bottom:20px;
+        }
+        .rank-column{
+            img{
+                margin-top:0;
+            }
+        }
+        .info-column{
+            padding-bottom:60px;
+            padding-left:15px;
+            .player-meta{
+                padding-bottom:0px;
+                ul{
+                    height:auto;
+                }
+                .medium-column{
+                     width:100%;
+                     float:none;
+
+                     &:first-of-type{
+                         padding:0;
+                     }
+                     &:nth-child(2){
+                         padding-left:0;
+                     }
+                     &:nth-child(3){
+                         display:none;
+                     }
+                 }
+            }
+        }
+    }
+
+    body.large .card-item,
+    body .card-item.expanded-card{
+        padding:0;
+        .rank-column{
+            position: relative;
+            top: auto;
+            left: auto;
+            bottom: auto;
+            right: auto;
+            width: 100%;
+            max-width: 100%;
+            max-height: 220px;
+            height: 220px;
+            overflow: hidden;
+            padding: 30px 20px;
+            .rank{
+                position:absolute;
+                font-size:117px;
+                right:auto;
+                left:15px;
+                top:15px;
+
+            }
+            img{
+                margin-top:auto;
+                margin: auto 50% 0;
+                transform: translateX(-50%);
+            }
+        }
+        .info-column{
+            padding-top:20px;
+            padding-left:15px;
+            padding-right:15px;
+            padding-bottom:10px;
+            width:100%;
+            .player-info{
+                display:block;
+                max-height:100%;
+            }
+            .player-meta{
+                width:100%;
+                max-width:100%;
+                .medium-column{
+                    display:block !important;
+                }
+                li {
+                    display:block;
+                    .value{
+                        float:right;
+                    }
+                    &:after{
+                        content:'........................................................................................................................................................';
+                    }
+                }
+            }
+            .player-stats{
+                ul{
+                    li{
+                        max-height:100%;
+                        height:auto;
+                        span.detail{
+                            margin-top:0;
+                        }
+                        &:nth-child(n+5){
+                            display:block;
+                            margin-top:0;
+                        }
+                    }
+                }
+            }
+        }
+        .toggle-card{
+            top:auto;
+            bottom:10px;
+            @include transform(translateY(0) rotate(-180deg));
+        }
+    }
+}
+
+@media(max-width:350px){
+    body.small .card-item{
+        .toggle-card{
+            right:10px;
+        }
+    }
+}
