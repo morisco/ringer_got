@@ -1533,7 +1533,7 @@ header nav {
     display: table;
     content: ''; }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   #intro {
     padding: 30px; }
     #intro .intro-wrapper {
@@ -2036,7 +2036,8 @@ body #item-list.filtered.forward .card-item.forward {
 
 @media (max-width: 1200px) {
   #item-list {
-    width: 100%; } }
+    width: 100%;
+    float: none; } }
 
 @media (max-width: 1023px) {
   #item-list {
