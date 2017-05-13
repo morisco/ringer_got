@@ -18,6 +18,7 @@ function Card(id, data){
         events.subscribe('filter.update', this.filter);
         events.subscribe('sort.update', this.sortChange);
         events.subscribe('size.update', this.size);
+        this.el.on('click.whole', this.toggleWholeCard);
         this.el.on('mouseenter', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
         this.el.on('mouseleave', this.hideColor);
@@ -27,10 +28,19 @@ function Card(id, data){
         this.el.on('click', '.toggle-card', this.toggleCard);
     };
 
-
     this.toggleCard = function(e) {
         card.el.toggleClass('expanded-card');
         if(card.el.hasClass('expanded-card')){
+            card.hideColor();
+        } else {
+            card.el.on('click.whole', card.toggleWholeCard);
+        }
+    }
+
+    this.toggleWholeCard = function(){
+        if(card.size !== 'large' && !card.el.hasClass('expanded-card')){
+            card.el.off('click.whole');
+            card.el.addClass('expanded-card');
             card.hideColor();
         }
     }
@@ -73,10 +83,6 @@ function Card(id, data){
             img.attr('src', img.data('src') );
         })
     }
-
-    this.filter = function(obj){
-        
-    };
 
     this.sortChange = function(obj){
         card.sort = obj.sort;
