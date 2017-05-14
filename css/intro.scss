@@ -1,7 +1,7 @@
 #intro{
     position: relative;
     width:95%;
-    margin: -130px auto 60px;
+    margin: 0 auto 60px;
     padding:60px;
     max-width:1390px;
     list-style: none;
@@ -49,12 +49,6 @@
         float:right;
         @include label-text;
         text-decoration: underline;
-    }
-    .byline{
-        max-width: 100%;
-        position:relative;
-        float:left;
-        @include label-text;
     }
 
     .social{
@@ -107,6 +101,7 @@
 @media(max-width:767px){
     #intro{
         width:calc(100% - 30px);
+        margin-top:30px;
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom:30px;
