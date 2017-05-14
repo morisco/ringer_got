@@ -57,13 +57,16 @@ function Card(id, data){
     this.showColor = function(){
         if(!card.el.hasClass('expanded-card') && ($('body').hasClass('small') || $('body').hasClass('medium'))){
             card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
-            card.el.find('.info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
         }
     }
 
     this.hideColor = function(){
         card.el.find('.info-column').removeAttr('style');
         card.el.find('.info-column .stat-wrap').removeAttr('style');
+        card.el.find('.info-column .player-description').removeAttr('style');
+        card.el.find('.info-column span.title').removeAttr('style');
     }
 
     this.showMedia = function() {

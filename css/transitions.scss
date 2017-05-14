@@ -13,24 +13,28 @@
 //
 // /* Transition on non touch devices */
 @media(min-width:1025px){
-    body:not(.mobile):not(.no-transition) .card-item{
-        @include transition(max-height 0.325s ease-out, .5s);
-    }
+    body:not(.mobile):not(.no-transition) {
+        .card-item{
+            @include transition(max-height 0.325s ease-out, .5s);
+        }
+        .card-item.sort{
+            @include transition(max-height 0.325s ease-out, 0s);
+        }
+        .player-info{
+            @include transition(max-height 0.5s ease-out, 0.25s);
+        }
+        .rank-column .image img{
+            @include transition(opacity 0.25s linear);
+        }
+        .info-column{
+           @include transition(color 0.25s linear, border-color 0.25s linear);
+       }
 
-    body:not(.mobile):not(.no-transition) .card-item.sort{
-        @include transition(max-height 0.325s ease-out, 0s);
-    }
-
-    body:not(.mobile):not(.no-transition) .player-info{
-        @include transition(max-height 0.5s ease-out, 0.25s);
-    }
-
-    body:not(.mobile):not(.no-transition) .rank-column .image img{
-        @include transition(opacity 0.25s linear);
-    }
-
-    body:not(.mobile):not(.no-transition) .info-column{
-        @include transition(color 0.25s linear, border-color 0.25s linear);
+       .stat-wrap,
+       .player-description,
+       span.title{
+          @include transition(color 0.25s linear, border-color 0.25s linear);
+      }
     }
 }
 

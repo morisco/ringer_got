@@ -1,0 +1,32 @@
+.m_fultz{
+    .rank-column img{
+        transform:rotate(-20deg);
+    }
+}
+
+// Tablet landscape styles
+@media(max-width:1200px){
+    .m_fultz{
+        .rank-column img{
+            transform:rotate(-20deg);
+        }
+    }
+}
+
+// Tablet portrait styles
+@media(max-width:1023px){
+    .m_fultz{
+        .rank-column img{
+            transform:rotate(-20deg);
+        }
+    }
+}
+
+// Mobile styles
+@media(max-width:767px){
+    .m_fultz{
+        .rank-column img{
+            transform:rotate(-20deg);
+        }
+    }
+}
