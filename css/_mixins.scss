@@ -1,10 +1,10 @@
 @mixin label-text {
     // write the css here
-    font-family:'NYTMag Sans', serif;
-    font-weight:bold;
+    font-family:'pressura-mono', sans;
+    font-weight:normal;
     text-transform:uppercase;
     font-size:12px;
-    letter-spacing:0.05em;
+    letter-spacing:0.1em;
 }
 
 @mixin timmons-text{
@@ -13,21 +13,27 @@
 }
 
 @mixin value-text{
-    font-size:14px;
+    font-size:12px;
+    font-family: 'pressura', sans;
+    letter-spacing:0.05em;
+    font-weight:300;
 }
 
 @mixin detail-text{
     font-size: 11px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
+    font-family:'pressura-mono', sans;
 }
 
 @mixin filter-sort-text {
     font-size: 13.5px;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.1em;
     line-height: 1;
     font-weight: 500;
     text-transform: uppercase;
+    font-family:'pressura-mono', sans;
+
 }
 
 @mixin transition($transitions...) {

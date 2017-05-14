@@ -68,12 +68,12 @@ body #item-list.filtered{
 
     h3{
         @include timmons-text;
-        font-size: 60px;
-        line-height: .75;
+        font-size: 67px;
+        line-height: .65;
         font-weight: normal;
         text-transform:uppercase;
         letter-spacing:0;
-        padding-top:7.5px;
+        padding-top:12px;
         display:inline-block;
     }
     h4{
