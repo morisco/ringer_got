@@ -257,21 +257,18 @@
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Kevin O&rsquo;Connor</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Danny Chau</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Jonathan Tjarks</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
                         </div>

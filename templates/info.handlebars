@@ -149,8 +149,13 @@
             {{/each}}
         </ul>
     </div>
+    {{#if disclaimers}}
+        <div class="player-disclaimer">
+            <i>{{disclaimers}}</i>
+        </div>
+    {{/if}}
     <h6 class="more-ringer-coverage">
-        <a href="http://theringer.com" class="color-theme">SEE MORE RINGER COVERAGE</a>
+        <a href="{{all_coverage}}" class="color-theme">SEE MORE RINGER COVERAGE</a>
     </h6>
     <div class="player-social">
         <a href="https://www.facebook.com/sharer/sharer.php?u=http%253A%252F%252Fmikemorisco.com%252Fringer%252Fnba%252F%3Fplayer%3D{{id}}" target="_blank" class="facebook">Share To Facebook</a>

@@ -6,6 +6,10 @@ body.small .card-item{
     }
 }
 
+body:not(.large) .card-item:not(.expanded-card){
+    cursor:pointer;
+}
+
 // Medium or Large
 body:not(.small) .card-item,
 body .card-item.expanded-card{
@@ -59,7 +63,7 @@ body.medium .card-item{
                 width:50%;
                 float:left;
                 &:first-of-type{
-                    padding-right: 15px;
+                    padding-right: 0;
                 }
                 &:nth-child(2){
                     padding-left: 15px;
@@ -272,7 +276,7 @@ body .card-item.expanded-card{
                     width:50%;
                     float:left;
                     &:first-of-type{
-                        padding-right: 15px;
+                        padding-right: 0;
                     }
                     &:nth-child(2){
                         padding-left: 15px;
@@ -291,8 +295,8 @@ body .card-item.expanded-card{
     }
 
     body .card-item.expanded-card{
-        max-height: 100% !important;
-        height: auto !important;
+        max-height: 100%;
+        height: auto;
         .rank-column{
             height:225px;
             width:100%;
@@ -508,7 +512,7 @@ body .card-item.expanded-card{
                     li{
                         padding-bottom:0;
                         span.detail{
-                            margin-top:-13px;
+                            margin-top:-8px;
                         }
                     }
                 }
@@ -536,7 +540,6 @@ body .card-item.expanded-card{
                 .medium-column{
                      width:100%;
                      float:none;
-
                      &:first-of-type{
                          padding:0;
                      }

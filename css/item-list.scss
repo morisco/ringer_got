@@ -94,10 +94,8 @@ body #item-list.filtered{
 
     h6{
         @include label-text;
-        border-bottom:1px solid black;
         margin-bottom:7.5px;
     }
-
 
     .rank-column{
         position: absolute;
@@ -449,6 +447,13 @@ body #item-list.filtered{
         }
 
         .player-plus-minus {
+            h6{
+                border-bottom:1px solid black;
+                &:first-of-type{
+                    max-width:calc(100% - 334px);
+                }
+            }
+
             ul{
                 list-style: none;
                 margin-bottom: 30px;
@@ -466,9 +471,18 @@ body #item-list.filtered{
                         left:-17px;
                         height:11px;
                         width:11px;
+
                     }
                 }
             }
+        }
+
+        .player-disclaimer{
+            margin-top:-15px;
+            margin-bottom:30px;
+            font-size:12px;
+            font-family: "GT Pressura Mono";
+            word-spacing: -.15em;
         }
 
         .more-ringer-coverage{
@@ -520,7 +534,7 @@ body #item-list.filtered{
         }
         ul{
             list-style: none;
-        
+
             li a{
                 display:block;
                 color:black;
@@ -587,7 +601,11 @@ body #item-list.filtered{
             .more-ringer-coverage{
                 display:block;
                 margin-bottom: 15px;
+                border-bottom:0px;
             }
+        }
+        .player-social{
+            margin-top:0;
         }
     }
 }
@@ -660,6 +678,7 @@ body #item-list.filtered{
                 float:none;
                 margin-bottom:30px;
                 padding-left:0;
+                padding-bottom:0;
             }
             .player-stats{
                 max-height:100%;
@@ -667,9 +686,9 @@ body #item-list.filtered{
 
                 ul{
                     margin-top:10px;
-                    width: calc(100% + 8px);
+                    width: calc(100% + 10px);
                     text-align: center;
-                    margin-left: -4px;
+                    margin-left: -5px;
                     &:after{
                         clear:both;
                         display:table;
@@ -710,8 +729,12 @@ body #item-list.filtered{
                 margin:0;
             }
             .player-plus-minus {
+                h6,
+                h6:first-of-type{
+                    max-width:100%;
+                }
                 ul{
-                    margin-bottom: 15px;
+                    margin-bottom: 30px;
                 }
             }
 

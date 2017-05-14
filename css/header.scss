@@ -16,7 +16,7 @@ header{
         }
     }
     .heading-image{
-        background-image:url('../../img/collage-placeholder.png');
+        background-image:url('../../img/header-background.png');
         background-position: center top;
         background-size:cover;
         background-repeat:no-repeat;
@@ -70,14 +70,18 @@ header{
     }
 }
 
-@media(max-width:768px){
+@media screen and (min-aspect-ratio: 4/2) {
     header{
-        height: auto;
-        .heading-wrapper{
-            padding-bottom:180px;
+        .heading-image{
+            top:60%;
         }
+    }
+}
+
+@media(max-width:1023px){
+    header{
         h1{
-            font-size:205px;
+            font-size:220px;
         }
     }
 }
@@ -89,6 +93,12 @@ header{
         background-size: auto auto;
         &:before{
             height:45px;
+        }
+        .heading-image{
+            background-image:url('../../img/header-background-mobile.png');
+            top:auto;
+            background-position: center bottom;
+            background-size: 100%;
         }
         .heading-wrapper{
             position:relative;

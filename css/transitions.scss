@@ -26,15 +26,18 @@
         .rank-column .image img{
             @include transition(opacity 0.25s linear);
         }
-        .info-column{
-           @include transition(color 0.25s linear, border-color 0.25s linear);
-       }
+        .info-column,
+        .stat-wrap,
+        .player-description,
+        span.title{
+            @include transition(color 0.25s linear, border-color 0.25s linear !important);
+        }
 
-       .stat-wrap,
-       .player-description,
-       span.title{
-          @include transition(color 0.25s linear, border-color 0.25s linear);
-      }
+    //    .stat-wrap,
+    //    .player-description,
+    //    span.title{
+    //       @include transition(color 0.25s linear, border-color 0.25s linear);
+    //   }
     }
 }
 

@@ -40,6 +40,6 @@ body:not(.mobile):not(.no-transition) .ringring{
 
 @media(max-width:767px){
     .ring-container{
-        margin-left:-14px;
+        display:none;
     }
 }

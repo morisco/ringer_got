@@ -16,12 +16,12 @@ function Card(id, data){
 
     this.initEvents = function(){
         this.el.on('click.whole', this.toggleWholeCard);
-        this.el.on('mouseenter', this.loadGifs);
+        this.el.on('click.gifs', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
         this.el.on('mouseleave', this.hideColor);
-        this.el.find('.has-media').on('mouseenter', this.showMedia);
-        this.el.find('.has-media').on('tap', this.showMedia);
-        this.el.find('.has-media').on('mouseleave', this.hideMedia);
+        this.el.on('mouseenter', '.has-media',  this.showMedia);
+        this.el.on('tap', '.has-media', this.showMedia);
+        this.el.on('mouseleave', '.has-media', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
         events.subscribe('filter.update', this.filter);
         events.subscribe('sort.update', this.sortChange);
@@ -32,6 +32,7 @@ function Card(id, data){
     this.openPlayer = function(obj){
         if(obj.id === card.data.filter_id){
             card.el.off('click.whole');
+            card.el.off('click.gifs');
             card.toggleCard();
         }
     }
@@ -40,6 +41,7 @@ function Card(id, data){
         card.el.toggleClass('expanded-card');
         if(card.el.hasClass('expanded-card')){
             card.el.off('click.whole');
+            card.el.off('click.gifs');
             card.hideColor();
         } else {
             card.el.on('click.whole', card.toggleWholeCard);
@@ -57,8 +59,7 @@ function Card(id, data){
     this.showColor = function(){
         if(!card.el.hasClass('expanded-card') && ($('body').hasClass('small') || $('body').hasClass('medium'))){
             card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
-            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
-            card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            // card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
         }
     }
 
@@ -70,6 +71,9 @@ function Card(id, data){
     }
 
     this.showMedia = function() {
+        if($(window).width() < 768){
+            return;
+        }
         var showMedia   = $(this).data('media'),
             mediaBG     = $('.plus-minus-media[data-id="'+showMedia+'"]').css('background-image');
         $(this).addClass('color-theme');
@@ -87,8 +91,9 @@ function Card(id, data){
     }
 
     this.loadGifs = function(){
-        if(card.loaded)
+        if(card.loaded || $(window).width() > 1023){
             return;
+        }
         card.loaded = true;
         _.each(card.el.find('.plus-minus-media'), function(el){
             var img = $(el).find('img');
@@ -107,7 +112,8 @@ function Card(id, data){
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        var delay = $('body').hasClass('mobile') ? 2000 : 1000;
+        var delay = $('body').hasClass('mobile') ? 1000 : 1000;
+        card.el.removeClass('big guard forward').addClass(card.data.position_group);
         setTimeout(function(){
             card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png');
         }, 500)

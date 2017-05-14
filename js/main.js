@@ -148,7 +148,6 @@ function CardList() {
         $('body').addClass(cardlist.sort_id);
         $('.stroke').attr('style', 'stroke:' + color + ';');
         $('.arrow').attr('style', 'fill:' + color + ';');
-
     }
 
     this.sort = function(e){
@@ -156,7 +155,6 @@ function CardList() {
         e.stopPropagation();
         var player,
             coverage_count = 5;
-
 
         $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');
@@ -168,7 +166,6 @@ function CardList() {
     }
 
     this.filter = function(e){
-        console.log(e);
 
         cardlist.filter_id = $(e.currentTarget).data('filter');
 
@@ -176,7 +173,11 @@ function CardList() {
         $(e.currentTarget).addClass('active color-theme');
 
         if($(window).scrollTop() > cardlist.filterOffsetPos){
-            $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
+            if($(window).width() < 767){
+                $('html,body').scrollTop((cardlist.filterOffsetPos + 1));
+            } else {
+                $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
+            }
         }
 
         if(cardlist.filter_id === 'all'){
@@ -191,7 +192,11 @@ function CardList() {
 
     this.buildList = function() {
         var playerCount = 0;
-        $('html,body').animate({scrollTop: (cardlist.filterOffsetPos + 1)})
+        if($(window).width() < 767){
+            $('html,body').scrollTop((cardlist.filterOffsetPos + 1));
+        } else {
+            $('html,body').animate({scrollTop: (cardlist.filterOffsetPos + 1)})
+        }
         _.each(GLOBALS.list[cardlist.sort_id], function(player, index){
             player = _.findWhere(GLOBALS.data.players, { filter_id: player.filter_id});
             if(player){
