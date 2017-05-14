@@ -118,17 +118,17 @@ textarea {
    ========================================================================== */
 
 .stroke{
-    transition:stroke 0.25s linear;
+    @include transition(stroke 0.25s linear);
 }
 
 .arrow{
-    transition:fill 0.25s linear;
+    @include transition(fill 0.25s linear);
 }
 
 a.active,
 a.active:hover{
     color: #43be6d;
-    transition:color 0.25s linear;
+    @include transition(color 0.25s linear);
 }
 
 a{

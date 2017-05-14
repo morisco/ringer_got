@@ -1089,6 +1089,10 @@ body .card-item.expanded-card .ringer-coverage {
       height: 100%;
       overflow: hidden;
       border-right: 2px solid #000;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -ms-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
       transition: all 0.25s linear;
       font-size: 13.5px;
       letter-spacing: 0.1em;
@@ -1224,6 +1228,10 @@ body .card-item.expanded-card .ringer-coverage {
         margin-bottom: 3px;
         background: #000;
         transform: translateY(0px);
+        -webkit-transition: transform 0.125s linear;
+        -moz-transition: transform 0.125s linear;
+        -ms-transition: transform 0.125s linear;
+        -o-transition: transform 0.125s linear;
         transition: transform 0.125s linear; }
       #filters ul.size-indicator.small li:nth-child(1) {
         transform: translateY(1px); }
@@ -1262,6 +1270,10 @@ body .card-item.expanded-card .ringer-coverage {
       background-color: #e6e6e6;
       vertical-align: top;
       z-index: 1;
+      -webkit-transition: background-color 0.125s linear;
+      -moz-transition: background-color 0.125s linear;
+      -ms-transition: background-color 0.125s linear;
+      -o-transition: background-color 0.125s linear;
       transition: background-color 0.125s linear; }
       #filters .size-toggle li:nth-child(2) {
         left: 50%;
@@ -1438,6 +1450,7 @@ footer {
 header {
   position: relative;
   min-height: 100vh;
+  height: auto;
   overflow: hidden; }
   header .heading-wrapper {
     position: relative;
@@ -2375,14 +2388,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .stroke {
+  -webkit-transition: stroke 0.25s linear;
+  -moz-transition: stroke 0.25s linear;
+  -ms-transition: stroke 0.25s linear;
+  -o-transition: stroke 0.25s linear;
   transition: stroke 0.25s linear; }
 
 .arrow {
+  -webkit-transition: fill 0.25s linear;
+  -moz-transition: fill 0.25s linear;
+  -ms-transition: fill 0.25s linear;
+  -o-transition: fill 0.25s linear;
   transition: fill 0.25s linear; }
 
 a.active,
 a.active:hover {
   color: #43be6d;
+  -webkit-transition: color 0.25s linear;
+  -moz-transition: color 0.25s linear;
+  -ms-transition: color 0.25s linear;
+  -o-transition: color 0.25s linear;
   transition: color 0.25s linear; }
 
 a {
@@ -2739,12 +2764,9 @@ h3 .brand {
     -ms-transition: opacity 0.25s linear;
     -o-transition: opacity 0.25s linear;
     transition: opacity 0.25s linear; }
-  body:not(.mobile):not(.no-transition) .info-column,
-  body:not(.mobile):not(.no-transition) .stat-wrap,
-  body:not(.mobile):not(.no-transition) .player-description,
   body:not(.mobile):not(.no-transition) span.title {
-    -webkit-transition: color 0.25s linear, border-color 0.25s linear !important;
-    -moz-transition: color 0.25s linear, border-color 0.25s linear !important;
-    -ms-transition: color 0.25s linear, border-color 0.25s linear !important;
-    -o-transition: color 0.25s linear, border-color 0.25s linear !important;
-    transition: color 0.25s linear, border-color 0.25s linear !important; } }
+    -webkit-transition: color 0.25s linear, border-color 0.25s linear;
+    -moz-transition: color 0.25s linear, border-color 0.25s linear;
+    -ms-transition: color 0.25s linear, border-color 0.25s linear;
+    -o-transition: color 0.25s linear, border-color 0.25s linear;
+    transition: color 0.25s linear, border-color 0.25s linear; } }

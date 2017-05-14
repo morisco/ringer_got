@@ -23,7 +23,7 @@
             height: 100%;
             overflow:hidden;
             border-right:2px solid $black;
-            transition: all 0.25s linear;
+            @include transition(all 0.25s linear);
             @include filter-sort-text;
             color:$black;
             line-height: 1;
