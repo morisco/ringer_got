@@ -22,44 +22,65 @@
 
 
 @font-face {
-	font-family: 'pressura-mono';
-	src: url('../../dist/fonts/GT/GT-Pressura-Mono.otf');
-	font-weight: 500;
+	font-family: 'GT Pressura Mono';
+	src: url('../../dist/fonts/GT/GTPressuraMono-Bold.eot');
+	src: url('../../dist/fonts/GT/GTPressuraMono-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressuraMono-Bold.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressuraMono-Bold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'pressura-mono';
-	src: url('../../dist/fonts/GT/GT-Pressura-Mono-Light.otf');
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: 'pressura-mono';
-	src: url('../../dist/fonts/GT/GT-Pressura-Mono-Bold.otf');
-	font-weight: 700;
-	font-style:bold;
-}
-
-@font-face {
-	font-family: 'pressura';
-	src: url('../../dist/fonts/GT/GT-Pressura-Regular.otf');
-	font-weight: 500;
+	font-family: 'GT Pressura Mono';
+	src: url('../../dist/fonts/GT/GTPressuraMono.eot');
+	src: url('../../dist/fonts/GT/GTPressuraMono.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressuraMono.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressuraMono.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'pressura';
-	src: url('../../dist/fonts/GT/GT-Pressura-Light.otf');
-	font-weight: 400;
+	font-family: 'GT Pressura';
+	src: url('../../dist/fonts/GT/GTPressura-Light.eot');
+	src: url('../../dist/fonts/GT/GTPressura-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressura-Light.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressura-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'pressura';
-	src: url('../../dist/fonts/GT/GT-Pressura-Bold.otf');
-	font-weight: 700;
-	font-style:bold;
+	font-family: 'GT Pressura Mono';
+	src: url('../../dist/fonts/GT/GTPressuraMono-Light.eot');
+	src: url('../../dist/fonts/GT/GTPressuraMono-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressuraMono-Light.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressuraMono-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
+
+@font-face {
+	font-family: 'GT Pressura';
+	src: url('../../dist/fonts/GT/GTPressura-Bold.eot');
+	src: url('../../dist/fonts/GT/GTPressura-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressura-Bold.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressura-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GT Pressura';
+	src: url('../../dist/fonts/GT/GTPressura.eot');
+	src: url('../../dist/fonts/GT/GTPressura.eot?#iefix') format('embedded-opentype'),
+		url('../../dist/fonts/GT/GTPressura.woff') format('woff'),
+		url('../../dist/fonts/GT/GTPressura.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 
 @font-face {

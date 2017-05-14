@@ -1,6 +1,6 @@
 @mixin label-text {
     // write the css here
-    font-family:'pressura-mono', sans;
+    font-family:'GT Pressura Mono', sans;
     font-weight:normal;
     text-transform:uppercase;
     font-size:12px;
@@ -14,7 +14,7 @@
 
 @mixin value-text{
     font-size:12px;
-    font-family: 'pressura', sans;
+    font-family: 'GT Pressura', sans;
     letter-spacing:0.05em;
     font-weight:300;
 }
@@ -23,7 +23,7 @@
     font-size: 11px;
     text-align: center;
     font-weight: 300;
-    font-family:'pressura-mono', sans;
+    font-family:'GT Pressura Mono', sans;
 }
 
 @mixin filter-sort-text {
@@ -32,7 +32,7 @@
     line-height: 1;
     font-weight: 500;
     text-transform: uppercase;
-    font-family:'pressura-mono', sans;
+    font-family:'GT Pressura Mono', sans;
 
 }
 
