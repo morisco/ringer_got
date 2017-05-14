@@ -6,6 +6,7 @@ header{
         position:relative;
         padding: 30px 0 190px;
         text-align:center;
+        z-index:1;
         .byline{
             max-width: 100%;
             position:relative;
@@ -78,6 +79,15 @@ header{
     }
 }
 
+@media(max-width:1200px){
+    header .heading-image{
+        top:0;
+        background-position: center bottom;
+        background-size:125%;
+
+    }
+}
+
 @media(max-width:1023px){
     header{
         h1{
@@ -121,6 +131,14 @@ header{
             top:auto;
             bottom:auto;
             margin: 25px auto 0;
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    header{
+        .heading-image{
+            display:none;
         }
     }
 }

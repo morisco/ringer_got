@@ -39,7 +39,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"23.0\",\n    \"detail\": \"26.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"10.1\",\n    \"detail\": \"11.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.2\",\n    \"detail\": \"2.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.8\",\n    \"detail\": \"468 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"36.3\",\n      \"detail\": \"160 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"88.7\",\n      \"detail\": \"194 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"61.3\",\n \"at_rim_fga\": \"168\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"40.3\",\n \"left_mid_fga\": \"62\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"57.1\",\n \"mid_fga\": \"14\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"28.3\",\n \"right_mid_fga\": \"53\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"35.3\",\n \"left_wing_fga\": \"51\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"36.8\",\n \"top_of_key_fga\": \"14\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"35.9\",\n \"right_wing_fga\": \"64\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -60,7 +60,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"11.4\",\n    \"detail\": \"16.4 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.9\",\n    \"detail\": \"5.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.5\",\n    \"detail\": \"5.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"49.8\",\n    \"detail\": \"292 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.2\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"32.8\",\n      \"detail\": \"131 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"77.5\",\n      \"detail\": \"111 FTA\"\n    }]",
       "coverage" : "",
       "shot_chart" : "{\n \"at_rim\": \"54.9\",\n \"at_rim_fga\": \"122\",\n \"at_rim_rank\": \"2\",\n \"left_mid\": \"25.0\",\n \"left_mid_fga\": \"16\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"42.1\",\n \"mid_fga\": \"19\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"40.0\",\n \"right_mid_fga\": \"10\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"30.2\",\n \"left_wing_fga\": \"53\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"33.3\",\n \"top_of_key_fga\": \"15\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"35.7\",\n \"right_wing_fga\": \"56\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -81,7 +81,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"7.1\",\n    \"detail\": \"18.3 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.0\",\n    \"detail\": \"7.9 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.2\",\n    \"detail\": \"0.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"67.3\",\n    \"detail\": \"202 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.7\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"47.1\",\n      \"detail\": \"17 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"56.0\",\n      \"detail\": \"84 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"73.3\",\n \"at_rim_fga\": \"120\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"20.0\",\n \"left_mid_fga\": \"5\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"16.7\",\n \"mid_fga\": \"6\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"6\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"80.0\",\n \"left_wing_fga\": \"5\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"50.0\",\n \"top_of_key_fga\": \"4\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"50.0\",\n \"right_wing_fga\": \"2\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -102,7 +102,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.6\",\n    \"detail\": \"20.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.4\",\n    \"detail\": \"6.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.0\",\n    \"detail\": \"2.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.6\",\n    \"detail\": \"319 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.6\",\n      \"detail\": \"0.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"35.8\",\n      \"detail\": \"165 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"85.3\",\n      \"detail\": \"95 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"54.6\",\n \"at_rim_fga\": \"22\",\n \"at_rim_rank\": \"2\",\n \"left_mid\": \"50.0\",\n \"left_mid_fga\": \"4\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"33.3\",\n \"mid_fga\": \"3\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"66.7\",\n \"right_mid_fga\": \"3\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"34.8\",\n \"left_wing_fga\": \"23\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"25.0\",\n \"top_of_key_fga\": \"4\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"35.5\",\n \"right_wing_fga\": \"31\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -123,7 +123,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"13.0\",\n    \"detail\": \"17.3 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.0\",\n    \"detail\": \"10.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.8\",\n    \"detail\": \"1.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"59.9\",\n    \"detail\": \"284 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.7\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.0 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"0.0\",\n      \"detail\": \"1 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"65.3\",\n      \"detail\": \"236 FTA\"\n    }]",
       "coverage" : "[{\n \"headline\": \"John Calipari’s Kentucky Teams Are Loaded and It’s a Scouting Nightmare\",\n \"link\": \"https://theringer.com/john-calipari-loaded-kentucky-teams-hard-to-scout-2746005f4564\"\n }]",
       "shot_chart" : "{\n \"at_rim\": \"64.0\",\n \"at_rim_fga\": \"247\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"25.0\",\n \"left_mid_fga\": \"8\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"31.3\",\n \"mid_fga\": \"16\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"38.5\",\n \"right_mid_fga\": \"13\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": false,\n \"top_of_key_fga\": false,\n \"top_of_key_rank\": false,\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/john-calipari-loaded-kentucky-teams-hard-to-scout-2746005f4564",
       "disclaimers" : ""
     },
     {
@@ -144,7 +144,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.5\",\n    \"detail\": \"22.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"12.5\",\n    \"detail\": \"15.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.0\",\n    \"detail\": \"3.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"57.2\",\n    \"detail\": \"421 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"44.7\",\n      \"detail\": \"85 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"78.1\",\n      \"detail\": \"210 FTA\"\n    }]",
       "coverage" : "[{\n \"headline\": \"Purdue’s Caleb Swanigan Is a Revelation\",\n \"link\": \"https://theringer.com/caleb-swanigan-purdue-boilermakers-college-basketball-825f665c2969\"}\n {\n \"headline\": \"Caleb Swanigan and Deonte Burton Turned Their Duel Into a Basketball Boxing Match\",\n \"link\": \"https://theringer.com/caleb-swanigan-and-deonte-burton-turned-their-duel-into-a-basketball-boxing-match-5e2f110a9fbe\"\n }]",
       "shot_chart" : "{\n \"at_rim\": \"60.8\",\n \"at_rim_fga\": \"255\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"38.9\",\n \"left_mid_fga\": \"36\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"55.6\",\n \"mid_fga\": \"32\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"19.2\",\n \"right_mid_fga\": \"26\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"37.0\",\n \"left_wing_fga\": \"27\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"50.0\",\n \"top_of_key_fga\": \"24\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"44.0\",\n \"right_wing_fga\": \"25\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/caleb-swanigan",
       "disclaimers" : ""
     },
     {
@@ -165,7 +165,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.0\",\n    \"detail\": \"20.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.7\",\n    \"detail\": \"10.9 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.8\",\n    \"detail\": \"2.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"54.1\",\n    \"detail\": \"434 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"2.6\",\n      \"detail\": \"3.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"38.4\",\n      \"detail\": \"172 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"69.2\",\n      \"detail\": \"130 FTA\"\n    }]",
       "coverage" : "[{\n \"headline\": \"What Has the NCAA Tournament Taught Us About the 2017 NBA Draft?\",\n \"link\": \"https://theringer.com/2017-nba-draft-prospects-ncaa-tournament-71dfe15c5844\"\n }]",
       "shot_chart" : "{\n \"at_rim\": \"67.4\",\n \"at_rim_fga\": \"144\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"34.9\",\n \"left_mid_fga\": \"43\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"43.8\",\n \"mid_fga\": \"32\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"26.7\",\n \"right_mid_fga\": \"45\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"43.2\",\n \"left_wing_fga\": \"44\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"40.8\",\n \"top_of_key_fga\": \"76\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"28.6\",\n \"right_wing_fga\": \"49\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/2017-nba-draft-prospects-ncaa-tournament-71dfe15c5844",
       "disclaimers" : ""
     },
     {
@@ -186,7 +186,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"11.0\",\n    \"detail\": \"14.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.3\",\n    \"detail\": \"7.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.3\",\n    \"detail\": \"1.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"60.5\",\n    \"detail\": \"305 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.0 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.3\",\n      \"detail\": \"110 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.3\",\n      \"detail\": \"60 FTA\"\n    }]",
       "coverage" : " [{\n    \"headline\": \"Six Under-the-Radar NBA Prospects to Watch in the Sweet 16\",\n    \"link\": \"https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f\"\n  },\n  {\n    \"headline\": \"Inside Michigan’s Captivating NCAA Tournament Run\",\n    \"link\": \"https://theringer.com/2017-ncaa-tournament-michigan-wolverines-john-beilein-556f6539a7f1\"\n  }]",
       "shot_chart" : "{\n \"at_rim\": \"72.2\",\n \"at_rim_fga\": \"144\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"22.2\",\n \"left_mid_fga\": \"18\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"66.7\",\n \"mid_fga\": \"6\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"44.0\",\n \"right_mid_fga\": \"25\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"37.8\",\n \"left_wing_fga\": \"45\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"63.6\",\n \"top_of_key_fga\": \"11\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"29.4\",\n \"right_wing_fga\": \"51\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/dj-wilson",
       "disclaimers" : ""
     },
     {
@@ -207,7 +207,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.9\",\n    \"detail\": \"16.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.8\",\n    \"detail\": \"5.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.4\",\n    \"detail\": \"2.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.9\",\n    \"detail\": \"372 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.3\",\n      \"detail\": \"1.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.7\",\n      \"detail\": \"199 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.3\",\n      \"detail\": \"108 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"55.0\",\n \"at_rim_fga\": \"111\",\n \"at_rim_rank\": \"2\",\n \"left_mid\": \"27.3\",\n \"left_mid_fga\": \"22\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"26.9\",\n \"mid_fga\": \"26\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"20\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"36.1\",\n \"left_wing_fga\": \"72\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"38.6\",\n \"top_of_key_fga\": \"44\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"43.0\",\n \"right_wing_fga\": \"79\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -228,7 +228,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.7\",\n    \"detail\": \"22.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.9\",\n    \"detail\": \"5.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"4.6\",\n    \"detail\": \"6.2 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"49.7\",\n    \"detail\": \"448 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"24.6\",\n      \"detail\": \"69 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"73.9\",\n      \"detail\": \"211 FTA\"\n    }]",
       "coverage" : " [{\n    \"headline\": \"De’Aaron Fox Would Have a Shot at Being Drafted No. 1 … If He Had a Shot\",\n    \"link\": \"https://theringer.com/deaaron-fox-would-have-a-shot-at-being-drafted-no-1-if-he-had-a-shot-95763371af97\"\n  },\n  {\n    \"headline\": \"De’Aaron Fox Won March Madness’s Battle of the Lottery-Bound Point Guards\",\n    \"link\": \"https://theringer.com/kentucky-ucla-deaaron-fox-lonzo-ball-ncaa-tournament-f30c72a4921b\"\n  }, \n  {\n    \"headline\": \"The Most Important NBA Lottery Since the LeBron Sweepstakes\",\n    \"link\": \"https://theringer.com/most-important-nba-draft-lottery-15a6ea1391dc\"\n  }]",
       "shot_chart" : "{\n \"at_rim\": \"58.6\",\n \"at_rim_fga\": \"249\",\n \"at_rim_rank\": \"3\",\n \"left_mid\": \"37.3\",\n \"left_mid_fga\": \"51\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"41.3\",\n \"mid_fga\": \"46\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"35.1\",\n \"right_mid_fga\": \"37\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"13.3\",\n \"left_wing_fga\": \"15\",\n \"left_wing_rank\": \"1\",\n \"top_of_key\": \"27.8\",\n \"top_of_key_fga\": \"18\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"28.1\",\n \"right_wing_fga\": \"32\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/deaaron-fox",
       "disclaimers" : ""
     },
     {
@@ -249,7 +249,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.1\",\n    \"detail\": \"20.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.6\",\n    \"detail\": \"5.2 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"7.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.0\",\n    \"detail\": \"420 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.9\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"35.9\",\n      \"detail\": \"153 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"71.5\",\n      \"detail\": \"200 FTA\"\n    }]",
       "coverage" : " [{\n    \"headline\": \"The 2017 NBA Draft’s Own Ridiculous Six\",\n    \"link\": \"https://theringer.com/2017-nba-draft-point-guards-markelle-fultz-dennis-smith-jr-ef66c2bf3653\"\n  },\n  {\n    \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 2.0\",\n    \"link\": \"https://theringer.com/the-ringers-2017-nba-draft-lottery-big-board-version-2-0-446c31b6a473\"\n  },\n  {\n    \"headline\": \"Dennis Smith Jr. Is NBA Ready—Just Don’t Hold His School Against Him\",\n    \"link\": \"https://theringer.com/2017-nba-draft-dennis-smith-jr-nc-state-wolfpack-b220c78d9b5c\"\n  }]",
       "shot_chart" : "{\n \"at_rim\": \"65.7\",\n \"at_rim_fga\": \"169\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"22.6\",\n \"left_mid_fga\": \"31\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"22.6\",\n \"mid_fga\": \"31\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"29.0\",\n \"right_mid_fga\": \"38\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"32.7\",\n \"left_wing_fga\": \"55\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"31.6\",\n \"top_of_key_fga\": \"38\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"43.1\",\n \"right_wing_fga\": \"58\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/dennissmith",
       "disclaimers" : ""
     },
     {
@@ -270,7 +270,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.1\",\n    \"detail\": \"22.0 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.1\",\n    \"detail\": \"5.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"4.4\",\n    \"detail\": \"5.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"57.8\",\n    \"detail\": \"404 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.2\",\n      \"detail\": \"1.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.4\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.6\",\n      \"detail\": \"144 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"81.3\",\n      \"detail\": \"182 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"63.7\",\n \"at_rim_fga\": \"171\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"40.0\",\n \"left_mid_fga\": \"30\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"42.3\",\n \"mid_fga\": \"26\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"42.5\",\n \"right_mid_fga\": \"40\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"32.7\",\n \"left_wing_fga\": \"52\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"48.5\",\n \"top_of_key_fga\": \"33\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"40.0\",\n \"right_wing_fga\": \"50\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -291,7 +291,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"11.1\",\n    \"detail\": \"16.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.1\",\n    \"detail\": \"9.2 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"1.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"54.7\",\n    \"detail\": \"299 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.1\",\n      \"detail\": \"110 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"72.3\",\n      \"detail\": \"101 FTA\"\n    }]",
       "coverage" : " [{\n    \"headline\": \"Six Under-the-Radar NBA Prospects to Watch in the Sweet 16\",\n    \"link\": \"https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f\"\n  }]    ",
       "shot_chart" : "{\n \"at_rim\": \"65.1\",\n \"at_rim_fga\": \"103\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"23.3\",\n \"left_mid_fga\": \"43\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"52.2\",\n \"mid_fga\": \"23\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"43.3\",\n \"right_mid_fga\": \"30\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"34.9\",\n \"left_wing_fga\": \"43\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"38.5\",\n \"top_of_key_fga\": \"13\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"41.7\",\n \"right_wing_fga\": \"48\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f",
       "disclaimers" : ""
     },
     {
@@ -312,7 +312,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"15.6\",\n    \"detail\": \"19.3 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.9\",\n    \"detail\": \"6.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.7\",\n    \"detail\": \"3.4 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"49.8\",\n    \"detail\": \"444 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"2.1\",\n      \"detail\": \"2.6 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"35.4\",\n      \"detail\": \"226 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"80.6\",\n      \"detail\": \"108 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"50.7\",\n \"at_rim_fga\": \"142\",\n \"at_rim_rank\": \"1\",\n \"left_mid\": \"32.0\",\n \"left_mid_fga\": \"25\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"31.7\",\n \"mid_fga\": \"41\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"43.3\",\n \"right_mid_fga\": \"30\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"31.9\",\n \"left_wing_fga\": \"94\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"25.0\",\n \"top_of_key_fga\": \"32\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"45.7\",\n \"right_wing_fga\": \"81\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec",
       "disclaimers" : ""
     },
     {
@@ -333,7 +333,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.2\",\n    \"detail\": \"23.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.2\",\n    \"detail\": \"5.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.7\",\n    \"detail\": \"2.4 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.0\",\n    \"detail\": \"489 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.1\",\n      \"detail\": \"0.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"33.3\",\n      \"detail\": \"171 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"75.4\",\n      \"detail\": \"138 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"60.6\",\n \"at_rim_fga\": \"193\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"30.4\",\n \"left_mid_fga\": \"46\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"35.3\",\n \"mid_fga\": \"51\",\n \"mid_rank\": \"3\",\n \"right_mid\": \"40.5\",\n \"right_mid_fga\": \"42\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"31.2\",\n \"left_wing_fga\": \"61\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"33.3\",\n \"top_of_key_fga\": \"24\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"39.7\",\n \"right_wing_fga\": \"73\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec",
       "disclaimers" : ""
     },
     {
@@ -354,7 +354,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.3\",\n    \"detail\": \"18.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.2\",\n    \"detail\": \"5.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"4.8\",\n    \"detail\": \"6.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"50.7\",\n    \"detail\": \"211 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.2\",\n      \"detail\": \"1.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.7\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"27.3\",\n      \"detail\": \"44 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"73.7\",\n      \"detail\": \"137 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"56.1\",\n \"at_rim_fga\": \"132\",\n \"at_rim_rank\": \"3\",\n \"left_mid\": \"30.8\",\n \"left_mid_fga\": \"13\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"40.0\",\n \"mid_fga\": \"15\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"12\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"21.1\",\n \"left_wing_fga\": \"19\",\n \"left_wing_rank\": \"1\",\n \"top_of_key\": \"45.5\",\n \"top_of_key_fga\": \"11\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"10.0\",\n \"right_wing_fga\": \"10\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -375,7 +375,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"5.8\",\n    \"detail\": \"12.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"2.1\",\n    \"detail\": \"4.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.6\",\n    \"detail\": \"3.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"55.9\",\n    \"detail\": \"204 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"41.4\",\n      \"detail\": \"87 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"66.7\",\n      \"detail\": \"51 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Frank Ntilikina Passes the Eye Test\",\n  \"link\": \"https://theringer.com/french-nba-prospect-frank-ntilikina-passes-the-eye-test-2a9897ed8322\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"62.5\",\n \"at_rim_fga\": \"56\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"40.0\",\n \"left_mid_fga\": \"25\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"63.6\",\n \"mid_fga\": \"11\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"36.4\",\n \"right_mid_fga\": \"22\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"45.8\",\n \"left_wing_fga\": \"48\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"43.8\",\n \"top_of_key_fga\": \"16\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"30.0\",\n \"right_wing_fga\": \"30\",\n \"right_wing_rank\": \"2\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/french-nba-prospect-frank-ntilikina-passes-the-eye-test-2a9897ed8322",
       "disclaimers" : ""
     },
     {
@@ -396,7 +396,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.1\",\n    \"detail\": \"27.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.5\",\n    \"detail\": \"8.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.0\",\n    \"detail\": \"3.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"45.2\",\n    \"detail\": \"273 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.4\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"17.6\",\n      \"detail\": \"51 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"63.4\",\n      \"detail\": \"123 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"How John Calipari Blurs the Line Between College Coach and NBA Agent\",\n  \"link\": \"https://theringer.com/john-calipari-blurs-the-line-between-college-coach-and-nba-agent-ecc58be0126e\"\n}]",
       "shot_chart" : "",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/john-calipari-blurs-the-line-between-college-coach-and-nba-agent-ecc58be0126e",
       "disclaimers" : ""
     },
     {
@@ -412,12 +412,12 @@
       "reach" : "9' 2''",
       "summary" : "Injuries have robbed him of his elite standing in this draft class, but his versatility and athleticism as a big still make him an enticing prospect. ",
       "role_models" : "Amar’e Stoudemire, Julius Randle, Darrell Arthur",
-      "plus" : "[{\n    \"text\": \"Versatile defensive potential. Before the ACL tear, he was capable of switching onto guards.\",\n    \"media\": \"img/media/h_giles_versatile_defensee.gif\"\n  },\n  {\n    \"text\": \"Not a pure rim protector, but he can alter shots due to quick-leaping ability. Needs to get stronger to handle larger bigs, though.\"\n  },\n  {\n    \"text\": \"Excellent rebounding potential if explosiveness returns. Capable of throwing down putbacks. Loves to chase out of area for boards. \"\n  },\n  {\n    \"text\": \"Can develop into a screen-game threat because of his good hands and leaping.\",\n    \"media\": \"img/media/h_giles_can_develop_into.gif\"\n  },\n  {\n    \"text\": \"Scores quickly from the dunker’s spot on baseline and runs floor hard in transition.\"\n  },\n  {\n    \"text\": \"Perimeter scoring potential. Can handle the ball in the open floor. Needs to improve handle to face up or create in half court.\"\n }]",
+      "plus" : "[{\n    \"text\": \"Versatile defensive potential. Before the ACL tear, he was capable of switching onto guards.\",\n    \"media\": \"img/media/h_giles_versatile_defensee.gif\"\n  },\n  {\n    \"text\": \"Not a pure rim protector, but he can alter shots due to quick-leaping ability. Needs to get stronger to handle larger bigs, though.\",\n    \"media\": \"img/media/h_giles_not_a_true.gif\"\n  },\n  {\n    \"text\": \"Excellent rebounding potential if explosiveness returns. Capable of throwing down putbacks. Loves to chase out of area for boards. \",\n    \"media\": \"img/media/h_giles_excellent_rebounding.gif\"\n  },\n  {\n    \"text\": \"Can develop into a screen-game threat because of his good hands and leaping.\",\n    \"media\": \"img/media/h_giles_can_develop_into.gif\"\n  },\n  {\n    \"text\": \"Scores quickly from the dunker’s spot on baseline and runs floor hard in transition.\"\n  },\n  {\n    \"text\": \"Perimeter scoring potential. Can handle the ball in the open floor. Needs to improve handle to face up or create in half court.\"\n }]",
       "minus" : "[{\n    \"text\": \"Worrisome injury history: torn left ACL, MCL, meniscus in 2013; torn right ACL in 2015; left-knee procedure in 2016.\"\n  },\n  {\n    \"text\": \"Lacks feel for the game; sets too many moving screens, makes inaccurate passes, panics when pressured. It’s crucial he improves role-player skills.\",\n    \"media\": \"img/media/h_giles_lacks_feel.gif\"\n  },\n  {\n    \"text\": \"Interior scoring is shaky, rarely uses his left hand, and misses easy shots.\"\n  },\n  {\n    \"text\": \"Lacks explosiveness from standstill.\"\n  },\n  {\n    \"text\": \"Uncomfortable shooter: Low release, limited range, misses off the side of the rim.\"\n  },\n  {\n    \"text\": \"Prone to getting hacked due to poor free throw percentage.\"\n }]",
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"3.9\",\n    \"detail\": \"13.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.8\",\n    \"detail\": \"13.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.3\",\n    \"detail\": \"1.2 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"57.7\",\n    \"detail\": \"78 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.3\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.7\",\n      \"detail\": \"2.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"---\",\n      \"detail\": \"0 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"50.0\",\n      \"detail\": \"24 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Three NBA Prospects Worth Tanking for in 2017\",\n  \"link\": \"https://theringer.com/three-nba-prospects-worth-tanking-for-in-2017-262342f6ea40\"\n}, \n\n{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 2.0\",\n  \"link\": \"https://theringer.com/the-ringers-2017-nba-draft-lottery-big-board-version-2-0-446c31b6a473\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"64.6\",\n \"at_rim_fga\": \"65\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"42.9\",\n \"left_mid_fga\": \"7\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"2\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"0.0\",\n \"right_mid_fga\": \"4\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": false,\n \"top_of_key_fga\": false,\n \"top_of_key_rank\": false,\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/harry-giles",
       "disclaimers" : ""
     },
     {
@@ -438,7 +438,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"4.7\",\n    \"detail\": \"14.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.0\",\n    \"detail\": \"12.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.2\",\n    \"detail\": \"0.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"56.4\",\n    \"detail\": \"101 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.2\",\n      \"detail\": \"3.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"---\",\n      \"detail\": \"0 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"53.5\",\n      \"detail\": \"43 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"61.3\",\n \"at_rim_fga\": \"86\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"28.6\",\n \"left_mid_fga\": \"7\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"4\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"33.3\",\n \"right_mid_fga\": \"6\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": false,\n \"top_of_key_fga\": false,\n \"top_of_key_rank\": false,\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec",
       "disclaimers" : ""
     },
     {
@@ -459,7 +459,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"4.4\",\n    \"detail\": \"14.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.4\",\n    \"detail\": \"11.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"2.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.1\",\n    \"detail\": \"95 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"2.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.6\",\n      \"detail\": \"1.9 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"26.9\",\n      \"detail\": \"26 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"68.3\",\n      \"detail\": \"41 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"62.0\",\n \"at_rim_fga\": \"71\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"33.3\",\n \"left_mid_fga\": \"3\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"3\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"0.0\",\n \"right_mid_fga\": \"2\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"22.2\",\n \"left_wing_fga\": \"18\",\n \"left_wing_rank\": \"1\",\n \"top_of_key\": \"33.3\",\n \"top_of_key_fga\": \"6\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"44.4\",\n \"right_wing_fga\": \"9\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -480,7 +480,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.0\",\n    \"detail\": \"17.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"10.5\",\n    \"detail\": \"12.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"1.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"49.7\",\n    \"detail\": \"312 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.7\",\n      \"detail\": \"0.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"40.0\",\n      \"detail\": \"20 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"66.3\",\n      \"detail\": \"187 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 5.0\",\n  \"link\": \"https://theringer.com/ringer-nba-draft-lottery-big-board-version-5-0-2c36dc7c02cf\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"54.4\",\n \"at_rim_fga\": \"193\",\n \"at_rim_rank\": \"2\",\n \"left_mid\": \"37.7\",\n \"left_mid_fga\": \"53\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"40.0\",\n \"mid_fga\": \"15\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"36.4\",\n \"right_mid_fga\": \"33\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"0.0\",\n \"left_wing_fga\": \"2\",\n \"left_wing_rank\": \"1\",\n \"top_of_key\": \"37.5\",\n \"top_of_key_fga\": \"8\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"71.4\",\n \"right_wing_fga\": \"7\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/ringer-nba-draft-lottery-big-board-version-5-0-2c36dc7c02cf",
       "disclaimers" : ""
     },
     {
@@ -501,7 +501,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.6\",\n    \"detail\": \"20.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.3\",\n    \"detail\": \"7.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"1.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.5\",\n    \"detail\": \"440 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"25.5\",\n      \"detail\": \"94 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"71.3\",\n      \"detail\": \"167 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"College Basketball’s Player of the Year Race Will Follow a Familiar Script\",\n  \"link\": \"https://theringer.com/college-basketball-preseason-player-of-the-year-race-14fbdf4148a3\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"60.9\",\n \"at_rim_fga\": \"276\",\n \"at_rim_rank\": \"4\",\n \"left_mid\": \"15.8\",\n \"left_mid_fga\": \"19\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"37.0\",\n \"mid_fga\": \"27\",\n \"mid_rank\": \"3\",\n \"right_mid\": \"42.3\",\n \"right_mid_fga\": \"26\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"37.9\",\n \"left_wing_fga\": \"29\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"26.1\",\n \"top_of_key_fga\": \"23\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"17.5\",\n \"right_wing_fga\": \"40\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/college-basketball-preseason-player-of-the-year-race-14fbdf4148a3",
       "disclaimers" : ""
     },
     {
@@ -522,7 +522,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"13.4\",\n    \"detail\": \"16.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.5\",\n    \"detail\": \"10.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.8\",\n    \"detail\": \"1.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"56.6\",\n    \"detail\": \"316 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.6\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"1.9 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"0.0\",\n      \"detail\": \"7 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"56.4\",\n      \"detail\": \"149 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"A Glimpse Into Basketball’s Future at the FIBA Americas U18 Tournament\",\n  \"link\": \"https://theringer.com/a-glimpse-into-basketballs-future-at-the-fiba-americas-u18-tournament-18ad1c70182\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"65.3\",\n \"at_rim_fga\": \"222\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"44.8\",\n \"left_mid_fga\": \"29\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"28.6\",\n \"mid_fga\": \"28\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"42.9\",\n \"right_mid_fga\": \"28\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"0.0\",\n \"left_wing_fga\": \"2\",\n \"left_wing_rank\": \"1\",\n \"top_of_key\": \"0.0\",\n \"top_of_key_fga\": \"4\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"0.0\",\n \"right_wing_fga\": \"1\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/a-glimpse-into-basketballs-future-at-the-fiba-americas-u18-tournament-18ad1c70182",
       "disclaimers" : ""
     },
     {
@@ -543,7 +543,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"19.2\",\n    \"detail\": \"26.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"3.4\",\n    \"detail\": \"4.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.4\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"47.5\",\n    \"detail\": \"482 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.8\",\n      \"detail\": \"2.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.1\",\n      \"detail\": \"0.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.9\",\n      \"detail\": \"95 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"81.2\",\n      \"detail\": \"191 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"49.4\",\n \"at_rim_fga\": \"257\",\n \"at_rim_rank\": \"1\",\n \"left_mid\": \"43.1\",\n \"left_mid_fga\": \"58\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"40.00\",\n \"mid_fga\": \"40\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"32.6\",\n \"right_mid_fga\": \"43\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"36.4\",\n \"left_wing_fga\": \"44\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"40.0\",\n \"top_of_key_fga\": \"15\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"28.0\",\n \"right_wing_fga\": \"25\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -564,7 +564,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.8\",\n    \"detail\": \"20.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"7.3\",\n    \"detail\": \"8.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.1\",\n    \"detail\": \"2.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"50.7\",\n    \"detail\": \"365 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.3\",\n      \"detail\": \"1.6 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"34.2\",\n      \"detail\": \"117 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"84.9\",\n      \"detail\": \"139 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Jayson Tatum’s Old Game Could Use Some New Tricks\",\n  \"link\": \"https://theringer.com/jayson-tatums-old-game-could-use-some-new-tricks-c37f49bb21b8\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"58.3\",\n \"at_rim_fga\": \"156\",\n \"at_rim_rank\": \"3\",\n \"left_mid\": \"31.4\",\n \"left_mid_fga\": \"35\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"38.5\",\n \"mid_fga\": \"39\",\n \"mid_rank\": \"3\",\n \"right_mid\": \"37.0\",\n \"right_mid_fga\": \"27\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"34.2\",\n \"left_wing_fga\": \"41\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"25.0\",\n \"top_of_key_fga\": \"20\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"40.4\",\n \"right_wing_fga\": \"47\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/jayson-tatums-old-game-could-use-some-new-tricks-c37f49bb21b8",
       "disclaimers" : ""
     },
     {
@@ -585,7 +585,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"19.2\",\n    \"detail\": \"28.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"9.8\",\n    \"detail\": \"14.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.5\",\n    \"detail\": \"0.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"62.2\",\n    \"detail\": \"376 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.6\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.6\",\n      \"detail\": \"2.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"0.0\",\n      \"detail\": \"1 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"74.5\",\n      \"detail\": \"220 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"67.0\",\n \"at_rim_fga\": \"297\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"48.7\",\n \"left_mid_fga\": \"37\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"55.6\",\n \"mid_fga\": \"9\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"35.5\",\n \"right_mid_fga\": \"31\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": false,\n \"top_of_key_fga\": false,\n \"top_of_key_rank\": false,\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -606,7 +606,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"17.3\",\n    \"detail\": \"22.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"9.9\",\n    \"detail\": \"12.9 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.3\",\n    \"detail\": \"3.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.2\",\n    \"detail\": \"433 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"28.1\",\n      \"detail\": \"32 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"69.9\",\n      \"detail\": \"183 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Baylor Is Back to Its Winning Ways\",\n  \"link\": \"https://theringer.com/2017-ncaa-tournament-baylor-georgia-state-6d9f5153927a\"\n}, \n\n{\n  \"headline\": \"Six Under-the-Radar NBA Prospects to Watch in the Sweet 16\",\n  \"link\": \"https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"57.6\",\n \"at_rim_fga\": \"311\",\n \"at_rim_rank\": \"3\",\n \"left_mid\": \"33.3\",\n \"left_mid_fga\": \"24\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"51.7\",\n \"mid_fga\": \"29\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"40.5\",\n \"right_mid_fga\": \"42\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"33.3\",\n \"left_wing_fga\": \"6\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"9.1\",\n \"top_of_key_fga\": \"11\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"33.3\",\n \"right_wing_fga\": \"12\",\n \"right_wing_rank\": \"2\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/johnathan-motley",
       "disclaimers" : ""
     },
     {
@@ -627,7 +627,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.0\",\n    \"detail\": \"18.3 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"7.8\",\n    \"detail\": \"12.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.2\",\n    \"detail\": \"1.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"56.8\",\n    \"detail\": \"256 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.2\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"34.8\",\n      \"detail\": \"89 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"78.0\",\n      \"detail\": \"118 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Two of the Best Centers in the NBA Draft Have Never Played Center\",\n  \"link\": \"https://theringer.com/2017-nba-draft-centers-og-anunoby-jonathan-isaac-e345e30acdd6\"\n}, \n\n{\n  \"headline\": \"Jonathan Isaac Is an Elite NBA Prospect Hiding in Plain Sight\",\n  \"link\": \"https://theringer.com/jonathan-isaac-is-an-elite-nba-prospect-hiding-in-plain-sight-cef54ab82d4\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"68.1\",\n \"at_rim_fga\": \"113\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"36.4\",\n \"left_mid_fga\": \"22\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"46.7\",\n \"mid_fga\": \"15\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"40.0\",\n \"right_mid_fga\": \"20\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"43.9\",\n \"left_wing_fga\": \"41\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"0.0\",\n \"top_of_key_fga\": \"8\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"31.4\",\n \"right_wing_fga\": \"35\",\n \"right_wing_rank\": \"2\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/jonathan-isaac",
       "disclaimers" : ""
     },
     {
@@ -648,7 +648,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"6.2\",\n    \"detail\": \"16.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.1\",\n    \"detail\": \"13.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"1.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"43.9\",\n    \"detail\": \"205 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.5\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.6\",\n      \"detail\": \"4.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"22.7\",\n      \"detail\": \"44 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"57.5\",\n      \"detail\": \"87 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"55.0\",\n \"at_rim_fga\": \"40\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"0.0\",\n \"left_mid_fga\": \"2\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"3\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"33.3\",\n \"right_mid_fga\": \"3\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"66.7\",\n \"left_wing_fga\": \"3\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"0.0\",\n \"top_of_key_fga\": \"1\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"0.0\",\n \"right_wing_fga\": \"3\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -669,7 +669,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"10.9\",\n    \"detail\": \"15.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.8\",\n    \"detail\": \"12.2 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.8\",\n    \"detail\": \"2.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"64.2\",\n    \"detail\": \"269 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.3\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"2.2\",\n      \"detail\": \"3.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"21.4\",\n      \"detail\": \"14 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"70.1\",\n      \"detail\": \"117 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Jordan Bell Is Oregon’s Draymond Green\",\n  \"link\": \"https://theringer.com/oregon-kansas-ncaa-elite-eight-f6f2b5a0a7af\"\n}, \n\n{\n  \"headline\": \"For Once, Big Men—Not Guards—Can Decide the NCAA Champion\",\n  \"link\": \"https://theringer.com/oregon-north-carolina-unc-final-four-3f850f980793\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"67.6\",\n \"at_rim_fga\": \"225\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"20.0\",\n \"left_mid_fga\": \"10\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"54.6\",\n \"mid_fga\": \"11\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"57.1\",\n \"right_mid_fga\": \"14\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"40.0\",\n \"left_wing_fga\": \"5\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"66.7\",\n \"top_of_key_fga\": \"3\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"0.0\",\n \"right_wing_fga\": \"5\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/jordan-bell",
       "disclaimers" : ""
     },
     {
@@ -690,7 +690,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.7\",\n    \"detail\": \"22.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.4\",\n    \"detail\": \"7.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.9\",\n    \"detail\": \"3.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"59.0\",\n    \"detail\": \"463 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.5\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"40.4\",\n      \"detail\": \"183 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"74.7\",\n      \"detail\": \"170 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Villanova Has Two Players Every Team in the NBA Needs\",\n  \"link\": \"https://theringer.com/villanova-has-two-players-every-team-in-the-nba-needs-83460b1a4bd4\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"68.4\",\n \"at_rim_fga\": \"193\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"40.6\",\n \"left_mid_fga\": \"32\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"32.7\",\n \"mid_fga\": \"52\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"21.4\",\n \"right_mid_fga\": \"14\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"40.5\",\n \"left_wing_fga\": \"84\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"47.4\",\n \"top_of_key_fga\": \"19\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"40.6\",\n \"right_wing_fga\": \"69\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/villanova-has-two-players-every-team-in-the-nba-needs-83460b1a4bd4",
       "disclaimers" : ""
     },
     {
@@ -711,7 +711,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.3\",\n    \"detail\": \"21.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"7.4\",\n    \"detail\": \"9.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.0\",\n    \"detail\": \"3.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"55.2\",\n    \"detail\": \"429 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.7\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.8\",\n      \"detail\": \"90 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"56.6\",\n      \"detail\": \"173 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Josh Jackson’s Missing Ingredient\",\n  \"link\": \"https://theringer.com/josh-jacksons-achilles-heel-will-keep-him-from-going-no-1-3ed0b79a4768\"\n},\n\n{\n  \"headline\": \"The Jayhawks’ Newly Modern Dominance\",\n  \"link\": \"https://theringer.com/kansas-jayhawks-bill-self-josh-jackson-big-12-titles-576e5191c5ac\"\n}, \n\n{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 4.0\",\n  \"link\": \"https://theringer.com/the-ringers-2017-nba-draft-lottery-big-board-version-4-0-8425958b85fd\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"62.5\",\n \"at_rim_fga\": \"256\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"30.3\",\n \"left_mid_fga\": \"33\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"30.0\",\n \"mid_fga\": \"30\",\n \"mid_rank\": \"2\",\n \"right_mid\": \"30.4\",\n \"right_mid_fga\": \"23\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"31.0\",\n \"left_wing_fga\": \"42\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"38.5\",\n \"top_of_key_fga\": \"13\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"46.9\",\n \"right_wing_fga\": \"32\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/josh-jackson",
       "disclaimers" : "Jackson was accused of threatening a Kansas women's basketball player in a March incident that led to a misdemeanor criminal property damage charge."
     },
     {
@@ -732,7 +732,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"10.5\",\n    \"detail\": \"15.1 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.0\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.9\",\n    \"detail\": \"1.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.4\",\n    \"detail\": \"267 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"43.8\",\n      \"detail\": \"105 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"69.8\",\n      \"detail\": \"96 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"48.1\",\n \"at_rim_fga\": \"133\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"29.4\",\n \"left_mid_fga\": \"17\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"9\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"40.0\",\n \"right_mid_fga\": \"10\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"34.0\",\n \"left_wing_fga\": \"47\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"20.0\",\n \"top_of_key_fga\": \"5\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"54.2\",\n \"right_wing_fga\": \"48\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -753,7 +753,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.3\",\n    \"detail\": \"22.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.7\",\n    \"detail\": \"5.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.8\",\n    \"detail\": \"3.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.1\",\n    \"detail\": \"596 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.0 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.0\",\n      \"detail\": \"284 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"74.8\",\n      \"detail\": \"131 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The Evolution of Justin Jackson\",\n  \"link\": \"https://theringer.com/justin-jackson-unc-march-madness-5e23c97e50f3\"\n},\n\n{\n  \"headline\": \"The Tar Heels Have Won Another National Title, and They Have Their Perimeter Defense to Thank\",\n  \"link\": \"https://theringer.com/2017-national-championship-game-unc-tar-heels-gonzaga-bulldogs-defense-justin-jackson-theo-pinson-6135a5d49528\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"60.9\",\n \"at_rim_fga\": \"184\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"31.3\",\n \"left_mid_fga\": \"48\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"43.5\",\n \"mid_fga\": \"46\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"29.8\",\n \"right_mid_fga\": \"47\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"35.6\",\n \"left_wing_fga\": \"101\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"39.3\",\n \"top_of_key_fga\": \"56\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"39.3\",\n \"right_wing_fga\": \"112\",\n \"right_wing_rank\": \"4\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/justin-jackson",
       "disclaimers" : ""
     },
     {
@@ -774,7 +774,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.9\",\n    \"detail\": \"20.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.2\",\n    \"detail\": \"9.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.2\",\n    \"detail\": \"1.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"68.9\",\n    \"detail\": \"296 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.4\",\n      \"detail\": \"2.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"53.3\",\n      \"detail\": \"15 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"51.7\",\n      \"detail\": \"87 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"76.4\",\n \"at_rim_fga\": \"229\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"43.5\",\n \"left_mid_fga\": \"23\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"50.0\",\n \"mid_fga\": \"8\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"20.0\",\n \"right_mid_fga\": \"20\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"33.3\",\n \"left_wing_fga\": \"3\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"50.0\",\n \"top_of_key_fga\": \"12\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"0.0\",\n \"right_wing_fga\": \"1\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec",
       "disclaimers" : ""
     },
     {
@@ -795,7 +795,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"9.2\",\n    \"detail\": \"15.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"2.7\",\n    \"detail\": \"4.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"2.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"47.5\",\n    \"detail\": \"319 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.7\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"31.5\",\n      \"detail\": \"219 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"76.0\",\n      \"detail\": \"75 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"55.1\",\n \"at_rim_fga\": \"69\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"37.5\",\n \"left_mid_fga\": \"16\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"75.0\",\n \"mid_fga\": \"4\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"20.0\",\n \"right_mid_fga\": \"15\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"31.3\",\n \"left_wing_fga\": \"96\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"31.3\",\n \"top_of_key_fga\": \"16\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"29.9\",\n \"right_wing_fga\": \"107\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -816,7 +816,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"15.6\",\n    \"detail\": \"20.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"7.2\",\n    \"detail\": \"9.3 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.9\",\n    \"detail\": \"1.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"58.4\",\n    \"detail\": \"376 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"42.3\",\n      \"detail\": \"163 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.5\",\n      \"detail\": \"164 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 3.0\",\n  \"link\": \"https://theringer.com/the-ringers-2017-nba-draft-lottery-big-board-version-3-0-58156aa84d5\"\n},\n\n{\n  \"headline\": \"Our Dream Scenarios for 2017 NBA Draft Prospects\",\n  \"link\": \"https://theringer.com/dream-scenarios-for-some-of-2017s-best-nba-draft-prospects-b445af3056f8\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"59.6\",\n \"at_rim_fga\": \"141\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"36.4\",\n \"left_mid_fga\": \"22\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"54.6\",\n \"mid_fga\": \"22\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"34.4\",\n \"right_mid_fga\": \"32\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"41.8\",\n \"left_wing_fga\": \"67\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"35.5\",\n \"top_of_key_fga\": \"31\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"46.2\",\n \"right_wing_fga\": \"65\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/lauri-markkanen",
       "disclaimers" : ""
     },
     {
@@ -837,7 +837,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.6\",\n    \"detail\": \"16.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.0\",\n    \"detail\": \"6.8 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"7.6\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"66.8\",\n    \"detail\": \"343 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.8\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.8\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"41.2\",\n      \"detail\": \"194 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"67.3\",\n      \"detail\": \"98 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The Key to Understanding Lonzo Ball’s Funky Jumper\",\n  \"link\": \"https://theringer.com/lonzo-ball-ucla-shooting-mechanics-6eeda2ef3e41\"\n},\n\n{\n  \"headline\": \"Lonzo Ball’s Unique Methods of Success Have Made the Leap\",\n  \"link\": \"https://theringer.com/lonzo-ball-ucla-bruins-freshman-point-guard-280a7cdbc284\"\n},\n{\n  \"headline\": \"Be Like Steph?\",\n  \"link\": \"https://theringer.com/steph-curry-ball-brothers-chino-hills-c4a7719b22e9\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"75.6\",\n \"at_rim_fga\": \"131\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"55.6\",\n \"left_mid_fga\": \"9\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"42.9\",\n \"mid_fga\": \"7\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"6\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"40.8\",\n \"left_wing_fga\": \"81\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"38.5\",\n \"top_of_key_fga\": \"39\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"43.1\",\n \"right_wing_fga\": \"72\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/lonzo-ball",
       "disclaimers" : ""
     },
     {
@@ -858,7 +858,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"19.5\",\n    \"detail\": \"22.0 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.1\",\n    \"detail\": \"5.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.5\",\n    \"detail\": \"2.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"58.1\",\n    \"detail\": \"484 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"0.9 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"43.8\",\n      \"detail\": \"201 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"85.6\",\n      \"detail\": \"187 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"How Will Coach K Sort Out Duke’s Embarrassment of Riches?\",\n  \"link\": \"https://theringer.com/coach-k-duke-basketball-luke-kennard-amile-jefferson-4a768bac347d\"\n},\n\n{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n},\n{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 5.0\",\n  \"link\": \"https://theringer.com/ringer-nba-draft-lottery-big-board-version-5-0-2c36dc7c02cf\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"58.0\",\n \"at_rim_fga\": \"143\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"43.8\",\n \"left_mid_fga\": \"48\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"47.8\",\n \"mid_fga\": \"67\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"56.8\",\n \"right_mid_fga\": \"37\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"43.1\",\n \"left_wing_fga\": \"72\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"38.5\",\n \"top_of_key_fga\": \"39\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"43.6\",\n \"right_wing_fga\": \"78\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/tagged/luke-kennard",
       "disclaimers" : ""
     },
     {
@@ -879,7 +879,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"19.8\",\n    \"detail\": \"24.8 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"2.5\",\n    \"detail\": \"3.1 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.3\",\n    \"detail\": \"2.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"54.3\",\n    \"detail\": \"558 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.7\",\n      \"detail\": \"262 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"82.2\",\n      \"detail\": \"180 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Malik Monk Stole My Heart\",\n  \"link\": \"https://theringer.com/malik-monk-kentucky-wildcats-32b7943cedd\"\n},\n\n{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n},\n{\n  \"headline\": \"The Ringer’s 2017 NBA Draft Lottery Big Board, Version 5.0\",\n  \"link\": \"https://theringer.com/ringer-nba-draft-lottery-big-board-version-5-0-2c36dc7c02cf\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"61.6\",\n \"at_rim_fga\": \"138\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"32.8\",\n \"left_mid_fga\": \"64\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"52.8\",\n \"mid_fga\": \"36\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"37.5\",\n \"right_mid_fga\": \"64\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"33.3\",\n \"left_wing_fga\": \"105\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"50.0\",\n \"top_of_key_fga\": \"32\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"42.9\",\n \"right_wing_fga\": \"119\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/tagged/malik-monk",
       "disclaimers" : ""
     },
     {
@@ -900,7 +900,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"23.2\",\n    \"detail\": \"26.0 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.7\",\n    \"detail\": \"6.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"5.9\",\n    \"detail\": \"6.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.5\",\n    \"detail\": \"439 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.6\",\n      \"detail\": \"1.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.2\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"41.3\",\n      \"detail\": \"126 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"64.9\",\n      \"detail\": \"168 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Scouting Markelle Fultz in Person\",\n  \"link\": \"https://theringer.com/scouting-possible-no-1-pick-markelle-fultz-in-person-6e2fdcf3d727\"\n},\n\n{\n  \"headline\": \"Markelle Fultz Is Your Dream Point Guard Prospect Come to Life\",\n  \"link\": \"https://theringer.com/washington-markelle-fultz-2017-nba-draft-bc5913d07fc2\"\n},\n{\n  \"headline\": \"College Basketball’s Best Player Can’t Get Any Love\",\n  \"link\": \"https://theringer.com/markelle-fultz-washington-huskies-college-basketball-481eefbcd41c\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"54.4\",\n \"at_rim_fga\": \"184\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"35.1\",\n \"left_mid_fga\": \"37\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"44.2\",\n \"mid_fga\": \"43\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"46.8\",\n \"right_mid_fga\": \"47\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"41.7\",\n \"left_wing_fga\": \"48\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"56.3\",\n \"top_of_key_fga\": \"32\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"29.4\",\n \"right_wing_fga\": \"51\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/tagged/markelle-fultz",
       "disclaimers" : ""
     },
     {
@@ -921,7 +921,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"10.2\",\n    \"detail\": \"18.3 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.9\",\n    \"detail\": \"12.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"1.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"60.8\",\n    \"detail\": \"353 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.7\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"2.0 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"33.3\",\n      \"detail\": \"3 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"63.9\",\n      \"detail\": \"158 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"61.8\",\n \"at_rim_fga\": \"191\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"20.0\",\n \"left_mid_fga\": \"5\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"16.7\",\n \"mid_fga\": \"12\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"8\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": \"100.0\",\n \"top_of_key_fga\": \"1\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -942,7 +942,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.4\",\n    \"detail\": \"18.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.8\",\n    \"detail\": \"5.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"6.2\",\n    \"detail\": \"7.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.3\",\n    \"detail\": \"465 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.5\",\n      \"detail\": \"1.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.3 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.8\",\n      \"detail\": \"143 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"80.2\",\n      \"detail\": \"111 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"54.8\",\n \"at_rim_fga\": \"179\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"45.6\",\n \"left_mid_fga\": \"57\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"51.2\",\n \"mid_fga\": \"41\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"35.7\",\n \"right_mid_fga\": \"56\",\n \"right_mid_rank\": \"3\",\n \"left_wing\": \"31.6\",\n \"left_wing_fga\": \"57\",\n \"left_wing_rank\": \"2\",\n \"top_of_key\": \"53.9\",\n \"top_of_key_fga\": \"26\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"36.0\",\n \"right_wing_fga\": \"50\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -963,7 +963,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.1\",\n    \"detail\": \"20.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.2\",\n    \"detail\": \"7.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.5\",\n    \"detail\": \"0.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"63.5\",\n    \"detail\": \"300 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.5\",\n      \"detail\": \"114 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"72.6\",\n      \"detail\": \"106 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Michigan’s Moritz Wagner Is Now a Household Name\",\n  \"link\": \"https://theringer.com/2017-ncaa-tournament-michigan-wolverines-louisville-cardinals-73694499335e\"\n},\n\n{\n  \"headline\": \"Inside Michigan’s Captivating NCAA Tournament Run\",\n  \"link\": \"https://theringer.com/2017-ncaa-tournament-michigan-wolverines-john-beilein-556f6539a7f1\"\n}]\n",
       "shot_chart" : "{\n \"at_rim\": \"67.7\",\n \"at_rim_fga\": \"167\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"37.5\",\n \"left_mid_fga\": \"8\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"5\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"77.8\",\n \"right_mid_fga\": \"9\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"40.5\",\n \"left_wing_fga\": \"42\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"40.0\",\n \"top_of_key_fga\": \"35\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"42.4\",\n \"right_wing_fga\": \"33\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/tagged/moritz-wagner",
       "disclaimers" : ""
     },
     {
@@ -984,7 +984,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"11.1\",\n    \"detail\": \"17.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.4\",\n    \"detail\": \"8.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.4\",\n    \"detail\": \"2.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"61.5\",\n    \"detail\": \"122 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.3\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.3\",\n      \"detail\": \"2.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"31.1\",\n      \"detail\": \"45 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"56.3\",\n      \"detail\": \"48 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Two of the Best Centers in the NBA Draft Have Never Played Center\",\n  \"link\": \"https://theringer.com/2017-nba-draft-centers-og-anunoby-jonathan-isaac-e345e30acdd6\"\n},\n\n{\n  \"headline\": \"OG Anunoby, Hype Killer\",\n  \"link\": \"https://theringer.com/og-anunoby-hype-killer-a90bda92fced\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"71.6\",\n \"at_rim_fga\": \"74\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"33.3\",\n \"left_mid_fga\": \"3\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"1\",\n \"mid_rank\": \"1\",\n \"right_mid\": false,\n \"right_mid_fga\": false,\n \"right_mid_rank\": false,\n \"left_wing\": \"38.1\",\n \"left_wing_fga\": \"21\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"28.6\",\n \"top_of_key_fga\": \"7\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"25.0\",\n \"right_wing_fga\": \"16\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/tagged/og-anunoby",
       "disclaimers" : ""
     },
     {
@@ -1005,7 +1005,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"10.9\",\n    \"detail\": \"15.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.9\",\n    \"detail\": \"7.1 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.1\",\n    \"detail\": \"2.9 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.4\",\n    \"detail\": \"309 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.0\",\n      \"detail\": \"119 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"73.3\",\n      \"detail\": \"101 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Six Under-the-Radar NBA Prospects to Watch in the Sweet 16\",\n  \"link\": \"https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"57.3\",\n \"at_rim_fga\": \"150\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"37.5\",\n \"left_mid_fga\": \"16\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"21.4\",\n \"mid_fga\": \"14\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"30.8\",\n \"right_mid_fga\": \"13\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"39.6\",\n \"left_wing_fga\": \"53\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"37.5\",\n \"top_of_key_fga\": \"16\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"32.6\",\n \"right_wing_fga\": \"43\",\n \"right_wing_rank\": \"2\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/six-under-the-radar-nba-prospects-to-watch-in-the-sweet-16-c80bf9c104f",
       "disclaimers" : ""
     },
     {
@@ -1026,7 +1026,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"9.2\",\n    \"detail\": \"17.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"2.7\",\n    \"detail\": \"5.2 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.4\",\n    \"detail\": \"2.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.6\",\n    \"detail\": \"184 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.7\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.7\",\n      \"detail\": \"1.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"31.6\",\n      \"detail\": \"95 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"79.6\",\n      \"detail\": \"49 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"60.3\",\n \"at_rim_fga\": \"63\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"20.0\",\n \"left_mid_fga\": \"5\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"20.0\",\n \"mid_fga\": \"5\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"50.0\",\n \"right_mid_fga\": \"10\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"43.2\",\n \"left_wing_fga\": \"37\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"33.3\",\n \"top_of_key_fga\": \"12\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"23.4\",\n \"right_wing_fga\": \"47\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1047,7 +1047,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"18.9\",\n    \"detail\": \"22.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.8\",\n    \"detail\": \"8.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"1.8 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"57.4\",\n    \"detail\": \"428 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.4\",\n      \"detail\": \"0.5 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"42.4\",\n      \"detail\": \"172 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"78.5\",\n      \"detail\": \"219 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"58.3\",\n \"at_rim_fga\": \"175\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"37.9\",\n \"left_mid_fga\": \"29\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"51.5\",\n \"mid_fga\": \"33\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"30.0\",\n \"right_mid_fga\": \"30\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"42.4\",\n \"left_wing_fga\": \"66\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"34.6\",\n \"top_of_key_fga\": \"26\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"45.8\",\n \"right_wing_fga\": \"72\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1068,7 +1068,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"21.4\",\n    \"detail\": \"25.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"7.2\",\n    \"detail\": \"8.4 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.8\",\n    \"detail\": \"3.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"51.1\",\n    \"detail\": \"438 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"2.1\",\n      \"detail\": \"2.5 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.5\",\n      \"detail\": \"147 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.0\",\n      \"detail\": \"259 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"South Carolina Is the Final Four’s Street-Fighting Cinderella\",\n  \"link\": \"https://theringer.com/2017-ncaa-tournament-south-carolina-gamecocks-florida-gators-elite-eight-6631f4ade1b7\"\n},\n\n{\n  \"headline\": \"Frank Martin Is So Mad That South Carolina Made the Final Four\",\n  \"link\": \"https://theringer.com/frank-martin-south-carolina-coach-final-four-a33b2f406298\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"53.5\",\n \"at_rim_fga\": \"226\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"22.6\",\n \"left_mid_fga\": \"31\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"44.4\",\n \"mid_fga\": \"27\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"30.8\",\n \"right_mid_fga\": \"26\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"36.4\",\n \"left_wing_fga\": \"55\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"36.7\",\n \"top_of_key_fga\": \"30\",\n \"top_of_key_rank\": \"3\",\n \"right_wing\": \"44.8\",\n \"right_wing_fga\": \"67\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/tagged/sindarius-thornwell ",
       "disclaimers" : ""
     },
     {
@@ -1089,7 +1089,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"13.4\",\n    \"detail\": \"16.4 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.5\",\n    \"detail\": \"7.9 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.0\",\n    \"detail\": \"3.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"54.6\",\n    \"detail\": \"351 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.5\",\n      \"detail\": \"1.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"44.9\",\n      \"detail\": \"136 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"79.1\",\n      \"detail\": \"110 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"50.4\",\n \"at_rim_fga\": \"113\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"41.4\",\n \"left_mid_fga\": \"29\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"35.3\",\n \"mid_fga\": \"34\",\n \"mid_rank\": \"3\",\n \"right_mid\": \"52.5\",\n \"right_mid_fga\": \"40\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"54.2\",\n \"left_wing_fga\": \"59\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"33.3\",\n \"top_of_key_fga\": \"18\",\n \"top_of_key_rank\": \"2\",\n \"right_wing\": \"36.2\",\n \"right_wing_fga\": \"58\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1110,7 +1110,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"16.3\",\n    \"detail\": \"21.7 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.2\",\n    \"detail\": \"11.0 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.4\",\n    \"detail\": \"3.2 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"65.2\",\n    \"detail\": \"381 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.6\",\n      \"detail\": \"0.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"1.5 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"46.6\",\n      \"detail\": \"58 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"67.9\",\n      \"detail\": \"106 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"UCLA Is the National Champion America Needs\",\n  \"link\": \"https://theringer.com/ucla-national-title-lonzo-ball-march-madness-cd68fc2ec4a8\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"73.0\",\n \"at_rim_fga\": \"244\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"37.0\",\n \"left_mid_fga\": \"27\",\n \"left_mid_rank\": \"3\",\n \"mid\": \"35.1\",\n \"mid_fga\": \"37\",\n \"mid_rank\": \"3\",\n \"right_mid\": \"38.9\",\n \"right_mid_fga\": \"18\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"43.8\",\n \"left_wing_fga\": \"16\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"55.0\",\n \"top_of_key_fga\": \"20\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"52.9\",\n \"right_wing_fga\": \"17\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/ucla-national-title-lonzo-ball-march-madness-cd68fc2ec4a8",
       "disclaimers" : ""
     },
     {
@@ -1131,7 +1131,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"4.6\",\n    \"detail\": \"12.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"1.2\",\n    \"detail\": \"3.1 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"1.6 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"45.7\",\n    \"detail\": \"139 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.2\",\n      \"detail\": \"0.6 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"31.3\",\n      \"detail\": \"67 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"60.0\",\n      \"detail\": \"20 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"54.4\",\n \"at_rim_fga\": \"46\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"30.0\",\n \"left_mid_fga\": \"10\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"25.0\",\n \"mid_fga\": \"8\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"40.0\",\n \"right_mid_fga\": \"10\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"35.00\",\n \"left_wing_fga\": \"40\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"0.0\",\n \"top_of_key_fga\": \"3\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"27.3\",\n \"right_wing_fga\": \"33\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1152,7 +1152,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.6\",\n    \"detail\": \"17.9 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.6\",\n    \"detail\": \"9.5 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"1.5\",\n    \"detail\": \"2.1 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"56.0\",\n    \"detail\": \"285 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.8\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.5\",\n      \"detail\": \"2.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"38.3\",\n      \"detail\": \"60 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"73.0\",\n      \"detail\": \"148 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"56.5\",\n \"at_rim_fga\": \"209\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"54.6\",\n \"left_mid_fga\": \"11\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"50.0\",\n \"mid_fga\": \"4\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"40.0\",\n \"right_mid_fga\": \"5\",\n \"right_mid_rank\": \"4\",\n \"left_wing\": \"52.2\",\n \"left_wing_fga\": \"23\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"28.6\",\n \"top_of_key_fga\": \"14\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"30.0\",\n \"right_wing_fga\": \"20\",\n \"right_wing_rank\": \"2\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1173,7 +1173,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"7.1\",\n    \"detail\": \"19.5 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.1\",\n    \"detail\": \"14.1 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.6\",\n    \"detail\": \"1.7 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"57.3\",\n    \"detail\": \"178 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.6\",\n      \"detail\": \"1.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"---\",\n      \"detail\": \"0 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"61.9\",\n      \"detail\": \"105 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"A Different Shade of Blue Blood\",\n  \"link\": \"https://theringer.com/north-carolina-ncaa-tournament-powerhouse-one-and-done-era-17192d7ee4ff\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"61.8\",\n \"at_rim_fga\": \"152\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"28.6\",\n \"left_mid_fga\": \"7\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"0.0\",\n \"mid_fga\": \"8\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"45.5\",\n \"right_mid_fga\": \"11\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": false,\n \"left_wing_fga\": false,\n \"left_wing_rank\": false,\n \"top_of_key\": false,\n \"top_of_key_fga\": false,\n \"top_of_key_rank\": false,\n \"right_wing\": false,\n \"right_wing_fga\": false,\n \"right_wing_rank\": false\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/north-carolina-ncaa-tournament-powerhouse-one-and-done-era-17192d7ee4ff",
       "disclaimers" : ""
     },
     {
@@ -1194,7 +1194,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"13.2\",\n    \"detail\": \"14.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"8.6\",\n    \"detail\": \"9.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"2.1\",\n    \"detail\": \"2.3 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"54.8\",\n    \"detail\": \"320 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.4\",\n      \"detail\": \"1.6 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"39.2\",\n      \"detail\": \"125 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.6\",\n      \"detail\": \"116 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"College Basketball’s Player of the Year Race Will Follow a Familiar Script\",\n  \"link\": \"https://theringer.com/college-basketball-preseason-player-of-the-year-race-14fbdf4148a3\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"57.8\",\n \"at_rim_fga\": \"135\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"44.4\",\n \"left_mid_fga\": \"18\",\n \"left_mid_rank\": \"5\",\n \"mid\": \"40.6\",\n \"mid_fga\": \"32\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"30.8\",\n \"right_mid_fga\": \"13\",\n \"right_mid_rank\": \"2\",\n \"left_wing\": \"43.9\",\n \"left_wing_fga\": \"41\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"42.2\",\n \"top_of_key_fga\": \"45\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"28.6\",\n \"right_wing_fga\": \"35\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/college-basketball-preseason-player-of-the-year-race-14fbdf4148a3",
       "disclaimers" : ""
     },
     {
@@ -1215,7 +1215,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"14.5\",\n    \"detail\": \"17.0 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.1\",\n    \"detail\": \"4.7 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.9\",\n    \"detail\": \"1.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"52.0\",\n    \"detail\": \"443 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.9\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.1\",\n      \"detail\": \"1.2 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"36.1\",\n      \"detail\": \"241 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"83.6\",\n      \"detail\": \"73 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"The NBA Scouting Road Map to March Madness\",\n  \"link\": \"https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"62.6\",\n \"at_rim_fga\": \"107\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"32.3\",\n \"left_mid_fga\": \"31\",\n \"left_mid_rank\": \"2\",\n \"mid\": \"44.4\",\n \"mid_fga\": \"36\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"23.7\",\n \"right_mid_fga\": \"38\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"36.8\",\n \"left_wing_fga\": \"117\",\n \"left_wing_rank\": \"3\",\n \"top_of_key\": \"40.0\",\n \"top_of_key_fga\": \"25\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"34.4\",\n \"right_wing_fga\": \"90\",\n \"right_wing_rank\": \"3\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/march-madness-nba-scouting-2017-draft-lonzo-ball-jayson-tatum-malik-monk-99f7ffd4e3ec",
       "disclaimers" : ""
     },
     {
@@ -1236,7 +1236,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"12.6\",\n    \"detail\": \"17.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"4.9\",\n    \"detail\": \"6.9 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.2\",\n    \"detail\": \"4.5 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"55.8\",\n    \"detail\": \"329 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.8 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.5\",\n      \"detail\": \"0.7 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"42.3\",\n      \"detail\": \"111 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"82.0\",\n      \"detail\": \"89 FTA\"\n    }]",
       "coverage" : "N/A",
       "shot_chart" : "{\n \"at_rim\": \"60.1\",\n \"at_rim_fga\": \"163\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"23.8\",\n \"left_mid_fga\": \"21\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"26.7\",\n \"mid_fga\": \"15\",\n \"mid_rank\": \"1\",\n \"right_mid\": \"29.2\",\n \"right_mid_fga\": \"24\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"40.0\",\n \"left_wing_fga\": \"45\",\n \"left_wing_rank\": \"4\",\n \"top_of_key\": \"21.1\",\n \"top_of_key_fga\": \"19\",\n \"top_of_key_rank\": \"1\",\n \"right_wing\": \"57.5\",\n \"right_wing_fga\": \"40\",\n \"right_wing_rank\": \"5\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "theringer.com/nba-draft",
       "disclaimers" : ""
     },
     {
@@ -1257,7 +1257,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"13.0\",\n    \"detail\": \"16.6 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"6.3\",\n    \"detail\": \"8.1 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"3.5\",\n    \"detail\": \"4.4 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"53.2\",\n    \"detail\": \"314 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"1.0\",\n      \"detail\": \"1.3 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"0.3\",\n      \"detail\": \"0.4 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"37.6\",\n      \"detail\": \"85 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"76.7\",\n      \"detail\": \"159 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"What Has the NCAA Tournament Taught Us About the 2017 NBA Draft?\",\n  \"link\": \"https://theringer.com/2017-nba-draft-prospects-ncaa-tournament-71dfe15c5844\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"56.6\",\n \"at_rim_fga\": \"175\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"39.1\",\n \"left_mid_fga\": \"23\",\n \"left_mid_rank\": \"4\",\n \"mid\": \"52.6\",\n \"mid_fga\": \"19\",\n \"mid_rank\": \"5\",\n \"right_mid\": \"27.3\",\n \"right_mid_fga\": \"22\",\n \"right_mid_rank\": \"1\",\n \"left_wing\": \"50.0\",\n \"left_wing_fga\": \"28\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"38.5\",\n \"top_of_key_fga\": \"13\",\n \"top_of_key_rank\": \"4\",\n \"right_wing\": \"23.5\",\n \"right_wing_fga\": \"34\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/2017-nba-draft-prospects-ncaa-tournament-71dfe15c5844",
       "disclaimers" : ""
     },
     {
@@ -1278,7 +1278,7 @@
       "stats" : "[{\n    \"title\": \"PTS\",\n    \"number\": \"10.0\",\n    \"detail\": \"23.2 Per40\"\n  },\n  {\n    \"title\": \"REB\",\n    \"number\": \"5.9\",\n    \"detail\": \"13.6 Per40\"\n  },\n  {\n    \"title\": \"AST\",\n    \"number\": \"0.4\",\n    \"detail\": \"1.0 Per40\"\n  },\n  {\n    \"title\": \"eFG%\",\n    \"number\": \"67.6\",\n    \"detail\": \"207 FGA\"\n  },\n  {\n      \"title\": \"STL\",\n      \"number\": \"0.5\",\n      \"detail\": \"1.1 Per40\"\n    },\n    {\n      \"title\": \"BLK\",\n      \"number\": \"1.8\",\n      \"detail\": \"4.1 Per40\"\n    },\n    {\n      \"title\": \"3PT%\",\n      \"number\": \"47.6\",\n      \"detail\": \"21 3PA\"\n    },\n    {\n      \"title\": \"FT%\",\n      \"number\": \"74.3\",\n      \"detail\": \"148 FTA\"\n    }]",
       "coverage" : "[{\n  \"headline\": \"Gonzaga’s Most Important Player Has Stepped Out of the Shadows\",\n  \"link\": \"https://theringer.com/gonzagas-most-important-player-has-stepped-out-of-the-shadows-1e481eed5bba\"\n}]",
       "shot_chart" : "{\n \"at_rim\": \"68.0\",\n \"at_rim_fga\": \"175\",\n \"at_rim_rank\": \"5\",\n \"left_mid\": \"25.0\",\n \"left_mid_fga\": \"4\",\n \"left_mid_rank\": \"1\",\n \"mid\": \"40.0\",\n \"mid_fga\": \"5\",\n \"mid_rank\": \"4\",\n \"right_mid\": \"71.43\",\n \"right_mid_fga\": \"7\",\n \"right_mid_rank\": \"5\",\n \"left_wing\": \"50.0\",\n \"left_wing_fga\": \"4\",\n \"left_wing_rank\": \"5\",\n \"top_of_key\": \"50.0\",\n \"top_of_key_fga\": \"16\",\n \"top_of_key_rank\": \"5\",\n \"right_wing\": \"0.0\",\n \"right_wing_fga\": \"1\",\n \"right_wing_rank\": \"1\"\n}",
-      "all_coverage" : "",
+      "all_coverage" : "https://theringer.com/gonzagas-most-important-player-has-stepped-out-of-the-shadows-1e481eed5bba",
       "disclaimers" : ""
     }
   ],
@@ -2672,6 +2672,130 @@
     },
     {
       "team_id" : "hawks"
+    }
+  ],
+  "more_coverage" : [
+    {
+      "link" : "https://theringer.com/most-important-nba-draft-lottery-15a6ea1391dc",
+      "headline" : "The Most Important NBA Lottery Since the LeBron Sweepstakes",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*v1CYnuk23r_pyJeBlhVuKA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/markelle-fultz-washington-huskies-college-basketball-481eefbcd41c",
+      "headline" : "College Basketball’s Best Player Can’t Get Any Love",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*GHaKJC6qzerJ9UrOC5BRWw.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/lonzo-ball-ucla-shooting-mechanics-6eeda2ef3e41",
+      "headline" : "The Key to Understanding Lonzo Ball’s Funky Jumper",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*8ixKlZf4jWBDjE56lnnumw.png"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-draft-centers-og-anunoby-jonathan-isaac-e345e30acdd6",
+      "headline" : "Two of the Best Centers in the NBA Draft Have Never Played Center",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*eTXVm1_q9BNDLdrORpnAMA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/malik-monk-kentucky-wildcats-32b7943cedd",
+      "headline" : "Malik Monk Stole My Heart",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*uhKWG2ATgHGy9C0FXlwWSw.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/deaaron-fox-would-have-a-shot-at-being-drafted-no-1-if-he-had-a-shot-95763371af97",
+      "headline" : "De’Aaron Fox Would Have a Shot at Being Drafted No. 1 … If He Had a Shot",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*P97UyhX6yVJTYidzOlVxYQ.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/french-nba-prospect-frank-ntilikina-passes-the-eye-test-2a9897ed8322",
+      "headline" : "Frank Ntilikina Passes the Eye Test",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*PpummMRly9Oo_7I9jr5YVQ.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/gonzagas-most-important-player-has-stepped-out-of-the-shadows-1e481eed5bba",
+      "headline" : "Zach Collins Has Stepped Out of the Shadows",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*pOUgK05ZDCkIzNcFSClzrg.png"
+    },
+    {
+      "link" : "https://theringer.com/jayson-tatums-old-game-could-use-some-new-tricks-c37f49bb21b8",
+      "headline" : "Jayson Tatum’s Old Game Could Use Some New Tricks",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*RhSIZbksDX7uE-PYCblKug.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-draft-dennis-smith-jr-nc-state-wolfpack-b220c78d9b5c",
+      "headline" : "Dennis Smith Jr. Is NBA Ready — Just Don’t Hold His School Against Him",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*b92d1Hw6OJoBw93nkhiE1A.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/dream-scenarios-for-some-of-2017s-best-nba-draft-prospects-b445af3056f8",
+      "headline" : "Send Lonzo Ball to the Knicks",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*h4GigzWyIHiLGwFdk9ITmQ.png"
+    },
+    {
+      "link" : "https://theringer.com/caleb-swanigan-purdue-boilermakers-college-basketball-825f665c2969",
+      "headline" : "Purdue’s Caleb Swanigan Is a Revelation",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*abX6axUU731uSZqQhq3YSQ.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/scouting-possible-no-1-pick-markelle-fultz-in-person-6e2fdcf3d727",
+      "headline" : "Scouting Markelle Fultz in Person",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*jrcWOuE5-tgC9yeGrsCPhA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/ringer-nba-draft-lottery-big-board-version-5-0-2c36dc7c02cf",
+      "headline" : "Who Made a Mistake by Not Entering the Draft Last Year?",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*EYI-8vbhlEFF4WL7JlU_Ew.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/steph-curry-ball-brothers-chino-hills-c4a7719b22e9",
+      "headline" : "Be Like Steph?",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*oH3yJE3y4yIlJbKOBZj_VA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-playoffs-lebron-james-isaiah-thomas-cleveland-cavaliers-boston-celtics-2fd60f3d5434",
+      "headline" : "Isaiah and LeBron",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*ybFHhIgQ0xwPD0BztW_BVw.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-playoffs-al-horford-boston-celtics-rise-of-stretch-5-68cc1067e83f",
+      "headline" : "The Rise of the Stretch 5",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*4VgozbAEhLSEChDIkQJ4Gg.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-playoffs-cleveland-cavaliers-golden-state-warriors-playoff-snake-fix-eb3616f6558",
+      "headline" : "The Playoff Snake: A Solution to Warriors-Cavs Playoffs Boredom",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*yqw-6F8UbNpgOpT7nDJ9-A.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-playoffs-catch-praise-or-hands-rockets-warriors-raptors-jazz-2e508033d701",
+      "headline" : "A Rockets-Warriors Series Could Catch These Blessings, While the Raptors Can Catch These Hands",
+      "image" : "https://cdn-images-1.medium.com/max/2000/0*VfUxd0fnOdMg2LpE.jpg"
+    }
+  ],
+  "mobile_more_coverage" : [
+    {
+      "link" : "https://theringer.com/most-important-nba-draft-lottery-15a6ea1391dc",
+      "headline" : "The Most Important NBA Lottery Since the LeBron Sweepstakes",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*v1CYnuk23r_pyJeBlhVuKA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/lonzo-ball-ucla-shooting-mechanics-6eeda2ef3e41",
+      "headline" : "The Key to Understanding Lonzo Ball’s Funky Jumper",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*8ixKlZf4jWBDjE56lnnumw.png"
+    },
+    {
+      "link" : "https://theringer.com/2017-nba-draft-centers-og-anunoby-jonathan-isaac-e345e30acdd6",
+      "headline" : "Two of the Best Centers in the NBA Draft Have Never Played Center",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*eTXVm1_q9BNDLdrORpnAMA.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/malik-monk-kentucky-wildcats-32b7943cedd",
+      "headline" : "Malik Monk Stole My Heart",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*uhKWG2ATgHGy9C0FXlwWSw.jpeg"
+    },
+    {
+      "link" : "https://theringer.com/deaaron-fox-would-have-a-shot-at-being-drafted-no-1-if-he-had-a-shot-95763371af97",
+      "headline" : "De’Aaron Fox Would Have a Shot at Being Drafted No. 1 … If He Had a Shot",
+      "image" : "https://cdn-images-1.medium.com/max/2000/1*P97UyhX6yVJTYidzOlVxYQ.jpeg"
     }
   ]
 }

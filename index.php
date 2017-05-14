@@ -21,9 +21,13 @@
     $data = json_decode($data_string);
     $player_data = $data->players;
 
-    $articles_string = file_get_contents("./data/articles.json");
-    $articles_json = json_decode($articles_string);
-    $articles = $articles_json->articles;
+    if($detect->isMobile() && !$detect->isTablet()){
+        $articles = $data->mobile_more_coverage;
+        $article_count = 5;
+    } else{
+        $articles = $data->more_coverage;
+        $article_count = 10;
+    }
 
     $sort_colors = array(
         'ringer'    => '#005bcc',
@@ -66,7 +70,7 @@
 
     $template_render = '';
     $player_id = isset($_GET['player']) ? $_GET['player'] : false;
-    $count = 5;
+    $count = $article_count;
     $coverage_count = 0;
     foreach($sorted_players as $player){
         $player->plus       = json_decode($player->plus);
@@ -91,11 +95,16 @@
         );
 
         $count--;
+        if($count == 0 && $player->rank !== '60'){
+            if($detect->isMobile() && !$detect->isTablet()){
+                $display_count = 1;
+            } else {
+                $display_count = 3;
+            }
 
-        if($count == 0 && $player->rank !== '50'){
-            $count = 5;
+            $count = $article_count;
             $more_coverage = (object) array();
-            $more_coverage->articles = array_slice($articles, (3 * $coverage_count), 3);
+            $more_coverage->articles = array_slice($articles, ($display_count * $coverage_count), $display_count);
             $template_render .= $engine->render(
                 'coverage',
                 $more_coverage
@@ -105,12 +114,11 @@
     }
 
     $footer_coverage = (object) array();
-    $footer_coverage->articles = array_slice($articles, 0, 4);
+    $footer_coverage->articles = array_slice($articles, -4, 4);
     $footer_coverage_render = $engine->render(
         'coverage',
         $footer_coverage
     );
-
 
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
@@ -252,7 +260,7 @@
                 <div id="filter-bar">
                     <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
                         <div class="filter-wrapper">
-                            <span>Ringer Picks</span>
+                            <span>Mock Draft</span>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">

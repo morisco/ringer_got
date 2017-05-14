@@ -58,8 +58,10 @@ function Card(id, data){
 
     this.showColor = function(){
         if(!card.el.hasClass('expanded-card') && ($('body').hasClass('small') || $('body').hasClass('medium'))){
-            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
-            // card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + ';'));
+            card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
+            card.el.find('.rank-column .rank').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important; background-color:transparent !important;'));
+            card.el.find('.rank-column').attr('style', 'background-color:transparent !important; background-image:url(img/dots.png); background-size:20%; border-right:1px solid #ccc;');
         }
     }
 
@@ -68,6 +70,8 @@ function Card(id, data){
         card.el.find('.info-column .stat-wrap').removeAttr('style');
         card.el.find('.info-column .player-description').removeAttr('style');
         card.el.find('.info-column span.title').removeAttr('style');
+        card.el.find('.rank-column .rank').removeAttr('style');
+        card.el.find('.rank-column').removeAttr('style');
     }
 
     this.showMedia = function() {
