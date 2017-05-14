@@ -5,7 +5,7 @@
       "name" : "Dwayne Bacon",
       "position" : "Stretch Forward",
       "position_group" : "forward",
-      "school" : "Florida State, Sophomore",
+      "school" : "Florida State, Soph.",
       "stat" : "Fluid Scoring",
       "age" : 21,
       "height" : "6'8\"",
@@ -24,7 +24,7 @@
       "name" : "Alec Peters",
       "position" : "Stretch Forward",
       "position_group" : "forward",
-      "school" : "Valparaiso, Senior",
+      "school" : "Valparaiso, Sr.",
       "stat" : "Basketball IQ",
       "age" : 22.2,
       "height" : "6' 9''",
@@ -43,7 +43,7 @@
       "name" : "Andrew Jones",
       "position" : "Guard",
       "position_group" : "Guard",
-      "school" : "Texas, Freshman",
+      "school" : "Texas, Fresh.",
       "stat" : "Athletic Upside",
       "age" : 19.5,
       "height" : "6' 4''",
@@ -100,7 +100,7 @@
       "name" : "Bam Adebayo",
       "position" : "Big",
       "position_group" : "big",
-      "school" : "Kentucky, Freshman",
+      "school" : "Kentucky, Fresh.",
       "stat" : "Rim-running",
       "age" : 19.9,
       "height" : "6' 10''",
@@ -119,7 +119,7 @@
       "name" : "Caleb Swanigan",
       "position" : "Power Forward",
       "position_group" : "forward",
-      "school" : "Purdue, Sophomore",
+      "school" : "Purdue, Soph.",
       "stat" : "Versatile Scoring\n",
       "age" : 20.2,
       "height" : "6' 9''",
@@ -138,7 +138,7 @@
       "name" : "Cameron Oliver",
       "position" : "Forward",
       "position_group" : "forward",
-      "school" : "Nevada, Sophomore",
+      "school" : "Nevada, Soph.",
       "stat" : "Explosiveness",
       "age" : 20.9,
       "height" : "6' 8''",
@@ -157,7 +157,7 @@
       "name" : "D.J. Wilson",
       "position" : "Big",
       "position_group" : "big",
-      "school" : "Michigan, Sophomore",
+      "school" : "Michigan, Soph.",
       "stat" : "Versatility",
       "age" : 21.3,
       "height" : "6' 11''",
@@ -176,7 +176,7 @@
       "name" : "Davon Reed",
       "position" : "Wing",
       "position_group" : "guard",
-      "school" : "Miami, Senior",
+      "school" : "Miami, Sr.",
       "stat" : "Defensive Versatility",
       "age" : 22,
       "height" : "6' 6''",
@@ -195,7 +195,7 @@
       "name" : "De'Aaron Fox",
       "position" : "Point Guard",
       "position_group" : "guard",
-      "school" : "Kentucky, Freshman",
+      "school" : "Kentucky, Fresh.",
       "stat" : "Speed",
       "age" : 19.5,
       "height" : "6' 3''",
@@ -214,7 +214,7 @@
       "name" : "Dennis Smith",
       "position" : "Point Guard",
       "position_group" : "guard",
-      "school" : "NC State, Freshman",
+      "school" : "NC State, Fresh.",
       "stat" : "Hyper-athletic Scorer",
       "age" : 19.6,
       "height" : "6' 3''",
@@ -233,7 +233,7 @@
       "name" : "Derrick White",
       "position" : "Point Guard",
       "position_group" : "Guard",
-      "school" : "Colorado, Senior",
+      "school" : "Colorado, Sr.",
       "stat" : "Veteran Savvy",
       "age" : 23,
       "height" : "6' 5''",
@@ -252,7 +252,7 @@
       "name" : "Devin Robinson",
       "position" : "Wing",
       "position_group" : "forward",
-      "school" : "Florida, Junior",
+      "school" : "Florida, Jr.",
       "stat" : "3-and-D Athlete\n",
       "age" : 22.3,
       "height" : "6' 8''",
@@ -271,7 +271,7 @@
       "name" : "Donovan Mitchell",
       "position" : "Guard",
       "position_group" : "guard",
-      "school" : "Louisville, Sophomore",
+      "school" : "Louisville, Soph.",
       "stat" : "Huge Athleticism",
       "age" : 20.8,
       "height" : "6' 3''",
@@ -290,7 +290,7 @@
       "name" : "Dwayne Bacon",
       "position" : "Stretch Forward",
       "position_group" : "forward",
-      "school" : "Florida State, Sophomore",
+      "school" : "Florida State, Soph.",
       "stat" : "Fluid Scoring",
       "age" : 21.8,
       "height" : "6' 6''",
@@ -309,7 +309,7 @@
       "name" : "Edmond Sumner",
       "position" : "Point Guard",
       "position_group" : "guard",
-      "school" : "Xavier, Sophomore",
+      "school" : "Xavier, Soph.",
       "stat" : "Dynamic Athlete\n",
       "age" : 21.5,
       "height" : "6' 6''",
@@ -347,7 +347,7 @@
       "name" : "Hamidou Diallo",
       "position" : "Shooting Guard",
       "position_group" : "guard",
-      "school" : "NY Rens, Senior (High School)",
+      "school" : "NY Rens, Sr. (High School)",
       "stat" : "Athletic Upside",
       "age" : 18.9,
       "height" : "6' 5''",
@@ -366,7 +366,7 @@
       "name" : "Harry Giles",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Duke, Freshman",
+      "school" : "Duke, Fresh.",
       "stat" : "Defensive Versatility",
       "age" : 19.2,
       "height" : "6' 11''",
@@ -385,7 +385,7 @@
       "name" : "Ike Anigbogu",
       "position" : "Big",
       "position_group" : "big",
-      "school" : "UCLA, Freshman",
+      "school" : "UCLA, Fresh.",
       "stat" : "Rim Protection\n",
       "age" : 18.7,
       "height" : "6' 10''",
@@ -423,7 +423,7 @@
       "name" : "Ivan Rabb",
       "position" : "Big",
       "position_group" : "big",
-      "school" : "California, Sophomore",
+      "school" : "California, Soph.",
       "stat" : "Elite Rebounding",
       "age" : 20.4,
       "height" : "6' 10''",
@@ -442,7 +442,7 @@
       "name" : "Jaron Blossomgame",
       "position" : "Wing",
       "position_group" : "forward",
-      "school" : "Clemson, Senior",
+      "school" : "Clemson, Sr.",
       "stat" : "Heart",
       "age" : 23.8,
       "height" : "6' 7''",
@@ -461,7 +461,7 @@
       "name" : "Jarrett Allen",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Texas, Freshman",
+      "school" : "Texas, Fresh.",
       "stat" : "Freaky Measurables",
       "age" : 19.2,
       "height" : "6' 10''",
@@ -480,7 +480,7 @@
       "name" : "Jawun Evans",
       "position" : "Point Guard",
       "position_group" : "Guard",
-      "school" : "Oklahoma St., Sophomore",
+      "school" : "Oklahoma St., Soph.",
       "stat" : "Playmaking",
       "age" : 20.9,
       "height" : "6' 0''",
@@ -499,7 +499,7 @@
       "name" : "Jayson Tatum",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Duke, Freshman",
+      "school" : "Duke, Fresh.",
       "stat" : "Go-to Scoring\n",
       "age" : 19.3,
       "height" : "6' 8''",
@@ -518,7 +518,7 @@
       "name" : "John Collins",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Wake Forest, Sophomore",
+      "school" : "Wake Forest, Soph.",
       "stat" : "Scoring Upside\n",
       "age" : 19.7,
       "height" : "6' 10''",
@@ -537,7 +537,7 @@
       "name" : "Johnathan Motley",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Baylor, Junior",
+      "school" : "Baylor, Jr.",
       "stat" : "All-Out Energy",
       "age" : 22.1,
       "height" : "6' 9''",
@@ -556,7 +556,7 @@
       "name" : "Jonathan Isaac",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Florida State, Freshman",
+      "school" : "Florida State, Fresh.",
       "stat" : "Versatility",
       "age" : 19.7,
       "height" : "6' 11''",
@@ -594,7 +594,7 @@
       "name" : "Jordan Bell",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Oregon, Junior",
+      "school" : "Oregon, Jr.",
       "stat" : "Defensive Versatility",
       "age" : 22.5,
       "height" : "6' 9''",
@@ -613,7 +613,7 @@
       "name" : "Josh Hart",
       "position" : "Wing",
       "position_group" : "Guard",
-      "school" : "Villanova, Senior",
+      "school" : "Villanova, Sr.",
       "stat" : "Intangibles",
       "age" : 22.3,
       "height" : "6' 5''",
@@ -632,7 +632,7 @@
       "name" : "Josh Jackson",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Kansas, Freshman",
+      "school" : "Kansas, Fresh.",
       "stat" : "Offensive Versatility",
       "age" : 20.4,
       "height" : "6' 8''",
@@ -651,7 +651,7 @@
       "name" : "Justin Jackson",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Maryland, Freshman",
+      "school" : "Maryland, Fresh.",
       "stat" : "Multipositional Defender",
       "age" : 20.3,
       "height" : "6' 7''",
@@ -670,7 +670,7 @@
       "name" : "Justin Jackson",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "North Carolina, Junior",
+      "school" : "North Carolina, Jr.",
       "stat" : "NBA-Ready",
       "age" : 22.2,
       "height" : "6' 8''",
@@ -689,7 +689,7 @@
       "name" : "Justin Patton",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Creighton, Freshman",
+      "school" : "Creighton, Fresh.",
       "stat" : "Athleticism",
       "age" : 20,
       "height" : "6' 11''",
@@ -727,7 +727,7 @@
       "name" : "Lauri Markkanen",
       "position" : "Stretch Forward",
       "position_group" : "Forward",
-      "school" : "Arizona, Freshman",
+      "school" : "Arizona, Fresh.",
       "stat" : "Shooting",
       "age" : 20.1,
       "height" : "7' 0''",
@@ -746,7 +746,7 @@
       "name" : "Lonzo Ball",
       "position" : "Point Guard",
       "position_group" : "Guard",
-      "school" : "UCLA, Freshman",
+      "school" : "UCLA, Fresh.",
       "stat" : "Playmaking",
       "age" : 19.7,
       "height" : "6' 6''",
@@ -765,7 +765,7 @@
       "name" : "Luke Kennard",
       "position" : "Guard",
       "position_group" : "Guard",
-      "school" : "Duke, Sophomore",
+      "school" : "Duke, Soph.",
       "stat" : "Shooting",
       "age" : 21,
       "height" : "6' 6''",
@@ -784,7 +784,7 @@
       "name" : "Malik Monk",
       "position" : "Guard",
       "position_group" : "Guard",
-      "school" : "Kentucky, Freshman",
+      "school" : "Kentucky, Fresh.",
       "stat" : "Shooting",
       "age" : 19.4,
       "height" : "6' 3''",
@@ -803,7 +803,7 @@
       "name" : "Markelle Fultz",
       "position" : "Point Guard",
       "position_group" : "Guard",
-      "school" : "Washington, Freshman",
+      "school" : "Washington, Fresh.",
       "stat" : "All-Around Offense",
       "age" : 19.1,
       "height" : "6' 4''",
@@ -841,7 +841,7 @@
       "name" : "Monte Morris",
       "position" : "Point Guard",
       "position_group" : "Guard",
-      "school" : "Iowa State, Freshman",
+      "school" : "Iowa State, Fresh.",
       "stat" : "Playmaking",
       "age" : 21.9,
       "height" : "6' 3''",
@@ -860,7 +860,7 @@
       "name" : "Moritz Wagner",
       "position" : "Power Forward",
       "position_group" : "Forward",
-      "school" : "Michigan, Sophomore",
+      "school" : "Michigan, Soph.",
       "stat" : "Scoring Upside\n",
       "age" : 20.1,
       "height" : "6' 11''",
@@ -879,7 +879,7 @@
       "name" : "OG Anunoby",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Indiana, Sophomore",
+      "school" : "Indiana, Soph.",
       "stat" : "Multipositional Defender",
       "age" : 19.9,
       "height" : "6' 8''",
@@ -898,7 +898,7 @@
       "name" : "Rawle Alkins",
       "position" : "Wing",
       "position_group" : "Forward",
-      "school" : "Arizona, Freshman",
+      "school" : "Arizona, Fresh.",
       "stat" : "Defensive Upside\n",
       "age" : 19.6,
       "height" : "6' 4''",
@@ -936,7 +936,7 @@
       "name" : "Semi Ojeleye",
       "position" : "Wing",
       "position_group" : "",
-      "school" : "SMU, Junior",
+      "school" : "SMU, Jr.",
       "stat" : "Defensive Versatility",
       "age" : 22.5,
       "height" : "6' 7''",
@@ -955,7 +955,7 @@
       "name" : "Sindarius Thornwell",
       "position" : "Wing",
       "position_group" : "guard",
-      "school" : "South Carolina, Senior",
+      "school" : "South Carolina, Sr.",
       "stat" : "Defense\n",
       "age" : 22.6,
       "height" : "6' 5''",
@@ -974,7 +974,7 @@
       "name" : "Sterling Brown",
       "position" : "Wing",
       "position_group" : "Forward",
-      "school" : "SMU, Senior",
+      "school" : "SMU, Sr.",
       "stat" : "3-and-D Potential",
       "age" : 22.4,
       "height" : "6' 5''",
@@ -993,7 +993,7 @@
       "name" : "T.J. Leaf",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "UCLA, Freshman",
+      "school" : "UCLA, Fresh.",
       "stat" : "Scoring Upside\n",
       "age" : 20.1,
       "height" : "6' 10''",
@@ -1031,7 +1031,7 @@
       "name" : "Thomas Bryant",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Indiana, Sophomore",
+      "school" : "Indiana, Soph.",
       "stat" : "Energy",
       "age" : 19.9,
       "height" : "6' 11''",
@@ -1050,7 +1050,7 @@
       "name" : "Tony Bradley",
       "position" : "Big ",
       "position_group" : "Big",
-      "school" : "North Carolina, Freshman",
+      "school" : "North Carolina, Fresh.",
       "stat" : "Measurables",
       "age" : 19.5,
       "height" : "6' 11''",
@@ -1069,7 +1069,7 @@
       "name" : "Tyler Lydon",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Syracuse, Sophomore",
+      "school" : "Syracuse, Soph.",
       "stat" : "Intelligence\n",
       "age" : 21.2,
       "height" : "6' 10''",
@@ -1088,7 +1088,7 @@
       "name" : "V.J. Beachem",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Notre Dame, Senior",
+      "school" : "Notre Dame, Sr.",
       "stat" : "Shooting",
       "age" : 22.4,
       "height" : "6' 8''",
@@ -1107,7 +1107,7 @@
       "name" : "Vince Edwards",
       "position" : "Forward",
       "position_group" : "Forward",
-      "school" : "Purdue, Junior",
+      "school" : "Purdue, Jr.",
       "stat" : "Potential Versatility",
       "age" : 21.2,
       "height" : "6' 8''",
@@ -1126,7 +1126,7 @@
       "name" : "Wesley Iwundu",
       "position" : "Wing",
       "position_group" : "Guard",
-      "school" : "Kansas State, Senior",
+      "school" : "Kansas State, Sr.",
       "stat" : "Intangibles",
       "age" : 22.5,
       "height" : "6' 7''",
@@ -1145,7 +1145,7 @@
       "name" : "Zach Collins",
       "position" : "Big",
       "position_group" : "Big",
-      "school" : "Gonzaga, Freshman",
+      "school" : "Gonzaga, Fresh.",
       "stat" : "Two-Way Impact",
       "age" : 19.6,
       "height" : "7' 0''",
@@ -1162,512 +1162,648 @@
   ],
   "ringer" : [
     {
-      "filter_id" : "a_jones",
-      "rank" : 48
-    },
-    {
-      "filter_id" : "a_kulboka",
-      "rank" : 46
-    },
-    {
-      "filter_id" : "a_pasecniks",
-      "rank" : 42
-    },
-    {
-      "filter_id" : "a_peters",
-      "rank" : 59
-    },
-    {
-      "filter_id" : "b_adebayo",
-      "rank" : 20
-    },
-    {
-      "filter_id" : "c_oliver",
-      "rank" : 56
-    },
-    {
-      "filter_id" : "c_swanigan",
-      "rank" : 35
-    },
-    {
-      "filter_id" : "d_bacon",
-      "rank" : 41
-    },
-    {
-      "filter_id" : "d_fox",
-      "rank" : 7
-    },
-    {
-      "filter_id" : "d_mitchell",
-      "rank" : 12
-    },
-    {
-      "filter_id" : "d_reed",
-      "rank" : 53
-    },
-    {
-      "filter_id" : "d_robinson",
-      "rank" : 34
-    },
-    {
-      "filter_id" : "d_smith",
-      "rank" : 8
-    },
-    {
-      "filter_id" : "d_white",
-      "rank" : 33
-    },
-    {
-      "filter_id" : "d_wilson",
-      "rank" : 25
-    },
-    {
-      "filter_id" : "e_sumner",
-      "rank" : 57
-    },
-    {
-      "filter_id" : "f_ntilikina",
-      "rank" : 9
-    },
-    {
-      "filter_id" : "h_diallo",
-      "rank" : 39
-    },
-    {
-      "filter_id" : "h_giles",
-      "rank" : 21
-    },
-    {
-      "filter_id" : "i_anigbogu",
-      "rank" : 16
-    },
-    {
-      "filter_id" : "i_hartenstein",
-      "rank" : 31
-    },
-    {
-      "filter_id" : "i_rabb",
-      "rank" : 22
-    },
-    {
-      "filter_id" : "j_allen",
-      "rank" : 15
-    },
-    {
-      "filter_id" : "j_bell",
-      "rank" : 30
-    },
-    {
-      "filter_id" : "j_blossomgame",
-      "rank" : 49
-    },
-    {
-      "filter_id" : "j_collins",
-      "rank" : 29
-    },
-    {
-      "filter_id" : "j_evans",
-      "rank" : 24
-    },
-    {
-      "filter_id" : "j_hart",
-      "rank" : 32
-    },
-    {
-      "filter_id" : "j_isaac",
-      "rank" : 6
+      "filter_id" : "m_fultz",
+      "rank" : 1
     },
     {
       "filter_id" : "j_jackson",
       "rank" : 2
     },
     {
-      "filter_id" : "ju_jacksonmd",
-      "rank" : 27
-    },
-    {
-      "filter_id" : "j_jeanne",
-      "rank" : 23
-    },
-    {
-      "filter_id" : "j_motley",
-      "rank" : 58
-    },
-    {
-      "filter_id" : "j_patton",
-      "rank" : 14
-    },
-    {
-      "filter_id" : "j_tatum",
-      "rank" : 5
-    },
-    {
-      "filter_id" : "ju_jackson",
-      "rank" : 18
-    },
-    {
-      "filter_id" : "k_mushidi",
-      "rank" : 51
-    },
-    {
       "filter_id" : "l_ball",
       "rank" : 3
-    },
-    {
-      "filter_id" : "l_kennard",
-      "rank" : 19
-    },
-    {
-      "filter_id" : "l_markkanen",
-      "rank" : 10
-    },
-    {
-      "filter_id" : "m_fultz",
-      "rank" : 1
-    },
-    {
-      "filter_id" : "m_lessort",
-      "rank" : 50
     },
     {
       "filter_id" : "m_monk",
       "rank" : 4
     },
     {
-      "filter_id" : "m_morris",
-      "rank" : 38
+      "filter_id" : "j_tatum",
+      "rank" : 5
     },
     {
-      "filter_id" : "m_wagner",
-      "rank" : 60
+      "filter_id" : "j_isaac",
+      "rank" : 6
+    },
+    {
+      "filter_id" : "d_fox",
+      "rank" : 7
+    },
+    {
+      "filter_id" : "d_smith",
+      "rank" : 8
+    },
+    {
+      "filter_id" : "f_ntilikina",
+      "rank" : 9
+    },
+    {
+      "filter_id" : "l_markkanen",
+      "rank" : 10
+    },
+    {
+      "filter_id" : "z_collins",
+      "rank" : 11
+    },
+    {
+      "filter_id" : "d_mitchell",
+      "rank" : 12
     },
     {
       "filter_id" : "o_anunoby",
       "rank" : 13
     },
     {
-      "filter_id" : "r_alkins",
-      "rank" : 37
+      "filter_id" : "j_patton",
+      "rank" : 14
     },
     {
-      "filter_id" : "r_kurucs",
-      "rank" : 26
+      "filter_id" : "j_allen",
+      "rank" : 15
     },
     {
-      "filter_id" : "s_brown",
-      "rank" : 40
-    },
-    {
-      "filter_id" : "s_ojeleye",
-      "rank" : 36
-    },
-    {
-      "filter_id" : "s_thornwell",
-      "rank" : 44
-    },
-    {
-      "filter_id" : "t_bradley",
-      "rank" : 52
-    },
-    {
-      "filter_id" : "t_bryant",
-      "rank" : 54
+      "filter_id" : "i_anigbogu",
+      "rank" : 16
     },
     {
       "filter_id" : "t_ferguson",
       "rank" : 17
     },
     {
+      "filter_id" : "ju_jackson",
+      "rank" : 18
+    },
+    {
+      "filter_id" : "l_kennard",
+      "rank" : 19
+    },
+    {
+      "filter_id" : "b_adebayo",
+      "rank" : 20
+    },
+    {
+      "filter_id" : "h_giles",
+      "rank" : 21
+    },
+    {
+      "filter_id" : "i_rabb",
+      "rank" : 22
+    },
+    {
+      "filter_id" : "j_jeanne",
+      "rank" : 23
+    },
+    {
+      "filter_id" : "j_evans",
+      "rank" : 24
+    },
+    {
+      "filter_id" : "d_wilson",
+      "rank" : 25
+    },
+    {
+      "filter_id" : "r_kurucs",
+      "rank" : 26
+    },
+    {
+      "filter_id" : "ju_jacksonmd",
+      "rank" : 27
+    },
+    {
       "filter_id" : "t_leaf",
       "rank" : 28
     },
     {
-      "filter_id" : "t_lydon",
-      "rank" : 45
+      "filter_id" : "j_collins",
+      "rank" : 29
     },
     {
-      "filter_id" : "v_beachem",
-      "rank" : 47
+      "filter_id" : "j_bell",
+      "rank" : 30
     },
     {
-      "filter_id" : "v_edwards",
-      "rank" : 55
+      "filter_id" : "i_hartenstein",
+      "rank" : 31
+    },
+    {
+      "filter_id" : "j_hart",
+      "rank" : 32
+    },
+    {
+      "filter_id" : "d_white",
+      "rank" : 33
+    },
+    {
+      "filter_id" : "d_robinson",
+      "rank" : 34
+    },
+    {
+      "filter_id" : "c_swanigan",
+      "rank" : 35
+    },
+    {
+      "filter_id" : "s_ojeleye",
+      "rank" : 36
+    },
+    {
+      "filter_id" : "r_alkins",
+      "rank" : 37
+    },
+    {
+      "filter_id" : "m_morris",
+      "rank" : 38
+    },
+    {
+      "filter_id" : "h_diallo",
+      "rank" : 39
+    },
+    {
+      "filter_id" : "s_brown",
+      "rank" : 40
+    },
+    {
+      "filter_id" : "d_bacon",
+      "rank" : 41
+    },
+    {
+      "filter_id" : "a_pasecniks",
+      "rank" : 42
     },
     {
       "filter_id" : "w_iwundu",
       "rank" : 43
     },
     {
-      "filter_id" : "z_collins",
-      "rank" : 11
+      "filter_id" : "s_thornwell",
+      "rank" : 44
+    },
+    {
+      "filter_id" : "t_lydon",
+      "rank" : 45
+    },
+    {
+      "filter_id" : "a_kulboka",
+      "rank" : 46
+    },
+    {
+      "filter_id" : "v_beachem",
+      "rank" : 47
+    },
+    {
+      "filter_id" : "a_jones",
+      "rank" : 48
+    },
+    {
+      "filter_id" : "j_blossomgame",
+      "rank" : 49
+    },
+    {
+      "filter_id" : "m_lessort",
+      "rank" : 50
+    },
+    {
+      "filter_id" : "k_mushidi",
+      "rank" : 51
+    },
+    {
+      "filter_id" : "t_bradley",
+      "rank" : 52
+    },
+    {
+      "filter_id" : "d_reed",
+      "rank" : 53
+    },
+    {
+      "filter_id" : "t_bryant",
+      "rank" : 54
+    },
+    {
+      "filter_id" : "v_edwards",
+      "rank" : 55
+    },
+    {
+      "filter_id" : "c_oliver",
+      "rank" : 56
+    },
+    {
+      "filter_id" : "e_sumner",
+      "rank" : 57
+    },
+    {
+      "filter_id" : "j_motley",
+      "rank" : 58
+    },
+    {
+      "filter_id" : "a_peters",
+      "rank" : 59
+    },
+    {
+      "filter_id" : "m_wagner",
+      "rank" : 60
     }
   ],
   "kevin" : [
     {
-      "filter_id" : "a_jones",
-      "rank" : 54
-    },
-    {
-      "filter_id" : "a_kulboka",
-      "rank" : 51
-    },
-    {
-      "filter_id" : "a_pasecniks",
-      "rank" : 38
-    },
-    {
-      "filter_id" : "a_peters",
-      "rank" : 52
-    },
-    {
-      "filter_id" : "b_adebayo",
-      "rank" : 26
-    },
-    {
-      "filter_id" : "c_oliver",
-      "rank" : 40
-    },
-    {
-      "filter_id" : "c_swanigan",
-      "rank" : 39
-    },
-    {
-      "filter_id" : "d_bacon",
-      "rank" : 53
-    },
-    {
-      "filter_id" : "d_fox",
-      "rank" : 5
-    },
-    {
-      "filter_id" : "d_mitchell",
-      "rank" : 11
-    },
-    {
-      "filter_id" : "d_reed",
-      "rank" : 36
-    },
-    {
-      "filter_id" : "d_robinson",
-      "rank" : 34
-    },
-    {
-      "filter_id" : "d_smith",
-      "rank" : 7
-    },
-    {
-      "filter_id" : "d_white",
-      "rank" : 40
-    },
-    {
-      "filter_id" : "d_wilson",
-      "rank" : 20
-    },
-    {
-      "filter_id" : "e_sumner",
-      "rank" : 59
-    },
-    {
-      "filter_id" : "f_ntilikina",
-      "rank" : 10
-    },
-    {
-      "filter_id" : "h_diallo",
-      "rank" : 42
-    },
-    {
-      "filter_id" : "h_giles",
-      "rank" : 22
-    },
-    {
-      "filter_id" : "i_anigbogu",
-      "rank" : 27
-    },
-    {
-      "filter_id" : "i_hartenstein",
-      "rank" : 44
-    },
-    {
-      "filter_id" : "i_rabb",
-      "rank" : 32
-    },
-    {
-      "filter_id" : "j_allen",
-      "rank" : 18
-    },
-    {
-      "filter_id" : "j_bell",
-      "rank" : 31
-    },
-    {
-      "filter_id" : "j_blossomgame",
-      "rank" : 57
-    },
-    {
-      "filter_id" : "j_collins",
-      "rank" : 19
-    },
-    {
-      "filter_id" : "j_evans",
-      "rank" : 23
-    },
-    {
-      "filter_id" : "j_hart",
-      "rank" : 37
-    },
-    {
-      "filter_id" : "j_isaac",
-      "rank" : 8
-    },
-    {
-      "filter_id" : "j_jackson",
-      "rank" : 4
-    },
-    {
-      "filter_id" : "ju_jacksonmd",
-      "rank" : 29
-    },
-    {
-      "filter_id" : "j_jeanne",
-      "rank" : 15
-    },
-    {
-      "filter_id" : "j_motley",
-      "rank" : 55
-    },
-    {
-      "filter_id" : "j_patton",
-      "rank" : 13
+      "filter_id" : "m_fultz",
+      "rank" : 1
     },
     {
       "filter_id" : "j_tatum",
       "rank" : 2
     },
     {
-      "filter_id" : "ju_jackson",
-      "rank" : 25
-    },
-    {
-      "filter_id" : "k_mushidi",
-      "rank" : 50
-    },
-    {
       "filter_id" : "l_ball",
       "rank" : 3
     },
     {
-      "filter_id" : "l_kennard",
-      "rank" : 16
+      "filter_id" : "j_jackson",
+      "rank" : 4
     },
     {
-      "filter_id" : "l_markkanen",
-      "rank" : 14
-    },
-    {
-      "filter_id" : "m_fultz",
-      "rank" : 1
-    },
-    {
-      "filter_id" : "m_lessort",
-      "rank" : 43
+      "filter_id" : "d_fox",
+      "rank" : 5
     },
     {
       "filter_id" : "m_monk",
       "rank" : 6
     },
     {
-      "filter_id" : "m_morris",
-      "rank" : 41
+      "filter_id" : "d_smith",
+      "rank" : 7
     },
     {
-      "filter_id" : "m_wagner",
-      "rank" : 60
+      "filter_id" : "j_isaac",
+      "rank" : 8
     },
     {
       "filter_id" : "o_anunoby",
       "rank" : 9
     },
     {
-      "filter_id" : "r_alkins",
-      "rank" : 35
+      "filter_id" : "f_ntilikina",
+      "rank" : 10
+    },
+    {
+      "filter_id" : "d_mitchell",
+      "rank" : 11
+    },
+    {
+      "filter_id" : "z_collins",
+      "rank" : 12
+    },
+    {
+      "filter_id" : "j_patton",
+      "rank" : 13
+    },
+    {
+      "filter_id" : "l_markkanen",
+      "rank" : 14
+    },
+    {
+      "filter_id" : "j_jeanne",
+      "rank" : 15
+    },
+    {
+      "filter_id" : "l_kennard",
+      "rank" : 16
     },
     {
       "filter_id" : "r_kurucs",
       "rank" : 17
     },
     {
-      "filter_id" : "s_brown",
-      "rank" : 33
+      "filter_id" : "j_allen",
+      "rank" : 18
     },
     {
-      "filter_id" : "s_ojeleye",
-      "rank" : 24
+      "filter_id" : "j_collins",
+      "rank" : 19
     },
     {
-      "filter_id" : "s_thornwell",
-      "rank" : 48
-    },
-    {
-      "filter_id" : "t_bradley",
-      "rank" : 35
-    },
-    {
-      "filter_id" : "t_bryant",
-      "rank" : 45
+      "filter_id" : "d_wilson",
+      "rank" : 20
     },
     {
       "filter_id" : "t_ferguson",
       "rank" : 21
     },
     {
-      "filter_id" : "t_leaf",
-      "rank" : 47
+      "filter_id" : "h_giles",
+      "rank" : 22
     },
     {
-      "filter_id" : "t_lydon",
-      "rank" : 58
+      "filter_id" : "j_evans",
+      "rank" : 23
     },
     {
-      "filter_id" : "v_beachem",
-      "rank" : 56
+      "filter_id" : "s_ojeleye",
+      "rank" : 24
     },
     {
-      "filter_id" : "v_edwards",
-      "rank" : 46
+      "filter_id" : "ju_jackson",
+      "rank" : 25
+    },
+    {
+      "filter_id" : "b_adebayo",
+      "rank" : 26
+    },
+    {
+      "filter_id" : "i_anigbogu",
+      "rank" : 27
     },
     {
       "filter_id" : "w_iwundu",
       "rank" : 28
     },
     {
-      "filter_id" : "z_collins",
-      "rank" : 12
+      "filter_id" : "ju_jacksonmd",
+      "rank" : 29
+    },
+    {
+      "filter_id" : "d_white",
+      "rank" : 31
+    },
+    {
+      "filter_id" : "j_bell",
+      "rank" : 32
+    },
+    {
+      "filter_id" : "i_rabb",
+      "rank" : 33
+    },
+    {
+      "filter_id" : "s_brown",
+      "rank" : 34
+    },
+    {
+      "filter_id" : "d_robinson",
+      "rank" : 35
+    },
+    {
+      "filter_id" : "r_alkins",
+      "rank" : 35
+    },
+    {
+      "filter_id" : "d_reed",
+      "rank" : 36
+    },
+    {
+      "filter_id" : "j_hart",
+      "rank" : 37
+    },
+    {
+      "filter_id" : "a_pasecniks",
+      "rank" : 38
+    },
+    {
+      "filter_id" : "c_swanigan",
+      "rank" : 39
+    },
+    {
+      "filter_id" : "c_oliver",
+      "rank" : 40
+    },
+    {
+      "filter_id" : "m_morris",
+      "rank" : 40
+    },
+    {
+      "filter_id" : "h_diallo",
+      "rank" : 41
+    },
+    {
+      "filter_id" : "m_lessort",
+      "rank" : 42
+    },
+    {
+      "filter_id" : "i_hartenstein",
+      "rank" : 43
+    },
+    {
+      "filter_id" : "t_bryant",
+      "rank" : 44
+    },
+    {
+      "filter_id" : "v_edwards",
+      "rank" : 45
+    },
+    {
+      "filter_id" : "t_leaf",
+      "rank" : 46
+    },
+    {
+      "filter_id" : "s_thornwell",
+      "rank" : 47
+    },
+    {
+      "filter_id" : "t_bradley",
+      "rank" : 48
+    },
+    {
+      "filter_id" : "k_mushidi",
+      "rank" : 50
+    },
+    {
+      "filter_id" : "a_kulboka",
+      "rank" : 51
+    },
+    {
+      "filter_id" : "a_peters",
+      "rank" : 52
+    },
+    {
+      "filter_id" : "d_bacon",
+      "rank" : 53
+    },
+    {
+      "filter_id" : "a_jones",
+      "rank" : 54
+    },
+    {
+      "filter_id" : "j_motley",
+      "rank" : 55
+    },
+    {
+      "filter_id" : "v_beachem",
+      "rank" : 56
+    },
+    {
+      "filter_id" : "j_blossomgame",
+      "rank" : 57
+    },
+    {
+      "filter_id" : "t_lydon",
+      "rank" : 58
+    },
+    {
+      "filter_id" : "e_sumner",
+      "rank" : 59
+    },
+    {
+      "filter_id" : "m_wagner",
+      "rank" : 60
     }
   ],
   "danny" : [
     {
-      "filter_id" : "a_jones",
-      "rank" : 38
+      "filter_id" : "m_fultz",
+      "rank" : 1
     },
     {
-      "filter_id" : "a_kulboka",
-      "rank" : 55
+      "filter_id" : "l_ball",
+      "rank" : 2
+    },
+    {
+      "filter_id" : "j_jackson",
+      "rank" : 3
+    },
+    {
+      "filter_id" : "j_isaac",
+      "rank" : 4
+    },
+    {
+      "filter_id" : "d_fox",
+      "rank" : 5
+    },
+    {
+      "filter_id" : "m_monk",
+      "rank" : 6
+    },
+    {
+      "filter_id" : "o_anunoby",
+      "rank" : 7
+    },
+    {
+      "filter_id" : "d_smith",
+      "rank" : 8
+    },
+    {
+      "filter_id" : "j_tatum",
+      "rank" : 9
+    },
+    {
+      "filter_id" : "z_collins",
+      "rank" : 10
+    },
+    {
+      "filter_id" : "l_markkanen",
+      "rank" : 11
+    },
+    {
+      "filter_id" : "f_ntilikina",
+      "rank" : 12
+    },
+    {
+      "filter_id" : "j_allen",
+      "rank" : 13
+    },
+    {
+      "filter_id" : "d_mitchell",
+      "rank" : 14
+    },
+    {
+      "filter_id" : "i_anigbogu",
+      "rank" : 15
+    },
+    {
+      "filter_id" : "j_patton",
+      "rank" : 16
+    },
+    {
+      "filter_id" : "ju_jackson",
+      "rank" : 17
+    },
+    {
+      "filter_id" : "l_kennard",
+      "rank" : 18
+    },
+    {
+      "filter_id" : "w_iwundu",
+      "rank" : 19
+    },
+    {
+      "filter_id" : "t_ferguson",
+      "rank" : 20
+    },
+    {
+      "filter_id" : "d_wilson",
+      "rank" : 21
+    },
+    {
+      "filter_id" : "h_giles",
+      "rank" : 22
+    },
+    {
+      "filter_id" : "i_hartenstein",
+      "rank" : 23
+    },
+    {
+      "filter_id" : "t_leaf",
+      "rank" : 24
+    },
+    {
+      "filter_id" : "j_jeanne",
+      "rank" : 25
+    },
+    {
+      "filter_id" : "ju_jacksonmd",
+      "rank" : 26
+    },
+    {
+      "filter_id" : "i_rabb",
+      "rank" : 27
+    },
+    {
+      "filter_id" : "j_evans",
+      "rank" : 28
+    },
+    {
+      "filter_id" : "r_kurucs",
+      "rank" : 29
     },
     {
       "filter_id" : "a_pasecniks",
       "rank" : 30
     },
     {
-      "filter_id" : "a_peters",
-      "rank" : 52
+      "filter_id" : "h_diallo",
+      "rank" : 31
     },
     {
-      "filter_id" : "b_adebayo",
-      "rank" : 40
+      "filter_id" : "d_robinson",
+      "rank" : 32
+    },
+    {
+      "filter_id" : "r_alkins",
+      "rank" : 33
+    },
+    {
+      "filter_id" : "s_ojeleye",
+      "rank" : 34
+    },
+    {
+      "filter_id" : "s_brown",
+      "rank" : 35
     },
     {
       "filter_id" : "c_oliver",
       "rank" : 36
+    },
+    {
+      "filter_id" : "t_lydon",
+      "rank" : 37
+    },
+    {
+      "filter_id" : "j_bell",
+      "rank" : 38
+    },
+    {
+      "filter_id" : "j_collins",
+      "rank" : 39
+    },
+    {
+      "filter_id" : "b_adebayo",
+      "rank" : 40
     },
     {
       "filter_id" : "c_swanigan",
@@ -1678,144 +1814,68 @@
       "rank" : 42
     },
     {
-      "filter_id" : "d_fox",
-      "rank" : 5
-    },
-    {
-      "filter_id" : "d_mitchell",
-      "rank" : 14
-    },
-    {
-      "filter_id" : "d_reed",
-      "rank" : 53
-    },
-    {
-      "filter_id" : "d_robinson",
-      "rank" : 32
-    },
-    {
-      "filter_id" : "d_smith",
-      "rank" : 8
-    },
-    {
       "filter_id" : "d_white",
       "rank" : 43
     },
     {
-      "filter_id" : "d_wilson",
-      "rank" : 21
+      "filter_id" : "t_bradley",
+      "rank" : 44
     },
     {
-      "filter_id" : "e_sumner",
-      "rank" : 57
+      "filter_id" : "s_thornwell",
+      "rank" : 45
     },
     {
-      "filter_id" : "f_ntilikina",
-      "rank" : 12
-    },
-    {
-      "filter_id" : "h_diallo",
-      "rank" : 25
-    },
-    {
-      "filter_id" : "h_giles",
-      "rank" : 22
-    },
-    {
-      "filter_id" : "i_anigbogu",
-      "rank" : 15
-    },
-    {
-      "filter_id" : "i_hartenstein",
-      "rank" : 23
-    },
-    {
-      "filter_id" : "i_rabb",
-      "rank" : 27
-    },
-    {
-      "filter_id" : "j_allen",
-      "rank" : 13
-    },
-    {
-      "filter_id" : "j_bell",
+      "filter_id" : "a_jones",
       "rank" : 46
-    },
-    {
-      "filter_id" : "j_blossomgame",
-      "rank" : 58
-    },
-    {
-      "filter_id" : "j_collins",
-      "rank" : 39
-    },
-    {
-      "filter_id" : "j_evans",
-      "rank" : 28
     },
     {
       "filter_id" : "j_hart",
       "rank" : 47
     },
     {
-      "filter_id" : "j_isaac",
-      "rank" : 4
-    },
-    {
-      "filter_id" : "j_jackson",
-      "rank" : 3
-    },
-    {
-      "filter_id" : "j_jeanne",
-      "rank" : 33
-    },
-    {
-      "filter_id" : "j_motley",
+      "filter_id" : "d_reed",
       "rank" : 48
     },
     {
-      "filter_id" : "j_patton",
-      "rank" : 16
+      "filter_id" : "v_beachem",
+      "rank" : 49
     },
     {
-      "filter_id" : "j_tatum",
-      "rank" : 9
+      "filter_id" : "j_motley",
+      "rank" : 50
     },
     {
-      "filter_id" : "ju_jackson",
-      "rank" : 17
+      "filter_id" : "m_lessort",
+      "rank" : 51
     },
     {
-      "filter_id" : "ju_jacksonmd",
-      "rank" : 26
+      "filter_id" : "a_peters",
+      "rank" : 52
+    },
+    {
+      "filter_id" : "t_bryant",
+      "rank" : 53
     },
     {
       "filter_id" : "k_mushidi",
       "rank" : 54
     },
     {
-      "filter_id" : "l_ball",
-      "rank" : 2
+      "filter_id" : "a_kulboka",
+      "rank" : 55
     },
     {
-      "filter_id" : "l_kennard",
-      "rank" : 18
+      "filter_id" : "v_edwards",
+      "rank" : 56
     },
     {
-      "filter_id" : "l_markkanen",
-      "rank" : 11
+      "filter_id" : "e_sumner",
+      "rank" : 57
     },
     {
-      "filter_id" : "m_fultz",
-      "rank" : 1
-    },
-    {
-      "filter_id" : "m_lessort",
-      "rank" : 50
-    },
-    {
-      "filter_id" : "m_monk",
-      "rank" : 6
+      "filter_id" : "j_blossomgame",
+      "rank" : 58
     },
     {
       "filter_id" : "m_morris",
@@ -1824,66 +1884,6 @@
     {
       "filter_id" : "m_wagner",
       "rank" : 60
-    },
-    {
-      "filter_id" : "o_anunoby",
-      "rank" : 7
-    },
-    {
-      "filter_id" : "r_alkins",
-      "rank" : 31
-    },
-    {
-      "filter_id" : "r_kurucs",
-      "rank" : 29
-    },
-    {
-      "filter_id" : "s_brown",
-      "rank" : 35
-    },
-    {
-      "filter_id" : "s_ojeleye",
-      "rank" : 34
-    },
-    {
-      "filter_id" : "s_thornwell",
-      "rank" : 45
-    },
-    {
-      "filter_id" : "t_bradley",
-      "rank" : 44
-    },
-    {
-      "filter_id" : "t_bryant",
-      "rank" : 51
-    },
-    {
-      "filter_id" : "t_ferguson",
-      "rank" : 20
-    },
-    {
-      "filter_id" : "t_leaf",
-      "rank" : 24
-    },
-    {
-      "filter_id" : "t_lydon",
-      "rank" : 37
-    },
-    {
-      "filter_id" : "v_beachem",
-      "rank" : 49
-    },
-    {
-      "filter_id" : "v_edwards",
-      "rank" : 56
-    },
-    {
-      "filter_id" : "w_iwundu",
-      "rank" : 19
-    },
-    {
-      "filter_id" : "z_collins",
-      "rank" : 10
     }
   ],
   "johnathan" : [
@@ -1952,11 +1952,11 @@
       "rank" : 16
     },
     {
-      "filter_id" : "j_evans",
+      "filter_id" : "r_alkins",
       "rank" : 17
     },
     {
-      "filter_id" : "r_alkins",
+      "filter_id" : "j_evans",
       "rank" : 18
     },
     {
@@ -1964,27 +1964,27 @@
       "rank" : 19
     },
     {
-      "filter_id" : "d_robinson",
+      "filter_id" : "c_oliver",
       "rank" : 20
     },
     {
-      "filter_id" : "w_iwundu",
+      "filter_id" : "d_robinson",
       "rank" : 21
     },
     {
-      "filter_id" : "t_ferguson",
+      "filter_id" : "w_iwundu",
       "rank" : 22
     },
     {
-      "filter_id" : "ju_jackson",
+      "filter_id" : "t_ferguson",
       "rank" : 23
     },
     {
-      "filter_id" : "i_anigbogu",
+      "filter_id" : "ju_jackson",
       "rank" : 24
     },
     {
-      "filter_id" : "c_oliver",
+      "filter_id" : "i_anigbogu",
       "rank" : 25
     },
     {
@@ -2056,59 +2056,59 @@
       "rank" : 42
     },
     {
-      "filter_id" : "m_morris",
+      "filter_id" : "i_hartenstein",
       "rank" : 43
     },
     {
-      "filter_id" : "v_edwards",
+      "filter_id" : "m_morris",
       "rank" : 44
     },
     {
-      "filter_id" : "s_thornwell",
+      "filter_id" : "e_sumner",
       "rank" : 45
     },
     {
-      "filter_id" : "i_hartenstein",
+      "filter_id" : "v_edwards",
       "rank" : 46
     },
     {
-      "filter_id" : "j_motley",
+      "filter_id" : "s_thornwell",
       "rank" : 47
     },
     {
-      "filter_id" : "j_collins",
+      "filter_id" : "j_motley",
       "rank" : 48
     },
     {
-      "filter_id" : "t_lydon",
+      "filter_id" : "j_collins",
       "rank" : 49
     },
     {
-      "filter_id" : "s_ojeleye",
+      "filter_id" : "t_lydon",
       "rank" : 50
     },
     {
-      "filter_id" : "c_swanigan",
+      "filter_id" : "s_ojeleye",
       "rank" : 51
     },
     {
-      "filter_id" : "a_pasecniks",
+      "filter_id" : "c_swanigan",
       "rank" : 52
     },
     {
-      "filter_id" : "t_bryant",
+      "filter_id" : "a_pasecniks",
       "rank" : 53
     },
     {
-      "filter_id" : "b_adebayo",
+      "filter_id" : "t_bryant",
       "rank" : 54
     },
     {
-      "filter_id" : "m_wagner",
+      "filter_id" : "b_adebayo",
       "rank" : 55
     },
     {
-      "filter_id" : "e_sumner",
+      "filter_id" : "m_wagner",
       "rank" : 56
     },
     {
