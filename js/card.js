@@ -107,7 +107,10 @@ function Card(id, data){
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        var delay = $('body').hasClass('mobile') ? 2000 : 1500;
+        var delay = $('body').hasClass('mobile') ? 2000 : 1000;
+        setTimeout(function(){
+            card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png');
+        }, 500)
         setTimeout(function(){
             $(card.el).find('.info-column').html(card.infoTemplate(card.data));
         }, delay);
