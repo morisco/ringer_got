@@ -77,14 +77,25 @@ body #item-list.filtered{
         display:inline-block;
     }
     h4{
-        font-size:16px;
+        font-size: 16px;
         line-height: 1.25;
-        font-weight:400;
-        display:inline-block;
+        font-weight: 300;
+        display: inline-block;
+        font-family: "GT Pressura Mono";
+        word-spacing: -.2em;
+        strong {
+            font-weight: 500;
+            &:after {
+                content: ', ';
+                padding-right:5px;
+            }
+        }
     }
 
     h6{
         @include label-text;
+        border-bottom:1px solid black;
+        margin-bottom:7.5px;
     }
 
 
@@ -131,18 +142,22 @@ body #item-list.filtered{
         .player-description{
             clear:both;
             margin:30px 0 0;
-            padding-top: 30px;
+            //padding-top: 30px;
             font-size:14px;
-            border-top: 1px solid #ccc;
+            //border-top: 1px solid #999;
             padding-right:40px;
             .player-headline{
-                font-size:20px;
-                line-height:1;
-                margin-bottom:5px;
-                font-family: 'Tiempos Headline';
+                font-size: 22px;
+                line-height: 1.2;
+                margin-bottom: 15px;
+                font-family: "GT Pressura Mono";
+                font-weight: 300;
             }
             .player-subline {
-                font-weight: 500;
+                font-weight: 300;
+                font-family: "GT Pressura Mono";
+                font-size: 14px;
+                word-spacing: -0.1em;
                 strong {
                     @include label-text;
                 }
@@ -170,13 +185,13 @@ body #item-list.filtered{
                     display:inline-block;
                     width: 85px;
                     max-width: 23.5%;
-                    padding: 0 7.5px;
-                    margin-bottom:15px;
+                    padding: 0 6.5px;
+                    margin-bottom:24px;
                     .stat-wrap{
                         position:relative;
                         height:100%;
                         border-radius: 5px;
-                        border: 1px solid #aaa;
+                        border: 1px solid #999;
                         overflow:hidden;
                     }
 
@@ -184,9 +199,9 @@ body #item-list.filtered{
                         display:block;
                         line-height:1;
                         &.title{
-                            border-bottom:1px solid #aaa;
+                            border-bottom:1px solid #999;
                             text-align:center;
-                            padding: 10px 0 5px;
+                            padding: 6px 0;
                             @include label-text;
                         }
                         &.number{
@@ -199,10 +214,9 @@ body #item-list.filtered{
                         &.detail{
                             visibility: hidden;
                             opacity: 0;
-                            padding-top:2px;
-                            padding-bottom:6px;
-                            margin-top:-5px;
+                            padding-bottom:0;
                             @include detail-text;
+                            margin-top:-8px;
 
                         }
                     }
@@ -333,9 +347,12 @@ body #item-list.filtered{
                                 text-align:center;
                             }
                             .percentage{
-                                margin-bottom:-5px;
-                                @include value-text;
-                                font-weight:800;
+                                margin-bottom: -3px;
+                                font-size: 13px;
+                                font-family: 'GT Pressura',sans;
+                                letter-spacing: .05em;
+                                font-weight: 300;
+                                font-weight: 500;
                             }
                             .fga{
                                 @include detail-text;
@@ -408,6 +425,7 @@ body #item-list.filtered{
             .charts-by{
                 margin-top:5px;
                 @include detail-text;
+                font-size:9px;
                 text-align:right;
                 a{
                     color:$black;
@@ -438,8 +456,10 @@ body #item-list.filtered{
                     position: relative;
                     line-height: 1.25;
                     margin-bottom: 15px;
-                    font-size:14px;
-                    font-weight:500;
+                    font-size:13px;
+                    font-weight:300;
+                    font-family: "GT Pressura Mono";
+                    word-spacing: -.15em;
                     &.has-media .media-marker{
                         position:absolute;
                         top:4px;
@@ -494,22 +514,23 @@ body #item-list.filtered{
         opacity:0;
 
         h5{
-            text-transform: uppercase;
+            @include label-text;
             border-bottom: 1px solid black;
             color:black;
-            font-size:12px;
-            letter-spacing:0.05em;
         }
         ul{
             list-style: none;
-            font-family: 'Tiempos Headline';
+        
             li a{
                 display:block;
                 color:black;
-                font-weight: 500;
                 margin-top: 10px;
-                line-height: 1.25;
                 font-size: 16px;
+                line-height: 1.25;
+                font-weight: 500;
+                display: inline-block;
+                font-family: "GT Pressura Mono";
+                word-spacing: -.2em;
             }
         }
     }
@@ -620,7 +641,7 @@ body #item-list.filtered{
                 max-width:100%;
             }
             .player-meta{
-                padding: 15px 0;
+                padding: 30px 0;
                 width:100%;
                 float:none;
                 margin-bottom:30px;

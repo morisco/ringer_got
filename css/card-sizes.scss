@@ -18,6 +18,8 @@ body .card-item.expanded-card{
         img{
             visibility: visible;
             opacity: 1;
+            margin-top: 0;
+            padding-bottom:10px;
         }
     }
     .info-column{
@@ -27,7 +29,7 @@ body .card-item.expanded-card{
         .player-main{
             width:42.5%;
             h4{
-                display:block;
+                //display:block;
             }
         }
         .player-stats{
@@ -123,11 +125,12 @@ body .card-item.expanded-card{
                     visibility: visible;
                     opacity: 1;
                     margin-top:0;
+                    padding-bottom:8px;
                 }
             }
         }
         .player-meta{
-            padding:15px 0;
+            padding:30px 0;
             width:44%;
             ul{
                 height:auto;
@@ -358,7 +361,7 @@ body .card-item.expanded-card{
             .player-stats{
                 ul{
                     li{
-                        margin-bottom:17px;
+                        margin-bottom:24px;
                     }
                     li:nth-child(n+5){
                         display:inline-block;
