@@ -425,7 +425,7 @@ body #item-list.filtered{
             .charts-by{
                 margin-top:5px;
                 @include detail-text;
-                font-size:9px;
+                font-size:10px;
                 text-align:right;
                 a{
                     color:$black;
@@ -634,7 +634,10 @@ body #item-list.filtered{
             min-width:auto;
             padding:20px 15px;
             h3{
-                font-size:40px;
+                font-size:55px;
+            }
+            h4{
+                font-size:15px;
             }
             .player-main{
                 width:100%;
@@ -654,6 +657,9 @@ body #item-list.filtered{
             .player-description{
                 padding-right:0;
                 margin-top:15px;
+                .player-headline {
+                    font-size:19px;
+                }
             }
             .player-stat-image{
                 width:100%;
@@ -685,13 +691,14 @@ body #item-list.filtered{
                         display: block;
                         width: 25%;
                         max-width: 25%;
-                        padding: 0 5.5px;
+                        padding: 0 10px;
                         margin-bottom: 0;
                         float: left;
                         &:nth-child(n+5){
                             display:none;
-                            margin-top:10px
+                            margin-top:10px;
                         }
+                       
                         span.detail{
                             position:relative;
                             bottom:auto;
