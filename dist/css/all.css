@@ -440,6 +440,7 @@ body:not(.mobile):not(.no-transition) .background-theme-after:after {
   border-color: #7ebe43 !important; }
 
 .ring-container {
+  display: none;
   position: relative;
   margin-left: -17px;
   -moz-transform: translateY(2px);
