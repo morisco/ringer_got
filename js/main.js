@@ -24,6 +24,8 @@ function CardList() {
 
     this.filterOffsetPos = $('#content').offset().top;
 
+    this.introOffsetPos = $('#intro').offset().top;
+
     this.size = 'medium';
     this.cards = [];
 
@@ -139,6 +141,15 @@ function CardList() {
             $('body').addClass('filter-fixed');
         } else {
             $('body').removeClass('filter-fixed');
+        }
+
+        if(scrollPos > cardlist.introOffsetPos){
+            console.log('got it');
+        }
+        if(scrollPos > cardlist.introOffsetPos && $('.heading-wrapper:visible')){
+            $('.heading-wrapper').hide();
+        } else if(scrollPos <= cardlist.introOffsetPos && $('.heading-wrapper:hidden')) {
+            $('.heading-wrapper').show();
         }
     }
 

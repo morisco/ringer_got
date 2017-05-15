@@ -5,9 +5,23 @@
 .is-mobile{
     display:none;
 }
+.is-tablet{
+    display:none;
+}
+
+@media(max-width:1200px) and (min-width:768px){
+    .is-tablet{
+        display:block;
+    }
+    .is-mobile{
+        display:none;
+    }
+    .non-mobile{
+        display:none;
+    }
+}
 
 @media(max-width:767px){
-
     .is-mobile{
         display:inline-block;
     }

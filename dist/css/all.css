@@ -1434,17 +1434,25 @@ footer {
 
 header {
   position: relative;
-  min-height: 100vh;
   height: auto;
   overflow: hidden; }
   header .heading-wrapper {
     position: relative;
+    display: inline-block;
     padding: 30px 0 190px;
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    margin-left: -450px; }
     header .heading-wrapper .byline {
+      position: absolute;
+      top: 45px;
+      right: 0px;
+      border-top: 1px solid #000;
+      padding-top: 2px;
       max-width: 100%;
-      position: relative;
       font-family: 'GT Pressura Mono', sans;
       font-weight: normal;
       text-transform: uppercase;
@@ -1453,16 +1461,28 @@ header {
       header .heading-wrapper .byline a {
         color: #000; }
   header .heading-image {
-    background-image: url("../../img/header-background.png");
+    margin-top: 250px;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
+    header .heading-image img {
+      width: 100%; }
+  header h1 {
+    display: inline-block;
+    position: relative;
+    line-height: 1.4; }
+    header h1 span.block {
+      position: absolute;
+      top: 0;
+      left: 0; }
   header nav {
     width: 100%;
     display: block;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    text-align: left; }
     header nav:after {
       content: '';
       clear: both;
@@ -1502,6 +1522,10 @@ header {
     background-size: 125%; } }
 
 @media (max-width: 1023px) {
+  header .heading-wrapper {
+    margin-left: -360px; }
+  header .heading-image {
+    margin-top: 260px; }
   header h1 {
     font-size: 220px; } }
 
@@ -1513,6 +1537,7 @@ header {
     header:before {
       height: 45px; }
     header .heading-image {
+      margin-top: 0;
       background-image: url("../../img/header-background-mobile.png");
       top: auto;
       background-position: center bottom;
@@ -1522,13 +1547,21 @@ header {
       height: auto;
       text-align: center;
       margin: 10px auto 0;
-      max-width: 350px;
+      width: 100%;
+      left: auto;
       padding-bottom: 160px; }
       header .heading-wrapper h1 {
-        font-size: 85px; }
-        header .heading-wrapper h1 span {
+        font-size: 85px;
+        line-height: 1.55;
+        margin-bottom: -55px; }
+        header .heading-wrapper h1 span.block {
           margin-bottom: 30px;
           font-size: 40px; }
+      header .heading-wrapper .byline {
+        display: inline-block;
+        position: relative;
+        right: auto;
+        top: auto; }
     header .social {
       position: relative;
       right: auto;
@@ -1543,7 +1576,7 @@ header {
 #intro {
   position: relative;
   width: 95%;
-  margin: 0 auto 60px;
+  margin: -120px auto 0;
   padding: 60px;
   max-width: 1390px;
   list-style: none;
@@ -1620,7 +1653,7 @@ header {
   #intro {
     padding: 20px;
     width: calc(100% - 30px);
-    margin-top: 30px;
+    margin-top: -60px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 30px;
@@ -2433,10 +2466,13 @@ h3 .brand {
     display: table; }
 
 #content {
+  position: relative;
+  z-index: 3;
   width: 100%;
   max-width: 1390px;
-  padding: 0 60px;
-  margin: 0 auto 60px; }
+  padding: 60px;
+  margin: 0 auto;
+  background: #fff; }
   #content:after {
     content: '';
     clear: both;
@@ -2534,6 +2570,17 @@ h3 .brand {
 
 .is-mobile {
   display: none; }
+
+.is-tablet {
+  display: none; }
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .is-tablet {
+    display: block; }
+  .is-mobile {
+    display: none; }
+  .non-mobile {
+    display: none; } }
 
 @media (max-width: 767px) {
   .is-mobile {
