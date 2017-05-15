@@ -132,8 +132,16 @@ function Card(id, data){
         this.data = new_player;
         this.loaded = false;
         var delay = $('body').hasClass('mobile') ? 1000 : 500;
-        card.el.removeClass('big guard forward').addClass(card.data.position_group);
+            classes = '';
         setTimeout(function(){
+            console.log(card.el.hasClass('expanded-card'));
+            if(card.el.hasClass('expanded-card')){
+                classes = 'card-item col-xs-12 expanded-card ' + card.data.filter_id + ' ' + card.data.position_group;
+                card.el.attr('class', classes);
+            } else {
+                classes = 'card-item col-xs-12 ' + card.data.filter_id + ' ' + card.data.position_group;
+                card.el.attr('class', classes);
+            }
             card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png').attr('alt', card.data.name);
         }, 500)
         setTimeout(function(){
