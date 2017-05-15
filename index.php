@@ -21,9 +21,13 @@
     $data = json_decode($data_string);
     $player_data = $data->players;
 
-    $articles_string = file_get_contents("./data/articles.json");
-    $articles_json = json_decode($articles_string);
-    $articles = $articles_json->articles;
+    if($detect->isMobile() && !$detect->isTablet()){
+        $articles = $data->mobile_more_coverage;
+        $article_count = 5;
+    } else{
+        $articles = $data->more_coverage;
+        $article_count = 10;
+    }
 
     $sort_colors = array(
         'ringer'    => '#005bcc',
@@ -66,7 +70,7 @@
 
     $template_render = '';
     $player_id = isset($_GET['player']) ? $_GET['player'] : false;
-    $count = 5;
+    $count = $article_count;
     $coverage_count = 0;
     foreach($sorted_players as $player){
         $player->plus       = json_decode($player->plus);
@@ -91,11 +95,16 @@
         );
 
         $count--;
+        if($count == 0 && $player->rank !== '60'){
+            if($detect->isMobile() && !$detect->isTablet()){
+                $display_count = 1;
+            } else {
+                $display_count = 3;
+            }
 
-        if($count == 0 && $player->rank !== '50'){
-            $count = 5;
+            $count = $article_count;
             $more_coverage = (object) array();
-            $more_coverage->articles = array_slice($articles, (3 * $coverage_count), 3);
+            $more_coverage->articles = array_slice($articles, ($display_count * $coverage_count), $display_count);
             $template_render .= $engine->render(
                 'coverage',
                 $more_coverage
@@ -105,12 +114,11 @@
     }
 
     $footer_coverage = (object) array();
-    $footer_coverage->articles = array_slice($articles, 0, 4);
+    $footer_coverage->articles = array_slice($articles, -4, 4);
     $footer_coverage_render = $engine->render(
         'coverage',
         $footer_coverage
     );
-
 
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
@@ -182,14 +190,15 @@
             </nav>
             <div class="heading-wrapper">
                 <h1><span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span> NBA DRAFT GUIDE</h1>
+                <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor">kevin o'connor</a></div>
             </div>
+            <div class="heading-image"></div>
         </header>
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
                     <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide, a comprehensive look at our top-60 prospects as rated by our three draftniks, O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
                     <div class="intro-actions">
-                        <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor" class="color-theme">kevin o'connor</a></div>
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
                             <a target="_blank" href="http://facebook.com" class="facebook"></a>
@@ -251,26 +260,23 @@
                 <div id="filter-bar">
                     <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
                         <div class="filter-wrapper">
-                            <span>Ringer Picks</span>
+                            <span>Mock Draft</span>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Kevin O&rsquo;Connor</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Danny Chau</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
                         <div class="filter-wrapper">
-                            <img src="img/list-image/danny-chau.png" alt="Danny Chau Headshot"/>
                             <span>Jonathan Tjarks</span>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top-60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
                         </div>

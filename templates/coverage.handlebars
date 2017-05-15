@@ -3,9 +3,7 @@
     <div>
         {{#each articles}}
             <a href="{{link}}" class="article">
-                <span class="img">
-                    <img src="{{img}}" />
-                </span>
+                <span class="img" style="background-image:url('{{image}}');"></span>
                 <h4>{{headline}}</h4>
             </a>
         {{/each}}

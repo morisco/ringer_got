@@ -1,10 +1,40 @@
 header{
+    position:relative;
+    min-height:100vh;
+    height: auto;
+    overflow:hidden;
     .heading-wrapper{
+        position:relative;
         padding: 30px 0 190px;
+        text-align:center;
+        z-index:1;
+        .byline{
+            max-width: 100%;
+            position:relative;
+            @include label-text;
+            a{
+                color:$black;
+            }
+        }
+    }
+    .heading-image{
+        background-image:url('../../img/header-background.png');
+        background-position: center top;
+        background-size:cover;
+        background-repeat:no-repeat;
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:0;
+        height:100%;
     }
     nav{
         width:100%;
         display:block;
+        position:relative;
+        z-index:1;
         &:after{
             content:'';
             clear:both;
@@ -42,14 +72,27 @@ header{
     }
 }
 
-@media(max-width:768px){
+@media screen and (min-aspect-ratio: 4/2) {
     header{
-        height: auto;
-        .heading-wrapper{
-            padding-bottom:180px;
+        .heading-image{
+            top:60%;
         }
+    }
+}
+
+@media(max-width:1200px){
+    header .heading-image{
+        top:0;
+        background-position: center bottom;
+        background-size:125%;
+
+    }
+}
+
+@media(max-width:1023px){
+    header{
         h1{
-            font-size:205px;
+            font-size:220px;
         }
     }
 }
@@ -61,6 +104,12 @@ header{
         background-size: auto auto;
         &:before{
             height:45px;
+        }
+        .heading-image{
+            background-image:url('../../img/header-background-mobile.png');
+            top:auto;
+            background-position: center bottom;
+            background-size: 100%;
         }
         .heading-wrapper{
             position:relative;
@@ -83,6 +132,14 @@ header{
             top:auto;
             bottom:auto;
             margin: 25px auto 0;
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    header{
+        .heading-image{
+            display:none;
         }
     }
 }
