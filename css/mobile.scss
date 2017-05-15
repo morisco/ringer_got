@@ -82,7 +82,7 @@
             float:left;
             width:18px;
             height:20px;
-            margin-right:20px;
+            margin-right:14px;
             margin-left:15px;
             background-image:url('../../img/toggle.png');
             background-image:url('../../img/toggle.svg');
@@ -116,11 +116,24 @@
                         width:100%;
                         li{
                             display:block;
+                            position:relative;
                             width:calc(100% - 15px);
                             margin:0 auto;
                             border-top:1px solid #ccc;
                             padding:10px 40px;
                             @include label-text;
+                            svg{
+                                display:none;
+                                height:10px;
+                                position: absolute;
+                                left: 12px;
+                                top: 14px;
+                            }
+                            &.active{
+                                svg{
+                                    display:block;
+                                }
+                            }
                             &:last-of-type{
                                 border-bottom:1px solid #ccc;
                             }
