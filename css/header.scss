@@ -137,12 +137,18 @@ header{
         &:before{
             height:45px;
         }
+        nav{
+            display:none;
+        }
         .heading-image{
             margin-top:0;
-            background-image:url('../../img/header-background-mobile.png');
             top:auto;
             background-position: center bottom;
             background-size: 100%;
+            img{
+                width:130%;
+                margin-left:-15%;
+            }
         }
         .heading-wrapper{
             position:relative;
@@ -152,6 +158,7 @@ header{
             width:100%;
             left:auto;
             top:10vh;
+            padding-bottom:125px;
             h1{
                 font-size:100px;
                 line-height:1.55;
@@ -169,10 +176,9 @@ header{
                 top:auto;
                 padding-top:15px;
             }
-            img{
 
-            }
         }
+
         .social{
             position:relative;
             right:auto;
