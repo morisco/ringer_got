@@ -160,9 +160,12 @@ function CardList() {
     this.sort = function(e){
         e.preventDefault();
         e.stopPropagation();
+        if(cardlist.sort_id  == $(e.currentTarget).data('sort-id')){
+            return;
+        }
+        
         var player,
             coverage_count = 5;
-
         $('body').addClass('rebuilding');
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');

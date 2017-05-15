@@ -134,7 +134,6 @@ function Card(id, data){
         var delay = $('body').hasClass('mobile') ? 1000 : 500;
             classes = '';
         setTimeout(function(){
-            console.log(card.el.hasClass('expanded-card'));
             if(card.el.hasClass('expanded-card')){
                 classes = 'card-item col-xs-12 expanded-card ' + card.data.filter_id + ' ' + card.data.position_group;
                 card.el.attr('class', classes);
