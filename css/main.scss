@@ -197,6 +197,13 @@ h3 .brand{
     }
 }
 
+.credits{
+    @include detail-text;
+    float:right;
+    margin-bottom:60px;
+    margin-top:-15px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -299,6 +306,10 @@ h3 .brand{
     #content{
         padding:0 15px;
         width: 100%;
+    }
+
+    .credits{
+        margin-top:-15px;
     }
 
     .filter-fixed #content{

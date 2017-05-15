@@ -122,7 +122,7 @@
 
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
-    $fb_meta['image'] = "http://nbadraft.theringer.com/img/header-background.png";
+    $fb_meta['image'] = "http://nbadraft.theringer.com/img/nba_lede.jpg";
     $fb_meta['description'] = "Check out The Ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects.";
     $fb_meta['title'] = "The Ringer’s 2017 NBA Draft Guide";
 
@@ -130,7 +130,6 @@
         $fb_meta['url'] = "http://nbadraft.theringer.com/?player=" . $featured_player->filter_id;
         $fb_meta['title'] = "Everything you need to know about " . $featured_player->name . " from The Ringer’s 2017 NBA Draft Guide";
         $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
-        $fb_meta['image'] = "http://nbadraft.theringer.com/img/header-background.png";
     }
 
     $bodyClass = $sort_list_id;
@@ -320,19 +319,13 @@
                     </ul>
                 </section>
             </div>
+            <div class="credits">
+                <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>
+            </div>
         </div>
         <div id="coverage-footer">
             <?php echo $footer_coverage_render; ?>
         </div>
-
-        <footer class="background-theme">
-            <div class="footer-wrapper">
-                <div class="disclaimer">
-                    <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>
-                    <div>© 2017 <a href="https://theringer.com" target="_blank">The Ringer</a>. All Rights Reserved.
-                </div>
-            </div>
-        </footer>
 
         <script id="player-card-template" type="text/x-handlebars-template">
             <?php echo file_get_contents("./dist/templates/card.handlebars"); ?>
