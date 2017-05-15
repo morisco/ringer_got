@@ -10,14 +10,23 @@ function Card(id, data){
     this.infoTemplateSource = $("#info-template").html();
     this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
 
+
+    this.coverageTemplateSource = $("#related-coverage-template").html();
+    this.coverageTemplate = Handlebars.compile(this.coverageTemplateSource);
+
     this.init = function(){
         this.initEvents();
+        card.data.coverage = $.map(card.data.coverage, function(value, index) {
+            return [value];
+        });
+
     };
 
     this.initEvents = function(){
         this.el.on('click.whole', this.toggleWholeCard);
         this.el.on('click.gifs', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
+        this.el.on('mouseenter', this.expandedLoadGifs);
         this.el.on('mouseleave', this.hideColor);
         this.el.on('mouseenter', '.has-media',  this.showMedia);
         this.el.on('tap', '.has-media', this.showMedia);
@@ -34,6 +43,12 @@ function Card(id, data){
             card.el.off('click.whole');
             card.el.off('click.gifs');
             card.toggleCard();
+        }
+    }
+
+    this.expandedLoadGifs = function() {
+        if(card.size === 'large' && !card.loaded){
+            card.loadGifs();
         }
     }
 
@@ -83,8 +98,8 @@ function Card(id, data){
         $(this).addClass('color-theme');
         $('.player-stat-image').addClass('media-shown');
         $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
+        // $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
+        // $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
     }
 
     this.hideMedia = function() {
@@ -95,7 +110,7 @@ function Card(id, data){
     }
 
     this.loadGifs = function(){
-        if(card.loaded || $(window).width() > 1023){
+        if(card.loaded || $(window).width() <= 1023){
             return;
         }
         card.loaded = true;
@@ -116,13 +131,14 @@ function Card(id, data){
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        var delay = $('body').hasClass('mobile') ? 1000 : 1000;
+        var delay = $('body').hasClass('mobile') ? 1000 : 500;
         card.el.removeClass('big guard forward').addClass(card.data.position_group);
         setTimeout(function(){
             card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png');
         }, 500)
         setTimeout(function(){
             $(card.el).find('.info-column').html(card.infoTemplate(card.data));
+            $(card.el).find('.ringer-coverage').html(card.coverageTemplate(card.data));
         }, delay);
     }
 

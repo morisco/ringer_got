@@ -1,16 +1,24 @@
 header{
     position:relative;
-    min-height:100vh;
     height: auto;
     overflow:hidden;
     .heading-wrapper{
         position:relative;
+        display:inline-block;
         padding: 30px 0 190px;
         text-align:center;
         z-index:1;
+        position:fixed;
+        top:120px;
+        left:50%;
+        margin-left:-450px;
         .byline{
+            position:absolute;
+            top:45px;
+            right:0px;
+            border-top:1px solid $black;
+            padding-top:2px;
             max-width: 100%;
-            position:relative;
             @include label-text;
             a{
                 color:$black;
@@ -18,23 +26,36 @@ header{
         }
     }
     .heading-image{
-        background-image:url('../../img/header-background.png');
+        // background-image:url('../../img/header-background.png');
+        margin-top:250px;
         background-position: center top;
         background-size:cover;
         background-repeat:no-repeat;
-        position:absolute;
-        top:50%;
-        left:0;
-        right:0;
-        bottom:0;
-        z-index:0;
-        height:100%;
+        position:relative;
+        z-index:2;
+        img{
+            width:100%;
+        }
     }
+
+    h1{
+        display:inline-block;
+        position:relative;
+        line-height:1.4;
+        span.block{
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+    }
+
     nav{
         width:100%;
         display:block;
         position:relative;
         z-index:1;
+        text-align:left;
         &:after{
             content:'';
             clear:both;
@@ -91,6 +112,12 @@ header{
 
 @media(max-width:1023px){
     header{
+        .heading-wrapper{
+            margin-left:-360px;
+        }
+        .heading-image{
+            margin-top:260px;
+        }
         h1{
             font-size:220px;
         }
@@ -106,6 +133,7 @@ header{
             height:45px;
         }
         .heading-image{
+            margin-top:0;
             background-image:url('../../img/header-background-mobile.png');
             top:auto;
             background-position: center bottom;
@@ -116,14 +144,27 @@ header{
             height:auto;
             text-align:center;
             margin:10px auto 0;
-            max-width:350px;
+
+            width:100%;
+            left:auto;
             padding-bottom:160px;
             h1{
                 font-size:85px;
-                span{
+                line-height:1.55;
+                margin-bottom:-55px;
+                span.block{
                     margin-bottom:30px;
                     font-size:40px;
                 }
+            }
+            .byline{
+                display:inline-block;
+                position:relative;
+                right:auto;
+                top:auto;
+            }
+            img{
+
             }
         }
         .social{

@@ -44,6 +44,11 @@ gulp.task('templates', function () {
         ])
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/templates'))
+    gulp.src([
+            'templates/related-coverage.handlebars'
+        ])
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('./dist/templates'))
 });
 
 gulp.task('vendor', function () {

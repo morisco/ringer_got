@@ -1,0 +1,12 @@
+<div class="ringer-coverage">
+    {{#if coverage.length}}
+        <h5>Ringer Coverage</h5>
+        <ul>
+            {{#each coverage}}
+                <li>
+                    <a href="{{this.link}}" target="_blank">{{this.headline}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</div>

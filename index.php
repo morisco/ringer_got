@@ -21,11 +21,11 @@
     $data = json_decode($data_string);
     $player_data = $data->players;
 
+    $articles = $data->more_coverage;
+
     if($detect->isMobile() && !$detect->isTablet()){
-        $articles = $data->mobile_more_coverage;
         $article_count = 5;
     } else{
-        $articles = $data->more_coverage;
         $article_count = 10;
     }
 
@@ -189,15 +189,22 @@
                 </ul>
             </nav>
             <div class="heading-wrapper">
-                <h1><span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span> NBA DRAFT GUIDE</h1>
+                <h1>
+                    <span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span>
+                    <span class="big">NBA DRAFT GUIDE</span>
+                 </h1>
                 <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor">kevin o'connor</a></div>
             </div>
-            <div class="heading-image"></div>
+            <div class="heading-image">
+                <img src="img/header-background.png" class="non-mobile" />
+                <img src="img/header-background.png" class="is-tablet" />
+                <img src="img/header-background-mobile.png" class="is-mobile" />
+            </div>
         </header>
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide, a comprehensive look at our top-60 prospects as rated by our three draftniks, O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
+                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
                     <div class="intro-actions">
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
@@ -321,7 +328,8 @@
         <footer class="background-theme">
             <div class="footer-wrapper">
                 <div class="disclaimer">
-                    Whatever disclaimer copyright or footer copy goes here in this spot.
+                    <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>
+                    <div>© 2017 <a href="https://theringer.com" target="_blank">The Ringer</a>. All Rights Reserved.
                 </div>
             </div>
         </footer>
@@ -336,6 +344,10 @@
 
         <script id="info-template" type="text/x-handlebars-template">
             <?php echo file_get_contents("./dist/templates/info.handlebars"); ?>
+        </script>
+
+        <script id="related-coverage-template" type="text/x-handlebars-template">
+            <?php echo file_get_contents("./dist/templates/related-coverage.handlebars"); ?>
         </script>
 
         <script type="text/javascript">

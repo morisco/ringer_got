@@ -5,9 +5,33 @@
 .is-mobile{
     display:none;
 }
+.is-tablet{
+    display:none;
+}
+
+.non-mobile{
+    display:block;
+    &.label{
+        display:inline-block;
+    }
+}
+
+@media(max-width:1200px) and (min-width:768px){
+    .is-mobile{
+        display:none;
+    }
+    .non-mobile{
+        display:none;
+    }
+    .is-tablet{
+        display:block;
+        &.label{
+            display:inline-block;
+        }
+    }
+}
 
 @media(max-width:767px){
-
     .is-mobile{
         display:inline-block;
     }

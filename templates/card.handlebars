@@ -6,8 +6,8 @@
             <div class="image">
                 <img src="img/players/{{filter_id}}.png" alt="{{name}}" />
             </div>
-            {{#if coverage.length}}
-                <div class="ringer-coverage">
+            <div class="ringer-coverage">
+                {{#if coverage.length}}
                     <h5>Ringer Coverage</h5>
                     <ul>
                         {{#each coverage}}
@@ -16,8 +16,8 @@
                             </li>
                         {{/each}}
                     </ul>
-                </div>
-            {{/if}}
+                {{/if}}
+            </div>
         </div>
         <div class="info-column">
             <div class="medium-show">
@@ -42,7 +42,7 @@
                 <div class="player-meta">
                     <ul>
                         <div class="medium-column">
-                            <li class="ringer-stat color-theme"><span class="label non-mobile">RINGER&rsquo;S 1 REASON</span><span class="label is-mobile">1 REASON:</span> <span class="value">{{stat}}</span></li>
+                            <li class="ringer-stat color-theme"><span class="label non-mobile is-tablet">RINGER&rsquo;S 1 REASON</span><span class="label is-mobile">1 REASON:</span> <span class="value">{{stat}}</span></li>
                             <li><span class="label">Age</span><span class="value">{{age}}</span></li>
                         </div>
                         <div class="medium-column">
@@ -67,13 +67,41 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004 697.33">
                                 <title>shot chart master file (2)</title>
                                 <g id="color_fill_zones" data-name="color fill zones">
-                                    <path class="zone left-wing rank-{{shot_chart.left_wing_rank}}" d="M85,173.89V0H0V696H305L381.5,496.52C159.67,435.22,85,213.72,85,173.89Z" transform="translate(0 0.08)" />
-                                    <path class="zone right-wing rank-{{shot_chart.right_wing_rank}}" d="M919,0V173.89c0,39.83-74.72,261.33-296.54,322.63L699,696h305V0Z" transform="translate(0 0.08)" />
-                                    <path class="zone mid rank-{{shot_chart.mid_rank}}" d="M381.5,496.52c36.15,10,76.22,15.73,120.5,15.73s84.34-5.74,120.5-15.73V0h-241Z" transform="translate(0 0.08)" />
-                                    <path class="zone at-rim rank-{{shot_chart.at_rim_rank}}" d="M381.58,0C383.81,95.59,436.86,172.08,502,172.08S620.19,95.59,622.42,0Z" transform="translate(0 0.08)" />
-                                    <path class="zone left-mid rank-{{shot_chart.left_mid_rank}}" d="M381.5,496.52V0H85V173.89C85,213.72,159.67,435.22,381.5,496.52Z" transform="translate(0 0.08)" />
-                                    <path class="zone right-mid rank-{{shot_chart.right_mid_rank}}" d="M622.5,496.52V0H919V173.89C919,213.72,844.33,435.22,622.5,496.52Z" transform="translate(0 0.08)" />
-                                    <path class="zone top-of-key rank-{{shot_chart.top_of_key_rank}}" d="M502,512.25c-44.28,0-84.34-5.74-120.49-15.73L305,696H699L622.49,496.52C586.34,506.51,546.28,512.25,502,512.25Z" transform="translate(0 0.08)" />
+                                    {{#if shot_chart.left_wing}}
+                                        <path class="zone left-wing rank-{{shot_chart.left_wing_rank}}" d="M85,173.89V0H0V696H305L381.5,496.52C159.67,435.22,85,213.72,85,173.89Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone left-wing rank-6" d="M85,173.89V0H0V696H305L381.5,496.52C159.67,435.22,85,213.72,85,173.89Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.right_wing}}
+                                        <path class="zone right-wing rank-{{shot_chart.right_wing_rank}}" d="M919,0V173.89c0,39.83-74.72,261.33-296.54,322.63L699,696h305V0Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone right-wing rank-6" d="M919,0V173.89c0,39.83-74.72,261.33-296.54,322.63L699,696h305V0Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.mid}}
+                                        <path class="zone mid rank-{{shot_chart.mid_rank}}" d="M381.5,496.52c36.15,10,76.22,15.73,120.5,15.73s84.34-5.74,120.5-15.73V0h-241Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone mid rank-6" d="M381.5,496.52c36.15,10,76.22,15.73,120.5,15.73s84.34-5.74,120.5-15.73V0h-241Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.at_rim}}
+                                        <path class="zone at-rim rank-{{shot_chart.at_rim_rank}}" d="M381.58,0C383.81,95.59,436.86,172.08,502,172.08S620.19,95.59,622.42,0Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone at-rim rank-6" d="M381.58,0C383.81,95.59,436.86,172.08,502,172.08S620.19,95.59,622.42,0Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.left_mid}}
+                                        <path class="zone left-mid rank-{{shot_chart.left_mid_rank}}" d="M381.5,496.52V0H85V173.89C85,213.72,159.67,435.22,381.5,496.52Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone left-mid rank-6" d="M381.5,496.52V0H85V173.89C85,213.72,159.67,435.22,381.5,496.52Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.right_mid}}
+                                        <path class="zone right-mid rank-{{shot_chart.right_mid_rank}}" d="M622.5,496.52V0H919V173.89C919,213.72,844.33,435.22,622.5,496.52Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone right-mid rank-6" d="M622.5,496.52V0H919V173.89C919,213.72,844.33,435.22,622.5,496.52Z" transform="translate(0 0.08)" />
+                                    {{/if}}
+                                    {{#if shot_chart.top_of_key}}
+                                        <path class="zone top-of-key rank-{{shot_chart.top_of_key_rank}}" d="M502,512.25c-44.28,0-84.34-5.74-120.49-15.73L305,696H699L622.49,496.52C586.34,506.51,546.28,512.25,502,512.25Z" transform="translate(0 0.08)" />
+                                    {{else}}
+                                        <path class="zone top-of-key rank-6" d="M502,512.25c-44.28,0-84.34-5.74-120.49-15.73L305,696H699L622.49,496.52C586.34,506.51,546.28,512.25,502,512.25Z" transform="translate(0 0.08)" />
+                                    {{/if}}
                                 </g>
                                 <g id="dividing_lines" data-name="dividing lines">
                                     <line class="cls-6" x1="622.5" y1="370.84" x2="622.5" y2="0.08" />
@@ -92,32 +120,72 @@
                             </svg>
                             <div class="chart-numbers">
                                 <div class="left-wing">
-                                    <span class="percentage">{{shot_chart.left_wing}}%</span>
-                                    <span class="fga">{{shot_chart.left_wing_fga}} FGA</span>
+                                    {{#if shot_chart.left_wing}}
+                                        <span class="percentage">{{shot_chart.left_wing}}%</span>
+                                        <span class="fga">{{shot_chart.left_wing_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
+
+
                                 </div>
                                 <div class="right-wing">
-                                    <span class="percentage">{{shot_chart.right_wing}}%</span>
-                                    <span class="fga">{{shot_chart.right_wing_fga}} FGA</span>
+                                    {{#if shot_chart.right_wing}}
+                                        <span class="percentage">{{shot_chart.right_wing}}%</span>
+                                        <span class="fga">{{shot_chart.right_wing_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
+
                                 </div>
                                 <div class="mid">
-                                    <span class="percentage">{{shot_chart.mid}}%</span>
-                                    <span class="fga">{{shot_chart.mid_fga}} FGA</span>
+                                    {{#if shot_chart.mid}}
+                                        <span class="percentage">{{shot_chart.mid}}%</span>
+                                        <span class="fga">{{shot_chart.mid_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
+
                                 </div>
                                 <div class="at-rim">
-                                    <span class="percentage">{{shot_chart.at_rim}}%</span>
-                                    <span class="fga">{{shot_chart.at_rim_fga}} FGA</span>
+                                    {{#if shot_chart.at_rim}}
+                                        <span class="percentage">{{shot_chart.at_rim}}%</span>
+                                        <span class="fga">{{shot_chart.at_rim_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
                                 </div>
                                 <div class="left-mid">
-                                    <span class="percentage">{{shot_chart.left_mid}}%</span>
-                                    <span class="fga">{{shot_chart.left_mid_fga}} FGA</span>
+                                    {{#if shot_chart.left_mid}}
+                                        <span class="percentage">{{shot_chart.left_mid}}%</span>
+                                        <span class="fga">{{shot_chart.left_mid_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
                                 </div>
                                 <div class="right-mid">
-                                    <span class="percentage">{{shot_chart.right_mid}}%</span>
-                                    <span class="fga">{{shot_chart.right_mid_fga}} FGA</span>
+                                    {{#if shot_chart.right_mid}}
+                                        <span class="percentage">{{shot_chart.right_mid}}%</span>
+                                        <span class="fga">{{shot_chart.right_mid_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
                                 </div>
                                 <div class="top-of-key">
-                                    <span class="percentage">{{shot_chart.top_of_key}}%</span>
-                                    <span class="fga">{{shot_chart.top_of_key_fga}} FGA</span>
+
+                                    {{#if shot_chart.top_of_key}}
+                                        <span class="percentage">{{shot_chart.top_of_key}}%</span>
+                                        <span class="fga">{{shot_chart.top_of_key_fga}} FGA</span>
+                                    {{else}}
+                                        <span class="percentage">N/A</span>
+                                        <span class="fga">0 FGA</span>
+                                    {{/if}}
                                 </div>
                             </div>
                         </div>
