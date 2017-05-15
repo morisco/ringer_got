@@ -303,6 +303,7 @@ body #item-list.filtered{
             height:auto; /*this will be removed, determined by image size*/
             z-index:2;
             padding-bottom: 5%;
+            background:#F5F5F5;
             h6{
                 border-bottom:1px solid black;
             }
@@ -532,7 +533,6 @@ body #item-list.filtered{
         padding: 0 30px 30px;
         visibility:hidden;
         opacity:0;
-
         h5{
             @include label-text;
             border-bottom: 1px solid black;
@@ -551,6 +551,10 @@ body #item-list.filtered{
                 display: inline-block;
                 font-family: "GT Pressura Mono";
                 word-spacing: -.2em;
+                svg{
+                    display:inline-block;
+                    height:8px;
+                }
             }
         }
     }

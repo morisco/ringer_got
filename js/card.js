@@ -24,13 +24,13 @@ function Card(id, data){
 
     this.initEvents = function(){
         this.el.on('click.whole', this.toggleWholeCard);
-        this.el.on('click.gifs', this.loadGifs);
+        // this.el.on('click.gifs', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
-        this.el.on('mouseenter', this.expandedLoadGifs);
+        // this.el.on('mouseenter', this.expandedLoadGifs);
         this.el.on('mouseleave', this.hideColor);
-        this.el.on('mouseenter', '.has-media',  this.showMedia);
-        this.el.on('tap', '.has-media', this.showMedia);
-        this.el.on('mouseleave', '.has-media', this.hideMedia);
+        // this.el.on('mouseenter', '.has-media',  this.showMedia);
+        // this.el.on('tap', '.has-media', this.showMedia);
+        // this.el.on('mouseleave', '.has-media', this.hideMedia);
         this.el.on('click', '.toggle-card', this.toggleCard);
         events.subscribe('filter.update', this.filter);
         events.subscribe('sort.update', this.sortChange);
