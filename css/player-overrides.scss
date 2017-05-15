@@ -1,12 +1,4 @@
-.m_fultz{
-    .rank-column img{
-        @include transform(translateX(-5px));
-    }
-}
-
-// Tablet landscape styles
-@media(max-width:1200px){
-    .b_adebayo{
+.b_adebayo{
         .rank-column img{
             @include transform(translateX(-5px));
             width: 80%;
@@ -235,6 +227,10 @@
             margin-left: -22%;
         }
     }
+
+// Tablet landscape styles
+@media(max-width:1200px){
+    
 
 
 
