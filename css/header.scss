@@ -81,6 +81,7 @@ header{
             float:right;
             padding-top:10px;
             padding-right:10px;
+
             li{
                 display:inline-block;
                 @include filter-sort-text;
@@ -148,17 +149,17 @@ header{
             height:auto;
             text-align:center;
             margin:10px auto 0;
-
             width:100%;
             left:auto;
-            padding-bottom:160px;
+            top:10vh;
             h1{
-                font-size:85px;
+                font-size:100px;
                 line-height:1.55;
                 margin-bottom:-55px;
                 span.block{
                     margin-bottom:30px;
-                    font-size:40px;
+                    font-size:82px;
+                    line-height:0;
                 }
             }
             .byline{
@@ -166,6 +167,7 @@ header{
                 position:relative;
                 right:auto;
                 top:auto;
+                padding-top:15px;
             }
             img{
 
@@ -183,6 +185,11 @@ header{
 
 @media (max-width: 767px) and (orientation: landscape) {
     header{
+        .nav {
+            ul {
+                display:none;
+            }
+        }
         .heading-image{
             display:none;
         }

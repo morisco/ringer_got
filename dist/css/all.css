@@ -1613,19 +1613,21 @@ header {
       margin: 10px auto 0;
       width: 100%;
       left: auto;
-      padding-bottom: 160px; }
+      top: 10vh; }
       header .heading-wrapper h1 {
-        font-size: 85px;
+        font-size: 100px;
         line-height: 1.55;
         margin-bottom: -55px; }
         header .heading-wrapper h1 span.block {
           margin-bottom: 30px;
-          font-size: 40px; }
+          font-size: 82px;
+          line-height: 0; }
       header .heading-wrapper .byline {
         display: inline-block;
         position: relative;
         right: auto;
-        top: auto; }
+        top: auto;
+        padding-top: 15px; }
     header .social {
       position: relative;
       right: auto;
@@ -1634,6 +1636,8 @@ header {
       margin: 25px auto 0; } }
 
 @media (max-width: 767px) and (orientation: landscape) {
+  header .nav ul {
+    display: none; }
   header .heading-image {
     display: none; } }
 
@@ -2730,11 +2734,11 @@ h3 .brand {
       background-size: 100%;
       background-position: center center; }
     #mobile-nav .current-sort {
-      font-family: 'NYTMag Sans', serif;
-      font-size: 14px;
+      font-family: 'GT Pressura Mono', sans;
+      font-weight: normal;
       text-transform: uppercase;
-      font-weight: 800;
-      letter-spacing: 0.125rem;
+      font-size: 12px;
+      letter-spacing: 0.1em;
       padding: 2px 0; }
     #mobile-nav .nav-contents {
       display: none; }
@@ -2758,10 +2762,11 @@ h3 .brand {
             margin: 0 auto;
             border-top: 1px solid #ccc;
             padding: 10px 40px;
-            font-family: 'NYTMag Sans', sans-serif;
+            font-family: 'GT Pressura Mono', sans;
+            font-weight: normal;
             text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 800; }
+            font-size: 12px;
+            letter-spacing: 0.1em; }
             #mobile-nav.open .nav-contents ul.sort li:last-of-type {
               border-bottom: 1px solid #ccc; }
         #mobile-nav.open .nav-contents .nav-actions {
@@ -2779,12 +2784,22 @@ h3 .brand {
             #mobile-nav.open .nav-contents .nav-actions > div.nav-switcher {
               padding-left: 15px; }
           #mobile-nav.open .nav-contents .nav-actions .label {
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            font-size: 10px;
+            text-align: center;
+            font-weight: 300;
+            font-family: 'GT Pressura Mono', sans;
+            text-align: left; }
           #mobile-nav.open .nav-contents .nav-actions a {
             display: block;
             color: #000;
             text-transform: uppercase;
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            font-family: 'GT Pressura Mono', sans;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.1em; }
       #mobile-nav.open .nav-switcher .label {
         margin-left: 30px; }
       #mobile-nav.open .toggle-close {
@@ -2807,7 +2822,12 @@ h3 .brand {
       top: 3px;
       left: 0;
       right: 0;
-      z-index: 0; }
+      z-index: 0;
+      font-family: 'GT Pressura Mono', sans;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.1em; }
     .mobile #mobile-nav .size-toggle li {
       position: absolute;
       top: 0;

@@ -90,11 +90,7 @@
             background-position:center center;
         }
         .current-sort{
-            font-family: 'NYTMag Sans', serif;
-            font-size:14px;
-            text-transform:uppercase;
-            font-weight:800;
-            letter-spacing:0.125rem;
+            @include label-text;
             padding:2px 0;
         }
 
@@ -124,10 +120,7 @@
                             margin:0 auto;
                             border-top:1px solid #ccc;
                             padding:10px 40px;
-                            font-family:'NYTMag Sans', sans-serif;;
-                            text-transform:uppercase;
-                            font-size:14px;
-                            font-weight:800;
+                            @include label-text;
                             &:last-of-type{
                                 border-bottom:1px solid #ccc;
                             }
@@ -153,12 +146,15 @@
                     }
                     .label{
                         margin-bottom:5px;
+                        @include detail-text;
+                        text-align:left;
                     }
                     a{
                         display:block;
                         color:$black;
                         text-transform:uppercase;
                         margin-bottom:5px;
+                        @include label-text;
                     }
                 }
             }
@@ -197,6 +193,7 @@
             left:0;
             right:0;
             z-index:0;
+            @include label-text;
         }
 
         li{
