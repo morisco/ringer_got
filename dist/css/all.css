@@ -2670,7 +2670,7 @@ h3 .brand {
   .is-mobile {
     display: inline-block; }
   .non-mobile {
-    display: none; }
+    display: none !important; }
   .mobile .logo,
   .mobile .main-nav {
     display: none; }
