@@ -272,19 +272,19 @@
                     <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
                         <div class="filter-wrapper">
                             <span>Kevin O&rsquo;Connor</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @KevinOConnorNBA’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
                         <div class="filter-wrapper">
                             <span>Danny Chau</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @JonathanTjarks’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
                         </div>
                     </div>
                     <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
                         <div class="filter-wrapper">
                             <span>Jonathan Tjarks</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
+                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @dannychau’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
                         </div>
                     </div>
                     <div class="small filter <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az">
