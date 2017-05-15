@@ -608,8 +608,21 @@ body #item-list.filtered{
     }
     .card-item{
         .rank-column{
+            height:215px;
             .ringer-coverage{
                 display:none;
+            }
+            .rank{
+                font-size: 200px;
+                top: 30px;
+                left: 30px;
+            }
+            img{
+                margin-top:-35px !important;
+                max-width:35%;
+                right:5%;
+                @include transform(translateX(0));
+
             }
         }
 
@@ -659,6 +672,9 @@ body #item-list.filtered{
                 top: 0;
                 width:100%;
                 margin-top:auto;
+                left:auto;
+                right:-10%;
+                margin:0 !important;
             }
         }
         .info-column{

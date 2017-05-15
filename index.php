@@ -169,7 +169,7 @@
         <link rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
-        <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.arrow-fill{fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
+        <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.arrow-fill{fill:<?php echo $sort_colors[$sort_list_id]; ?>; } .white-fill{fill:#fff;}</style>
     </head>
     <body class="<?php echo $bodyClass; ?> medium">
         <!--[if lt IE 8]>
@@ -308,10 +308,12 @@
                             <li data-size="large"></li>
                         </ul>
                     </div>
-                    <a href="javascript:void(0);" data-filter="all" class="active color-theme"><span>all positions</span></a>
-                    <a href="javascript:void(0);" data-filter="guard"><span>guards</span></a>
-                    <a href="javascript:void(0);" data-filter="forward"><span>forwards</span></a>
-                    <a href="javascript:void(0);" data-filter="big"><span>bigs</span></a>
+                    <div class="filter-links">
+                        <a href="javascript:void(0);" data-filter="all" class="active color-theme"><span>all positions</span></a>
+                        <a href="javascript:void(0);" data-filter="guard"><span>guards</span></a>
+                        <a href="javascript:void(0);" data-filter="forward"><span>forwards</span></a>
+                        <a href="javascript:void(0);" data-filter="big"><span>bigs</span></a>
+                    </div>
                 </div>
                 <section>
                     <ul id="item-list" class="grid">

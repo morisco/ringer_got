@@ -248,19 +248,21 @@ body .card-item.expanded-card{
             position:relative;
             max-width: 100%;
             float:none;
-            height: 270px;
             overflow:hidden;
+            height:210px !important;
             .rank{
-                font-size:117px;
-                top:15px;
-                left:15px;
+                font-size:200px;
+                top:30px;
+                left:30px;
                 right:auto;
                 overflow:hidden;
             }
             img{
-                margin:-80px 50% 0;
-                @include transform(translateX(-50%));
-                max-width:75%;
+                margin:-35px 0 0;
+                max-width:40%;
+                right:0;
+                left:auto;
+                @include transform(translateX(0));
             }
         }
         .info-column{
@@ -305,20 +307,15 @@ body .card-item.expanded-card{
             overflow:hidden;
             .rank{
                 font-family: 'TIMMONS NY';
-                font-size: 170px;
-                top: 30px;
-                right: 25px;
                 left:auto;
                 line-height: 1;
             }
             img{
                 margin-left: auto;
-                margin-top: -80px;
-                width: 80%;
                 visibility:visible;
                 opacity:1;
                 @include transform(translateX(0));
-                max-width:100%;
+                max-width:40%;
             }
         }
         .info-column{
@@ -436,7 +433,7 @@ body .card-item.expanded-card{
             min-width:auto;
             padding:0 0 0 15px;
 
-         
+
 
             h4,
             h4 strong{
@@ -526,11 +523,6 @@ body .card-item.expanded-card{
         .toggle-card{
             bottom:20px;
         }
-        .rank-column{
-            img{
-                margin-top:0;
-            }
-        }
         .info-column{
             padding-bottom:60px;
             padding-left:15px;
@@ -578,11 +570,6 @@ body .card-item.expanded-card{
                 left:15px;
                 top:15px;
 
-            }
-            img{
-                margin-top:auto;
-                margin: auto 50% 0;
-                @include transform(translateX(-50%));
             }
         }
         .info-column{
