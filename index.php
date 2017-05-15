@@ -39,7 +39,7 @@
 
     $sort_list_name = array(
         'ringer'    => "Mock Draft",
-        'kevin'     => "Kevin Lincoln",
+        'kevin'     => "Kevin O'Connor",
         'danny'     => "Danny Chau",
         'jonathan' => "Jonathan Tjarks",
         'a_z'       => "Sort A-Z"
