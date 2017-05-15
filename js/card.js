@@ -10,8 +10,16 @@ function Card(id, data){
     this.infoTemplateSource = $("#info-template").html();
     this.infoTemplate = Handlebars.compile(this.infoTemplateSource);
 
+
+    this.coverageTemplateSource = $("#related-coverage-template").html();
+    this.coverageTemplate = Handlebars.compile(this.coverageTemplateSource);
+
     this.init = function(){
         this.initEvents();
+        card.data.coverage = $.map(card.data.coverage, function(value, index) {
+            return [value];
+        });
+
     };
 
     this.initEvents = function(){
@@ -123,13 +131,14 @@ function Card(id, data){
     this.update = function(new_player){
         this.data = new_player;
         this.loaded = false;
-        var delay = $('body').hasClass('mobile') ? 1000 : 1000;
+        var delay = $('body').hasClass('mobile') ? 1000 : 500;
         card.el.removeClass('big guard forward').addClass(card.data.position_group);
         setTimeout(function(){
             card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png');
         }, 500)
         setTimeout(function(){
             $(card.el).find('.info-column').html(card.infoTemplate(card.data));
+            $(card.el).find('.ringer-coverage').html(card.coverageTemplate(card.data));
         }, delay);
     }
 

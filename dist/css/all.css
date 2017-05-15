@@ -512,7 +512,7 @@ body .card-item.expanded-card {
     opacity: 1; }
     body:not(.small) .card-item .info-column .player-main,
     body .card-item.expanded-card .info-column .player-main {
-      width: 42.5%; }
+      width: 50%; }
     body:not(.small) .card-item .info-column .player-stats,
     body .card-item.expanded-card .info-column .player-stats {
       padding-right: 0;

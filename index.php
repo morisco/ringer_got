@@ -204,7 +204,7 @@
         <section id="intro">
             <div class="intro-wrapper">
                 <div>
-                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
+                    <strong>Welcome to <i>The Ringer</i>’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top-60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
                     <div class="intro-actions">
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
@@ -344,6 +344,10 @@
 
         <script id="info-template" type="text/x-handlebars-template">
             <?php echo file_get_contents("./dist/templates/info.handlebars"); ?>
+        </script>
+
+        <script id="related-coverage-template" type="text/x-handlebars-template">
+            <?php echo file_get_contents("./dist/templates/related-coverage.handlebars"); ?>
         </script>
 
         <script type="text/javascript">
