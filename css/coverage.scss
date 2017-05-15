@@ -7,12 +7,9 @@
         display:table;
     }
     h3{
-        font-size: 60px;
-        font-family: 'TIMMONS NY';
-        font-weight: 400;
-        letter-spacing: 0px;
-        line-height: .55;
+        @include label-text;
         margin-bottom: 15px;
+        border-bottom: 1px solid black;
     }
     div{
         a{
@@ -61,21 +58,9 @@
     .more-coverage{
         h3{
             position:relative;
-            margin: 0 -75px;
-            width: calc(100% + 150px);
-            text-align: right;
-            padding-right:30px;
-            &:after{
-                content:'';
-                display:block;
-                position:relative;
-                height:75px;
-                width:100%;
-                border:2px solid $black;
-                border-bottom:0px;
-                margin-bottom:-30px;
-                margin-left:15px;
-            }
+            margin-bottom: 15px;
+            text-align: left;
+            
         }
         a{
             width: calc(25% - 23px);

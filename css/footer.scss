@@ -3,10 +3,12 @@ footer{
     width:100%;
     padding: 250px 0 100px;
     z-index:1;
+    display:none;
     .footer-wrapper{
         max-width:1390px;
         width:95%;
         margin:0 auto;
         text-align:center;
+        display:none;
     }
 }

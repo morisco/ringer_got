@@ -83,10 +83,9 @@ header{
             padding-right:10px;
             li{
                 display:inline-block;
-                @include label-text;
+                @include filter-sort-text;
                 color:$white;
                 margin-left:20px;
-                letter-spacing:0.075em;
                 a{
                     display:inline-block;
                     padding: 5px 5px;
