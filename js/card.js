@@ -134,7 +134,7 @@ function Card(id, data){
         var delay = $('body').hasClass('mobile') ? 1000 : 500;
         card.el.removeClass('big guard forward').addClass(card.data.position_group);
         setTimeout(function(){
-            card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png');
+            card.el.find('.rank-column img').attr('src', 'img/players/' + card.data.filter_id + '.png').attr('alt', card.data.name);
         }, 500)
         setTimeout(function(){
             $(card.el).find('.info-column').html(card.infoTemplate(card.data));
