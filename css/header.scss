@@ -16,12 +16,17 @@ header{
             position:absolute;
             top:45px;
             right:0px;
-            border-top:1px solid $black;
+            //border-bottom:1px solid $black;
             padding-top:2px;
             max-width: 100%;
+            font-size: 13px !important;
+            color:black;
+            letter-spacing:0.11em !important;
             @include label-text;
             a{
-                color:$black;
+                font-weight:normal;
+                text-decoration:underline;
+                color:black;
             }
         }
     }
@@ -56,6 +61,7 @@ header{
         position:relative;
         z-index:1;
         text-align:left;
+        background-color:black;
         &:after{
             content:'';
             clear:both;
@@ -63,9 +69,9 @@ header{
         }
         .logo{
             display:inline-block;
-            max-width:150px;
-            margin-left:30px;
-            padding-top:15px;
+            max-width:110px;
+            margin-left:10px;
+            padding-top:10px;
             img{
                 display:block;
                 width:100%;
@@ -73,18 +79,17 @@ header{
         }
         ul{
             float:right;
-            padding-top:15px;
+            padding-top:10px;
+            padding-right:10px;
             li{
                 display:inline-block;
-                font-family:'NYTMag Sans', serif;
-                font-weight:700;
-                font-size:13px;
+                @include label-text;
                 color:$white;
-                margin-right:30px;
+                margin-left:20px;
                 letter-spacing:0.075em;
                 a{
                     display:inline-block;
-                    padding: 15px 5px;
+                    padding: 5px 5px;
                     color:$white;
                 }
             }
@@ -96,7 +101,7 @@ header{
 @media screen and (min-aspect-ratio: 4/2) {
     header{
         .heading-image{
-            top:60%;
+            top:40%;
         }
     }
 }
@@ -116,7 +121,7 @@ header{
             margin-left:-360px;
         }
         .heading-image{
-            margin-top:260px;
+            margin-top:220px;
         }
         h1{
             font-size:220px;

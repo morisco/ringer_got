@@ -1515,16 +1515,20 @@ header {
       position: absolute;
       top: 45px;
       right: 0px;
-      border-top: 1px solid #000;
       padding-top: 2px;
       max-width: 100%;
+      font-size: 13px !important;
+      color: black;
+      letter-spacing: 0.11em !important;
       font-family: 'GT Pressura Mono', sans;
       font-weight: normal;
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 0.1em; }
       header .heading-wrapper .byline a {
-        color: #000; }
+        font-weight: normal;
+        text-decoration: underline;
+        color: black; }
   header .heading-image {
     margin-top: 250px;
     background-position: center top;
@@ -1547,38 +1551,42 @@ header {
     display: block;
     position: relative;
     z-index: 1;
-    text-align: left; }
+    text-align: left;
+    background-color: black; }
     header nav:after {
       content: '';
       clear: both;
       display: table; }
     header nav .logo {
       display: inline-block;
-      max-width: 150px;
-      margin-left: 30px;
-      padding-top: 15px; }
+      max-width: 110px;
+      margin-left: 10px;
+      padding-top: 10px; }
       header nav .logo img {
         display: block;
         width: 100%; }
     header nav ul {
       float: right;
-      padding-top: 15px; }
+      padding-top: 10px;
+      padding-right: 10px; }
       header nav ul li {
         display: inline-block;
-        font-family: 'NYTMag Sans', serif;
-        font-weight: 700;
-        font-size: 13px;
+        font-family: 'GT Pressura Mono', sans;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 0.1em;
         color: #fff;
-        margin-right: 30px;
+        margin-left: 20px;
         letter-spacing: 0.075em; }
         header nav ul li a {
           display: inline-block;
-          padding: 15px 5px;
+          padding: 5px 5px;
           color: #fff; }
 
 @media screen and (min-aspect-ratio: 4 / 2) {
   header .heading-image {
-    top: 60%; } }
+    top: 40%; } }
 
 @media (max-width: 1200px) {
   header .heading-image {
@@ -1590,7 +1598,7 @@ header {
   header .heading-wrapper {
     margin-left: -360px; }
   header .heading-image {
-    margin-top: 260px; }
+    margin-top: 220px; }
   header h1 {
     font-size: 220px; } }
 
