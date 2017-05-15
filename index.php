@@ -328,7 +328,8 @@
         <footer class="background-theme">
             <div class="footer-wrapper">
                 <div class="disclaimer">
-                    Whatever disclaimer copyright or footer copy goes here in this spot.
+                    <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>
+                    <div>© 2017 <a href="https://theringer.com" target="_blank">The Ringer</a>. All Rights Reserved.
                 </div>
             </div>
         </footer>

@@ -2576,6 +2576,11 @@ h3 .brand {
 .is-tablet {
   display: none; }
 
+.non-mobile {
+  display: block; }
+  .non-mobile.label {
+    display: inline-block; }
+
 @media (max-width: 1200px) and (min-width: 768px) {
   .is-mobile {
     display: none; }
