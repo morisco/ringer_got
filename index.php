@@ -31,10 +31,10 @@
 
     $sort_colors = array(
         'ringer'    => '#005bcc',
-        'kevin'     => '#ff5e00',
-        'danny'     => '#7ebe43',
+        'danny'     => '#ff5e00',
+        'az'     => '#7ebe43',
         'jonathan' => '#ff0047',
-        'az'        => '#0095ff'
+        'kevin'        => '#0095ff'
     );
 
     $sort_list_name = array(
