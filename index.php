@@ -122,7 +122,7 @@
 
     $fb_meta = array();
     $fb_meta['url'] = "http://nbadraft.theringer.com/";
-    $fb_meta['image'] = "https://fastfood.theringer.com/img/fast-food-facebook-1.jpg";
+    $fb_meta['image'] = "http://nbadraft.theringer.com/img/header-background.png";
     $fb_meta['description'] = "Check out The Ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects.";
     $fb_meta['title'] = "The Ringer’s 2017 NBA Draft Guide";
 
@@ -130,7 +130,7 @@
         $fb_meta['url'] = "http://nbadraft.theringer.com/?player=" . $featured_player->filter_id;
         $fb_meta['title'] = "Everything you need to know about " . $featured_player->name . " from The Ringer’s 2017 NBA Draft Guide";
         $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
-        $fb_meta['image'] = "http://mikemorisco.com/ringer/nba/img/players/d_bacon.png";
+        $fb_meta['image'] = "http://nbadraft.theringer.com/img/header-background.png";
     }
 
     $bodyClass = $sort_list_id;
@@ -153,7 +153,7 @@
         <title>The Ringer’s 2017 NBA Draft Guide</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type"   content="website" />
         <meta property="og:title" content="<?php echo $fb_meta['title']; ?>" />
         <meta property="og:description" content="<?php echo $fb_meta['description']; ?>" />
         <meta property="og:image" content="<?php echo $fb_meta['image']; ?>" />
@@ -208,7 +208,7 @@
                     <div class="intro-actions">
                         <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
                         <div class="social">
-                            <a target="_blank" href="http://facebook.com" class="facebook"></a>
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nbadraft.theringer.com" class="facebook"></a>
                             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/'); ?>" class="twitter"></a>
                         </div>
                     </div>

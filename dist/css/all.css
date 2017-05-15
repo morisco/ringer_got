@@ -2007,7 +2007,8 @@ body #item-list.filtered.forward .card-item.forward {
       height: auto;
       /*this will be removed, determined by image size*/
       z-index: 2;
-      padding-bottom: 5%; }
+      padding-bottom: 5%;
+      background: #F5F5F5; }
       .card-item .info-column .player-stat-image h6 {
         border-bottom: 1px solid black; }
       .card-item .info-column .player-stat-image > div.stat-image-wrapper {
