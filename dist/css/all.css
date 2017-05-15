@@ -1967,6 +1967,8 @@ body #item-list.filtered.forward .card-item.forward {
               fill: #adea39; }
             .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-5 {
               fill: #12c612; }
+            .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .rank-6 {
+              fill: #ccc; }
             .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-6, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-7, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-8 {
               fill: none; }
             .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-6, .card-item .info-column .player-stat-image > div.stat-image-wrapper .default svg .cls-7 {
