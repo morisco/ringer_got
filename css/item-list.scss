@@ -551,6 +551,10 @@ body #item-list.filtered{
                 display: inline-block;
                 font-family: "GT Pressura Mono";
                 word-spacing: -.2em;
+                svg{
+                    display:inline-block;
+                    height:8px;
+                }
             }
         }
     }

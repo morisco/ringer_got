@@ -441,7 +441,12 @@ body:not(.mobile):not(.no-transition) .background-theme-after:after {
 
 .ring-container {
   position: relative;
-  margin-left: -20px; }
+  margin-left: -17px;
+  -moz-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px); }
 
 .circle {
   width: 5px;
@@ -2228,6 +2233,9 @@ body #item-list.filtered.forward .card-item.forward {
         display: inline-block;
         font-family: "GT Pressura Mono";
         word-spacing: -.2em; }
+        .card-item .ringer-coverage ul li a svg {
+          display: inline-block;
+          height: 8px; }
   .card-item .toggle-card {
     height: 32px;
     width: 32px;

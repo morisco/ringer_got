@@ -1,6 +1,7 @@
 .ring-container {
     position: relative;
-    margin-left:-20px;
+    margin-left:-17px;
+    @include transform(translateY(2px));
 }
 
 .circle {
