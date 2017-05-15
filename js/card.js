@@ -18,6 +18,7 @@ function Card(id, data){
         this.el.on('click.whole', this.toggleWholeCard);
         this.el.on('click.gifs', this.loadGifs);
         this.el.on('mouseenter', this.showColor);
+        this.el.on('mouseenter', this.expandedLoadGifs);
         this.el.on('mouseleave', this.hideColor);
         this.el.on('mouseenter', '.has-media',  this.showMedia);
         this.el.on('tap', '.has-media', this.showMedia);
@@ -34,6 +35,12 @@ function Card(id, data){
             card.el.off('click.whole');
             card.el.off('click.gifs');
             card.toggleCard();
+        }
+    }
+
+    this.expandedLoadGifs = function() {
+        if(card.size === 'large' && !card.loaded){
+            card.loadGifs();
         }
     }
 
