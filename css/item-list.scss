@@ -108,6 +108,7 @@ body #item-list.filtered{
         max-width: 18.25%;
         padding: 30px 25px;
         border-right:1px solid #f5f5f5;
+        background-size:20%;
         .rank{
             @include timmons-text;
             font-size:120px;
@@ -610,6 +611,8 @@ body #item-list.filtered{
     .card-item{
         .rank-column{
             height:215px;
+            background-size:10%;
+            border-right:0px !important;
             .ringer-coverage{
                 display:none;
             }
