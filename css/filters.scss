@@ -86,6 +86,7 @@
             background-color: rgb(230,230,230);
             vertical-align:top;
             z-index:1;
+            cursor:pointer;
             @include transition(background-color 0.125s linear);
             &:nth-child(2){
                 left: 50%;

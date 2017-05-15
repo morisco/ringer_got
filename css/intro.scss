@@ -15,6 +15,9 @@
         position:relative;
         border: 2px solid $black;
         padding: 60px 60px 20px;
+        a{
+            color: $black;
+        }
         i{
             text-decoration:underline;
             font-style:normal;
