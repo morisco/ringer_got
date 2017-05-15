@@ -52,8 +52,8 @@ function Mobile(list) {
         $('#mobile-nav').removeClass('open');
         setTimeout(function(){
             $('#mobile-nav .current-sort').text($(e.currentTarget).find('span').text());
-            $('#mobile-nav .sort li').removeClass('active color-theme');
-            $(e.target).addClass('active color-theme');
+            $('#mobile-nav .sort li').removeClass('active_filter color-theme');
+            $(e.currentTarget).addClass('active_filter color-theme');
             mobile.list.sort(e);
         },100);
     }

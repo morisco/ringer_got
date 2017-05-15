@@ -76,7 +76,7 @@ function Card(id, data){
             card.el.find('.info-column').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + ';'));
             card.el.find('.info-column .player-description, .info-column span.title, .info-column .stat-wrap').attr('style', 'border-color:' + (GLOBALS.theme_colors[card.sort] + '!important;'));
             card.el.find('.rank-column .rank').attr('style', 'color:' + (GLOBALS.theme_colors[card.sort] + '!important; background-color:transparent !important;'));
-            card.el.find('.rank-column').attr('style', 'background-color:transparent !important; background-image:url(img/dots.png); background-size:20%; border-right:1px solid #ccc;');
+            card.el.find('.rank-column').attr('style', 'background-color:transparent !important; background-image:url(img/dots.png); border-right:1px solid #ccc;');
         }
     }
 
