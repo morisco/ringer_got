@@ -1011,7 +1011,7 @@ body .card-item.expanded-card .ringer-coverage {
       position: relative;
       height: 75px;
       width: 100%;
-      border: 10px solid #000;
+      border: 2px solid #000;
       border-bottom: 0px;
       margin-bottom: -30px;
       margin-left: 15px; }
@@ -1198,21 +1198,6 @@ body .card-item.expanded-card .ringer-coverage {
         color: #000; }
     #filters a:last-of-type {
       margin-right: 0; }
-    #filters a.active:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: -20px;
-      top: 2px;
-      width: 17px;
-      height: 10px;
-      background-image: url(../img/toggle.png);
-      background-image: url(../img/arrow.svg);
-      background-repeat: no-repeat;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg); }
   #filters .switcher {
     margin-bottom: 15px; }
   #filters ul {
@@ -1472,13 +1457,7 @@ header {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    height: 100%; }
+    position: relative; }
   header nav {
     width: 100%;
     display: block;
@@ -1574,7 +1553,7 @@ header {
   z-index: 2; }
   #intro .intro-wrapper {
     position: relative;
-    border: 10px solid #000;
+    border: 2px solid #000;
     padding: 60px 60px 20px; }
     #intro .intro-wrapper i {
       margin-right: 3px;
@@ -1856,7 +1835,8 @@ body #item-list.filtered.forward .card-item.forward {
               text-align: center;
               font-weight: 300;
               font-family: 'GT Pressura Mono', sans;
-              margin-top: -8px; }
+              margin-top: -8px;
+              max-height: 18px; }
           .card-item .info-column .player-stats ul li:nth-child(n+5) {
             visibility: hidden;
             opacity: 0;

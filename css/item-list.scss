@@ -215,6 +215,7 @@ body #item-list.filtered{
                             padding-bottom:0;
                             @include detail-text;
                             margin-top:-8px;
+                            max-height:18px;
 
                         }
                     }

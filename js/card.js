@@ -83,8 +83,8 @@ function Card(id, data){
         $(this).addClass('color-theme');
         $('.player-stat-image').addClass('media-shown');
         $('.plus-minus-media[data-id="'+showMedia+'"]').addClass('visible');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
-        $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
+        // $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', '');
+        // $('.plus-minus-media[data-id="'+showMedia+'"] img').attr('src', showMedia);
     }
 
     this.hideMedia = function() {
@@ -95,7 +95,7 @@ function Card(id, data){
     }
 
     this.loadGifs = function(){
-        if(card.loaded || $(window).width() > 1023){
+        if(card.loaded || $(window).width() <= 1023){
             return;
         }
         card.loaded = true;

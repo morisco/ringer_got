@@ -21,11 +21,11 @@
     $data = json_decode($data_string);
     $player_data = $data->players;
 
+    $articles = $data->more_coverage;
+
     if($detect->isMobile() && !$detect->isTablet()){
-        $articles = $data->mobile_more_coverage;
         $article_count = 5;
     } else{
-        $articles = $data->more_coverage;
         $article_count = 10;
     }
 
