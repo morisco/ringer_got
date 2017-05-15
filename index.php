@@ -170,7 +170,7 @@
         <link rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
-        <style type="text/css">.stroke{clip-path:url(#SVGID_2_);fill:none;stroke:<?php echo $sort_colors[$sort_list_id]; ?>;stroke-width:2;}.arrow{clip-path:url(#SVGID_4_);fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
+        <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.arrow-fill{fill:<?php echo $sort_colors[$sort_list_id]; ?>;}</style>
     </head>
     <body class="<?php echo $bodyClass; ?> medium">
         <!--[if lt IE 8]>

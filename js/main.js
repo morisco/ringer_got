@@ -154,8 +154,7 @@ function CardList() {
         var color = GLOBALS.theme_colors[cardlist.sort_id];
         $('body').removeClass('ringer kevin danny jonathan az');
         $('body').addClass(cardlist.sort_id);
-        $('.stroke').attr('style', 'stroke:' + color + ';');
-        $('.arrow').attr('style', 'fill:' + color + ';');
+        $('.arrow-fill').attr('style', 'fill:' + color + ';');
     }
 
     this.sort = function(e){

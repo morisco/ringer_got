@@ -303,10 +303,14 @@ body #item-list.filtered{
             height:auto; /*this will be removed, determined by image size*/
             z-index:2;
             padding-bottom: 5%;
+            h6{
+                border-bottom:1px solid black;
+            }
             > div.stat-image-wrapper{
                 position:relative;
                 height:100%;
                 width:100%;
+                margin-top:10px;
                 background-color:rgba(0,0,0,0.08);
                 border-radius: 9px;
                 overflow:hidden;
@@ -687,6 +691,9 @@ body #item-list.filtered{
                 margin-bottom:30px;
                 padding-left:0;
                 padding-bottom:0;
+                > div.stat-image-wrapper{
+                    margin-top:10px;
+                }
             }
             .player-stats{
                 max-height:100%;
@@ -719,7 +726,7 @@ body #item-list.filtered{
                             display:none;
                             margin-top:10px;
                         }
-                       
+
                         span.detail{
                             position:relative;
                             bottom:auto;
