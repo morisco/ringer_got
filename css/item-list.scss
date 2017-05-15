@@ -540,20 +540,26 @@ body #item-list.filtered{
         }
         ul{
             list-style: none;
+            background:black;
+            padding: 0 10px 10px;
 
             li a{
                 display:block;
-                color:black;
+                color:white;
                 margin-top: 10px;
                 font-size: 16px;
                 line-height: 1.25;
-                font-weight: 500;
+                font-weight: 300;
                 display: inline-block;
                 font-family: "GT Pressura Mono";
                 word-spacing: -.2em;
                 svg{
                     display:inline-block;
                     height:8px;
+                }
+
+                &:hover {
+                    text-decoration:underline;
                 }
             }
         }
@@ -723,7 +729,7 @@ body #item-list.filtered{
                         display: block;
                         width: 25%;
                         max-width: 25%;
-                        padding: 0 10px;
+                        padding: 0 5.5px;
                         margin-bottom: 0;
                         float: left;
                         &:nth-child(n+5){

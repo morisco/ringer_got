@@ -11,9 +11,10 @@
         margin: 0 0 15px;
         @include filter-sort-text;
         &:not(.active){
-            color:#ccc;
+            color:black;
+            font-weight:300;
             &:hover{
-                color:$black;
+                font-weight:normal;
             }
         }
         &:last-of-type{
