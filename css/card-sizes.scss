@@ -182,7 +182,7 @@ body .card-item.expanded-card{
             overflow:hidden;
             img{
                 margin: -80px 50% 0;
-                transform: translateX(-50%);
+                @include transform(translateX(-50%));
                 max-width: 75%;
             }
         }
@@ -259,7 +259,7 @@ body .card-item.expanded-card{
             }
             img{
                 margin:-80px 50% 0;
-                transform:translateX(-50%);
+                @include transform(translateX(-50%));
                 max-width:75%;
             }
         }
@@ -317,7 +317,7 @@ body .card-item.expanded-card{
                 width: 80%;
                 visibility:visible;
                 opacity:1;
-                transform:translateX(0);
+                @include transform(translateX(0));
                 max-width:100%;
             }
         }
@@ -580,7 +580,7 @@ body .card-item.expanded-card{
             img{
                 margin-top:auto;
                 margin: auto 50% 0;
-                transform: translateX(-50%);
+                @include transform(translateX(-50%));
             }
         }
         .info-column{
