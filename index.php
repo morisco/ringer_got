@@ -22,6 +22,7 @@
     $player_data = $data->players;
 
     $articles = $data->more_coverage;
+    $teams = $data->nba_teams;
 
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
@@ -72,17 +73,15 @@
     $player_id = isset($_GET['player']) ? $_GET['player'] : false;
     $count = $article_count;
     $coverage_count = 0;
-    foreach($sorted_players as $player){
+    foreach($sorted_players as $key => $player){
         $player->plus       = json_decode($player->plus);
-        $player->cls_1       = '#000000';
-        $player->percent     = '40';
         $player->color      = $sort_colors[$sort_list_id];
         $player->minus      = json_decode($player->minus);
         $player->stats      = json_decode($player->stats);
         $player->coverage   = json_decode($player->coverage);
         $player->meta       = json_decode($player->meta);
-        $player->meta       = json_decode($player->meta);
         $player->shot_chart = json_decode($player->shot_chart);
+        $player->team       = $teams[$key]->team_id;
         $player->size_class = 'medium';
         $player->position_group = strtolower($player->position_group);
 
