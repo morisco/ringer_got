@@ -623,7 +623,7 @@ body #item-list.filtered{
             }
             img{
                 margin-top:-35px !important;
-                max-width:35%;
+                width:35%;
                 right:5%;
                 @include transform(translateX(0));
 

@@ -489,6 +489,11 @@ body .card-item.expanded-card{
     body .card-item.expanded-card{
         .rank-column {
             max-width: 100%;
+            .rank {
+            font-size:200px;
+            left: 15px;
+            top:15px;
+            }
         }
         .info-column{
             .player-stats{
@@ -521,6 +526,15 @@ body .card-item.expanded-card{
     }
 
     body.medium .card-item{
+        .rank-column{
+           
+            .rank{
+                font-size:200px;
+                top:15px;
+                left:15px;
+                
+            }
+        }
         .toggle-card{
             bottom:20px;
         }
@@ -566,7 +580,7 @@ body .card-item.expanded-card{
             padding: 30px 20px;
             .rank{
                 position:absolute;
-                font-size:117px;
+                font-size:200px;
                 right:auto;
                 left:15px;
                 top:15px;
