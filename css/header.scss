@@ -20,13 +20,13 @@ header{
             padding-top:2px;
             max-width: 100%;
             font-size: 13px !important;
-            color:black;
+            color:$black;
             letter-spacing:0.11em !important;
             @include label-text;
             a{
                 font-weight:normal;
                 text-decoration:underline;
-                color:black;
+                color:$black;
             }
         }
     }
@@ -62,7 +62,7 @@ header{
         position:relative;
         z-index:1;
         text-align:left;
-        background-color:black;
+        background-color:$black;
         &:after{
             content:'';
             clear:both;
@@ -168,7 +168,7 @@ header{
                     margin-bottom:30px;
                     font-size: 92px;
                     line-height: 0;
-                    color: black;
+                    color: $black;
                     left:0;
                 }
             }

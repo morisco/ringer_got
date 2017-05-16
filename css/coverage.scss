@@ -9,7 +9,7 @@
     h3{
         @include label-text;
         margin-bottom: 15px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $black;
     }
     div{
         a{

@@ -11,7 +11,7 @@
         margin: 0 0 15px;
         @include filter-sort-text;
         &:not(.active){
-            color:black;
+            color:$black;
             font-weight:300;
             &:hover{
                 font-weight:normal;
