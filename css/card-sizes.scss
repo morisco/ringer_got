@@ -386,7 +386,16 @@ body .card-item.expanded-card{
         padding:15px 0 15px 15px;
         .rank-column{
             background-color: #F5F5F5 !important;
+        }
+        .player-stats{
+            display:none;
+        }
+        .player-meta{
+            margin-bottom:15px;
 
+        }
+        .player-description{
+            display:none;
         }
     }
 
@@ -442,11 +451,6 @@ body .card-item.expanded-card{
                 }
             }
 
-
-            .player-stats{
-                display:none;
-            }
-
             .player-meta{
                 padding-right:15px;
                 padding:0;
@@ -472,10 +476,6 @@ body .card-item.expanded-card{
                         content: ': ';
                     }
                 }
-            }
-
-            .player-description{
-                display:none;
             }
         }
         .toggle-card{
@@ -513,7 +513,6 @@ body .card-item.expanded-card{
             }
             .player-meta{
                 padding:15px 0;
-                margin-bottom:15px;
             }
         }
     }
