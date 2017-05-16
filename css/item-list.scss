@@ -106,7 +106,7 @@ body #item-list.filtered{
         max-height: 100%;
         width: 100%;
         max-width: 18.25%;
-        padding: 30px 25px;
+        padding: 30px;
         border-right:1px solid #f5f5f5;
         background-size:20%;
         .rank{
@@ -610,7 +610,7 @@ body #item-list.filtered{
     }
     .card-item{
         .rank-column{
-            height:215px;
+            height:210px;
             background-size:10%;
             border-right:0px !important;
             .ringer-coverage{
@@ -622,9 +622,12 @@ body #item-list.filtered{
                 left: 30px;
             }
             img{
+                opacity:1;
+                visibility: 1;
+                max-width:25%;
+                right:0;
+                left:auto;
                 margin-top:-35px !important;
-                width:35%;
-                right:5%;
                 @include transform(translateX(0));
 
             }
@@ -677,7 +680,6 @@ body #item-list.filtered{
                 width:100%;
                 margin-top:auto;
                 left:auto;
-                right:-10%;
                 margin:0 !important;
             }
         }

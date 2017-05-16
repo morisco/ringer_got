@@ -422,21 +422,22 @@
 @media(max-width:1023px) and (min-width:768px){
     .card-item{
         .rank-column img{
-            margin-top:0 !important;
-            width:50% !important;
-            margin-left:0 !important;
-            margin-right:0 !important;
-            left:50%;
+            // width:50% !important;
+            // margin-left:0 !important;
+            // margin-right:0 !important;
+            // left:50%;
         }
     }
+
 }
 
 // Mobile styles
 @media(max-width:767px){
-    .card-item{
+    .card-item,
+    .card-item.expanded-card{
         .rank-column img{
-            margin-left:0 !important;
-            margin-top:-10px !important;
+            max-width:50%;
+            margin-top:10px !important;
             @include transform(translateX(0) !important);
         }
     }

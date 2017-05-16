@@ -1,5 +1,5 @@
 // Small Card
-body.small .card-item{
+body.small .card-item:not(.expanded-card){
     max-height:145px;
     .toggle-card{
         bottom:56.5px;
@@ -174,17 +174,12 @@ body .card-item.expanded-card{
 
     body:not(.small) .card-item,
     body .card-item.expanded-card{
+        max-height: 100%;
         .rank-column{
             width:100%;
             max-width:100%;
             position:relative;
-            height:270px;
             overflow:hidden;
-            img{
-                margin: -80px 50% 0;
-                @include transform(translateX(-50%));
-                max-width: 75%;
-            }
         }
         .info-column{
             width:100%;
@@ -204,16 +199,21 @@ body .card-item.expanded-card{
     }
 
     body.small .card-item{
-        max-height:250px;
+        max-height:100%;
         .rank-column{
             width:100%;
             max-width:100%;
             position:relative;
+            overflow:hidden;
             .rank{
-                font-size:60px;
-                top:10px;
+                top:30px;
                 left:30px;
                 right:auto;
+            }
+            img{
+                visibility:visible;
+                opacity:1;
+                margin:-35px 0 0;
             }
         }
         .info-column {
@@ -239,6 +239,12 @@ body .card-item.expanded-card{
         .toggle-card{
             right:15px;
         }
+        &:not(.expanded-card){
+            max-height:100%;
+            .toggle-card{
+                bottom:20px;
+            }
+        }
     }
 
     body.medium .card-item{
@@ -257,13 +263,7 @@ body .card-item.expanded-card{
                 right:auto;
                 overflow:hidden;
             }
-            img{
-                margin:-35px 0 0;
-                max-width:40%;
-                right:0;
-                left:auto;
-                @include transform(translateX(0));
-            }
+
         }
         .info-column{
             .player-description{
@@ -300,22 +300,19 @@ body .card-item.expanded-card{
         max-height: 100%;
         height: auto;
         .rank-column{
-            height:225px;
             width:100%;
             max-width:100%;
             position:relative;
             overflow:hidden;
             .rank{
+                font-size:200px;
                 font-family: 'TIMMONS NY';
                 left:auto;
                 line-height: 1;
             }
             img{
-                margin-left: auto;
                 visibility:visible;
                 opacity:1;
-                @include transform(translateX(0));
-                max-width:40%;
             }
         }
         .info-column{
@@ -403,7 +400,6 @@ body .card-item.expanded-card{
             padding: 15px 0 15px 15px;
         }
     }
-
     body.small .card-item{
 
         .rank-column{
@@ -425,6 +421,9 @@ body .card-item.expanded-card{
                 line-height:1;
                 font-size:117px;
                 margin-bottom:-30px;
+            }
+            img{
+                visibility:hidden;
             }
         }
         .info-column{
@@ -481,7 +480,16 @@ body .card-item.expanded-card{
         }
         .toggle-card{
             top:20px;
-            
+
+        }
+    }
+
+
+    body.small .card-item.expanded-card{
+        .rank-column{
+            img{
+                visibility: visible;
+            }
         }
     }
 
@@ -527,12 +535,10 @@ body .card-item.expanded-card{
 
     body.medium .card-item{
         .rank-column{
-           
             .rank{
                 font-size:200px;
                 top:15px;
                 left:15px;
-                
             }
         }
         .toggle-card{
@@ -575,7 +581,7 @@ body .card-item.expanded-card{
             width: 100%;
             max-width: 100%;
             max-height: 220px;
-            height: 220px;
+            height: 210px !important;
             overflow: hidden;
             padding: 30px 20px;
             .rank{
@@ -584,7 +590,6 @@ body .card-item.expanded-card{
                 right:auto;
                 left:15px;
                 top:15px;
-
             }
         }
         .info-column{
