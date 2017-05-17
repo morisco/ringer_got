@@ -61,12 +61,10 @@ body #item-list.filtered{
     }
 
     > .nba-team-wrapper{
-
-        @include transform(rotate(-90deg) );
+        @include transform(rotate(-90deg) translateX(-50%));
         @include transform-origin(0 0);
         left:-21px;
-        top:35%;
-
+        top:50%;
     }
 
     &.sorted{
