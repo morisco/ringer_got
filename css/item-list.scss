@@ -27,6 +27,7 @@ body #item-list.filtered{
         max-height:3000px;
         opacity:1;
         margin-bottom:15px;
+        overflow:visible;
     }
 }
 
@@ -57,7 +58,7 @@ body #item-list.filtered{
         position:absolute;
         background:$black;
         color:$white;
-        padding:2px 20px 5px;
+        padding:5px 10px 6px;
         line-height:1;
         font-weight: 300;
         font-family: "GT Pressura Mono";
@@ -67,10 +68,10 @@ body #item-list.filtered{
     }
 
     > .nba-team-wrapper{
-        @include transform(rotate(-90deg) translateX(-50%));
+        @include transform(rotate(-90deg) translateX(-100%));
         @include transform-origin(0 0);
-        left:-21px;
-        top:50%;
+        left:-25px;
+        top:33px;
     }
 
     &.sorted{
