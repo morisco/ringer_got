@@ -7,6 +7,12 @@
     }
 }
 
+body:not(.ringer){
+    .nba-team-wrapper{
+        display:none !important;
+    }
+}
+
 body #item-list.filtered{
     .card-item{
         max-height:0;
