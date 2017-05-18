@@ -109,15 +109,20 @@ header{
 
 @media(max-width:1200px){
     header {
-        h1{
-            span.block{
-                top:-15px;
-            }
-        }
         .heading-image{
             top:0;
             background-position: center bottom;
             background-size:125%;
+        }
+    }
+}
+
+@media(max-width:1023px) and (min-width:767px){
+    header {
+        h1{
+            span.block{
+                top:-15px;
+            }
         }
     }
 }
