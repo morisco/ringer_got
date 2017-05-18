@@ -1,5 +1,5 @@
 .ring-container {
-    display:none;
+    display:block;
     position: relative;
     margin-left:-17px;
     @include transform(translateY(2px));
@@ -30,6 +30,10 @@
 }
 
 body:not(.mobile):not(.no-transition) .ringring{
+    display:block;
+}
+
+body.tablet .ringring{
     display:block;
 }
 

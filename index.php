@@ -218,6 +218,11 @@
                 <div class="toggle-zone">
                 </div>
                 <div class="toggle-close"></div>
+                <div class="filter-logo background-theme">
+                    <a href="http://theringer.com" target="_blank">
+                        <img src="img/logo-square.png" alt="Go To The Ringer" />
+                    </a>
+                </div>
                 <div class="toggle"></div>
                 <div class="current-sort" >
                     <?php echo $sort_dropdown_name; ?>
@@ -233,7 +238,7 @@
                         </li>
                         <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Kevin O&rsquo;Connor</span>
+                            <span>Kevin O&rsquo;Connor&rsquo;s Big Board</span>
                         </li>
                         <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
@@ -278,6 +283,11 @@
             </nav>
             <section id="filter-bar-wrapper">
                 <div id="filter-bar">
+                    <div class="filter-logo background-theme">
+                        <a href="http://theringer.com" target="_blank">
+                            <img src="img/logo-square.png" alt="Go To The Ringer" />
+                        </a>
+                    </div>
                     <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
                         <div class="filter-wrapper">
                             <span>Mock Draft</span>

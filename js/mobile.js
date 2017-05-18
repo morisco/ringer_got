@@ -15,6 +15,7 @@ function Mobile(list) {
         $('#mobile-nav').on('click', '.sort li', mobile.mobileSort);
         $('#mobile-nav').on('click', '.nav-filter a', mobile.mobileFilter);
         $('#mobile-nav .nav-switcher').on('click', 'a', mobile.mobileChangeSize);
+        $(window).on( "orientationchange", mobile.orientationChange );
     }
 
     this.toggleMobileNav = function(){

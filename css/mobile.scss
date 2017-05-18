@@ -60,13 +60,35 @@
         background-repeat:no-repeat;
         z-index:5555;
         margin-bottom:30px;
+        .filter-logo{
+            position:absolute;
+            width:10.5%;
+            height:100%;
+            top:0;
+            left:0;
+            height:40px;
+            text-align:center;
+            float:left;
+            a{
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            img{
+                position:absolute;
+                left:50%;
+                top:50%;
+                max-width:70%;
+                @include transform(translate(-50%,-50%));
+            }
+        }
         .toggle-zone{
             position:absolute;
             top:0;
             right:0;
-            left:0;
+            left:10.5%;
             z-index:5;
-            height:44px;
+            height:40px;
         }
         .toggle-close{
             position:fixed;
@@ -83,7 +105,7 @@
             width:18px;
             height:20px;
             margin-right:14px;
-            margin-left:15px;
+            margin-left:13%;
             background-image:url('../../img/toggle.png');
             background-image:url('../../img/toggle.svg');
             background-size:100%;
@@ -98,7 +120,7 @@
             display:none;
         }
         &.open{
-            background-position: right 15px top 19px;
+            background-position: right 15px top 17px;
             .current-sort{
                 display:none;
             }
@@ -114,12 +136,13 @@
                         margin-top:10px;
                         list-style:none;
                         width:100%;
+                        border-top:1px solid #ccc;
                         li{
                             display:block;
                             position:relative;
                             width:calc(100% - 15px);
                             margin:0 auto;
-                            border-top:1px solid #ccc;
+                            border-bottom:1px solid #ccc;
                             padding:10px 40px;
                             @include label-text;
                             svg{

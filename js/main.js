@@ -62,12 +62,19 @@ function CardList() {
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
+        $(window).on( "orientationchange", this.orientationChange );
 
         // $(window).on('resize', this.windowResize);
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
         }
     }
+
+    this.orientationChange = function(){
+        setTimeout(function(){
+            cardlist.filterOffsetPos = $('#content').offset().top;
+        }, 500);
+    };
 
     this.previewSize = function(){
         cardlist.size_preview = $(this).data('size');
@@ -163,7 +170,7 @@ function CardList() {
         if(cardlist.sort_id  == $(e.currentTarget).data('sort-id')){
             return;
         }
-        
+
         var player,
             coverage_count = 5;
         $('body').addClass('rebuilding');

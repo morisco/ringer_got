@@ -15,15 +15,33 @@
         height: 100%;
         width: 100%;
         background: $white;
+        .filter-logo{
+            position:relative;
+            width:4%;
+            height:100%;
+            text-align:center;
+            float:left;
+            max-width:0px;
+            a{
+                display:block;
+                width:100%;
+                height:100%;
+            }
+            img{
+                position:absolute;
+                left:50%;
+                top:50%;
+                @include transform(translate(-50%,-50%));
+            }
+        }
         div.filter{
             position:relative;
             display:block;
             float:left;
-            width: 16.25%;
+            width: 20%;
             height: 100%;
             overflow:hidden;
             border-right:2px solid $black;
-            @include transition(all 0.25s linear);
             @include filter-sort-text;
             color:$black;
             line-height: 1;
@@ -35,7 +53,7 @@
                 border-right: 0;
             }
             &.large{
-                width: 22.5%;
+                width: 20%;
             }
             &.active_filter{
                 background:$black;
@@ -93,7 +111,12 @@
         border-top:0px;
         border-right:0;
         border-left:0;
+        .filter-logo{
+            max-width:6%;
+        }
+        
         div.filter{
+            width:19.2%;
             .filter-wrapper{
                 img{
                     max-height:35px;
@@ -106,6 +129,25 @@
 @media(max-width:1200px){
     #filter-bar-wrapper{
         margin-bottom:0;
+        .filter-logo{
+            width:6%;
+            img{
+                max-width:66%;
+            }
+        }
+        #filter-bar{
+            div.filter{
+                font-size:12px;
+            }
+        }
+    }
+
+    .filter-fixed #filter-bar-wrapper{
+        #filter-bar{
+            div.filter{
+                width:18.8%;
+            }
+        }
     }
 }
 
