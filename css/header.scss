@@ -108,11 +108,17 @@ header{
 }
 
 @media(max-width:1200px){
-    header .heading-image{
-        top:0;
-        background-position: center bottom;
-        background-size:125%;
-
+    header {
+        h1{
+            span.block{
+                top:-15px;
+            }
+        }
+        .heading-image{
+            top:0;
+            background-position: center bottom;
+            background-size:125%;
+        }
     }
 }
 
