@@ -159,7 +159,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" href="dist/css/all.css">
+        <link rel="stylesheet" href="dist/css/all.css?t=<?php echo time(); ?>">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 

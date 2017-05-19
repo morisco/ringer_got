@@ -646,6 +646,16 @@ body #item-list.filtered{
 }
 
 
+@media(min-width: 1024px){
+    body.small .card-item{
+        overflow:hidden;
+        .nba-team-wrapper{
+            display:none;
+        }
+    }
+}
+
+
 @media(max-width: 1023px){
     #item-list{
         width: 100%;
