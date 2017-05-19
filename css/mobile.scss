@@ -69,6 +69,7 @@
             height:40px;
             text-align:center;
             float:left;
+            @include transition(left 0.125s linear);
             a{
                 display:block;
                 width:100%;
@@ -110,6 +111,7 @@
             background-image:url('../../img/toggle.svg');
             background-size:100%;
             background-position:center center;
+            @include transition(margin-left 0.125s linear);
         }
         .current-sort{
             @include label-text;
@@ -121,8 +123,14 @@
         }
         &.open{
             background-position: right 15px top 17px;
+            .filter-logo{
+                left:-10.5%;
+            }
             .current-sort{
                 display:none;
+            }
+            .toggle{
+                margin-left: 15.5px;
             }
             .nav-contents{
                 position:relative;

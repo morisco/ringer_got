@@ -22,6 +22,7 @@
             text-align:center;
             float:left;
             max-width:0px;
+            overflow:hidden;
             a{
                 display:block;
                 width:100%;
@@ -114,7 +115,7 @@
         .filter-logo{
             max-width:6%;
         }
-        
+
         div.filter{
             width:19.2%;
             .filter-wrapper{
