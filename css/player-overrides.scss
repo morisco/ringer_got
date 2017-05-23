@@ -409,6 +409,14 @@
         }
     }
 
+    .k_kuzma{
+        .rank-column img{
+            @include transform(translateX(-5px));
+            margin-left: -70px;
+            width:100%;
+        }
+    }
+
 // Tablet landscape styles
 @media(max-width:1200px){
 
