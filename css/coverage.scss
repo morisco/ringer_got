@@ -8,8 +8,9 @@
     }
     h3{
         @include label-text;
+        color:$white;
         margin-bottom: 15px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid $yellow;
     }
     div{
         a{
@@ -20,7 +21,7 @@
             margin-right:30px;
             h4 {
                 font-size: 17px;
-                color: $black;
+                color: $white;
                 line-height: 1.2;
                 font-family: "gt pressura mono";
                 font-weight: normal;
@@ -51,18 +52,17 @@
 
 #coverage-footer{
     position:relative;
-    background:$white;
     width:95%;
     max-width:1390px;
     margin: 0 auto -150px;
-    padding: 0 105px;
+    padding: 0;
     z-index:2;
     .more-coverage{
         h3{
             position:relative;
             margin-bottom: 15px;
             text-align: left;
-            
+
         }
         a{
             width: calc(25% - 23px);
@@ -103,7 +103,7 @@
     .more-coverage{
         padding-bottom:0;
         h3{
-            
+
         }
         div{
             a{

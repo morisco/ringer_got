@@ -1,7 +1,8 @@
 #item-list{
     float:right;
-    width:83.75%;
+    width:100%;
     list-style:none;
+    color:$yellow;
     &.sorting{
         opacity: 0;
     }
@@ -18,16 +19,27 @@ body #item-list.filtered{
         max-height:0;
         opacity:0;
         overflow:hidden;
-        margin-bottom:-2px;
+        z-index:0;
     }
 
-    &.guard .card-item.guard,
-    &.big .card-item.big,
-    &.forward .card-item.forward{
+    .overall-rank{
+        display:none;
+    }
+
+    .season-rank{
+        display:block;
+    }
+
+    &.season-1 .card-item.season-1,
+    &.season-2 .card-item.season-2,
+    &.season-3 .card-item.season-3,
+    &.season-4 .card-item.season-4,
+    &.season-5 .card-item.season-5,
+    &.season-6 .card-item.season-6 {
         max-height:3000px;
         opacity:1;
-        margin-bottom:15px;
         overflow:visible;
+        z-index:1;
     }
 }
 
@@ -46,13 +58,8 @@ body #item-list.filtered{
 .card-item{
     display:block;
     position:relative;
+    clear:both;
     padding: 0;
-    margin: 0;
-    max-height:145px;
-    border-radius:.625rem;
-    border: .00875rem solid #ccc;
-    margin-bottom:30px;
-    background:#F5F5F5;
 
     .nba-team-wrapper{
         position:absolute;
@@ -84,7 +91,9 @@ body #item-list.filtered{
     }
 
     .wrapper{
+        position:relative;
         height: 100%;
+        margin: 0 0 25px;
         &:after{
             content: '';
             clear:both;
@@ -122,30 +131,53 @@ body #item-list.filtered{
         @include label-text;
         margin-bottom:7.5px;
     }
+    &:after{
+        content:'';
+        clear:both;
+        display:table;
+    }
 
     .rank-column{
-        position: absolute;
-        top:0;
-        left:0;
-        bottom:0;
-        height: 100%;
-        max-height: 100%;
-        width: 100%;
-        max-width: 18.25%;
-        padding: 30px;
-        border-right:1px solid #f5f5f5;
+        position: relative;
+        float:left;
+        width: 10%;
         background-size:20%;
+        height:100%;
         overflow:hidden;
         > .nba-team-wrapper{
             display:none;
         }
+        .rank-wrapper{
+            margin-top:50px;
+            text-align:center;
+            .episode{
+                line-height:115%;
+            }
+            .director{
+                span{
+                    display:block;
+                    text-align:center;
+                }
+            }
+            .third-width{
+                width:33%;
+                display:inline-block;
+                margin:15px 0;
+                vertical-align:middle;
+                background:$yellow;
+                border:0px;
+            }
+        }
         .rank{
             @include timmons-text;
-            font-size:120px;
-            position:absolute;
-            top:30px;
-            right:25px;
-            line-height:1;
+            font-size:50px;
+            line-height:100%;
+            position:relative;
+            width:100%;
+            text-align:center;
+            .season-rank{
+                display:none;
+            }
         }
 
         img{
@@ -157,16 +189,70 @@ body #item-list.filtered{
         }
     }
 
+    .image-column{
+        width:30%;
+        float:left;
+        height:auto;
+        padding:0 2%;
+        .image{
+            width:100%;
+            border-radius:50%;
+            overflow:hidden;
+            img{
+                max-width:100%;
+            }
+        }
+    }
+
     .info-column{
-        float:right;
-        padding: 30px 30px 30px 0;
+        float:left;
+        padding: 30px 0;
         width: 100%;
         min-width:728px;
-        max-width: 81.75%;
+        max-width: 60%;
         opacity:1;
 
         .medium-show{
             padding-left:30px;
+        }
+
+        .title{
+            font-size:36px;
+            font-weight:500;
+            margin-bottom:10px;
+        }
+
+        .item-footer{
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:60%;
+            border-top:1px solid $yellow;
+            padding-top:15px;
+            font-size:12px;
+            .podcast{
+                display:inline-block;
+                float:right;
+                text-align:right;
+                font-style:italic;
+                a{
+                    color:$yellow;
+                    &:after{
+                        content:'';
+                        display:block;
+                        width:95%;
+                        background:$yellow;
+                        height:1px;
+                        margin-top:2px;
+                        margin-left:2px;
+                    }
+                }
+            }
+            .winner{
+                width:50%;
+                float:left;
+                text-align:left;
+            }
         }
 
         .player-description{

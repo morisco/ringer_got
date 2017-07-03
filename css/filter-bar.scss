@@ -40,7 +40,7 @@
             position:relative;
             display:block;
             float:left;
-            width: 20%;
+            width: 14.28%;
             height: 100%;
             overflow:hidden;
             border-right:2px solid $black;
@@ -53,9 +53,6 @@
 
             &:last-of-type{
                 border-right: 0;
-            }
-            &.large{
-                width: 20%;
             }
             &.active_filter{
                 background:$black;
@@ -118,7 +115,7 @@
         }
 
         div.filter{
-            width:19.2%;
+            width:13.7125%;
             .filter-wrapper{
                 img{
                     max-height:35px;

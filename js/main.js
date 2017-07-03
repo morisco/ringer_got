@@ -24,7 +24,6 @@ function CardList() {
 
     this.filterOffsetPos = $('#content').offset().top + parseInt($('#content').css('padding-top'), 10);
 
-    this.introOffsetPos = $('#intro').offset().top;
 
     this.size = 'medium';
     this.cards = [];
@@ -148,6 +147,7 @@ function CardList() {
             $('body').addClass('filter-fixed');
         } else {
             $('body').removeClass('filter-fixed');
+            cardlist.filterOffsetPos = $('#content').offset().top + parseInt($('#content').css('padding-top'), 10);
         }
 
         if(scrollPos > cardlist.introOffsetPos && $('.heading-wrapper:visible') && $(window).width() > 767){
@@ -173,12 +173,27 @@ function CardList() {
 
         var player,
             coverage_count = 5;
-        $('body').addClass('rebuilding');
+        cardlist.$el.addClass('filtered');
         $('.active_filter').removeClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
-        cardlist.setColors();
-        cardlist.buildList(GLOBALS.data.players);
+        cardlist.$el.removeClass('season-1 season-2 season-3 season-4 season-5 season-6 all');
+        if(cardlist.sort_id === 'all'){
+            cardlist.$el.removeClass('filtered');
+        } else {
+            cardlist.$el.addClass('season-' + cardlist.sort_id);
+        }
+
+        if($(window).scrollTop() > cardlist.filterOffsetPos){
+            if($(window).width() < 767){
+                $('html,body').scrollTop((cardlist.filterOffsetPos + 1));
+            } else {
+                $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
+            }
+        }
+
+        // cardlist.setColors();
+        // cardlist.buildList(GLOBALS.data.players);
         events.publish('sort.update', {sort: cardlist.sort_id});
     }
 

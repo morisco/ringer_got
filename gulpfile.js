@@ -8,7 +8,7 @@ var htmlmin = require('gulp-htmlmin');
 gulp.task('watch', ['sass', 'js', 'templates'], function() {
     gulp.watch('./css/*.scss', ['sass']);
     gulp.watch('./js/*.js', ['js']);
-    gulp.watch('./templates/*.handlebars', ['templates']);
+    gulp.watch('./components/templates/*.handlebars', ['templates']);
 });
 
 gulp.task('sass', function () {
@@ -30,22 +30,22 @@ gulp.task('js', function () {
 
 gulp.task('templates', function () {
     gulp.src([
-            'templates/card.handlebars'
+            'components/templates/card.handlebars'
         ])
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/templates'))
     gulp.src([
-            'templates/info.handlebars'
+            'components/templates/info.handlebars'
         ])
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/templates'))
     gulp.src([
-            'templates/coverage.handlebars'
+            'components/templates/coverage.handlebars'
         ])
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/templates'))
     gulp.src([
-            'templates/related-coverage.handlebars'
+            'components/templates/related-coverage.handlebars'
         ])
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist/templates'))

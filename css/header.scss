@@ -2,17 +2,16 @@ header{
     position:relative;
     height: auto;
     overflow:hidden;
+    text-align:center;
     .heading-wrapper{
         position:relative;
         display:inline-block;
-        padding: 30px 0 190px;
+        padding: 60px 0 0;
         text-align:center;
         z-index:1;
-        position:fixed;
-        top:60px;
-        left:50%;
-        margin-left:-450px;
+        position:relative;
         .byline{
+            display:none;
             position:absolute;
             top:45px;
             right:0px;
@@ -46,12 +45,17 @@ header{
     h1{
         display:inline-block;
         position:relative;
-        line-height:1.4;
-        span.block{
-            position:absolute;
-            top:0;
-            left:4px;
-
+        margin-top:0;
+        line-height:100%;
+        color:$yellow;
+        span{
+            display:block;
+            text-align:center;
+            line-height:85%;
+        }
+        span.small{
+            font-size:100px;
+            line-height:100%;
         }
 
     }

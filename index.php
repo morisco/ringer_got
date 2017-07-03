@@ -19,10 +19,9 @@
 
     $data_string = file_get_contents("./data/data.json");
     $data = json_decode($data_string);
-    $player_data = $data->players;
+    $episode_data = $data->episodes;
 
     $articles = $data->more_coverage;
-    $teams = $data->nba_teams;
 
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
@@ -39,62 +38,64 @@
     );
 
     $sort_list_name = array(
-        'ringer'    => "Mock Draft",
-        'kevin'     => "Kevin O'Connor",
-        'danny'     => "Danny Chau",
-        'jonathan' => "Jonathan Tjarks",
-        'a_z'       => "Sort A-Z"
+        'all'   => "All Seasons",
+        '1'     => "Season 1",
+        '2'     => "Season 2",
+        '3'     => "Season 3",
+        '4'     => "Season 4",
+        '5'     => "Season 5",
+        '6'     => "Season 6"
     );
 
-    $sort_list_options = array('ringer', 'kevin', 'danny', 'jonathan', 'a_z');
+    $sort_list_options = array('1', '2', '3', '4', '5', '6');
 
     if($_GET['list'] && in_array($_GET['list'], $sort_list_options)){
         $sort_list_id = $_GET['list'];
     } else{
-        $sort_list_id = 'ringer';
+        $sort_list_id = 'all';
     }
 
-    $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['ringer'];
+    $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['all'];
 
     $sort_list = $data->$sort_list_id;
-    $sorted_players = [];
-    foreach($sort_list as $sort) {
-        foreach($player_data as $key => $player) {
-            if ($sort->filter_id === $player->filter_id) {
-                $player->id = count($sorted_players) + 1;
-                $player->rank = sprintf("%02d", count($sorted_players) + 1);
-                $sorted_players[] = $player;
-                break;
-            }
+    $sorted_episodes = [];
+    foreach($episode_data as $key => $episode) {
+        if ($episode->season === $sort_list_id || $sort_list_id === 'all') {
+            $episode->id = count($sorted_episodes) + 1;
+            $episode->rank = count($sorted_episodes) + 1;
+            $sorted_episodes[] = $episode;
         }
     }
 
     $template_render = '';
-    $player_id = isset($_GET['player']) ? $_GET['player'] : false;
+    $episode_id = isset($_GET['player']) ? $_GET['player'] : false;
     $count = $article_count;
     $coverage_count = 0;
-    foreach($sorted_players as $key => $player){
-        $player->plus       = json_decode($player->plus);
-        $player->color      = $sort_colors[$sort_list_id];
-        $player->minus      = json_decode($player->minus);
-        $player->stats      = json_decode($player->stats);
-        $player->coverage   = json_decode($player->coverage);
-        $player->meta       = json_decode($player->meta);
-        $player->shot_chart = json_decode($player->shot_chart);
-        $player->team       = $teams[$key]->team_id;
-        $player->size_class = 'medium';
-        $player->position_group = strtolower($player->position_group);
+    $season_count = array(
+        'season_1' => 0,
+        'season_2' => 0,
+        'season_3' => 0,
+        'season_4' => 0,
+        'season_5' => 0,
+        'season_6' => 0
+    );
+    foreach($sorted_episodes as $key => $episode){
+        $season_count['season_' . $episode->season]++;
+        $episode->color      = $sort_colors[$sort_list_id];
+        $episode->size_class = 'medium';
+        $episode->season_ranking = $season_count['season_' . $episode->season];
 
-        if($player_id && $player->filter_id === $player_id){
-            $featured_player = $player;
-        }
+        // if($player_id && $player->filter_id === $player_id){
+        //     $featured_player = $player;
+        // }
         $template_render .= $engine->render(
             'card',
-            $player
+            $episode
         );
 
         $count--;
-        if($count == 0 && $player->rank !== '60'){
+
+        if($count == 0 && ($episode->rank !== count($sorted_episodes)) ){
             if($detect->isMobile() && !$detect->isTablet()){
                 $display_count = 1;
             } else {
@@ -175,170 +176,13 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="background-theme">
-            <nav>
-                <a href="http://theringer.com" class="logo"><img src="img/logo.png" alt="The Ringer Logo" /></a>
-                <ul class="main-nav">
-                    <li><a target="_blank" href="https://bit.ly/ringerhome">HOME</a></li>
-                    <li><a target="_blank" href="https://bit.ly/ringernba">NBA</a></li>
-                    <li><a target="_blank" href="https://bit.ly/ringerncaabasketball">NCAA BASKETBALL</a></li>
-                    <li><a target="_blank" href="https://theringer.com/nba-draft">NBA DRAFT</a></li>
-                    <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs">NBA PLAYOFFS</a></li>
-                </ul>
-            </nav>
-            <div class="heading-wrapper">
-                <h1>
-                    <span class="block">THE RINGER&rsquo;S <span class="white">2017</span></span>
-                    <span class="big">NBA DRAFT GUIDE</span>
-                 </h1>
-                <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor">kevin o'connor</a></div>
-            </div>
-            <div class="heading-image">
-                <img src="img/header-background.png" class="non-mobile" />
-                <img src="img/header-background.png" class="is-tablet" />
-                <img src="img/header-background-mobile.png" class="is-mobile" />
-            </div>
-        </header>
-        <section id="intro">
-            <div class="intro-wrapper">
-                <div>
-                    <strong>Welcome to <a target="_blank" href="https://theringer.com"><i>The Ringer</i></a>’s 2017 NBA Draft Guide,</strong> a comprehensive look at our top 60 prospects as rated by our three draftniks, Kevin O’Connor, Jonathan Tjarks, and Danny Chau. This is the place to learn exactly why NBA teams covet Markelle Fultz, where various NCAA standouts will land in the draft, and the “Ringer&rsquo;s 1 Reason” that makes each player NBA-worthy. Study up on the prospects’ strengths, weaknesses, stats, and comparisons, and be the guru of your draft party on June 22.
-                    <div class="intro-actions">
-                        <a href="https://bit.ly/ringernbadraft" class="ringer-draft-coverage color-theme">MORE RINGER NBA DRAFT COVERAGE</a>
-                        <div class="social">
-                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nbadraft.theringer.com" class="facebook"></a>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/'); ?>" class="twitter"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php include 'components/header.php'; ?>
+        <?php // include 'components/intro.php'; ?>
         <div id="content">
-            <nav id="mobile-nav">
-                <div class="toggle-zone">
-                </div>
-                <div class="toggle-close"></div>
-                <div class="filter-logo background-theme">
-                    <a href="http://theringer.com" target="_blank">
-                        <img src="img/logo-square.png" alt="Go To The Ringer" />
-                    </a>
-                </div>
-                <div class="toggle"></div>
-                <div class="current-sort" >
-                    <?php echo $sort_dropdown_name; ?>
-                </div>
-                <div class="nav-contents">
-                    <div class="current-sort color-theme">
-                        Ringer NBA Draft 2017
-                    </div>
-                    <ul class="sort">
-                        <li class="<?php echo ($sort_list_id === 'ringer') ? 'active_filter color-theme' : '' ?>"data-sort-id="ringer">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Mock Draft</span>
-                        </li>
-                        <li class="<?php echo ($sort_list_id === 'kevin') ? 'active color-theme' : '' ?>"data-sort-id="kevin">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Kevin O&rsquo;Connor&rsquo;s Big Board</span>
-                        </li>
-                        <li class="<?php echo ($sort_list_id === 'danny') ? 'active color-theme' : '' ?>"data-sort-id="danny">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Danny Chau&rsquo;s Big Board</span>
-                        </li>
-                        <li class="<?php echo ($sort_list_id === 'jonathan') ? 'active color-theme' : '' ?>"data-sort-id="jonathan">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Jonathan Tjarks&rsquo; Big Board</span>
-                        </li>
-                        <li class="<?php echo ($sort_list_id === 'az') ? 'active color-theme' : '' ?>"data-sort-id="az">
-                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.03"><title>newarrow</title><rect class="arrow-fill" y="5.75" width="15" height="1.5"/><rect class="arrow-fill" x="22.59" y="12.58" width="1.5" height="8.15" transform="translate(-16.69 8.13) rotate(-45)"/><rect class="arrow-fill" x="19.26" y="22.11" width="8.15" height="1.5" transform="translate(-21.08 9.95) rotate(-45)"/></svg>
-                            <span>Sort A-Z</span>
-                        </li>
-                    </ul>
-                    <div class="nav-actions">
-                        <div class="nav-switcher">
-                            <div class="color-theme label">
-                                View
-                            </div>
-                            <div>
-                                <ul class="size-toggle">
-                                    <li data-size="small"></li>
-                                    <li class="active background-theme" data-size="medium"></li>
-                                    <li data-size="large"></li>
-                                </ul>
-                                <a href="javascript:void(0);" data-size="small">Condensed</a>
-                                <a href="javascript:void(0);" class="active color-theme" data-size="medium">Default</a>
-                                <a href="javascript:void(0);" data-size="large">Expanded</a>
-                            </div>
-                        </div>
-                        <div class="nav-filter">
-                            <div class="color-theme label">
-                                Position
-                            </div>
-                            <a href="javascript:void(0);" class="active color-theme" data-filter="all">All</a>
-                            <a href="javascript:void(0);" data-filter="forward">Forwards</a>
-                            <a href="javascript:void(0);" data-filter="guard">Guards</a>
-                            <a href="javascript:void(0);" data-filter="big">Bigs</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <section id="filter-bar-wrapper">
-                <div id="filter-bar">
-                    <div class="filter-logo background-theme">
-                        <a href="http://theringer.com" target="_blank">
-                            <img src="img/logo-square.png" alt="Go To The Ringer" />
-                        </a>
-                    </div>
-                    <div class="small filter <?php echo ($sort_list_id === 'ringer') ? 'active_filter' : '' ?>" data-sort-id="ringer">
-                        <div class="filter-wrapper">
-                            <span>Mock Draft</span>
-                        </div>
-                    </div>
-                    <div class="large filter <?php echo ($sort_list_id === 'kevin') ? 'active_filter' : '' ?>" data-sort-id="kevin">
-                        <div class="filter-wrapper">
-                            <span>Kevin O&rsquo;Connor</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @KevinOConnorNBA’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=kevin'); ?>"></a>
-                        </div>
-                    </div>
-                    <div class="large filter <?php echo ($sort_list_id === 'danny') ? 'active_filter' : '' ?>" data-sort-id="danny">
-                        <div class="filter-wrapper">
-                            <span>Danny Chau</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @dannychau’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=danny'); ?>"></a>
-                        </div>
-                    </div>
-                    <div class="large filter <?php echo ($sort_list_id === 'jonathan') ? 'active_filter' : '' ?>" data-sort-id="jonathan">
-                        <div class="filter-wrapper">
-                            <span>Jonathan Tjarks</span>
-                            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode('Check out @JonathanTjarks’s ranking of the top 60 NBA draft prospects from @ringer’s 2017 NBA Draft Guide'); ?>&url=<?php echo urlencode('http://nbadraft.theringer.com/?list=jonathan'); ?>"></a>
-                        </div>
-                    </div>
-                    <div class="small filter <?php echo ($sort_list_id === 'az') ? 'active_filter' : '' ?>" data-sort-id="az">
-                        <div class="filter-wrapper">
-                            <span>Sort A-Z</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <?php include 'components/mobile/nav.php'; ?>
+            <?php include 'components/filter-bar.php'; ?>
             <div id="main-content">
-                <div id="filters">
-                    <div class="switcher">
-                        <ul class="size-indicator">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <ul class="size-toggle">
-                            <li data-size="small"></li>
-                            <li class="active background-theme" data-size="medium"></li>
-                            <li data-size="large"></li>
-                        </ul>
-                    </div>
-                    <div class="filter-links">
-                        <a href="javascript:void(0);" data-filter="all" class="active color-theme"><span>all positions</span></a>
-                        <a href="javascript:void(0);" data-filter="guard"><span>guards</span></a>
-                        <a href="javascript:void(0);" data-filter="forward"><span>forwards</span></a>
-                        <a href="javascript:void(0);" data-filter="big"><span>bigs</span></a>
-                    </div>
-                </div>
+                <?php // include 'components/filter-side.php'; ?>
                 <section>
                     <ul id="item-list" class="grid">
                         <?php echo $template_render; ?>
