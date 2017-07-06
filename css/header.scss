@@ -183,11 +183,40 @@ header{
     }
 }
 
+@media(max-width:1100px){
+    header{
+        h1{
+            span.small{
+                font-size:50px;
+                line-height:125%;
+            }
+
+            span.game-of-thrones{
+                font-size:96px;
+            }
+
+            span.episode-rankings{
+                font-size:93px;
+            }
+
+        }
+    }
+}
+
 @media(max-width:1023px) and (min-width:767px){
     header {
         h1{
-            span.block{
-                top:-15px;
+            span.small{
+                font-size:43px;
+                line-height:125%;
+            }
+
+            span.game-of-thrones{
+                font-size:85px;
+            }
+
+            span.episode-rankings{
+                font-size:82px;
             }
         }
     }
@@ -199,7 +228,18 @@ header{
             margin-top:220px;
         }
         h1{
-            font-size:220px;
+            span.small{
+                font-size:43px;
+                line-height:125%;
+            }
+
+            span.game-of-thrones{
+                font-size:85px;
+            }
+
+            span.episode-rankings{
+                font-size:82px;
+            }
         }
     }
 }
@@ -209,6 +249,20 @@ header{
         height:auto;
         padding-top:0;
         background-size: auto auto;
+        h1{
+            span.small{
+                font-size:18.5px;
+                line-height:125%;
+            }
+
+            span.game-of-thrones{
+                font-size:36px;
+            }
+
+            span.episode-rankings{
+                font-size:35px;
+            }
+        }
         &:before{
             height:45px;
         }
