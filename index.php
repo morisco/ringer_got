@@ -162,7 +162,7 @@
 
         <link rel="stylesheet" href="dist/css/all.css?t=<?php echo time(); ?>">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="dist/vendor/vendor.js"></script>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
         <link rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*w1O1RbAfBRNSxkSC48L1PQ.png">
@@ -229,7 +229,6 @@
             GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
             GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
         </script>
-        <script src="dist/vendor/vendor.js"></script>
         <script src="dist/js/all.js"></script>
 
         <script>
