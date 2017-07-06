@@ -305,8 +305,8 @@ body .card-item.expanded-card{
             position:relative;
             overflow:hidden;
             .rank{
+                @include highlight-text;
                 font-size:200px;
-                font-family: 'TIMMONS NY';
                 left:auto;
                 line-height: 1;
             }

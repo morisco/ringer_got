@@ -67,8 +67,8 @@ body #item-list.filtered{
         color:$white;
         padding:5px 10px 6px;
         line-height:1;
+        @include body-text;
         font-weight: 300;
-        font-family: "GT Pressura Mono";
         font-size: 14px;
         word-spacing: -.1em;
         z-index:3;
@@ -102,7 +102,7 @@ body #item-list.filtered{
     }
 
     h3{
-        @include timmons-text;
+        @include highlight-text;
         font-size: 67px;
         line-height: .65;
         font-weight: normal;
@@ -114,9 +114,9 @@ body #item-list.filtered{
     h4{
         font-size: 16px;
         line-height: 1.25;
+        @include body-text;
         font-weight: 300;
         display: inline-block;
-        font-family: "GT Pressura Mono";
         word-spacing: -.2em;
         strong {
             font-weight: 500;
@@ -169,7 +169,7 @@ body #item-list.filtered{
             }
         }
         .rank{
-            @include timmons-text;
+            @include highlight-text;
             font-size:50px;
             line-height:100%;
             position:relative;
@@ -269,12 +269,12 @@ body #item-list.filtered{
                 font-size: 22px;
                 line-height: 1.2;
                 margin-bottom: 15px;
-                font-family: "GT Pressura Mono";
+                @include body-text;
                 font-weight: 300;
             }
             .player-subline {
+                @include body-text;
                 font-weight: 300;
-                font-family: "GT Pressura Mono";
                 font-size: 14px;
                 word-spacing: -0.1em;
                 strong {
@@ -324,7 +324,7 @@ body #item-list.filtered{
                             @include label-text;
                         }
                         &.number{
-                            @include timmons-text;
+                            @include highlight-text;
                             font-size: 43px;
                             margin: 13px 0 0;
                             text-align:center;
@@ -475,7 +475,7 @@ body #item-list.filtered{
                             .percentage{
                                 margin-bottom: -3px;
                                 font-size: 13px;
-                                font-family: 'GT Pressura',sans;
+                                @include body-text;
                                 letter-spacing: .05em;
                                 font-weight: 300;
                                 font-weight: 500;
@@ -590,8 +590,8 @@ body #item-list.filtered{
                     line-height: 1.25;
                     margin-bottom: 15px;
                     font-size:13px;
+                    @include body-text;
                     font-weight:300;
-                    font-family: "GT Pressura Mono";
                     word-spacing: -.15em;
                     &.has-media .media-marker{
                         position:absolute;
@@ -608,7 +608,7 @@ body #item-list.filtered{
             margin-top:-15px;
             margin-bottom:30px;
             font-size:12px;
-            font-family: "GT Pressura Mono";
+            @include body-text;
             word-spacing: -.15em;
         }
 
@@ -671,7 +671,7 @@ body #item-list.filtered{
                 line-height: 1.25;
                 font-weight: 300;
                 display: inline-block;
-                font-family: "GT Pressura Mono";
+                @include body-text;
                 word-spacing: -.2em;
                 svg{
                     display:inline-block;

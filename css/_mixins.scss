@@ -1,39 +1,42 @@
+@mixin highlight-text{
+    font-family: 'Nazareth Roman';
+    font-weight: normal;
+}
+
+@mixin body-text{
+    font-family:'GT Cinetype Trial';
+    font-weight:normal;
+}
+
 @mixin label-text {
     // write the css here
-    font-family:'GT Pressura Mono', sans;
-    font-weight:normal;
+    @include body-text;
     text-transform:uppercase;
     font-size:12px;
     letter-spacing:0.1em;
 }
 
-@mixin timmons-text{
-    font-family: 'TIMMONS NY';
-    font-weight: normal;
-}
-
 @mixin value-text{
+    @include body-text;
     font-size:12px;
-    font-family: 'GT Pressura', sans;
     letter-spacing:0.05em;
     font-weight:300;
 }
 
 @mixin detail-text{
+    @include body-text;
     font-size: 10px;
     text-align: center;
     font-weight: 300;
-    font-family:'GT Pressura Mono', sans;
 }
 
 @mixin filter-sort-text {
+    @include body-text;
     font-size: 13.5px;
     letter-spacing: 0.1em;
     line-height: 1;
     font-weight: 500;
     text-transform: uppercase;
-    font-family:'GT Pressura Mono', sans;
-
 }
 
 @mixin transition($transitions...) {

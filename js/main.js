@@ -22,8 +22,8 @@ function CardList() {
 
     this.initial_player = GLOBALS.player || false;
 
-    this.filterOffsetPos = $('#content').offset().top + parseInt($('#content').css('padding-top'), 10);
-
+    this.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
+    this.filterResetPos = this.filterOffsetPos + $('#filter-bar').height() + 30;
 
     this.size = 'medium';
     this.cards = [];
@@ -57,6 +57,7 @@ function CardList() {
 
     this.initEvents = function() {
         $('#filters').on('click', 'a', this.filter);
+        $('header').on('click', '.fixed-nav a:not(.active_filter)', this.sort);
         $('#filter-bar').on('click', '.filter:not(.active_filter)', this.sort);
         $('.size-toggle').on('click', 'li', this.changeSize);
         $('.size-toggle').on('mouseenter', 'li', this.previewSize);
@@ -71,7 +72,7 @@ function CardList() {
 
     this.orientationChange = function(){
         setTimeout(function(){
-            cardlist.filterOffsetPos = $('#content').offset().top;
+            cardlist.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
         }, 500);
     };
 
@@ -90,7 +91,7 @@ function CardList() {
         clearTimeout(cardlist.sizeTimeout);
         cardlist.sizeTimeout = setTimeout(function(){
             windowWidth = $(window).width();
-            cardlist.filterOffsetPos = $('#content').offset().top + parseInt($('#content').css('padding-top'), 10);
+            cardlist.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
         },250);
         // $('.card-item:not(.large)').removeClass('small medium').addClass(cardlist.size);
         if(windowWidth < 1100 && windowWidth > 767 ){
@@ -147,7 +148,7 @@ function CardList() {
             $('body').addClass('filter-fixed');
         } else {
             $('body').removeClass('filter-fixed');
-            cardlist.filterOffsetPos = $('#content').offset().top + parseInt($('#content').css('padding-top'), 10);
+            cardlist.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
         }
 
         if(scrollPos > cardlist.introOffsetPos && $('.heading-wrapper:visible') && $(window).width() > 767){
@@ -175,6 +176,8 @@ function CardList() {
             coverage_count = 5;
         cardlist.$el.addClass('filtered');
         $('.active_filter').removeClass('active_filter');
+        $('header .fixed-nav a[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').addClass('active_filter');
+        $('.filter[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').addClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
         cardlist.$el.removeClass('season-1 season-2 season-3 season-4 season-5 season-6 all');
@@ -183,12 +186,11 @@ function CardList() {
         } else {
             cardlist.$el.addClass('season-' + cardlist.sort_id);
         }
-
         if($(window).scrollTop() > cardlist.filterOffsetPos){
             if($(window).width() < 767){
-                $('html,body').scrollTop((cardlist.filterOffsetPos + 1));
+                $('html,body').scrollTop(cardlist.filterResetPos);
             } else {
-                $('body,html').animate({scrollTop:cardlist.filterOffsetPos+1});
+                $('body,html').animate({scrollTop:cardlist.filterResetPos});
             }
         }
 

@@ -6,7 +6,7 @@ header{
     .heading-wrapper{
         position:relative;
         display:inline-block;
-        padding: 60px 0 0;
+        padding: 100px 0 0;
         text-align:center;
         z-index:1;
         position:relative;
@@ -48,14 +48,23 @@ header{
         margin-top:0;
         line-height:100%;
         color:$yellow;
+        line-height:1.2;
         span{
             display:block;
             text-align:center;
-            line-height:85%;
+            line-height:100%;
         }
         span.small{
-            font-size:100px;
-            line-height:100%;
+            font-size:62px;
+            line-height:125%;
+        }
+
+        span.game-of-thrones{
+            font-size:120px;
+        }
+
+        span.episode-rankings{
+            font-size:116px;
         }
 
     }
@@ -63,8 +72,11 @@ header{
     nav{
         width:100%;
         display:block;
-        position:relative;
-        z-index:1;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index:55555;
         text-align:left;
         background-color:$black;
         &:after{
@@ -87,6 +99,17 @@ header{
             padding-top:10px;
             padding-right:10px;
 
+            &.main-nav{
+                display:block;
+            }
+
+            &.fixed-nav{
+                display:none;
+                a.active_filter{
+                    color:$yellow;
+                }
+            }
+
             li{
                 display:inline-block;
                 @include filter-sort-text;
@@ -99,7 +122,17 @@ header{
                 }
             }
         }
+    }
+}
 
+.filter-fixed{
+    header ul{
+        &.fixed-nav{
+            display:block;
+        }
+        &.main-nav{
+            display:none;
+        }
     }
 }
 

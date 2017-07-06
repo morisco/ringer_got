@@ -3,18 +3,17 @@
     width:100%;
     max-width:1270px;
     max-height:80px;
-    height: 50px;
-    margin:0 auto 60px;
+    height: auto;
+    margin:0 auto;
     padding: 0;
     z-index:5;
     overflow:hidden;
+    @include highlight-text;
     #filter-bar{
-        border: 2px solid $black;
-        border-radius: 9px;
         overflow:hidden;
         height: 100%;
         width: 100%;
-        background: $white;
+        text-align:center;
         .filter-logo{
             position:relative;
             width:4%;
@@ -38,25 +37,24 @@
         }
         div.filter{
             position:relative;
-            display:block;
-            float:left;
-            width: 14.28%;
+            display:inline-block;
+            width: auto;
             height: 100%;
-            overflow:hidden;
-            border-right:2px solid $black;
-            @include filter-sort-text;
             color:$black;
-            line-height: 1;
+            line-height: 100%;
             text-align:center;
             vertical-align:middle;
+            margin: 0 10px ;
+            color:rgba(255,255,255,.46);
+            font-size:16px;
+            letter-spacing: 0.01px;
             cursor:pointer;
 
             &:last-of-type{
                 border-right: 0;
             }
             &.active_filter{
-                background:$black;
-                color:$white;
+                color:$yellow;
                 .filter-wrapper a{
                     display:inline-block;
                 }
@@ -68,11 +66,6 @@
                     width:auto;
                     margin-right:5px;
                 }
-                position:absolute;
-                left:0;
-                right:0;
-                top: 50%;
-                @include transform(translateY(-50%));
                 span{
                     display:inline-block;
                     vertical-align:middle;
@@ -97,7 +90,7 @@
     }
 }
 
-.filter-fixed #filter-bar-wrapper{
+.filter-fixed-old-old #filter-bar-wrapper{
     position:fixed;
     top:0;
     left:50%;
@@ -140,7 +133,7 @@
         }
     }
 
-    .filter-fixed #filter-bar-wrapper{
+    .filter-fixed-old-old #filter-bar-wrapper{
         #filter-bar{
             div.filter{
                 width:18.8%;
