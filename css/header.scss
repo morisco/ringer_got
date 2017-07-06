@@ -79,6 +79,11 @@ header{
         z-index:55555;
         text-align:left;
         background-color:$black;
+        @include transition(background-color, .5s);
+        .nav-wrapper{
+            margin:0 auto;
+            max-width:1400px;
+        }
         &:after{
             content:'';
             clear:both;
@@ -94,10 +99,20 @@ header{
                 width:100%;
             }
         }
+
+        .title{
+            display:none;
+            color:$yellow;
+            @include highlight-text;
+            padding-top:10px;
+            padding-left:10px;
+            padding-bottom:8px;
+        }
         ul{
             float:right;
-            padding-top:10px;
+            padding-top:8px;
             padding-right:10px;
+            padding-bottom:8px;
 
             &.main-nav{
                 display:block;
@@ -126,12 +141,26 @@ header{
 }
 
 .filter-fixed{
-    header ul{
-        &.fixed-nav{
-            display:block;
+    header{
+        nav{
+            background-color:$green;
+            border-bottom:1px solid $yellow;
         }
-        &.main-nav{
+        .logo{
             display:none;
+        }
+
+        .title{
+            display:inline-block;
+
+        }
+        ul{
+            &.fixed-nav{
+                display:block;
+            }
+            &.main-nav{
+                display:none;
+            }
         }
     }
 }

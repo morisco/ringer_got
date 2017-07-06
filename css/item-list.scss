@@ -721,22 +721,25 @@ body #item-list.filtered{
     }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1023px){
     #item-list{
         width:100%;
         float:none;
+        padding-left: 30px;
+        padding-right: 30px;
 
         .card-item{
             .rank-column{
+                width:12.5%;
                 .rank-wrapper{
                     margin-top:15px;
                 }
             }
             .image-column{
-                width:25%;
+                width:22.5%;
             }
             .info-column{
-                width:65%;
+                max-width:65%;
                 padding-top:5px;
             }
             .item-footer{
