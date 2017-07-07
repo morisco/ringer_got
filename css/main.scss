@@ -137,31 +137,6 @@ a{
     text-decoration:none;
 }
 
-h1{
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    margin: 20px 0 0;
-    line-height: 100%;
-    font-size: 120px;
-    text-transform: uppercase;
-    color: $black;
-    @include highlight-text;
-    text-align:center;
-    font-weight: normal;
-}
-
-h1 span.block{
-    display:block;
-    font-size:72px;
-    line-height:1;
-    margin-bottom:75px;
-
-}
-
-h1 span.white{
-    color: $white;
-}
-
 h3{
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -197,6 +172,16 @@ h3 .brand{
         clear:both;
         display:table;
     }
+}
+
+.divider{
+    display:block;
+    height:7px;
+    width:100%;
+    margin-top:30px;
+    background-image:url('../../img/diamond.png');
+    background-repeat:repeat-x;
+    background-position: center center;
 }
 
 .credits{

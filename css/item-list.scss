@@ -59,27 +59,6 @@ body #item-list.filtered{
     display:block;
     position:relative;
     clear:both;
-    padding: 0 0 60px;
-
-    .nba-team-wrapper{
-        position:absolute;
-        background:$black;
-        color:$white;
-        padding:5px 10px 6px;
-        line-height:1;
-        @include body-text;
-        font-weight: 300;
-        font-size: 14px;
-        word-spacing: -.1em;
-        z-index:3;
-    }
-
-    > .nba-team-wrapper{
-        @include transform(rotate(-90deg) translateX(-100%));
-        @include transform-origin(0 0);
-        left:-25px;
-        top:33px;
-    }
 
     &.sorted{
         visibility: hidden;
@@ -92,8 +71,8 @@ body #item-list.filtered{
 
     .wrapper{
         position:relative;
-        height: 100%;
-        margin: 0 0 45px;
+        padding-bottom:45px;
+        margin: 0 0 60px;
         &:after{
             content: '';
             clear:both;
@@ -142,7 +121,6 @@ body #item-list.filtered{
         float:left;
         width: 10%;
         background-size:20%;
-        height:100%;
         overflow:hidden;
         > .nba-team-wrapper{
             display:none;

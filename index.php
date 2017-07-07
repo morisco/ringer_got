@@ -26,7 +26,7 @@
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
     } else{
-        $article_count = 10;
+        $article_count = 5;
     }
 
     $sort_colors = array(
@@ -99,9 +99,8 @@
             if($detect->isMobile() && !$detect->isTablet()){
                 $display_count = 1;
             } else {
-                $display_count = 3;
+                $display_count = 2;
             }
-
             $count = $article_count;
             $more_coverage = (object) array();
             $more_coverage->articles = array_slice($articles, ($display_count * $coverage_count), $display_count);
@@ -177,17 +176,18 @@
         <![endif]-->
 
         <?php include 'components/header.php'; ?>
-        <?php // include 'components/intro.php'; ?>
+        <?php include 'components/intro.php';  ?>
         <div id="content">
             <?php include 'components/mobile/nav.php'; ?>
             <?php include 'components/filter-bar.php'; ?>
+            <div class="divider"></div>
             <div id="main-content">
                 <?php // include 'components/filter-side.php'; ?>
-                <section>
+                <div>
                     <ul id="item-list" class="grid">
                         <?php echo $template_render; ?>
                     </ul>
-                </section>
+                </div>
             </div>
             <div class="credits">
                 <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>

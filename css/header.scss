@@ -3,6 +3,17 @@ header{
     height: auto;
     overflow:hidden;
     text-align:center;
+    h1{
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        margin: 20px 0 0;
+        line-height: 100%;
+        font-size: 120px;
+        @include highlight-text;
+        text-align:center;
+        font-weight: normal;
+        letter-spacing: 0.01px;
+    }
     .heading-wrapper{
         position:relative;
         display:inline-block;

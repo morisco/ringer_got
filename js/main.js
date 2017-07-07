@@ -23,7 +23,7 @@ function CardList() {
     this.initial_player = GLOBALS.player || false;
 
     this.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
-    this.filterResetPos = this.filterOffsetPos + $('#filter-bar').height() + 30;
+    this.filterResetPos = this.filterOffsetPos + $('#filter-bar').height() + 38;
 
     this.size = 'medium';
     this.cards = [];

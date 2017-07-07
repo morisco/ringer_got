@@ -27,6 +27,6 @@
             <span class="game-of-thrones">Game of Thrones</span>
             <span class="episode-rankings">Episode Rankings</span>
          </h1>
-        <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor">kevin o'connor</a></div>
+        <!-- <div class="byline">Scouting reports by <a href="https://theringer.com/@kevin.oconnor">kevin o'connor</a></div> -->
     </div>
 </header>

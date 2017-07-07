@@ -1,4 +1,4 @@
-<section id="filter-bar-wrapper">
+<div id="filter-bar-wrapper">
     <div id="filter-bar">
         <div class="filter-logo background-theme">
             <a href="http://theringer.com" target="_blank">
@@ -41,4 +41,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>
