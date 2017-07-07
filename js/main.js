@@ -64,11 +64,19 @@ function CardList() {
         $('.size-toggle').on('mouseleave', 'li', this.revertSize);
         $(window).on( "orientationchange", this.orientationChange );
 
+        $('.mobile header:not(.open)').on('click', ' .fixed-nav', this.toggleNav);
+        $('.mobile header').on('click', ' .close-nav', this.toggleNav);
+
+
         // $(window).on('resize', this.windowResize);
         if(!GLOBALS.player){
             $(window).on('scroll', cardlist.scrollWatch);
         }
     }
+
+    this.toggleNav = function(){
+        $('header').toggleClass('open');
+    };
 
     this.orientationChange = function(){
         setTimeout(function(){
@@ -176,7 +184,9 @@ function CardList() {
             coverage_count = 5;
         cardlist.$el.addClass('filtered');
         $('.active_filter').removeClass('active_filter');
+        $('header').removeClass('open');
         $('header .fixed-nav a[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').addClass('active_filter');
+        $('header .fixed-nav a[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').parent().addClass('active_filter');
         $('.filter[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').addClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');

@@ -4,10 +4,12 @@
             <div class="rank-wrapper">
                 <div class="rank"><span class="overall-rank">{{rank}}</span><span class="season-rank">{{season_ranking}}</span></div>
                 <div class="episode">Episode {{episode_number}}</div>
-                <hr class="third-width" />
-                <div class="director">
-                    <span>Directed by</span>
-                    <span>{{director}}</span>
+                <div class="non-mobile">
+                    <hr class="third-width" />
+                    <div class="director">
+                        <span>Directed by</span>
+                        <span>{{director}}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -23,11 +25,17 @@
                 <div class="title">
                     {{title}}
                 </div>
+                <div class="is-mobile-block text-center mobile-director">
+                    <hr class="fifth-width" />
+                    <div class="director">
+                        Directed by {{director}}
+                    </div>
+                </div>
                 <div class="blurb">
                     {{{blurb}}}
                 </div>
                 <div class="author">
-                    {{blurb_writer}}
+                    – {{blurb_writer}}
                 </div>
             </div>
             <div class="item-footer">

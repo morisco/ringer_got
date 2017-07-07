@@ -95,6 +95,9 @@ header{
             margin:0 auto;
             max-width:1400px;
         }
+        .close-nav{
+            display:none;
+        }
         &:after{
             content:'';
             clear:both;
@@ -104,7 +107,7 @@ header{
             display:inline-block;
             max-width:110px;
             margin-left:10px;
-            padding-top:10px;
+            padding-top:7.5px;
             img{
                 display:block;
                 width:100%;
@@ -144,7 +147,7 @@ header{
                 font-family:'Nazareth Roman';
                 a{
                     display:inline-block;
-                    padding: 5px 5px;
+                    padding: 8px 5px 4px;
                     color:$white;
                 }
             }
@@ -263,23 +266,52 @@ header{
         background-size: auto auto;
         h1{
             span.small{
-                font-size:18.5px;
+                font-size:22px;
                 line-height:125%;
             }
 
             span.game-of-thrones{
-                font-size:36px;
+                font-size:42px;
             }
 
             span.episode-rankings{
-                font-size:35px;
+                font-size:40px;
             }
         }
         &:before{
             height:45px;
         }
         nav{
-            display:none;
+            display:block;
+            .logo{
+                padding-top:7px;
+            }
+            ul.main-nav{
+                display:none;
+
+            }
+            ul.fixed-nav{
+                display:block;
+                padding:0;
+                width:auto;
+                height:38px;
+                overflow:hidden;
+                li{
+                    display:none;
+                    .season{
+                        display:inline-block;
+                    }
+                    &.active_filter{
+                        display:block;
+                    }
+                    a{
+                        padding:15px 10px 10px;
+                    }
+                    a.active_filter{
+                        color:$white;
+                    }
+                }
+            }
         }
         .heading-image{
             margin-top:0;
@@ -295,15 +327,13 @@ header{
             position:relative;
             height:auto;
             text-align:center;
-            margin:10px auto 0;
+            padding-top:95px;
+            margin:0 auto 15px;
             width:100%;
             left:auto;
-            top:10vh;
-            padding-bottom:125px;
             h1{
                 font-size:100px;
                 line-height:1.55;
-                margin-bottom:-55px;
                 span.block{
                     margin-bottom:30px;
                     font-size: 92px;
@@ -328,6 +358,68 @@ header{
             top:auto;
             bottom:auto;
             margin: 25px auto 0;
+        }
+
+        &.open{
+            nav{
+                .logo,
+                .title{
+                    display:none;
+                }
+                .close-nav{
+                    display:block;
+                    position:absolute;
+                    padding:10px 15px;
+                    color:$white;
+
+                }
+                ul.fixed-nav{
+                    max-width:100%;
+                    text-align:center;
+                    li{
+                        display:inline-block;
+                        margin-left:0;
+                        .season{
+                            display:none;
+                        }
+                        a.active_filter{
+                            color:$yellow;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:374px){
+    header{
+        .heading-wrapper{
+            padding-top:75px;
+            margin-bottom:0;
+        }
+
+        nav{
+            .title{
+                font-size:12px;
+            }
+            ul.fixed-nav li{
+                font-size:12px;
+                a{
+                    padding-top:12.5px;
+                    padding-bottom:8.5px;
+                }
+            }
+        }
+
+        &.open{
+            nav{
+                .close-nav{
+                    padding-top:8.5px;
+                }
+            }
+
         }
     }
 }

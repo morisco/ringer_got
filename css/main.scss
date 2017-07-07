@@ -149,6 +149,20 @@ h3 .brand{
     color:#f23208;
 }
 
+hr{
+    display:inline-block;
+    margin:12px 0 10px;
+    vertical-align:middle;
+    background:$yellow;
+    border:0px;
+    &.third-width{
+        width:33%;
+    }
+    &.fifth-width{
+        width:20%;
+    }
+}
+
 #main-content{
     position:relative;
     margin-top:60px;
@@ -200,6 +214,14 @@ h3 .brand{
 
 .hidden {
     display: none !important;
+}
+
+.mobile-only{
+    display:none;
+}
+
+.text-center{
+    text-align:center;
 }
 
 /*
@@ -285,8 +307,20 @@ h3 .brand{
 
 @media(max-width:767px){
     #content{
-        padding:0 15px;
+        padding:0;
         width: 100%;
+    }
+
+    .mobile-only{
+        display:block;
+    }
+
+    .not-mobile{
+        display:none;
+    }
+
+    #main-content{
+        margin-top:30px;
     }
 
     .credits{

@@ -178,7 +178,7 @@
         <?php include 'components/header.php'; ?>
         <?php include 'components/intro.php';  ?>
         <div id="content">
-            <?php include 'components/mobile/nav.php'; ?>
+            <?php // include 'components/mobile/nav.php'; ?>
             <?php include 'components/filter-bar.php'; ?>
             <div class="divider"></div>
             <div id="main-content">

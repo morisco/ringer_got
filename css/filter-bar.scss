@@ -150,7 +150,9 @@
 }
 
 @media(max-width: 767px){
-    #filter-bar-wrapper{
-        display:none;
+    #filter-bar-wrapper #filter-bar{
+        div{
+            display:none !important;;
+        }
     }
 }

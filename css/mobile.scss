@@ -2,9 +2,12 @@
     display:none;
 }
 
-.is-mobile{
+.is-mobile,
+.is-mobile-block{
     display:none;
 }
+
+
 .is-tablet{
     display:none;
 }
@@ -36,14 +39,14 @@
         display:inline-block;
     }
 
+    .is-mobile-block{
+        display:block;
+    }
+
     .non-mobile{
         display:none !important;
     }
 
-    .mobile .logo,
-    .mobile .main-nav{
-        display:none;
-    }
 
     #mobile-nav{
         position:relative;
@@ -100,6 +103,7 @@
             background:transparent;
             z-index:0;
             display:none;
+            
         }
         .toggle{
             float:left;
