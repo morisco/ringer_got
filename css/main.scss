@@ -16,10 +16,11 @@ html,body{
 
 html {
     color: $black;
-    font-size: 1em;
+    font-size: 14px;
     @include body-text;
     line-height: 1.4;
     background:$green;
+    font-weight:300;
 }
 
 *,

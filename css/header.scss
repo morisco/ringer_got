@@ -129,7 +129,8 @@ header{
                 display:inline-block;
                 @include filter-sort-text;
                 color:$white;
-                margin-left:20px;
+                margin-left:10px;
+                font-family:'Nazareth Roman';
                 a{
                     display:inline-block;
                     padding: 5px 5px;
