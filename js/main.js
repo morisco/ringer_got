@@ -20,7 +20,7 @@ function CardList() {
     this.sort_id = GLOBALS.current_sort;
     this.filter_id = 'all';
 
-    this.initial_player = GLOBALS.player || false;
+    this.initial_player = GLOBALS.episode || false;
 
     this.filterOffsetPos = $('#filter-bar').offset().top - $('header nav').height();
     this.filterResetPos = this.filterOffsetPos + $('#filter-bar').height() + 38;
@@ -33,7 +33,7 @@ function CardList() {
         this.initEvents();
         this.scrollWatch();
         if(this.initial_player){
-            cardlist.openPlayer();
+            cardlist.openCard();
         }
         this.initCards();
     }
@@ -117,9 +117,9 @@ function CardList() {
         },100);
     };
 
-    this.openPlayer = function() {
+    this.openCard = function() {
         var timeout = false,
-            openCard = $('.card-item[data-id="' + GLOBALS.player + '"]'),
+            openCard = $('.card-item.episode-' + this.initial_player),
             openScrollPos = openCard.offset().top,
             scrollOffset = $(window).width() < 768 ? $('#mobile-nav').height() + 40 : 100,
             delay = $(window).width() < 768 ? 500 : 0;
@@ -129,7 +129,7 @@ function CardList() {
                 $('body').addClass('filter-fixed');
                 clearTimeout(timeout);
                 timeout = setTimeout(function(){
-                    events.publish('card.expanded', {id: GLOBALS.player})
+                    // events.publish('card.expanded', {id: GLOBALS.player})
                     $(window).on('scroll.scrollWatch', cardlist.scrollWatch);
                 },100);
             });

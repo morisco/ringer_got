@@ -68,7 +68,7 @@
     }
 
     $template_render = '';
-    $episode_id = isset($_GET['player']) ? $_GET['player'] : false;
+    $episode_id = isset($_GET['episode']) ? $_GET['episode'] : false;
     $count = $article_count;
     $coverage_count = 0;
     $season_count = array(
@@ -84,10 +84,11 @@
         $episode->color      = $sort_colors[$sort_list_id];
         $episode->size_class = 'medium';
         $episode->season_ranking = $season_count['season_' . $episode->season];
+        if($episode_id && $episode->episode_number == $episode_id){
+            $featured_episode = $episode;
+        }
 
-        // if($player_id && $player->filter_id === $player_id){
-        //     $featured_player = $player;
-        // }
+
         $template_render .= $engine->render(
             'card',
             $episode
@@ -120,15 +121,16 @@
     );
 
     $fb_meta = array();
-    $fb_meta['url'] = "http://nbadraft.theringer.com/";
-    $fb_meta['image'] = "http://nbadraft.theringer.com/img/nba_lede.jpg";
+    $fb_meta['url'] = "http://thrones.theringer.com/";
+    $fb_meta['image'] = "http://thrones.theringer.com/img/ringer-got-share.jpg";
     $fb_meta['description'] = "Check out The Ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects.";
-    $fb_meta['title'] = "The Ringer’s 2017 NBA Draft Guide";
+    $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
 
-    if(isset($featured_player)){
-        $fb_meta['url'] = "http://nbadraft.theringer.com/?player=" . $featured_player->filter_id;
-        $fb_meta['title'] = "Everything you need to know about " . $featured_player->name . " from The Ringer’s 2017 NBA Draft Guide";
-        $fb_meta['description'] = "Check out " . $featured_player->name . " in The Ringer's 2017 NBA Draft Guide";
+    if(isset($featured_episode)){
+        $fb_meta['url'] = "http://thrones.theringer.com/?episode=" . $featured_episode->episode_number;
+        $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
+        $fb_meta['description'] = "Why " . $featured_episode->title . " falls at no. " . $featured_episode->rank . " on @ringer’s ‘Game of Thrones’ episode rankings";;
+        $fb_meta['image'] = "http://thrones.theringer.com/img/episodes/episode-" . $featured_episode->episode_number . ".jpg";
     }
 
     $bodyClass = $sort_list_id;
@@ -148,7 +150,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The Ringer’s 2017 NBA Draft Guide</title>
+        <title>The Ringer&rsquo;s Definitive &ldquo;Game of Thrones&rdquo; Episode Rankings<</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type"   content="website" />
@@ -218,6 +220,7 @@
             GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.player = "<?php echo $player_id; ?>";
+            GLOBALS.episode = "<?php echo $episode_id; ?>";
             GLOBALS.more_coverage_articles = <?php echo json_encode($articles_json); ?>;
             GLOBALS.list = {
                 ringer      : GLOBALS.data['ringer'],

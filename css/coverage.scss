@@ -113,12 +113,11 @@
         }
     }
     #coverage-footer{
-        padding: 0 15px;
+        padding: 0 5%;
         width: 100%;
         .more-coverage {
             h3{
                 width:100%;
-                margin:0;
                 padding:0;
                 text-align:left;
                 &:after{
@@ -126,7 +125,6 @@
                 }
             }
             div{
-                max-width:calc(100% - 60px);
                 margin:0 auto;
                 a{
                     width:100% !important;
