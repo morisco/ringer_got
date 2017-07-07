@@ -185,6 +185,7 @@ body #item-list.filtered{
     }
 
     .info-column{
+        position:relative;
         float:left;
         padding: 0px 0 60px;
         width: 100%;
@@ -218,7 +219,7 @@ body #item-list.filtered{
             position:absolute;
             bottom:0;
             right:0;
-            width:60%;
+            width:100%;
             border-top:1px solid $yellow;
             padding-top:10px;
             font-size:14px;
@@ -731,9 +732,6 @@ body #item-list.filtered{
             .info-column{
                 max-width:65%;
                 padding-top:5px;
-            }
-            .item-footer{
-                width:65%;
             }
         }
     }

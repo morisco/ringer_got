@@ -7,6 +7,9 @@
     text-align:center;
     @include body-text;
     font-weight:300;
+    a{
+        color:$white;
+    }
     .regular{
         font-weight:500;
     }

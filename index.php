@@ -190,7 +190,7 @@
                 </div>
             </div>
             <div class="credits">
-                <div>Measurement data and player statistics via DraftExpress and Sports-Reference.</div>
+                <div><i>Disclosure: HBO is an initial investor in</i> The Ringer.</div>
             </div>
         </div>
         <div id="coverage-footer">
