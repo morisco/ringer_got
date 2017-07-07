@@ -221,16 +221,19 @@ body #item-list.filtered{
                 text-align:right;
                 font-style:italic;
                 a{
+                    display:block;
+                    margin-top:-4px;
+                    text-decoration:none;
                     color:$yellow;
-                    &:after{
-                        content:'';
-                        display:block;
-                        width:98.5%;
-                        background:$yellow;
-                        height:1px;
-                        margin-top:-2px;
-                        margin-left:3px;
-                        opacity:.6;
+                    img{
+                        display:inline-block;
+                        margin-left:5px;
+                        vertical-align:middle;
+                    }
+                    span{
+                        display:inline-block;
+                        vertical-align:middle;
+                        border-bottom:1px solid $yellow;
                     }
                 }
             }
