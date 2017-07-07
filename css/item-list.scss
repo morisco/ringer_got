@@ -775,12 +775,10 @@ body #item-list.filtered{
                         display:block;
                         text-align:left;
                         width:100%;
-                        a:after{
-                            display:none;
+                        a{
+                            margin-top:0;
                         }
-
                     }
-
                 }
             }
         }
