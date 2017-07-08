@@ -84,6 +84,7 @@
         $episode->color      = $sort_colors[$sort_list_id];
         $episode->size_class = 'medium';
         $episode->season_ranking = $season_count['season_' . $episode->season];
+        $episode->mobile = $detect->isMobile();
         if($episode_id && $episode->episode_number == $episode_id){
             $featured_episode = $episode;
         }
@@ -198,22 +199,6 @@
         <div id="coverage-footer">
             <?php echo $footer_coverage_render; ?>
         </div>
-
-        <script id="player-card-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./dist/templates/card.handlebars"); ?>
-        </script>
-
-        <script id="coverage-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./dist/templates/coverage.handlebars"); ?>
-        </script>
-
-        <script id="info-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./dist/templates/info.handlebars"); ?>
-        </script>
-
-        <script id="related-coverage-template" type="text/x-handlebars-template">
-            <?php echo file_get_contents("./dist/templates/related-coverage.handlebars"); ?>
-        </script>
 
         <script type="text/javascript">
             window.GLOBALS = {}
