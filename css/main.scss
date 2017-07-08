@@ -310,6 +310,10 @@ hr{
     #content{
         padding:0;
         width: 100%;
+        .divider{
+            width:90%;
+            margin:30px auto 0;
+        }
     }
 
     .mobile-only{

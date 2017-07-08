@@ -423,6 +423,11 @@ body #item-list.filtered{
                         width:100%;
                         a{
                             margin-top:0;
+                            img{
+                                position:absolute;
+                                right:0;
+                                @include transform(translateY(-50%));
+                            }
                         }
                     }
                 }
