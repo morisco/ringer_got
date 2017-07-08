@@ -6,9 +6,9 @@
             <ul class="main-nav">
                 <li><a target="_blank" href="https://bit.ly/ringerhome">HOME</a></li>
                 <li><a target="_blank" href="https://bit.ly/ringernba">TV</a></li>
-                <li><a target="_blank" href="https://bit.ly/ringerncaabasketball">Binge Mode</a></li>
+                <li><a target="_blank" href="https://bit.ly/ringerncaabasketball">&lsquo;Binge Mode&rsquo;</a></li>
                 <li><a target="_blank" href="https://theringer.com/nba-draft">&lsquo;The Watch&rsquo; Podcast</a></li>
-                <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs">Talk the Thrones</a></li>
+                <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs">&lsquo;Talk the Thrones&rsquo;</a></li>
             </ul>
             <ul class="fixed-nav">
                 <li class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>" data-sort-id="all" href="javascript:void(0);">All Seasons</a></li>

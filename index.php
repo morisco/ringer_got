@@ -85,11 +85,11 @@
         $episode->size_class = 'medium';
         $episode->season_ranking = $season_count['season_' . $episode->season];
         $episode->mobile = $detect->isMobile();
+
         if($episode_id && $episode->episode_number == $episode_id){
             $featured_episode = $episode;
         }
-
-
+        
         $template_render .= $engine->render(
             'card',
             $episode
