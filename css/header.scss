@@ -1,3 +1,4 @@
+$header_height: 40px;
 header{
     position:relative;
     height: auto;
@@ -106,11 +107,11 @@ header{
             max-width:110px;
             margin-left:10px;
             vertical-align:middle;
-            height:40px;
+            height:$header_height;
             img{
                 display:block;
                 width:100%;
-                margin-top:20px;
+                margin-top:($header_height/2);
                 @include transform(translateY(-50%));
             }
         }
@@ -119,7 +120,7 @@ header{
             display:none;
             color:$yellow;
             @include highlight-text;
-            height:40px;
+            height:$header_height;
             padding-left:10px;
             vertical-align:middle;
             text-transform:uppercase;
@@ -129,20 +130,20 @@ header{
                 &.non-mobile{
                     display:inline-block;
                 }
-                margin-top:20px;
+                margin-top:($header_height/2);
                 line-height:90%;
                 margin-right:5px;
                 @include transform(translateY(-50%));
             }
             .share{
                 display:inline-block;
-                width:20px;
+                width:($header_height/2);
                 vertical-align:top;
-                height:40px;
+                height:$header_height;
                 margin-right:2px;
                 text-indent:-55555px;
                 overflow:hidden;
-                background-size:20px;
+                background-size:($header_height/2);
                 background-position: center center;
                 background-repeat:no-repeat;
                 &.facebook{
@@ -158,7 +159,7 @@ header{
         ul{
             float:right;
             padding-right:10px;
-            height:40px;
+            height:$header_height;
 
             &.main-nav{
                 display:block;
@@ -174,15 +175,15 @@ header{
             li{
                 display:inline-block;
                 @include highlight-text;
-                height:40px;
+                height:$header_height;
                 a{
                     display:inline-block;
                     padding: 0 5px;
                     color:$white;
-                    height:40px;
+                    height:$header_height;
                     > span{
                         display:block;
-                        margin-top:20px;
+                        margin-top:($header_height/2);
                         @include transform(translateY(-50%));
                     }
                 }
