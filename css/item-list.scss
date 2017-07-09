@@ -236,8 +236,21 @@ body #item-list.filtered{
             a{
                 display:inline-block;
                 width:20px;
-                margin:5px 0 5px 5px;
+                height:20px;
+                margin:8px 0 5px 5px;
                 opacity:0.5;
+                text-indent:-55555px;
+                overflow:hidden;
+                background-size:100%;
+                background-position: center center;
+                &.facebook{
+                    background-image:url('../../img/facebook.png');
+                    background-image:url('../../img/facebook.svg');
+                }
+                &.twitter{
+                    background-image:url('../../img/twitter.png');
+                    background-image:url('../../img/twitter.svg');
+                }
                 &:hover{
                     opacity:1;
                 }

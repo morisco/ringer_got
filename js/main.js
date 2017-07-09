@@ -32,7 +32,6 @@ function CardList() {
         $('.mobile header:not(.open)').on('click', ' .fixed-nav', this.toggleNav);
         $('.mobile header').on('click', ' .close-nav', this.toggleNav);
 
-
         $(window).on('resize', this.windowResize);
         if(!cardlist.initial_episode){
             $(window).on('scroll', cardlist.scrollWatch);
