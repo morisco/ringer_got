@@ -7,8 +7,8 @@ header{
         -webkit-margin-before: 0em;
         -webkit-margin-after: 0em;
         margin: 20px 0 0;
-        line-height: 100%;
-        font-size: 120px;
+        line-height: .85;
+        font-size: 20vh;
         @include highlight-text;
         text-align:center;
         font-weight: normal;
@@ -63,19 +63,17 @@ header{
         span{
             display:block;
             text-align:center;
-            line-height:100%;
+            line-height:.85;
         }
         span.small{
-            font-size:62px;
-            line-height:125%;
+            font-size:7vh;
+            line-height:.85;
         }
 
         span.game-of-thrones{
-            font-size:120px;
         }
 
         span.episode-rankings{
-            font-size:116px;
         }
 
     }
@@ -144,7 +142,7 @@ header{
                 @include filter-sort-text;
                 color:$white;
                 margin-left:10px;
-                font-family:'Nazareth Roman';
+                font-family:'Lydia';
                 a{
                     display:inline-block;
                     padding: 8px 5px 4px;
@@ -202,16 +200,13 @@ header{
     header{
         h1{
             span.small{
-                font-size:50px;
-                line-height:125%;
+                
             }
 
             span.game-of-thrones{
-                font-size:96px;
             }
 
             span.episode-rankings{
-                font-size:93px;
             }
 
         }
@@ -222,16 +217,13 @@ header{
     header {
         h1{
             span.small{
-                font-size:43px;
-                line-height:125%;
+                
             }
 
             span.game-of-thrones{
-                font-size:85px;
             }
 
             span.episode-rankings{
-                font-size:82px;
             }
         }
     }
@@ -244,16 +236,15 @@ header{
         }
         h1{
             span.small{
-                font-size:43px;
-                line-height:125%;
+               
             }
 
             span.game-of-thrones{
-                font-size:85px;
+                
             }
 
             span.episode-rankings{
-                font-size:82px;
+                
             }
         }
     }
@@ -266,16 +257,15 @@ header{
         background-size: auto auto;
         h1{
             span.small{
-                font-size:22px;
-                line-height:125%;
+                font-size:4vh;
             }
 
             span.game-of-thrones{
-                font-size:42px;
+                font-size:14vw;
             }
 
             span.episode-rankings{
-                font-size:40px;
+                font-size:14vw;
             }
         }
         &:before{
