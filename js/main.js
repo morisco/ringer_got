@@ -66,7 +66,7 @@ function CardList() {
         } else {
             $('.image-column img').each(function(){
                 $(this).attr('src', $(this).data('src'));
-            })
+            });
             $('body').addClass('no-transition');
             $('body').removeClass('tablet mobile');
         }
