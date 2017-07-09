@@ -36,6 +36,7 @@ function CardList() {
         $(window).on('resize', this.windowResize);
         if(!cardlist.initial_episode){
             $(window).on('scroll', cardlist.scrollWatch);
+            cardlist.scrollWatch();
         }
     }
 
