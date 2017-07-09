@@ -8,7 +8,9 @@
     @include body-text;
     font-weight:300;
     a{
-        color:$white;
+        text-decoration:underline;
+        font-weight:500;
+        color:$yellow;
     }
     .regular{
         font-weight:500;
@@ -18,7 +20,7 @@
 @media(max-width:767px){
     #intro{
         font-size:14px;
-        text-align:left;
+        text-align:center;
         padding: 0 5%;
     }
 }
