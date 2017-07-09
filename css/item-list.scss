@@ -190,6 +190,12 @@ body #item-list.filtered{
             text-decoration:underline;
         }
 
+        .main-content:after{
+            content:'';
+            display:table;
+            clear:both;
+        }
+
         .medium-show{
             padding-left:30px;
         }
@@ -205,6 +211,23 @@ body #item-list.filtered{
             font-size: 14px;
             padding-top: 10px;
             letter-spacing: .05em;
+            float:left;
+        }
+
+        .shares{
+            float:right;
+            a{
+                display:inline-block;
+                width:20px;
+                margin:5px 0 5px 5px;
+                opacity:0.5;
+                &:hover{
+                    opacity:1;
+                }
+                img{
+                    max-width:100%;
+                }
+            }
         }
 
         .item-footer{
@@ -225,11 +248,18 @@ body #item-list.filtered{
                     margin-top:-4px;
                     text-decoration:none;
                     color:$yellow;
-                    img{
+
+                    .arrow{
                         display:inline-block;
-                        margin-left:5px;
-                        vertical-align:middle;
+                        width:24px;
+                        height:24px;
+                        background-image:url('../../img/circle-arrow.png');
+                        background-image:url('../../img/circle-arrow.svg');
+                        background-size:100%;
+                        border:0;
+                        margin-left:3px;
                     }
+
                     span{
                         display:inline-block;
                         vertical-align:middle;
@@ -423,7 +453,7 @@ body #item-list.filtered{
                         width:100%;
                         a{
                             margin-top:0;
-                            img{
+                            .arrow{
                                 position:absolute;
                                 right:0;
                                 @include transform(translateY(-50%));

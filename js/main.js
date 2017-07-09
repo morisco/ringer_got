@@ -17,6 +17,7 @@ function CardList() {
     this.size = 'medium';
 
     this.init = function() {
+        this.windowResize();
         this.initEvents();
         if(this.initial_episode){
             cardlist.openCard();
@@ -63,6 +64,9 @@ function CardList() {
             $('body').removeClass('tablet');
             $('body').addClass('mobile no-transition');
         } else {
+            $('.image-column img').each(function(){
+                $(this).attr('src', $(this).data('src'));
+            })
             $('body').addClass('no-transition');
             $('body').removeClass('tablet mobile');
         }

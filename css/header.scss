@@ -17,7 +17,7 @@ header{
     .heading-wrapper{
         position:relative;
         display:inline-block;
-        padding: 100px 0 0;
+        padding: 100px 0 20px;
         text-align:center;
         z-index:1;
         position:relative;
@@ -107,10 +107,13 @@ header{
             display:inline-block;
             max-width:110px;
             margin-left:10px;
-            padding-top:7.5px;
+            vertical-align:middle;
+            height:40px;
             img{
                 display:block;
                 width:100%;
+                margin-top:20px;
+                @include transform(translateY(-50%));
             }
         }
 
@@ -118,15 +121,38 @@ header{
             display:none;
             color:$yellow;
             @include highlight-text;
-            padding-top:10px;
+            height:40px;
             padding-left:10px;
-            padding-bottom:8px;
+            vertical-align:middle;
+            text-transform:uppercase;
+            letter-spacing:.1em;
+            font-size:14px;
+            > span{
+                &.non-mobile{
+                    display:inline-block;
+                }
+                margin-top:20px;
+                line-height:90%;
+                margin-right:5px;
+                @include transform(translateY(-50%));
+            }
+            .share{
+                display:inline-block;
+                width:20px;
+                vertical-align:top;
+                height:40px;
+                margin-right:2px;
+                img{
+                    margin-top:20px;
+                    @include transform(translateY(-50%));
+                    max-width:100%;
+                }
+            }
         }
         ul{
             float:right;
-            padding-top:8px;
             padding-right:10px;
-            padding-bottom:8px;
+            height:40px;
 
             &.main-nav{
                 display:block;
@@ -141,14 +167,18 @@ header{
 
             li{
                 display:inline-block;
-                @include filter-sort-text;
-                color:$white;
-                margin-left:10px;
-                font-family:'Nazareth Roman';
+                @include highlight-text;
+                height:40px;
                 a{
                     display:inline-block;
-                    padding: 8px 5px 4px;
+                    padding: 0 5px;
                     color:$white;
+                    height:40px;
+                    > span{
+                        display:block;
+                        margin-top:20px;
+                        @include transform(translateY(-50%));
+                    }
                 }
             }
         }
@@ -158,20 +188,26 @@ header{
 .filter-fixed{
     header{
         nav{
-            background-color:$green;
-            border-bottom:1px solid $yellow;
+            background-color:$darkgreen;
         }
-        .logo{
-            display:none;
+
+        .non-mobile{
+            display:inline-block;
         }
 
         .title{
             display:inline-block;
-
         }
         ul{
             &.fixed-nav{
                 display:block;
+                a{
+                    color:$yellow;
+                    opacity:0.5;
+                    &.active_filter{
+                        opacity:1;
+                    }
+                }
             }
             &.main-nav{
                 display:none;
@@ -260,6 +296,14 @@ header{
 }
 
 @media(max-width:767px){
+    .filter-fixed{
+        header{
+            .logo{
+                display:none;
+            }
+        }
+    }
+
     header{
         height:auto;
         padding-top:0;
@@ -283,9 +327,6 @@ header{
         }
         nav{
             display:block;
-            .logo{
-                padding-top:7px;
-            }
             ul.main-nav{
                 display:none;
 
@@ -303,12 +344,10 @@ header{
                     }
                     &.active_filter{
                         display:block;
+                        opacity:1;
                     }
                     a{
-                        padding:15px 10px 10px;
-                    }
-                    a.active_filter{
-                        color:$white;
+                        padding:0 10px;
                     }
                 }
             }
@@ -379,11 +418,16 @@ header{
                     li{
                         display:inline-block;
                         margin-left:0;
+                        a{
+                            color:$yellow;
+                            opacity:0.5;
+                        }
                         .season{
                             display:none;
                         }
                         a.active_filter{
                             color:$yellow;
+                            opacity:1;
                         }
 
                     }

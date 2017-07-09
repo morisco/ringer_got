@@ -1,6 +1,6 @@
 .more-coverage{
     clear:both;
-    padding: 30px 0px;
+    padding: 0 0 100px;
     &:after{
         clear:both;
         content:'';
@@ -12,18 +12,31 @@
         margin-bottom: 15px;
         border-bottom: 1px solid $yellow;
     }
+    .divider{
+        margin:0;
+    }
     div{
+        &:after{
+            clear:both;
+            content:'';
+            display:table;
+        }
         a{
             display:block;
             float:left;
+            text-align:center;
             width:calc(50% - 15px);
+            padding: 0 15px;
+            margin-top:30px;
             margin-bottom:30px;
             margin-right:30px;
+            color:$yellow;
             h4 {
-                font-size: 17px;
-                color: $white;
+                font-size: 20px;
+                color: $yellow;
                 line-height: 1.2;
-                @include body-text;
+                letter-spacing:0.1em;
+                @include highlight-text;
             }
             .img{
                 display:block;
@@ -48,11 +61,26 @@
     display:none;
 }
 
+#coverage-header{
+    position:relative;
+    width:95%;
+    max-width:950px;
+    margin:0 auto;
+    .more-coverage{
+        padding:60px 0 5px;
+    }
+    a{
+        float:left;
+        width:25%;
+        margin:30px 0;
+    }
+}
+
 #coverage-footer{
     position:relative;
     width:95%;
     max-width:1390px;
-    margin: 0 auto -150px;
+    margin: 60px auto -150px;
     padding: 0;
     z-index:2;
     .more-coverage{
@@ -99,7 +127,7 @@
 
 @media(max-width:767px){
     .more-coverage{
-        padding-bottom:0;
+        padding:0 0 15px;
         h3{
 
         }
@@ -112,9 +140,15 @@
             }
         }
     }
+
+    #coverage-header{
+        display:none;
+    }
+
     #coverage-footer{
         padding: 0 5%;
         width: 100%;
+        margin:30px 0;
         .more-coverage {
             h3{
                 width:100%;
@@ -128,7 +162,7 @@
                 margin:0 auto;
                 a{
                     width:100% !important;
-                    margin:0px 0 30px !important;
+                    margin:30px 0 30px !important;
                     float:none;
                     &:not(:first-of-type){
                         display:block;

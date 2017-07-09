@@ -178,7 +178,7 @@ hr{
     z-index:3;
     width:100%;
     max-width:950px;
-    padding: 60px 0;
+    padding: 0;
     margin:0 auto;
 
     &:after{
@@ -310,10 +310,6 @@ hr{
     #content{
         padding:0;
         width: 100%;
-        .divider{
-            width:90%;
-            margin:30px auto 0;
-        }
     }
 
     .mobile-only{
@@ -330,6 +326,7 @@ hr{
 
     .credits{
         margin-top:-15px;
+        margin-right:5%;
     }
 
     .filter-fixed-old #content{

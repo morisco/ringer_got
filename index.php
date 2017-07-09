@@ -25,8 +25,10 @@
 
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
+        $article_header_count = 4;
     } else{
         $article_count = 5;
+        $article_header_count = 0;
     }
 
     $sort_colors = array(
@@ -85,11 +87,12 @@
         $episode->size_class = 'medium';
         $episode->season_ranking = $season_count['season_' . $episode->season];
         $episode->mobile = $detect->isMobile();
+        $episode->encoded_title = urlencode($episode->title);
 
         if($episode_id && $episode->episode_number == $episode_id){
             $featured_episode = $episode;
         }
-        
+
         $template_render .= $engine->render(
             'card',
             $episode
@@ -105,7 +108,7 @@
             }
             $count = $article_count;
             $more_coverage = (object) array();
-            $more_coverage->articles = array_slice($articles, ($display_count * $coverage_count), $display_count);
+            $more_coverage->articles = array_slice($articles, ($article_header_count + ($display_count * $coverage_count)), $display_count);
             $template_render .= $engine->render(
                 'coverage',
                 $more_coverage
@@ -113,6 +116,12 @@
             $coverage_count++;
         }
     }
+    $header_coverage = (object) array();
+    $header_coverage->articles = array_slice($articles, 0, 4);
+    $header_coverage_render = $engine->render(
+        'coverage',
+        $header_coverage
+    );
 
     $footer_coverage = (object) array();
     $footer_coverage->articles = array_slice($articles, -4, 4);
@@ -180,10 +189,10 @@
 
         <?php include 'components/header.php'; ?>
         <?php include 'components/intro.php';  ?>
+        <div id="coverage-header"><?php echo $header_coverage_render; ?></div>
         <div id="content">
             <?php // include 'components/mobile/nav.php'; ?>
             <?php include 'components/filter-bar.php'; ?>
-            <div class="divider"></div>
             <div id="main-content">
                 <?php // include 'components/filter-side.php'; ?>
                 <div>
@@ -216,6 +225,14 @@
             };
             GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
             GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
+
+            $(document).ready(function(){
+                if(!$('body').hasClass('mobile')){
+                    $('.image-column img').each(function(){
+                        $(this).attr('src', $(this).data('src'));
+                    });
+                }
+            });
         </script>
         <script src="dist/js/all.js"></script>
 
