@@ -88,7 +88,7 @@ header{
         right:0;
         z-index:55555;
         text-align:left;
-        background-color:$black;
+        background-color:$greenblack;
         @include transition(background-color, .5s);
         .nav-wrapper{
             margin:0 auto;
@@ -104,7 +104,7 @@ header{
         }
         .logo{
             display:inline-block;
-            max-width:110px;
+            max-width:105px;
             margin-left:10px;
             vertical-align:middle;
             height:$header_height;
@@ -175,6 +175,8 @@ header{
             li{
                 display:inline-block;
                 @include highlight-text;
+                letter-spacing:0.075em;
+                text-transform:uppercase;
                 height:$header_height;
                 a{
                     display:inline-block;
