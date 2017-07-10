@@ -136,7 +136,7 @@ body #item-list.filtered{
                 &:after{
                     display:block;
                     content:'——';
-                    letter-spacing:-.1em;
+                    letter-spacing:-.12em;
                     font-size:30px;
                     line-height:.5;
                     margin-bottom:2px;
@@ -183,7 +183,7 @@ body #item-list.filtered{
             width:100%;
             border-radius:50%;
             overflow:hidden;
-            border:1px solid;
+            border:3px solid;
             img{
                 max-width:100%;
             }

@@ -118,7 +118,7 @@ header{
 
         .title{
             display:none;
-            color:$yellow;
+            color:$white;
             @include highlight-text;
             height:$header_height;
             padding-left:10px;
@@ -168,7 +168,7 @@ header{
             &.fixed-nav{
                 display:none;
                 a.active_filter{
-                    color:$yellow;
+                    color:$white;
                 }
             }
 
@@ -211,7 +211,7 @@ header{
             &.fixed-nav{
                 display:block;
                 a{
-                    color:$yellow;
+                    color:$white;
                     opacity:0.5;
                     &.active_filter{
                         opacity:1;
