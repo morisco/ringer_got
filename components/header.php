@@ -10,10 +10,10 @@
 
             <ul class="main-nav">
                 <li><a target="_blank" href="https://bit.ly/ringerhome"><span>HOME</span></a></li>
-                <li><a target="_blank" href="https://bit.ly/ringernba"><span>TV</span></a></li>
-                <li><a target="_blank" href="https://bit.ly/ringerncaabasketball"><span>&lsquo;Binge Mode&rsquo;</span></a></li>
-                <li><a target="_blank" href="https://theringer.com/nba-draft"><span>&lsquo;The Watch&rsquo; Podcast</span></a></li>
-                <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li>
+                <li><a target="_blank" href="https://theringer.com/tagged/tv"><span>TV</span></a></li>
+                <li><a target="_blank" href="https://theringer.com/binge-mode-c4ef7677c662"><span>&lsquo;Binge Mode&rsquo;</span></a></li>
+                <li><a target="_blank" href="https://theringer.com/the-watch-podcast-andy-greenwald-chris-ryan-ab903a3278de"><span>&lsquo;The Watch&rsquo; Podcast</span></a></li>
+                <?php // <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li> ?>
             </ul>
             <ul class="fixed-nav">
                 <li class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>" data-sort-id="all" href="javascript:void(0);"><span >All Seasons</span></a></li>

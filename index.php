@@ -109,10 +109,10 @@
             $count = $article_count;
             $more_coverage = (object) array();
             $more_coverage->articles = array_slice($articles, ($article_header_count + ($display_count * $coverage_count)), $display_count);
-            $template_render .= $engine->render(
-                'coverage',
-                $more_coverage
-            );
+            // $template_render .= $engine->render(
+            //     'coverage',
+            //     $more_coverage
+            // );
             $coverage_count++;
         }
     }
@@ -123,12 +123,12 @@
         $header_coverage
     );
 
-    $footer_coverage = (object) array();
-    $footer_coverage->articles = array_slice($articles, -4, 4);
-    $footer_coverage_render = $engine->render(
-        'coverage',
-        $footer_coverage
-    );
+    // $footer_coverage = (object) array();
+    // $footer_coverage->articles = array_slice($articles, -4, 4);
+    // $footer_coverage_render = $engine->render(
+    //     'coverage',
+    //     $footer_coverage
+    // );
 
     $fb_meta = array();
     $fb_meta['url'] = "http://thrones.theringer.com/";
@@ -238,14 +238,13 @@
         <script src="dist/js/all.js"></script>
 
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-98869396-1', 'auto');
-          ga('send', 'pageview');
+            ga('create', 'UA-102272660-1', 'auto');
+            ga('send', 'pageview');
         </script>
-
     </body>
 </html>
