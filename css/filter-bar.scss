@@ -122,6 +122,11 @@
 }
 
 @media(max-width:1023px){
+
+    #filter-bar-wrapper{
+        width:95%;
+        margin:0 auto;
+    }
     #filter-bar div.filter .filter-wrapper img,
     #filter-bar div.filter .filter-wrapper a{
         display:none !important;

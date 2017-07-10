@@ -190,6 +190,7 @@
         <?php include 'components/header.php'; ?>
         <?php include 'components/intro.php';  ?>
         <div id="coverage-header"><?php echo $header_coverage_render; ?></div>
+        <div class="divider is-mobile-block"></div>
         <div id="content">
             <?php // include 'components/mobile/nav.php'; ?>
             <?php include 'components/filter-bar.php'; ?>
