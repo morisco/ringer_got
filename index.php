@@ -133,7 +133,7 @@
     $fb_meta = array();
     $fb_meta['url'] = "http://thrones.theringer.com/";
     $fb_meta['image'] = "http://thrones.theringer.com/img/ringer-got-share.jpg";
-    $fb_meta['description'] = "Check out The Ringer’s 2017 NBA Draft Guide, a comprehensive look at the top 60 prospects.";
+    $fb_meta['description'] = "From no. 1 to no. 60, we ranked all of the show’s episodes in time for the Season 7 premiere";
     $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
 
     if(isset($featured_episode)){

@@ -201,8 +201,9 @@ hr{
 
 .credits{
     @include detail-text;
-    color:$white;
+    color:$yellow;
     float:right;
+    margin-bottom:30px;
 }
 
 /* ==========================================================================

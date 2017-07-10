@@ -3,7 +3,7 @@
         <div class="nav-wrapper">
             <a href="http://theringer.com" class="logo"><img src="img/logo.png" alt="The Ringer Logo" /></a>
             <div href="javascript:void(0);" class="title">
-                <span class="is-mobile">&lsquo;GOT&rsquo; Episode Rankings</span> <span class="non-mobile">The Definitive &ldquo;Game of Thrones&rdquo; Episode Rankings</span>
+                <span class="is-mobile">&lsquo;GOT&rsquo; Episode Rankings</span> <span class="non-mobile">The Definitive &lsquo;Game of Thrones&rsquo; Episode Rankings</span>
                 <a class="share facebook non-mobile" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com">Share On Facebook</a>
                 <a class="share twitter non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=https://thrones.theringer.com&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings">Share On Twitter</a>
             </div>

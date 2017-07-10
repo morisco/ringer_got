@@ -148,11 +148,11 @@ header{
                 background-repeat:no-repeat;
                 &.facebook{
                     background-image:url('../../img/facebook.png');
-                    background-image:url('../../img/facebook.svg');
+                    background-image:url('../../img/facebook2.svg');
                 }
                 &.twitter{
                     background-image:url('../../img/twitter.png');
-                    background-image:url('../../img/twitter.svg');
+                    background-image:url('../../img/twitter2.svg');
                 }
             }
         }
@@ -420,14 +420,14 @@ header{
                         display:inline-block;
                         margin-left:0;
                         a{
-                            color:$yellow;
+                            color:$white;
                             opacity:0.5;
                         }
                         .season{
                             display:none;
                         }
                         a.active_filter{
-                            color:$yellow;
+                            color:$white;
                             opacity:1;
                         }
 
