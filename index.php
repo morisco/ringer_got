@@ -160,7 +160,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The Ringer&rsquo;s Definitive &ldquo;Game of Thrones&rdquo; Episode Rankings<</title>
+        <title>The Ringer&rsquo;s Definitive &lsquo;Game of Thrones&rsquo; Episode Rankings<</title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type"   content="website" />
