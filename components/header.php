@@ -11,6 +11,7 @@
             <ul class="main-nav">
                 <li><a target="_blank" href="https://bit.ly/ringerhome"><span>HOME</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/tagged/tv"><span>TV</span></a></li>
+                <li><a target="_blank" href="https://theringer.com/talk-the-thrones-game-of-thrones-recap-show-5a3e5933ca37"><span>&lsquo;Watch the Thrones&rsquo;</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/binge-mode-c4ef7677c662"><span>&lsquo;Binge Mode&rsquo;</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/the-watch-podcast-andy-greenwald-chris-ryan-ab903a3278de"><span>&lsquo;The Watch&rsquo; Podcast</span></a></li>
                 <?php // <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li> ?>
