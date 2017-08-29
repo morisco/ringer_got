@@ -46,12 +46,13 @@
         '3'     => "Season 3",
         '4'     => "Season 4",
         '5'     => "Season 5",
-        '6'     => "Season 6"
+        '6'     => "Season 6",
+        '7'     => "Season 7"
     );
 
-    $sort_list_options = array('1', '2', '3', '4', '5', '6');
+    $sort_list_options = array('1', '2', '3', '4', '5', '6', '7');
 
-    if($_GET['list'] && in_array($_GET['list'], $sort_list_options)){
+    if(isset($_GET['list']) && in_array($_GET['list'], $sort_list_options)){
         $sort_list_id = $_GET['list'];
     } else{
         $sort_list_id = 'all';
@@ -59,7 +60,7 @@
 
     $sort_dropdown_name = isset($sort_list_name[$sort_list_id]) ? $sort_list_name[$sort_list_id] : $sort_list_name['all'];
 
-    $sort_list = $data->$sort_list_id;
+    // $sort_list = $data->$sort_list_id;
     $sorted_episodes = [];
     foreach($episode_data as $key => $episode) {
         if ($episode->season === $sort_list_id || $sort_list_id === 'all') {
@@ -79,11 +80,11 @@
         'season_3' => 0,
         'season_4' => 0,
         'season_5' => 0,
-        'season_6' => 0
+        'season_6' => 0,
+        'season_7' => 0
     );
     foreach($sorted_episodes as $key => $episode){
         $season_count['season_' . $episode->season]++;
-        $episode->color      = $sort_colors[$sort_list_id];
         $episode->size_class = 'medium';
         $episode->season_ranking = $season_count['season_' . $episode->season];
         $episode->mobile = $detect->isMobile();
@@ -133,7 +134,7 @@
     $fb_meta = array();
     $fb_meta['url'] = "http://thrones.theringer.com/";
     $fb_meta['image'] = "http://thrones.theringer.com/img/ringer-got-share.jpg";
-    $fb_meta['description'] = "From no. 1 to no. 60, we ranked all of the show’s episodes in time for the Season 7 premiere";
+    $fb_meta['description'] = "From no. 1 to no. 67, we ranked all of the show’s episodes through the Season 7. The eighth season can't come soon enough.";
     $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
 
     if(isset($featured_episode)){
@@ -180,7 +181,6 @@
         <link rel="apple-touch-icon" sizes="120x120" href="https://cdn-images-1.medium.com/fit/c/120/120/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="76x76" href="https://cdn-images-1.medium.com/fit/c/76/76/1*w1O1RbAfBRNSxkSC48L1PQ.png">
         <link rel="apple-touch-icon" sizes="60x60" href="https://cdn-images-1.medium.com/fit/c/60/60/1*w1O1RbAfBRNSxkSC48L1PQ.png">
-        <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.arrow-fill{fill:<?php echo $sort_colors[$sort_list_id]; ?>; } .white-fill{fill:#fff;}</style>
     </head>
     <body class="<?php echo $bodyClass; ?> medium">
         <!--[if lt IE 8]>
@@ -206,24 +206,12 @@
                 <div><i>Disclosure: HBO is an initial investor in</i> The Ringer.</div>
             </div>
         </div>
-        <div id="coverage-footer">
-            <?php echo $footer_coverage_render; ?>
-        </div>
 
         <script type="text/javascript">
             window.GLOBALS = {}
             GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
-            GLOBALS.player = "<?php echo $player_id; ?>";
             GLOBALS.episode = "<?php echo $episode_id; ?>";
-            GLOBALS.more_coverage_articles = <?php echo json_encode($articles_json); ?>;
-            GLOBALS.list = {
-                ringer      : GLOBALS.data['ringer'],
-                kevin       : GLOBALS.data['kevin'],
-                danny       : GLOBALS.data['danny'],
-                jonathan   : GLOBALS.data['jonathan'],
-                az          : GLOBALS.data['a_z']
-            };
             GLOBALS.theme_colors = <?php echo json_encode($sort_colors); ?>;
             GLOBALS.current_sort = "<?php echo $sort_list_id; ?>";
 

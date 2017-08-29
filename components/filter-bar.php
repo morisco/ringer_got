@@ -40,6 +40,11 @@
                 <span>6</span>
             </div>
         </div>
+        <div class="small filter <?php echo ($sort_list_id === '7') ? 'active_filter' : '' ?>" data-sort-id="7">
+            <div class="filter-wrapper">
+                <span>7</span>
+            </div>
+        </div>
     </div>
     <div id="page-share">
         <a class="share non-mobile" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com"><img src="img/facebook.svg" alt="Facebook Logo" /></a>

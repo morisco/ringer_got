@@ -1,0 +1,1 @@
+ErrorDocument 404 http://localhost:8888/the_ringer/ringer_got/404.php
