@@ -11,9 +11,9 @@
             <ul class="main-nav">
                 <li><a target="_blank" href="https://bit.ly/ringerhome"><span>HOME</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/tagged/tv"><span>TV</span></a></li>
+                <li><a target="_blank" href="https://t.co/N4GRS96Eze"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/binge-mode-c4ef7677c662"><span>&lsquo;Binge Mode&rsquo;</span></a></li>
                 <li><a target="_blank" href="https://theringer.com/the-watch-podcast-andy-greenwald-chris-ryan-ab903a3278de"><span>&lsquo;The Watch&rsquo; Podcast</span></a></li>
-                <?php // <li><a target="_blank" href="https://bit.ly/ringernbaplayoffs"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li> ?>
             </ul>
             <ul class="fixed-nav">
                 <li class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>" data-sort-id="all" href="javascript:void(0);"><span >All Seasons</span></a></li>
@@ -24,6 +24,7 @@
                 <li class="<?php echo ($sort_list_id === '5')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '5') ? 'active_filter' : '' ?>" data-sort-id="5" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>5</span></a></li>
                 <li class="<?php echo ($sort_list_id === '6')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '6') ? 'active_filter' : '' ?>" data-sort-id="6" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>6</span></a></li>
                 <li class="<?php echo ($sort_list_id === '7')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '7') ? 'active_filter' : '' ?>" data-sort-id="7" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>7</span></a></li>
+
             </ul>
             <a href="javascript:void(0);" class="close-nav">X</a>
         </div>
