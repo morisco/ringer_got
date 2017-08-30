@@ -1,4 +1,24 @@
 <?php
+
+    require_once './vendor/autoload.php';
+
+    use Aws\S3\S3Client;
+    $ACCESS_KEY = "AKIAIQTPROH6BA7PQY5A";
+    $SECRET_KEY =  "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";
+    $clientS3 = S3Client::factory(array(
+        'key'    => $ACCESS_KEY,
+        'secret' => $SECRET_KEY
+    ));
+
+    $http = new \Guzzle\Http\Client;
+
+    $result = $clientS3->getObjectUrl('cms-ringer', '/staging/got.json');
+
+    $response = $http->get($result)->send();
+    $data = $response->json();
+
+
+
     require_once 'MobileDetect/Mobile_Detect.php';
     $detect = new Mobile_Detect;
 
@@ -17,11 +37,9 @@
         )
     ));
 
-    $data_string = file_get_contents("./data/data.json");
-    $data = json_decode($data_string);
-    $episode_data = $data->episodes;
+    $episode_data = $data['contents'];
 
-    $articles = $data->more_coverage;
+    // $articles = $data->more_coverage;
 
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
@@ -63,9 +81,10 @@
     // $sort_list = $data->$sort_list_id;
     $sorted_episodes = [];
     foreach($episode_data as $key => $episode) {
-        if ($episode->season === $sort_list_id || $sort_list_id === 'all') {
-            $episode->id = count($sorted_episodes) + 1;
-            $episode->rank = count($sorted_episodes) + 1;
+
+        if ($episode['season'] === $sort_list_id || $sort_list_id === 'all') {
+            $episode['id'] = count($sorted_episodes) + 1;
+            $episode['rank'] = count($sorted_episodes) + 1;
             $sorted_episodes[] = $episode;
         }
     }
@@ -84,13 +103,12 @@
         'season_7' => 0
     );
     foreach($sorted_episodes as $key => $episode){
-        $season_count['season_' . $episode->season]++;
-        $episode->size_class = 'medium';
-        $episode->season_ranking = $season_count['season_' . $episode->season];
-        $episode->mobile = $detect->isMobile();
-        $episode->encoded_title = urlencode($episode->title);
+        $season_count['season_' . $episode['season']]++;
+        $episode['season_ranking'] = $season_count['season_' . $episode['season']];
+        $episode['mobile'] = $detect->isMobile();
+        $episode['encoded_title'] = urlencode($episode['title']);
 
-        if($episode_id && $episode->episode_number == $episode_id){
+        if($episode_id && $episode['episode_number'] == $episode_id){
             $featured_episode = $episode;
         }
 
@@ -101,7 +119,7 @@
 
         $count--;
 
-        if($count == 0 && ($episode->rank !== count($sorted_episodes)) ){
+        if($count == 0 && ($episode['rank'] !== count($sorted_episodes)) ){
             if($detect->isMobile() && !$detect->isTablet()){
                 $display_count = 1;
             } else {
@@ -109,7 +127,7 @@
             }
             $count = $article_count;
             $more_coverage = (object) array();
-            $more_coverage->articles = array_slice($articles, ($article_header_count + ($display_count * $coverage_count)), $display_count);
+            // $more_coverage->articles = array_slice($articles, ($article_header_count + ($display_count * $coverage_count)), $display_count);
             // $template_render .= $engine->render(
             //     'coverage',
             //     $more_coverage
@@ -118,7 +136,7 @@
         }
     }
     $header_coverage = (object) array();
-    $header_coverage->articles = array_slice($articles, 0, 4);
+    // $header_coverage->articles = array_slice($articles, 0, 4);
     $header_coverage_render = $engine->render(
         'coverage',
         $header_coverage
