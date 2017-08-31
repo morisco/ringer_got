@@ -1,5 +1,8 @@
 {
     "require": {
-        "aws/aws-sdk-php": "2.*"
+        "aws/aws-sdk-php": "2.*",
+        "erusev/parsedown": "^1.6",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "xamin/handlebars.php": "^0.10.4"
     }
 }

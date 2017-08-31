@@ -17,14 +17,11 @@
     $response = $http->get($result)->send();
     $data = $response->json();
 
+    $Parsedown = new Parsedown();
 
 
-    require_once 'MobileDetect/Mobile_Detect.php';
-    $detect = new Mobile_Detect;
 
-    require 'Handlebars/Autoloader.php';
     Handlebars\Autoloader::register();
-
     use Handlebars\Handlebars;
 
     $engine = new Handlebars(array(
@@ -39,8 +36,7 @@
 
     $episode_data = $data['contents'];
 
-    // $articles = $data->more_coverage;
-
+    $detect = new Mobile_Detect;
     if($detect->isMobile() && !$detect->isTablet()){
         $article_count = 5;
         $article_header_count = 4;
@@ -107,6 +103,8 @@
         $episode['season_ranking'] = $season_count['season_' . $episode['season']];
         $episode['mobile'] = $detect->isMobile();
         $episode['encoded_title'] = urlencode($episode['title']);
+        $episode['blurb'] = $Parsedown->text($episode['blurb']);
+
 
         if($episode_id && $episode['episode_number'] == $episode_id){
             $featured_episode = $episode;
