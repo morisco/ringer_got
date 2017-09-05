@@ -1,5 +1,6 @@
 <li class="card-item col-xs-12 episode-{{episode_number}} season-{{season}} {{filter_id}}" data-id="{{filter_id}}">
     <div class="wrapper">
+
         <div class="rank-column background-theme">
             <div class="rank-wrapper">
                 <div class="rank"><span class="overall-rank">{{rank}}</span><span class="season-rank">{{season_ranking}}</span></div>
@@ -24,6 +25,9 @@
             <div class="main-content">
                 <div class="title">
                     {{title}}
+                    <div class="edit-content" ng-if="staging">
+                        <a href="https://mikemorisco.com/cms/#!/content/got/{{id}}/edit" target="_blank"><img src="img/ic_edit_white_24dp_2x.png"/></a>
+                    </div>
                 </div>
                 <div class="is-mobile-block text-center mobile-director">
                     <hr class="fifth-width" />

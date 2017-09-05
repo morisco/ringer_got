@@ -1,4 +1,5 @@
 <?php
+    $staging_check = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'http://mikemorisco.com';
 
     require_once './vendor/autoload.php';
 
@@ -18,8 +19,6 @@
     $data = $response->json();
 
     $Parsedown = new Parsedown();
-
-
 
     Handlebars\Autoloader::register();
     use Handlebars\Handlebars;
@@ -77,9 +76,9 @@
     // $sort_list = $data->$sort_list_id;
     $sorted_episodes = [];
     foreach($episode_data as $key => $episode) {
-
+        $episode['staging'] = $staging_check;
         if ($episode['season'] === $sort_list_id || $sort_list_id === 'all') {
-            $episode['id'] = count($sorted_episodes) + 1;
+            // $episode['id'] = count($sorted_episodes) + 1;
             $episode['rank'] = count($sorted_episodes) + 1;
             $sorted_episodes[] = $episode;
         }
@@ -167,6 +166,9 @@
     if ($detect->isMobile()) {
         $bodyClass .= ' mobile';
     }
+    if($staging_check){
+        $bodyClass .= ' staging';
+    }
 ?>
 <!doctype html>
     <!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
@@ -202,7 +204,11 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <?php if($staging_check){ ?>
+            <div id="staging-message">
+                STAGING SITE | <a href="https://mikemorisco.com/cms">Go to cms</a>
+            </div>
+        <?php } ?>
         <?php include 'components/header.php'; ?>
         <?php include 'components/intro.php';  ?>
         <div id="coverage-header"><?php echo $header_coverage_render; ?></div>
