@@ -1,5 +1,5 @@
 <?php
-    $staging_check = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'http://mikemorisco.com';
+    $staging_check = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'mikemorisco.com';
 
     require_once './vendor/autoload.php';
 
@@ -13,16 +13,24 @@
 
     $http = new \Guzzle\Http\Client;
 
-    $result = $clientS3->getObjectUrl('cms-ringer', '/staging/got.json');
+    $location = $staging_check ? 'staging' : 'production';
 
-    $response = $http->get($result)->send();
-    $data = $response->json();
+    $content_result = $clientS3->getObjectUrl('cms-ringer', '/'. $location .'/got.json');
+    $content_response = $http->get($content_result)->send();
+    $data = $content_response->json();
+
+    $config_result = $clientS3->getObjectUrl('cms-ringer', '/config/'.$location.'/got.json');
+    $config_response = $http->get($config_result)->send();
+    $config = $config_response->json()[0];
+
+    $twitter_url = $config['production_url_short'] !== '' ? $config['production_url_short'] : $config['production_url'];
 
     $Parsedown = new Parsedown();
 
     Handlebars\Autoloader::register();
     use Handlebars\Handlebars;
 
+    $string_engine = new Handlebars();
     $engine = new Handlebars(array(
         'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/dist/templates/'),
         'partials_loader' => new \Handlebars\Loader\FilesystemLoader(
@@ -104,10 +112,19 @@
         $episode['encoded_title'] = urlencode($episode['title']);
         $episode['blurb'] = $Parsedown->text($episode['blurb']);
 
-
         if($episode_id && $episode['episode_number'] == $episode_id){
             $featured_episode = $episode;
         }
+
+        $twitter_share_text = $string_engine->render(
+            $config['twitter_content_share'],
+            $episode
+        );
+
+        $facebook_url = $config[$location . '_url'] . '?episode=' . $episode['episode_number'];
+
+        $episode['twitter_share'] = 'https://twitter.com/intent/tweet?url='.$config['production_url'].'?episode='.$episode['episode_number'].'&text='.urlencode($twitter_share_text);
+        $episode['facebook_share'] = 'https://www.facebook.com/sharer/sharer.php?u=' . $facebook_url;
 
         $template_render .= $engine->render(
             'card',
@@ -147,16 +164,24 @@
     // );
 
     $fb_meta = array();
-    $fb_meta['url'] = "http://thrones.theringer.com/";
-    $fb_meta['image'] = "http://thrones.theringer.com/img/ringer-got-share.jpg";
-    $fb_meta['description'] = "From no. 1 to no. 67, we ranked all of the show’s episodes through the Season 7. The eighth season can't come soon enough.";
-    $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
+    $fb_meta['url'] = $config[$location . '_url'];
+    $fb_meta['image'] = $config['facebook_page_share_image'];
+    $fb_meta['description'] = $config['facebook_page_share_description'];
+    $fb_meta['title'] = $config['facebook_page_share_title'];
 
     if(isset($featured_episode)){
-        $fb_meta['url'] = "http://thrones.theringer.com/?episode=" . $featured_episode->episode_number;
-        $fb_meta['title'] = "The Ringer’s Definitive 'Game of Thrones’ Episode Rankings ";
-        $fb_meta['description'] = "Why " . $featured_episode->title . " falls at no. " . $featured_episode->rank . " on @ringer’s ‘Game of Thrones’ episode rankings";;
-        $fb_meta['image'] = "http://thrones.theringer.com/img/episodes/episode-" . $featured_episode->episode_number . ".jpg";
+        $facebook_share_title = $string_engine->render(
+            $config['facebook_content_share_title'],
+            $featured_episode
+        );
+        $facebook_share_description = $string_engine->render(
+            $config['facebook_content_share_description'],
+            $featured_episode
+        );
+        $fb_meta['url'] = $config[$location . '_url'] . "?episode=" . $featured_episode['episode_number'];
+        $fb_meta['title'] = $facebook_share_title;
+        $fb_meta['description'] = $facebook_share_description;
+        $fb_meta['image'] = "http://thrones.theringer.com/img/episodes/episode-" . $featured_episode['episode_number'] . ".jpg";
     }
 
     $bodyClass = $sort_list_id;
@@ -179,7 +204,7 @@
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>The Ringer&rsquo;s Definitive &lsquo;Game of Thrones&rsquo; Episode Rankings<</title>
+        <title><?php echo $config['name']; ?></title>
 
         <meta property="og:url" content="<?php echo $fb_meta['url']; ?>" />
         <meta property="og:type"   content="website" />
@@ -187,7 +212,7 @@
         <meta property="og:description" content="<?php echo $fb_meta['description']; ?>" />
         <meta property="og:image" content="<?php echo $fb_meta['image']; ?>" />
 
-        <meta name="description" content="">
+        <meta name="description" content="<?php echo $config['description']; ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <link rel="stylesheet" href="dist/css/all.css?t=<?php echo time(); ?>">
@@ -206,7 +231,7 @@
         <![endif]-->
         <?php if($staging_check){ ?>
             <div id="staging-message">
-                STAGING SITE | <a href="https://mikemorisco.com/cms">Go to cms</a>
+                STAGING SITE | <a href="https://mikemorisco.com/cms" target="_blank">Go to cms</a>
             </div>
         <?php } ?>
         <?php include 'components/header.php'; ?>
