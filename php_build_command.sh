@@ -1,8 +1,9 @@
 #!/bin/bash -eo pipefail
+
 static_markup=$(php index.php)
 
 if [[ $? -eq 0 ]]; then
-    echo $static_markup > index.html
+    echo $static_markup > indexpz.html
 else
     echo "build exited with status $?, output:"
     echo "$static_markup"
