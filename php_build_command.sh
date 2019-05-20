@@ -1,5 +1,5 @@
 #!/bin/bash -eo pipefail
-
+echo __DIR__;
 static_markup=$(php index.php)
 
 if [[ $? -eq 0 ]]; then
