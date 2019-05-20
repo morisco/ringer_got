@@ -63,10 +63,11 @@ require_once './vendor/autoload.php';
         '5'     => "Season 5",
         '6'     => "Season 6",
         '7'     => "Season 7",
-        '8'     => "Season 8"
+        // '8'     => "Season 8"
     );
 
-    $sort_list_options = array('1', '2', '3', '4', '5', '6', '8');
+    $sort_list_options = array('1', '2', '3', '4', '5', '6', '7');
+    // $sort_list_options = array('1', '2', '3', '4', '5', '6', '7', '8');
 
     if(isset($_GET['list']) && in_array($_GET['list'], $sort_list_options)){
         $sort_list_id = $_GET['list'];
@@ -99,7 +100,7 @@ require_once './vendor/autoload.php';
         'season_5' => 0,
         'season_6' => 0,
         'season_7' => 0,
-        'season_8' => 0
+        // 'season_8' => 0
     );
     foreach($sorted_episodes as $key => $episode){
         $season_count['season_' . $episode['season']]++;

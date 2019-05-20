@@ -24,7 +24,6 @@
                 <li class="<?php echo ($sort_list_id === '5')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '5') ? 'active_filter' : '' ?>" data-sort-id="5" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>5</span></a></li>
                 <li class="<?php echo ($sort_list_id === '6')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '6') ? 'active_filter' : '' ?>" data-sort-id="6" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>6</span></a></li>
                 <li class="<?php echo ($sort_list_id === '7')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '7') ? 'active_filter' : '' ?>" data-sort-id="7" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>7</span></a></li>
-                <li class="<?php echo ($sort_list_id === '8')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '8') ? 'active_filter' : '' ?>" data-sort-id="8" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>8</span></a></li>
 
             </ul>
             <a href="javascript:void(0);" class="close-nav">X</a>
