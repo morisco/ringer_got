@@ -254,7 +254,7 @@ require_once './vendor/autoload.php';
         </div>
 
         <script type="text/javascript">
-            window.GLOBALS = {}
+            window.GLOBALS = {};
             GLOBALS.isTablet = "<?php echo $detect->isTablet(); ?>";
             GLOBALS.data = <?php echo json_encode($data, JSON_FORCE_OBJECT); ?>;
             GLOBALS.episode = "<?php echo $episode_id; ?>";
