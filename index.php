@@ -26,9 +26,9 @@ require_once './vendor/autoload.php';
 
     $string_engine = new Handlebars();
     $engine = new Handlebars(array(
-        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/dist/templates/'),
+        'loader' => new \Handlebars\Loader\FilesystemLoader('/home/circleci/heddekv2/dist/templates/'),
         'partials_loader' => new \Handlebars\Loader\FilesystemLoader(
-            __DIR__ . '/dist/templates/',
+            '/home/circleci/heddekv2/dist/templates/',
             array(
                 'prefix' => '_'
             )
