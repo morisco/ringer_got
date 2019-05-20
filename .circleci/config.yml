@@ -9,7 +9,7 @@ defaults: &defaults
 jobs:
   build-and-deploy:
     <<: *defaults
-
+    working_directory: ~/heddekv2
     steps:
       - checkout
       - run:
