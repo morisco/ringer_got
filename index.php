@@ -25,7 +25,7 @@ require_once './vendor/autoload.php';
     use Handlebars\Handlebars;
 
     $string_engine = new Handlebars();
-    var_dump(__DIR__);
+    echo __DIR__;
     die();
     $engine = new Handlebars(array(
         'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__ . '../../../dist/templates/'),
