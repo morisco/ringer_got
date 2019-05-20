@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var gzip = require('gulp-gzip');
 
-gulp.task('production', ['sassgz', 'jsgz', 'vendorgz']);
+gulp.task('production', ['sassgz', 'jsgz', 'vendorgz', 'templates']);
 
 gulp.task('watch', ['sass', 'js', 'templates'], function() {
     gulp.watch('./css/*.scss', ['sass']);
