@@ -4,6 +4,9 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
+var gzip = require('gulp-gzip');
+
+gulp.task('production', ['sassgz', 'jsgz', 'vendorgz', 'templates']);
 
 gulp.task('watch', ['sass', 'js', 'templates'], function() {
     gulp.watch('./css/*.scss', ['sass']);
@@ -17,6 +20,28 @@ gulp.task('sass', function () {
           .pipe(sass().on('error', sass.logError))
           .pipe(cleanCSS({compatibility: 'ie8'}))
           .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('sassgz', function () {
+  gulp.src([
+          './css/*.scss'
+      ])
+        .pipe(concat('all.css'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gzip())
+        .pipe(gulp.dest('./dist/css'));
+});
+
+
+gulp.task('jsgz', function () {
+  gulp.src([
+          'js/*.js'
+      ])
+      .pipe(concat('all.js'))
+      .pipe(uglify({ mangle: false }))
+      .pipe(gzip())
+      .pipe(gulp.dest('./dist/js'))
 });
 
 gulp.task('js', function () {
@@ -58,4 +83,14 @@ gulp.task('vendor', function () {
         .pipe(concat('vendor.js'))
         .pipe(uglify({mangle: true}))
         .pipe(gulp.dest('./dist/vendor'))
+});
+
+gulp.task('vendorgz', function () {
+  gulp.src([
+          'js/vendor/*.js'
+      ])
+      .pipe(concat('vendor.js'))
+      .pipe(uglify({mangle: true}))
+      .pipe(gzip())
+      .pipe(gulp.dest('./dist/vendor'))
 });

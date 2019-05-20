@@ -1,0 +1,52 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: circleci/php:7.1-cli-node-browsers
+  environment:
+    ENV: PROD
+
+jobs:
+  build-and-deploy:
+    <<: *defaults
+    working_directory: ~/heddekv2
+    steps:
+      - checkout
+      - run:
+          name: Composer install
+          command: php composer.phar install
+      - run:
+          name: Install Gulp
+          command: npm install gulp gulp-cli gulp-sass gulp-concat gulp-uglify gulp-gzip gulp-clean-css
+      - run:
+          name: Run Gulp
+          command: npx gulp production
+      - run:
+          name: Generate static files
+          command: bash php_build_command.sh
+      - run:
+          name: GZIP HTML
+          command: node .circleci/deploy.js
+      - run:
+          name: Install AWS cli
+          command: sudo apt-get -y -qq install awscli
+      - run:
+          name: Configure AWS
+          command: aws configure list
+      - deploy:
+          name: Deploy to S3
+          command: |
+            aws s3 cp ./index.html s3://thrones.theringer.com/ --acl "public-read" --content-encoding "gzip"
+            aws s3 sync ./dist/ s3://thrones.theringer.com/dist/ --exclude "*.gz" --cache-control "max-age=31536000" --acl "public-read"
+            aws s3 sync ./dist/ s3://thrones.theringer.com/dist/ --exclude "*" --include "*.gz" --content-encoding "gzip" --acl "public-read"
+
+workflows:
+  version: 2
+
+  deploy-prod:
+    jobs:
+      - build-and-deploy:
+          filters:
+            branches:
+              only: cms
+

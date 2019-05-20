@@ -45,9 +45,14 @@
                 <span>7</span>
             </div>
         </div>
+        <div class="small filter <?php echo ($sort_list_id === '8') ? 'active_filter' : '' ?>" data-sort-id="8">
+            <div class="filter-wrapper">
+                <span>8</span>
+            </div>
+        </div>
     </div>
     <div id="page-share">
         <a class="share non-mobile" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com"><img src="img/facebook.svg" alt="Facebook Logo" /></a>
-        <a class="share non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=https://thrones.theringer.com&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings"><img src="img/twitter.svg" alt="Twitter Logo" /></a>
+        <a class="share non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $twitter_url; ?>&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings"><img src="img/twitter.svg" alt="Twitter Logo" /></a>
     </div>
 </div>

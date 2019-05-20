@@ -1,5 +1,6 @@
 <li class="card-item col-xs-12 episode-{{episode_number}} season-{{season}} {{filter_id}}" data-id="{{filter_id}}">
     <div class="wrapper">
+
         <div class="rank-column background-theme">
             <div class="rank-wrapper">
                 <div class="rank"><span class="overall-rank">{{rank}}</span><span class="season-rank">{{season_ranking}}</span></div>
@@ -14,8 +15,7 @@
             </div>
         </div>
         <div class="image-column">
-            <div class="image">
-                <img data-src="img/episodes/episode-{{episode_number}}.jpg" alt="{{name}}" />
+            <div class="image" style="background-image:url({{image}})">
                 <!-- <img src="img/episodes/episode_1.png" alt="{{title}}" /> -->
                 <div class="frame"></div>
             </div>
@@ -38,8 +38,8 @@
                     &#8212; {{blurb_writer}}
                 </div>
                 <div class="shares">
-                    <a class="share facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com?episode={{episode_number}}">Share on Facebook</a>
-                    <a class="share twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https://thrones.theringer.com?episode={{episode_number}}&text=Where%20%22{{encoded_title}}%22%20ranks%20among%20%27Game%20of%20Thrones%27%20episodes%20">Share on Twitter</a>
+                    <a class="share facebook" target="_blank" href="{{facebook_share}}">Share on Facebook</a>
+                    <a class="share twitter" target="_blank" href="{{twitter_share}}">Share on Twitter</a>
                 </div>
             </div>
             <div class="item-footer">

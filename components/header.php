@@ -5,7 +5,7 @@
             <div href="javascript:void(0);" class="title">
                 <span class="is-mobile">&lsquo;GOT&rsquo; Episode Rankings</span> <span class="non-mobile">The Definitive &lsquo;Game of Thrones&rsquo; Episode Rankings</span>
                 <a class="share facebook non-mobile" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com">Share On Facebook</a>
-                <a class="share twitter non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=https://thrones.theringer.com&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings">Share On Twitter</a>
+                <a class="share twitter non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $twitter_url; ?>&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings">Share On Twitter</a>
             </div>
 
             <ul class="main-nav">
@@ -24,6 +24,7 @@
                 <li class="<?php echo ($sort_list_id === '5')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '5') ? 'active_filter' : '' ?>" data-sort-id="5" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>5</span></a></li>
                 <li class="<?php echo ($sort_list_id === '6')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '6') ? 'active_filter' : '' ?>" data-sort-id="6" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>6</span></a></li>
                 <li class="<?php echo ($sort_list_id === '7')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '7') ? 'active_filter' : '' ?>" data-sort-id="7" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>7</span></a></li>
+                <li class="<?php echo ($sort_list_id === '8')   ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === '8') ? 'active_filter' : '' ?>" data-sort-id="8" href="javascript:void(0);"><span><span class="is-mobile season">Season&nbsp;</span>8</span></a></li>
 
             </ul>
             <a href="javascript:void(0);" class="close-nav">X</a>

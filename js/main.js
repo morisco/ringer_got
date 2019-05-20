@@ -117,7 +117,8 @@ function CardList() {
         $('.filter[data-sort-id="' + $(e.currentTarget).data('sort-id') + '"]').addClass('active_filter');
         $(e.currentTarget).addClass('active_filter');
         cardlist.sort_id = $(e.currentTarget).data('sort-id');
-        cardlist.$el.removeClass('season-1 season-2 season-3 season-4 season-5 season-6 all');
+        cardlist.$el.removeClass('season-1 season-2 season-3 season-4 season-5 season-6 season-7 season-8 all');
+        
         if(cardlist.sort_id === 'all'){
             cardlist.$el.removeClass('filtered');
         } else {
