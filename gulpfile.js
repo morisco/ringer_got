@@ -24,7 +24,7 @@ gulp.task('sass', function () {
 
 gulp.task('sassgz', function () {
   gulp.src([
-          './src/scss/*.scss'
+          './css/*.scss'
       ])
         .pipe(concat('all.css'))
         .pipe(sass().on('error', sass.logError))

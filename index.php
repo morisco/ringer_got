@@ -21,16 +21,14 @@ require_once './vendor/autoload.php';
 
     $Parsedown = new Parsedown();
 
-    Handlebars\Autoloader::register();
     use Handlebars\Handlebars;
 
+
     $string_engine = new Handlebars();
-    echo __DIR__;
-    die();
     $engine = new Handlebars(array(
-        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__ . '../../../dist/templates/'),
+        'loader' => new \Handlebars\Loader\FilesystemLoader(__DIR__.'/dist/templates/'),
         'partials_loader' => new \Handlebars\Loader\FilesystemLoader(
-          __DIR__ . '../../../dist/templates/',
+            __DIR__ . '/dist/templates/',
             array(
                 'prefix' => '_'
             )
