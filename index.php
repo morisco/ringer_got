@@ -1,27 +1,21 @@
 <?php
-    $staging_check = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'mikemorisco.com';
+require_once './vendor/autoload.php';
+    $staging_check  = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'staging.heddek.com';
+    $environment_url = $staging_check ? 'https://staging.heddek.com/ringer/got' : 'https://thrones.theringer.com';
+    $location       =  $staging_check ? 'staging' : 'production';
+    $project        = 'got';
+    $contents_result = file_get_contents('https://s3.amazonaws.com/heddek/contents/'.$project.'/'.$location.'/'.$project.'.json');
+    $data        = json_decode($contents_result, true);
 
-    require_once './vendor/autoload.php';
 
-    use Aws\S3\S3Client;
-    $ACCESS_KEY = "AKIAIQTPROH6BA7PQY5A";
-    $SECRET_KEY =  "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";
-    $clientS3 = S3Client::factory(array(
-        'key'    => $ACCESS_KEY,
-        'secret' => $SECRET_KEY
-    ));
+    $config_result = file_get_contents('https://s3.amazonaws.com/heddek/config/'.$project.'/'.$location.'/'.$project.'.json');
+    $config        = json_decode($config_result, true);
+    $config   = $config[0];
 
-    $http = new \Guzzle\Http\Client;
+    $page_result = file_get_contents('https://s3.amazonaws.com/heddek/pages/'.$project.'/'.$location.'/'.$project.'.json');
+    $page        = json_decode($page_result, true);
+    $page_data   = $page[0]['data'];
 
-    $location = $staging_check ? 'staging' : 'production';
-
-    $content_result = $clientS3->getObjectUrl('cms-ringer', '/'. $location .'/got.json');
-    $content_response = $http->get($content_result)->send();
-    $data = $content_response->json();
-
-    $config_result = $clientS3->getObjectUrl('cms-ringer', '/config/'.$location.'/got.json');
-    $config_response = $http->get($config_result)->send();
-    $config = $config_response->json()[0];
 
     $twitter_url = $config['production_url_short'] !== '' ? $config['production_url_short'] : $config['production_url'];
 
@@ -68,10 +62,11 @@
         '4'     => "Season 4",
         '5'     => "Season 5",
         '6'     => "Season 6",
-        '7'     => "Season 7"
+        '7'     => "Season 7",
+        '8'     => "Season 8"
     );
 
-    $sort_list_options = array('1', '2', '3', '4', '5', '6', '7');
+    $sort_list_options = array('1', '2', '3', '4', '5', '6', '8');
 
     if(isset($_GET['list']) && in_array($_GET['list'], $sort_list_options)){
         $sort_list_id = $_GET['list'];
@@ -103,7 +98,8 @@
         'season_4' => 0,
         'season_5' => 0,
         'season_6' => 0,
-        'season_7' => 0
+        'season_7' => 0,
+        'season_8' => 0
     );
     foreach($sorted_episodes as $key => $episode){
         $season_count['season_' . $episode['season']]++;
@@ -214,10 +210,17 @@
 
         <meta name="description" content="<?php echo $config['description']; ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <?php if($staging_check){ ?>
+            <link rel="stylesheet" href="dist/css/all.css">
+        <?php } else { ?>
+            <link rel="stylesheet" href="dist/css/all.css.gz">
+        <?php } ?>
 
-        <link rel="stylesheet" href="dist/css/all.css?t=<?php echo time(); ?>">
-
-        <script src="dist/vendor/vendor.js"></script>
+        <?php if($staging_check){ ?>
+          <script src="dist/vendor/vendor.js"></script>
+        <?php } else { ?>
+          <script src="dist/vendor/vendor.js.gz"></script>
+        <?php } ?>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
         <link rel="apple-touch-icon" sizes="152x152" href="https://cdn-images-1.medium.com/fit/c/152/152/1*w1O1RbAfBRNSxkSC48L1PQ.png">
@@ -229,11 +232,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <?php if($staging_check){ ?>
-            <div id="staging-message">
-                STAGING SITE | <a href="https://mikemorisco.com/cms" target="_blank">Go to cms</a>
-            </div>
-        <?php } ?>
         <?php include 'components/header.php'; ?>
         <?php include 'components/intro.php';  ?>
         <div id="coverage-header"><?php echo $header_coverage_render; ?></div>
@@ -270,7 +268,13 @@
                 }
             });
         </script>
-        <script src="dist/js/all.js"></script>
+
+        <?php if($staging_check){ ?>
+          <script src="dist/js/all.js"></script>
+        <?php } else { ?>
+          <script src="dist/js/all.js.gz"></script>
+        <?php } ?>
+        
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

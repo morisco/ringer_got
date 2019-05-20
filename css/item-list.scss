@@ -181,6 +181,8 @@ body #item-list.filtered{
         height:auto;
         padding:0 3%;
         .image{
+          background-size:cover;
+          padding-top:100%;
             width:100%;
             border-radius:50%;
             overflow:hidden;

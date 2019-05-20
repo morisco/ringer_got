@@ -15,6 +15,12 @@
     .regular{
         font-weight:500;
     }
+    p{
+      margin-bottom:30px;
+      &:last-of-type{
+        margin-bottom:0;
+      }
+    }
 }
 
 @media(max-width:767px){
