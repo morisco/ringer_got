@@ -25,9 +25,6 @@ jobs:
           name: Generate static files
           command: bash php_build_command.sh
       - run:
-          name: GZIP HTML
-          command: node .circleci/deploy.js
-      - run:
           name: Install AWS cli
           command: sudo apt-get -y -qq install awscli
       - run:
