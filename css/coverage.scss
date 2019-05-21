@@ -1,6 +1,7 @@
 .more-coverage{
     clear:both;
     padding: 0 0 100px;
+    
     &:after{
         clear:both;
         content:'';
@@ -17,6 +18,8 @@
         width:100%;
     }
     div{
+      display:flex;
+      align-items:center;
         &:after{
             clear:both;
             content:'';
@@ -24,7 +27,6 @@
         }
         a{
             display:block;
-            float:left;
             text-align:center;
             width:calc(50% - 15px);
             padding: 0 15px;

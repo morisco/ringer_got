@@ -146,7 +146,26 @@ require_once './vendor/autoload.php';
             $coverage_count++;
         }
     }
-    $header_coverage = (object) array();
+    $header_coverage = array(
+      "articles" => array(
+        0 => array(
+          "headline" => "The Loose Ends That Were Never Resolved",
+          "link" => "https://www.theringer.com/game-of-thrones/2019/5/21/18633356/game-of-thrones-season-8-series-loose-ends-bran-faceless-men-catelyn"
+        ),
+        1 => array(
+          "headline" => "The Winners and Losers of Season 8",
+          "link" => "https://www.theringer.com/game-of-thrones/2019/5/20/18632677/game-of-thrones-season-eight-winners-and-losers"
+        ),
+        2 => array(
+          "headline" => "Just How Much of the Ending Was George R.R. Martin’s?",
+          "link" => "https://www.theringer.com/game-of-thrones/2019/5/20/18632110/just-how-much-of-the-game-of-thrones-ending-was-george-r-r-martins"
+        ),
+        3 => array(
+          "headline" => "Arya Was the Best Part of the Final Season",
+          "link" => "https://www.theringer.co"
+        )
+      )
+    );
     // $header_coverage->articles = array_slice($articles, 0, 4);
     $header_coverage_render = $engine->render(
         'coverage',

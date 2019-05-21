@@ -6,14 +6,13 @@
                 <span class="is-mobile">&lsquo;GOT&rsquo; Episode Rankings</span> <span class="non-mobile">The Definitive &lsquo;Game of Thrones&rsquo; Episode Rankings</span>
                 <a class="share facebook non-mobile" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://thrones.theringer.com">Share On Facebook</a>
                 <a class="share twitter non-mobile" target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo $twitter_url; ?>&text=The%20Ringer%27s%20Definitive%20%27Game%20of%20Thrones%27%20Episode%20Rankings">Share On Twitter</a>
-            </div>
-
+            </div> 
             <ul class="main-nav">
-                <li><a target="_blank" href="https://bit.ly/ringerhome"><span>HOME</span></a></li>
-                <li><a target="_blank" href="https://theringer.com/tagged/tv"><span>TV</span></a></li>
-                <li><a target="_blank" href="https://t.co/N4GRS96Eze"><span>&lsquo;Talk the Thrones&rsquo;</span></a></li>
-                <li><a target="_blank" href="https://theringer.com/binge-mode-c4ef7677c662"><span>&lsquo;Binge Mode&rsquo;</span></a></li>
-                <li><a target="_blank" href="https://theringer.com/the-watch-podcast-andy-greenwald-chris-ryan-ab903a3278de"><span>&lsquo;The Watch&rsquo; Podcast</span></a></li>
+                <li><a target="_blank" href="https://www.theringer.com/"><span>HOME</span></a></li>
+                <li><a target="_blank" href="https://www.theringer.com/game-of-thrones"><span>All ‘Thrones’</span></a></li>
+                <li><a target="_blank" href="https://theringer.com/binge-mode-c4ef7677c662"><span>Binge Mode</span></a></li>
+                <li><a target="_blank" href="https://www.theringer.com/the-watch"><span>The Watch</span></a></li>
+                <li><a target="_blank" href="https://www.theringer.com/talk-the-thrones"><span>Talk the Thrones</span></a></li>
             </ul>
             <ul class="fixed-nav">
                 <li class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>"><a target="_blank"  class="<?php echo ($sort_list_id === 'all') ? 'active_filter' : '' ?>" data-sort-id="all" href="javascript:void(0);"><span >All Seasons</span></a></li>
