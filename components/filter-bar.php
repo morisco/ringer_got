@@ -45,6 +45,12 @@
                 <span>7</span>
             </div>
         </div>
+
+        <div class="small filter <?php echo ($sort_list_id === '8') ? 'active_filter' : '' ?>" data-sort-id="8">
+            <div class="filter-wrapper">
+                <span>8</span>
+            </div>
+        </div>
       
     </div>
     <div id="page-share">
