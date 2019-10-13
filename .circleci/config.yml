@@ -37,8 +37,8 @@ jobs:
           name: Deploy to S3
           command: |
             aws s3 cp ./index.html s3://thrones.theringer.com/ --acl "public-read" --content-encoding "gzip"
-            aws s3 sync ./dist/ s3://thrones.theringer.com/dist/ --exclude "*.gz" --cache-control "max-age=31536000" --acl "public-read"
-            aws s3 sync ./dist/ s3://thrones.theringer.com/dist/ --exclude "*" --include "*.gz" --content-encoding "gzip" --acl "public-read"
+            aws s3 sync ./dist/ s3://thrones.hardrefreshcdn.com/dist/ --exclude "*.gz" --cache-control "max-age=31536000" --acl "public-read"
+            aws s3 sync ./dist/ s3://thrones.hardrefreshcdn.com/dist/ --exclude "*" --include "*.gz" --content-encoding "gzip" --acl "public-read"
 
 workflows:
   version: 2
