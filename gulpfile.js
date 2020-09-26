@@ -7,7 +7,7 @@ var htmlmin = require('gulp-htmlmin');
 var gzip = require('gulp-gzip');
 
 
-gulp.task('production', gulp.series(gulp.parallel(sassgz, jsgz, vendorgz)));
+gulp.task('production', gulp.series(gulp.parallel(sassgz, jsgz, vendorgz, templatesCard, templatesCoverage, templatesInfo, templatesRelated)));
 
 gulp.task('watch', gulp.series(gulp.parallel(sss, js, vendor, watchTask, templatesCard, templatesCoverage, templatesInfo, templatesRelated)));
 
@@ -24,7 +24,7 @@ function sassgz() {
       './css/_mixins.scss',
       './css/*.scss',
     ])
-    .pipe(concat('all-phase-lottery.scss'))
+    .pipe(concat('all.scss'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gzip())
     .pipe(gulp.dest('./dist/css'))
@@ -39,7 +39,7 @@ function sss() {
           './css/_mixins.scss',
           './src/scss/*.scss',
         ])
-        .pipe(concat('all-phase-lottery.scss'))
+        .pipe(concat('all.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist/css'))
     );
@@ -50,7 +50,7 @@ function jsgz() {
         gulp.src([
             './js/*.js'
         ])
-        .pipe(concat('all-phase-lottery.js'))
+        .pipe(concat('all.js'))
         .pipe(uglify({ mangle: false }))
         .pipe(gzip())
         .pipe(gulp.dest('./dist/js'))
@@ -62,7 +62,7 @@ function js() {
         gulp.src([
             './js/*.js'
         ])
-        .pipe(concat('all-phase-lottery.js'))
+        .pipe(concat('all.js'))
         // .pipe(uglify())
         .pipe(gulp.dest('./dist/js'))
     )
