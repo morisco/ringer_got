@@ -218,9 +218,6 @@ require_once './vendor/autoload.php';
     <!--[if IE 9 ]> <html class="ie9"> <![endif]-->
     <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->    
     <head>
-        <?php if(!$staging_check){ ?>
-          <base href="https://thrones.hardrefreshcdn.com/">
-        <?php } ?>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title><?php echo $config['name']; ?></title>
