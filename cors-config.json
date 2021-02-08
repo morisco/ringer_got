@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost/ringer/ringer_got", "http://ringer-thrones-staging.uc.r.appspot.com/", "https://thrones-theringer-com.uc.r.appspot.com/", "https://thrones.theringer.com"],
+    "method": ["GET", "OPTIONS"],
+    "responseHeader": ["Content-Type", "Content-Encoding", "Access-Control-Allow-Origin"],
+    "maxAgeSeconds": 6400
+  }
+] 
