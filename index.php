@@ -1,18 +1,18 @@
 <?php
 require_once './vendor/autoload.php';
-    $staging_check  = $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'staging.heddek.com';
+    $staging_check  = $_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === 'ringer-thrones-staging.uc.r.appspot.com' || $_SERVER['HTTP_HOST'] === 'localhost:8888' || $_SERVER['HTTP_HOST'] === 'staging.heddek.com';
     $environment_url = $staging_check ? 'https://staging.heddek.com/ringer/got' : 'https://thrones.theringer.com';
     $location       =  $staging_check ? 'staging' : 'production';
     $project        = 'got';
-    $contents_result = file_get_contents('https://s3.amazonaws.com/heddek/contents/'.$project.'/'.$location.'/'.$project.'.json');
+    $contents_result = file_get_contents('https://storage.googleapis.com/thrones-theringer-com-cms/public/data/got/content.' . $location . '.json.gz');
     $data        = json_decode($contents_result, true);
 
 
-    $config_result = file_get_contents('https://s3.amazonaws.com/heddek/config/'.$project.'/'.$location.'/'.$project.'.json');
+    $config_result = file_get_contents('https://storage.googleapis.com/thrones-theringer-com-cms/public/data/got/config.' . $location . '.json.gz');
     $config        = json_decode($config_result, true);
     $config   = $config[0];
 
-    $page_result = file_get_contents('https://s3.amazonaws.com/heddek/pages/'.$project.'/'.$location.'/'.$project.'.json');
+    $page_result = file_get_contents('https://storage.googleapis.com/thrones-theringer-com-cms/public/data/got/page.' . $location . '.json.gz');
     $page        = json_decode($page_result, true);
     $page_data   = $page[0]['data'];
 
@@ -236,13 +236,13 @@ require_once './vendor/autoload.php';
         <?php if($staging_check){ ?>
             <link rel="stylesheet" href="dist/css/all.css">
         <?php } else { ?>
-            <link rel="stylesheet" href="dist/css/all.css.gz">
+            <link rel="stylesheet" href="dist/css/all.css">
         <?php } ?>
 
         <?php if($staging_check){ ?>
           <script src="dist/vendor/vendor.js"></script>
         <?php } else { ?>
-          <script src="dist/vendor/vendor.js.gz"></script>
+          <script src="dist/vendor/vendor.js"></script>
         <?php } ?>
 
         <link rel="icon" href="https://cdn-images-1.medium.com/fit/c/128/128/1*w1O1RbAfBRNSxkSC48L1PQ.png" class="js-favicon">
@@ -274,6 +274,9 @@ require_once './vendor/autoload.php';
                 <div><i>Disclosure: HBO is an initial investor in</i> The Ringer.</div>
             </div>
         </div>
+        <?php include 'components/footer.php';  ?>
+        <?php include 'components/consent.php';  ?>
+
 
         <script type="text/javascript">
             window.GLOBALS = {};
@@ -295,18 +298,7 @@ require_once './vendor/autoload.php';
         <?php if($staging_check){ ?>
           <script src="dist/js/all.js"></script>
         <?php } else { ?>
-          <script src="dist/js/all.js.gz"></script>
+          <script src="dist/js/all.js"></script>
         <?php } ?>
-        
-
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-102272660-1', 'auto');
-            ga('send', 'pageview');
-        </script>
     </body>
 </html>

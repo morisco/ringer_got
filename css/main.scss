@@ -22,6 +22,9 @@ html {
     background:$green;
     font-weight:400;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 *,
 *:before,

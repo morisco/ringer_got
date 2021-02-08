@@ -1,0 +1,28 @@
+# Use PHP 7.3 by replacing "php72" below with "php73"
+runtime: php72
+
+instance_class: F4
+
+handlers:
+  - url: /dist/(.*)
+    static_files: dist/\1
+    upload: dist/(.*)
+    secure: always
+  - url: /img/(.*)
+    static_files: img/\1
+    upload: img/(.*)
+    secure: always
+  - url: /fonts/(.*)
+    static_files: fonts/\1
+    upload: fonts/(.*)
+    secure: always
+  - url: /.*
+    script: auto
+    secure: always
+  
+
+# Defaults to "serve index.php" and "serve public/index.php". Can be used to
+# serve a custom PHP front controller (e.g. "serve backend/index.php") or to
+# run a long-running PHP script as a worker process (e.g. "php worker.php").
+#
+# entrypoint: serve index.php

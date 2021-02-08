@@ -37,7 +37,7 @@ function sss() {
         gulp.src([
           './css/_1vars.scss',
           './css/_mixins.scss',
-          './src/scss/*.scss',
+          './css/*.scss',
         ])
         .pipe(concat('all.scss'))
         .pipe(sass().on('error', sass.logError))

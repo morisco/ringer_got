@@ -3,6 +3,39 @@ $(window).load(function () {
     // var mobile = new Mobile(masterList);
 });
 
+$(document).on('ready', function() {
+  function initializeGA() {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      if(typeof ga !== 'undefined'){
+        ga('create', 'UA-102272660-1', 'auto');
+        ga('send', 'pageview');
+      }
+  }
+  $('#cookie-pref').on('click', function() {
+    window.localStorage.removeItem('thrones-gdpr-consent', 1);
+
+    $('#consent').show();
+    $('#give-consent').off('click').on('click', function() {
+      $('#consent').hide();
+    });
+
+  })
+  if((isEULocale() || isInEUTimezone()) && !window.localStorage.getItem('thrones-gdpr-consent')){
+    $('#consent').show();
+    $('#give-consent').on('click', function() {
+      window.localStorage.setItem('thrones-gdpr-consent', 1);
+      $('#consent').hide();
+      initializeGA();
+    })
+  } else {
+    initializeGA();
+    $('#consent').hide();
+  }
+});
+
 function CardList() {
     var cardlist = this;
 
